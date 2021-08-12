@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="尴尬了">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="尴尬了.jar">
+      <element id="module-output" name="源代码" />
+    </root>
+  </artifact>
+</component>
