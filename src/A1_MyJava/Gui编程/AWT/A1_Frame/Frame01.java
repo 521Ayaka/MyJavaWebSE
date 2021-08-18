@@ -1,4 +1,4 @@
-package A1_MyJava.Gui±à³Ì.AWT.Frame;
+package A1_MyJava.Gui±à³Ì.AWT.A1_Frame;
 
 import java.awt.*;
 

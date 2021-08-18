@@ -1,4 +1,4 @@
-package A1_MyJava.Gui编程.AWT.Frame;
+package A1_MyJava.Gui编程.AWT.A1_Frame;
 
 /*
 使用封装创建多个窗体
