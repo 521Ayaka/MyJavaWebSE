@@ -1,0 +1,35 @@
+package A1_MyJava.Gui编程.AWT.A3_Layout;
+
+import java.awt.*;
+
+public class TestBorderLayout {
+
+    public static void main(String[] args) {
+
+        Frame frame = new Frame("东西南北中布局");
+
+        Button north = new Button("north");
+        Button south = new Button("south");
+        Button west = new Button("west");
+        Button east = new Button("east");
+        Button center = new Button("center");
+
+        //将按钮添加到相应位置
+        frame.add(north,BorderLayout.NORTH);
+        frame.add(south,BorderLayout.SOUTH);
+        frame.add(west,BorderLayout.WEST);
+        frame.add(east,BorderLayout.EAST);
+        frame.add(center,BorderLayout.CENTER);
+
+
+        frame.setSize(400,400);
+        frame.setLocation(500,300);
+        frame.setVisible(true);
+
+
+
+
+
+    }
+
+}
