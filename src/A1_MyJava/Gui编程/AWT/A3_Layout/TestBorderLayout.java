@@ -1,6 +1,8 @@
 package A1_MyJava.Gui±à³Ì.AWT.A3_Layout;
 
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class TestBorderLayout {
 
@@ -25,8 +27,12 @@ public class TestBorderLayout {
         frame.setSize(400,400);
         frame.setLocation(500,300);
         frame.setVisible(true);
-
-
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
 
 
