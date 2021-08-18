@@ -18,7 +18,7 @@ public class TestGridLayout {
         Button grid6 = new Button("Grid6");
 
         //(rows行,cols列,hgap,vgap)
-        frame.setLayout(new GridLayout(3,2));
+        frame.setLayout(new GridLayout(3,2,10,10));
 
         //添加到窗体
         frame.add(grid1);
@@ -31,7 +31,11 @@ public class TestGridLayout {
         //基本设置
         frame.setSize(500,500);
         frame.setLocation(500,300);
+        frame.setBackground(new Color(234, 100, 232));
         frame.setVisible(true);
+
+        //frame.pack();//自动布局 大小和位置
+
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {

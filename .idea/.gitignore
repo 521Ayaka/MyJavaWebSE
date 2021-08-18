@@ -1,6 +1,7 @@
 # 默认忽略的文件
 /shelf/
 /workspace.xml
+/out/
 # 数据源本地存储已忽略文件
 /../../../:\源代码\.idea/dataSources/
 /dataSources.local.xml
