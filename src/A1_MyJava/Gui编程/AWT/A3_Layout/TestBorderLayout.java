@@ -23,10 +23,11 @@ public class TestBorderLayout {
         frame.add(east,BorderLayout.EAST);
         frame.add(center,BorderLayout.CENTER);
 
-
+        //ª˘±æ…Ë÷√
         frame.setSize(400,400);
         frame.setLocation(500,300);
         frame.setVisible(true);
+
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
