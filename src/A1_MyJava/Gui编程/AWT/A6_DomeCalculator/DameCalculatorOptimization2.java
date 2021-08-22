@@ -2,6 +2,7 @@ package A1_MyJava.Gui编程.AWT.A6_DomeCalculator;
 
 /*
 使用：内部类，更好的提供了包装。
+内部类的最大优势就是可以畅通无阻的访问外部类的成员方法和成员变量。
 */
 
 import java.awt.*;
