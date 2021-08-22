@@ -1,15 +1,19 @@
 package A1_MyJava.Gui编程.AWT.A6_DomeCalculator;
 
+/*
+使用组合的方法来写，使用面向对象的方法来写
+另外：内部类，更好的提供了包装。
+*/
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-//使用组合的方法来写，使用面向对象的方法来写
+public class DameCalculatorOptimization1 {
 
-public class DameCalculatorOptimization {
-
+    //启动类加启动方法main
     public static void main(String[] args) {
 
         //启动窗体
@@ -19,11 +23,13 @@ public class DameCalculatorOptimization {
 
 }
 
+//计算机类
 class CalculatorOpt extends Frame {
 
     //属性，成员变量
     TextField field1, field2, field3;
 
+    //功能，成员方法
     public void loadFrame() {
         //初始化窗体
         setBounds(500, 300, 500, 200);
