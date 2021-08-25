@@ -1,4 +1,4 @@
-package A1_MyJava.Gui编程.Swing.Swing01;
+package A1_MyJava.Gui编程.Swing.A1_JFrame;
 /*
 
 GUI包括AWT和Swing
