@@ -50,6 +50,7 @@ public class TestJPanel extends JFrame {
 
     }
 
+    //Æô¶¯
     public static void main(String[] args) {
 
         new TestJPanel();
