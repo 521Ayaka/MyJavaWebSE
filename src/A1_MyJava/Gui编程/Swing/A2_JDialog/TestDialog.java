@@ -1,4 +1,14 @@
 package A1_MyJava.Gui编程.Swing.A2_JDialog;
+/*
+重点！！！！！！！！！！！！
+
+Dialog弹窗是一个类，真是真实存在的，一般Visible为true
+
+当调用弹窗的时候，会创建这个对象，使其运行
+
+弹窗有默认的关闭，不需要再加入，否则会报错
+
+*/
 
 import javax.swing.*;
 import java.awt.*;
