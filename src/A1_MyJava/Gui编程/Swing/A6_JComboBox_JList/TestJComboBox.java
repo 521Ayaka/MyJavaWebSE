@@ -1,5 +1,10 @@
 package A1_MyJava.Gui编程.Swing.A6_JComboBox_JList;
 
+/*
+应用场景：选择区域，单选某项已有内容
+
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +17,7 @@ public class TestJComboBox extends JFrame {
     }
 
     public static void main(String[] args) {
-        new TestJComboBox("复选框/多选框").init();
+        new TestJComboBox("下拉框").init();
     }
 
     //初始化
