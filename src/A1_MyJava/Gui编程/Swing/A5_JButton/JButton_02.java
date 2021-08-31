@@ -19,14 +19,16 @@ public class JButton_02 extends JFrame {
 
         //添加组件
         JRadioButton radio1 = new JRadioButton("男");
-        JRadioButton radio2 = new JRadioButton("女");
+        JRadioButton radio2= new JRadioButton("女");
         JRadioButton radio3 = new JRadioButton("人妖");
 
-        ButtonGroup group = new ButtonGroup();
-        group.add(radio1);
-        group.add(radio2);
-        group.add(radio3);
+        //创建组
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(radio1);
+        buttonGroup.add(radio2);
+        buttonGroup.add(radio3);
 
+        //添加布局，放入容器
         container.setLayout(new GridLayout(3,1));
         container.add(radio1);
         container.add(radio2);
