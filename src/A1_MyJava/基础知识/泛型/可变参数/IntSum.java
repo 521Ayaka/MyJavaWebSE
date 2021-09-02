@@ -1,10 +1,15 @@
 package A1_MyJava.基础知识.泛型.可变参数;
-/**
- * 可变参数
- * public static int sum(int... a){}
- * public static int sum(int b, int... a){}
- * public static int sum(String str, int... a){}
- */
+/*
+ 可变参数
+ public static int sum(int... a){}
+ public static int sum(int b, int... a){}
+ public static int sum(String str, int... a){}
+
+
+ ！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！!!
+ 可变参数就是把数据封装到一个数组。数据类型 [] 形参 = { 实参 };
+
+*/
 public class IntSum {
 
     public static void main(String[] args) {
@@ -18,6 +23,8 @@ public class IntSum {
         System.out.println(sum(10, 20, 30, 40, 50, 60, 70));
         System.out.println("======================");
         System.out.println(sum("总数和为", 10, 20, 30, 40, 50, 60, 70, 80));
+
+        int [] a ={};
     }
 
     //可变参数方法
