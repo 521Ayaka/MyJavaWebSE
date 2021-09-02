@@ -1,6 +1,6 @@
 # 并发修改异常：
 ````java
-/**异常报错：
+/**异常报错：报错异常类ConcurrentModificationException
 Exception in thread "main" java.util.ConcurrentModificationException
 at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
 at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)

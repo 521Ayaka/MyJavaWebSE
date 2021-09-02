@@ -67,6 +67,7 @@ public class Iterator_Method {
 
         //进行循环遍历
         System.out.println("=====使用while循环=====");
+        //创建迭代器
         Iterator<String> itr = list.iterator();
         int i = 1;
         while (itr.hasNext()){

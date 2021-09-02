@@ -6,10 +6,11 @@ import java.util.TreeSet;
 public class TreeSet_Lei {
 
     public static void main(String[] args) {
-
+                                                //构造方法的时候，创建一个比较排序接口的实现匿名类，泛型与TreeSet类型相同
         TreeSet<Student> treeSet = new TreeSet<>(new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
+                //这里变为调用前后两个对象的成员方法。因为成员变量私有化了
                 int num = o1.getAge() - o1.getAge();
                 int num1 = num == 0 ? o1.getName().compareTo(o2.getName()) : num;
                 return num1;

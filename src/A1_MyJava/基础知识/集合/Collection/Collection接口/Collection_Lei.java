@@ -3,11 +3,11 @@ package A1_MyJava.基础知识.集合.Collection.Collection接口;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/** API中介绍:
-* Collection 层次结构 中的根接口。Collection 表示一组对象，这些对象也称为 collection 的元素。一些 collection 允许有重复的元素，而另一些则不允许。
-* 一些 collection 是有序的，而另一些则是无序的。JDK 不提供此接口的任何直接 实现：它提供更具体的子接口（如 Set 和 List）实现。
-* 此接口通常用来传递 collection，并在需要最大普遍性的地方操作这些 collection。
-**/
+/* API中介绍:
+Collection 层次结构 中的根接口。Collection 表示一组对象，这些对象也称为 collection 的元素。一些 collection 允许有重复的元素，而另一些则不允许。
+一些 collection 是有序的，而另一些则是无序的。JDK 不提供此接口的任何直接 实现：它提供更具体的子接口（如 Set 和 List）实现。
+此接口通常用来传递 collection，并在需要最大普遍性的地方操作这些 collection。
+*/
 /*
 Collection不能直接实现，只能实现子接口[List]和[Set]两个子接口。
 java.util.Collection           Collection<泛型>

@@ -10,6 +10,7 @@ public class TreeSet_Lei {
 
     public static void main(String[] args) {
 
+        //添加try...catch异常处理
         try {
             Student_1 stu1 = new Student_1("GanGa", 18);
             Student_1 stu2 = new Student_1("GanGaJiang", 9);

@@ -31,11 +31,10 @@ public class Student_2 implements Comparable<Student_2>{
 
     @Override
     public int compareTo(Student_2 o) {
-//        return 0;
-//        return 1;
-//        return -1;
-        int num = this.age - o.age;
-        return num;
+//        return 0;  //重复元素
+//        return 1;  //放入后面
+//        return -1; //放入前面
+        return this.age - o.age;;
     }
 
 }

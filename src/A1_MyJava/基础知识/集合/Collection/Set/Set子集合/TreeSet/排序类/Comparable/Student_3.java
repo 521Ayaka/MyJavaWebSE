@@ -32,8 +32,15 @@ public class Student_3 implements Comparable<Student_3>{
     @Override
     public int compareTo(Student_3 o) {
         int num = this.age - o.age;
+        int numL = num == 0 ? this.name.compareTo(o.name) : num;
+        return numL;
+    }
+
+    /*@Override
+    public int compareTo(Student_3 o) {
+        int num = this.age - o.age;
         int num1 = num == 0 ? this.name.compareTo(o.name) : num;
         return num1;
-    }
+    }*/
 
 }
