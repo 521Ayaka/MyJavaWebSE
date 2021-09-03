@@ -19,7 +19,7 @@ public class MapMethod {
     public static void main(String[] args) {
 
         //多态创建Map集合对象
-        Map<String, String> map = new HashMap<String,String>();
+        Map<String, String> map = new HashMap<>();
 
         //V put(K key, V value)                 添加键值对
         map.put("吟留的诗人","温迪");
@@ -30,7 +30,7 @@ public class MapMethod {
 
         //V remove(Object key)                  根据键删除键值对元素
         map.remove("亡");
-        System.out.println(map);
+        System.out.println(map.remove("亡"));//已删除null
 
         //void clear()                          移除所有的键值对元素
         map.clear();
