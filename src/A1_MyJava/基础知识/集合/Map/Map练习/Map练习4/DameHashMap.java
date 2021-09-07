@@ -1,4 +1,4 @@
-package A1_MyJava.基础知识.集合.Map.Map练习.Map联系4;
+package A1_MyJava.基础知识.集合.Map.Map练习.Map练习4;
 
 import java.util.ArrayList;
 import java.util.HashMap;
