@@ -75,6 +75,7 @@ public class DouDiZu {
     //对用户的牌排序
     public static void sort(String userName,ArrayList<String> list){
         HashMap<String, String> map = new HashMap<>();
+        //利用Map集合存储
 
     }
 
