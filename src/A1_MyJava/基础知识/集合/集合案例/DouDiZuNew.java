@@ -27,13 +27,17 @@ public class DouDiZuNew {
     private TreeSet<Integer> hands = new TreeSet<>();
 
 
-    /**启动*/
+    /**
+     * 启动
+     */
     public static void main(String[] args) {
         //启动
         new DouDiZuNew().init();
     }
 
-    /**初始化*/
+    /**
+     * 初始化
+     */
     public void init() {
 
         //创建HashMap集合
@@ -44,32 +48,35 @@ public class DouDiZuNew {
 
         /**操作数组：*/
         //调用存储牌，存储编号
-        this.hashMapAdd(map,list);
+        this.hashMapAdd(map, list);
 
         //调用洗牌
         this.shuffle(list);
 
         //调用发牌
-        this.distribute(list,map);
+        this.distribute(list, map);
         System.out.println(list);
 
         //调用查看用户牌
-        look(userName1, user1);
-        look(userName2, user2);
-        look(userName3, user3);
+        look(userName1, user1, map);
+        look(userName2, user2, map);
+        look(userName3, user3, map);
 
     }
 
-    /**================================================================================*/
+    /**
+     * ================================================================================
+     */
 
     //向HashMap中存储牌数 , 并且向ArrayList集合当中添加键值编号
-    public void hashMapAdd(HashMap<Integer,String> map ,ArrayList<Integer> list){
+    public void hashMapAdd(HashMap<Integer, String> map, ArrayList<Integer> list) {
         //初始化点数
         int index = 0;
-        for (String color: colorOf) {
-            for (String num: numOf) {
+        //先是numOf进行循环, 保证TreeSet可以正常排序。
+        for (String num : numOf) {
+            for (String color : colorOf) {
                 //向map中添加键值对
-                map.put(index,color+num);
+                map.put(index, color + num);
                 //向ArrayList添加键值编号
                 list.add(index);
                 //index++
@@ -77,46 +84,47 @@ public class DouDiZuNew {
             }
         }
         //添加大小王
-        map.put(index,"小王");
+        map.put(index, "小王");
         list.add(index);
         index++;
-        map.put(index,"大王");
+        map.put(index, "大王");
         list.add(index);
     }
 
     //重新洗牌
-    public void shuffle(ArrayList<Integer> list){
+    public void shuffle(ArrayList<Integer> list) {
         Collections.shuffle(list);
     }
 
     //发牌的方法
-    public void distribute(ArrayList<Integer> list,HashMap<Integer,String> map){
+    public void distribute(ArrayList<Integer> list, HashMap<Integer, String> map) {
         for (int i = 0; i < list.size(); i++) {
-            if (i >= 54){
+            if (i >= 54) {
                 hands.add(list.get(i));
-            }else if (i%3 == 0){
+            } else if (i % 3 == 0) {
                 user1.add(list.get(i));
-            }else if (i%3 == 1){
+            } else if (i % 3 == 1) {
                 user2.add(list.get(i));
-            }else if (i%3 == 2){
+            } else if (i % 3 == 2) {
                 user3.add(list.get(i));
             }
         }
     }
 
-    //用户呈现排序
-    public void present(){
-
-    }
-
-    //查看牌
-    public void look(String name, TreeSet<Integer> list) {
-        System.out.println("姓名:"+name);
+    //查看牌 , 用户呈现排序
+    public void look(String name, TreeSet<Integer> set, HashMap<Integer, String> map) {
+        System.out.println("姓名:" + name);
         System.out.print("牌数为:");
-        for (Integer index : list) {
-            System.out.print(index+" , ");
+        int in = 1;
+        for (Integer index : set) {
+            if (in < set.size()) {
+                System.out.print(map.get(index) + " , ");
+            } else {
+                System.out.print(map.get(index + "。"));
+            }
+            in++;
         }
         System.out.println();
-        System.out.println("===============================================");
+        System.out.println("=============================================================================================================================================");
     }
 }
