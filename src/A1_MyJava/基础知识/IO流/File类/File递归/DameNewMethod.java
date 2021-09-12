@@ -35,6 +35,10 @@ public class DameNewMethod {
             System.out.println("API说明: 当应用程序递归太深而发生堆栈溢出时，抛出该错误。");
         }
 
+        //拓展，使用递归求阶乘
+        System.out.println(y(10));
+        System.out.println(10*9*8*7*6*5*4*3*2*1);
+
     }
 
     //返回值 和 参数类型 都是int
@@ -50,6 +54,15 @@ public class DameNewMethod {
             return 1;
         } else {
             return fx(n - 1) + fx(n - 2);
+        }
+    }
+
+    //求阶乘的方法
+    public static int y(int n){
+        if (n == 1){
+            return 1;
+        }else {
+            return n * y(n-1);
         }
     }
 
