@@ -18,6 +18,10 @@ getAbsolutePath    获取绝对路径
 
 Delete                       删除
 
+write                         写
+
+close                         关闭
+
 
 
 ### 其他常用单词
