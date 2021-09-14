@@ -27,7 +27,7 @@ public class URLGame {
     public static ImageIcon food = new ImageIcon(foodURL);//下部
 
     //广告
-    public static URL imgURL = URLGame.class.getResource("statics/img.png");
+    public static URL imgURL = URLGame.class.getResource("statics/TestOutputStreamImpl.png");
     public static ImageIcon img = new ImageIcon(imgURL);
 
 
