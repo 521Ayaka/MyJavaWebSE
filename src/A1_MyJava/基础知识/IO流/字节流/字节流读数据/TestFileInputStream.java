@@ -94,6 +94,32 @@ public class TestFileInputStream {
         */
 
 
+        //完全标准写法
+        System.out.println("\n！！！！！！！！！！！！！完全标准写法！！！！！！！！！！！！！");
+        System.out.println("！！！！！！！！！！！！！完全标准写法！！！！！！！！！！！！！");
+        //创建字节输入流对象
+        FileInputStream fileInput = null;
+        int getByte ;
+        //读取数据，使用try...catch...finally环绕处理
+        try{
+            fileInput =  new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流读数据\\测试文件2.txt");
+            //读取数据
+            while((getByte = fileInput.read()) != -1){
+                System.out.print((char) getByte);
+            }
+        }catch(IOException e){
+            e.printStackTrace();
+        }finally{
+            //释放资源
+            if(fileInput != null){
+                try {
+                    fileInput.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+
     }
 
 }
