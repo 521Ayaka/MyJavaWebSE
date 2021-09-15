@@ -1,4 +1,4 @@
-package A1_MyJava.基础知识.IO流.字节流.字节流的案例;
+package A1_MyJava.基础知识.IO流.字节流.字节流的案例.复制文本;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,7 +20,7 @@ public class DameIO_put {
         String str = "";
         int by;
         try{
-            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\测试文件1.txt");
+            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制文本\\测试文件1.txt");
             //读数据
             while( (by = (input.read())) != -1 ){
                 str = str + (char)by;
@@ -42,7 +42,7 @@ public class DameIO_put {
         FileOutputStream output = null;
         try{
             //追加写入
-            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\测试文件2.txt",true);
+            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制文本\\测试文件2.txt",true);
             output.write("\n\n".getBytes());//先给它换行
             output.write(str.getBytes());   //写入数据
         }catch (IOException e){
@@ -68,8 +68,8 @@ public class DameIO_put {
         FileInputStream input = null;
         FileOutputStream output = null;
         try{
-            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\测试文件1.txt");
-            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\测试文件2.txt",true);//追加写入
+            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制文本\\测试文件1.txt");
+            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制文本\\测试文件2.txt",true);//追加写入
             //边读别写
             output.write("\n\n".getBytes());//先给它换行
             int by;
