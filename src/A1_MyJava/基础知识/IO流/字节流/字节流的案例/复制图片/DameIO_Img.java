@@ -17,8 +17,8 @@ public class DameIO_Img {
 
         //try...catch...finally 进行操作。
         try {
-            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制图片\\图片\\猫羽雫.txt");
-            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制图片\\猫羽雫.txt");
+            input = new FileInputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制图片\\图片\\猫羽雫.jpg");
+            output = new FileOutputStream("D:\\源代码\\src\\A1_MyJava\\基础知识\\IO流\\字节流\\字节流的案例\\复制图片\\猫羽雫.jpg");
 
             //复制操作：
             byte [] array = new byte[1024*8];
