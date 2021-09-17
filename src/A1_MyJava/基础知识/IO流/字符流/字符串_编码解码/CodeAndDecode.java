@@ -1,4 +1,4 @@
-package A1_MyJava.基础知识.IO流.字符流.编码解码;
+package A1_MyJava.基础知识.IO流.字符流.字符串_编码解码;
 /*
 编码: [String类 中的 静态方法]
 

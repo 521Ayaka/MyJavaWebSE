@@ -9,7 +9,7 @@ public class Test中文编码 {
     public static void main(String[] args) throws IOException {
 
         //单字节 读取文件
-        FileInputStream fis1 = new FileInputStream("src\\A1_MyJava\\基础知识\\IO流\\字符流\\字符流概述\\文件.txt");
+        FileInputStream fis1 = new FileInputStream("src\\A1_MyJava\\基础知识\\IO流\\字符流\\字符流概述\\文件1.txt");
         int by;
         while ((by = fis1.read()) != -1){
             System.out.print((char) by); //abc ???ú
@@ -18,7 +18,7 @@ public class Test中文编码 {
         System.out.println("\n======================");
 
         //byte数组 读取文件
-        FileInputStream fis2 = new FileInputStream("src\\A1_MyJava\\基础知识\\IO流\\字符流\\字符流概述\\文件.txt");
+        FileInputStream fis2 = new FileInputStream("src\\A1_MyJava\\基础知识\\IO流\\字符流\\字符流概述\\文件1.txt");
         byte [] array = new byte[1024];
         int len;
         while ((len = fis2.read(array)) != -1){
