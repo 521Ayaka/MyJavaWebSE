@@ -5,7 +5,7 @@
 ```java
 public boolean createNewFile(){//...}  当具有该名称的文件不存在时，创建一个有该抽象路径名命名的新空文件
 
-public boolean mkdir(){//...}  创建有此抽象路径命名的目录
+public boolean mkdir(){//...}  创建有此抽象路径命名的目录 
 
 public boolean mkdirs(){//...} 创建由此抽象路径名命名的目录, 包含任何不需但不存在的父目录
 ```
