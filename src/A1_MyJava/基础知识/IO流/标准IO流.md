@@ -22,6 +22,8 @@ write                         写
 
 close                         关闭
 
+flush                         刷新流
+
 
 
 ### 其他常用单词

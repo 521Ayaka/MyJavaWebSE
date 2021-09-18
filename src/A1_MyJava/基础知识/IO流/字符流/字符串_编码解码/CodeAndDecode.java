@@ -12,7 +12,7 @@ package A1_MyJava.基础知识.IO流.字符流.字符串_编码解码;
 
 注意:
     1.这里当然用的IDEA平台来编写代码了！IDEAYYDS
-    2.不管是编码还是解码，规定编码解码格式后，都要进行异常处理
+    2.不管是编码还是解码，规定 编码解码格式 的操作，都要进行异常处理
       异常类: UnsupportedEncodingException
 
 */

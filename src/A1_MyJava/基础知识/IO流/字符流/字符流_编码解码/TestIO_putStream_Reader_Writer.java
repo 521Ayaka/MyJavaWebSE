@@ -59,6 +59,7 @@ public class TestIO_putStream_Reader_Writer {
             //写入数据
             oswNew.write("\r\n这里可能会出现乱码！");//杩欓噷鍙兘浼氬嚭鐜颁贡鐮侊紒
             /**
+             *
              * 分析原因：
              * 文件.txt是GBK文件
              * 写入时用的时UTF8进行编译解码的
@@ -139,10 +140,15 @@ public class TestIO_putStream_Reader_Writer {
             }
         }
 
-
-
-
     }
+
+
+
+
+
+
+
+
 
     //优化Code , 标准写法
     public static void method(){
