@@ -4,15 +4,15 @@
 
 ## 字节流
 
-![image-20210920223409581](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223409581.png)
+![image-20210920225251946](D:\源代码\img\MDimg\image-20210920225251946.png)
 
-![image-20210920223519903](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223519903.png)
+![image-20210920225313894](D:\源代码\img\MDimg\image-20210920225313894.png)
 
 ## 字符流
 
-![image-20210920223649240](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223649240.png)
+![image-20210920225351670](D:\源代码\img\MDimg\image-20210920225351670.png)
 
-![image-20210920223756777](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223756777.png)
+![image-20210920225400585](D:\源代码\img\MDimg\image-20210920225400585.png)
 
 # File类
 
