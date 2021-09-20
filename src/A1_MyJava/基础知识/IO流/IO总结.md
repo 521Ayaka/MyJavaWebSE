@@ -1,3 +1,19 @@
+
+
+# 图解
+
+## 字节流
+
+![image-20210920223409581](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223409581.png)
+
+![image-20210920223519903](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223519903.png)
+
+## 字符流
+
+![image-20210920223649240](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223649240.png)
+
+![image-20210920223756777](C:\Users\Saber\AppData\Roaming\Typora\typora-user-images\image-20210920223756777.png)
+
 # File类
 
 ## 创建文件和目录
