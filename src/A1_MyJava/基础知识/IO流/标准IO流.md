@@ -30,3 +30,5 @@ flush                         刷新流
 
 review                   回顾
 
+folder                    文件夹
+
