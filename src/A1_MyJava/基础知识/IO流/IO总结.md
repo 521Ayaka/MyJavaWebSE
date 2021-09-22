@@ -1,22 +1,22 @@
+# IO流总结
 
+## 图解
 
-# 图解
+### 字节流
 
-## 字节流
+![ img ](https://gitee.com/embarrassing-sauce/My-img/raw/master/img1.png) 
 
-![image-20210920225251946](D:\源代码\img\MDimg\image-20210920225251946.png)
+![image-20210920225313894](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225313894.png)
 
-![image-20210920225313894](D:\源代码\img\MDimg\image-20210920225313894.png)
+### 字符流
 
-## 字符流
+![image-20210920225351670](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225351670.png)
 
-![image-20210920225351670](D:\源代码\img\MDimg\image-20210920225351670.png)
+![image-20210920225400585](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225400585.png)
 
-![image-20210920225400585](D:\源代码\img\MDimg\image-20210920225400585.png)
+## File类
 
-# File类 
-
-## 创建文件和目录
+### 创建文件和目录
 
 ```java
 public boolean createNewFile(){//...}  当具有该名称的文件不存在时，创建一个有该抽象路径名命名的新空文件
@@ -26,7 +26,7 @@ public boolean mkdir(){//...}  创建有此抽象路径命名的目录
 public boolean mkdirs(){//...} 创建由此抽象路径名命名的目录, 包含任何不需但不存在的父目录
 ```
 
-## File 的 Method
+### File 的 Method
 
 ```java
 File类判断和获取功能：
@@ -50,17 +50,17 @@ public String[] list(){//...}   返回此抽象路径名表示的目录中的文
 public File[] listFiles(){//...} 返回此抽象路径名表示的目录中的文件和目录的File对象数组
 ```
 
-## File删除Method
+### File删除Method
 
 ```java
 //public boolean delete(){//...}   删除由此抽象路径名表示的文件或目录
 ```
 
-# FileInputStream  FileOutputStream
+## FileInputStream  FileOutputStream
 
-## FileOutputStream 输出流  用来写入数据
+### FileOutputStream 输出流  用来写入数据
 
-### 标准写数据的Code
+#### 写数据的Code // jdk7 之前 //
 
 ```java
 FileOutputStream out = null;
@@ -83,11 +83,11 @@ try{
 }
 ```
 
+#### 写数据的Code // jdk7 后改进
 
+### FileInputStream 输出流  用来写入数据
 
-## FileInputStream 输出流  用来写入数据
-
-### 标准读数据的Code  --单字节写入
+#### 读数据的Code  --单字节写入
 
 ```java
 //创建字节输入流对象
@@ -115,7 +115,7 @@ try{
 }
 ```
 
-### 标准读数据的Code  --byte[ ]数组节写入
+#### 读数据的Code  --byte[ ]数组节写入
 
 ```java
 
@@ -145,9 +145,9 @@ try{
 
 
 
-# BufferedInputStream  BufferedOutputStream
+## BufferedInputStream  BufferedOutputStream
 
-## 缓冲流案例 不同复制视频的运行时间
+### 缓冲流案例 不同复制视频的运行时间
 
 ```JAVA
 import java.io.*;
@@ -414,7 +414,7 @@ public class DameBufferedIO_putStream {
     }
 ```
 
-## 标准写法 缓冲流赋值文件
+### 写法 缓冲流赋值文件
 
 ```java
 		//创建
@@ -457,7 +457,7 @@ public class DameBufferedIO_putStream {
 
 
 
-
+![image-20210922192323807](D:\源代码\img\MDimg\image-20210922192323807.png)
 
 
 
