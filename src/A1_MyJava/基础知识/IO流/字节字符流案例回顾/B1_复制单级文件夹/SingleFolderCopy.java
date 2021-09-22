@@ -45,7 +45,7 @@ public class SingleFolderCopy {
                 byte[] array = new byte[1024];
                 int len;
                 while ((len = bis.read(array)) != -1) {
-                    bos.write(array,0,len);
+                    bos.write(array, 0, len);
                 }
 
             } catch (IOException e) {
@@ -53,14 +53,14 @@ public class SingleFolderCopy {
             } finally {
                 if (bis != null) {
                     try {
-                        bis.close();
+                        bis.close();//释放资源
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
                 if (bos != null) {
                     try {
-                        bos.close();
+                        bos.close();//释放资源
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
