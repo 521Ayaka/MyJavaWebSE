@@ -1,4 +1,6 @@
-package A1_MyJava.»ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°.Í¸Ã÷´°Ìå;
+package A1_MyJava.åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ .é€æ˜çª—ä½“;
+
+//icon.setImage(icon.getImage().getScaledInstance(392,400,Image.SCALE_DEFAULT)); //å›¾ç‰‡å¤§å°
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -13,75 +15,75 @@ import javax.imageio.ImageIO;
 
 
 /**
- * Í¼Æ¬´¦Àí¹¤¾ßÀà »ùÓÚhttps://blog.csdn.net/beinlife/article/details/53665152 ¸ÄÔì
+ * å›¾ç‰‡å¤„ç†å·¥å…·ç±» åŸºäºhttps://blog.csdn.net/beinlife/article/details/53665152 æ”¹é€ 
  */
 public class Test2 {
 
 
     /**
-     * Éú³É±³¾°Í¸Ã÷µÄ ÎÄ×ÖË®Ó¡£¬ÎÄ×ÖÎ»ÓÚÍ¸Ã÷ÇøÓòÕıÖĞÑë£¬¿ÉÉèÖÃĞı×ª½Ç¶È
+     * ç”ŸæˆèƒŒæ™¯é€æ˜çš„ æ–‡å­—æ°´å°ï¼Œæ–‡å­—ä½äºé€æ˜åŒºåŸŸæ­£ä¸­å¤®ï¼Œå¯è®¾ç½®æ—‹è½¬è§’åº¦
      *
-     * @param width Éú³ÉÍ¼Æ¬¿í¶È
-     * @param heigth Éú³ÉÍ¼Æ¬¸ß¶È
-     * @param text Ë®Ó¡ÎÄ×Ö
-     * @param color ÑÕÉ«¶ÔÏó
-     * @param font awt×ÖÌå
-     * @param degree Ë®Ó¡ÎÄ×ÖĞı×ª½Ç¶È
-     * @param alpha Ë®Ó¡²»Í¸Ã÷¶È0f-1.0f
+     * @param width ç”Ÿæˆå›¾ç‰‡å®½åº¦
+     * @param heigth ç”Ÿæˆå›¾ç‰‡é«˜åº¦
+     * @param text æ°´å°æ–‡å­—
+     * @param color é¢œè‰²å¯¹è±¡
+     * @param font awtå­—ä½“
+     * @param degree æ°´å°æ–‡å­—æ—‹è½¬è§’åº¦
+     * @param alpha æ°´å°ä¸é€æ˜åº¦0f-1.0f
      */
     public static BufferedImage waterMarkByText(int width, int heigth, String text, Color color,
                                                 Font font, Double degree, float alpha) {
         BufferedImage buffImg = new BufferedImage(width, heigth, BufferedImage.TYPE_INT_RGB);
-        /**2¡¢µÃµ½»­±Ê¶ÔÏó*/
+        /**2ã€å¾—åˆ°ç”»ç¬”å¯¹è±¡*/
         Graphics2D g2d = buffImg.createGraphics();
-        // ----------  Ôö¼ÓÏÂÃæµÄ´úÂëÊ¹µÃ±³¾°Í¸Ã÷  -----------------
+        // ----------  å¢åŠ ä¸‹é¢çš„ä»£ç ä½¿å¾—èƒŒæ™¯é€æ˜  -----------------
         buffImg = g2d.getDeviceConfiguration()
                 .createCompatibleImage(width, heigth, Transparency.TRANSLUCENT);
         g2d.dispose();
         g2d = buffImg.createGraphics();
-        // ----------  ±³¾°Í¸Ã÷´úÂë½áÊø  -----------------
+        // ----------  èƒŒæ™¯é€æ˜ä»£ç ç»“æŸ  -----------------
 
-        // ÉèÖÃ¶ÔÏß¶ÎµÄ¾â³İ×´±ßÔµ´¦Àí
+        // è®¾ç½®å¯¹çº¿æ®µçš„é”¯é½¿çŠ¶è¾¹ç¼˜å¤„ç†
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
                 RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 
-        //°ÑÔ´Í¼Æ¬Ğ´Èë
+        //æŠŠæºå›¾ç‰‡å†™å…¥
 //            g2d.drawImage(srcImg.getScaledInstance(srcImg.getWidth(null),
 //                    srcImg.getHeight(null), Image.SCALE_SMOOTH), 0, 0,null);
 
-        // ÉèÖÃË®Ó¡Ğı×ª
+        // è®¾ç½®æ°´å°æ—‹è½¬
         if (null != degree) {
-            //×¢Òârotateº¯Êı²ÎÊıtheta£¬Îª»¡¶ÈÖÆ£¬¹ÊĞèÓÃMath.toRadians×ª»»Ò»ÏÂ
-            //ÒÔ¾ØĞÎÇøÓòÖĞÑëÎªÔ²ĞÄĞı×ª
+            //æ³¨æ„rotateå‡½æ•°å‚æ•°thetaï¼Œä¸ºå¼§åº¦åˆ¶ï¼Œæ•…éœ€ç”¨Math.toRadiansè½¬æ¢ä¸€ä¸‹
+            //ä»¥çŸ©å½¢åŒºåŸŸä¸­å¤®ä¸ºåœ†å¿ƒæ—‹è½¬
             g2d.rotate(Math.toRadians(degree), (double) buffImg.getWidth() / 2,
                     (double) buffImg.getHeight() / 2);
         }
 
-        // ÉèÖÃÑÕÉ«
+        // è®¾ç½®é¢œè‰²
         g2d.setColor(color);
 
-        // ÉèÖÃ Font
+        // è®¾ç½® Font
         g2d.setFont(font);
 
-        //ÉèÖÃÍ¸Ã÷¶È:1.0fÎªÍ¸Ã÷¶È £¬Öµ´Ó0-1.0£¬ÒÀ´Î±äµÃ²»Í¸Ã÷
+        //è®¾ç½®é€æ˜åº¦:1.0fä¸ºé€æ˜åº¦ ï¼Œå€¼ä»0-1.0ï¼Œä¾æ¬¡å˜å¾—ä¸é€æ˜
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-        //»ñÈ¡ÕæÊµ¿í¶È
+        //è·å–çœŸå®å®½åº¦
         float realWidth = getRealFontWidth(text);
         float fontSize = font.getSize();
-        //¼ÆËã»æÍ¼Æ«ÒÆx¡¢y£¬Ê¹µÃÊ¹µÃË®Ó¡ÎÄ×ÖÔÚÍ¼Æ¬ÖĞ¾ÓÖĞ
-        //ÕâÀïĞèÒªÀí½âx¡¢y×ø±êÊÇ»ùÓÚGraphics2D.rotate¹ıºóµÄ×ø±êÏµ
+        //è®¡ç®—ç»˜å›¾åç§»xã€yï¼Œä½¿å¾—ä½¿å¾—æ°´å°æ–‡å­—åœ¨å›¾ç‰‡ä¸­å±…ä¸­
+        //è¿™é‡Œéœ€è¦ç†è§£xã€yåæ ‡æ˜¯åŸºäºGraphics2D.rotateè¿‡åçš„åæ ‡ç³»
         float x = 0.5f * width - 0.5f * fontSize * realWidth;
         float y = 0.5f * heigth + 0.5f * fontSize;
-        //È¡»æÖÆµÄ×Ö´®¿í¶È¡¢¸ß¶ÈÖĞ¼äµã½øĞĞÆ«ÒÆ£¬Ê¹µÃÎÄ×ÖÔÚÍ¼Æ¬×ø±êÖĞ¾ÓÖĞ
+        //å–ç»˜åˆ¶çš„å­—ä¸²å®½åº¦ã€é«˜åº¦ä¸­é—´ç‚¹è¿›è¡Œåç§»ï¼Œä½¿å¾—æ–‡å­—åœ¨å›¾ç‰‡åæ ‡ä¸­å±…ä¸­
         g2d.drawString(text, x, y);
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         g2d.dispose();
-//        System.out.println("Ìí¼ÓË®Ó¡ÎÄ×ÖÍê³É!");
+//        System.out.println("æ·»åŠ æ°´å°æ–‡å­—å®Œæˆ!");
         return buffImg;
 
     }
     public static BufferedImage waterMarkByText(int width, int heigth, String text, Color color, float alpha) {
-        //jdkÄ¬ÈÏ×ÖÌå
+        //jdké»˜è®¤å­—ä½“
         Font font = new Font("Dialog", Font.ROMAN_BASELINE, 33);
         return waterMarkByText(width, heigth, text, color,font, -30d, alpha);
     }
@@ -99,7 +101,7 @@ public class Test2 {
     }
 
     /**
-     * »ñÈ¡ÕæÊµ×Ö·û´®¿í¶È£¬ascii×Ö·ûÕ¼ÓÃ0.5£¬ÖĞÎÄ×Ö·ûÕ¼ÓÃ1.0
+     * è·å–çœŸå®å­—ç¬¦ä¸²å®½åº¦ï¼Œasciiå­—ç¬¦å ç”¨0.5ï¼Œä¸­æ–‡å­—ç¬¦å ç”¨1.0
      */
     private static float getRealFontWidth(String text) {
         int len = text.length();
@@ -118,15 +120,15 @@ public class Test2 {
     public static void main(String[] args) {
         int width = 200;
         int heigth = 150;
-        Font font = new Font("Î¢ÈíÑÅºÚ", Font.ROMAN_BASELINE, 33);//×ÖÌå
-        BufferedImage bi1 = waterMarkByText(width, heigth, "²âÊÔaB~,", Color.GRAY, font, -30d,
-                0.2f);//¸øÍ¼Æ¬Ìí¼ÓÎÄ×ÖË®Ó¡
-//        BufferedImage bi = waterMarkByText(width, heigth, "²âÊÔaB~,", Color.GRAY, -30d,
-//                0.2f);//¸øÍ¼Æ¬Ìí¼ÓÎÄ×ÖË®Ó¡
-//        BufferedImage bi2 = waterMarkByText(width, heigth, "²âÊÔaB~,");//¸øÍ¼Æ¬Ìí¼ÓÎÄ×ÖË®Ó¡
-//        BufferedImage bi3 = waterMarkByText("²âÊÔaB~,");
+        Font font = new Font("å¾®è½¯é›…é»‘", Font.ROMAN_BASELINE, 33);//å­—ä½“
+        BufferedImage bi1 = waterMarkByText(width, heigth, "æµ‹è¯•aB~,", Color.GRAY, font, -30d,
+                0.2f);//ç»™å›¾ç‰‡æ·»åŠ æ–‡å­—æ°´å°
+//        BufferedImage bi = waterMarkByText(width, heigth, "æµ‹è¯•aB~,", Color.GRAY, -30d,
+//                0.2f);//ç»™å›¾ç‰‡æ·»åŠ æ–‡å­—æ°´å°
+//        BufferedImage bi2 = waterMarkByText(width, heigth, "æµ‹è¯•aB~,");//ç»™å›¾ç‰‡æ·»åŠ æ–‡å­—æ°´å°
+//        BufferedImage bi3 = waterMarkByText("æµ‹è¯•aB~,");
         try {
-            ImageIO.write(bi1, "png", new File("D:\\Ô´´úÂë\\img\\³ÇÊĞÌì¿ÕÎİ.jpg"));//Ğ´ÈëÎÄ¼ş
+            ImageIO.write(bi1, "png", new File("D:\\æºä»£ç \\img\\åŸå¸‚å¤©ç©ºå±‹.jpg"));//å†™å…¥æ–‡ä»¶
             System.out.println(Color.decode("#00bcd4"));
         } catch (IOException e) {
             e.printStackTrace();
