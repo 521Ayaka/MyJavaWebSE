@@ -48,7 +48,7 @@ public class DomeJFrame {
         //===============================================================
         JLabel jL = new JLabel("",SwingConstants.CENTER);
         jL.setSize(100,500);
-        ImageIcon image = new ImageIcon("src/MyImg/A0.jpg");
+        ImageIcon image = new ImageIcon("src/MyImg/A00.jpg");
 
 
         //…Ë÷√Õº∆¨¥Û–°
