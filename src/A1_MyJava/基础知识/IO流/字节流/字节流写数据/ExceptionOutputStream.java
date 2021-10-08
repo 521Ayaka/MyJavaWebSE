@@ -3,7 +3,7 @@ package A1_MyJava.基础知识.IO流.字节流.字节流写数据;
 
 一个标准的 字节流写数据 加 异常处理
 
-使用 try...catch...finally
+使用 try...catch...finally [JDK7之前的处理方法]
 
 */
 
