@@ -1787,9 +1787,9 @@ public class Student implements Serializable/*1: 实现Serializable接口*/ {
 
 
 
-[ @笔记链接 ](https://gitee.com/embarrassing-sauce/my-code/tree/master/src/A1_MyJava/基础知识/IO流)
+## 笔记链接
 
-
+### [ @笔记链接 ](https://gitee.com/embarrassing-sauce/my-code/tree/master/src/A1_MyJava/基础知识/IO流)
 
 
 
