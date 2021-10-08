@@ -10,27 +10,27 @@
 
 ### 字节流
 
-![ img ](https://gitee.com/embarrassing-sauce/My-img/raw/master/img1.png) 
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225251946.png) 
 
-![image-20210920225313894](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225313894.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225313894.png)
 
 ### 字符流
 
-![image-20210920225351670](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225351670.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225351670.png)
 
-![image-20210920225400585](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225400585.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210920225400585.png)
 
 ### 对象序列化流
 
-![img-163360938556610](D:\源代码\img\MDimg\img-163360938556610.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-163360938556610.png)
 
-![问题与解决-163360990564813](D:\源代码\img\MDimg\问题与解决-163360990564813.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/问题与解决-163360990564813.png)
 
 ### 打印流
 
-![img](D:\源代码\img\MDimg\img-16336038884631.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336038884631.png)
 
-![img](D:\源代码\img\MDimg\img-16336039094452.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336039094452.png)
 
 ====================================================================================================
 
@@ -40,7 +40,7 @@
 
 ## 先复习异常处理
 
-![image-20210922192323807](D:\源代码\img\MDimg\image-20210922192323807.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20210922192323807.png)
 
 ### 直接上代码
 
@@ -741,9 +741,9 @@ public class DameBufferedIO_putStream {
 
 ## 字符流
 
-![img](D:\源代码\img\MDimg\img-16336051640413.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336051640413.png)
 
-![çźç čĄ¨](D:\源代码\img\MDimg\编码表.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/编码表.png)
 
 
 
@@ -751,7 +751,7 @@ public class DameBufferedIO_putStream {
 
 ### 字符输入流 InputStreamReader
 
-![TestInputStreamReader_Method](D:\源代码\img\MDimg\TestInputStreamReader_Method.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/TestInputStreamReader_Method.png)
 
 ```java
 import java.io.FileInputStream;
@@ -818,7 +818,7 @@ public class TestInputStreamReader_Method {
 
 ### 字符输出流 OutputStreamWriter
 
-![TestOutputStreamWriter_Method](D:\源代码\img\MDimg\TestOutputStreamWriter_Method.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/TestOutputStreamWriter_Method.png)
 
 ```java
 import java.io.FileOutputStream;
@@ -956,11 +956,11 @@ public class DameFileReader_Writer {
 
 ## 字符缓冲流
 
-![img](D:\源代码\img\MDimg\img-16336056277314.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336056277314.png)
 
 ### 字符缓冲流特有的Method
 
-![img](D:\源代码\img\MDimg\img-16336057736955.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336057736955.png)
 
 ### 代码
 
@@ -1123,7 +1123,7 @@ public class NewJavaCopy {
 
 ### 标准输入流
 
-![img](D:\源代码\img\MDimg\img-16336090111437.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336090111437.png)
 
 ```java
 package A1_MyJava.基础知识.IO流.特殊操作流.标准输入输出流.标准输入流;
@@ -1272,7 +1272,7 @@ public class StandardInputStream {
 
 ### 标准输出流
 
-![img](D:\源代码\img\MDimg\img-16336088557106.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336088557106.png)
 
 ```java
 package A1_MyJava.基础知识.IO流.特殊操作流.标准输入输出流.标准输出流;
@@ -1308,7 +1308,7 @@ public class StandardPrintStream {
 
 ### 字节打印流 PrintStream
 
-![img](D:\源代码\img\MDimg\img-16336092207808.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-16336092207808.png)
 
 ```java
 import java.io.IOException;
@@ -1470,13 +1470,13 @@ public class PrintWriterCopy {
 
 ### 概括
 
-![img](D:\源代码\img\MDimg\img-163360938556610.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-163360938556610.png)
 
 
 
 ### 对象序列化流 ObjectOutputStream
 
-![img](D:\源代码\img\MDimg\img-163360945961311.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-163360945961311.png)
 
 ```java
 /*
@@ -1628,7 +1628,7 @@ public class Student2 implements Serializable/*实现该接口后该类的对象
 
 ### 对象反序列化流 ObjectInputStream
 
-![img](D:\源代码\img\MDimg\img-163360972468112.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/img-163360972468112.png)
 
 ```java
 import java.io.FileInputStream;
@@ -1667,7 +1667,7 @@ public class TestObjectInputStream {
 
 #### 问题与解决
 
-![éŽé˘ä¸č§Łĺł](D:\源代码\img\MDimg\问题与解决-163360990564813.png)
+![ img ](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/问题与解决-163360990564813.png)
 
 
 
@@ -1787,25 +1787,7 @@ public class Student implements Serializable/*1: 实现Serializable接口*/ {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[ @笔记链接 ](https://gitee.com/embarrassing-sauce/my-code/tree/master/src/A1_MyJava/基础知识/IO流)
 
 
 
