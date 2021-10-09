@@ -39,8 +39,8 @@ public class RunsName {
         MyThreadName tn1 = new MyThreadName();
         MyThreadName tn2 = new MyThreadName();
         //设置名字
-        tn1.setName("尴尬001");
-        tn2.setName("尴尬002");
+        tn1.setName("尴尬001")/*设置名字*/;
+        tn2.setName("尴尬002")/*设置名字*/;
         //启动线程
         tn1.start(); // 尴尬001 : 67 ...
         tn2.start(); // 尴尬002 : 66 ...
@@ -55,7 +55,7 @@ class MyThreadName extends Thread {
     public void run() {
         System.out.println(Thread.currentThread().getName());
         for (int i = 0; i < 100; i++) {
-            System.out.println(getName() + " : " + i);
+            System.out.println(getName()/*调用名字*/ + " : " + i);
         }
     }
 }
