@@ -13,6 +13,12 @@ public class RunsMethod {
         t12.start();
         t13.start();
 
+        try {
+            Thread.sleep(1000*20);
+            System.exit(0);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -8,9 +8,7 @@ public class MyRunnable implements Runnable {
     @Override
     public void run() {
         while (true) {
-
             if (jia % 2 == 0) {
-
                 synchronized (/*object*/this) {
                     if (tick > 0) {
                         try {
