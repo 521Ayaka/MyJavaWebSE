@@ -11,7 +11,7 @@ package A1_MyJava.基础知识.网络编程.端口.UDP协议;
 import java.io.IOException;
 import java.net.*;
 
-public class TextUDP {
+public class TestUDP_01 {
 
     public static void main(String[] args) throws IOException {
 
@@ -29,7 +29,7 @@ public class TextUDP {
         InetAddress address = InetAddress.getByName("192.168.46.201");
         int port = 10086;
         DatagramPacket dp = new DatagramPacket(buf,length,address,port);*/
-        DatagramPacket dp = new DatagramPacket(buf,buf.length,InetAddress.getByName("192.168.46.201"),10086);
+        DatagramPacket dp = new DatagramPacket(buf,buf.length,InetAddress.getByName("192.168.94.201"),10086);
 
 
         //3.调用DatagramSocket对象的方法发送数据
