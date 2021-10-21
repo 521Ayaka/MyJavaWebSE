@@ -1,4 +1,4 @@
-package A1_MyJava.基础知识.网络编程.端口.UDP协议.UDP发送接收数据复习;
+package A1_MyJava.基础知识.网络编程.网络通信.UDP协议.UDP发送接收数据复习;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

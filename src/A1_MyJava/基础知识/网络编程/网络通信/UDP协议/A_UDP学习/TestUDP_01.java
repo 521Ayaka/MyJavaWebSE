@@ -1,4 +1,4 @@
-package A1_MyJava.基础知识.网络编程.端口.UDP协议;
+package A1_MyJava.基础知识.网络编程.网络通信.UDP协议.A_UDP学习;
 /*
     UDP发送数据的步骤
         1.创建发送端的Socket对象(DatagramSocket)
