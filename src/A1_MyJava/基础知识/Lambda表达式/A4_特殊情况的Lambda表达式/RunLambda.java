@@ -23,11 +23,19 @@ public class RunLambda {
         //如果{代码块} 中 只有一条语句,还可以省略 该语句的";"  和 "{"   "}"
         me(s -> System.out.println(s + 1));
 
+        //================================================
+        //前提1: 如果{代码块} 中 只有一条语句,还可以省略 该语句的";"  和 "{"   "}"
+        //前提2: 这条语句是个返回值的话, return也要省略, 不省略不行
+        System.out.println( rt( (x,y)-> x + y )  /*省略了return*/  );
 
     }
 
     private static void me(MyInterface impl) {
         impl.method("这就尴尬了");
+    }
+
+    private static int rt(RutInterface impl){
+        return impl.method(666, 666000);
     }
 
 }
