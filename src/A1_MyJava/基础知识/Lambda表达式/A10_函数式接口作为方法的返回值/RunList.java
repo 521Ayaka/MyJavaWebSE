@@ -45,7 +45,7 @@ public class RunList {
     //使用Lambda表达式作为参数返回值
     private static Comparator<String> getComparator02() {
         //compare(String o1,String o2)
-        return (x, y) -> x.length() - y.length();
+        return (o1, o2) -> o1.length() - o2.length();
     }
 
 }
