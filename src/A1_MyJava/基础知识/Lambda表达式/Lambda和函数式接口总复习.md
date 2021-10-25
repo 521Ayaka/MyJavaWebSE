@@ -8,11 +8,11 @@
 
 ### 图片
 
-![初步体验Lambda](D:\源代码\img\MDimg\初步体验Lambda.png)
+![初步体验Lambda](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/初步体验Lambda.png)
 
 
 
-![Lambda表达式格式](D:\源代码\img\MDimg\Lambda表达式格式.png)
+![Lambda表达式格式](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Lambda表达式格式.png)
 
 ### 代码
 
@@ -129,7 +129,7 @@ public interface MyInterface {
 
 ### 图片
 
-![Lambda表达式省略规则](D:\源代码\img\MDimg\Lambda表达式省略规则.png)
+![Lambda表达式省略规则](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Lambda表达式省略规则.png)
 
 
 
@@ -202,7 +202,7 @@ public interface RutInterface {
 
 ### 图片
 
-![Lambda表达式注意事项](D:\源代码\img\MDimg\Lambda表达式注意事项.png)
+![Lambda表达式注意事项](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Lambda表达式注意事项.png)
 
 
 
@@ -282,13 +282,13 @@ public interface MyInterfaceMe2s {
 
 ### 图片
 
-![方法引用](D:\源代码\img\MDimg\方法引用.png)
+![方法引用](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/方法引用.png)
 
-![引用类方法](D:\源代码\img\MDimg\引用类方法.png)
+![引用类方法](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/引用类方法.png)
 
-![引用类的实例方法](D:\源代码\img\MDimg\引用类的实例方法.png)
+![引用类的实例方法](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/引用类的实例方法.png)
 
-![引用类的实例方法注意事项](D:\源代码\img\MDimg\引用类的实例方法注意事项.png)
+![引用类的实例方法注意事项](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/引用类的实例方法注意事项.png)
 
 ### 代码
 
@@ -431,7 +431,7 @@ public class Me {
 
 ### 图片
 
-![引用构造器](D:\源代码\img\MDimg\引用构造器.png)
+![引用构造器](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/引用构造器.png)
 
 ### 代码
 
@@ -527,7 +527,7 @@ public class Student {
 
 ### 图片
 
-![函数式接口](D:\源代码\img\MDimg\函数式接口.png)
+![函数式接口](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/函数式接口.png)
 
 ### 代码
 
@@ -578,7 +578,7 @@ public interface MyInterface {
 
 #### 图片
 
-![函数式接口作参数](D:\源代码\img\MDimg\函数式接口作参数.png)
+![函数式接口作参数](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/函数式接口作参数.png)
 
 #### 代码
 
@@ -617,7 +617,7 @@ public class RunThread {
 
 #### 图片
 
-![函数式接口作返回值](D:\源代码\img\MDimg\函数式接口作返回值.png)
+![函数式接口作返回值](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/函数式接口作返回值.png)
 
 #### 代码
 
@@ -691,13 +691,13 @@ public class RunList {
 
 ## 常用函数式接口
 
-![image-20211025111730019](D:\源代码\img\MDimg\image-20211025111730019.png)
+![image-20211025111730019](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/image-20211025111730019.png)
 
 ### Supplier接口
 
 #### 图片
 
-![Supplier](D:\源代码\img\MDimg\Supplier.png)
+![Supplier](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Supplier.png)
 
 #### 代码
 
@@ -745,7 +745,7 @@ public class TestSupplier {
 
 #### 图片
 
-![Consumer](D:\源代码\img\MDimg\Consumer.png)
+![Consumer](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Consumer.png)
 
 #### 代码
 
@@ -786,7 +786,7 @@ public class TestConsumer {
 
 #### 图片
 
-![Predicate](D:\源代码\img\MDimg\Predicate.png)
+![Predicate](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Predicate.png)
 
 #### 代码
 
@@ -886,7 +886,7 @@ public class TestPredicate {
 
 #### 图片
 
-![Function](D:\源代码\img\MDimg\Function.png)
+![Function](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Function.png)
 
 #### 代码
 
