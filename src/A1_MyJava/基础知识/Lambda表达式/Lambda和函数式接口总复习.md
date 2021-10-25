@@ -1,8 +1,6 @@
 # Lambda表达式 && 函数式接口复习
 
-
-
-
+![Lambda表达式](https://gitee.com/embarrassing-sauce/my-code/raw/master/img/MDimg/Lambda表达式.png)
 
 ## Lambda表达式 #格式
 
