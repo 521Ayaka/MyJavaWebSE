@@ -13,7 +13,8 @@ package A1_MyJava.基础知识.λ和Stream流.A2_Stream流的生成方式;
 
 
 import java.util.*;
-import java.util.stream.Stream;
+import java.util.function.*;
+import java.util.stream.*;
 
 public class TestNewStream {
 
@@ -32,12 +33,12 @@ public class TestNewStream {
         Stream<String> mapKeyStream = map.keySet().stream();
         Stream<Integer> mapValueStream = map.values().stream();
 
-        //通过泛型的
+        //通过泛型类型为Map集合
+        //Stream<Map<String,Integer>> sm =map.entrySet().stream();
 
         //3: 数组 可以通过Stream接口的静态方法:
         //      of(T... values)生成流
         String[] array = new String[10];
-
 
 
 
