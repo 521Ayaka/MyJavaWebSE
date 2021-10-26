@@ -957,7 +957,7 @@ public class TestFunction {
 |          单词           |      翻译//解释      |
 | :---------------------: | :------------------: |
 |                         |                      |
-|       **Lambda**        |        **λ**         |
+|         Lambda          |        **λ**         |
 | **FunctionalInterface** |  **函数式接口注解**  |
 |     **Comparable**      |     **自然排序**     |
 |     **Comparator**      |    **比较器排序**    |
