@@ -13,7 +13,6 @@ package A1_MyJava.基础知识.λ和Stream流.A2_Stream流的生成方式;
 
 
 import java.util.*;
-import java.util.function.*;
 import java.util.stream.*;
 
 public class TestNewStream {
@@ -38,14 +37,14 @@ public class TestNewStream {
 
         //3: 数组 可以通过Stream接口的静态方法:
         //      of(T... values)生成流
-        String[] array = new String[10];
+        String[] strArray1 = {"永远","爱你"};
+        Stream<String> strStream1 = Stream.of(strArray1);
+        Stream<String> strStream2 = Stream.of("永远","爱你");
+        Stream<Integer> intStream = Stream.of(1,2,3);//可变参数，可以直接写个数组，也可以单独写数值
 
 
 
-
-
-
-        }
+    }
 
 
 
