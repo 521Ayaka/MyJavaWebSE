@@ -1,6 +1,5 @@
 package Gui±à³Ì.JGame;
 
-import A1_MyJava.Gui±à³Ì.JGame.PanelGame;
 
 import javax.swing.*;
 import java.awt.*;
