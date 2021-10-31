@@ -16,11 +16,24 @@ package 基础知识.反射.A4_反射获取构造器方法;
 ===================================================================================
 
 【获取公共的构造器】
-
+        Constructor<T>	getConstructor(class<?>... parameterTypes)
+        返回一个 Constructor对象，该对象反映 Constructor对象表示的类的指定的公共 类函数。
 
 
 【获取所有的构造器】:
+        Constructor<T>	getDeclaredConstructor(class<?>... parameterTypes)
+        返回一个 Constructor对象，该对象反映 Constructor对象表示的类或接口的指定 类函数。
 
+----------------------------------------------------------------------------------
+
+参数: 你要获取的构造器方法的参数个数和参数类型对应的字节码文件对象。
+
+类
+    Constructor提供了一个类的单个构造函数的信息和访问。
+
+Constructor中 有一个方法:
+    T newInstance(Object... initargs)
+    使用此 Constructor对象表示的构造函数，使用指定的初始化参数来创建和初始化构造函数的声明类的新实例。
 
 */
 
