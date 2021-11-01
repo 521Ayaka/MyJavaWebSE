@@ -38,6 +38,7 @@ public class NewInstance02 {
         //public void setAccessible(boolean flag) 取消访问检测
         con.setAccessible(true);
 
+
         //创建对象
         Object obj = con.newInstance("尴尬酱");
         System.out.println(obj);
