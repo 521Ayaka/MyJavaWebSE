@@ -144,7 +144,9 @@ public class GetField {
         //TODO: 具体看练习 解决方案
         id.set(obj, "202002");
 
-        /** 给obj的 [成员变量 id] 赋值为 202002 */
+        /*
+        给obj的 [成员变量 id] 赋值为 202002
+        */
 
         System.out.println(obj);
         /*
