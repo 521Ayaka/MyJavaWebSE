@@ -12,7 +12,6 @@ Stream流的收集方法:
 */
 
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
