@@ -128,6 +128,7 @@ public class GetField {
         //获取: 公共成员变量 public int id;
         Field id = c.getDeclaredField("id");
 
+
         //反射获取c的构造器对象。
         Constructor<?> con = c.getConstructor();
         Object obj = con.newInstance();

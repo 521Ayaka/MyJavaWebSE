@@ -35,12 +35,18 @@ public class Student {
     public void method1() {
         System.out.println("method1");
     }
-    public void method2() {
-        System.out.println("method2");
+
+    public void method2(String name) {
+        this.name = name;
+        System.out.println("method2"+"  –’√˚:" + name);
     }
-    public void method3() {
-        System.out.println("method3");
+
+    public void method3(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("method3"+"  –’√˚:" + name + "ƒÍ¡‰:" + age);
     }
+
     public void method4() {
         System.out.println("method4");
     }
