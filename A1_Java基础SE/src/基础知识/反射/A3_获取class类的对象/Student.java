@@ -41,10 +41,11 @@ public class Student {
         System.out.println("method2"+"  姓名:" + name);
     }
 
-    public void method3(String name, int age) {
+    public String method3(String name, int age) {
         this.name = name;
         this.age = age;
         System.out.println("method3"+"  姓名:" + name + "年龄:" + age);
+        return "姓名:" + name + "年龄:" + age;
     }
 
     public void method4() {
