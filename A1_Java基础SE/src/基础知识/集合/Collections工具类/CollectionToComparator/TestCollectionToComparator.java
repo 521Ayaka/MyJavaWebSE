@@ -29,14 +29,20 @@ public class TestCollectionToComparator {
         list.add(stu5);
 
         //进行排序
-        Collections.sort(list, new Comparator<Student>() {
+        /*Collections.sort(list, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
                 int i = o1.getAge() - o2.getAge();
                 int num = i == 0 ? o1.getName().compareTo(o2.getName()) : i;
                 return num;
             }
+        });*/ //Lambda表达式进行改进
+        Collections.sort(list, (s1,s2)-> {
+            int num = s1.getAge() - s2.getAge();
+            return num == 0 ? s1.getName().compareTo(s2.getName()) : num;
         });
+
+
         Iterator<Student> itr = list.iterator();
         while (itr.hasNext()){
             Student stu = itr.next();
