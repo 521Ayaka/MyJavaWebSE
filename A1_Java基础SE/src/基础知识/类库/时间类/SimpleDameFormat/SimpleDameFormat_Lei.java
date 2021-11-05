@@ -33,7 +33,7 @@ Z ------- 时区 -------------- RFC 822 time zone  -0800
 
 [成员方法]:
           [格式化]: Date ---> String
-          public final String format(){//...} 将日期格式化成日期/时间字符串
+          public final String format(Date date){//...} 将日期格式化成日期/时间字符串
 
           [解析日期]: String ---> Date
           public Date parse(String source){//...} 从指定字符串的开始解析文本以生成日期

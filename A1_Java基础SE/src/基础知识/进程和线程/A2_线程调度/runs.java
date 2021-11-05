@@ -47,7 +47,11 @@ public class runs {
 
     public static void priority_MIN_TO_MAX(ThreadPriority tp,int p){
         //设置线程调度
-        tp.setPriority(p);
+        if (p>0 && p<=10){
+            tp.setPriority(p);
+        }else {
+            System.exit(0);
+        }
         tp.start();
     }
 

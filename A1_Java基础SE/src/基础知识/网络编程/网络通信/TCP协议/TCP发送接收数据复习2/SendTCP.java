@@ -6,6 +6,10 @@ import java.net.Socket;
 /*
     客户端:
             客户端发文件
+
+    使用用自动化结束标语 结束io读取数据
+    socketObj.shutdownOutput();
+
 */
 public class SendTCP {
 

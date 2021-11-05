@@ -25,7 +25,7 @@ public class ReceiveTCP {
                 //创建io流,将读取到的数据写入成 新文件
                 BufferedWriter bw = new BufferedWriter(new FileWriter(new File("A1_Java基础SE\\src\\基础知识\\网络编程\\网络通信\\TCP协议\\TCP发送接收数据复习2\\接收文件.txt")));
 
-                //创建io流, 反馈用户信息, 无法封装
+                //创建io流, 反馈用户信息
                 /*OutputStream os = s.getOutputStream();*/
                 BufferedWriter bwx = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
         ) {

@@ -19,7 +19,7 @@ public class ReceiveTCP {
                 Socket s = ss.accept();
                 //获取io流,读数据,封装成BufferedReader
                 BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
-                //创建io流, 反馈用户信息, 无法封装
+                //创建io流, 反馈用户信息
                 BufferedWriter bwx = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
         ) {
 
