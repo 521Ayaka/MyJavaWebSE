@@ -171,7 +171,7 @@ public class NewMethod {
         /*运行结果:
 
         private void 基础知识.反射.A3_获取class类的对象.Student.me()
-*/
+                                                                    */
 
         System.out.println("\n==================================================================\n");
     }
