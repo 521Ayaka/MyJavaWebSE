@@ -981,7 +981,6 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </user>
     <user id="285" parent="1" name="root">
       <Host>localhost</Host>
-      <Plugin>caching_sha2_password</Plugin>
     </user>
     <table id="286" parent="2" name="COLUMN_PRIVILEGES">
       <System>1</System>
