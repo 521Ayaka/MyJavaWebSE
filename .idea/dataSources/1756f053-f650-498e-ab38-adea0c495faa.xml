@@ -7060,91 +7060,95 @@ User</ColNames>
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="1483" parent="403" name="uid">
+    <column id="1483" parent="403" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
     </column>
     <column id="1484" parent="403" name="name">
       <Position>2</Position>
-      <DataType>varchar(32)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
     </column>
     <column id="1485" parent="403" name="age">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="1486" parent="403" name="score">
+    <column id="1486" parent="403" name="sex">
       <Position>4</Position>
-      <DataType>double(4,1 digit)|0s</DataType>
+      <DataType>varchar(5)|0s</DataType>
     </column>
-    <column id="1487" parent="403" name="birth_date">
+    <column id="1487" parent="403" name="address">
       <Position>5</Position>
-      <DataType>date|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="1488" parent="403" name="Up_data">
+    <column id="1488" parent="403" name="math">
       <Position>6</Position>
-      <DataType>timestamp|0s</DataType>
+      <DataType>int|0s</DataType>
     </column>
-    <column id="1489" parent="404" name="uid">
+    <column id="1489" parent="403" name="english">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="1490" parent="404" name="uid">
       <Position>1</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="1490" parent="404" name="name">
+    <column id="1491" parent="404" name="name">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
     </column>
-    <column id="1491" parent="404" name="age">
+    <column id="1492" parent="404" name="age">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="1492" parent="404" name="score">
+    <column id="1493" parent="404" name="score">
       <Position>4</Position>
       <DataType>double(4,1 digit)|0s</DataType>
     </column>
-    <column id="1493" parent="404" name="birth_date">
+    <column id="1494" parent="404" name="birth_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="1494" parent="404" name="Up_data">
+    <column id="1495" parent="404" name="Up_data">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="1495" parent="405" name="字符串">
+    <column id="1496" parent="405" name="字符串">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="1496" parent="405" name="整形">
+    <column id="1497" parent="405" name="整形">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="1497" parent="405" name="小数类型1">
+    <column id="1498" parent="405" name="小数类型1">
       <Position>3</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="1498" parent="405" name="小数类型2">
+    <column id="1499" parent="405" name="小数类型2">
       <Position>4</Position>
       <DataType>double(5,2 digit)|0s</DataType>
     </column>
-    <column id="1499" parent="405" name="日期1">
+    <column id="1500" parent="405" name="日期1">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="1500" parent="405" name="日期2">
+    <column id="1501" parent="405" name="日期2">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <column id="1501" parent="405" name="日期3">
+    <column id="1502" parent="405" name="日期3">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="1502" parent="405" name="布尔值">
+    <column id="1503" parent="405" name="布尔值">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="1503" parent="405" name="还有一些不常用的">
+    <column id="1504" parent="405" name="还有一些不常用的">
       <Position>9</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="1504" parent="405" name="end">
+    <column id="1505" parent="405" name="end">
       <Position>10</Position>
       <DataType>int|0s</DataType>
     </column>
