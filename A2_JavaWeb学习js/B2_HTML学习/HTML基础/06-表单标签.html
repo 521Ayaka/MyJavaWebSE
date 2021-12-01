@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--
+        action: 指定表单的提交的URL
+            表单项数据要想被提交，则必须指定其name属性
+        method: 指定表单提交的方式
+            1. get: 默认值
+                请求参数会拼接在URL后面
+                
+
+    -->
+    <form action="#" method="post">
+        <input type="text" name="username">
+        <input type="submit">
+    </form>
+
+    <br>
+
+    <div style="background: rgba(248,126,27,0.65); position:absolute;left: 300px; top: 100px; width: 600px; height: 600px">
+        <br>
+        <form action="#" method="post">
+
+            <input type="hidden" name="id" value="2020001">
+
+            <label for="username_name">用户名称:</label>
+            <input type="text" name="username" id="username_name"><br><br> <!--这里是name提交数据 不是value-->
+
+            <label for="password_name">用户密码:</label>
+            <input type="password" name="password" id="password_name"><br><br>
+
+            性别:
+            <input type="radio" name="gender_radio" value="1" id="nan_name"> <label for="nan_name">男</label>
+            <input type="radio" name="gender_radio" value="2" id="nv_name"> <label for="nv_name">女</label>
+
+            <br> <br>
+
+            爱好:
+            <input type="checkbox" name="hobby" value="1" id="hobby01"> <label for="hobby01">打原神</label>
+            <input type="checkbox" name="hobby" value="2" id="hobby02"> <label for="hobby02">打LOL</label>
+            <input type="checkbox" name="hobby" value="3" id="hobby03"> <label for="hobby03">吃吃吃</label>
+            <input type="checkbox" name="hobby" value="4" id="hobby04"> <label for="hobby04">喝喝喝</label>
+            <br><br>
+
+            上传头像:
+            <input type="file">
+            <br><br>
+
+            城市:
+            <select name="city">
+                <option>北京</option>
+                <option>樱花庄</option>
+                <option>稻妻城</option>
+                <option>璃月港</option>
+            </select>
+
+            <br><br>
+
+            个人描述:<br>
+            <textarea cols="20" rows="5"> <!--cols列 rows行-->
+
+            </textarea>
+
+            <br><br>
+
+            &nbsp;
+            <input type="submit" value="免费注册">&nbsp;
+            <input type="reset" value="重置按钮">&nbsp;
+            <input type="button" value="一个按钮">
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

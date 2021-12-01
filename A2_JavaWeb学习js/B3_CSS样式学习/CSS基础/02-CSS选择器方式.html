@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+    <style>
+
+        /*第一种方式: 元素选择器*/
+        div{
+            color: #FFA500;
+        }
+
+        /*第二种方式: id选择器*/
+        #div01{
+            color: cyan; /*前面的元素选择器div 这个id也是div 使用特性:使用范围小的样式*/
+        }
+
+        /*第三种方式: 类选择器*/
+        .cls_css{
+            color: blueviolet;
+        }
+
+    </style>
+
+
+<body>
+
+    <div>第一种方式</div> <br>
+
+    <div id="div01">第二种方式</div> <br> <!--id是唯一的作用范围唯一-->
+
+    <div class="cls_css">第三种方式</div> <br>
+    <span class="cls_css">第三种方式</span> <br>
+
+</body>
+</html>
