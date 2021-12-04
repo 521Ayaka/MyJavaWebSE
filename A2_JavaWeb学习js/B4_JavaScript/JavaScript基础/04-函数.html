@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>
+    <img src="../img/img_4.png">
+    <img src="../img/img_5.png">
+</h2>
+
+
+<script>
+
+    function addMethod1(name,age){ //参数类型不用写
+        alert("姓名：" + name + ", 年龄：" + age);
+        //return可加可不加
+        return "去你的";
+    }
+
+    function addMethod2(name,age){ //参数类型不用写
+        alert("姓名：" + name + ", 年龄：" + age);
+        //return可加可不加
+    }
+
+    let str = addMethod1("何雪擦",22);
+    alert(str);
+
+    addMethod2("何雪擦",22); //无返回值
+
+
+    alert("============方式二===========");
+
+
+    var addSum = function (num1,num2){
+        return num1 + num2;
+    }
+
+    //调用：JS中,函数调用可传入任意的参数
+    var getSun1 = addSum(1,2); // 1 + 2 = 3
+    alert(getSun1);//3
+
+    var getSum2 = addSum(1,2,3); //方法中只要两个参数 按顺序是 1 , 2;  1 + 2 = 3
+    alert(getSum2);//3
+
+    var getSum3 = addSum(6); // 第二个无参数 即为NAN;  6 + NAN = NAN
+    alert(getSum3);//NAN
+
+</script>
+
+
+</body>
+</html>

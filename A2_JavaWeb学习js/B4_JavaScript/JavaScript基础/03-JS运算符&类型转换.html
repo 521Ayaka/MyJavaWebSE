@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h2>
+    <img src="../img/img_2.png">
+</h2>
+
+<hr>
+
+<script>
+    /*
+    ==:
+        1．判断类型是否一样，如果不一样，则进行类型转换
+        2．再去比较其值
+
+    ===:全等于
+        1．判断类型是否一样，如果不一样，直接返回false
+        2．再去比较其值
+    */
+
+
+
+    var num1 = 20;
+    var string1 = "20";
+
+    alert(num1 == string1);  //true
+    alert(num1 === string1); //false
+
+    alert(typeof num1 === typeof string1); //false
+
+
+    /*类型转换
+
+        其他类型转为number:
+            1. string: 按照字符串的字面值，转为数字.如果字面值不是数字，则转为NaN。一般使用parseInt()
+            2. boolean: true 转为1, false转为0
+
+        其他类型转为boolean:
+            1. numben:0和NaN转为faLse，其他的数字转为true
+            2．string:空字符串转为false，其他的字符串转为true
+            3.null:faLse
+            4．undefined:false
+    */
+    alert("=================================");
+
+    //其他类型转为number:
+    //1.
+    var string01 = "20";
+    var string02 = "ganga";
+    alert(string01 === 20); //false
+    alert(+string01 === 20); //true
+    alert(parseInt(string01) == 20); //true
+    alert(parseInt(string02)); //NAN
+
+    //2.
+    var boo1 = +false;
+    var boo2 = +true;
+    alert(boo1);//0
+    alert(boo2);//1
+
+    //其他类型转为boolean:
+    var num1_boo = 8;
+    var num2_boo = 0;
+
+    if (num1_boo){
+        alert("为true"); //为true
+    }
+    if (!num2_boo){
+        alert("为false"); //为false
+    }
+
+    var str = "gan";
+
+    /*
+    //java 判断字符串地健壮性:
+    if (str != null && str.length > 0){
+     //...
+    }
+    */
+    //而js简单
+    if (str){
+        alert("src有字符：转为true");
+    }else {
+        alert("src无字符：转为false");
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

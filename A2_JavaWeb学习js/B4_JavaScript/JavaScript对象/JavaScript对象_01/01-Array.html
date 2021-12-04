@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    
+<h2>
+  <img src="../../img/img_6.png">
+</h2>
+
+
+<script>
+
+    //定义方式一
+    var array01 = new Array(1,2,3);
+    //alert(array01); //1,2,3
+
+    //定义方式二
+    var array02 = [3,2,1];
+    //alert(array02); //3,2,1
+
+    //访问
+    var num1 = array01[0];
+    //alert(num1); //1
+
+    //重新赋值
+    array01[2] = 6;
+    //alert(array01[2]) //6
+
+    //特点：变长
+    var num2 = array02[10];
+    //alert(num2); //undefined
+
+    //特点: 变类型
+    array02[2] = "三";
+    array02[5] = "尴尬";
+    //alert(array02[4]); //undefined
+    //alert(array02); //1,2,三,,,尴尬
+
+</script>
+
+Array中的所有 属性和方法
+<img src="../../img/img_7.png">
+
+<script>
+    //==========================
+    var arr = [1,2,3,4,5];
+
+    //属性: length
+    for (let i = 0; i < arr.length; i++) {
+        alert(arr[i]);
+    }
+
+    //方法: push在末尾添加一个新元素
+    arr.push(6);
+    alert(arr[5]);
+
+    //方法: splice
+    arr.splice(0,3); //从0号元素开始删除3个元素
+    alert(arr);
+
+
+
+</script>
+
+</body>
+</html>
