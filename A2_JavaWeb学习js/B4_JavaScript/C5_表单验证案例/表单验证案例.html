@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-div">
+    <div class="reg-content">
+        <h1>欢迎注册</h1>
+        <span>已有帐号？</span> <a href="#">登录</a>
+    </div>
+    <form id="reg-form" action="#" method="get">
+
+        <table>
+
+            <tr>
+                <b><td>用户名</td></b>
+                <td class="inputs">
+                    <input name="username" type="text" id="username">
+                    <br>
+                    <span id="username_err" class="err_msg" style="display: none">用户名不太受欢迎</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <b><td>密码</td></b>
+                <td class="inputs">
+                    <input name="password" type="password" id="password">
+                    <br>
+                    <span id="password_err" class="err_msg" style="display: none">密码格式有误</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <b><td>手机号</td></b>
+                <td class="inputs"><input name="tel" type="text" id="tel">
+                    <br>
+                    <span id="tel_err" class="err_msg" style="display: none">手机号格式有误</span>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="buttons">
+            <input value="注 册" type="submit" id="reg_btn">
+        </div>
+        <br class="clear">
+    </form>
+
+</div>
+
+
+<script>
+
+    //1：验证用户名是否正确
+    //1.1：获取用户名对象
+    var usernameInput = document.getElementById("username");
+    //1.2：监听事件使用失去焦点 onblur
+    usernameInput.onblur = checkUsername;
+    function checkUsername() {
+        //1.3：获取输入的内容 并 去除前后空格使用trim()方法
+        var username = usernameInput.value.trim();
+        //1.4：判断是否符合要求 要求: 单词字符组成 6~12
+        let reg = /^\w{6,12}$/;
+        if (reg.test(username)){
+            //符合要求
+            document.getElementById("username_err").style.display = "none";
+            //return true;
+        }else {
+            //不符合要求
+            document.getElementById("username_err").style.display = "";
+            //return false;
+        }
+    }
+
+
+    //2：验证密码是否正确
+    //2.1：获取密码对象
+    var passwordInput = document.getElementById("password");
+    //2.2：监听事件使用失去焦点 onblur
+    passwordInput.onblur = checkPassword;
+    function checkPassword() {
+        //2.3：获取输入的内容 并 去除前后空格使用trim()方法
+        var password = passwordInput.value.trim();
+        //2.4：判断是否符合要求 要求: 单词字符组成 6~12
+        let reg = /^\w{6,12}$/;
+        if (reg.test(password)){
+            //符合要求
+            document.getElementById("password_err").style.display = "none";
+            return true;
+        }else {
+            //不符合要求
+            document.getElementById("password_err").style.display = "";
+            return false;
+        }
+    }
+
+    //3：验证手机号是否正确
+    //3.1：获取手机号输入框的对象
+    var telInput = document.getElementById("tel");
+    //3.2：监听事件使用失去焦点 onblur
+    telInput.onblur = checkTel;
+    function checkTel(){
+        //3.3：获取输入框内容 并 去除前后空格
+        var tel = telInput.value.trim();
+        //3.4：判断输入的内容是否符合要求 要求：长度为11 手机号开头是1 都是数字
+        let reg = /^[1]\d{10}$/;
+        if (reg.test(tel)){
+            document.getElementById("tel_err").style.display = "none";
+            return true;
+        }else {
+            document.getElementById("tel_err").style.display = "";
+            return false;
+        }
+    }
+
+
+
+
+    //进行表单验证
+    //1: 获取表单对象
+    var getForm = document.getElementById("reg-form");
+    //2: 添加监听事件 使用 onsubmit 事件
+    getForm.onsubmit = function () {
+
+        return checkUsername()&&checkPassword()&&checkTel();
+    }
+
+
+</script>
+</body>
+</html>

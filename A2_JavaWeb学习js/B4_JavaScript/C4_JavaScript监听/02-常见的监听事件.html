@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="https://www.w3school.com.cn/jsref/dom_obj_event.asp">
+    <h1>
+        所有监听事件
+    </h1>
+</a>
+
+<br><br><br><hr><hr><br><br>
+<h2>常见的监听事件:</h2><br>
+<img src="../img/img_18.png">
+<br><br><br><hr><hr><br><br>
+
+
+<h3>演示:</h3> <br>
+
+<form id="newTable" action="#">
+    <input type="text" name="username">
+    <input type="submit" value="提交">
+</form>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><hr>
+
+<input type="button" id="on" value="开灯">
+<img src="../img/img_11.png" id="deng">
+<input type="button" id="off" value="关灯">
+
+<script>
+
+    /*
+
+    onsubmit事件 需要一个值 true：提交  false：不提交
+
+    */
+
+    document.getElementById("newTable").onsubmit = function (){
+
+        //函数内容
+
+        return true;
+    }
+
+
+    document.getElementById("on").onclick = function (){
+        document.getElementById("deng").src = "../img/img_12.png";
+    }
+
+    document.getElementById("off").onclick = function (){
+        document.getElementById("deng").src = "../img/img_11.png";
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

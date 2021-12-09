@@ -841,7 +841,7 @@ public class TestPredicate {
 
     }
 
-    //Test 在给定的参数上评估这个谓词。
+    //TestMe 在给定的参数上评估这个谓词。
     private static boolean pre1(String str, Predicate<String> e) {
         //boolean  test(T t) 在给定的参数上评估这个谓词。
         return e.test(str);

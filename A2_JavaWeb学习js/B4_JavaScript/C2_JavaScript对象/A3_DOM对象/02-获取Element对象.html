@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>
+    <a href="https://www.w3school.com.cn/jsref/dom_obj_all.asp">
+        Element对象。
+    </a>
+</h2>
+
+
+<img src="../../img/img_15.png">
+<br><br><br><hr><hr><hr><br><br><br>
+
+
+
+<img id="myImg" src="../../img/img_11.png">
+
+<div class="cls"> 尴尬酱 </div>
+<div class="cls"> 尴尬帝 </div>
+
+<input type="checkbox" name="hobby"> 电影
+<input type="checkbox" name="hobby"> LOL
+<input type="checkbox" name="hobby"> 干饭
+
+<br>
+
+
+
+<script>
+
+/*
+    获取Element
+
+    Element：元素对象
+
+        获取：使用Document对象的方法来获取
+            1.getElementById：根据id属性值获取，返回一个Element对象
+            2.getElementsByTagName：根据标签名称获取，返回Element对象数组
+            3.getElementsByName：根据name属性值获取，返回Element对象数组
+            4.getElementsByClassName：根据class属性值获取，返回Element对象数组
+*/
+
+    //方式 1.getElementById：根据id属性值获取，返回一个Element对象
+    let imgObj = document.getElementById("myImg");
+    imgObj.src = "../../img/img_12.png";
+    /*
+    img封装成了 mage 对象
+        Image 对象代表嵌入的图像。
+        <img> 标签每出现一次，一个 Image 对象就会被创建。
+    */
+
+
+    //方式 2.getElementsByTagName：根据标签名称获取，返回Element对象数组
+    let divs = document.getElementsByTagName("div");
+    alert(divs.length);
+    for (let i = 0; i < divs.length; i++) {
+        //alert(divs[i]);
+        //修改样式
+        divs[i].style.color = "red"; //设置style中的color样式
+        divs[i].innerHTML = "真就尴尬了~"; //设置元素的内容。
+    }
+    /*
+    div标签里面没有属性, 但是继承者Element, 使用Element属性/方法
+
+    https://www.w3school.com.cn/jsref/dom_obj_all.asp
+
+    Element.style --> style --> 设置或返回元素的 style 属性。
+
+    Element.innerHTML --> 设置或返回元素的内容。
+
+    ......
+
+    */
+
+
+
+    //方式 3.getElementsByName：根据name属性值获取，返回Element对象数组
+    let hobbys = document.getElementsByName("hobby");
+    alert(hobbys.length);
+    for (let i = 0; i < hobbys.length; i++) {
+        //alert(hobbys[i]);
+        hobbys[i].checked = true; //checked属性 设置是否被选中
+    }
+
+    /*
+    HTML DOM Input Checkbox 对象
+    Checkbox 对象
+        Checkbox 对象代表一个 HTML 表单中的 一个选择框。
+        在 HTML 文档中 <input type="checkbox"> 每出现一次，Checkbox 对象就会被创建。
+        您可以通过遍历表单的 elements[] 数组来访问某个选择框，或者通过使用 document.getElementById() 。
+
+
+
+    */
+
+
+
+    //方式 4.getElementsByClassName：根据class属性值获取，返回Element对象数组
+    let clss = document.getElementsByClassName("cls");
+    alert(clss.length);
+    for (let i = 0; i < clss.length; i++) {
+        alert(clss[i]);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

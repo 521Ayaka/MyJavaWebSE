@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img id="lamp" src="../../img/img_11.png">
+
+
+<script>
+
+  function off(){
+      document.getElementById('lamp').src='../../img/img_11.png';
+  }
+
+  function on(){
+      document.getElementById('lamp').src='../../img/img_12.png';
+  }
+
+  //定时器
+  var num = 0;
+  setInterval(function (){
+
+      if (num % 2 ===0){
+          on();
+      }else {
+          off();
+      }
+
+      num++;
+  }, 1000);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img src="../../img/img_10.png">
+
+
+<script>
+
+
+    //方法 alert
+    window.alert("尴尬");
+    alert("尴尬酱");
+
+
+    //方法 confirm
+    let flag = window.confirm("是否干饭");
+    alert(flag);
+
+    if (flag){
+        //干饭逻辑
+    }
+    
+
+/*    方法 定时器
+
+            setTimeout(function, 毫秒值): 在一定的时间间隔后执行一个function, 只执行一次
+
+            setInterval(function, 毫秒值): 在一定的时间间隔后只执行一个function, 循环执行
+
+*/
+
+    setTimeout(function (){
+        alert("================");
+    }, 1000*5);
+
+
+    setInterval(function (){
+        alert("++++++++++++++++")
+    }, 1000*3);
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

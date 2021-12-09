@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img src="../img/img_17.png">
+<br><br><hr><hr><hr><br><br>
+
+
+<input type="button" onclick="on()" value="点我点我~01">
+
+<input type="button" id="butt" value="点我点我~02">
+
+<script>
+
+    function on(){
+        alert("我被点击了///方式一");
+    }
+
+    document.getElementById("butt").onclick = function (){
+        alert("我被点击了///方式二");
+    }
+
+</script>
+
+
+</body>
+</html>
