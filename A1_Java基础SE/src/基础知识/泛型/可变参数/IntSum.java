@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.¿É±ä²ÎÊı;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.å¯å˜å‚æ•°;
 /*
- ¿É±ä²ÎÊı
+ å¯å˜å‚æ•°
  public static int sum(int... a){}
  public static int sum(int b, int... a){}
  public static int sum(String str, int... a){}
 
 
- £¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡!!
- ¿É±ä²ÎÊı¾ÍÊÇ°ÑÊı¾İ·â×°µ½Ò»¸öÊı×é¡£Êı¾İÀàĞÍ [] ĞÎ²Î = { Êµ²Î };
+ ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼!!
+ å¯å˜å‚æ•°å°±æ˜¯æŠŠæ•°æ®å°è£…åˆ°ä¸€ä¸ªæ•°ç»„ã€‚æ•°æ®ç±»å‹ [] å½¢å‚ = { å®å‚ };
 
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- ¶à¸ö²ÎÊıÊ±£¬ÓĞ¿É±ä²ÎÊı×îºÃÊÇ·ÅÔÚºóÃæ Èç: method(int b ,int... a);
+ å¤šä¸ªå‚æ•°æ—¶ï¼Œæœ‰å¯å˜å‚æ•°æœ€å¥½æ˜¯æ”¾åœ¨åé¢ å¦‚: method(int b ,int... a);
 
 */
 public class IntSum {
@@ -25,12 +25,12 @@ public class IntSum {
         System.out.println(sum(10, 20, 30, 40, 50, 60));
         System.out.println(sum(10, 20, 30, 40, 50, 60, 70));
         System.out.println("======================");
-        System.out.println(sum("×ÜÊıºÍÎª", 10, 20, 30, 40, 50, 60, 70, 80));
+        System.out.println(sum("æ€»æ•°å’Œä¸º", 10, 20, 30, 40, 50, 60, 70, 80));
 
         int [] a ={};
     }
 
-    //¿É±ä²ÎÊı·½·¨
+    //å¯å˜å‚æ•°æ–¹æ³•
     public static int sum(int... a) {
         int i = 0;
         for (int num :
@@ -58,24 +58,24 @@ public class IntSum {
 
 
     /*
-    //´íÎóĞ´·¨£¬Vararg±ØĞëÔÚ×îºóÒ»¸ö²ÎÊı
+    //é”™è¯¯å†™æ³•ï¼ŒVarargå¿…é¡»åœ¨æœ€åä¸€ä¸ªå‚æ•°
     public static int sum(int ...a, int b){
         return 0;
     }
     */
 
-    //ÕıÈ·Ğ´·¨
+    //æ­£ç¡®å†™æ³•
     public static int sum(String str, int... a) {
         int i = 0;
         for (int num :
                 a) {
             i += num;
         }
-        System.out.print(str + "£º");
+        System.out.print(str + "ï¼š");
         return i;
     }
 
-    /*ÕâÖÖÒ²ÊÇ¿ÉÒÔµÄ£¬²»¹ıÉÏÃæÓĞÒ»¸ö´øsum(int...a){}µÄ·½·¨ÁË£¬²»ÄÜÖØ¸´£¬ÕâÀïÒ²ËãÖØ¸´
+    /*è¿™ç§ä¹Ÿæ˜¯å¯ä»¥çš„ï¼Œä¸è¿‡ä¸Šé¢æœ‰ä¸€ä¸ªå¸¦sum(int...a){}çš„æ–¹æ³•äº†ï¼Œä¸èƒ½é‡å¤ï¼Œè¿™é‡Œä¹Ÿç®—é‡å¤
     public static int sum(int b, int... a) {
         int i = 0;
         for (int num :

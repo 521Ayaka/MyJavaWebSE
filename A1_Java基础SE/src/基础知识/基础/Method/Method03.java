@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Method;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Method;
 
 /*
-ÌâÄ¿ÒªÇó£º
-¶¨ÒåÒ»¸ö·½·¨£¬ÓÃÀ´ÅÐ¶ÏÁ½¸öÊý×ÖÊÇ·ñÏàÍ¬¡£
+é¢˜ç›®è¦æ±‚ï¼š
+å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªæ•°å­—æ˜¯å¦ç›¸åŒã€‚
  */
 public class Method03 {
     public static void main(String[] args) {
@@ -11,14 +11,14 @@ public class Method03 {
     }
 
     /*
-    ÈýÒªËØ£º
-    ·µ»ØÖµÀàÐÍ£ºboolean
-    ·½·¨Ãû³Æ£ºisSame
-    ²ÎÊýÁÐ±í£ºint a, int b
+    ä¸‰è¦ç´ ï¼š
+    è¿”å›žå€¼ç±»åž‹ï¼šboolean
+    æ–¹æ³•åç§°ï¼šisSame
+    å‚æ•°åˆ—è¡¨ï¼šint a, int b
      */
     public static boolean isSame(int a, int b) {
     
-    //ÕâÀï¿ÉÒÔÓÃ4ÖÖ·½·¨À´Ð´ ÕâÒ²ÊÇÎÒ´´½¨Method03µÄÔ­Òò£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+    //è¿™é‡Œå¯ä»¥ç”¨4ç§æ–¹æ³•æ¥å†™ è¿™ä¹Ÿæ˜¯æˆ‘åˆ›å»ºMethod03çš„åŽŸå› ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
     //=========================================
 

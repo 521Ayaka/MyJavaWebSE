@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.interface07;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.interface07;
 
 public class MyInterfaceImplFu {
 
     public void methodGanGa(){
-        System.out.println("Õâ¾ÍŞÏŞÎÁË");
+        System.out.println("è¿™å°±å°´å°¬äº†");
     }
 
 }

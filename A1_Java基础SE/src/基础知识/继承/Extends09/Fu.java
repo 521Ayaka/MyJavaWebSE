@@ -1,9 +1,9 @@
-package 基础知识.继承.Extends09;
+package 鍩虹鐭ヨ瘑.缁ф壙.Extends09;
 
 public class Fu {
     int num = 888;
 
     public Fu() {
-        System.out.println("父类构造方法执行！");
+        System.out.println("鐖剁被鏋勯�犳柟娉曟墽琛岋紒");
     }
 }

@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿4;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®4;
 
 public interface Shape {
-    //ÔÚ½Ó¿Úµ±ÖĞµÄ³éÏó·½·¨ÊÇ°Ñpublic abstract Ê¡ÂÔµÄ
+    //åœ¨æ¥å£å½“ä¸­çš„æŠ½è±¡æ–¹æ³•æ˜¯æŠŠpublic abstract çœç•¥çš„
 
     double MJ(double a,double b);
     double ZC(double a,double b);

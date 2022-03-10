@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Òì³£.Throwable;
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable;
 /*
 
-public String getMessage(){...}     //·µ»ØthrowableµÄÏêÏ¸ÏûÏ¢×Ö·û´®  [·µ»ØÖµÊÇString]
-public String toSting(){...}        //·µ»Ø´Ë¿ÉÅ×³öµÄ¼ò¶ÌÃèÊö         [·µ»ØÖµÊÇString]
-public void printStackTrace(){...}  //°ÑÒì³£µÄ´íÎóĞÅÏ¢Êä³öÔÚ¿ØÖÆÌ¨     [ÎŞ·µ»ØÖµ£¬Ö±½Ó´òÓ¡]
+public String getMessage(){...}     //è¿”å›throwableçš„è¯¦ç»†æ¶ˆæ¯å­—ç¬¦ä¸²  [è¿”å›å€¼æ˜¯String]
+public String toSting(){...}        //è¿”å›æ­¤å¯æŠ›å‡ºçš„ç®€çŸ­æè¿°         [è¿”å›å€¼æ˜¯String]
+public void printStackTrace(){...}  //æŠŠå¼‚å¸¸çš„é”™è¯¯ä¿¡æ¯è¾“å‡ºåœ¨æ§åˆ¶å°     [æ— è¿”å›å€¼ï¼Œç›´æ¥æ‰“å°]
 
-Ö»ÒªÊÇÕâ¸öÌåÏµµÄ¶¼ÄÜÊ¹ÓÃThrowableµÄ³ÉÔ±±äÁ¿¡£
+åªè¦æ˜¯è¿™ä¸ªä½“ç³»çš„éƒ½èƒ½ä½¿ç”¨Throwableçš„æˆå‘˜å˜é‡ã€‚
 
 */
 
@@ -14,23 +14,23 @@ public class ThrowableLei {
 
     public static void main(String[] args) {
 
-        System.out.println("³ÌĞò¿ªÊ¼");
+        System.out.println("ç¨‹åºå¼€å§‹");
 
         method1(); /** Index 3 out of bounds for length 3 */
 
         method2(); /** java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 */
 
         method3(); /** java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-                       at MyJava.»ù´¡ÖªÊ¶.Òì³£.Throwable.ThrowableLei.method3(ThrowableLei.java:51)
-                       at MyJava.»ù´¡ÖªÊ¶.Òì³£.Throwable.ThrowableLei.main(ThrowableLei.java:22)           */
+                       at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable.ThrowableLei.method3(ThrowableLei.java:51)
+                       at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable.ThrowableLei.main(ThrowableLei.java:22)           */
 
-        method4(); // JVMÏòÏÂÔËĞĞ
+        method4(); // JVMå‘ä¸‹è¿è¡Œ
 
-        System.out.println("³ÌĞò½áÊø");
+        System.out.println("ç¨‹åºç»“æŸ");
     }
 
-    //³ÉÔ±·½·¨1
-    //public String getMessage(){...}     //·µ»ØthrowableµÄÏêÏ¸ÏûÏ¢×Ö·û´®  [·µ»ØÖµÊÇString]
+    //æˆå‘˜æ–¹æ³•1
+    //public String getMessage(){...}     //è¿”å›throwableçš„è¯¦ç»†æ¶ˆæ¯å­—ç¬¦ä¸²  [è¿”å›å€¼æ˜¯String]
     public static void method1(){
 
         try {
@@ -41,19 +41,19 @@ public class ThrowableLei {
         }
     }
 
-    //³ÉÔ±·½·¨2
-    //public String toSting(){...}        //·µ»Ø´Ë¿ÉÅ×³öµÄ¼ò¶ÌÃèÊö         [·µ»ØÖµÊÇString]
+    //æˆå‘˜æ–¹æ³•2
+    //public String toSting(){...}        //è¿”å›æ­¤å¯æŠ›å‡ºçš„ç®€çŸ­æè¿°         [è¿”å›å€¼æ˜¯String]
     public static void method2(){
         try {
-            String[] str = {"Òì³£Êı×éË÷ÒıÖµ"};
+            String[] str = {"å¼‚å¸¸æ•°ç»„ç´¢å¼•å€¼"};
             System.out.println(str[1]);
         }catch(ArrayIndexOutOfBoundsException e){
             System.out.println(e.toString());
         }
     }
 
-    //³ÉÔ±·½·¨3
-    //public void printStackTrace(){...}  //°ÑÒì³£µÄ´íÎóĞÅÏ¢Êä³öÔÚ¿ØÖÆÌ¨     [ÎŞ·µ»ØÖµ£¬Ö±½Ó´òÓ¡]
+    //æˆå‘˜æ–¹æ³•3
+    //public void printStackTrace(){...}  //æŠŠå¼‚å¸¸çš„é”™è¯¯ä¿¡æ¯è¾“å‡ºåœ¨æ§åˆ¶å°     [æ— è¿”å›å€¼ï¼Œç›´æ¥æ‰“å°]
     public static void method3(){
         try {
             double[] num ={0.00};
@@ -63,9 +63,9 @@ public class ThrowableLei {
         }
     }
 
-    //JMVÔÚÅö¼ûÒì³£µÄÊ±ºò²»»á¼ÌĞøÔËĞĞ£¬µ«ÓÃtry...catch...Òì³£´¦Àíºó£¬»áÍùÏÂ¼ÌĞøÔËĞĞ¡£
+    //JMVåœ¨ç¢°è§å¼‚å¸¸çš„æ—¶å€™ä¸ä¼šç»§ç»­è¿è¡Œï¼Œä½†ç”¨try...catch...å¼‚å¸¸å¤„ç†åï¼Œä¼šå¾€ä¸‹ç»§ç»­è¿è¡Œã€‚
     public static void method4(){
-        System.out.println("JMV¼ÌĞøÔËĞĞ");
+        System.out.println("JMVç»§ç»­è¿è¡Œ");
     }
 
 }

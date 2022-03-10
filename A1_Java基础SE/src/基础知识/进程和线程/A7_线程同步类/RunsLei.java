@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A7_Ïß³ÌÍ¬²½Àà;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A7_çº¿ç¨‹åŒæ­¥ç±»;
 /*
-    Ïß³Ì°²È«µÄÀà:
+    çº¿ç¨‹å®‰å…¨çš„ç±»:
         StringBuffer
         Vector
         Hashtable
@@ -13,29 +13,29 @@ public class RunsLei {
 
     public static void main(String[] args) {
 
-        StringBuffer sb1 = new StringBuffer();    //synchronized·½·¨£¬Ïß³Ì°²È«µÄ
-        StringBuilder sb2 = new StringBuilder();  //Ã»ÓĞÊ¹ÓÃsynchronizedĞŞÊÎ
+        StringBuffer sb1 = new StringBuffer();    //synchronizedæ–¹æ³•ï¼Œçº¿ç¨‹å®‰å…¨çš„
+        StringBuilder sb2 = new StringBuilder();  //æ²¡æœ‰ä½¿ç”¨synchronizedä¿®é¥°
 
-        Vector<String> ve = new Vector<>();          //synchronized·½·¨£¬Ïß³Ì°²È«µÄ
-        ArrayList<String> list = new ArrayList<>();  //Ã»ÓĞÊ¹ÓÃsynchronizedĞŞÊÎ
+        Vector<String> ve = new Vector<>();          //synchronizedæ–¹æ³•ï¼Œçº¿ç¨‹å®‰å…¨çš„
+        ArrayList<String> list = new ArrayList<>();  //æ²¡æœ‰ä½¿ç”¨synchronizedä¿®é¥°
 
-        Hashtable<String, String> ht = new Hashtable<>(); //synchronized·½·¨£¬Ïß³Ì°²È«µÄ
-        HashMap<String, String> hm = new HashMap<>();     //Ã»ÓĞÊ¹ÓÃsynchronizedĞŞÊÎ
+        Hashtable<String, String> ht = new Hashtable<>(); //synchronizedæ–¹æ³•ï¼Œçº¿ç¨‹å®‰å…¨çš„
+        HashMap<String, String> hm = new HashMap<>();     //æ²¡æœ‰ä½¿ç”¨synchronizedä¿®é¥°
 
         //==========================================================================
         /*
-        Ò»°ãÀ´Ëµ,Ïß³ÌÍ¬²½Ê±£¬Ê¹ÓÃStringBuffer¡¢Vector¡¢HashtableÈı¸öÀàÀ´²Ù×÷
-        µ«ÊÇ,VectorºÍHashtableÒ²²»¾­³£Ê¹ÓÃ¡£
-        Ê¹ÓÃ,Collections ÖĞµÄ·½·¨ À´²Ù×÷
+        ä¸€èˆ¬æ¥è¯´,çº¿ç¨‹åŒæ­¥æ—¶ï¼Œä½¿ç”¨StringBufferã€Vectorã€Hashtableä¸‰ä¸ªç±»æ¥æ“ä½œ
+        ä½†æ˜¯,Vectorå’ŒHashtableä¹Ÿä¸ç»å¸¸ä½¿ç”¨ã€‚
+        ä½¿ç”¨,Collections ä¸­çš„æ–¹æ³• æ¥æ“ä½œ
                 public static <T> List<T> synchronizedList(List<T> list)
                 public static <K,V> Map<K,V> synchronizedMap(Map<K,V> m)
                 ......
         */
 
         List<String> array = Collections.synchronizedList(new ArrayList<String>());
-        //array¾ÍÊÇÍ¬²½°²È«µÄÁË
+        //arrayå°±æ˜¯åŒæ­¥å®‰å…¨çš„äº†
         Map<String, String> map = Collections.synchronizedMap(new HashMap<String, String>());
-        //map¾ÍÊÇÍ¬²½°²È«µÄÁË
+        //mapå°±æ˜¯åŒæ­¥å®‰å…¨çš„äº†
 
 
     }

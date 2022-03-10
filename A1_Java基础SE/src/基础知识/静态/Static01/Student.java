@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.Static01;
+package åŸºç¡€çŸ¥è¯†.é™æ€.Static01;
 
 public class Student {
 
-    private int id; // Ñ§ºÅ
-    private String name; // ĞÕÃû
-    private int age; // ÄêÁä
-    static String room; // ËùÔÚ½ÌÊÒ
-    private static int idCounter = 0; // Ñ§ºÅ¼ÆÊıÆ÷£¬Ã¿µ±newÁËÒ»¸öĞÂ¶ÔÏóµÄÊ±ºò£¬¼ÆÊıÆ÷++
+    private int id; // å­¦å·
+    private String name; // å§“å
+    private int age; // å¹´é¾„
+    static String room; // æ‰€åœ¨æ•™å®¤
+    private static int idCounter = 0; // å­¦å·è®¡æ•°å™¨ï¼Œæ¯å½“newäº†ä¸€ä¸ªæ–°å¯¹è±¡çš„æ—¶å€™ï¼Œè®¡æ•°å™¨++
 
     public Student() {
         this.id = ++idCounter;

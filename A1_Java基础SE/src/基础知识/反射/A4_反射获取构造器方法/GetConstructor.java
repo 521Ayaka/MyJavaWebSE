@@ -1,39 +1,39 @@
-package »ù´¡ÖªÊ¶.·´Éä.A4_·´Éä»ñÈ¡¹¹ÔìÆ÷·½·¨;
+package åŸºç¡€çŸ¥è¯†.åå°„.A4_åå°„è·å–æ„é€ å™¨æ–¹æ³•;
 /*
-Í¨¹ı·´Éä»ñÈ¡ »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.StudentÀàµÄ¹¹ÔìÆ÷¡£
+é€šè¿‡åå°„è·å– åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Studentç±»çš„æ„é€ å™¨ã€‚
 
-µÚÒ»²½: Ê¹ÓÃClassÀàÖĞµÄforName·½·¨»ñÈ¡class¶ÔÏó
+ç¬¬ä¸€æ­¥: ä½¿ç”¨Classç±»ä¸­çš„forNameæ–¹æ³•è·å–classå¯¹è±¡
 
 
-¡¾»ñÈ¡¹«¹²µÄ¹¹ÔìÆ÷ Êı×é¡¿:
+ã€è·å–å…¬å…±çš„æ„é€ å™¨ æ•°ç»„ã€‘:
         Constructor<?>[]	getConstructors()
-        ·µ»Ø°üº¬Ò»¸öÊı×é Constructor¶ÔÏó·´ÉäÓÉ´Ë±íÊ¾µÄÀàµÄ [ËùÓĞ¹«¹²¹¹Ôì] Àà¶ÔÏó¡£
+        è¿”å›åŒ…å«ä¸€ä¸ªæ•°ç»„ Constructorå¯¹è±¡åå°„ç”±æ­¤è¡¨ç¤ºçš„ç±»çš„ [æ‰€æœ‰å…¬å…±æ„é€ ] ç±»å¯¹è±¡ã€‚
 
-¡¾»ñÈ¡ËùÓĞµÄ¹¹ÔìÆ÷ Êı×é¡¿:
+ã€è·å–æ‰€æœ‰çš„æ„é€ å™¨ æ•°ç»„ã€‘:
         Constructor<?>[]	getDeclaredConstructors()
-        ·µ»ØÒ»¸ö·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀàÉùÃ÷µÄ [ËùÓĞ Constructor¶ÔÏóµÄÊı×é] Àà ¡£
+        è¿”å›ä¸€ä¸ªåæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»å£°æ˜çš„ [æ‰€æœ‰ Constructorå¯¹è±¡çš„æ•°ç»„] ç±» ã€‚
 
 ===================================================================================
 
-¡¾»ñÈ¡¹«¹²µÄ¹¹ÔìÆ÷¡¿
+ã€è·å–å…¬å…±çš„æ„é€ å™¨ã€‘
         Constructor<T>	getConstructor(class<?>... parameterTypes)
-        ·µ»ØÒ»¸ö Constructor¶ÔÏó£¬¸Ã¶ÔÏó·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀàµÄÖ¸¶¨µÄ¹«¹² Ààº¯Êı¡£
+        è¿”å›ä¸€ä¸ª Constructorå¯¹è±¡ï¼Œè¯¥å¯¹è±¡åæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»çš„æŒ‡å®šçš„å…¬å…± ç±»å‡½æ•°ã€‚
 
 
-¡¾»ñÈ¡ËùÓĞµÄ¹¹ÔìÆ÷¡¿:
+ã€è·å–æ‰€æœ‰çš„æ„é€ å™¨ã€‘:
         Constructor<T>	getDeclaredConstructor(class<?>... parameterTypes)
-        ·µ»ØÒ»¸ö Constructor¶ÔÏó£¬¸Ã¶ÔÏó·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀà»ò½Ó¿ÚµÄÖ¸¶¨ Ààº¯Êı¡£
+        è¿”å›ä¸€ä¸ª Constructorå¯¹è±¡ï¼Œè¯¥å¯¹è±¡åæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»æˆ–æ¥å£çš„æŒ‡å®š ç±»å‡½æ•°ã€‚
 
 ----------------------------------------------------------------------------------
 
-²ÎÊı: ÄãÒª»ñÈ¡µÄ¹¹ÔìÆ÷·½·¨µÄ²ÎÊı¸öÊıºÍ²ÎÊıÀàĞÍ¶ÔÓ¦µÄ×Ö½ÚÂëÎÄ¼ş¶ÔÏó¡£
+å‚æ•°: ä½ è¦è·å–çš„æ„é€ å™¨æ–¹æ³•çš„å‚æ•°ä¸ªæ•°å’Œå‚æ•°ç±»å‹å¯¹åº”çš„å­—èŠ‚ç æ–‡ä»¶å¯¹è±¡ã€‚
 
-Àà
-    ConstructorÌá¹©ÁËÒ»¸öÀàµÄµ¥¸ö¹¹Ôìº¯ÊıµÄĞÅÏ¢ºÍ·ÃÎÊ¡£
+ç±»
+    Constructoræä¾›äº†ä¸€ä¸ªç±»çš„å•ä¸ªæ„é€ å‡½æ•°çš„ä¿¡æ¯å’Œè®¿é—®ã€‚
 
-ConstructorÖĞ ÓĞÒ»¸ö·½·¨:
+Constructorä¸­ æœ‰ä¸€ä¸ªæ–¹æ³•:
     T newInstance(Object... initargs)
-    Ê¹ÓÃ´Ë Constructor¶ÔÏó±íÊ¾µÄ¹¹Ôìº¯Êı£¬Ê¹ÓÃÖ¸¶¨µÄ³õÊ¼»¯²ÎÊıÀ´´´½¨ºÍ³õÊ¼»¯¹¹Ôìº¯ÊıµÄÉùÃ÷ÀàµÄĞÂÊµÀı¡£
+    ä½¿ç”¨æ­¤ Constructorå¯¹è±¡è¡¨ç¤ºçš„æ„é€ å‡½æ•°ï¼Œä½¿ç”¨æŒ‡å®šçš„åˆå§‹åŒ–å‚æ•°æ¥åˆ›å»ºå’Œåˆå§‹åŒ–æ„é€ å‡½æ•°çš„å£°æ˜ç±»çš„æ–°å®ä¾‹ã€‚
 
 */
 
@@ -44,22 +44,22 @@ public class GetConstructor {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        //ÏÈ´´½¨classÀà¶ÔÏó
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        //å…ˆåˆ›å»ºclassç±»å¯¹è±¡
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
 
         System.out.println("\n=================================================\n");
 
         //Constructor<?>[]	getConstructors()
-        //·µ»Ø°üº¬Ò»¸öÊı×é Constructor¶ÔÏó·´ÉäÓÉ´Ë±íÊ¾µÄÀàµÄ [ËùÓĞ¹«¹²¹¹Ôì] Àà¶ÔÏó¡£
-        Constructor<?>[] cons1 = c.getConstructors();//·µ»Ø¿ÉÓÃObjectÊı×é ½ÓÊÕ¡£
-        //±ãÀûÒ»ÏÂ
+        //è¿”å›åŒ…å«ä¸€ä¸ªæ•°ç»„ Constructorå¯¹è±¡åå°„ç”±æ­¤è¡¨ç¤ºçš„ç±»çš„ [æ‰€æœ‰å…¬å…±æ„é€ ] ç±»å¯¹è±¡ã€‚
+        Constructor<?>[] cons1 = c.getConstructors();//è¿”å›å¯ç”¨Objectæ•°ç»„ æ¥æ”¶ã€‚
+        //ä¾¿åˆ©ä¸€ä¸‹
         for (Constructor<?> con : cons1) {
             System.out.println(con);
         }
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int,java.lang.String)
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student()
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int,java.lang.String)
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student()
 
         */
 
@@ -67,49 +67,49 @@ public class GetConstructor {
 
 
         //Constructor<?>[]	getDeclaredConstructors()
-        //·µ»ØÒ»¸ö·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀàÉùÃ÷µÄ [ËùÓĞ Constructor¶ÔÏóµÄÊı×é] Àà ¡£
+        //è¿”å›ä¸€ä¸ªåæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»å£°æ˜çš„ [æ‰€æœ‰ Constructorå¯¹è±¡çš„æ•°ç»„] ç±» ã€‚
         Constructor<?>[] cons2 = c.getDeclaredConstructors();
-        //±éÀúÒ»ÏÂ
+        //éå†ä¸€ä¸‹
         for (Constructor<?> con : cons2) {
             System.out.println(con);
         }
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int,java.lang.String)
-        »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int)
-        private »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String)
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student()
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int,java.lang.String)
+        åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int)
+        private åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String)
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student()
 
         */
 
         System.out.println("\n=================================================\n");
 
         //Constructor<T>	getConstructor(class<?>... parameterTypes)
-        //·µ»ØÒ»¸ö Constructor¶ÔÏó£¬¸Ã¶ÔÏó·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀàµÄÖ¸¶¨µÄ¹«¹² Ààº¯Êı¡£
+        //è¿”å›ä¸€ä¸ª Constructorå¯¹è±¡ï¼Œè¯¥å¯¹è±¡åæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»çš„æŒ‡å®šçš„å…¬å…± ç±»å‡½æ•°ã€‚
 
         //Constructor<T>	getDeclaredConstructor(class<?>... parameterTypes)
-        //·µ»ØÒ»¸ö Constructor¶ÔÏó£¬¸Ã¶ÔÏó·´Ó³ Constructor¶ÔÏó±íÊ¾µÄÀà»ò½Ó¿ÚµÄÖ¸¶¨ Ààº¯Êı¡£
+        //è¿”å›ä¸€ä¸ª Constructorå¯¹è±¡ï¼Œè¯¥å¯¹è±¡åæ˜  Constructorå¯¹è±¡è¡¨ç¤ºçš„ç±»æˆ–æ¥å£çš„æŒ‡å®š ç±»å‡½æ•°ã€‚
 
         /**
-         ²ÎÊı: ÄãÒª»ñÈ¡µÄ¹¹ÔìÆ÷·½·¨µÄ²ÎÊı¸öÊıºÍ²ÎÊıÀàĞÍ¶ÔÓ¦µÄ×Ö½ÚÂëÎÄ¼ş¶ÔÏó¡£
+         å‚æ•°: ä½ è¦è·å–çš„æ„é€ å™¨æ–¹æ³•çš„å‚æ•°ä¸ªæ•°å’Œå‚æ•°ç±»å‹å¯¹åº”çš„å­—èŠ‚ç æ–‡ä»¶å¯¹è±¡ã€‚
 
-         Àà
-         ConstructorÌá¹©ÁËÒ»¸öÀàµÄµ¥¸ö¹¹Ôìº¯ÊıµÄĞÅÏ¢ºÍ·ÃÎÊ¡£
+         ç±»
+         Constructoræä¾›äº†ä¸€ä¸ªç±»çš„å•ä¸ªæ„é€ å‡½æ•°çš„ä¿¡æ¯å’Œè®¿é—®ã€‚
 
-         ConstructorÖĞ ÓĞÒ»¸ö·½·¨:
+         Constructorä¸­ æœ‰ä¸€ä¸ªæ–¹æ³•:
          T newInstance(Object... initargs)
-         Ê¹ÓÃ´Ë Constructor¶ÔÏó±íÊ¾µÄ¹¹Ôìº¯Êı£¬Ê¹ÓÃÖ¸¶¨µÄ³õÊ¼»¯²ÎÊıÀ´´´½¨ºÍ³õÊ¼»¯¹¹Ôìº¯ÊıµÄÉùÃ÷ÀàµÄĞÂÊµÀı¡£
+         ä½¿ç”¨æ­¤ Constructorå¯¹è±¡è¡¨ç¤ºçš„æ„é€ å‡½æ•°ï¼Œä½¿ç”¨æŒ‡å®šçš„åˆå§‹åŒ–å‚æ•°æ¥åˆ›å»ºå’Œåˆå§‹åŒ–æ„é€ å‡½æ•°çš„å£°æ˜ç±»çš„æ–°å®ä¾‹ã€‚
 
          */
 
         Constructor<?> con1 = c.getConstructor();
         Object obj1 = con1.newInstance();
-        System.out.println(obj1 + "\n");//ÔËĞĞ½á¹û: Student{name='null', age=0, id='null'}
+        System.out.println(obj1 + "\n");//è¿è¡Œç»“æœ: Student{name='null', age=0, id='null'}
 
-        //public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int,java.lang.String)
+        //public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int,java.lang.String)
         Constructor<?> con2 = c.getConstructor(String.class, int.class, String.class);
-        Object obj2 = con2.newInstance("ŞÏŞÎ½´", 9, "20200200");//ÕâÀï·ÅÈë²ÎÊı
-        System.out.println(obj2);//Student{name='ŞÏŞÎ½´', age=9, id='20200200'}
+        Object obj2 = con2.newInstance("å°´å°¬é…±", 9, "20200200");//è¿™é‡Œæ”¾å…¥å‚æ•°
+        System.out.println(obj2);//Student{name='å°´å°¬é…±', age=9, id='20200200'}
 
 
     }

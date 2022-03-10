@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.Comparable;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».Comparable;
 
-public class Student_»Ø¹Ë¸´Ï° implements Comparable<Student_»Ø¹Ë¸´Ï°> {
+public class Student_å›é¡¾å¤ä¹  implements Comparable<Student_å›é¡¾å¤ä¹ > {
 
     private String name;
     private int age;
 
-    public Student_»Ø¹Ë¸´Ï°() {
+    public Student_å›é¡¾å¤ä¹ () {
     }
 
-    public Student_»Ø¹Ë¸´Ï°(String name, int age) {
+    public Student_å›é¡¾å¤ä¹ (String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -30,7 +30,7 @@ public class Student_»Ø¹Ë¸´Ï° implements Comparable<Student_»Ø¹Ë¸´Ï°> {
     }
 
     @Override
-    public int compareTo(Student_»Ø¹Ë¸´Ï° o) {
+    public int compareTo(Student_å›é¡¾å¤ä¹  o) {
         int num = this.age - o.age;
         int i = num == 0 ? this.name.compareTo(o.name) : num;
         return i;

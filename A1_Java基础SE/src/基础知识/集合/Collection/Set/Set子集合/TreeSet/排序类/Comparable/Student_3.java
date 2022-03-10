@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.Comparable;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».Comparable;
 
 public class Student_3 implements Comparable<Student_3>{
 

@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Collection½Ó¿Ú.Collection°¸Àı;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Collectionæ¥å£.Collectionæ¡ˆä¾‹;
 
 /*
-°¸ÀıÒªÇó:
-´´½¨Ò»¸ö´æ´¢Ñ§Éú¶ÔÏóµÄ¼¯ºÏ£¬´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬Ê¹ÓÃ³ÌĞòÊµÏÖÔÚ¿ØÖÆÌ¨±éÀú¸Ã¼¯ºÏ¡£
+æ¡ˆä¾‹è¦æ±‚:
+åˆ›å»ºä¸€ä¸ªå­˜å‚¨å­¦ç”Ÿå¯¹è±¡çš„é›†åˆï¼Œå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œä½¿ç”¨ç¨‹åºå®ç°åœ¨æ§åˆ¶å°éå†è¯¥é›†åˆã€‚
 */
 
 import java.util.ArrayList;
@@ -12,21 +12,21 @@ import java.util.Iterator;
 public class Run_Collection {
 
     public static void main(String[] args) {
-        //´´½¨Èı¸ö¶ÔÏó£¬ºÎÄ³Ä³
-        Student stu1 = new Student("ºÎÑ©³å",16);
-        Student stu2 = new Student("ºÎÑ©³æ",18);
-        Student stu3 = new Student("ºÎÑ§´Ò",20);
-        //´´½¨Ñ§Éú¼¯ºÏ
+        //åˆ›å»ºä¸‰ä¸ªå¯¹è±¡ï¼Œä½•æŸæŸ
+        Student stu1 = new Student("ä½•é›ªå†²",16);
+        Student stu2 = new Student("ä½•é›ªè™«",18);
+        Student stu3 = new Student("ä½•å­¦åŒ†",20);
+        //åˆ›å»ºå­¦ç”Ÿé›†åˆ
         Collection<Student> list = new ArrayList<>();
         list.add(stu1);
         list.add(stu2);
         list.add(stu3);
-        //´´½¨µü´úÆ÷
+        //åˆ›å»ºè¿­ä»£å™¨
         Iterator<Student> itr = list.iterator();
-        //½øĞĞ±éÀú
+        //è¿›è¡Œéå†
         while (itr.hasNext()){
             Student stu = itr.next();
-            System.out.println("ÎÒ½Ğ: " + stu.getName() + ", ½ñÄê" + stu.getAge() + "ËêÁË¡£");
+            System.out.println("æˆ‘å«: " + stu.getName() + ", ä»Šå¹´" + stu.getAge() + "å²äº†ã€‚");
         }
 
 

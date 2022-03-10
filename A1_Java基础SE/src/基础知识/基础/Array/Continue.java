@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Array;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Array;
 
 public class Continue {
     public static void main(String[]args){
@@ -6,7 +6,7 @@ public class Continue {
             if(i==4){
                 continue;
             }
-            System.out.printf("%dÂ¥µ½À²£¡\n",i); //Ò»¶¨Ò»¶¨Òª×¢Òâ Ñ­»·ÌåÒªÔÚifÅĞ¶Ïºó
+            System.out.printf("%dæ¥¼åˆ°å•¦ï¼\n",i); //ä¸€å®šä¸€å®šè¦æ³¨æ„ å¾ªç¯ä½“è¦åœ¨ifåˆ¤æ–­å
         }
     }
 }

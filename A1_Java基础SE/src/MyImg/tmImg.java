@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * ÃèÊö The type Tm img.
+ * æè¿° The type Tm img.
  *
  * @author Jack Que
  * @created 2021 -07-08 10:25:10
@@ -17,7 +17,7 @@ public class tmImg {
 
 
     /**
-     * ÃèÊö The entry point of application.
+     * æè¿° The entry point of application.
      *
      * @param args the input arguments
      * @author Jack Que
@@ -26,7 +26,7 @@ public class tmImg {
     public static void main(String[] args) {
         try {
 //            changeImgColor("D:\\IEC202105181050.JPG");
-            changeImgColor("D:\\Ô´´úÂë\\src\\MyImg\\A01.jpg");
+            changeImgColor("D:\\æºä»£ç \\src\\MyImg\\A01.jpg");
             changeImgColor("C:\\Users\\Saber\\Desktop\\img\\A7.jpg");
         } catch (IOException e) {
             e.printStackTrace();
@@ -34,7 +34,7 @@ public class tmImg {
     }
 
     /**
-     * ½«±³¾°Ìæ»»ÎªÍ¸Ã÷
+     * å°†èƒŒæ™¯æ›¿æ¢ä¸ºé€æ˜
      *
      * @param imgBytes the img bytes
      * @return
@@ -48,19 +48,19 @@ public class tmImg {
         String fileName = file.getName();
         BufferedImage bi =  ImageIO.read(file);
         Image image = (Image) bi;
-        //½«Ô­Í¼Æ¬µÄ¶ş½øÖÆ×ª»¯ÎªImageIcon
+        //å°†åŸå›¾ç‰‡çš„äºŒè¿›åˆ¶è½¬åŒ–ä¸ºImageIcon
         ImageIcon imageIcon = new ImageIcon(image);
         int width = imageIcon.getIconWidth();
         int height = imageIcon.getIconHeight();
 //
-        //Í¼Æ¬»º³åÁ÷
+        //å›¾ç‰‡ç¼“å†²æµ
         BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_4BYTE_ABGR);
         Graphics2D graphics2D = (Graphics2D) bufferedImage.getGraphics();
         graphics2D.drawImage(imageIcon.getImage(), 0, 0, imageIcon.getImageObserver());
 
         int alpha = 255;
 
-        //Õâ¸ö±³¾°µ×É«µÄÑ¡Ôñ£¬ÎÒÕâÀïÑ¡ÔñµÄÊÇ±È½ÏÆ«µÄÎ»ÖÃ£¬¿ÉÒÔĞŞ¸ÄÎ»ÖÃ¡£±³¾°É«Ñ¡Ôñ²»ÖªµÀÓĞÃ»ÓĞ±ğµÄ¸üÓÅµÄ·½Ê½£¨±ÈÈçÏÈ¹ıÂËÒ»±é»ñÈ¡ÑÕÉ«´ÎÊı×î¶àµÄ£¬µ«ÊÇÒòÎª¸Ğ¾õ×öÆğÀ´»á±È½Ï¸´ÔÓÃ»È¥ÊµÏÖ£©£¬Èç¹ûÓĞ¿ÉÒÔÆÀÂÛ¡£
+        //è¿™ä¸ªèƒŒæ™¯åº•è‰²çš„é€‰æ‹©ï¼Œæˆ‘è¿™é‡Œé€‰æ‹©çš„æ˜¯æ¯”è¾ƒåçš„ä½ç½®ï¼Œå¯ä»¥ä¿®æ”¹ä½ç½®ã€‚èƒŒæ™¯è‰²é€‰æ‹©ä¸çŸ¥é“æœ‰æ²¡æœ‰åˆ«çš„æ›´ä¼˜çš„æ–¹å¼ï¼ˆæ¯”å¦‚å…ˆè¿‡æ»¤ä¸€éè·å–é¢œè‰²æ¬¡æ•°æœ€å¤šçš„ï¼Œä½†æ˜¯å› ä¸ºæ„Ÿè§‰åšèµ·æ¥ä¼šæ¯”è¾ƒå¤æ‚æ²¡å»å®ç°ï¼‰ï¼Œå¦‚æœæœ‰å¯ä»¥è¯„è®ºã€‚
         int RGB=bufferedImage.getRGB(width-1, height-1);
 
         for(int i = bufferedImage.getMinX(); i < width; i++) {
@@ -74,7 +74,7 @@ public class tmImg {
                 int R = (RGB & 0xff0000) >>16;
                 int G = (RGB & 0xff00) >> 8;
                 int B = (RGB & 0xff);
-                //aÎªÉ«²î·¶Î§Öµ£¬½¥±äÉ«±ßÔµ´¦Àí£¬ÊıÖµĞèÒª¾ßÌå²âÊÔ£¬50×óÓÒµÄĞ§¹û±È½Ï¿ÉÒÔ
+                //aä¸ºè‰²å·®èŒƒå›´å€¼ï¼Œæ¸å˜è‰²è¾¹ç¼˜å¤„ç†ï¼Œæ•°å€¼éœ€è¦å…·ä½“æµ‹è¯•ï¼Œ50å·¦å³çš„æ•ˆæœæ¯”è¾ƒå¯ä»¥
                 int a = 45;
                 if(Math.abs(R-r) < a && Math.abs(G-g) < a && Math.abs(B-b) < a ) {
                     alpha = 0;
@@ -88,18 +88,18 @@ public class tmImg {
 
 //        graphics2D.drawImage(bufferedImage, 0, 0, imageIcon.getImageObserver());
 
-        //ĞÂ½¨×Ö½ÚÊä³öÁ÷£¬ÓÃÀ´´æ·ÅÌæ»»Íê±³¾°µÄÍ¼Æ¬
+        //æ–°å»ºå­—èŠ‚è¾“å‡ºæµï¼Œç”¨æ¥å­˜æ”¾æ›¿æ¢å®ŒèƒŒæ™¯çš„å›¾ç‰‡
 //        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
         String[] split = fileName.split("\\.");
-        fileName = split[0]+"(ÒÑ×ª»»)."+split[1];
+        fileName = split[0]+"(å·²è½¬æ¢)."+split[1];
         ImageIO.write(bufferedImage, "png", new File("D:\\"+fileName));
     }
 
     public static String convertRgbStr(int color) {
-        int red = (color & 0xff0000) >> 16;// »ñÈ¡color(RGB)ÖĞRÎ»
-        int green = (color & 0x00ff00) >> 8;// »ñÈ¡color(RGB)ÖĞGÎ»
-        int blue = (color & 0x0000ff);// »ñÈ¡color(RGB)ÖĞBÎ»
+        int red = (color & 0xff0000) >> 16;// è·å–color(RGB)ä¸­Rä½
+        int green = (color & 0x00ff00) >> 8;// è·å–color(RGB)ä¸­Gä½
+        int blue = (color & 0x0000ff);// è·å–color(RGB)ä¸­Bä½
         return red + "," + green + "," + blue;
     }
 }

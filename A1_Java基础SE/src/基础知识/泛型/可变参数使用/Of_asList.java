@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.¿É±ä²ÎÊıÊ¹ÓÃ;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.å¯å˜å‚æ•°ä½¿ç”¨;
 
 /*
-Arrays: ·µ»ØµÄ¼¯ºÏ²»ÄÜÔöÉ¾²Ù×÷£¬¿ÉÒÔ½øĞĞĞŞ¸Ä²Ù×÷
+Arrays: è¿”å›çš„é›†åˆä¸èƒ½å¢åˆ æ“ä½œï¼Œå¯ä»¥è¿›è¡Œä¿®æ”¹æ“ä½œ
 
-List  : ·µ»ØµÄ¼¯ºÏ²»ÄÜ×öÔöÉ¾¸Ä²Ù×÷
+List  : è¿”å›çš„é›†åˆä¸èƒ½åšå¢åˆ æ”¹æ“ä½œ
 
-Set   : ²»ÄÜ¸øÖØ¸´µÄÔªËØ£¬·µ»ØµÄ¼¯ºÏ²»ÄÜ×öÔöÉ¾²Ù×÷£¬Ã»ÓĞĞŞ¸ÄµÄ·½·¨
+Set   : ä¸èƒ½ç»™é‡å¤çš„å…ƒç´ ï¼Œè¿”å›çš„é›†åˆä¸èƒ½åšå¢åˆ æ“ä½œï¼Œæ²¡æœ‰ä¿®æ”¹çš„æ–¹æ³•
 
 */
 
@@ -17,72 +17,72 @@ public class Of_asList {
 
     public static void main(String[] args) {
 
-        //Arrays¹¤¾ßÀàÖĞµÄÓĞÒ»¸ö¾²Ì¬·½·¨: public static <T> List <T> asList(T... a){...};
+        //Arrayså·¥å…·ç±»ä¸­çš„æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•: public static <T> List <T> asList(T... a){...};
         //==========================================================================
-        List<String> asList = Arrays.asList("ºÓÑ¥´Ò", "¶¾º¦Õæ¾ú", "ÎŞÏëµÄÒ»µ¶");
+        List<String> asList = Arrays.asList("æ²³é´åŒ†", "æ¯’å®³çœŸèŒ", "æ— æƒ³çš„ä¸€åˆ€");
         System.out.println(asList);
-        try{//Ìí¼Ó
-            asList.add("Õâ¸öÌí¼Ó²»ÁË");
-            System.out.println("asList.add(\"Õâ¸öÌí¼Ó²»ÁË\") Î´³öÏÖÒì³£ ");
+        try{//æ·»åŠ 
+            asList.add("è¿™ä¸ªæ·»åŠ ä¸äº†");
+            System.out.println("asList.add(\"è¿™ä¸ªæ·»åŠ ä¸äº†\") æœªå‡ºç°å¼‚å¸¸ ");
         }catch (UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        try{//É¾³ı
-            asList.remove("ÎŞÏëµÄÒ»µ¶");
-            System.out.println(" asList.remove(\"ÎŞÏëµÄÒ»µ¶\") Î´³öÏÖÒì³£ ");
+        try{//åˆ é™¤
+            asList.remove("æ— æƒ³çš„ä¸€åˆ€");
+            System.out.println(" asList.remove(\"æ— æƒ³çš„ä¸€åˆ€\") æœªå‡ºç°å¼‚å¸¸ ");
         }catch (UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        try{//ĞŞ¸Ä
-            asList.set(1,"ºÍÑ¦´Ï");
-            System.out.println("asList.set(1,\"ºÍÑ¦´Ï\"); Î´³öÏÖÒì³£ ");
+        try{//ä¿®æ”¹
+            asList.set(1,"å’Œè–›èª");
+            System.out.println("asList.set(1,\"å’Œè–›èª\"); æœªå‡ºç°å¼‚å¸¸ ");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
 
         System.out.println("===================================================================");
         System.out.println("===================================================================");
 
-        //List½Ó¿ÚÖĞÓĞÒ»¸ö¾²Ì¬·½·¨£ºpublic static <E> List <E> of(E... elements): ·µ»Ø°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±äÁĞ±í
-        List<String> listOf = List.of("ºÓÑ¥´Ò", "¶¾º¦Õæ¾ú", "ÎŞÏëµÄÒ»µ¶");
+        //Listæ¥å£ä¸­æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•ï¼špublic static <E> List <E> of(E... elements): è¿”å›åŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜åˆ—è¡¨
+        List<String> listOf = List.of("æ²³é´åŒ†", "æ¯’å®³çœŸèŒ", "æ— æƒ³çš„ä¸€åˆ€");
 
-        try{//Ìí¼Ó
-            listOf.add("ÎÄ¾ıÄÜÓĞ¼¸¶à³î");
-            System.out.println(" listOf.add(\"ÎÄ¾ıÄÜÓĞ¼¸¶à³î\"); Î´³öÏÖÒì³£ ");
+        try{//æ·»åŠ 
+            listOf.add("æ–‡å›èƒ½æœ‰å‡ å¤šæ„");
+            System.out.println(" listOf.add(\"æ–‡å›èƒ½æœ‰å‡ å¤šæ„\"); æœªå‡ºç°å¼‚å¸¸ ");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        try{//É¾³ı
-            listOf.remove("ÎÄ¾ıÄÜÓĞ¼¸¶à³î");
-            System.out.println(" listOf.remove(\"ÎÄ¾ıÄÜÓĞ¼¸¶à³î\"); Î´³öÏÖÒì³£ ");
+        try{//åˆ é™¤
+            listOf.remove("æ–‡å›èƒ½æœ‰å‡ å¤šæ„");
+            System.out.println(" listOf.remove(\"æ–‡å›èƒ½æœ‰å‡ å¤šæ„\"); æœªå‡ºç°å¼‚å¸¸ ");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        try{//ĞŞ¸Ä
-            listOf.set(1,"ÎÊ¾ıÄÜÓĞ¼¸¶à³î");
-            System.out.println(" listOf.set(\"ÎÄ¾ıÄÜÓĞ¼¸¶à³î\"); Î´³öÏÖÒì³£ ");
+        try{//ä¿®æ”¹
+            listOf.set(1,"é—®å›èƒ½æœ‰å‡ å¤šæ„");
+            System.out.println(" listOf.set(\"æ–‡å›èƒ½æœ‰å‡ å¤šæ„\"); æœªå‡ºç°å¼‚å¸¸ ");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
 
         System.out.println("===================================================================");
         System.out.println("===================================================================");
 
-        //Set½Ó¿ÚÖĞÓĞÒ»¸ö¾²Ì¬·½·¨: public static <> Set <> of(E... elements): ·µ»ØÒ»¸ö°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±ä¼¯ºÏ
-        Set<String> setOf = Set.of("ºÓÑ¥´Ò", "¶¾º¦Õæ¾ú", "ÎŞÏëµÄÒ»µ¶");
-        try{//Ìí¼Ó
-            setOf.add("ŞÏŞÎ");
-            System.out.println("setOf.add(\"ŞÏŞÎ\") Î´³öÏÖÒì³£");
+        //Setæ¥å£ä¸­æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•: public static <> Set <> of(E... elements): è¿”å›ä¸€ä¸ªåŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜é›†åˆ
+        Set<String> setOf = Set.of("æ²³é´åŒ†", "æ¯’å®³çœŸèŒ", "æ— æƒ³çš„ä¸€åˆ€");
+        try{//æ·»åŠ 
+            setOf.add("å°´å°¬");
+            System.out.println("setOf.add(\"å°´å°¬\") æœªå‡ºç°å¼‚å¸¸");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        try{//É¾³ı
-            setOf.remove("ÎŞÏëµÄÒ»µ¶");
-            System.out.println("setOf.add(\"ŞÏŞÎ\") Î´³öÏÖÒì³£");
+        try{//åˆ é™¤
+            setOf.remove("æ— æƒ³çš„ä¸€åˆ€");
+            System.out.println("setOf.add(\"å°´å°¬\") æœªå‡ºç°å¼‚å¸¸");
         }catch(UnsupportedOperationException e){
-            System.out.println("³öÏÖÒì³££ºUnsupportedOperationException");
+            System.out.println("å‡ºç°å¼‚å¸¸ï¼šUnsupportedOperationException");
         }
-        System.out.println("Ã»ÓĞĞŞ¸ÄµÄ·½·¨");
+        System.out.println("æ²¡æœ‰ä¿®æ”¹çš„æ–¹æ³•");
 
 
     }

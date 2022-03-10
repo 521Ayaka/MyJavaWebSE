@@ -1,21 +1,21 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.Static01;
+package åŸºç¡€çŸ¥è¯†.é™æ€.Static01;
 
 public class Static03 {
 
     public static void main(String[] args) {
-        // Ê×ÏÈÉèÖÃÒ»ÏÂ½ÌÊÒ£¬ÕâÊÇ¾²Ì¬µÄ¶«Î÷£¬Ó¦¸ÃÍ¨¹ıÀàÃû³Æ½øĞĞµ÷ÓÃ
-        Student.room = "101½ÌÊÒ";
+        // é¦–å…ˆè®¾ç½®ä¸€ä¸‹æ•™å®¤ï¼Œè¿™æ˜¯é™æ€çš„ä¸œè¥¿ï¼Œåº”è¯¥é€šè¿‡ç±»åç§°è¿›è¡Œè°ƒç”¨
+        Student.room = "101æ•™å®¤";
 
-        Student one = new Student("¹ù¾¸", 20);
-        System.out.println("oneµÄĞÕÃû£º" + one.getName());
-        System.out.println("oneµÄÄêÁä£º" + one.getAge());
-        System.out.println("oneµÄ½ÌÊÒ£º" + Student.room);
+        Student one = new Student("éƒ­é–", 20);
+        System.out.println("oneçš„å§“åï¼š" + one.getName());
+        System.out.println("oneçš„å¹´é¾„ï¼š" + one.getAge());
+        System.out.println("oneçš„æ•™å®¤ï¼š" + Student.room);
         System.out.println("============");
 
-        Student two = new Student("»ÆÈØ", 18);
-        System.out.println("twoµÄĞÕÃû£º" + two.getName());
-        System.out.println("twoµÄÄêÁä£º" + two.getAge());
-        System.out.println("twoµÄ½ÌÊÒ£º" + Student.room);
+        Student two = new Student("é»„è“‰", 18);
+        System.out.println("twoçš„å§“åï¼š" + two.getName());
+        System.out.println("twoçš„å¹´é¾„ï¼š" + two.getAge());
+        System.out.println("twoçš„æ•™å®¤ï¼š" + Student.room);
     }
 
 }

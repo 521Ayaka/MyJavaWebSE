@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A3_LambdaÊ¹ÓÃÇ°Ìá;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A3_Lambdaä½¿ç”¨å‰æ;
 
 public interface MyInterface {
 
-    //LambdaÊ¹ÓÃÇ°ÌáÊÇ
-    //1.ÊÇ¸ö½Ó¿Ú
-    //2.½Ó¿ÚÖĞ½öÓĞÒ»¸ö³éÏó·½·¨
+    //Lambdaä½¿ç”¨å‰ææ˜¯
+    //1.æ˜¯ä¸ªæ¥å£
+    //2.æ¥å£ä¸­ä»…æœ‰ä¸€ä¸ªæŠ½è±¡æ–¹æ³•
     public abstract int method(String str, int lenX, int lenY);
 
 }

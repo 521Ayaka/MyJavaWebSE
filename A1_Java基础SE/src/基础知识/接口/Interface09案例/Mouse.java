@@ -1,18 +1,18 @@
-package 基础知识.接口.Interface09案例;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.Interface09妗堜緥;
 
 public class Mouse implements USB{
 
     @Override
     public void open() {
-        System.out.println("打开鼠标");
+        System.out.println("鎵撳紑榧犳爣");
     }
 
     @Override
     public void close() {
-        System.out.println("关闭鼠标");
+        System.out.println("鍏抽棴榧犳爣");
     }
 
     public void click(){
-        System.out.println("点击鼠标");
+        System.out.println("鐐瑰嚮榧犳爣");
     }
 }

@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½ÚÁ÷.×Ö½ÚÁ÷µÄ°¸Àı.¸´ÖÆÍ¼Æ¬;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚æµ.å­—èŠ‚æµçš„æ¡ˆä¾‹.å¤åˆ¶å›¾ç‰‡;
 
-//°ÑÎÄ¼ş¸´ÖÆµ½µ±Ç°ÎÄ¼şÏÂ
+//æŠŠæ–‡ä»¶å¤åˆ¶åˆ°å½“å‰æ–‡ä»¶ä¸‹
 
 
 import java.io.FileInputStream;
@@ -11,20 +11,20 @@ public class DameIO_Img {
 
     public static void main(String[] args) {
 
-        //´´½¨×Ö½ÚÊäÈëÊä³öÁ÷¶ÔÏó
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥è¾“å‡ºæµå¯¹è±¡
         FileInputStream input = null;
         FileOutputStream output = null;
 
-        //try...catch...finally ½øĞĞ²Ù×÷¡£
+        //try...catch...finally è¿›è¡Œæ“ä½œã€‚
         try {
-            input = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÍ¼Æ¬\\Í¼Æ¬\\Ã¨Óğë~.jpg");
-            output = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÍ¼Æ¬\\Ã¨Óğë~.jpg");
+            input = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶å›¾ç‰‡\\å›¾ç‰‡\\çŒ«ç¾½é›«.jpg");
+            output = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶å›¾ç‰‡\\çŒ«ç¾½é›«.jpg");
 
-            //¸´ÖÆ²Ù×÷£º
+            //å¤åˆ¶æ“ä½œï¼š
             byte [] array = new byte[1024*8];
             int by;
             while ( (by = input.read(array)) != -1 ){
-                output.write(array,0,by);//ºóÃæÁ½¸ö²ÎÊı¾¡Á¿Ò²ÒªĞ´
+                output.write(array,0,by);//åé¢ä¸¤ä¸ªå‚æ•°å°½é‡ä¹Ÿè¦å†™
             }
 
         }catch (IOException e){

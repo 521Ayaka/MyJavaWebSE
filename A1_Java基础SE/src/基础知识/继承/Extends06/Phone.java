@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends06;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends06;
 
 public class Phone {
 
     public void call() {
-        System.out.println("´òµç»°");
+        System.out.println("æ‰“ç”µè¯");
     }
 
     public void send() {
-        System.out.println("·¢¶ÌĞÅ");
+        System.out.println("å‘çŸ­ä¿¡");
     }
 
     public void show() {
-        System.out.println("ÏÔÊ¾ºÅÂë");
+        System.out.println("æ˜¾ç¤ºå·ç ");
     }
 }

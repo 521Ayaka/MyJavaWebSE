@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ÃæÏò¶ÔÏó;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.é¢å‘å¯¹è±¡;
 
 public class Gangale {
     public static void main(String[] args) {
         while(true){
-            System.out.print("+ŞÏŞÎÁË+");
+            System.out.print("+å°´å°¬äº†+");
         }
     }
 

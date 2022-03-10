@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.·´Éä.A4_·´Éä»ñÈ¡¹¹ÔìÆ÷·½·¨.Á·Ï°1;
+package åŸºç¡€çŸ¥è¯†.åå°„.A4_åå°„è·å–æ„é€ å™¨æ–¹æ³•.ç»ƒä¹ 1;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -8,18 +8,18 @@ public class NewInstance01 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
 
-        //»ñÈ¡class¶ÔÏó
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        //è·å–classå¯¹è±¡
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
 
-        //»ñÈ¡Õâ¸ö¹¹ÔìÆ÷£ºpublic Student(String name, int age, String id)
-        //¾²Ì¬µÄÓÃgetConstructor·½·¨, ²ÎÊıÈı¸öclass¶ÔÏó¡£
+        //è·å–è¿™ä¸ªæ„é€ å™¨ï¼špublic Student(String name, int age, String id)
+        //é™æ€çš„ç”¨getConstructoræ–¹æ³•, å‚æ•°ä¸‰ä¸ªclasså¯¹è±¡ã€‚
         Constructor<?> con = c.getConstructor(String.class,int.class,String.class);
 
-        //Ê¹ÓÃConstructorÀàÖĞµÄ newInstance·½·¨´´½¨¶ÔÏó¡£
-        Object obj = con.newInstance("ŞÏŞÎ½´", 9, "202002");
+        //ä½¿ç”¨Constructorç±»ä¸­çš„ newInstanceæ–¹æ³•åˆ›å»ºå¯¹è±¡ã€‚
+        Object obj = con.newInstance("å°´å°¬é…±", 9, "202002");
 
-        //´òÓ¡obj¶ÔÏó
-        System.out.println(obj);// Student{name='ŞÏŞÎ½´', age=9, id='202002'}
+        //æ‰“å°objå¯¹è±¡
+        System.out.println(obj);// Student{name='å°´å°¬é…±', age=9, id='202002'}
 
     }
 

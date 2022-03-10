@@ -1,62 +1,62 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Math;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Math;
 /*
 
 java.lang.Math
-MathÊÇÃ»ÓĞ¹¹Ôì·½·¨µÄ£¬µ«ÊÇÄÚ²¿µÄ³ÉÔ±·½·¨¶¼ÊÇ¾²Ì¬static·½·¨¡£
-¿ÉÒÔ¸ù¾İÀàÃû³Æµ÷ÓÃ·½·¨
+Mathæ˜¯æ²¡æœ‰æ„é€ æ–¹æ³•çš„ï¼Œä½†æ˜¯å†…éƒ¨çš„æˆå‘˜æ–¹æ³•éƒ½æ˜¯é™æ€staticæ–¹æ³•ã€‚
+å¯ä»¥æ ¹æ®ç±»åç§°è°ƒç”¨æ–¹æ³•
 
 */
 public class MathLei {
 
     public static void main(String[] args) {
 
-        //public static int abs (int a){...}                   // ·µ»Ø²ÎÊıµÄ¾ø¶ÔÖµ [·½·¨¿ÉÖØÔØ]
+        //public static int abs (int a){...}                   // è¿”å›å‚æ•°çš„ç»å¯¹å€¼ [æ–¹æ³•å¯é‡è½½]
 
-        //public static double ceil (double a){...}            // ÏòÉÏÈ¡Õû
+        //public static double ceil (double a){...}            // å‘ä¸Šå–æ•´
 
-        //public static double floor (double a){...}           // ÏòÏÂÈ¡Õû
+        //public static double floor (double a){...}           // å‘ä¸‹å–æ•´
 
-        //public static int round (double a){...}              // ËÄÉáÎåÈë
+        //public static int round (double a){...}              // å››èˆäº”å…¥
 
-        //public static int max (int a, int b){...}            // ±È¼ÛÁ½¸ö²ÎÊıÄÇ¸ö´ó£¬²¢·µ»Ø×î´óÖµ [·½·¨¿ÉÖØÔØ]
+        //public static int max (int a, int b){...}            // æ¯”ä»·ä¸¤ä¸ªå‚æ•°é‚£ä¸ªå¤§ï¼Œå¹¶è¿”å›æœ€å¤§å€¼ [æ–¹æ³•å¯é‡è½½]
 
-        //public static int min (int a, int b){...}            // ±È½ÏÁ½¸ö²ÎÊıÄÇ¸öĞ¡£¬²¢·µ»Ø×îĞ¡Öµ [·½·¨¿ÉÖØÔØ]
+        //public static int min (int a, int b){...}            // æ¯”è¾ƒä¸¤ä¸ªå‚æ•°é‚£ä¸ªå°ï¼Œå¹¶è¿”å›æœ€å°å€¼ [æ–¹æ³•å¯é‡è½½]
 
-        //public static double por (double a, double b){...}   // ·µ»ØµÚÒ»¸ö²ÎÊıµÄµÚ¶ş¸ö²ÎÊı´ÎÃİµÄÖµ [²ÎÊıºÍ·µ»ØÖµ¶¼ÊÇdouble]
+        //public static double por (double a, double b){...}   // è¿”å›ç¬¬ä¸€ä¸ªå‚æ•°çš„ç¬¬äºŒä¸ªå‚æ•°æ¬¡å¹‚çš„å€¼ [å‚æ•°å’Œè¿”å›å€¼éƒ½æ˜¯double]
 
-        //public static double random (){...}                  // ·µ»Ø´øÕıºÅµÄ double Öµ£¬¸ÃÖµ´óÓÚµÈÓÚ 0.0 ÇÒĞ¡ÓÚ 1.0¡£
+        //public static double random (){...}                  // è¿”å›å¸¦æ­£å·çš„ double å€¼ï¼Œè¯¥å€¼å¤§äºç­‰äº 0.0 ä¸”å°äº 1.0ã€‚
 
         System.out.println("==========================================================================================");
 
-        //public static int abs (int a){...}                  // ·µ»Ø²ÎÊıµÄ¾ø¶ÔÖµ [·½·¨¿ÉÖØÔØ]
+        //public static int abs (int a){...}                  // è¿”å›å‚æ•°çš„ç»å¯¹å€¼ [æ–¹æ³•å¯é‡è½½]
         System.out.println(Math.abs(5));
         System.out.println(Math.abs(-5.21));
         System.out.println("==========");
-        //public static double ceil (double a){...}           // ÏòÉÏÈ¡Õû
+        //public static double ceil (double a){...}           // å‘ä¸Šå–æ•´
         System.out.println(Math.ceil(5.21));
         System.out.println(Math.ceil(-5.21));
         System.out.println("==========");
-        //public static double floor (double a){...}          // ÏòÏÂÈ¡Õû
+        //public static double floor (double a){...}          // å‘ä¸‹å–æ•´
         System.out.println(Math.floor(5.21));
         System.out.println(Math.floor(-5.21));
         System.out.println("==========");
-        //public static int round (double a){...}             // ËÄÉáÎåÈë
+        //public static int round (double a){...}             // å››èˆäº”å…¥
         System.out.println(Math.round(6.6));
         System.out.println("==========");
-        //public static int max (int a, int b){...}           // ±È¼ÛÁ½¸ö²ÎÊıÄÇ¸ö´ó£¬²¢·µ»Ø×î´óÖµ [·½·¨¿ÉÖØÔØ]
+        //public static int max (int a, int b){...}           // æ¯”ä»·ä¸¤ä¸ªå‚æ•°é‚£ä¸ªå¤§ï¼Œå¹¶è¿”å›æœ€å¤§å€¼ [æ–¹æ³•å¯é‡è½½]
         System.out.println(Math.max(5.21, 5.211314));
         System.out.println(Math.max(521, 5211314));
         System.out.println("==========");
-        //public static int min (int a, int b){...}           // ±È½ÏÁ½¸ö²ÎÊıÄÇ¸öĞ¡£¬²¢·µ»Ø×îĞ¡Öµ [·½·¨¿ÉÖØÔØ]
+        //public static int min (int a, int b){...}           // æ¯”è¾ƒä¸¤ä¸ªå‚æ•°é‚£ä¸ªå°ï¼Œå¹¶è¿”å›æœ€å°å€¼ [æ–¹æ³•å¯é‡è½½]
         System.out.println(Math.max(5.21, 5.211314));
         System.out.println(Math.max(521, 5211314));
         System.out.println("==========");
-        //public static double pow (double a, double b){...}  // ·µ»ØµÚÒ»¸ö²ÎÊıµÄµÚ¶ş¸ö²ÎÊı´ÎÃİµÄÖµ [²ÎÊıºÍ·µ»ØÖµ¶¼ÊÇdouble]
-        System.out.println(Math.pow(8, 2));                   //8 2 Ç¿ÖÆ×ª»»³É8.0 ºÍ 2.0 £¬·µ»ØµÄÖµÒ²ÊÇ 64.0 µÄ double
+        //public static double pow (double a, double b){...}  // è¿”å›ç¬¬ä¸€ä¸ªå‚æ•°çš„ç¬¬äºŒä¸ªå‚æ•°æ¬¡å¹‚çš„å€¼ [å‚æ•°å’Œè¿”å›å€¼éƒ½æ˜¯double]
+        System.out.println(Math.pow(8, 2));                   //8 2 å¼ºåˆ¶è½¬æ¢æˆ8.0 å’Œ 2.0 ï¼Œè¿”å›çš„å€¼ä¹Ÿæ˜¯ 64.0 çš„ double
         System.out.println("==========");
-        //public static double random (){...}                 // ·µ»Ø´øÕıºÅµÄ double Öµ£¬¸ÃÖµ´óÓÚµÈÓÚ 0.0 ÇÒĞ¡ÓÚ 1.0¡£
+        //public static double random (){...}                 // è¿”å›å¸¦æ­£å·çš„ double å€¼ï¼Œè¯¥å€¼å¤§äºç­‰äº 0.0 ä¸”å°äº 1.0ã€‚
         System.out.println(Math.random());
-        System.out.println("1-10Éú³É20¸öËæ»úÊı");
+        System.out.println("1-10ç”Ÿæˆ20ä¸ªéšæœºæ•°");
         for (int i = 0; i < 20; i++) {
             System.out.println( (int)(Math.random()*10+1) );
         }

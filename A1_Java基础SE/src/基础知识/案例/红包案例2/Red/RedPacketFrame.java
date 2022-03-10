@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı2.Red;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹2.Red;
 
 
 import javax.swing.*;
@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * ºì°üµÄ¿ò¼Ü RedPacketFrame
+ * çº¢åŒ…çš„æ¡†æ¶ RedPacketFrame
  *
  * AWT / Swing / JavaFX
  *
- * @author ²»ÊÇÎÒ
+ * @author ä¸æ˜¯æˆ‘
  *
  */
 public abstract class RedPacketFrame extends JFrame {
@@ -27,72 +27,72 @@ public abstract class RedPacketFrame extends JFrame {
     private ArrayList<Integer> moneyList = null;
 
     private static int initMoney = 0;
-    private static int totalMoney = 0; // µ¥Î»Îª¡°·Ö¡±
+    private static int totalMoney = 0; // å•ä½ä¸ºâ€œåˆ†â€
     private static int count = 0;
 
     private static HashMap<JPanel, JLabel> panelLable = new HashMap<>();
 
-    // ÉèÖÃ×ÖÌå
-    private static Font fontYaHei = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 20);
-    private static Font msgFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 20);
-    private static Font totalShowFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 40);
-    private static Font nameFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 40);
-    private static Font showNameFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 20);
-    private static Font showMoneyFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 50);
-    private static Font showResultFont = new Font("Î¢ÈíÑÅºÚ", Font.BOLD, 15);
+    // è®¾ç½®å­—ä½“
+    private static Font fontYaHei = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 20);
+    private static Font msgFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 20);
+    private static Font totalShowFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 40);
+    private static Font nameFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 40);
+    private static Font showNameFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 20);
+    private static Font showMoneyFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 50);
+    private static Font showResultFont = new Font("å¾®è½¯é›…é»‘", Font.BOLD, 15);
 
     /**
-     * ´°Ìå´óĞ¡ WIDTH:400 HEIGHT:600
+     * çª—ä½“å¤§å° WIDTH:400 HEIGHT:600
      */
-    private static final int FRAME_WIDTH = 416; // ¾²Ì¬È«¾Ö´°¿Ú´óĞ¡
+    private static final int FRAME_WIDTH = 416; // é™æ€å…¨å±€çª—å£å¤§å°
     private static final int FRAME_HEIGHT = 650;
     private static JLayeredPane layeredPane = null;
 
     /// private static JPanel contentPane = null;
 
     /**
-     * page1:ÊäÈëÒ³Ãæ - InputPanel . ×é¼şºÍ³õÊ¼»¯!
+     * page1:è¾“å…¥é¡µé¢ - InputPanel . ç»„ä»¶å’Œåˆå§‹åŒ–!
      */
     private static JPanel inputPanel = new JPanel();
 
-    // private static JTextField input_total = new JTextField("200"); // ²âÊÔÓÃ
-    // private static JTextField input_count = new JTextField("3"); // ²âÊÔÓÃ
+    // private static JTextField input_total = new JTextField("200"); // æµ‹è¯•ç”¨
+    // private static JTextField input_count = new JTextField("3"); // æµ‹è¯•ç”¨
     private static JTextField input_total = new JTextField();
     private static JTextField input_count = new JTextField();
     private static JTextField input_people = new JTextField("30");
-    private static JTextField input_msg = new JTextField("¹§Ï²·¢²Æ  ,  ´ó¼ª´óÀû");
+    private static JTextField input_msg = new JTextField("æ­å–œå‘è´¢  ,  å¤§å‰å¤§åˆ©");
     private static JTextField input_total_show = new JTextField("$ " + input_total.getText().trim());
-    private static JLabel input_inMoney = new JLabel(); // ²»¿É¼û
-    private static JLabel input_bg_label = new JLabel(new ImageIcon(DIR + "\\01_input.jpg"));
+    private static JLabel input_inMoney = new JLabel(); // ä¸å¯è§
+    private static JLabel input_bg_label = new JLabel(new ImageIcon("D:\\æºä»£ç \\A1_JavaåŸºç¡€SE\\src\\MyImg\\A01.jpg"));
 
     static {
 
-        // ÉèÖÃÎ»ÖÃ
+        // è®¾ç½®ä½ç½®
         input_total.setBounds(200, 90, 150, 50);
         input_count.setBounds(200, 215, 150, 50);
         input_people.setBounds(90, 275, 25, 30);
         input_msg.setBounds(180, 340, 200, 50);
         input_total_show.setBounds(130, 430, 200, 80);
         input_inMoney.setBounds(10, 535, 380, 65);
-        input_bg_label.setBounds(0, 0, 405, 600); // ±³¾°
+        input_bg_label.setBounds(0, 0, 405, 600); // èƒŒæ™¯
 
-        // ÉèÖÃ×ÖÌå
+        // è®¾ç½®å­—ä½“
         input_total.setFont(fontYaHei);
         input_count.setFont(fontYaHei);
         input_people.setFont(fontYaHei);
         input_msg.setFont(msgFont);
-        input_msg.setForeground(new Color(255, 233, 38)); // ×ÖÌåÑÕÉ« Îª½ğÉ«
+        input_msg.setForeground(new Color(255, 233, 38)); // å­—ä½“é¢œè‰² ä¸ºé‡‘è‰²
         input_total_show.setFont(totalShowFont);
         input_inMoney.setFont(fontYaHei);
 
-        // Í¸Ã÷
+        // é€æ˜
         input_people.setOpaque(false);
         input_total_show.setOpaque(false);
-        // ±à ¼­ -- ²»¿É±à¼­
+        // ç¼– è¾‘ -- ä¸å¯ç¼–è¾‘
         input_people.setEditable(false);
         input_total_show.setEditable(false);
 
-        // ±ß½ç -- ÎŞ
+        // è¾¹ç•Œ -- æ— 
         input_total.setBorder(null);
         input_count.setBorder(null);
         input_people.setBorder(null);
@@ -102,39 +102,39 @@ public abstract class RedPacketFrame extends JFrame {
     }
 
     /**
-     * page2:´ò¿ªÒ³Ãæ - openPanel . ×é¼şºÍ³õÊ¼»¯!
+     * page2:æ‰“å¼€é¡µé¢ - openPanel . ç»„ä»¶å’Œåˆå§‹åŒ–!
      */
     private static JPanel openPanel = new JPanel();
 
-    private static JTextField open_ownerName = new JTextField("Ë­Ë­Ë­");
+    private static JTextField open_ownerName = new JTextField("è°è°è°");
     private static JLabel open_label = new JLabel(new ImageIcon(DIR + "\\02_open_2.gif"));
     private static JLabel open_bg_label = new JLabel(new ImageIcon(DIR + "\\02_open_1.jpg"));
 
     static {
 
-        // ÉèÖÃ Î»ÖÃ.
+        // è®¾ç½® ä½ç½®.
         open_ownerName.setBounds(0, 110, 400, 50);
         open_bg_label.setBounds(0, 0, 400, 620);
         open_label.setBounds(102, 280, 200, 200);
         open_ownerName.setHorizontalAlignment(JTextField.CENTER);
 
-        // ÉèÖÃ×ÖÌå
+        // è®¾ç½®å­—ä½“
         open_ownerName.setFont(nameFont);
-        open_ownerName.setForeground(new Color(255, 200, 163)); // ×ÖÌåÑÕÉ« Îª½ğÉ«
+        open_ownerName.setForeground(new Color(255, 200, 163)); // å­—ä½“é¢œè‰² ä¸ºé‡‘è‰²
 
-        // ±³¾°É«
+        // èƒŒæ™¯è‰²
         // open_name.setOpaque(false);
         open_ownerName.setBackground(new Color(219, 90, 68));
 
-        // ²»¿É±à¼­
+        // ä¸å¯ç¼–è¾‘
         open_ownerName.setEditable(false);
-        // ±ß¿ò
+        // è¾¹æ¡†
         open_ownerName.setBorder(null);
 
     }
 
     /**
-     * page3:Õ¹Ê¾Ò³Ãæ - showPanel . ×é¼şºÍ³õÊ¼»¯!
+     * page3:å±•ç¤ºé¡µé¢ - showPanel . ç»„ä»¶å’Œåˆå§‹åŒ–!
      */
     private static JPanel showPanel = new JPanel();
     private static JPanel showPanel2 = new JPanel();
@@ -142,18 +142,18 @@ public abstract class RedPacketFrame extends JFrame {
 
     private static JLabel show_bg_label = new JLabel(new ImageIcon(DIR + "\\03_money_1.jpg"));
 
-    private static JTextField show_name = new JTextField("ÓÃ»§Ãû³Æ");
-    private static JTextField show_msg = new JTextField("×£¸£ĞÅÏ¢");
+    private static JTextField show_name = new JTextField("ç”¨æˆ·åç§°");
+    private static JTextField show_msg = new JTextField("ç¥ç¦ä¿¡æ¯");
     private static JTextField show_money = new JTextField("99.99");
-    private static JTextField show_result = new JTextField(count + "¸öºì°ü¹²" + (totalMoney / 100.0) + "Ôª,±»ÇÀ¹âÁË");
+    private static JTextField show_result = new JTextField(count + "ä¸ªçº¢åŒ…å…±" + (totalMoney / 100.0) + "å…ƒ,è¢«æŠ¢å…‰äº†");
 
     static {
-        // ·Ö±ğÉèÖÃË®Æ½ºÍ´¹Ö±¹ö¶¯Ìõ×Ô¶¯³öÏÖ
+        // åˆ†åˆ«è®¾ç½®æ°´å¹³å’Œå‚ç›´æ»šåŠ¨æ¡è‡ªåŠ¨å‡ºç°
         // jsp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         // jsp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
         /*
-         * Á½²¿·Ö Ò³Ãæ . 1.±¾ÈË»ñµÃµÄºì°ü-- showPanel 2.±ğÈË»ñµÃµÄºì°ü-- show_jsp
+         * ä¸¤éƒ¨åˆ† é¡µé¢ . 1.æœ¬äººè·å¾—çš„çº¢åŒ…-- showPanel 2.åˆ«äººè·å¾—çš„çº¢åŒ…-- show_jsp
          */
         show_name.setBounds(125, 180, 100, 30);
         show_name.setOpaque(false);
@@ -170,72 +170,72 @@ public abstract class RedPacketFrame extends JFrame {
         show_money.setOpaque(false);
         show_money.setBorder(null);
         show_money.setFont(showMoneyFont);
-        show_money.setForeground(new Color(255, 233, 38)); // ×ÖÌåÑÕÉ« Îª½ğÉ«
+        show_money.setForeground(new Color(255, 233, 38)); // å­—ä½“é¢œè‰² ä¸ºé‡‘è‰²
         show_money.setHorizontalAlignment(SwingConstants.RIGHT);
 
         show_result.setBounds(10, 460, 400, 20);
         show_result.setOpaque(false);
         show_result.setBorder(null);
         show_result.setFont(showResultFont);
-        show_result.setForeground(new Color(170, 170, 170)); // ×ÖÌåÑÕÉ« Îª»ÒÉ«
+        show_result.setForeground(new Color(170, 170, 170)); // å­—ä½“é¢œè‰² ä¸ºç°è‰²
 
-        // ÉèÖÃ Í¼Æ¬.
+        // è®¾ç½® å›¾ç‰‡.
         show_bg_label.setBounds(0, 0, 400, 500);
 
     }
 
     static {
 
-        // Ò³ÃæºÍ ±³¾°µÄ¶ÔÓ¦¹ØÏµ.
+        // é¡µé¢å’Œ èƒŒæ™¯çš„å¯¹åº”å…³ç³».
         panelLable.put(inputPanel, input_bg_label);
         panelLable.put(openPanel, open_bg_label);
         panelLable.put(showPanel, show_bg_label);
     }
 
     private void init() {
-        // ²ã´ÎÃæ°å-- ÓÃÓÚÉèÖÃ±³¾°
+        // å±‚æ¬¡é¢æ¿-- ç”¨äºè®¾ç½®èƒŒæ™¯
         layeredPane = this.getLayeredPane();
-//        System.out.println("²ã´ÎÃæ°å||" + layeredPane);
+//        System.out.println("å±‚æ¬¡é¢æ¿||" + layeredPane);
         // System.out.println(layeredPane);
 
-        // ³õÊ¼»¯¿ò¼Ü -- logo ºÍ»ù±¾ÉèÖÃ
+        // åˆå§‹åŒ–æ¡†æ¶ -- logo å’ŒåŸºæœ¬è®¾ç½®
         initFrame();
-        // ³õÊ¼»¯ Èı¸öÒ³Ãæ -- ×¼±¸Ò³Ãæ
+        // åˆå§‹åŒ– ä¸‰ä¸ªé¡µé¢ -- å‡†å¤‡é¡µé¢
         initPanel();
 
-        // 2.Ìí¼Ó Ò³Ãæ --µÚÒ»¸öÒ³Ãæ, ÊäÈë panel ÉèÖÃµ½ Ò³ÃæÉÏ.
+        // 2.æ·»åŠ  é¡µé¢ --ç¬¬ä¸€ä¸ªé¡µé¢, è¾“å…¥ panel è®¾ç½®åˆ° é¡µé¢ä¸Š.
         setPanel(inputPanel);
 
-        // 3.Ìí¼Ó ¼àÌı
+        // 3.æ·»åŠ  ç›‘å¬
         addListener();
     }
 
 
     /**
-     * ³õÊ¼»¯¿ò¼Ü -- logo ºÍ»ù±¾ÉèÖÃ
+     * åˆå§‹åŒ–æ¡†æ¶ -- logo å’ŒåŸºæœ¬è®¾ç½®
      */
     private void initFrame() {
         // logo
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(DIR + "\\logo.gif"));
-//        System.out.println("LOGO³õÊ¼»¯...");
+//        System.out.println("LOGOåˆå§‹åŒ–...");
 
-        // ´°¿ÚÉèÖÃ
-        this.setSize(FRAME_WIDTH, FRAME_HEIGHT); // ÉèÖÃ½çÃæ´óĞ¡
-        this.setLocation(280, 30); // ÉèÖÃ½çÃæ³öÏÖµÄÎ»ÖÃ
+        // çª—å£è®¾ç½®
+        this.setSize(FRAME_WIDTH, FRAME_HEIGHT); // è®¾ç½®ç•Œé¢å¤§å°
+        this.setLocation(280, 30); // è®¾ç½®ç•Œé¢å‡ºç°çš„ä½ç½®
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(null);
 
-        // ²âÊÔÆÚ ×¢ÊÍ ÍÏ ×§ , ÔËĞĞ·Å¿ª
+        // æµ‹è¯•æœŸ æ³¨é‡Š æ‹– æ‹½ , è¿è¡Œæ”¾å¼€
         // this.setResizable(false);
         this.setVisible(true);
     }
 
     /**
-     * ³õÊ¼»¯Ò³Ãæ-- ×¼±¸Èı¸öÒ³Ãæ
+     * åˆå§‹åŒ–é¡µé¢-- å‡†å¤‡ä¸‰ä¸ªé¡µé¢
      */
 
     private void initPanel() {
-//        System.out.println("Ò³Ãæ³õÊ¼»¯...");
+//        System.out.println("é¡µé¢åˆå§‹åŒ–...");
         initInputPanel();
         initOpenPanel();
         initShowPanel();
@@ -255,7 +255,7 @@ public abstract class RedPacketFrame extends JFrame {
         inputPanel.add(input_total_show);
         inputPanel.add(input_inMoney);
 
-//        System.out.println("ÊäÈëÒ³Ãæ||" + inputPanel);
+//        System.out.println("è¾“å…¥é¡µé¢||" + inputPanel);
 
     }
 
@@ -265,7 +265,7 @@ public abstract class RedPacketFrame extends JFrame {
         // this.add(bg_label);
         openPanel.add(open_ownerName);
         openPanel.add(open_label);
-//        System.out.println("´ò¿ªÒ³Ãæ||" + openPanel);
+//        System.out.println("æ‰“å¼€é¡µé¢||" + openPanel);
     }
 
     private void initShowPanel() {
@@ -277,7 +277,7 @@ public abstract class RedPacketFrame extends JFrame {
         showPanel.add(show_msg);
         showPanel.add(show_money);
         showPanel.add(show_result);
-//        System.out.println("Õ¹Ê¾Ò³Ãæ||" + showPanel);
+//        System.out.println("å±•ç¤ºé¡µé¢||" + showPanel);
         // ====================================
         // showPanel2.setLayout(null);
         // showPanel2.setBounds(0, 500, 401, 300);
@@ -290,20 +290,20 @@ public abstract class RedPacketFrame extends JFrame {
     }
 
     /**
-     * Ã¿´Î´ò¿ªÒ³Ãæ, ÉèÖÃ panelµÄ·½·¨
+     * æ¯æ¬¡æ‰“å¼€é¡µé¢, è®¾ç½® panelçš„æ–¹æ³•
      */
     private void setPanel(JPanel panel) {
-        // ÒÆ³ıµ±Ç°Ò³Ãæ
+        // ç§»é™¤å½“å‰é¡µé¢
         layeredPane.removeAll();
 
-//        System.out.println("ÖØĞÂÉèÖÃ:ĞÂÒ³Ãæ");
-        // ±³¾°lableÌí¼Óµ½layeredPaneµÄÄ¬ÈÏ²ã
+//        System.out.println("é‡æ–°è®¾ç½®:æ–°é¡µé¢");
+        // èƒŒæ™¯lableæ·»åŠ åˆ°layeredPaneçš„é»˜è®¤å±‚
         layeredPane.add(panelLable.get(panel), JLayeredPane.DEFAULT_LAYER);
 
-        // Ãæ°åpanelÉèÖÃÎªÍ¸Ã÷
+        // é¢æ¿panelè®¾ç½®ä¸ºé€æ˜
         panel.setOpaque(false);
 
-        // Ãæ°åpanel Ìí¼Óµ½ layeredPaneµÄmodal²ã
+        // é¢æ¿panel æ·»åŠ åˆ° layeredPaneçš„modalå±‚
         layeredPane.add(panel, JLayeredPane.MODAL_LAYER);
     }
 
@@ -314,7 +314,7 @@ public abstract class RedPacketFrame extends JFrame {
     // }
 
     /**
-     * ÉèÖÃ×é¼şµÄ¼àÌıÆ÷
+     * è®¾ç½®ç»„ä»¶çš„ç›‘å¬å™¨
      */
     private void addListener() {
 
@@ -332,7 +332,7 @@ public abstract class RedPacketFrame extends JFrame {
             @Override
             public void keyReleased(KeyEvent e) {
                 // System.out.println(e);
-//                System.out.println("¸öÊı:" + input_count.getText());
+//                System.out.println("ä¸ªæ•°:" + input_count.getText());
             }
         });
         input_msg.addKeyListener(new KeyAdapter() {
@@ -340,7 +340,7 @@ public abstract class RedPacketFrame extends JFrame {
             @Override
             public void keyReleased(KeyEvent e) {
                 // System.out.println(e);
-//                System.out.println("ÁôÑÔ:" + input_msg.getText());
+//                System.out.println("ç•™è¨€:" + input_msg.getText());
             }
         });
 
@@ -349,62 +349,62 @@ public abstract class RedPacketFrame extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 try {
 
-                    // »ñÈ¡Ò³ÃæµÄÖµ.
-                    totalMoney = (int) (Double.parseDouble(input_total.getText()) * 100); // ×ª»»³É"·Ö"
+                    // è·å–é¡µé¢çš„å€¼.
+                    totalMoney = (int) (Double.parseDouble(input_total.getText()) * 100); // è½¬æ¢æˆ"åˆ†"
                     count = Integer.parseInt(input_count.getText());
                     if (count > 30) {
-                        JOptionPane.showMessageDialog(null, "ºì°ü¸öÊı²»µÃ³¬¹ı30¸ö", "ºì°ü¸öÊıÓĞÎó", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "çº¢åŒ…ä¸ªæ•°ä¸å¾—è¶…è¿‡30ä¸ª", "çº¢åŒ…ä¸ªæ•°æœ‰è¯¯", JOptionPane.INFORMATION_MESSAGE);
                         return;
                     }
 
                     initMoney = totalMoney;
 
-                    System.out.println("×Ü½ğ¶î£º[" + totalMoney + "]·Ö");
-                    System.out.println("ºì°ü¸öÊı£º[" + count + "]¸ö");
+                    System.out.println("æ€»é‡‘é¢ï¼š[" + totalMoney + "]åˆ†");
+                    System.out.println("çº¢åŒ…ä¸ªæ•°ï¼š[" + count + "]ä¸ª");
 
                     input_inMoney.removeMouseListener(this);
 
-//                    System.out.println("Ìø×ª-->´ò¿ªĞÂÒ³Ãæ");
+//                    System.out.println("è·³è½¬-->æ‰“å¼€æ–°é¡µé¢");
 
-                    // ÉèÖÃÈºÖ÷Ãû³Æ
+                    // è®¾ç½®ç¾¤ä¸»åç§°
                     open_ownerName.setText(ownerName);
-                    // ÉèÖÃ´ò¿ªÒ³Ãæ
+                    // è®¾ç½®æ‰“å¼€é¡µé¢
                     setPanel(openPanel);
 
                 } catch (Exception e2) {
-                    JOptionPane.showMessageDialog(null, "ÇëÊäÈëÕıÈ·¡¾×Ü½ğ¶î¡¿»ò¡¾ºì°ü¸öÊı¡¿", "ÊäÈëĞÅÏ¢ÓĞÎó", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "è¯·è¾“å…¥æ­£ç¡®ã€æ€»é‡‘é¢ã€‘æˆ–ã€çº¢åŒ…ä¸ªæ•°ã€‘", "è¾“å…¥ä¿¡æ¯æœ‰è¯¯", JOptionPane.ERROR_MESSAGE);
 
                 }
             }
         });
 
-        // open_ownerName ,µã»÷ [Ãû³Æ],´¥·¢µÄ·½·¨ , ÌáÊ¾ÈçºÎÉèÖÃÈºÖ÷Ãû³Æ.
+        // open_ownerName ,ç‚¹å‡» [åç§°],è§¦å‘çš„æ–¹æ³• , æç¤ºå¦‚ä½•è®¾ç½®ç¾¤ä¸»åç§°.
 
         open_ownerName.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent arg0) {
-                JOptionPane.showMessageDialog(null, "ÇëÍ¨¹ı¡¾setOwnerName¡¿·½·¨ÉèÖÃÈºÖ÷Ãû³Æ", "ÈºÖ÷Ãû³ÆÎ´ÉèÖÃ",
+                JOptionPane.showMessageDialog(null, "è¯·é€šè¿‡ã€setOwnerNameã€‘æ–¹æ³•è®¾ç½®ç¾¤ä¸»åç§°", "ç¾¤ä¸»åç§°æœªè®¾ç½®",
                         JOptionPane.QUESTION_MESSAGE);
             }
         });
 
-        // open label , µã»÷ [¿ª],´¥·¢µÄ·½·¨,ÌáÊ¾ÈçºÎÉèÖÃ´ò¿ª·½Ê½.
+        // open label , ç‚¹å‡» [å¼€],è§¦å‘çš„æ–¹æ³•,æç¤ºå¦‚ä½•è®¾ç½®æ‰“å¼€æ–¹å¼.
         open_label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (openWay == null) {
-                    JOptionPane.showMessageDialog(null, "ÇëÍ¨¹ı¡¾setOpenWay¡¿·½·¨ÉèÖÃ´ò¿ª·½Ê½", "´ò¿ª·½Ê½Î´ÉèÖÃ",
+                    JOptionPane.showMessageDialog(null, "è¯·é€šè¿‡ã€setOpenWayã€‘æ–¹æ³•è®¾ç½®æ‰“å¼€æ–¹å¼", "æ‰“å¼€æ–¹å¼æœªè®¾ç½®",
                             JOptionPane.QUESTION_MESSAGE);
                     return;
                 }
 
-//                System.out.println("Ìø×ª-->Õ¹Ê¾Ò³Ãæ");
+//                System.out.println("è·³è½¬-->å±•ç¤ºé¡µé¢");
 
                 moneyList = openWay.divide(totalMoney, count);
 
 //                System.out.println(moneyList);
                 /*
-                 * showPanel Ìí¼ÓÊı¾İ
+                 * showPanel æ·»åŠ æ•°æ®
                  *
                  */
                 show_name.setText(ownerName);
@@ -412,13 +412,13 @@ public abstract class RedPacketFrame extends JFrame {
                 if (moneyList.size() > 0) {
                     show_money.setText(moneyList.get(moneyList.size() - 1) / 100.0 + "");
                 }
-                show_result.setText(count + "¸öºì°ü¹²" + (initMoney / 100.0) + "Ôª,±»ÇÀ¹âÁË");
+                show_result.setText(count + "ä¸ªçº¢åŒ…å…±" + (initMoney / 100.0) + "å…ƒ,è¢«æŠ¢å…‰äº†");
 
                 open_label.removeMouseListener(this);
 
                 setPanel(showPanel);
 
-                // Ìí¼ÓÊı¾İ
+                // æ·»åŠ æ•°æ®
                 for (int i = 0; i < moneyList.size(); i++) {
 
                     JTextField tf = new JTextField();
@@ -426,11 +426,11 @@ public abstract class RedPacketFrame extends JFrame {
                     tf.setFont(showNameFont);
                     tf.setHorizontalAlignment(JTextField.LEFT);
                     if (i == moneyList.size() - 1) {
-                        tf.setText(ownerName + "£º\t" + moneyList.get(i) / 100.0 + "Ôª");
+                        tf.setText(ownerName + "ï¼š\t" + moneyList.get(i) / 100.0 + "å…ƒ");
 
                     } else {
 
-                        tf.setText("Èº³ÉÔ±-" + i + "£º\t" + moneyList.get(i) / 100.0 + "Ôª");
+                        tf.setText("ç¾¤æˆå‘˜-" + i + "ï¼š\t" + moneyList.get(i) / 100.0 + "å…ƒ");
                     }
                     showPanel2.add(tf);
                 }
@@ -444,7 +444,7 @@ public abstract class RedPacketFrame extends JFrame {
 
     /* ======================================================================
      * **********************************************************************
-     * * ÒÔÉÏ´úÂë¾ùÎªÒ³Ãæ²¿·Ö´¦Àí,°üÀ¨²¼¾Ö/»¥¶¯/Ìø×ª/ÏÔÊ¾µÈ,´ó¼Ò							*
+     * * ä»¥ä¸Šä»£ç å‡ä¸ºé¡µé¢éƒ¨åˆ†å¤„ç†,åŒ…æ‹¬å¸ƒå±€/äº’åŠ¨/è·³è½¬/æ˜¾ç¤ºç­‰,å¤§å®¶							*
      * *																	*
      * *																	*
      * **********************************************************************
@@ -452,25 +452,25 @@ public abstract class RedPacketFrame extends JFrame {
      */
 
     /**
-     * ownerName : ÈºÖ÷Ãû³Æ
+     * ownerName : ç¾¤ä¸»åç§°
      */
-    private String ownerName = "Ë­Ë­Ë­"; // ÈºÖ÷Ãû³Æ
+    private String ownerName = "è°è°è°"; // ç¾¤ä¸»åç§°
     /**
-     * openWay : ºì°üµÄÀàĞÍ [ÆÕÍ¨ºì°ü/ÊÖÆøºì°ü]
+     * openWay : çº¢åŒ…çš„ç±»å‹ [æ™®é€šçº¢åŒ…/æ‰‹æ°”çº¢åŒ…]
      */
     private OpenMode openWay = null;
 
 
     /**
-     * ¹¹Ôì·½·¨£ºÉú³Éºì°ü½çÃæ¡£
+     * æ„é€ æ–¹æ³•ï¼šç”Ÿæˆçº¢åŒ…ç•Œé¢ã€‚
      *
-     * @param title ½çÃæµÄ±êÌâ
+     * @param title ç•Œé¢çš„æ ‡é¢˜
      */
 
     public RedPacketFrame(String title) {
         super(title);
 
-        // Ò³ÃæÏà¹ØµÄ³õÊ¼»¯
+        // é¡µé¢ç›¸å…³çš„åˆå§‹åŒ–
         init();
     }
 

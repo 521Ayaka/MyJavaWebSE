@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.HashSet;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.HashSet;
 /*
-[HashSet¼¯ºÏÌØµã]:
+[HashSeté›†åˆç‰¹ç‚¹]:
 
-1. µ×²ãÊı¾İ½á¹¹ÊÇ¹şÏ£±í
-2. ¶Ô¼¯ºÏµÄµü´úË³Ğò²»×÷ÈÎºÎ±£Ö¤, Ò²¾ÍÊÇËµ²»±£Ö¤´æ´¢ºÍÈ¡³öµÄÔªËØË³ĞòÒ»ÖÂ
-3. Ã»ÓĞ´øË÷ÒıµÄ·½·¨, ËùÒÔ²»ÄÜÊ¹ÓÃÆÕÍ¨forÑ­»·±éÀú
-4. ÓÉÓÚÊÇSet¼¯ºÏ, ËùÒÔÊÇ²»°üº¬ÖØ¸´ÔªËØµÄ¼¯ºÏ
+1. åº•å±‚æ•°æ®ç»“æ„æ˜¯å“ˆå¸Œè¡¨
+2. å¯¹é›†åˆçš„è¿­ä»£é¡ºåºä¸ä½œä»»ä½•ä¿è¯, ä¹Ÿå°±æ˜¯è¯´ä¸ä¿è¯å­˜å‚¨å’Œå–å‡ºçš„å…ƒç´ é¡ºåºä¸€è‡´
+3. æ²¡æœ‰å¸¦ç´¢å¼•çš„æ–¹æ³•, æ‰€ä»¥ä¸èƒ½ä½¿ç”¨æ™®é€šforå¾ªç¯éå†
+4. ç”±äºæ˜¯Seté›†åˆ, æ‰€ä»¥æ˜¯ä¸åŒ…å«é‡å¤å…ƒç´ çš„é›†åˆ
 
 */
 
@@ -16,18 +16,18 @@ public class HashSet_Impl {
 
     public static void main(String[] args) {
 
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         HashSet<String> hashSet = new HashSet<>();
-        //Ìí¼ÓÔªËØ
-        hashSet.add("ÑÇË÷");
-        hashSet.add("¸ç¸ç");
-        hashSet.add("ÄãºÃÀË");
-        hashSet.add("ÑÇË÷");//ÖØ¸´ÔªËØ
-        hashSet.add("¸ç¸ç");//ÖØ¸´ÔªËØ
+        //æ·»åŠ å…ƒç´ 
+        hashSet.add("äºšç´¢");
+        hashSet.add("å“¥å“¥");
+        hashSet.add("ä½ å¥½æµª");
+        hashSet.add("äºšç´¢");//é‡å¤å…ƒç´ 
+        hashSet.add("å“¥å“¥");//é‡å¤å…ƒç´ 
         System.out.println("================");
-        System.out.println(hashSet.add("ÑÇË÷"));//ÖØ¸´ÔªËØ
+        System.out.println(hashSet.add("äºšç´¢"));//é‡å¤å…ƒç´ 
 
-        //±éÀú
+        //éå†
         Iterator<String> itr = hashSet.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());

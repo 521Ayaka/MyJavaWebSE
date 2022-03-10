@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.Àà¿â.OjbectLei;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.OjbectLei;
 
 /*
 
 java.lang.Object
-Object ÊÇÀà²ã´Î½á¹¹µÄ¸ùÀà¡£Ã¿¸öÀà¶¼Ê¹ÓÃ Object ×÷Îª³¬Àà¡£ËùÓĞ¶ÔÏó£¨°üÀ¨Êı×é£©¶¼ÊµÏÖÕâ¸öÀàµÄ·½·¨¡£
+Object æ˜¯ç±»å±‚æ¬¡ç»“æ„çš„æ ¹ç±»ã€‚æ¯ä¸ªç±»éƒ½ä½¿ç”¨ Object ä½œä¸ºè¶…ç±»ã€‚æ‰€æœ‰å¯¹è±¡ï¼ˆåŒ…æ‹¬æ•°ç»„ï¼‰éƒ½å®ç°è¿™ä¸ªç±»çš„æ–¹æ³•ã€‚
 
-»ØÏëÃæÏò¶ÔÏóµ±ÖĞ£¬ÎªÊ²Ã´Ëµ×ÓÀàµÄ¹¹Ôì·½·¨Ä¬ÈÏ·ÃÎÊµÄÊÇ¸¸ÀàµÄÎŞ²Î¹¹Ôì·½·¨£¿
-ÒòÎªObject¸ùÀàÖ»ÓĞÎŞ²Î¹¹Ôì·½·¨¡£
+å›æƒ³é¢å‘å¯¹è±¡å½“ä¸­ï¼Œä¸ºä»€ä¹ˆè¯´å­ç±»çš„æ„é€ æ–¹æ³•é»˜è®¤è®¿é—®çš„æ˜¯çˆ¶ç±»çš„æ— å‚æ„é€ æ–¹æ³•ï¼Ÿ
+å› ä¸ºObjectæ ¹ç±»åªæœ‰æ— å‚æ„é€ æ–¹æ³•ã€‚
 
-toString()·½·¨
-equals()·½·¨
+toString()æ–¹æ³•
+equals()æ–¹æ³•
 
 */
 public class ObjectLei {
@@ -17,12 +17,12 @@ public class ObjectLei {
     public static void main(String[] args) {
 
         Student student = new Student();
-        student.setName("ŞÏŞÎ");
+        student.setName("å°´å°¬");
         student.setAge(20);
 
-        System.out.println(student); // MyJava.»ù´¡ÖªÊ¶.Àà¿â.OjbectLei.Student@119d7047
+        System.out.println(student); // MyJava.åŸºç¡€çŸ¥è¯†.ç±»åº“.OjbectLei.Student@119d7047
 
-        /* printlnµÄÔ´Âë:
+        /* printlnçš„æºç :
 
         public void println(Object x) {
             String s = String.valueOf(x);                                              // x = student
@@ -38,31 +38,31 @@ public class ObjectLei {
             }
         }
 
-        ¸ú½øvalueOf()·½·¨:
+        è·Ÿè¿›valueOf()æ–¹æ³•:
         public static String valueOf(Object obj) {                                     //obj = student
-               return (obj == null) ? "null" : obj.toString();                         //studentÊÇnew³öÀ´µÄ£¬·Çnull£¬Ö´ĞĞobj.toString
-        }                                                                              //·µ»ØString×Ö·û´® ÏòÉÏ
+               return (obj == null) ? "null" : obj.toString();                         //studentæ˜¯newå‡ºæ¥çš„ï¼Œénullï¼Œæ‰§è¡Œobj.toString
+        }                                                                              //è¿”å›Stringå­—ç¬¦ä¸² å‘ä¸Š
 
-        ¸ú½øtoString()·½·¨
-        public String toString() {                                                     //StudentÀàÄ¬ÈÏ¼Ì³ĞÁËtoString()·½·¨
-               return getClass().getName() + "@" + Integer.toHexString(hashCode());    //·µ»ØString×Ö·û´® ÏòÉÏ
+        è·Ÿè¿›toString()æ–¹æ³•
+        public String toString() {                                                     //Studentç±»é»˜è®¤ç»§æ‰¿äº†toString()æ–¹æ³•
+               return getClass().getName() + "@" + Integer.toHexString(hashCode());    //è¿”å›Stringå­—ç¬¦ä¸² å‘ä¸Š
         }
        */
 
-        //ÒÔ´Ë¿ÉÖª£¬System.out.println(student) ÖĞ µ×²ãµ÷ÓÃµÄÊÇStudentÀàÄ¬ÈÏ¼Ì³ĞµÄObjectÀàµÄtoString()·½·¨
-        //Ö±½ÓÊ¹ÓÃtoString()·½·¨
+        //ä»¥æ­¤å¯çŸ¥ï¼ŒSystem.out.println(student) ä¸­ åº•å±‚è°ƒç”¨çš„æ˜¯Studentç±»é»˜è®¤ç»§æ‰¿çš„Objectç±»çš„toString()æ–¹æ³•
+        //ç›´æ¥ä½¿ç”¨toString()æ–¹æ³•
 
-        System.out.println(student.toString()); //MyJava.»ù´¡ÖªÊ¶.Àà¿â.OjbectLei.Student@119d7047
+        System.out.println(student.toString()); //MyJava.åŸºç¡€çŸ¥è¯†.ç±»åº“.OjbectLei.Student@119d7047
 
         System.out.println((student).equals(student.toString()));
 
         System.out.println("==========================================================================================");
 
-        System.out.println("¸²¸ÇÖØĞ´ºóµÄtoString()·½·¨");
+        System.out.println("è¦†ç›–é‡å†™åçš„toString()æ–¹æ³•");
         StudentToStringMethod s = new StudentToStringMethod();
-        s.setName("ŞÏŞÎ½´");
+        s.setName("å°´å°¬é…±");
         s.setAge(19);
-        //´òÓ¡
+        //æ‰“å°
         System.out.println(s);
 
         System.out.println("==========================================================================================");
@@ -70,11 +70,11 @@ public class ObjectLei {
         System.out.println("==========================================================================================");
 
         Student student1 = new Student();
-        student1.setName("ŞÏŞÎ½´");
+        student1.setName("å°´å°¬é…±");
         student1.setAge(19);
 
         Student student2 = new Student();
-        student2.setName("ŞÏŞÎ½´");
+        student2.setName("å°´å°¬é…±");
         student2.setAge(19);
 
         System.out.println(student1.equals(student2));

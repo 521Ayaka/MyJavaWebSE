@@ -1,7 +1,7 @@
-package Gui±à³Ì.Swing.A6_JComboBox_JList;
+package Guiç¼–ç¨‹.Swing.A6_JComboBox_JList;
 
 /*
-Ó¦ÓÃ³¡¾°£ºÑ¡ÔñÇøÓò£¬µ¥Ñ¡Ä³ÏîÒÑÓĞÄÚÈİ
+åº”ç”¨åœºæ™¯ï¼šé€‰æ‹©åŒºåŸŸï¼Œå•é€‰æŸé¡¹å·²æœ‰å†…å®¹
 
 */
 
@@ -17,10 +17,10 @@ public class TestJComboBox extends JFrame {
     }
 
     public static void main(String[] args) {
-        new TestJComboBox("ÏÂÀ­¿ò").init();
+        new TestJComboBox("ä¸‹æ‹‰æ¡†").init();
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
         this.setBounds(500, 300, 500, 400);
         this.setResizable(false);
@@ -28,43 +28,43 @@ public class TestJComboBox extends JFrame {
         Container container = this.getContentPane();
         container.setBackground(new Color(9, 236, 236));
 
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         JComboBox box = new JComboBox();
-        box.addItem("ÇëÑ¡Ôñ");
-        box.addItem("ÂÜÀò");
-        box.addItem("Óù½ã");
-        box.addItem("¶ş´ÎÔªÃÃ×Ó");
-        box.addItem("½¿Èá¿É°®µÄÃÃ×Ó");
+        box.addItem("è¯·é€‰æ‹©");
+        box.addItem("èè‰");
+        box.addItem("å¾¡å§");
+        box.addItem("äºŒæ¬¡å…ƒå¦¹å­");
+        box.addItem("å¨‡æŸ”å¯çˆ±çš„å¦¹å­");
         box.setBounds(150, 100, 180, 35);
 
-        JButton jButton = new JButton("È·¶¨");
+        JButton jButton = new JButton("ç¡®å®š");
         jButton.setBounds(200, 160, 60, 40);
 
-        //Ìí¼Ó²¼¾Ö,·ÅÈë×é¼ş
+        //æ·»åŠ å¸ƒå±€,æ”¾å…¥ç»„ä»¶
         container.setLayout(null);
         container.add(box);
         container.add(jButton);
 
-        //¼àÌıÊÂ¼ş
+        //ç›‘å¬äº‹ä»¶
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String str = (String) box.getSelectedItem();
                 switch (str) {
-                    case "ÇëÑ¡Ôñ":
-                        new MyDialog("ÇëÑ¡ÔñÄÚÈİ",0);
+                    case "è¯·é€‰æ‹©":
+                        new MyDialog("è¯·é€‰æ‹©å†…å®¹",0);
                         break;
-                    case "ÂÜÀò":
-                        new MyDialog("Äã¸öËÀÂÜÀò¿Ø£¡hei en tai",0);
+                    case "èè‰":
+                        new MyDialog("ä½ ä¸ªæ­»èè‰æ§ï¼hei en tai",0);
                         break;
-                    case "Óù½ã":
-                        new MyDialog("½ãµÄÎÂ¶È£¬Äã¼İÔ¦²»×¡£¡£¡£¡",0);
+                    case "å¾¡å§":
+                        new MyDialog("å§çš„æ¸©åº¦ï¼Œä½ é©¾é©­ä¸ä½ï¼ï¼ï¼",0);
                         break;
-                    case "¶ş´ÎÔªÃÃ×Ó" :
-                        new MyDialog("ÎÒÃÇÏÖÔÚÒ»ÆğÈ¥×ªÊÀÈ¥¶ş´ÎÔª°É£¡",0);
+                    case "äºŒæ¬¡å…ƒå¦¹å­" :
+                        new MyDialog("æˆ‘ä»¬ç°åœ¨ä¸€èµ·å»è½¬ä¸–å»äºŒæ¬¡å…ƒå§ï¼",0);
                         break;
-                    case "½¿Èá¿É°®µÄÃÃ×Ó" :
-                        new MyDialog("±ğÅö°³ÃÃÃÃ£¬µ±ĞÄÈÃÄã¿Şao( *^-^)¦Ñ(*¨s^¨t)",1);
+                    case "å¨‡æŸ”å¯çˆ±çš„å¦¹å­" :
+                        new MyDialog("åˆ«ç¢°ä¿ºå¦¹å¦¹ï¼Œå½“å¿ƒè®©ä½ å“­ao( *^-^)Ï(*â•¯^â•°)",1);
                 }
 
             }
@@ -77,7 +77,7 @@ public class TestJComboBox extends JFrame {
 
 }
 
-//µ¯´°Àà
+//å¼¹çª—ç±»
 class MyDialog extends JDialog {
 
     public MyDialog(String str,int size) {
@@ -89,19 +89,19 @@ class MyDialog extends JDialog {
             this.setBounds(450, 365, 600, 300);
         }
 
-        //´´½¨ÈİÆ÷
+        //åˆ›å»ºå®¹å™¨
         Container cPane = this.getContentPane();
         cPane.setBackground(new Color(230, 187, 245));
 
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         JLabel label = new JLabel(str, SwingConstants.CENTER);
         label.setSize(200, 100);
-        label.setFont(new Font("ËÎÌå", Font.BOLD, 25));
+        label.setFont(new Font("å®‹ä½“", Font.BOLD, 25));
 
-        //Ìí¼Ó±êÇ©
+        //æ·»åŠ æ ‡ç­¾
         cPane.add(label);
 
-        //¿É¼ûĞÔ
+        //å¯è§æ€§
         this.setVisible(true);
     }
 

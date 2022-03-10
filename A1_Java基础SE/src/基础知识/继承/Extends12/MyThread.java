@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ð.Extends12;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends12;
 
 class MyThread extends Thread{
     private  int a;
@@ -11,10 +11,10 @@ class MyThread extends Thread{
     public void run() {
 
         for (int i = 0; i <a+1; i++) {
-            //ÕâÀï¿ÉÒÔÔÙ¿¼ÂÇÓÅ»¯£¬Èç´òÓ¡£¬µÚXXÕÅÆ±ÊÛ³ö£¬ÌåÑé¸Ð»áºÃºÜ¶à
-            System.out.println(currentThread().getName()+"ÊÛÆ±Ò»ÕÅ");
+            //è¿™é‡Œå¯ä»¥å†è€ƒè™‘ä¼˜åŒ–ï¼Œå¦‚æ‰“å°ï¼Œç¬¬XXå¼ ç¥¨å”®å‡ºï¼Œä½“éªŒæ„Ÿä¼šå¥½å¾ˆå¤š
+            System.out.println(currentThread().getName()+"å”®ç¥¨ä¸€å¼ ");
         }
-        System.out.println(currentThread().getName()+"¹²ÓÐ"+a+"ÕÅÆ±£¬È«²¿ÊÛÍê");
+        System.out.println(currentThread().getName()+"å…±æœ‰"+a+"å¼ ç¥¨ï¼Œå…¨éƒ¨å”®å®Œ");
 
 
     }

@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
-//ÎÒµÄÔ­Ê¯Êı¾İ,²»ÓÃ¹ı¶àÁË½âÕâ¸öÀàÎÄ¼ş
+//æˆ‘çš„åŸçŸ³æ•°æ®,ä¸ç”¨è¿‡å¤šäº†è§£è¿™ä¸ªç±»æ–‡ä»¶
 public class MyYuanShen {
 
     private int yuanShi = 6666;
@@ -9,11 +9,11 @@ public class MyYuanShen {
     private int Kuang1 = 354;
     private int Kuang2 = 511;
     private int Kuang3 = 554;
-    //................¸÷ÖÖ×ÊÔ´
-    //................¸÷ÖÖ·ÇÇõ
+    //................å„ç§èµ„æº
+    //................å„ç§éé…‹
 
 
-    //privateĞŞÊÎ³ÉÔ±±äÁ¿£¬´´½¨GetSetÊµÏÖ³ÉÔ±±äÁ¿µ÷È¡´«Èë
+    //privateä¿®é¥°æˆå‘˜å˜é‡ï¼Œåˆ›å»ºGetSetå®ç°æˆå‘˜å˜é‡è°ƒå–ä¼ å…¥
 
     public int getYuanShi() {
         return yuanShi;

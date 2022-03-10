@@ -1,9 +1,9 @@
-package Gui±à³Ì.Swing.A1_JFrame;
+package Guiç¼–ç¨‹.Swing.A1_JFrame;
 /*
 
-GUI°üÀ¨AWTºÍSwing
-AWTÊÇµ×²ã
-SwingÊÇAWTµÄ·â×°
+GUIåŒ…æ‹¬AWTå’ŒSwing
+AWTæ˜¯åº•å±‚
+Swingæ˜¯AWTçš„å°è£…
 
 */
 
@@ -15,33 +15,33 @@ public class DomeJFrame {
 
     private JFrame jFrame;
 
-    //Ò»°ãÓÎÏ·¿ª·¢Ê½£¬init()³õÊ¼»¯¡£
+    //ä¸€èˆ¬æ¸¸æˆå¼€å‘å¼ï¼Œinit()åˆå§‹åŒ–ã€‚
     public void init(){
 
-        //Î»ÖÃ´óĞ¡
-        jFrame = new JFrame("SwingÖĞµÄJFrame´°¿Ú");
+        //ä½ç½®å¤§å°
+        jFrame = new JFrame("Swingä¸­çš„JFrameçª—å£");
         jFrame.setLocation(500,300);
         jFrame.setSize(500,400);
 
-        //¹Ø±Õ
+        //å…³é—­
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        //´´½¨ÈİÆ÷
+        //åˆ›å»ºå®¹å™¨
         Container contentPane = jFrame.getContentPane();
         contentPane.setBackground(new Color(8, 201, 234));
 
 
-        //ÉèÖÃÎÄ×Ö¡£ÓÃ±êÇ©JLabel, ÁíÍâ£¬µÚ¶ş¸ö³£ÊıSwingConstants.-- µ÷Õû±êÇ©Î»ÖÃ
-        JLabel jLabel = new JLabel("¿ÉÒÔ²»Ğ´",SwingConstants.CENTER);
-        jLabel.setText("Õâ¾ÍŞÏŞÎÁË");
+        //è®¾ç½®æ–‡å­—ã€‚ç”¨æ ‡ç­¾JLabel, å¦å¤–ï¼Œç¬¬äºŒä¸ªå¸¸æ•°SwingConstants.-- è°ƒæ•´æ ‡ç­¾ä½ç½®
+        JLabel jLabel = new JLabel("å¯ä»¥ä¸å†™",SwingConstants.CENTER);
+        jLabel.setText("è¿™å°±å°´å°¬äº†");
 
-        /* ÕâĞ©¶¼ÊÇÃ»ÓĞÓÃµÄ
+        /* è¿™äº›éƒ½æ˜¯æ²¡æœ‰ç”¨çš„
         jLabel.setBackground(new Color(9, 243, 216));
         frame.setLayout(new BorderLayout());
         frame.add(jLabel,BorderLayout.CENTER);
-        //Ö»ÄÜÊ¹ÓÃ
+        //åªèƒ½ä½¿ç”¨
         */
-        jLabel.setFont(new Font("ËÎÌå",Font.BOLD,50));
+        jLabel.setFont(new Font("å®‹ä½“",Font.BOLD,50));
         jLabel.setForeground(new Color(234, 100, 232));
         contentPane.add(jLabel);
         
@@ -51,17 +51,17 @@ public class DomeJFrame {
         ImageIcon image = new ImageIcon("src/MyImg/A00.jpg");
 
 
-        //ÉèÖÃÍ¼Æ¬´óĞ¡
+        //è®¾ç½®å›¾ç‰‡å¤§å°
         Image img = image.getImage();
         img = img.getScaledInstance(400, 600, Image.SCALE_DEFAULT);
         image.setImage(img);
 
-        //Ìí¼Ó
+        //æ·»åŠ 
         jL.setIcon(image);
         jL.setSize(40,10);
         contentPane.add(jL);
 
-        //ÉèÖÃ¿É¼ûĞÔ
+        //è®¾ç½®å¯è§æ€§
         jFrame.setVisible(true);
 
     }

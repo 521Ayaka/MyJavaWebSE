@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.»ù´¡.final¹Ø¼ü×Ö.final02;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.finalå…³é”®å­—.final02;
 
 public class Zi extends Fu{
 
-    //´íÎóĞ´·¨£¬²»ÄÜ±»¸²¸ÇÖØĞ´Ê¹ÓÃfinalĞŞÊÎµÄ³ÉÔ±·½·¨¡£
+    //é”™è¯¯å†™æ³•ï¼Œä¸èƒ½è¢«è¦†ç›–é‡å†™ä½¿ç”¨finalä¿®é¥°çš„æˆå‘˜æ–¹æ³•ã€‚
 //    @Override
 //    public void method(){
-//        System.out.println("¸²¸ÇÖØĞ´");
+//        System.out.println("è¦†ç›–é‡å†™");
 //    }
 
     @Override
     public void methodAbs() {
-        System.out.println("ÊµÏÖ·½·¨¡£");
+        System.out.println("å®ç°æ–¹æ³•ã€‚");
     }
 
 }

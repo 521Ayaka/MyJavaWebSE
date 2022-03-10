@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.UDPĞ­Òé.UDP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.UDPåè®®.UDPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ ;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -14,13 +14,13 @@ import java.util.regex.Pattern;
 public class IPget {
 
     /**
-     * ÍâÍøipµØÖ·
+     * å¤–ç½‘ipåœ°å€
      */
     private static String publicIp;
 
     /**
-     * ÏÂÃæurl·µ»ØµØÖ·¶¼°üº¬ipµØÖ·£¬Îª·ÀÖ¹Ä³¸öurlÊ§Ğ§£¬
-     * ±éÀúurl»ñÈ¡ipµØÖ·£¬ÓĞÒ»¸öÄÜ³É¹¦»ñÈ¡¾Í·µ»Ø
+     * ä¸‹é¢urlè¿”å›åœ°å€éƒ½åŒ…å«ipåœ°å€ï¼Œä¸ºé˜²æ­¢æŸä¸ªurlå¤±æ•ˆï¼Œ
+     * éå†urlè·å–ipåœ°å€ï¼Œæœ‰ä¸€ä¸ªèƒ½æˆåŠŸè·å–å°±è¿”å›
      */
     private static String[] urls = {
             "http://whatismyip.akamai.com",
@@ -38,14 +38,14 @@ public class IPget {
     };
 
     /**
-     * ipµØÖ·µÄÆ¥ÅäÕıÔò±í´ïÊ½
+     * ipåœ°å€çš„åŒ¹é…æ­£åˆ™è¡¨è¾¾å¼
      */
     private static String regEx = "((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)";
 
     private static Pattern pattern = Pattern.compile(regEx);
 
     /**
-     * »ñÈ¡±¾»úÍâÍøµØÖ·
+     * è·å–æœ¬æœºå¤–ç½‘åœ°å€
      *
      * @return
      */
@@ -54,14 +54,14 @@ public class IPget {
             return publicIp;
         }
         for (String url : urls) {
-            //http·ÃÎÊurl»ñÈ¡´øipµÄĞÅÏ¢
+            //httpè®¿é—®urlè·å–å¸¦ipçš„ä¿¡æ¯
             String result = getUrlResult(url);
-            //ÕıÔòÆ¥Åä²éÕÒipµØÖ·
+            //æ­£åˆ™åŒ¹é…æŸ¥æ‰¾ipåœ°å€
             Matcher m = pattern.matcher(result);
             while (m.find()) {
                 publicIp = m.group();
 //                System.out.println(url + " ==> " + publicIp);
-                //Ö»»ñÈ¡Æ¥Åäµ½µÄµÚÒ»¸öIPµØÖ·
+                //åªè·å–åŒ¹é…åˆ°çš„ç¬¬ä¸€ä¸ªIPåœ°å€
                 return publicIp;
             }
         }
@@ -69,7 +69,7 @@ public class IPget {
     }
 
     /**
-     * http·ÃÎÊurl
+     * httpè®¿é—®url
      */
     private static String getUrlResult(String url) {
         StringBuilder sb = new StringBuilder();
@@ -92,7 +92,7 @@ public class IPget {
     }
 
     /**
-     * ²âÊÔ
+     * æµ‹è¯•
      * @param args
      */
     public static void main(String[] args){

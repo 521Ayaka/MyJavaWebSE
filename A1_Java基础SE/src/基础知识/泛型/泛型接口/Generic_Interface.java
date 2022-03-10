@@ -1,4 +1,4 @@
-package 基础知识.泛型.泛型接口;
+package 鍩虹鐭ヨ瘑.娉涘瀷.娉涘瀷鎺ュ彛;
 
 public interface Generic_Interface<T> {
 

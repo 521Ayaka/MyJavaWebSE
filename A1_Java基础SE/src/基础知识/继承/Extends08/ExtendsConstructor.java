@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ð.Extends08;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends08;
 
 public class ExtendsConstructor {
     public ExtendsConstructor() {

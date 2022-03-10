@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ÃæÏò¶ÔÏó;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.é¢å‘å¯¹è±¡;
 
 public class Array01 {
 
 /*
 
-1£ºÇóÊı×éÖĞÔªËØµÄmaxÖµ»òÕßminÖµ
-2£ºÊı×é·´×ª
+1ï¼šæ±‚æ•°ç»„ä¸­å…ƒç´ çš„maxå€¼æˆ–è€…minå€¼
+2ï¼šæ•°ç»„åè½¬
 
 */
 
@@ -21,11 +21,11 @@ public class Array01 {
             }
         }
 
-        System.out.println("array×î´óµÄÔªËØÎª£º"+max);
+        System.out.println("arrayæœ€å¤§çš„å…ƒç´ ä¸ºï¼š"+max);
 
         System.out.println("=====================================================");
 
-        System.out.println("Ô­Êı×éÎª£º");
+        System.out.println("åŸæ•°ç»„ä¸ºï¼š");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }

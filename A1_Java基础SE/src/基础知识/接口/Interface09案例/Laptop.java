@@ -1,20 +1,20 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface09°¸Àı;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface09æ¡ˆä¾‹;
 
 public class Laptop {
 
     public void powerOn(){
-        System.out.println("´ò¿ªµçÄÔ");
+        System.out.println("æ‰“å¼€ç”µè„‘");
     }
 
     public void powerOff(){
-        System.out.println("¹Ø±ÕµçÄÔ");
+        System.out.println("å…³é—­ç”µè„‘");
     }
 
-    //µ÷ÓÃUSBÉè±¸
+    //è°ƒç”¨USBè®¾å¤‡
     public void useDevice(USB usb){
-        usb.open();  //´ò¿ªÉè±¸
+        usb.open();  //æ‰“å¼€è®¾å¤‡
 
-        //ÏòÏÂ×ªĞÍ£¬Ê¹ÓÃUSBÉè±¸ÌØÓĞµÄ¹¦ÄÜ¡£
+        //å‘ä¸‹è½¬å‹ï¼Œä½¿ç”¨USBè®¾å¤‡ç‰¹æœ‰çš„åŠŸèƒ½ã€‚
         if(usb instanceof Mouse){
             Mouse mouse = (Mouse)usb;
             mouse.click();
@@ -26,7 +26,7 @@ public class Laptop {
             usbLight.adjust();
         }
 
-        usb.close(); //¹Ø±ÕÉè±¸
+        usb.close(); //å…³é—­è®¾å¤‡
     }
 
 }

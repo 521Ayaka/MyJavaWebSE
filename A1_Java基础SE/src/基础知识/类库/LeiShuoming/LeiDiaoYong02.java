@@ -1,27 +1,27 @@
-package »ù´¡ÖªÊ¶.Àà¿â.LeiShuoming;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.LeiShuoming;
 
 public class LeiDiaoYong02 {
 
     public static void main(String[] args) {
 
-        //1. µ¼°ü£ºÖ¸³öĞèÒªÊ¹ÓÃµÄÀà£¬ÔÚÊ²Ã´Î»ÖÃ¡£
+        //1. å¯¼åŒ…ï¼šæŒ‡å‡ºéœ€è¦ä½¿ç”¨çš„ç±»ï¼Œåœ¨ä»€ä¹ˆä½ç½®ã€‚
 
-        //µ÷ÓÃ³ÉÔ±±äÁ¿
+        //è°ƒç”¨æˆå‘˜å˜é‡
         Lei02 a = new Lei02();
         System.out.println(a.method(10));
         System.out.println("=====================================================");
 
         
-        //¶¨ÒåÒ»¸öÊı×é Îªµ÷ÓÃ³ÉÔ±·½·¨Ìá¹©²ÎÊı
-        String [] array = new String[]{"ÎÒÔÚ¾ŞÁúÖ®³²","Ò»ÆğLOL°É","ÓÀÔ¶i°®Äã","ŞÏŞÎ½´"};
-        System.out.println("Ô­Êı×éË³ĞòÎª£º");
+        //å®šä¹‰ä¸€ä¸ªæ•°ç»„ ä¸ºè°ƒç”¨æˆå‘˜æ–¹æ³•æä¾›å‚æ•°
+        String [] array = new String[]{"æˆ‘åœ¨å·¨é¾™ä¹‹å·¢","ä¸€èµ·LOLå§","æ°¸è¿œiçˆ±ä½ ","å°´å°¬é…±"};
+        System.out.println("åŸæ•°ç»„é¡ºåºä¸ºï¼š");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
         System.out.println("=====================================================");
         
-        //µ÷ÓÃ³ÉÔ±·½·¨
-        System.out.println("·´×ªºóµÄarrayÎª£º");
+        //è°ƒç”¨æˆå‘˜æ–¹æ³•
+        System.out.println("åè½¬åçš„arrayä¸ºï¼š");
         a.arraystostring(array);
         System.out.println("======================================================");
     }

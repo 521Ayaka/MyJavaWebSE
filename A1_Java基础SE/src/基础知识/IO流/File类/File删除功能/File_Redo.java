@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.FileÉ¾³ı¹¦ÄÜ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileåˆ é™¤åŠŸèƒ½;
 
-//»Ö¸´±»É¾³ıµÄÎÄ¼ş»òÄ¿Â¼
+//æ¢å¤è¢«åˆ é™¤çš„æ–‡ä»¶æˆ–ç›®å½•
 
 import java.io.File;
 import java.io.IOException;
@@ -9,13 +9,13 @@ public class File_Redo {
 
     public static void main(String[] args) throws IOException {
 
-        //»¹Ô­±»É¾³ıµÄÎÄ¼ş»òÄ¿Â¼
-        System.out.println(new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\FileÉ¾³ı¹¦ÄÜ\\²âÊÔÎÄ¼ş\\ÎÄ¼ş1.txt").createNewFile());
-        System.out.println(new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\FileÉ¾³ı¹¦ÄÜ\\²âÊÔÎÄ¼ş\\Ä¿Â¼1").mkdir());
+        //è¿˜åŸè¢«åˆ é™¤çš„æ–‡ä»¶æˆ–ç›®å½•
+        System.out.println(new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ é™¤åŠŸèƒ½\\æµ‹è¯•æ–‡ä»¶\\æ–‡ä»¶1.txt").createNewFile());
+        System.out.println(new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ é™¤åŠŸèƒ½\\æµ‹è¯•æ–‡ä»¶\\ç›®å½•1").mkdir());
 
-        //É¾³ı²âÊÔÌí¼ÓµÄÎÄ¼ş
-        new File("´´½¨ÎÄ¼ş.txt").delete();
-        new File("src\\´´½¨Ä£¿éÏÂµÄÎÄ¼ş.txt").delete();
+        //åˆ é™¤æµ‹è¯•æ·»åŠ çš„æ–‡ä»¶
+        new File("åˆ›å»ºæ–‡ä»¶.txt").delete();
+        new File("src\\åˆ›å»ºæ¨¡å—ä¸‹çš„æ–‡ä»¶.txt").delete();
 
     }
 

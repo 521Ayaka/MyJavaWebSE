@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCPÍ¨ĞÅ·şÎñ¶Ë¿Ú¶àÏß³Ì;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPé€šä¿¡æœåŠ¡ç«¯å£å¤šçº¿ç¨‹;
 
 import java.io.*;
 import java.net.Socket;
 
 public class MyServerReceive implements Runnable{
-    //ÓÃ»§¶ÔÏóSocket
+    //ç”¨æˆ·å¯¹è±¡Socket
     private Socket s;
 
     public MyServerReceive(Socket s){
@@ -14,28 +14,28 @@ public class MyServerReceive implements Runnable{
     @Override
     public void run() {
 
-        //½ÓÊÕÊı¾İ   ÊµÏÖ·´À¡
+        //æ¥æ”¶æ•°æ®   å®ç°åé¦ˆ
         try (   BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
                 BufferedWriter bw =
                         new BufferedWriter(
                         new FileWriter(
-                        new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\ÍøÂç±à³Ì\\ÍøÂçÍ¨ĞÅ\\TCPĞ­Òé\\TCPÍ¨ĞÅ·şÎñ¶Ë¿Ú¶àÏß³Ì\\·şÎñÆ÷½ÓÊÕÎÄ¼ş\\"
+                        new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\ç½‘ç»œç¼–ç¨‹\\ç½‘ç»œé€šä¿¡\\TCPåè®®\\TCPé€šä¿¡æœåŠ¡ç«¯å£å¤šçº¿ç¨‹\\æœåŠ¡å™¨æ¥æ”¶æ–‡ä»¶\\"
                                 +Thread.currentThread().getName()+".txt")));
                 BufferedWriter bwx = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
                 ){
 
 
 
-            //½ÓÊÕÊı¾İ Ğ´Èëµ½½ÓÊÕÎÄ¼ş¼ĞÖĞ
+            //æ¥æ”¶æ•°æ® å†™å…¥åˆ°æ¥æ”¶æ–‡ä»¶å¤¹ä¸­
             String data;
             while ( (data = br.readLine())!=null ){
                 bw.write(data);
                 bw.newLine();
                 bw.flush();
             }
-            System.out.println("½ÓÊÕµ½:"+Thread.currentThread().getName()+"ÓÃ»§,ÎÄ¼şcopy³É¹¦");
-            //·´À¡ÓÃ»§Á´½Ó
-            bwx.write("ÒÑ½ÓÊÕµ½Á¬½ÓÇëÇó,ÎÄ¼şÉÏ´«³É¹¦£¡");
+            System.out.println("æ¥æ”¶åˆ°:"+Thread.currentThread().getName()+"ç”¨æˆ·,æ–‡ä»¶copyæˆåŠŸ");
+            //åé¦ˆç”¨æˆ·é“¾æ¥
+            bwx.write("å·²æ¥æ”¶åˆ°è¿æ¥è¯·æ±‚,æ–‡ä»¶ä¸Šä¼ æˆåŠŸï¼");
             bwx.newLine();
             bwx.flush();
 

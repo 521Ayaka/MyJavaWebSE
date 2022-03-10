@@ -1,47 +1,47 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass01;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass01;
 
 public class Wai {
 
-    int num = 10; //Íâ²¿ÀàµÄ³ÉÔ±±äÁ¿
-    private String str = "Íâ²¿ÀàµÄ³ÉÔ±±äÁ¿";
+    int num = 10; //å¤–éƒ¨ç±»çš„æˆå‘˜å˜é‡
+    private String str = "å¤–éƒ¨ç±»çš„æˆå‘˜å˜é‡";
 
     public void methodWai(){
-        System.out.println("Íâ²¿ÀàµÄ³ÉÔ±·½·¨");
+        System.out.println("å¤–éƒ¨ç±»çš„æˆå‘˜æ–¹æ³•");
     }
 
     public class Nei{
         public void methodNei(){
-            System.out.println("ÄÚ²¿ÀàµÄ³ÉÔ±·½·¨");
+            System.out.println("å†…éƒ¨ç±»çš„æˆå‘˜æ–¹æ³•");
 
-            System.out.println("======ÏÂÃæÊÇµ÷ÓÃÍâ²¿Àà======");
+            System.out.println("======ä¸‹é¢æ˜¯è°ƒç”¨å¤–éƒ¨ç±»======");
 
-            System.out.println("ÄÚ²¿Ààµ÷ÓÃ"+str);  //ÄÚ²¿Àà¿ÉÒÔËæÒâµ÷ÓÃÍâ²¿ÀàµÄ¶«Î÷
-            Wai.this.methodWai(); //µ÷ÓÃÍâ²¿ÀàµÄ³ÉÔ±·½·¨¡£
+            System.out.println("å†…éƒ¨ç±»è°ƒç”¨"+str);  //å†…éƒ¨ç±»å¯ä»¥éšæ„è°ƒç”¨å¤–éƒ¨ç±»çš„ä¸œè¥¿
+            Wai.this.methodWai(); //è°ƒç”¨å¤–éƒ¨ç±»çš„æˆå‘˜æ–¹æ³•ã€‚
         }
-        String string = "ÄÚ²¿ÀàµÄ³ÉÔ±±äÁ¿";
-        int num = 20; //ÄÚ²¿ÀàµÄ³ÉÔ±±äÁ¿
+        String string = "å†…éƒ¨ç±»çš„æˆå‘˜å˜é‡";
+        int num = 20; //å†…éƒ¨ç±»çš„æˆå‘˜å˜é‡
         public void methodNum(){
-            int num = 30; //ÄÚ²¿ÀàµÄ¾Ö²¿±äÁ¿
-            System.out.println("ÄÚ²¿¾Ö²¿±äÁ¿:"+num);
-            System.out.println("ÄÚ²¿³ÉÔ±±äÁ¿:"+this.num);
-            System.out.println("Íâ²¿³ÉÔ±±äÁ¿:"+Wai.this.num);
+            int num = 30; //å†…éƒ¨ç±»çš„å±€éƒ¨å˜é‡
+            System.out.println("å†…éƒ¨å±€éƒ¨å˜é‡:"+num);
+            System.out.println("å†…éƒ¨æˆå‘˜å˜é‡:"+this.num);
+            System.out.println("å¤–éƒ¨æˆå‘˜å˜é‡:"+Wai.this.num);
         }
     }
 
     public void method(){
-      //System.out.println(string);//ÎŞ·¨µ÷ÓÃ
+      //System.out.println(string);//æ— æ³•è°ƒç”¨
         System.out.println(new Nei().string);
-        //ÍâÓÃÄÚ£¬Òª´´½¨¶ÔÏó»òÕßÊ¹ÓÃÄäÃû¶ÔÏóÀ´µ÷ÓÃÄÚ²¿¡£
+        //å¤–ç”¨å†…ï¼Œè¦åˆ›å»ºå¯¹è±¡æˆ–è€…ä½¿ç”¨åŒ¿åå¯¹è±¡æ¥è°ƒç”¨å†…éƒ¨ã€‚
         new Nei().methodNei();
     }
 
-    //Ê¹ÓÃÄÚ²¿Àà:
+    //ä½¿ç”¨å†…éƒ¨ç±»:
     //==========================================================================================
-    //1. ¼ä½ÓÊ¹ÓÃÄÚ²¿Àà
+    //1. é—´æ¥ä½¿ç”¨å†…éƒ¨ç±»
     public void method01(){
         Nei nei = new Nei();
-        System.out.println("¼ò½éµ÷ÓÃÄÚ²¿Àà£º"+nei.string);
-        System.out.print("¼ä½Óµ÷ÓÃÄÚ²¿Àà£º");
+        System.out.println("ç®€ä»‹è°ƒç”¨å†…éƒ¨ç±»ï¼š"+nei.string);
+        System.out.print("é—´æ¥è°ƒç”¨å†…éƒ¨ç±»ï¼š");
         nei.methodNei();
     }
 

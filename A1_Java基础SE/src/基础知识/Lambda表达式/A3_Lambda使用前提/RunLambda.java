@@ -1,44 +1,44 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A3_LambdaÊ¹ÓÃÇ°Ìá;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A3_Lambdaä½¿ç”¨å‰æ;
 
 public class RunLambda {
 
     public static void main(String[] args) {
 
-        String str1 = "Ê¹ÓÃÄäÃûÄÚ²¿ÀàÊä³ö";
-        String str2 = "Ê¹ÓÃLambda±í´ïÊ½Êä³ö";
+        String str1 = "ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»è¾“å‡º";
+        String str2 = "ä½¿ç”¨Lambdaè¡¨è¾¾å¼è¾“å‡º";
         int len1 = 666;
 
-        //Ê¹ÓÃÄäÃûÄÚ²¿Àà
+        //ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»
         me(new MyInterface() {
             @Override
             public int method(String str, int lendX, int lendY) {
                 System.out.print(str + "\t");
-                System.out.println(lendX + lendY);//ÇóºÍ
+                System.out.println(lendX + lendY);//æ±‚å’Œ
                 return lendX + lendY;
             }
         }, str1, len1);
 
         System.out.println("=========================");
 
-        //Ê¹ÓÃLambda±í´ïÊ½
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼
         me((/*String*/ str,/*int*/ meLen,/*int*/ lenY) -> {
-            //²ÎÊıÀàĞÍÊÇ¿ÉÒÔÊ¡ÂÔµÄ,µ«ÊÇÈç¹û¶à¸ö²ÎÊı,²»ÄÜÖ»Ê¡ÂÔÒ»¸ö,ÒªÊ¡ÂÔ¾ÍÒªÊ¡ÂÔÍê£¡
+            //å‚æ•°ç±»å‹æ˜¯å¯ä»¥çœç•¥çš„,ä½†æ˜¯å¦‚æœå¤šä¸ªå‚æ•°,ä¸èƒ½åªçœç•¥ä¸€ä¸ª,è¦çœç•¥å°±è¦çœç•¥å®Œï¼
             System.out.print(str + "\t");
-            System.out.println(meLen + lenY);//ÇóºÍ
-            System.out.println("Lambda±í´ïÊ½¸üÎª¼ò½à£¡");
+            System.out.println(meLen + lenY);//æ±‚å’Œ
+            System.out.println("Lambdaè¡¨è¾¾å¼æ›´ä¸ºç®€æ´ï¼");
             return meLen + lenY;
         }, str2, len1);
 
 
     }
 
-    //¸Ã·½·¨ÓĞÒ»¸ö²ÎÊıÊÇ½Ó¿Ú£¬¸Ã½Ó¿ÚÓÖÖ»ÓĞÒ»¸ö³éÏó·½·¨£¡
+    //è¯¥æ–¹æ³•æœ‰ä¸€ä¸ªå‚æ•°æ˜¯æ¥å£ï¼Œè¯¥æ¥å£åˆåªæœ‰ä¸€ä¸ªæŠ½è±¡æ–¹æ³•ï¼
     public static void me(MyInterface e, String str, int len2) {
-        //¸Ã·½·¨µ÷ÓÃµÄ³éÏó·½·¨¡£
+        //è¯¥æ–¹æ³•è°ƒç”¨çš„æŠ½è±¡æ–¹æ³•ã€‚
         int num = e.method(str, len2, 6000);
 
-        //²âÊÔ·µ»ØÖµ¡£
-        System.out.println("·µ»ØÖµ:" + num);
+        //æµ‹è¯•è¿”å›å€¼ã€‚
+        System.out.println("è¿”å›å€¼:" + num);
     }
 
 }

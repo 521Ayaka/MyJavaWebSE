@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A3_µãÃûÆ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A3_ç‚¹åå™¨;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -8,27 +8,27 @@ public class StudentName {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new StudentName().getName();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void getName() {
 
-        //´´½¨ArrayList¼¯ºÏÓÃÓÚ´æ´¢Ãû×Ö
+        //åˆ›å»ºArrayListé›†åˆç”¨äºå­˜å‚¨åå­—
         ArrayList<String> array = new ArrayList<>();
 
-        //´´½¨×Ö·û»º³åÈëÁ÷ À´ ¶ÁÈ¡ĞÕÃû
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²å…¥æµ æ¥ è¯»å–å§“å
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\A3_µãÃûÆ÷\\µãÃû±í.txt"));
-            //»ñÈ¡ĞÕÃû, ²¢Ìí¼Óµ½¼¯ºÏµ±ÖĞ¡£
+            br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\A3_ç‚¹åå™¨\\ç‚¹åè¡¨.txt"));
+            //è·å–å§“å, å¹¶æ·»åŠ åˆ°é›†åˆå½“ä¸­ã€‚
             String str;
             while ((str = br.readLine()) != null) {
                 array.add(str);
             }
-            //Ïò¿ØÖÆÌ¨ÖĞËæ»úµãÈ¡Èı¸öÃû×Ó,²¢Êä³ö ¡¾ÔÊĞíÖØ¸´Ãû×ÖµÄ³öÏÖ,µ¹Ã¹¡¿
+            //å‘æ§åˆ¶å°ä¸­éšæœºç‚¹å–ä¸‰ä¸ªåå­,å¹¶è¾“å‡º ã€å…è®¸é‡å¤åå­—çš„å‡ºç°,å€’éœ‰ã€‘
             for (int i = 0; i < 3; i++) {
                 System.out.println(array.get(new Random().nextInt(array.size())));
             }

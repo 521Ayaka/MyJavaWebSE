@@ -1,115 +1,115 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
-//µ¼°ü
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
+//å¯¼åŒ…
 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 /*
-µãÔŞ
-¹Ø×¢
-Ğ»Ğ»
-¿ÉÒÔµÄ»°£¬¸ø¸öÊ®Á¬·¢Ò²ĞĞ/ÍµĞ¦¡£¤¢¤ê¤¬¤È¤¦¤´¤¶¤¤¤Ş¤¹
-uid:ÅÉÃÉºÃ³ÔàÅ
+ç‚¹èµ
+å…³æ³¨
+è°¢è°¢
+å¯ä»¥çš„è¯ï¼Œç»™ä¸ªåè¿å‘ä¹Ÿè¡Œ/å·ç¬‘ã€‚ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™
+uid:æ´¾è’™å¥½åƒå—¯
 uid:136761371
 
 */
-//¿ªÊ¼³ÌĞòµÄÔ­ÉñÒ»Ìì......
+//å¼€å§‹ç¨‹åºçš„åŸç¥ä¸€å¤©......
 public class YuanShen {
 
-    //´ò¿ªÓÎÏ·
+    //æ‰“å¼€æ¸¸æˆ
     public static void main(String[] args) {
 
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         Scanner sc = new Scanner(System.in);
 
-        //miHoYo Ô­Éñ
-        System.out.println("µÖÖÆ²»Á¼ÓÎÏ·£¬¾Ü¾øµÁ°æÓÎÏ·¡£");
-        System.out.println("×¢Òâ×ÔÎÒ±£»¤£¬½÷·ÀÊÜÆ­ÉÏµ±¡£");
-        System.out.println("ÊÊ¶ÈÓÎÏ·ÒæÄÔ£¬³ÁÃÔÓÎÏ·ÉËÉí¡£");
-        System.out.println("ºÏÀí°²ÅÅÊ±¼ä£¬ÏíÊÜ½¡¿µÉú»î¡£");
+        //miHoYo åŸç¥
+        System.out.println("æŠµåˆ¶ä¸è‰¯æ¸¸æˆï¼Œæ‹’ç»ç›—ç‰ˆæ¸¸æˆã€‚");
+        System.out.println("æ³¨æ„è‡ªæˆ‘ä¿æŠ¤ï¼Œè°¨é˜²å—éª—ä¸Šå½“ã€‚");
+        System.out.println("é€‚åº¦æ¸¸æˆç›Šè„‘ï¼Œæ²‰è¿·æ¸¸æˆä¼¤èº«ã€‚");
+        System.out.println("åˆç†å®‰æ’æ—¶é—´ï¼Œäº«å—å¥åº·ç”Ÿæ´»ã€‚");
         System.out.println("......");
 
-        System.out.println("\nÕıÔÚÔØÈë¼ÓÔØÓÎÏ·Êı¾İ...");
+        System.out.println("\næ­£åœ¨è½½å…¥åŠ è½½æ¸¸æˆæ•°æ®...");
 
-        System.out.println("µã»÷ÈÎÒâ´¦½øÈë");//ÊÇ·ñÏë½øÈë
-        System.out.println("ÊÇ·ñÏë½øÈë?yes?no?"); //ÊäÈëÄãµÄÏë·¨¡£¡£¡£
+        System.out.println("ç‚¹å‡»ä»»æ„å¤„è¿›å…¥");//æ˜¯å¦æƒ³è¿›å…¥
+        System.out.println("æ˜¯å¦æƒ³è¿›å…¥?yes?no?"); //è¾“å…¥ä½ çš„æƒ³æ³•ã€‚ã€‚ã€‚
 
         String ask;
         do {
             ask = sc.next();
             if ("yes".equals(ask)) {
-                System.out.println("»¶Ó­½øÈëÃ×ºöÓÆ£¡");
-                method();//µ÷ÓÃmethod·½·¨£¬ÕıÊ½¿ªÊ¼ÓÎÏ·
+                System.out.println("æ¬¢è¿è¿›å…¥ç±³å¿½æ‚ ï¼");
+                method();//è°ƒç”¨methodæ–¹æ³•ï¼Œæ­£å¼å¼€å§‹æ¸¸æˆ
             } else if ("no".equals(ask)) {
-                System.out.println("ÔÙ¼ûmHoYo  ÔÙ¼ûÔ­Éñ¡£");
+                System.out.println("å†è§mHoYo  å†è§åŸç¥ã€‚");
             } else {
-                System.out.println("ĞÄÇé¸´ÔÓ£¬Ìı²»¶®£¬ÎŞ·¨Ñ¡Ôñ¡£");
+                System.out.println("å¿ƒæƒ…å¤æ‚ï¼Œå¬ä¸æ‡‚ï¼Œæ— æ³•é€‰æ‹©ã€‚");
             }
         } while (!"yes".equals(ask) && !"no".equals(ask));
 
     }
 
 
-    //methodÕıÊ½¿ªÊ¼ÓÎÏ·µÄ·½·¨=================================================================
+    //methodæ­£å¼å¼€å§‹æ¸¸æˆçš„æ–¹æ³•=================================================================
     public static void method() {
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         Random ran = new Random();
         Scanner sc = new Scanner(System.in);
         MyYuanShen my = new MyYuanShen();
         int YuanShi = my.getYuanShi();
 
-        System.out.println("ÕıÔÚ½øÈë...");
+        System.out.println("æ­£åœ¨è¿›å…¥...");
 
-        //ÊÇ·ñÔÂ¿¨
+        //æ˜¯å¦æœˆå¡
         if (my.isYueKa()) {
-            System.out.println("»ñµÃ90Ô­Ê¯");
+            System.out.println("è·å¾—90åŸçŸ³");
             my.setYuanShi(my.getYuanShi() + 90);
         }
 
-        //Ã¿ÈÕÈÎÎñ£¬´ò¿ªÈÎÎñ
-        System.out.println("=====Ã¿ÈÕÈÎÎñ=====");
-        int yes =MeiRiWeiTuo();//µ÷ÓÃÏÂÃæµÄÎ¯ÍĞ£¬²¢·µ»ØÔ­Ê¯
-        my.setYuanShi(my.getYuanShi()+yes);//¼ÓÎÒÎÒµÄÔ­¿âÍÍ
-        System.out.println("´«ËÍ\nÃÉµÂ³Ç");
-        System.out.println("Ã°ÏÕ¼ÒĞ­»á\n¿­ÉªÁÕ\nÏë×ÅĞÇ......");
-        System.out.println("¸ĞĞ»ÄãÍæ......");
-        System.out.println("Ô­Ê¯+20");
-        my.setYuanShi(my.getYuanShi()+20);//¼ÓÎÒÎÒµÄÔ­¿âÍÍ
+        //æ¯æ—¥ä»»åŠ¡ï¼Œæ‰“å¼€ä»»åŠ¡
+        System.out.println("=====æ¯æ—¥ä»»åŠ¡=====");
+        int yes =MeiRiWeiTuo();//è°ƒç”¨ä¸‹é¢çš„å§”æ‰˜ï¼Œå¹¶è¿”å›åŸçŸ³
+        my.setYuanShi(my.getYuanShi()+yes);//åŠ æˆ‘æˆ‘çš„åŸåº“å±¯
+        System.out.println("ä¼ é€\nè’™å¾·åŸ");
+        System.out.println("å†’é™©å®¶åä¼š\nå‡¯ç‘Ÿç³\næƒ³ç€æ˜Ÿ......");
+        System.out.println("æ„Ÿè°¢ä½ ç©......");
+        System.out.println("åŸçŸ³+20");
+        my.setYuanShi(my.getYuanShi()+20);//åŠ æˆ‘æˆ‘çš„åŸåº“å±¯
 
-        //½ñÈÕ»ñµÃÔ­Ê¯Êı
-        System.out.println("½ñÈÕ»ñµÃÔ­Ê¯Êı£º"+(my.getYuanShi()-YuanShi));
+        //ä»Šæ—¥è·å¾—åŸçŸ³æ•°
+        System.out.println("ä»Šæ—¥è·å¾—åŸçŸ³æ•°ï¼š"+(my.getYuanShi()-YuanShi));
 
-        //ÅÉÇ²
+        //æ´¾é£
         System.out.println("============================");
-        System.out.println("Ã°ÏÕ¼ÒĞ­»á\n¿­ÉªÁÕ\nÏë×ÅĞÇ......");
-        System.out.println("ÅÉÇ²ÈÎÎñ");
+        System.out.println("å†’é™©å®¶åä¼š\nå‡¯ç‘Ÿç³\næƒ³ç€æ˜Ÿ......");
+        System.out.println("æ´¾é£ä»»åŠ¡");
         my.setKuang1(my.getKuang1()+9*4);
         my.setKuang2(my.getKuang2()+7*4);
         my.setMoLa(my.getMoLa()+50000*2);
 
-        //Á¶½ğÌ¨
+        //ç‚¼é‡‘å°
         System.out.println("============================");
-        System.out.println("Á¶½ğÌ¨\nÍß¸ñÄÉ\nàÅ£¿Ê²Ã´ÊÇ£¿");
+        System.out.println("ç‚¼é‡‘å°\nç“¦æ ¼çº³\nå—¯ï¼Ÿä»€ä¹ˆæ˜¯ï¼Ÿ");
         my.setKuang2(my.getKuang2()-5*4*4);
-        System.out.println("ÔÙ¼û£¡");
+        System.out.println("å†è§ï¼");
 
-        //ºÏ³ÉÌ¨
+        //åˆæˆå°
         System.out.println("============================");
         do {
-            //ÊÇ·ñµãµ½µÙÂêÎÚË¹
+            //æ˜¯å¦ç‚¹åˆ°è’‚ç›ä¹Œæ–¯
             int kao =1;
             int xxx= ran.nextInt(2);
             if(kao == xxx){
-                System.out.println("ºÏ³ÉÌ¨\nµÙÂêÎÚË¹\nÄãºÃ£¬ÄãÒ²¶ÔÁ¶......");
-                System.out.println("ÔÙ¼û");
+                System.out.println("åˆæˆå°\nè’‚ç›ä¹Œæ–¯\nä½ å¥½ï¼Œä½ ä¹Ÿå¯¹ç‚¼......");
+                System.out.println("å†è§");
             }else{
-                System.out.println("ºÏ³É4¸öÅ¨ËõÊ÷Ö¬");
+                System.out.println("åˆæˆ4ä¸ªæµ“ç¼©æ ‘è„‚");
                 break;
             }
         }while(true);
 
-        //Æíµ»
+        //ç¥ˆç¥·
         System.out.println("============================");
         int yuan = my.getYuanShi()/160;
 
@@ -118,30 +118,30 @@ public class YuanShen {
         }
 
         for (int i = 1; i <= yuan; i++) {
-            System.out.println("¶Ò»»\nÆíµ»\nÆíµ»Ò»´Î\nÈ·¶¨");
-            System.out.println("¹§Ï²»ñµÃ£º");
-            System.out.println("ÒÔÀí·şÈË");
-            my.setYuanShi(my.getYuanShi()-160);//¼õÈ¥ÎÒµÄÔ­¿âÍÍ
-            System.out.println("Ê£ÓàÔ­Ê¯£º"+my.getYuanShi());
+            System.out.println("å…‘æ¢\nç¥ˆç¥·\nç¥ˆç¥·ä¸€æ¬¡\nç¡®å®š");
+            System.out.println("æ­å–œè·å¾—ï¼š");
+            System.out.println("ä»¥ç†æœäºº");
+            my.setYuanShi(my.getYuanShi()-160);//å‡å»æˆ‘çš„åŸåº“å±¯
+            System.out.println("å‰©ä½™åŸçŸ³ï¼š"+my.getYuanShi());
         }
-        System.out.println("Æíµ»Íê±Ï£¡");
+        System.out.println("ç¥ˆç¥·å®Œæ¯•ï¼");
 
         System.out.println("============================");
 
-        //ÊÇ·ñÍÆ³öÓÎÏ·
-        System.out.println("ÊÇ·ñÍÆ³öÓÎÏ·£¿yes£¿no£¿");
+        //æ˜¯å¦æ¨å‡ºæ¸¸æˆ
+        System.out.println("æ˜¯å¦æ¨å‡ºæ¸¸æˆï¼Ÿyesï¼Ÿnoï¼Ÿ");
         String str;
         do {
             str = sc.next();
             if ("yes".equals(str)){
-                System.out.println("ÍË³öÓÎÏ·");
+                System.out.println("é€€å‡ºæ¸¸æˆ");
             }else if("no".equals(str)){
-                System.out.println("ÍÚ¿óÈ¥......");
+                System.out.println("æŒ–çŸ¿å»......");
                 for (int i = 0; i < 10; i++) {
                     System.out.println(".........");
                 }
             }else{
-                System.out.println("ÉÏ±£µ×ÍáÁË£¬ĞÔÇé¸´ÔÓ¡£¡£¡£");
+                System.out.println("ä¸Šä¿åº•æ­ªäº†ï¼Œæ€§æƒ…å¤æ‚ã€‚ã€‚ã€‚");
                 for (int i = 0; i < 10; i++) {
                     System.out.println(".........");
                 }
@@ -153,39 +153,39 @@ public class YuanShen {
 
 
 
-    //Ã¿ÈÕÎ¯ÍĞµÄ·½·¨=========================================================
+    //æ¯æ—¥å§”æ‰˜çš„æ–¹æ³•=========================================================
     public static int MeiRiWeiTuo(){
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         MyYuanShen my = new MyYuanShen();
         Random ran = new Random();
         ArrayList<String> list = new ArrayList<>();
 
-        //ËùÓĞÈÎÎñÄÚÈİ
-        list.add("Ğ°¶ñµÄÈëÇÖ");
-        list.add("ÅÊ¸ßÎ£ÏÕ");
-        list.add("ÁÙÎ£ÊÜÃü");
-        list.add("ÇğÇğÈËµÄÒ»Ğ¡²½");
-        list.add("³¤ÇıÖ²Èë");
-        list.add("°²È«ÔËÊä");
-        list.add("Î£»úÔËÊä");
-        list.add("ÂÃĞĞÕß£¬ÎÒ¶öÁË");
-        list.add("ÂÃĞĞÕß£¬´òÉ¨ÎÀÉú");
-        list.add("ÂÃĞĞÕß£¬È¥......");
-        //Ì«¶àÁË£¬Ê²Ã´ÊÂ¶¼ÈÃÂÃĞĞÕß×ö
+        //æ‰€æœ‰ä»»åŠ¡å†…å®¹
+        list.add("é‚ªæ¶çš„å…¥ä¾µ");
+        list.add("æ”€é«˜å±é™©");
+        list.add("ä¸´å±å—å‘½");
+        list.add("ä¸˜ä¸˜äººçš„ä¸€å°æ­¥");
+        list.add("é•¿é©±æ¤å…¥");
+        list.add("å®‰å…¨è¿è¾“");
+        list.add("å±æœºè¿è¾“");
+        list.add("æ—…è¡Œè€…ï¼Œæˆ‘é¥¿äº†");
+        list.add("æ—…è¡Œè€…ï¼Œæ‰“æ‰«å«ç”Ÿ");
+        list.add("æ—…è¡Œè€…ï¼Œå»......");
+        //å¤ªå¤šäº†ï¼Œä»€ä¹ˆäº‹éƒ½è®©æ—…è¡Œè€…åš
 
-        //Ëæ»úµ÷ÓÃ4¸öÎ¯ÍĞ
+        //éšæœºè°ƒç”¨4ä¸ªå§”æ‰˜
         int yes = 0;
         ran.nextInt(list.size());
         for (int i = 0; i < 4; i++) {
-            System.out.println("×·×Ù");
-            //ÌáÈ¡Î¯ÍĞË÷ÒıÖµ
+            System.out.println("è¿½è¸ª");
+            //æå–å§”æ‰˜ç´¢å¼•å€¼
             int index = ran.nextInt(list.size());
             String renwu = list.get(index);
             System.out.println(renwu);
-            list.remove(index);//É¾³ıÕâ¸öÎ¯ÍĞ
+            list.remove(index);//åˆ é™¤è¿™ä¸ªå§”æ‰˜
 
-            System.out.println("ÈÎÎñÍê³É");
-            System.out.println("Ô­Ê¯+10");
+            System.out.println("ä»»åŠ¡å®Œæˆ");
+            System.out.println("åŸçŸ³+10");
             System.out.println("========");
             yes+=10;
 

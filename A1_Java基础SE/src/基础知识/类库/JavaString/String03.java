@@ -1,17 +1,17 @@
-package ����֪ʶ.���.JavaString;
+package 基础知识.类库.JavaString;
 
 /*
- ==�ǽ��ж���ĵ�ֵַ�Ƚϣ����ȷʵ�ǽ����ַ������бȽϣ�����ʹ������������
+ ==是进行对象的地址值比较，如果确实是进行字符串进行比较，可以使用两个方法。
 
- public boolean equals(Object.obj)����������˵�������ֻ�в������ַ�������������ͬ�ĲŻ��true�����򷵻�false��
+ public boolean equals(Object.obj)，参数可以说任意对象，只有参数是字符串并且内容相同的才会给true，否则返回false。
 
- ע�����
- 1.�κζ�������Object���ա�
- 2.equals�������жԳ��ԣ�Ҳ����a.equals(b) �� b.equals(a) Ч��һ����
- 3.����Ƚ�һ�� ���� ��һ�� ���� ����ѡ�ѳ����ַ�������ǰ�档
-   ��ѡ��"ABC".equals(str);   ����ѡ��str.equals("ABC");
+ 注意事项：
+ 1.任何对象都能用Object接收。
+ 2.equals方法具有对称性，也就是a.equals(b) 和 b.equals(a) 效果一样。
+ 3.如果比较一个 常量 和一个 变量 ，推选把常量字符串放在前面。
+   推选："ABC".equals(str);   不推选：str.equals("ABC");
 
- public boolean equalsIgnoreCase(String str)  �����ִ�Сд�Ĳ���    ��Ҫע����ǲ�����String
+ public boolean equalsIgnoreCase(String str)  不区分大小写的不叫    但要注意的是参数是String
 
 */
 public class String03 {

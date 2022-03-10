@@ -1,65 +1,65 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set¼¯ºÏ.¹şÏ£Öµ;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Seté›†åˆ.å“ˆå¸Œå€¼;
 
 /*
 int i = Object.hashCode();
 
-[×¢Òâ]:
+[æ³¨æ„]:
 
-Êı×ÖÊÇÓÃ²»ÁËhashCode()·½·¨µÄ¡£
+æ•°å­—æ˜¯ç”¨ä¸äº†hashCode()æ–¹æ³•çš„ã€‚
 
-ÔÚÄ¬ÈÏÇé¿öÏÂ, hashCode()·½·¨Ã»ÓĞ±»¸²¸ÇÖØĞ´µÄÇé¿öÏÂ:
-1. ²»Í¬¶ÔÏóµÄ¹şÏ£ÖµÊÇ²»Í¬µÄ¡£
-2. ¶ÔÓÚ×Ö·û´®À´Ëµ£¬stu1¶ÔÏóÖĞµÄ×Ö·û´®[ºÎÑ©´Ï]ºÍstr×Ö·û´®µÄ[ºÎÑ©´Ï]¹şÏ£ÖµÊÇÏàÍ¬µÄ¡£
-3. ²»Í¬µÄ×Ö·û´®µÄ¹şÏ£ÖµÒ²ÓĞ¿ÉÄÜÊÇÏàÍ¬µÄ£¡
+åœ¨é»˜è®¤æƒ…å†µä¸‹, hashCode()æ–¹æ³•æ²¡æœ‰è¢«è¦†ç›–é‡å†™çš„æƒ…å†µä¸‹:
+1. ä¸åŒå¯¹è±¡çš„å“ˆå¸Œå€¼æ˜¯ä¸åŒçš„ã€‚
+2. å¯¹äºå­—ç¬¦ä¸²æ¥è¯´ï¼Œstu1å¯¹è±¡ä¸­çš„å­—ç¬¦ä¸²[ä½•é›ªèª]å’Œstrå­—ç¬¦ä¸²çš„[ä½•é›ªèª]å“ˆå¸Œå€¼æ˜¯ç›¸åŒçš„ã€‚
+3. ä¸åŒçš„å­—ç¬¦ä¸²çš„å“ˆå¸Œå€¼ä¹Ÿæœ‰å¯èƒ½æ˜¯ç›¸åŒçš„ï¼
 
 */
 public class Run_HashCode {
 
     public static void main(String[] args) {
 
-        //´´½¨Ñ§Éú¶ÔÏó¡£
-        Student stu1 = new Student("ºÎÑ©´Ï", 20);
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡ã€‚
+        Student stu1 = new Student("ä½•é›ªèª", 20);
         int iCode1 = stu1.hashCode();
         int iCode2 = stu1.hashCode();
         if (iCode1 == iCode2) {
-            System.out.println("Í¬Ò»¸ö¶ÔÏó¶à´Îµ÷ÓÃ¹şÏ£ÖµÏàÍ¬¡£");
+            System.out.println("åŒä¸€ä¸ªå¯¹è±¡å¤šæ¬¡è°ƒç”¨å“ˆå¸Œå€¼ç›¸åŒã€‚");
         }
 
-        //´´½¨µÚ¶ş¸öÑ§Éú¶ÔÏó
-        Student stu2 = new Student("ºÎÑ©´Ï", 20);
+        //åˆ›å»ºç¬¬äºŒä¸ªå­¦ç”Ÿå¯¹è±¡
+        Student stu2 = new Student("ä½•é›ªèª", 20);
         int jCode1 = stu2.hashCode();
         int jCode2 = stu2.hashCode();
         if (jCode1 == jCode2) {
-            System.out.println("Í¬Ò»¸ö¶ÔÏó¶à´Îµ÷ÓÃ¹şÏ£ÖµÏàÍ¬¡£");
+            System.out.println("åŒä¸€ä¸ªå¯¹è±¡å¤šæ¬¡è°ƒç”¨å“ˆå¸Œå€¼ç›¸åŒã€‚");
         }
         System.out.println("========================");
 
 
-        //ÔÚÄ¬ÈÏÇé¿öÏÂ£¬²»Í¬¶ÔÏóµÄ¹şÏ£ÖµÊÇ²»Í¬µÄ
-        //·ÇÌØÊâÇé¿öÏÂ£¬ÖØĞ´hashCode()·½·¨¡£
+        //åœ¨é»˜è®¤æƒ…å†µä¸‹ï¼Œä¸åŒå¯¹è±¡çš„å“ˆå¸Œå€¼æ˜¯ä¸åŒçš„
+        //éç‰¹æ®Šæƒ…å†µä¸‹ï¼Œé‡å†™hashCode()æ–¹æ³•ã€‚
         if (iCode1 == jCode1) {
-            System.out.println("ÖØĞ´ÁËhashCode()·½·¨");
+            System.out.println("é‡å†™äº†hashCode()æ–¹æ³•");
         } else if (iCode1 != jCode1) {
-            System.out.println("²»Í¬¶ÔÏóµÄ¹şÏ£ÖµÊÇ²»Í¬µÄ");
+            System.out.println("ä¸åŒå¯¹è±¡çš„å“ˆå¸Œå€¼æ˜¯ä¸åŒçš„");
         }
         System.out.println("========================");
-        System.out.println("×Ö·û´®µÄ¹şÏ£Öµ");
-        System.out.println("ÑÇË÷: " + "ÑÇË÷".hashCode());
+        System.out.println("å­—ç¬¦ä¸²çš„å“ˆå¸Œå€¼");
+        System.out.println("äºšç´¢: " + "äºšç´¢".hashCode());
 
         System.out.println("========================");
-        System.out.println("ÖØµØ: "+"ÖØµØ".hashCode());
-        System.out.println("Í¨»°: "+"Í¨»°".hashCode());
-        if ("ÖØµØ".hashCode() == "Í¨»°".hashCode()){
-            System.out.println("²»Í¬µÄ×Ö·û´®µÄ¹şÏ£Öµ¿ÉÄÜÏàÍ¬£¡");
+        System.out.println("é‡åœ°: "+"é‡åœ°".hashCode());
+        System.out.println("é€šè¯: "+"é€šè¯".hashCode());
+        if ("é‡åœ°".hashCode() == "é€šè¯".hashCode()){
+            System.out.println("ä¸åŒçš„å­—ç¬¦ä¸²çš„å“ˆå¸Œå€¼å¯èƒ½ç›¸åŒï¼");
         }
 
         System.out.println("========================");
-        //¶ÔÏóÖĞµÄ×Ö·û´®ºÍ³£Á¿³ØÖĞµÄ×Ö·û´®
-        String str = "ºÎÑ©´Ï";
-        System.out.println("ºÎÑ©´Ï: " + str.hashCode());
-        System.out.println("stu1¶ÔÏóµÄname: " + stu1.getName().hashCode());
-        if (stu1.getName().hashCode() == "ºÎÑ©´Ï".hashCode()){
-            System.out.println("stu¶ÔÏóÖĞµÄ×Ö·û´®[ºÎÑ©´Ï]ºÍstr×Ö·û´®µÄ[ºÎÑ©´Ï]¹şÏ£ÖµÏàÍ¬¡£");
+        //å¯¹è±¡ä¸­çš„å­—ç¬¦ä¸²å’Œå¸¸é‡æ± ä¸­çš„å­—ç¬¦ä¸²
+        String str = "ä½•é›ªèª";
+        System.out.println("ä½•é›ªèª: " + str.hashCode());
+        System.out.println("stu1å¯¹è±¡çš„name: " + stu1.getName().hashCode());
+        if (stu1.getName().hashCode() == "ä½•é›ªèª".hashCode()){
+            System.out.println("stuå¯¹è±¡ä¸­çš„å­—ç¬¦ä¸²[ä½•é›ªèª]å’Œstrå­—ç¬¦ä¸²çš„[ä½•é›ªèª]å“ˆå¸Œå€¼ç›¸åŒã€‚");
         }
 
         int i = 1;

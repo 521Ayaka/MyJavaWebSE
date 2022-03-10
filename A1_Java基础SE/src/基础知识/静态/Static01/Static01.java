@@ -1,25 +1,25 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.Static01;
+package åŸºç¡€çŸ¥è¯†.é™æ€.Static01;
 
 /*
 
- Èç¹ûÒ»¸ö³ÉÔ±±äÁ¿Ê¹ÓÃÁËstatic¹Ø¼ü×Ö£¬ÄÇÃ´Õâ¸ö±äÁ¿²»ÔÙÊôÓÚ¶ÔÏó×Ô¼º£¬¶øÊÇÊôÓÚËùÔÚµÄÀà¡£
- ¶à¸ö¶ÔÏó¹²ÏíÍ¬Ò»·İÊı¾İ¡£
+ å¦‚æœä¸€ä¸ªæˆå‘˜å˜é‡ä½¿ç”¨äº†staticå…³é”®å­—ï¼Œé‚£ä¹ˆè¿™ä¸ªå˜é‡ä¸å†å±äºå¯¹è±¡è‡ªå·±ï¼Œè€Œæ˜¯å±äºæ‰€åœ¨çš„ç±»ã€‚
+ å¤šä¸ªå¯¹è±¡å…±äº«åŒä¸€ä»½æ•°æ®ã€‚
 
  */
 public class Static01 {
 
     public static void main(String[] args) {
 
-        Student two = new Student("»ÆÈØ", 16);
-        two.room = "101½ÌÊÒ";
-        System.out.println("ĞÕÃû£º" + two.getName()
-                + "£¬ÄêÁä£º" + two.getAge() + "£¬½ÌÊÒ£º" + two.room
-                + "£¬Ñ§ºÅ£º" + two.getId());
+        Student two = new Student("é»„è“‰", 16);
+        two.room = "101æ•™å®¤";
+        System.out.println("å§“åï¼š" + two.getName()
+                + "ï¼Œå¹´é¾„ï¼š" + two.getAge() + "ï¼Œæ•™å®¤ï¼š" + two.room
+                + "ï¼Œå­¦å·ï¼š" + two.getId());
 
-        Student one = new Student("¹ù¾¸", 19);
-        System.out.println("ĞÕÃû£º" + one.getName()
-                + "£¬ÄêÁä£º" + one.getAge() + "£¬½ÌÊÒ£º" + one.room
-                + "£¬Ñ§ºÅ£º" + one.getId());
+        Student one = new Student("éƒ­é–", 19);
+        System.out.println("å§“åï¼š" + one.getName()
+                + "ï¼Œå¹´é¾„ï¼š" + one.getAge() + "ï¼Œæ•™å®¤ï¼š" + one.room
+                + "ï¼Œå­¦å·ï¼š" + one.getId());
     }
 
 }

@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.·´Éä.A7_·´ÉäÍê³É²»¿ÉÄÜµÄÊÂÇé.A2_Ô½¹ı·ºĞÍ¼ì²â·ÃÎÊÔ­Ê¼·½·¨;
+package åŸºç¡€çŸ¥è¯†.åå°„.A7_åå°„å®Œæˆä¸å¯èƒ½çš„äº‹æƒ….A2_è¶Šè¿‡æ³›å‹æ£€æµ‹è®¿é—®åŸå§‹æ–¹æ³•;
 /*
-    ÒªÇó
-    ÏòArrayList<Integer> ¼¯ºÏµ±ÖĞÌí¼Ó [×Ö·û´®] ,·ºĞÍÊÇInteger
+    è¦æ±‚
+    å‘ArrayList<Integer> é›†åˆå½“ä¸­æ·»åŠ  [å­—ç¬¦ä¸²] ,æ³›å‹æ˜¯Integer
 
 */
 
@@ -13,33 +13,33 @@ public class UseMethod {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
-        //´´½¨ArrayList¼¯ºÏ
+        //åˆ›å»ºArrayListé›†åˆ
         ArrayList<Integer> array = new ArrayList<>();
 
-        //»ñÈ¡class¶ÔÏó
+        //è·å–classå¯¹è±¡
         Class<? extends ArrayList> c = array.getClass();
 
-        //·´Éä»ñÈ¡add·½·¨
+        //åå°„è·å–addæ–¹æ³•
         Method addMe = c.getDeclaredMethod("add", Object.class);
-        //Ïò¼¯ºÏµ±ÖĞÌí¼Ó ×Ö·û´®
-        boolean isAdd = (boolean) addMe.invoke(array, "Õâ¾ÍŞÏŞÎÁË");
-        System.out.println("ÊÇ·ñÌí¼Ó³É¹¦" + isAdd +"\n");
-        addMe.invoke(array, "¿ÉÒÔÌø¹ı·ºĞÍ");
-        addMe.invoke(array, "»ñÈ¡Ô­Ê¼·½·¨");
+        //å‘é›†åˆå½“ä¸­æ·»åŠ  å­—ç¬¦ä¸²
+        boolean isAdd = (boolean) addMe.invoke(array, "è¿™å°±å°´å°¬äº†");
+        System.out.println("æ˜¯å¦æ·»åŠ æˆåŠŸ" + isAdd +"\n");
+        addMe.invoke(array, "å¯ä»¥è·³è¿‡æ³›å‹");
+        addMe.invoke(array, "è·å–åŸå§‹æ–¹æ³•");
 
-        //±éÀú½á¹û:
+        //éå†ç»“æœ:
         for (Object o: array) {
             System.out.println(o);
         }
         System.out.println(array);
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        ÊÇ·ñÌí¼Ó³É¹¦true
+        æ˜¯å¦æ·»åŠ æˆåŠŸtrue
 
-        Õâ¾ÍŞÏŞÎÁË
-        ¿ÉÒÔÌø¹ı·ºĞÍ
-        »ñÈ¡Ô­Ê¼·½·¨
-        [Õâ¾ÍŞÏŞÎÁË, ¿ÉÒÔÌø¹ı·ºĞÍ, »ñÈ¡Ô­Ê¼·½·¨]
+        è¿™å°±å°´å°¬äº†
+        å¯ä»¥è·³è¿‡æ³›å‹
+        è·å–åŸå§‹æ–¹æ³•
+        [è¿™å°±å°´å°¬äº†, å¯ä»¥è·³è¿‡æ³›å‹, è·å–åŸå§‹æ–¹æ³•]
         */
 
     }

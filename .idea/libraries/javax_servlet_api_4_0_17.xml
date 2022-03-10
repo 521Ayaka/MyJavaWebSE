@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.servlet-api-4.0.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/target/B6_Tomcat_Maver-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

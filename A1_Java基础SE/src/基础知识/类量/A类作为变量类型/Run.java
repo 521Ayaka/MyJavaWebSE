@@ -1,27 +1,27 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.AÀà×÷Îª±äÁ¿ÀàĞÍ;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Aç±»ä½œä¸ºå˜é‡ç±»å‹;
 
 public class Run {
 
     public static void main(String[] args) {
-        //´´½¨Ó¢ĞÛ¶ÔÏó
+        //åˆ›å»ºè‹±é›„å¯¹è±¡
         Hero heroOne = new Hero();
-        //´«µİÓ¢ĞÛĞÅÏ¢
-        heroOne.setName("´ó¸ÇÂ×");
+        //ä¼ é€’è‹±é›„ä¿¡æ¯
+        heroOne.setName("å¤§ç›–ä¼¦");
         heroOne.setAge(32);
 
-        //´´½¨ÎäÆ÷¶ÔÏó
+        //åˆ›å»ºæ­¦å™¨å¯¹è±¡
         Weapon weapon = new Weapon();
         weapon.setCode("AK-47");
 
-        //´«µİÎäÆ÷²ÎÊı
+        //ä¼ é€’æ­¦å™¨å‚æ•°
         heroOne.setWeapon(weapon);
 
         heroOne.method();
         System.out.println("========================================================================================");
 
-        //Ö±½Ó´´½¨Ó¢ĞÛ¶ÔÏó²¢ÏòÄÚ²¿´«ÈëÓ¢ĞÛĞÅÏ¢²ÎÊı
-        Weapon weapon1 = new Weapon("ÎŞ¾¡Ö®ÈĞ");
-        Hero heroTwo = new Hero("¼²·ç½£ºÀ",31,weapon1);
+        //ç›´æ¥åˆ›å»ºè‹±é›„å¯¹è±¡å¹¶å‘å†…éƒ¨ä¼ å…¥è‹±é›„ä¿¡æ¯å‚æ•°
+        Weapon weapon1 = new Weapon("æ— å°½ä¹‹åˆƒ");
+        Hero heroTwo = new Hero("ç–¾é£å‰‘è±ª",31,weapon1);
 
         heroTwo.method();
 

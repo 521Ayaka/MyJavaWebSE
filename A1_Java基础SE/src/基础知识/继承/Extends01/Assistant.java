@@ -1,7 +1,7 @@
-package 基础知识.继承.Extends01;
+package 鍩虹鐭ヨ瘑.缁ф壙.Extends01;
 
 
-// 定义了员工的另一个子类：助教
+// 瀹氫箟浜嗗憳宸ョ殑鍙︿竴涓瓙绫伙細鍔╂暀
 public class Assistant extends Employee{
 
 }

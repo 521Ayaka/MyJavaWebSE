@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.Comparable;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».Comparable;
 
 public class Student_2 implements Comparable<Student_2>{
 
@@ -31,9 +31,9 @@ public class Student_2 implements Comparable<Student_2>{
 
     @Override
     public int compareTo(Student_2 o) {
-//        return 0;  //ÖØ¸´ÔªËØ
-//        return 1;  //·ÅÈëºóÃæ
-//        return -1; //·ÅÈëÇ°Ãæ
+//        return 0;  //é‡å¤å…ƒç´ 
+//        return 1;  //æ”¾å…¥åé¢
+//        return -1; //æ”¾å…¥å‰é¢
         return this.age - o.age;
     }
 

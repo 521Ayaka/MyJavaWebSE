@@ -1,4 +1,4 @@
-package 基础知识.基础.Array;
+package 鍩虹鐭ヨ瘑.鍩虹.Array;
 
 import java.util.Arrays;
 

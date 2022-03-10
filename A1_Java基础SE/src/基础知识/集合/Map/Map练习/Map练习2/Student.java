@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°2;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 2;
 
 import java.util.Objects;
 
@@ -15,7 +15,7 @@ public class Student {
         this.age = age;
     }
 
-    //GetSet·½·¨¶Ô
+    //GetSetæ–¹æ³•å¯¹
     public String getName() {
         return name;
     }
@@ -33,7 +33,7 @@ public class Student {
     }
 
 
-    //ÖØĞ´equals()ºÍhashCode()·½·¨¡£
+    //é‡å†™equals()å’ŒhashCode()æ–¹æ³•ã€‚
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

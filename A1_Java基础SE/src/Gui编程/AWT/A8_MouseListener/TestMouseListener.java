@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A8_MouseListener;
+package Guiç¼–ç¨‹.AWT.A8_MouseListener;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -7,22 +7,22 @@ import java.util.Iterator;
 
 public class TestMouseListener {
     public static void main(String[] args) {
-        new MyFrame("»­±Ê").LoadFrame();
+        new MyFrame("ç”»ç¬”").LoadFrame();
     }
 }
 class MyFrame extends Frame{
 
-    //¹¹Ôì·½·¨
+    //æ„é€ æ–¹æ³•
     public MyFrame(String title){
         super(title);
     }
 
-    //³ÉÔ±±äÁ¿
+    //æˆå‘˜å˜é‡
     ArrayList<Point> arrayList;
 
-    //Æô¶¯´°Ìå·½·¨
+    //å¯åŠ¨çª—ä½“æ–¹æ³•
     public void LoadFrame(){
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setBounds(500,300,500,400);
         setVisible(true);
         addWindowListener(new WindowAdapter() {
@@ -31,12 +31,12 @@ class MyFrame extends Frame{
                 System.exit(0);
             }
         });
-        //Ìí¼ÓÒ»¸ö¼¯ºÏÓÃÓÚ´æ´¢µãµÄÎ»ÖÃĞÅÏ¢
+        //æ·»åŠ ä¸€ä¸ªé›†åˆç”¨äºå­˜å‚¨ç‚¹çš„ä½ç½®ä¿¡æ¯
         arrayList = new ArrayList();
         addMouseListener(new MyMouseListener());
     }
 
-    //»­±ÊÊÂ¼ş
+    //ç”»ç¬”äº‹ä»¶
     @Override
     public void paint(Graphics g) {
         //super.paint(g);
@@ -50,8 +50,8 @@ class MyFrame extends Frame{
     }
 
 
-/*  Èç¹ûÕâÑùĞ´Ì«Âé·³ÁË£¬ÒªÈ«²¿ÊµÏÖMouseListenerµÄ³éÏó·½·¨
-    //ÄÚ²¿Àà Êó±ê¼àÌıÊÂ¼ş
+/*  å¦‚æœè¿™æ ·å†™å¤ªéº»çƒ¦äº†ï¼Œè¦å…¨éƒ¨å®ç°MouseListenerçš„æŠ½è±¡æ–¹æ³•
+    //å†…éƒ¨ç±» é¼ æ ‡ç›‘å¬äº‹ä»¶
     private class MyMouseListener implements MouseListener {
 
         @Override
@@ -84,19 +84,19 @@ class MyFrame extends Frame{
         arrayList.add(po);
     }
 
-    //ÊÊÅäÆ÷Ä£Ê½               ×¢Òâ£ºÊÊÅäÆ÷Ä£Ê½ÊÇÒÑ¾­ÊµÏÖÁËÄ³·½·¨£¬ÓÃµÄÊ±ºòÊÇ¼Ì³ĞÏàÓ¦µÄÊÊÅäÆ÷£¬²»ÊÇ¼Ì³Ğ
+    //é€‚é…å™¨æ¨¡å¼               æ³¨æ„ï¼šé€‚é…å™¨æ¨¡å¼æ˜¯å·²ç»å®ç°äº†æŸæ–¹æ³•ï¼Œç”¨çš„æ—¶å€™æ˜¯ç»§æ‰¿ç›¸åº”çš„é€‚é…å™¨ï¼Œä¸æ˜¯ç»§æ‰¿
     private class MyMouseListener /*implements*/ extends MouseAdapter{
 
         @Override
         public void mouseClicked(MouseEvent e) {
-            //Ìí¼ÓÕâ¸ö´°Ìå
+            //æ·»åŠ è¿™ä¸ªçª—ä½“
             MyFrame frame =(MyFrame) e.getSource();
-            //»ñÈ¡Êó±êµã»÷µÄÎ»ÖÃ
+            //è·å–é¼ æ ‡ç‚¹å‡»çš„ä½ç½®
             Point po = new Point(e.getX(),e.getY());
-            //½«»ñÈ¡µãµÄÎ»ÖÃ´«Èëµ½¼¯ºÏ
+            //å°†è·å–ç‚¹çš„ä½ç½®ä¼ å…¥åˆ°é›†åˆ
             frame.addPoint(po);
 
-            //!!!ÒòÎªÕâ¸öÊÂ¼şÊÇÒ»´ÎĞÔµÄ£¬»­±ÊÖ´ĞĞµÄÒ»´Î£¬ĞèÒªÖØĞÂ
+            //!!!å› ä¸ºè¿™ä¸ªäº‹ä»¶æ˜¯ä¸€æ¬¡æ€§çš„ï¼Œç”»ç¬”æ‰§è¡Œçš„ä¸€æ¬¡ï¼Œéœ€è¦é‡æ–°
             frame.repaint();
         }
     }

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¦ËºÍStreamÁ÷.A1_³õ²½ÌåÑéStreamÁ÷;
+package åŸºç¡€çŸ¥è¯†.Î»å’ŒStreamæµ.A1_åˆæ­¥ä½“éªŒStreamæµ;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
@@ -7,50 +7,50 @@ public class TestStream {
 
     public static void main(String[] args) {
 
-        //ÊµÏÖ¸Ã·½·¨1: ²»Ê¹ÓÃStreamÁ÷
+        //å®ç°è¯¥æ–¹æ³•1: ä¸ä½¿ç”¨Streamæµ
         ArrayList<String> list = new ArrayList<>();
-        list.add("ŞÏŞÎ");
-        list.add("ŞÏŞÎÁË");
-        list.add("ŞÏŞÎ½´");
-        list.add("Õâ¾ÍŞÏŞÎÁË");
-        list.add("ŞÏŞÎµÛ");
-        list.add("²»ŞÏŞÎ");
-        list.add("¾Å¼à¾Å½é");
-        //µÚÒ»´ÎÉ¸Ñ¡: ÒÔ[ŞÏ]¿ªÍ·µÄ
+        list.add("å°´å°¬");
+        list.add("å°´å°¬äº†");
+        list.add("å°´å°¬é…±");
+        list.add("è¿™å°±å°´å°¬äº†");
+        list.add("å°´å°¬å¸");
+        list.add("ä¸å°´å°¬");
+        list.add("ä¹ç›‘ä¹ä»‹");
+        //ç¬¬ä¸€æ¬¡ç­›é€‰: ä»¥[å°´]å¼€å¤´çš„
         ArrayList<String> list1 = new ArrayList<>();
         for (String s : list) {
-            if (s.startsWith("ŞÏ")) {
+            if (s.startsWith("å°´")) {
                 list1.add(s);
             }
         }
-        //µÚ¶ş´ÎÉ¸Ñ¡: ×Ö·û³¤¶ÈÎªÈı¸ö×Ö·û
+        //ç¬¬äºŒæ¬¡ç­›é€‰: å­—ç¬¦é•¿åº¦ä¸ºä¸‰ä¸ªå­—ç¬¦
         ArrayList<String> list2 = new ArrayList<>();
         for (String s : list1) {
             if (s.length() == 3) {
                 list2.add(s);
             }
         }
-        //´òÓ¡Êä³ö
+        //æ‰“å°è¾“å‡º
         System.out.println(list2);
         System.out.println("==========================");
 
-        //ÊµÏÖ¸Ã·½·¨2: Ê¹ÓÃStreamÁ÷
+        //å®ç°è¯¥æ–¹æ³•2: ä½¿ç”¨Streamæµ
         ArrayList<String> listStream = new ArrayList<>();
-        listStream.add("ŞÏŞÎ");
-        listStream.add("ŞÏŞÎÁË");
-        listStream.add("ŞÏŞÎ½´");
-        listStream.add("Õâ¾ÍŞÏŞÎÁË");
-        listStream.add("ŞÏŞÎµÛ");
-        listStream.add("²»ŞÏŞÎ");
-        listStream.add("¾Å¼à¾Å½é");
+        listStream.add("å°´å°¬");
+        listStream.add("å°´å°¬äº†");
+        listStream.add("å°´å°¬é…±");
+        listStream.add("è¿™å°±å°´å°¬äº†");
+        listStream.add("å°´å°¬å¸");
+        listStream.add("ä¸å°´å°¬");
+        listStream.add("ä¹ç›‘ä¹ä»‹");
 
-        //Ö»ÒªÒ»¸ö²½Öè²Ù×÷ ¼ò»¯ÁËÉÏÃæËùÓĞ´úÂë
-        listStream.stream().filter( s -> s.startsWith("ŞÏ") ).filter(s -> s.length() == 3).forEach( s-> System.out.println(s) );
+        //åªè¦ä¸€ä¸ªæ­¥éª¤æ“ä½œ ç®€åŒ–äº†ä¸Šé¢æ‰€æœ‰ä»£ç 
+        listStream.stream().filter( s -> s.startsWith("å°´") ).filter(s -> s.length() == 3).forEach( s-> System.out.println(s) );
 
         System.out.println("==========================");
 
-        //ÓÅ»¯: ·½·¨ÒıÓÃ
-        listStream.stream().filter(s -> s.startsWith("ŞÏ"))
+        //ä¼˜åŒ–: æ–¹æ³•å¼•ç”¨
+        listStream.stream().filter(s -> s.startsWith("å°´"))
                      .filter(s -> s.length()==3)
                      .forEach(System.out::println);
 

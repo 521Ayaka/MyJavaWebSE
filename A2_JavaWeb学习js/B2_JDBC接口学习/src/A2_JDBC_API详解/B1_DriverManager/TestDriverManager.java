@@ -1,10 +1,10 @@
-package A2_JDBC_APIÏê½â.B1_DriverManager;
+package A2_JDBC_APIè¯¦è§£.B1_DriverManager;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-/*  DriverManagerÏê½â
+/*  DriverManagerè¯¦è§£
 
 package com.mysql.jdbc;
 import java.sql.DriverManager;
@@ -15,7 +15,7 @@ public class Driver extends NonRegisteringDriver implements java.sql.Driver {
     }
 
     static {
-        try { //ÕâÀïÀ´µ÷ÓÃDriverManager.registerDriver()·½·¨À´×¢²áÇı¶¯
+        try { //è¿™é‡Œæ¥è°ƒç”¨DriverManager.registerDriver()æ–¹æ³•æ¥æ³¨å†Œé©±åŠ¨
             DriverManager.registerDriver(new Driver());
         } catch (SQLException var1) {
             throw new RuntimeException("Can't register driver!");
@@ -28,14 +28,14 @@ public class Driver extends NonRegisteringDriver implements java.sql.Driver {
 
 public class TestDriverManager {
 
-    //Í¨¹ıJava¿ØÖÆ [¹ØÏµĞÍÊı¾İ¿â] mysql µÄ²½Öè
+    //é€šè¿‡Javaæ§åˆ¶ [å…³ç³»å‹æ•°æ®åº“] mysql çš„æ­¥éª¤
     public static void main(String[] args) throws Exception {
 
-        //1: ×¢²áÇı¶¯
-        //Class.forName("com.mysql.jdbc.Driver"); //jar5ºó ¿ÉÒÔÊ¡ÂÔÕâĞĞ
+        //1: æ³¨å†Œé©±åŠ¨
+        //Class.forName("com.mysql.jdbc.Driver"); //jar5å å¯ä»¥çœç•¥è¿™è¡Œ
 /*
         static {
-            try { //ÕâÀïÀ´µ÷ÓÃDriverManager.registerDriver()·½·¨À´×¢²áÇı¶¯
+            try { //è¿™é‡Œæ¥è°ƒç”¨DriverManager.registerDriver()æ–¹æ³•æ¥æ³¨å†Œé©±åŠ¨
                 DriverManager.registerDriver(new Driver());
             } catch (SQLException var1) {
                 throw new RuntimeException("Can't register driver!");
@@ -44,18 +44,18 @@ public class TestDriverManager {
                                                                      */
 
 
-        //2: »ñÈ¡Á¬½Ó
+        //2: è·å–è¿æ¥
         /*
-        * url¸ñÊ½£º
-        *       jdbc:mysql:// ĞèÒªÁ¬½ÓµÄip»òÓòÃû : ¶Ë¿ÚºÅ / ÒªÊ¹ÓÃµÄÊı¾İ¿âÃû³Æ ? ¼üÖµ¶Ô[¿É²»Ğ´]
+        * urlæ ¼å¼ï¼š
+        *       jdbc:mysql:// éœ€è¦è¿æ¥çš„ipæˆ–åŸŸå : ç«¯å£å· / è¦ä½¿ç”¨çš„æ•°æ®åº“åç§° ? é”®å€¼å¯¹[å¯ä¸å†™]
         *
-        * mysqlµÄÄ¬ÈÏ¶Ë¿ÚÊÇ3306 Èç¹ûÊÇÄ¬ÈÏ¶Ë¿Ú ¿ÉÒÔÊ¡ÂÔ
-        *       jdbc:mysql:// ĞèÒªÁ¬½ÓµÄip»òÓòÃû / ÒªÊ¹ÓÃµÄÊı¾İ¿âÃû³Æ ? ¼üÖµ¶Ô[¿É²»Ğ´]
+        * mysqlçš„é»˜è®¤ç«¯å£æ˜¯3306 å¦‚æœæ˜¯é»˜è®¤ç«¯å£ å¯ä»¥çœç•¥
+        *       jdbc:mysql:// éœ€è¦è¿æ¥çš„ipæˆ–åŸŸå / è¦ä½¿ç”¨çš„æ•°æ®åº“åç§° ? é”®å€¼å¯¹[å¯ä¸å†™]
         *
-        * Èç¹ûÁ¬½Ó±¾»úHostµÄmysql Ôò¿ÉÒÔ¼ò»¯²»Ğ´ipºÍ¶Ë¿ÚºÅ
-        *       jdbc:mysql:/// ÒªÊ¹ÓÃµÄÊı¾İ¿âÃû³Æ ? ¼üÖµ¶Ô[¿É²»Ğ´]
+        * å¦‚æœè¿æ¥æœ¬æœºHostçš„mysql åˆ™å¯ä»¥ç®€åŒ–ä¸å†™ipå’Œç«¯å£å·
+        *       jdbc:mysql:/// è¦ä½¿ç”¨çš„æ•°æ®åº“åç§° ? é”®å€¼å¯¹[å¯ä¸å†™]
         *
-        * Ê¹ÓÃ¼üÖµ¶Ô È¥³ıSSLµÄ¾¯¸æ
+        * ä½¿ç”¨é”®å€¼å¯¹ å»é™¤SSLçš„è­¦å‘Š
         *       useSSL = false
         *
         *
@@ -63,22 +63,22 @@ public class TestDriverManager {
         String url = "jdbc:mysql:///testsql?useSSL=false";
         String user = "root";
         String password = "ganga";
-        Connection conn = DriverManager.getConnection(url, user, password); //»ñÈ¡Connection¶ÔÏó
+        Connection conn = DriverManager.getConnection(url, user, password); //è·å–Connectionå¯¹è±¡
 
-        //3. ¶¨ÒåsqlÓï¾ä
-        String sql = "update student set math = 99 where id = 8"; //sqlºó²»ÓÃ·ÖºÅ
+        //3. å®šä¹‰sqlè¯­å¥
+        String sql = "update student set math = 99 where id = 8"; //sqlåä¸ç”¨åˆ†å·
 
-        //4. »ñÈ¡Ö´ĞĞsqlµÄ¶ÔÏó Statement
+        //4. è·å–æ‰§è¡Œsqlçš„å¯¹è±¡ Statement
         Statement stmt = conn.createStatement();
 
-        //5. Ö´ĞĞsql
-        int count = stmt.executeUpdate(sql); //Ö´ĞĞsql ·µ»ØÖµÊÇ ÊÜÓ°ÏìµÄĞĞÊı
+        //5. æ‰§è¡Œsql
+        int count = stmt.executeUpdate(sql); //æ‰§è¡Œsql è¿”å›å€¼æ˜¯ å—å½±å“çš„è¡Œæ•°
 
-        //6. ´¦Àí½á¹û
+        //6. å¤„ç†ç»“æœ
         System.out.println(count);
 
-        //7. ÊÍ·Å×ÊÔ´
-        //stmt¶ÔÏóÊÇÓÉconn¶ÔÏóµÃµ½µÄ, ËùÒÔÏÈÊÍ·Åstmt¶ÔÏó
+        //7. é‡Šæ”¾èµ„æº
+        //stmtå¯¹è±¡æ˜¯ç”±connå¯¹è±¡å¾—åˆ°çš„, æ‰€ä»¥å…ˆé‡Šæ”¾stmtå¯¹è±¡
         stmt.close();
         conn.close();
 

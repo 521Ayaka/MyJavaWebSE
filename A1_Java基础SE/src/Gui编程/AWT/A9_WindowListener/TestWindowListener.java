@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A9_WindowListener;
+package Guiç¼–ç¨‹.AWT.A9_WindowListener;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -7,7 +7,7 @@ import java.awt.event.WindowEvent;
 public class TestWindowListener {
 
     public static void main(String[] args) {
-        new MyFrame("´°¿Ú¼àÌıÊÂ¼ş");
+        new MyFrame("çª—å£ç›‘å¬äº‹ä»¶");
     }
 
 }
@@ -16,24 +16,24 @@ class MyFrame extends Frame{
 
     public MyFrame(String title){
         super(title);
-        //³õÊ¼»¯´óĞ¡Î»ÖÃÑÕÉ«¿É¼ûĞÔ
+        //åˆå§‹åŒ–å¤§å°ä½ç½®é¢œè‰²å¯è§æ€§
         setLocation(500,300);
         setSize(500,400);
         setBackground(new Color(3, 209, 238));
         setVisible(true);
 
-        //´°¿Ú¼àÌıÊÂ¼ş Ê¹ÓÃÄäÃûÄÚ²¿Àà ÊÊÅäÆ÷Ä£Ê½
+        //çª—å£ç›‘å¬äº‹ä»¶ ä½¿ç”¨åŒ¿åå†…éƒ¨ç±» é€‚é…å™¨æ¨¡å¼
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowOpened(WindowEvent e) {
                 System.out.println("windows1");
             }
 
-            @Override //µã»÷¹Ø±Õ´°¿ÚÍ¼±ê
+            @Override //ç‚¹å‡»å…³é—­çª—å£å›¾æ ‡
             public void windowClosing(WindowEvent e) {
-                System.out.println("windowsClosing-µã»÷¹Ø±Õ´°¿ÚÍ¼±ê");
-                setVisible(false);   //Òş²Ø´°¿Ú
-                System.exit(0);//¹Ø±Õ³ÌĞò
+                System.out.println("windowsClosing-ç‚¹å‡»å…³é—­çª—å£å›¾æ ‡");
+                setVisible(false);   //éšè—çª—å£
+                System.exit(0);//å…³é—­ç¨‹åº
             }
 
             @Override
@@ -41,24 +41,24 @@ class MyFrame extends Frame{
                 System.out.println("windows3");
             }
 
-            @Override//Í¼±í»¯£¬×îĞ¡»¯
+            @Override//å›¾è¡¨åŒ–ï¼Œæœ€å°åŒ–
             public void windowIconified(WindowEvent e) {
-                System.out.println("windowsIconified-Í¼±í»¯£¬×îĞ¡»¯");
+                System.out.println("windowsIconified-å›¾è¡¨åŒ–ï¼Œæœ€å°åŒ–");
             }
 
-            @Override //ÔÚ×ÀÃæµ¯³ö´°Ìå
+            @Override //åœ¨æ¡Œé¢å¼¹å‡ºçª—ä½“
             public void windowDeiconified(WindowEvent e) {
-                System.out.println("windowsDeiconified-ÔÚ×ÀÃæµ¯³ö´°Ìå");
+                System.out.println("windowsDeiconified-åœ¨æ¡Œé¢å¼¹å‡ºçª—ä½“");
             }
 
-            @Override //´°¿Ú»ñÈ¡½¹µã,¼¤»î
+            @Override //çª—å£è·å–ç„¦ç‚¹,æ¿€æ´»
             public void windowActivated(WindowEvent e) {
-                System.out.println("windowsActivated-´°¿Ú»ñÈ¡½¹µã,¼¤»î");
+                System.out.println("windowsActivated-çª—å£è·å–ç„¦ç‚¹,æ¿€æ´»");
             }
 
-            @Override//´°ÌåÊ§È¥½¹µã,Î´¼¤»î
+            @Override//çª—ä½“å¤±å»ç„¦ç‚¹,æœªæ¿€æ´»
             public void windowDeactivated(WindowEvent e) {
-                System.out.println("windowsDeactivated-´°ÌåÊ§È¥½¹µã,Î´¼¤»î");
+                System.out.println("windowsDeactivated-çª—ä½“å¤±å»ç„¦ç‚¹,æœªæ¿€æ´»");
             }
 
             @Override

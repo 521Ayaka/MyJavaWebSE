@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface02;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface02;
 
 public class MyInterfaceDefaultImplA implements MyInterfaceDefault{
 
 
     @Override
     public void methodAbs() {
-        System.out.println("methodAbs³éÏóÀà¸²¸ÇÖØĞ´£¬AAA");
+        System.out.println("methodAbsæŠ½è±¡ç±»è¦†ç›–é‡å†™ï¼ŒAAA");
     }
 
-    //¼Ì³ĞÁËĞÂÌí¼ÓµÄÄ¬ÈÏ·½·¨£¬Ò²¿ÉÒÔ¸²¸ÇÖØĞ´Õâ¸öĞÂÌí¼ÓµÄÄ¬ÈÏ·½·¨¡£
+    //ç»§æ‰¿äº†æ–°æ·»åŠ çš„é»˜è®¤æ–¹æ³•ï¼Œä¹Ÿå¯ä»¥è¦†ç›–é‡å†™è¿™ä¸ªæ–°æ·»åŠ çš„é»˜è®¤æ–¹æ³•ã€‚
 }

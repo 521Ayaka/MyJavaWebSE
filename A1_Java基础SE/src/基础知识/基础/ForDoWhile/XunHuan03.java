@@ -1,23 +1,23 @@
-package »ù´¡ÖªÊ¶.»ù´¡.ForDoWhile;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.ForDoWhile;
 
 /*
 
 deadLoop
 
-ËÀÑ­»·
+æ­»å¾ªç¯
 
 */
 public class XunHuan03 { 
     public static void main(String[]args){
-        //È¥µôi++¾ÍÊÇËÀÑ­»·ÁË
+        //å»æ‰i++å°±æ˜¯æ­»å¾ªç¯äº†
         for(int i=1; i<=10;){
-           System.out.print("ŞÏŞÎ ËÀÑ­»·À²"+i);
+           System.out.print("å°´å°¬ æ­»å¾ªç¯å•¦"+i);
         }
-        //while Ìõ¼ş¸ÄÎªtrue ¾ÍÊÇËÀÑ­ÁË
+        //while æ¡ä»¶æ”¹ä¸ºtrue å°±æ˜¯æ­»å¾ªäº†
         while(true){
-            System.out.println("ÓÖÊÇËÀÑ­»·");
+            System.out.println("åˆæ˜¯æ­»å¾ªç¯");
         }
-        // ÖØµã×¢Òâ ËÀÑ­»·ºóÃæ²»ÄÜÔÙÓĞÓï¾ä Ó¦Îª¶¼ËÀÑ­»·ÁË
-        // System.out.println("ÓÖÊÇËÀÑ­»·");  Õâ¾ä¾Í²»ÄÜĞ´ ÒòÎªÇ°Ãæ¸öÒÑ¾­ËÀÑ­»·ÁË
+        // é‡ç‚¹æ³¨æ„ æ­»å¾ªç¯åé¢ä¸èƒ½å†æœ‰è¯­å¥ åº”ä¸ºéƒ½æ­»å¾ªç¯äº†
+        // System.out.println("åˆæ˜¯æ­»å¾ªç¯");  è¿™å¥å°±ä¸èƒ½å†™ å› ä¸ºå‰é¢ä¸ªå·²ç»æ­»å¾ªç¯äº†
     }
 }

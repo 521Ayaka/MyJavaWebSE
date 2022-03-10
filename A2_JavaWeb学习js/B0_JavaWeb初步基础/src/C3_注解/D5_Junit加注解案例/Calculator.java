@@ -1,32 +1,32 @@
-package C3_×¢½â.D5_Junit¼Ó×¢½â°¸Àı;
+package C3_æ³¨è§£.D5_JunitåŠ æ³¨è§£æ¡ˆä¾‹;
 
 /**
- * Ğ¡Ã÷¶¨ÒåµÄ¼ÆËãÆ÷Àà
+ * å°æ˜å®šä¹‰çš„è®¡ç®—å™¨ç±»
  */
 public class Calculator {
 
-    //¼Ó·¨
+    //åŠ æ³•
     @TestAnn
     public void add(){
         String str = null;
-        str.equals("EDG_NB_ÎÒÃÇÊÇ¹Ú¾ü");
+        str.equals("EDG_NB_æˆ‘ä»¬æ˜¯å† å†›");
         System.out.println("1 + 0 =" + (1 + 0));
     }
 
 
-    //¼õ·¨
+    //å‡æ³•
     @TestAnn
     public void sub(){
         System.out.println("1 - 0 =" + (1 - 0));
     }
 
-    //³Ë·¨
+    //ä¹˜æ³•
     @TestAnn
     public void mul(){
         System.out.println("1 * 0 =" + (1 * 0));
     }
 
-    //³ı·¨
+    //é™¤æ³•
     @TestAnn
     public void div(){
         System.out.println("1 / 0 =" + (1 / 0));
@@ -34,7 +34,7 @@ public class Calculator {
 
 
     public void show(){
-        System.out.println("ÓÀÎŞbug...");
+        System.out.println("æ°¸æ— bug...");
     }
 
 }

@@ -1,44 +1,44 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A5_Lambda±í´ïÊ½×¢ÒâÊÂÏî;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A5_Lambdaè¡¨è¾¾å¼æ³¨æ„äº‹é¡¹;
 
 public class RunLambdaT {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½µ÷ÓÃme1
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼è°ƒç”¨me1
         me1(() -> {
-            System.out.println("Lambda±í´ïÊ½Êä³ö");
+            System.out.println("Lambdaè¡¨è¾¾å¼è¾“å‡º");
         });
 
-        //Lambda±í´ïÊ½¼ÌĞø¼ò»¯
-        me1(() -> System.out.println("Lambda±í´ïÊ½Êä³ö"));
+        //Lambdaè¡¨è¾¾å¼ç»§ç»­ç®€åŒ–
+        me1(() -> System.out.println("Lambdaè¡¨è¾¾å¼è¾“å‡º"));
 
-        //Èç¹ûµ÷ÓÃme2, m2µÄ²ÎÊı½Ó¿ÚÖĞ£¬ÓĞÁ½¸ö³éÏó·½·¨£¬»á±¨´í
-//        me2( ()-> System.out.println("²»ÄÜÊ¹ÓÃLambda±í´ïÊ½") );
+        //å¦‚æœè°ƒç”¨me2, m2çš„å‚æ•°æ¥å£ä¸­ï¼Œæœ‰ä¸¤ä¸ªæŠ½è±¡æ–¹æ³•ï¼Œä¼šæŠ¥é”™
+//        me2( ()-> System.out.println("ä¸èƒ½ä½¿ç”¨Lambdaè¡¨è¾¾å¼") );
 
-        //±ØĞëÓĞÉÏÏÂÎÊ»·¾³£¬²ÅÄÜÍÆµ¼³öLambda¶ÔÓ¦µÄ½Ó¿Ú
+        //å¿…é¡»æœ‰ä¸Šä¸‹é—®ç¯å¢ƒï¼Œæ‰èƒ½æ¨å¯¼å‡ºLambdaå¯¹åº”çš„æ¥å£
         new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println("Æô¶¯¶àÏßÏß³Ì01");
+                System.out.println("å¯åŠ¨å¤šçº¿çº¿ç¨‹01");
             }
-        }).start();//Æô¶¯¶àÏß³Ì
+        }).start();//å¯åŠ¨å¤šçº¿ç¨‹
 
-        //()-> System.out.println("ÕâÑù²»ĞĞ");
-        Runnable r = () -> System.out.println("Æô¶¯¶àÏßÏß³Ì02");
+        //()-> System.out.println("è¿™æ ·ä¸è¡Œ");
+        Runnable r = () -> System.out.println("å¯åŠ¨å¤šçº¿çº¿ç¨‹02");
         new Thread(r).start();
 
-        //¼ò»¯
-        new Thread(() -> System.out.println("Æô¶¯¶àÏßÏß³Ì03")).start();
+        //ç®€åŒ–
+        new Thread(() -> System.out.println("å¯åŠ¨å¤šçº¿çº¿ç¨‹03")).start();
 
 
     }
 
-    //Ö»ÓĞÒ»¸ö³éÏó·½·¨µÄ½Ó¿Ú ×÷Îª ²ÎÊı´«µİ
+    //åªæœ‰ä¸€ä¸ªæŠ½è±¡æ–¹æ³•çš„æ¥å£ ä½œä¸º å‚æ•°ä¼ é€’
     private static void me1(MyInterfaceMe1 e) {
         e.method();
     }
 
-    //ÓĞÁ½¸ö³éÏó·½·¨µÄ½Ó¿Ú ×÷Îª ²ÎÊı´«µİ
+    //æœ‰ä¸¤ä¸ªæŠ½è±¡æ–¹æ³•çš„æ¥å£ ä½œä¸º å‚æ•°ä¼ é€’
     private static void me2(MyInterfaceMe2s e) {
         e.method1();
     }

@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½ÚÁ÷.×Ö½ÚÁ÷Ğ´Êı¾İ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚æµ.å­—èŠ‚æµå†™æ•°æ®;
 /*
-OutputStream½Ó¿Ú ÊÇËùÓĞÊä³ö×Ö½ÚÁ÷µÄ³¬Àà£¬ÓÃÀ´Ğ´ÈëÊı¾İ¡£
+OutputStreamæ¥å£ æ˜¯æ‰€æœ‰è¾“å‡ºå­—èŠ‚æµçš„è¶…ç±»ï¼Œç”¨æ¥å†™å…¥æ•°æ®ã€‚
 
 
 
@@ -14,48 +14,48 @@ public class TestOutputStreamImpl {
 
     public static void main(String[] args) throws IOException /*throws FileNotFoundException*/ {
 
-        //Ê¹ÓÃ¶àÌ¬µÄ·½·¨´´½¨OutputStreamÀà£¬ÕâÀïÓÃµÄÊÇFileOutputStreamÀàÊµÏÖµÄOutputStream
-        FileOutputStream outputStream = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷Ğ´Êı¾İ\\²âÊÔÎÄ¼ş1.txt");
+        //ä½¿ç”¨å¤šæ€çš„æ–¹æ³•åˆ›å»ºOutputStreamç±»ï¼Œè¿™é‡Œç”¨çš„æ˜¯FileOutputStreamç±»å®ç°çš„OutputStream
+        FileOutputStream outputStream = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµå†™æ•°æ®\\æµ‹è¯•æ–‡ä»¶1.txt");
 
         /*
-        ´´½¨Íê FileOutputStream ºó£¬×öÁËÈı¼şÊÂ£º
-        A: µ÷ÓÃÏµÍ³¹¦ÄÜ´´½¨ÁË¸ÃÎÄ¼ş
-        B: ´´½¨×Ö½ÚÊä³öÁ÷¶ÔÏó
-        C: ÈÃ×Ö½ÚÊä³öÁ÷¶ÔÏóÖ¸Ïò´´½¨ºÃµÄÎÄ¼ş
+        åˆ›å»ºå®Œ FileOutputStream åï¼Œåšäº†ä¸‰ä»¶äº‹ï¼š
+        A: è°ƒç”¨ç³»ç»ŸåŠŸèƒ½åˆ›å»ºäº†è¯¥æ–‡ä»¶
+        B: åˆ›å»ºå­—èŠ‚è¾“å‡ºæµå¯¹è±¡
+        C: è®©å­—èŠ‚è¾“å‡ºæµå¯¹è±¡æŒ‡å‘åˆ›å»ºå¥½çš„æ–‡ä»¶
         */
 
-        //µ÷ÓÃĞ´Èë·½·¨  public void write(int b): ½«Ö¸¶¨×Ö½ÚĞ´Èë´ËÎÄ¼ş
-        outputStream.write(97); //Å×³öIOExceptionºó£¬¾Í²»ÓÃÅ×³ö FileNotFoundExceptionÁË
-        //Ê¹ÓÃ´Ë·½·¨£¬²»ÒªÍüÁËÅ×³öÒì³££¡£¡£¡
-        outputStream.write(57-9);//ÊäÈëµÄÊÇ×Ö·ûµ×²ã×Ö½Ú
+        //è°ƒç”¨å†™å…¥æ–¹æ³•  public void write(int b): å°†æŒ‡å®šå­—èŠ‚å†™å…¥æ­¤æ–‡ä»¶
+        outputStream.write(97); //æŠ›å‡ºIOExceptionåï¼Œå°±ä¸ç”¨æŠ›å‡º FileNotFoundExceptionäº†
+        //ä½¿ç”¨æ­¤æ–¹æ³•ï¼Œä¸è¦å¿˜äº†æŠ›å‡ºå¼‚å¸¸ï¼ï¼ï¼
+        outputStream.write(57-9);//è¾“å…¥çš„æ˜¯å­—ç¬¦åº•å±‚å­—èŠ‚
 
-        //Ê¹ÓÃÍêÖ®ºó£¬Ò»¶¨²»ÒªÍüÁË Ê¹ÓÃclose¡¾¹Ø±Õ´ËÎÄ¼şÊä³öÁ÷²¢ÊÍ·ÅÓë´ËÁ÷ÓĞ¹ØµÄËùÓĞÏµÍ³×ÊÔ´¡£¡¿
+        //ä½¿ç”¨å®Œä¹‹åï¼Œä¸€å®šä¸è¦å¿˜äº† ä½¿ç”¨closeã€å…³é—­æ­¤æ–‡ä»¶è¾“å‡ºæµå¹¶é‡Šæ”¾ä¸æ­¤æµæœ‰å…³çš„æ‰€æœ‰ç³»ç»Ÿèµ„æºã€‚ã€‘
         outputStream.close();
 
         System.out.println("===========================================================");
 
         /*
-        ÉÏÃæµÄ´´½¨ FileOutputStream outputStream = new FileOutputStream(Â·¾¶);
-        »á°ÑÔ­ÎÄ¼şÄÚÈİ¸ø¸Éµô£¬Ğ´ÈëÊı¾İÊ±£¬ÊÇ´Ó¿ªÍ¨Ğ´µÄ£¬Èç¹û²»ÒªÖØ¿ªÍ·Ğ´
-        ĞèÒª³£¼ûÊ±£¬Ê¹ÓÃÁíÍâÒ»¸ö¹¹Ôì·½·¨¡£
+        ä¸Šé¢çš„åˆ›å»º FileOutputStream outputStream = new FileOutputStream(è·¯å¾„);
+        ä¼šæŠŠåŸæ–‡ä»¶å†…å®¹ç»™å¹²æ‰ï¼Œå†™å…¥æ•°æ®æ—¶ï¼Œæ˜¯ä»å¼€é€šå†™çš„ï¼Œå¦‚æœä¸è¦é‡å¼€å¤´å†™
+        éœ€è¦å¸¸è§æ—¶ï¼Œä½¿ç”¨å¦å¤–ä¸€ä¸ªæ„é€ æ–¹æ³•ã€‚
 
         public FileOutputStream(String name, boolean append) throws FileNotFoundException{
             this(name != null ? new File(name) : null, append);
         }
 
-        boolean append ÊÇ·ñ×·¼ÓĞ´ÈëÄÚÈİ£¬appendÎªtrueÊ±£¬Ğ´ÈëÎÄ¼şÊ±´ÓÎ²²¿¿ªÊ¼Ğ´Èë¡£
+        boolean append æ˜¯å¦è¿½åŠ å†™å…¥å†…å®¹ï¼Œappendä¸ºtrueæ—¶ï¼Œå†™å…¥æ–‡ä»¶æ—¶ä»å°¾éƒ¨å¼€å§‹å†™å…¥ã€‚
 
         */
-        //²ÎÊıÎªtrue
-        FileOutputStream fos = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷Ğ´Êı¾İ\\²âÊÔÎÄ¼ş2.txt",true);
+        //å‚æ•°ä¸ºtrue
+        FileOutputStream fos = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµå†™æ•°æ®\\æµ‹è¯•æ–‡ä»¶2.txt",true);
 
-        //¿ªÊ¼Ğ´ÈëÊı¾İ
+        //å¼€å§‹å†™å…¥æ•°æ®
         for (int i = 0; i < 10; i++) {
-            if (i == 0) { fos.write("\n".getBytes()); }// »»ĞĞ·û \n µ÷ÓÃgetBytes()½øĞĞÊµÏÖ»»ĞĞ
-            fos.write("ÎÒÃüÓÉÎÒ²»ÓÉÌì".getBytes());
-            fos.write("\n".getBytes());// »»ĞĞ·û \n µ÷ÓÃgetBytes()½øĞĞÊµÏÖ»»ĞĞ
+            if (i == 0) { fos.write("\n".getBytes()); }// æ¢è¡Œç¬¦ \n è°ƒç”¨getBytes()è¿›è¡Œå®ç°æ¢è¡Œ
+            fos.write("æˆ‘å‘½ç”±æˆ‘ä¸ç”±å¤©".getBytes());
+            fos.write("\n".getBytes());// æ¢è¡Œç¬¦ \n è°ƒç”¨getBytes()è¿›è¡Œå®ç°æ¢è¡Œ
             /*
-            *²»Í¬ÏµÍ³µÄ»»ĞĞ·û²»Í¬:
+            *ä¸åŒç³»ç»Ÿçš„æ¢è¡Œç¬¦ä¸åŒ:
             *
             * windows: \r\n
             * Linux  : \n
@@ -63,7 +63,7 @@ public class TestOutputStreamImpl {
             *
             * */
         }
-        //×îºó²»ÒªÍüÁËÇå³ıµ÷ÓÃµÄÏµÍ³×ÊÔ´£¡£¡£¡£¡£¡
+        //æœ€åä¸è¦å¿˜äº†æ¸…é™¤è°ƒç”¨çš„ç³»ç»Ÿèµ„æºï¼ï¼ï¼ï¼ï¼
         fos.close();
 
 

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.UDPĞ­Òé.UDP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.UDPåè®®.UDPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ ;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -8,28 +8,28 @@ public class ReceiveUDP {
 
     public static void main(String[] args) {
 
-        //´´½¨½ÓÊÕDatagramSocket(¶Ë¿ÚºÅ)Êı¾İ¶ÔÏó
+        //åˆ›å»ºæ¥æ”¶DatagramSocket(ç«¯å£å·)æ•°æ®å¯¹è±¡
         try (   DatagramSocket ds = new DatagramSocket(10086);
         ){
-            //½ÓÊÕµ½µÄÊı¾İ
+            //æ¥æ”¶åˆ°çš„æ•°æ®
             String dataString = null;
             while (true){
 
-                //´´½¨Êı¾İ°ü ÓÃÓÚ½ÓÊÕÊı¾İ°ü DatagramPacket(Êı¾İ,Êı¾İ³¤¶È);
+                //åˆ›å»ºæ•°æ®åŒ… ç”¨äºæ¥æ”¶æ•°æ®åŒ… DatagramPacket(æ•°æ®,æ•°æ®é•¿åº¦);
                 byte[] bys = new byte[1024];
                 DatagramPacket dp = new DatagramPacket(bys, bys.length);
 
-                //½ÓÊÕÊı¾İ°ü
+                //æ¥æ”¶æ•°æ®åŒ…
                 ds.receive(dp);
 
-                //½âÎöÊı¾İ°ü
-                byte[] datas = dp.getData();//»ñÈ¡Êı¾İ
-                int len = dp.getLength();//»ñÈ¡Êı¾İ³¤¶È
+                //è§£ææ•°æ®åŒ…
+                byte[] datas = dp.getData();//è·å–æ•°æ®
+                int len = dp.getLength();//è·å–æ•°æ®é•¿åº¦
                 dataString = new String(datas, 0, len);
                 System.out.println(dataString);
 
                 if ("end".equals(dataString)){
-                    System.out.println("¶Ô·½ÒÔ¹Ø±Õ,½ÓÊÕ¶ËÕıÔÚ¹Ø±Õ");
+                    System.out.println("å¯¹æ–¹ä»¥å…³é—­,æ¥æ”¶ç«¯æ­£åœ¨å…³é—­");
                     for (int i = 0; i < 15; i++) {
                         try {
                             Thread.sleep(100);
@@ -38,7 +38,7 @@ public class ReceiveUDP {
                             e.printStackTrace();
                         }
                     }
-                    System.out.println("\nÒÑ¹Ø±Õ½ÓÊÕ¶Ë¡£");
+                    System.out.println("\nå·²å…³é—­æ¥æ”¶ç«¯ã€‚");
 
                     return;
                 }

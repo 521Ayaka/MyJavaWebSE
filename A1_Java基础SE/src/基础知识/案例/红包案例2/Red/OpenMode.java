@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı2.Red;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹2.Red;
 
 import java.util.ArrayList;
 
 public interface OpenMode {
     /**
-     * Çë½«totalMoney·Ö³Écount·İ£¬±£´æµ½ArrayList<Integer>ÖĞ£¬·µ»Ø¼´¿É¡£
+     * è¯·å°†totalMoneyåˆ†æˆcountä»½ï¼Œä¿å­˜åˆ°ArrayList<Integer>ä¸­ï¼Œè¿”å›å³å¯ã€‚
      *
-     * @param totalMoney             ×Ü½ğ¶îÎª·½±ã¼ÆËã£¬ÒÑ¾­×ª»»ÎªÕûÊı£¬µ¥Î»Îª·Ö¡£
-     * @param totalCount                  ºì°ü¸öÊı
-     * @return Array<Integer>        ÔªËØÎª¸÷¸öºì°üµÄ½ğ¶îÖµ£¬ËùÓĞµÄÖµÀÛºÍµÈÓÚ½ğ¶î¡£
+     * @param totalMoney             æ€»é‡‘é¢ä¸ºæ–¹ä¾¿è®¡ç®—ï¼Œå·²ç»è½¬æ¢ä¸ºæ•´æ•°ï¼Œå•ä½ä¸ºåˆ†ã€‚
+     * @param totalCount                  çº¢åŒ…ä¸ªæ•°
+     * @return Array<Integer>        å…ƒç´ ä¸ºå„ä¸ªçº¢åŒ…çš„é‡‘é¢å€¼ï¼Œæ‰€æœ‰çš„å€¼ç´¯å’Œç­‰äºé‡‘é¢ã€‚
      *
      */
 

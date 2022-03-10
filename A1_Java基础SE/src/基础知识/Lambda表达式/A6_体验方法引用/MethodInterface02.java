@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A6_ÌåÑé·½·¨ÒıÓÃ;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A6_ä½“éªŒæ–¹æ³•å¼•ç”¨;
 
 public interface MethodInterface02 {
 

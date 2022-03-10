@@ -1,20 +1,20 @@
-package 基础知识.接口.interface07;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.interface07;
 
 public interface MyInterfaceA {
 
-    /*静态代码块      不能定义
+    /*闈欐�佷唬鐮佸潡      涓嶈兘瀹氫箟
 
     static{
-        //内容
+        //鍐呭
     }
 
     */
 
 
-    /*构造器          不能定义
+    /*鏋勯�犲櫒          涓嶈兘瀹氫箟
 
     public MyInterface(){
-         //内容
+         //鍐呭
     }
 
     */
@@ -24,11 +24,11 @@ public interface MyInterfaceA {
     public abstract void method();
 
     public default void methodDefault(){
-        System.out.println("默认方法AAA");
+        System.out.println("榛樿鏂规硶AAA");
     }
 
     public default void methodGanGa(){
-        System.out.println("尴尬");
+        System.out.println("灏村艾");
     }
 
 }

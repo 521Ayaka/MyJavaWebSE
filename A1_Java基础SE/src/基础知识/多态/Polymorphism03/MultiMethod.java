@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.¶àÌ¬.Polymorphism03;
+package åŸºç¡€çŸ¥è¯†.å¤šæ€.Polymorphism03;
 /*
 
-ÔÚ¶àÌ¬µÄ´úÂëµ±ÖÐ£¬³ÉÔ±·½·¨µÄ·ÃÎÊ¹æÔòÊÇ£º
-     ¿´newµÄË­£¬¾ÍÓÐÏÈÓÃË­£¬Ã»ÓÐÔòÏòÉÏÕÒ
+åœ¨å¤šæ€çš„ä»£ç å½“ä¸­ï¼Œæˆå‘˜æ–¹æ³•çš„è®¿é—®è§„åˆ™æ˜¯ï¼š
+     çœ‹newçš„è°ï¼Œå°±æœ‰å…ˆç”¨è°ï¼Œæ²¡æœ‰åˆ™å‘ä¸Šæ‰¾
 
-¿Ú¾÷: ±àÒë¿´×ó±ß£¬ÔËÐÐ¿´ÓÒ±ß¡£ [³ÉÔ±±äÁ¿³ýÍâ]
+å£è¯€: ç¼–è¯‘çœ‹å·¦è¾¹ï¼Œè¿è¡Œçœ‹å³è¾¹ã€‚ [æˆå‘˜å˜é‡é™¤å¤–]
 
 */
 public class MultiMethod {
@@ -17,8 +17,8 @@ public class MultiMethod {
 
         obj.methodFu();
 
-        //±àÒë¿´×ó±ß£¬×ó±ßÊÇFu£¬Fuµ±ÖÐÃ»ÓÐmethodZi()·½·¨£¬ËùÒÔ±àÒë±¨´í¡£
-//      obj.methodZi(); //´íÎóÐ´·¨ ¶àÌ¬ÖÐ²»»áÏòÏÂÕÒ×ÓÀà
+        //ç¼–è¯‘çœ‹å·¦è¾¹ï¼Œå·¦è¾¹æ˜¯Fuï¼ŒFuå½“ä¸­æ²¡æœ‰methodZi()æ–¹æ³•ï¼Œæ‰€ä»¥ç¼–è¯‘æŠ¥é”™ã€‚
+//      obj.methodZi(); //é”™è¯¯å†™æ³• å¤šæ€ä¸­ä¸ä¼šå‘ä¸‹æ‰¾å­ç±»
 
     }
 

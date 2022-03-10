@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass03;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass03;
 
 public class Fu {
 
     public void methodFu(){
-        System.out.println("¸¸Àà·½·¨Ö´ĞĞ£¡");
+        System.out.println("çˆ¶ç±»æ–¹æ³•æ‰§è¡Œï¼");
     }
 
     public void method(){

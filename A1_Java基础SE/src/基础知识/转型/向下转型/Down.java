@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.×ªÐÍ.ÏòÏÂ×ªÐÍ;
+package åŸºç¡€çŸ¥è¯†.è½¬åž‹.å‘ä¸‹è½¬åž‹;
 /*
-ÏòÉÏ×ªÐÍÒ»¶¨ÊÇ°²È«µÄ£¬Ã»ÓÐÎÊÌâµÄ£¬ÕýÈ·µÄ£¬µ«Ò²ÓÐÒ»¸ö±×¶Ë£º
-¶ÔÏóÒ»µ«ÏòÉÏ×ªÐÍÎª¸¸Àà£¬ÄÇÃ´¾ÍÎÞ·¨µ÷ÓÃ×ÓÀàÔ­±¾ÌØÓÐµÄÄÚÈÝ¡£
+å‘ä¸Šè½¬åž‹ä¸€å®šæ˜¯å®‰å…¨çš„ï¼Œæ²¡æœ‰é—®é¢˜çš„ï¼Œæ­£ç¡®çš„ï¼Œä½†ä¹Ÿæœ‰ä¸€ä¸ªå¼Šç«¯ï¼š
+å¯¹è±¡ä¸€ä½†å‘ä¸Šè½¬åž‹ä¸ºçˆ¶ç±»ï¼Œé‚£ä¹ˆå°±æ— æ³•è°ƒç”¨å­ç±»åŽŸæœ¬ç‰¹æœ‰çš„å†…å®¹ã€‚
 
-½â¾ö·½°¸£ºÓÃ¶ÔÏóµÄÏòÏÂ×ªÐÍ¡¾»¹Ô­¡¿¡£
+è§£å†³æ–¹æ¡ˆï¼šç”¨å¯¹è±¡çš„å‘ä¸‹è½¬åž‹ã€è¿˜åŽŸã€‘ã€‚
 
 */
 public class Down {
@@ -13,14 +13,14 @@ public class Down {
         Animal animal = new Cat();
         animal.eat();
 
-//      animal.catchMouse(); //´íÎóÐ´·¨¡£
-        //Ê¹ÓÃÏòÏÂ×ªÐÍ
+//      animal.catchMouse(); //é”™è¯¯å†™æ³•ã€‚
+        //ä½¿ç”¨å‘ä¸‹è½¬åž‹
         Cat cat = (Cat)animal;
         cat.catchMouse();
 
-        //´íÎóÏòÏÂ×ªÐÍ
+        //é”™è¯¯å‘ä¸‹è½¬åž‹
         Dog dog = (Dog) animal;
-        //´íÎóÐ´·¨£¬±àÒë²»»á±¨´í£¬µ«ÊÇÔËÐÐ»á³öÏÖÎÊÌâ: java.lang.ClassCastException ¡¾ÀàÐÍ×ª»»Òì³£¡¿
+        //é”™è¯¯å†™æ³•ï¼Œç¼–è¯‘ä¸ä¼šæŠ¥é”™ï¼Œä½†æ˜¯è¿è¡Œä¼šå‡ºçŽ°é—®é¢˜: java.lang.ClassCastException ã€ç±»åž‹è½¬æ¢å¼‚å¸¸ã€‘
 
     }
 

@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.A½Ó¿Ú×÷Îª±äÁ¿ÀàĞÍ;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Aæ¥å£ä½œä¸ºå˜é‡ç±»å‹;
 
 
-//hero Ó¢ĞÛ
+//hero è‹±é›„
 public class Hero {
 
     private String name;
@@ -9,11 +9,11 @@ public class Hero {
     private Skill skill;
     private Weapon weapon;
 
-    //´òÓ¡Ó¢ĞÛĞÅÏ¢¼°ĞĞÎª
+    //æ‰“å°è‹±é›„ä¿¡æ¯åŠè¡Œä¸º
     void method(){
-        System.out.print("ÄêÁäÎª:"+age+"µÄ"+name+",ÕıÔÚÄÃ×Å["+ weapon.getCode()+"] Ê¹ÓÃÃûÎª[");
+        System.out.print("å¹´é¾„ä¸º:"+age+"çš„"+name+",æ­£åœ¨æ‹¿ç€["+ weapon.getCode()+"] ä½¿ç”¨åä¸º[");
         skill.use();
-        System.out.println("]µÄ¼¼ÄÜ ÔÚ´òÒ°......Õæ¿Ó£¡");
+        System.out.println("]çš„æŠ€èƒ½ åœ¨æ‰“é‡......çœŸå‘ï¼");
     }
 
 

@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.B½Ó¿Ú×÷Îª·½·¨µÄ²ÎÊı;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Bæ¥å£ä½œä¸ºæ–¹æ³•çš„å‚æ•°;
 /*
 
-java.util.ListÕıÊÇArrayListËùÊµÏÖµÄ½Ó¿Ú
+java.util.Listæ­£æ˜¯ArrayListæ‰€å®ç°çš„æ¥å£
 public class ArrayList<E> extends AbstractList<E>
         implements List<E>, RandomAccess, Cloneable, java.io.Serializable
 {......}
@@ -17,23 +17,23 @@ public class Interface {
     public static void main(String[] args) {
         ArrayList<String> arrayList = new ArrayList<>();
 
-        //Ê¹ÓÃ¶àÌ¬Ğ´·¨
+        //ä½¿ç”¨å¤šæ€å†™æ³•
         List<String> list = new ArrayList<>();
-        //µ÷ÓÃaddNames() ´«Èë²ÎÊı¿Õlist £¬ ·µ»ØaddºóµÄlist
-        List<String> Â¬±¾Î° = addNames( list);
-        //±éÀú¼¯ºÏ
-        for (int i = 0; i < Â¬±¾Î°.size(); i++) {
-            System.out.println(Â¬±¾Î°.get(i));
+        //è°ƒç”¨addNames() ä¼ å…¥å‚æ•°ç©ºlist ï¼Œ è¿”å›addåçš„list
+        List<String> å¢æœ¬ä¼Ÿ = addNames( list);
+        //éå†é›†åˆ
+        for (int i = 0; i < å¢æœ¬ä¼Ÿ.size(); i++) {
+            System.out.println(å¢æœ¬ä¼Ÿ.get(i));
         }
     }
 
 
-    //²ÎÊı»ñÈ¡list¼¯ºÏ£¬Ìí¼ÓÔªËØ±¾·µ»ØĞÂlist¼¯ºÏ
+    //å‚æ•°è·å–listé›†åˆï¼Œæ·»åŠ å…ƒç´ æœ¬è¿”å›æ–°listé›†åˆ
     public static List<String> addNames(List<String> list){
-        list.add("µÏÀöÈÈ°Í");
-        list.add("¹ÅÁ¦ÄÈÔú");
-        list.add("Âê¶ûÔú¹ş");
-        list.add("É³ÑïÄÈÀ­");
+        list.add("è¿ªä¸½çƒ­å·´");
+        list.add("å¤åŠ›å¨œæ‰");
+        list.add("ç›å°”æ‰å“ˆ");
+        list.add("æ²™æ‰¬å¨œæ‹‰");
         return list;
     }
 

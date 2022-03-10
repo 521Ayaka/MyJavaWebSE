@@ -1,4 +1,4 @@
-package Gui±à³Ì.JGame;
+package Guiç¼–ç¨‹.JGame;
 
 
 import javax.swing.*;
@@ -6,25 +6,25 @@ import java.awt.*;
 
 public class RunGame extends JFrame {
 
-    //Æô¶¯ÓÎÏ·
+    //å¯åŠ¨æ¸¸æˆ
     public static void main(String[] args) {
         new RunGame().init();
     }
 
-    //³õÊ¼»¯ÓÎÏ·
+    //åˆå§‹åŒ–æ¸¸æˆ
     public void init(){
         this.setBounds(10,10,900,720);
         this.setResizable(false);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        //´´½¨ÈİÆ÷
+        //åˆ›å»ºå®¹å™¨
         Container container = this.getContentPane();
         container.setBackground(new Color(9, 236, 236));
 
-        //Ìí¼Ó»­±Ê
+        //æ·»åŠ ç”»ç¬”
         container.add(new PanelGame());
 
 
-        //ÉèÖÃ¿É¼ûĞÔ
+        //è®¾ç½®å¯è§æ€§
         this.setVisible(true);
     }
 

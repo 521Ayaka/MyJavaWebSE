@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.¶àÌ¬.Polymorphism01;
+package åŸºç¡€çŸ¥è¯†.å¤šæ€.Polymorphism01;
 /*
-´úÂëµ±ÖÐÌåÏÖ¶àÌ¬ÐÔ£¬ÆäÊµ¾ÍÒ»¾ä»°£¬¡¾¸¸ÀàÒýÓÃÖ¸Ïò×ÓÀà¶ÔÏó¡¿¡£
+ä»£ç å½“ä¸­ä½“çŽ°å¤šæ€æ€§ï¼Œå…¶å®žå°±ä¸€å¥è¯ï¼Œã€çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡ã€‘ã€‚
 
-¸ñÊ½£º
-¸¸ÀàÃû³Æ ¶ÔÏóÃû³Æ = new ×ÓÀàÃû³Æ();
-»òÕß£º
-½Ó¿ÚÃû³Æ ¶ÔÏóÃû³Æ = new ÊµÏÖÀàÃû³Æ();
+æ ¼å¼ï¼š
+çˆ¶ç±»åç§° å¯¹è±¡åç§° = new å­ç±»åç§°();
+æˆ–è€…ï¼š
+æŽ¥å£åç§° å¯¹è±¡åç§° = new å®žçŽ°ç±»åç§°();
 
 */
 public class Multi {
@@ -17,7 +17,7 @@ public class Multi {
         obj.method();
 
         obj.methodFu();
-      //obj.methodZi(); //±àÒë´íÎó?
+      //obj.methodZi(); //ç¼–è¯‘é”™è¯¯?
 
     }
 

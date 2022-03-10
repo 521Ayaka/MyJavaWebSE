@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A3_Layout;
+package Guiç¼–ç¨‹.AWT.A3_Layout;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -8,24 +8,24 @@ public class TestFlowLayout {
 
     public static void main(String[] args) {
 
-        Frame frame = new Frame("´°ÌåÁ÷Ê½²¼¾Ö");
-        Button button1 = new Button("°´Å¥1");
-        Button button2 = new Button("°´Å¥2");
-        Button button3 = new Button("°´Å¥3");
+        Frame frame = new Frame("çª—ä½“æµå¼å¸ƒå±€");
+        Button button1 = new Button("æŒ‰é’®1");
+        Button button2 = new Button("æŒ‰é’®2");
+        Button button3 = new Button("æŒ‰é’®3");
 
-        //ÉèÖÃ´°ÌåÎªÁ÷Ê½²¼¾Ö Ä¬ÈÏÎªcenter CENTER
+        //è®¾ç½®çª—ä½“ä¸ºæµå¼å¸ƒå±€ é»˜è®¤ä¸ºcenter CENTER
         frame.setLayout(new FlowLayout(FlowLayout.LEFT));
 
-        //ÉèÖÃ´°Ìå´óĞ¡Î»ÖÃ
+        //è®¾ç½®çª—ä½“å¤§å°ä½ç½®
         frame.setSize(300,300);
         frame.setLocation(300,300);
 
-        //Ïò´°ÌåÌí¼Ó°´Å¥
+        //å‘çª—ä½“æ·»åŠ æŒ‰é’®
         frame.add(button1);
         frame.add(button2);
         frame.add(button3);
 
-        //ÉèÖÃ´°Ìå¿É¼ûĞÔ
+        //è®¾ç½®çª—ä½“å¯è§æ€§
         frame.setVisible(true);
 
         frame.addWindowListener(new WindowAdapter() {

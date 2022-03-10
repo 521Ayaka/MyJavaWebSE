@@ -1,21 +1,21 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A9_º¯ÊıÊ½½Ó¿Ú×÷Îª·½·¨µÄ²ÎÊı;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A9_å‡½æ•°å¼æ¥å£ä½œä¸ºæ–¹æ³•çš„å‚æ•°;
 
 public class RunThread {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃÄäÃûÄÚ²¿ÀàµÄ·½Ê½
+        //ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»çš„æ–¹å¼
         useThread(new Runnable() {
             @Override
             public void run() {
-                System.out.println(Thread.currentThread().getName()+": Ïß³ÌÆô¶¯");
+                System.out.println(Thread.currentThread().getName()+": çº¿ç¨‹å¯åŠ¨");
             }
         });
 
-        //Ê¹ÓÃLambda±í´ïÊ½ ×÷Îª²ÎÊı
-        useThread( ()-> System.out.println(Thread.currentThread().getName()+": Ïß³ÌÆô¶¯"));
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼ ä½œä¸ºå‚æ•°
+        useThread( ()-> System.out.println(Thread.currentThread().getName()+": çº¿ç¨‹å¯åŠ¨"));
 
-        //Õâ¸öÖ®Ç°¾ÍÑ§¹ıÁË, Ö»ÊÇ»»ÁËÖÖËµ·¨¶øÒÑ£¡£¡£¡
+        //è¿™ä¸ªä¹‹å‰å°±å­¦è¿‡äº†, åªæ˜¯æ¢äº†ç§è¯´æ³•è€Œå·²ï¼ï¼ï¼
 
     }
 

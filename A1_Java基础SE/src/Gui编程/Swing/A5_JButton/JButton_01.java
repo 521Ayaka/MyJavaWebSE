@@ -1,4 +1,4 @@
-package Gui±à³Ì.Swing.A5_JButton;
+package Guiç¼–ç¨‹.Swing.A5_JButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,14 +11,14 @@ public class JButton_01 extends JFrame {
     }
 
     public void init(){
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         Container container = this.getContentPane();
         this.setBounds(300,200,700,600);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         container.setBackground(new Color(8, 241, 215));
         container.setLayout(null);
 
-        //Ìí¼ÓÍ¼Æ¬×é¼ş
+        //æ·»åŠ å›¾ç‰‡ç»„ä»¶
         JButton jButton = new JButton();
         JPanel jPanel = new JPanel();
         jPanel.setBounds(200,100,500,500);
@@ -30,7 +30,7 @@ public class JButton_01 extends JFrame {
         jButton.setIcon(icon);
         jButton.setSize(500,400);
 
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         container.add(jPanel);
 
 
@@ -39,7 +39,7 @@ public class JButton_01 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new JButton_01("Í¼Æ¬°´Å¥").init();
+        new JButton_01("å›¾ç‰‡æŒ‰é’®").init();
     }
 
 }

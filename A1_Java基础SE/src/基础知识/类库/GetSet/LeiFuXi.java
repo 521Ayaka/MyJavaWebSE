@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.Àà¿â.GetSet;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.GetSet;
 
 public class LeiFuXi {
 
-    //³ÉÔ±±äÁ¿
+    //æˆå‘˜å˜é‡
     private int ganga;
     private String name;
     private boolean wen;
 
-    //Set Get ¶Ô³ÉÔ±±äÁ¿½øĞĞ
+    //Set Get å¯¹æˆå‘˜å˜é‡è¿›è¡Œ
 
     public void setGanga(int ganga){
         this.ganga = ganga;
@@ -34,7 +34,7 @@ public class LeiFuXi {
     }
 
 
-    //¹¹Ôì·½·¨£»È«²Î¹¹Ôì ºÍ ÎŞ²Î¹¹Ôì
+    //æ„é€ æ–¹æ³•ï¼›å…¨å‚æ„é€  å’Œ æ— å‚æ„é€ 
 
     public LeiFuXi(){
 

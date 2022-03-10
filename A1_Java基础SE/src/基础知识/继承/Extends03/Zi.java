@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends03;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends03;
 /**
 
- ¾Ö²¿±äÁ¿£º         Ö±½ÓĞ´³ÉÔ±±äÁ¿Ãû
- ±¾ÀàµÄ³ÉÔ±±äÁ¿£º    this.³ÉÔ±±äÁ¿Ãû
- ¸¸ÀàµÄ³ÉÔ±±äÁ¿£º    super.³ÉÔ±±äÁ¿Ãû
+ å±€éƒ¨å˜é‡ï¼š         ç›´æ¥å†™æˆå‘˜å˜é‡å
+ æœ¬ç±»çš„æˆå‘˜å˜é‡ï¼š    this.æˆå‘˜å˜é‡å
+ çˆ¶ç±»çš„æˆå‘˜å˜é‡ï¼š    super.æˆå‘˜å˜é‡å
 
  */
 public class Zi extends Fu {
@@ -12,9 +12,9 @@ public class Zi extends Fu {
 
     public void method() {
         int num = 30;
-        System.out.println(num);       //·ÃÎÊ±¾·½·¨µÄ¾Ö²¿±äÁ¿
-        System.out.println(this.num);  //·ÃÎÊ±¾ÀàµÄ³ÉÔ±±äÁ¿
-        System.out.println(super.num); //·ÃÎÊ¸¸ÀàµÄ³ÉÔ±±äÁ¿
+        System.out.println(num);       //è®¿é—®æœ¬æ–¹æ³•çš„å±€éƒ¨å˜é‡
+        System.out.println(this.num);  //è®¿é—®æœ¬ç±»çš„æˆå‘˜å˜é‡
+        System.out.println(super.num); //è®¿é—®çˆ¶ç±»çš„æˆå‘˜å˜é‡
     }
 
 }

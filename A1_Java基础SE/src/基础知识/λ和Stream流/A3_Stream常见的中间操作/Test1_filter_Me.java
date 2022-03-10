@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.¦ËºÍStreamÁ÷.A3_Stream³£¼ûµÄÖĞ¼ä²Ù×÷;
+package åŸºç¡€çŸ¥è¯†.Î»å’ŒStreamæµ.A3_Streamå¸¸è§çš„ä¸­é—´æ“ä½œ;
 /*
- StreamÖĞµÄfilter¹ıÂËÆ÷
+ Streamä¸­çš„filterè¿‡æ»¤å™¨
     Stream<T> filter(Predicate<? super T> predicate)
-    ·µ»ØÓÉÓë´Ë¸ø¶¨Î½´ÊÆ¥ÅäµÄ´ËÁ÷µÄÔªËØ×é³ÉµÄÁ÷¡£
+    è¿”å›ç”±ä¸æ­¤ç»™å®šè°“è¯åŒ¹é…çš„æ­¤æµçš„å…ƒç´ ç»„æˆçš„æµã€‚
 
-    Ê¹ÓÃLambda±í´ïÊ½
+    ä½¿ç”¨Lambdaè¡¨è¾¾å¼
 */
 
 import java.util.ArrayList;
@@ -14,36 +14,36 @@ public class Test1_filter_Me {
 
     public static void main(String[] args) {
 
-        //ÏÈ´´½¨Ò»¸ö²âÊÔÊı×é
+        //å…ˆåˆ›å»ºä¸€ä¸ªæµ‹è¯•æ•°ç»„
         ArrayList<String> list = new ArrayList<>();
-        list.add("ŞÏŞÎ");
-        list.add("ŞÏŞÎ½´");
-        list.add("ŞÏŞÎµÛ");
-        list.add("Õâ¾ÍŞÏŞÎ");
-        list.add("²»ŞÏŞÎ");
+        list.add("å°´å°¬");
+        list.add("å°´å°¬é…±");
+        list.add("å°´å°¬å¸");
+        list.add("è¿™å°±å°´å°¬");
+        list.add("ä¸å°´å°¬");
 
-        //ĞèÇó1: °Ñlist¼¯ºÏÖĞÔªËØ¿ªÍ·Îª[ŞÏ]µÄÉ¸Ñ¡³öÀ´
+        //éœ€æ±‚1: æŠŠlisté›†åˆä¸­å…ƒç´ å¼€å¤´ä¸º[å°´]çš„ç­›é€‰å‡ºæ¥
         //Stream<T> filter(Predicate<? super T> predicate);
         /*
         list.stream().filter( (String s) ->{
-            return s.startsWith("ŞÏ");//·µ»ØÖµÊÇÒ»¸ö²¼¶ûÖµ¡£
+            return s.startsWith("å°´");//è¿”å›å€¼æ˜¯ä¸€ä¸ªå¸ƒå°”å€¼ã€‚
         } ).forEach(s->System.out.println(s));
         */
 
-        //Lambda±í´ïÊ½ÓÅ»¯¼ò»¯
-        list.stream().filter(s -> s.startsWith("ŞÏ"))//¦ËÊ¡ÂÔ
-                .forEach(System.out::println);//Àà·½·¨ÒıÓÃ
+        //Lambdaè¡¨è¾¾å¼ä¼˜åŒ–ç®€åŒ–
+        list.stream().filter(s -> s.startsWith("å°´"))//Î»çœç•¥
+                .forEach(System.out::println);//ç±»æ–¹æ³•å¼•ç”¨
 
         System.out.println("============================");
 
-        //ĞèÇó2: ½«³¤¶ÈÎª3µÄ×Ö·ûÉ¸Ñ¡³öÀ´
-        list.stream().filter(s -> s.length() == 3)//É¸Ñ¡³¤¶ÈÎª3µÄ×Ö·û
+        //éœ€æ±‚2: å°†é•¿åº¦ä¸º3çš„å­—ç¬¦ç­›é€‰å‡ºæ¥
+        list.stream().filter(s -> s.length() == 3)//ç­›é€‰é•¿åº¦ä¸º3çš„å­—ç¬¦
                 .forEach(System.out::println);
 
         System.out.println("============================");
 
-        //ĞèÇó3: ¿ªÍ·Îª[ŞÏ],³¤¶ÈÎª3µÄ×Ö·ûÉ¸Ñ¡³öÀ´
-        list.stream().filter(s -> s.startsWith("ŞÏ"))
+        //éœ€æ±‚3: å¼€å¤´ä¸º[å°´],é•¿åº¦ä¸º3çš„å­—ç¬¦ç­›é€‰å‡ºæ¥
+        list.stream().filter(s -> s.startsWith("å°´"))
                      .filter(s -> s.length() == 3)
                      .forEach(System.out::println);
 

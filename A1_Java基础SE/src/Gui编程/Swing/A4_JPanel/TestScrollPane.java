@@ -1,54 +1,54 @@
-package Gui±à³Ì.Swing.A4_JPanel;
+package Guiç¼–ç¨‹.Swing.A4_JPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class TestScrollPane extends JFrame {
 
-    //ScrollPaneÃæ°å
+    //ScrollPaneé¢æ¿
     public void init1(){
-        //³õÊ¼»¯¡¢
-        this.setTitle("¹ö¶¯Ãæ°å");
+        //åˆå§‹åŒ–ã€
+        this.setTitle("æ»šåŠ¨é¢æ¿");
         this.setBounds(200,300,600,400);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container container = this.getContentPane();
         container.setBackground(new Color(8, 201, 234));
 
-        //´´½¨ÎÄ±¾Óò
+        //åˆ›å»ºæ–‡æœ¬åŸŸ
         TextArea textArea = new TextArea(40, 100);
-        //ÉèÖÃÄ¬ÈÏÎÄ±¾
-        textArea.setText("ÎÊ¾ıÄÜÓĞ¼¸¶à³î£¬Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷");
+        //è®¾ç½®é»˜è®¤æ–‡æœ¬
+        textArea.setText("é—®å›èƒ½æœ‰å‡ å¤šæ„ï¼Œæ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµ");
 
-        //´´½¨¹ö¶¯Ãæ°å
+        //åˆ›å»ºæ»šåŠ¨é¢æ¿
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.add(textArea);
 
-        //Ìí¼ÓÎÄ±¾Óò×é¼ş
+        //æ·»åŠ æ–‡æœ¬åŸŸç»„ä»¶
         container.add(scrollPane);
 
-        //¿É¼ûĞÔ
+        //å¯è§æ€§
         this.setVisible(true);
     }
 
 
-    //ÆÕÍ¨Ãæ°å
+    //æ™®é€šé¢æ¿
     public void init2(){
-        //³õÊ¼»¯¡¢
-        this.setTitle("ÆÕÍ¨Ãæ°å");
+        //åˆå§‹åŒ–ã€
+        this.setTitle("æ™®é€šé¢æ¿");
         this.setBounds(800,300,600,400);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container container = this.getContentPane();
         container.setBackground(new Color(8, 201, 234));
 
-        //´´½¨ÎÄ±¾Óò
+        //åˆ›å»ºæ–‡æœ¬åŸŸ
         TextArea textArea = new TextArea(40, 100);
-        //ÉèÖÃÄ¬ÈÏÎÄ±¾
-        textArea.setText("ÎÊ¾ıÄÜÓĞ¼¸¶à³î£¬Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷");
+        //è®¾ç½®é»˜è®¤æ–‡æœ¬
+        textArea.setText("é—®å›èƒ½æœ‰å‡ å¤šæ„ï¼Œæ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµ");
 
-        //Ìí¼ÓÎÄ±¾Óò×é¼ş
+        //æ·»åŠ æ–‡æœ¬åŸŸç»„ä»¶
         container.add(textArea);
 
-        //¿É¼ûĞÔ
+        //å¯è§æ€§
         this.setVisible(true);
     }
 

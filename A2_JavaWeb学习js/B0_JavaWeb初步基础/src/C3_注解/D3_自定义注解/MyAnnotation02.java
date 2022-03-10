@@ -1,22 +1,22 @@
-package C3_×¢½â.D3_×Ô¶¨Òå×¢½â;
+package C3_æ³¨è§£.D3_è‡ªå®šä¹‰æ³¨è§£;
 /*
 
-Ôª×¢½â:
+å…ƒæ³¨è§£:
 
-    ÓÃÓÚÃèÊö×¢½âµÄ×¢½â£º
+    ç”¨äºŽæè¿°æ³¨è§£çš„æ³¨è§£ï¼š
 
-    		* @Target£ºÃèÊö×¢½âÄÜ¹»×÷ÓÃµÄÎ»ÖÃ
-    			* ElementTypeÈ¡Öµ£º
-    				* TYPE£º¿ÉÒÔ×÷ÓÃÓÚÀàÉÏ
-    				* METHOD£º¿ÉÒÔ×÷ÓÃÓÚ·½·¨ÉÏ
-    				* FIELD£º¿ÉÒÔ×÷ÓÃÓÚ³ÉÔ±±äÁ¿ÉÏ
+    		* @Targetï¼šæè¿°æ³¨è§£èƒ½å¤Ÿä½œç”¨çš„ä½ç½®
+    			* ElementTypeå–å€¼ï¼š
+    				* TYPEï¼šå¯ä»¥ä½œç”¨äºŽç±»ä¸Š
+    				* METHODï¼šå¯ä»¥ä½œç”¨äºŽæ–¹æ³•ä¸Š
+    				* FIELDï¼šå¯ä»¥ä½œç”¨äºŽæˆå‘˜å˜é‡ä¸Š
 
-    		* @Retention£ºÃèÊö×¢½â±»±£ÁôµÄ½×¶Î
-    			* @Retention(RetentionPolicy.RUNTIME)£ºµ±Ç°±»ÃèÊöµÄ×¢½â£¬»á±£Áôµ½class×Ö½ÚÂëÎÄ¼þÖÐ£¬²¢±»JVM¶ÁÈ¡µ½
+    		* @Retentionï¼šæè¿°æ³¨è§£è¢«ä¿ç•™çš„é˜¶æ®µ
+    			* @Retention(RetentionPolicy.RUNTIME)ï¼šå½“å‰è¢«æè¿°çš„æ³¨è§£ï¼Œä¼šä¿ç•™åˆ°classå­—èŠ‚ç æ–‡ä»¶ä¸­ï¼Œå¹¶è¢«JVMè¯»å–åˆ°
                              RetentionPolicy.
 
-    		* @Documented£ºÃèÊö×¢½âÊÇ·ñ±»³éÈ¡µ½apiÎÄµµÖÐ
-    		* @Inherited£ºÃèÊö×¢½âÊÇ·ñ±»×ÓÀà¼Ì³Ð
+    		* @Documentedï¼šæè¿°æ³¨è§£æ˜¯å¦è¢«æŠ½å–åˆ°apiæ–‡æ¡£ä¸­
+    		* @Inheritedï¼šæè¿°æ³¨è§£æ˜¯å¦è¢«å­ç±»ç»§æ‰¿
 
 
 */
@@ -24,20 +24,20 @@ package C3_×¢½â.D3_×Ô¶¨Òå×¢½â;
 import java.lang.annotation.*;
 
 
-//Ôª×¢½âÔÚ×Ô¶¨Òå×¢½âÇ°Ãæ:
+//å…ƒæ³¨è§£åœ¨è‡ªå®šä¹‰æ³¨è§£å‰é¢:
 
-//@Target£ºÃèÊö×¢½âÄÜ¹»×÷ÓÃµÄÎ»ÖÃ
+//@Targetï¼šæè¿°æ³¨è§£èƒ½å¤Ÿä½œç”¨çš„ä½ç½®
 @Target(/*value = */{ElementType.METHOD, ElementType.FIELD}) //TYPE
 
-//@Retention: ÃèÊö×¢½â±»±£ÁôµÄ½×¶Î
+//@Retention: æè¿°æ³¨è§£è¢«ä¿ç•™çš„é˜¶æ®µ
 @Retention(RetentionPolicy.RUNTIME)
 
-//@Documented£ºÃèÊö×¢½âÊÇ·ñ±»³éÈ¡µ½apiÎÄµµÖÐ
-@Documented  //Ê¹ÓÃÕâ¸ö×Ô¶¨Òå×¢½âµÄÀà, Ê¹ÓÃdocÃüÁî»á±£Áô×¢½â×¢ÊÍ
+//@Documentedï¼šæè¿°æ³¨è§£æ˜¯å¦è¢«æŠ½å–åˆ°apiæ–‡æ¡£ä¸­
+@Documented  //ä½¿ç”¨è¿™ä¸ªè‡ªå®šä¹‰æ³¨è§£çš„ç±», ä½¿ç”¨docå‘½ä»¤ä¼šä¿ç•™æ³¨è§£æ³¨é‡Š
 
 
-//@Inherited£ºÃèÊö×¢½âÊÇ·ñ±»×ÓÀà¼Ì³Ð
-@Inherited  //Ê¹ÓÃÕâ¸ö×Ô¶¨Òå×¢½âµÄÀàµÄ×ÓÀà, ±£ÁôÕâ¸ö×¢½â
+//@Inheritedï¼šæè¿°æ³¨è§£æ˜¯å¦è¢«å­ç±»ç»§æ‰¿
+@Inherited  //ä½¿ç”¨è¿™ä¸ªè‡ªå®šä¹‰æ³¨è§£çš„ç±»çš„å­ç±», ä¿ç•™è¿™ä¸ªæ³¨è§£
 
 public @interface MyAnnotation02 {
 

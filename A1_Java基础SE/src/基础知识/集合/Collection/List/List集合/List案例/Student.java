@@ -1,4 +1,4 @@
-package 基础知识.集合.Collection.List.List集合.List案例;
+package 鍩虹鐭ヨ瘑.闆嗗悎.Collection.List.List闆嗗悎.List妗堜緥;
 
 public class Student {
 

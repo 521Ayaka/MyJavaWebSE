@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCPÍ¨ĞÅ·şÎñ¶Ë¿Ú¶àÏß³Ì;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPé€šä¿¡æœåŠ¡ç«¯å£å¤šçº¿ç¨‹;
 /*
-    ·şÎñÆ÷¶Ë
-        Ê±¿Ì½ÓÊÕÓÃ»§ĞÅÏ¢
-        ¶àÏß³Ì
+    æœåŠ¡å™¨ç«¯
+        æ—¶åˆ»æ¥æ”¶ç”¨æˆ·ä¿¡æ¯
+        å¤šçº¿ç¨‹
 */
 
 
@@ -15,18 +15,18 @@ public class MyServer {
     private static int id = 1;
     public static void main(String[] args) throws IOException {
 
-        //´´½¨·şÎñÆ÷¶ËSocket¶ÔÏó
+        //åˆ›å»ºæœåŠ¡å™¨ç«¯Socketå¯¹è±¡
         ServerSocket ss = new ServerSocket(10086);
 
-        //·şÎñÆ÷Ê±¿Ì¿ª×Å
+        //æœåŠ¡å™¨æ—¶åˆ»å¼€ç€
         while (true){
-            //¼àÌıÓÃ»§Á´½Ó Socket¶ÔÏó
-            Thread t = new Thread(new MyServerReceive(ss.accept()),("ÓÃ»§"+id));
-            t.start();//Æô¶¯Ïß³Ì
+            //ç›‘å¬ç”¨æˆ·é“¾æ¥ Socketå¯¹è±¡
+            Thread t = new Thread(new MyServerReceive(ss.accept()),("ç”¨æˆ·"+id));
+            t.start();//å¯åŠ¨çº¿ç¨‹
             id ++;
         }
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         //ss.close();
 
     }

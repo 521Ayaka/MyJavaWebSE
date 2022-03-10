@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.GetSet;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.GetSet;
 
 public class GetSetaLei01 {
 
@@ -6,7 +6,7 @@ public class GetSetaLei01 {
     private String gan;
     private boolean en;
     int i = 666;
-    String wan = "Ò»ÆğÍæLOL°É";
+    String wan = "ä¸€èµ·ç©LOLå§";
 
     public void setName (String x){
         name = x;
@@ -29,7 +29,7 @@ public class GetSetaLei01 {
     public void setEn(boolean y){
         en = y;
     }
-    public boolean isEn(){              //ÌØÀı:µ±Setten¡¢GettenÊÇbooleanĞĞÊ±£¬get²»ÓÃ »»³Éis... Èç£ºisEn
+    public boolean isEn(){              //ç‰¹ä¾‹:å½“Settenã€Gettenæ˜¯booleanè¡Œæ—¶ï¼Œgetä¸ç”¨ æ¢æˆis... å¦‚ï¼šisEn
         return en;
     }
 

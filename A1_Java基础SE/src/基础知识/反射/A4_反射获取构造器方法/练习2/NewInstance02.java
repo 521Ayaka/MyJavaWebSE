@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.·´Éä.A4_·´Éä»ñÈ¡¹¹ÔìÆ÷·½·¨.Á·Ï°2;
+package åŸºç¡€çŸ¥è¯†.åå°„.A4_åå°„è·å–æ„é€ å™¨æ–¹æ³•.ç»ƒä¹ 2;
 /*
 
-Ê¹ÓÃÕâ¸ö¹¹Ôìº¯Êı:
+ä½¿ç”¨è¿™ä¸ªæ„é€ å‡½æ•°:
 private Student(String name){
         this.name = name;
     }
@@ -15,34 +15,34 @@ public class NewInstance02 {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        //´´½¨class¶ÔÏó
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        //åˆ›å»ºclasså¯¹è±¡
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
 
-        //»ñÈ¡È«²¿¹¹ÔìÆ÷²ÎÊı ²¢¼òÀú½á¹û
+        //è·å–å…¨éƒ¨æ„é€ å™¨å‚æ•° å¹¶ç®€å†ç»“æœ
         Constructor<?>[] cons = c.getDeclaredConstructors();
         for (Constructor<?> obj : cons) {
             System.out.println(obj);
         }
         /*
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int,java.lang.String)
-        »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String,int)
-        private »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String)
-        public »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student()
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int,java.lang.String)
+        åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String,int)
+        private åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String)
+        public åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student()
         */
         System.out.println("\n======================================================\n");
 
-        //Ê¹ÓÃ private »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student(java.lang.String) ¹¹Ôì·½·¨
+        //ä½¿ç”¨ private åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student(java.lang.String) æ„é€ æ–¹æ³•
         Constructor<?> con = c.getDeclaredConstructor(String.class);
 
-        //Ê¹ÓÃ ±©Á¦´´½¨
-        //public void setAccessible(boolean flag) È¡Ïû·ÃÎÊ¼ì²â
+        //ä½¿ç”¨ æš´åŠ›åˆ›å»º
+        //public void setAccessible(boolean flag) å–æ¶ˆè®¿é—®æ£€æµ‹
         con.setAccessible(true);
 
 
-        //´´½¨¶ÔÏó
-        Object obj = con.newInstance("ŞÏŞÎ½´");
+        //åˆ›å»ºå¯¹è±¡
+        Object obj = con.newInstance("å°´å°¬é…±");
         System.out.println(obj);
-        //·¢ÏÖ±¨´íÁË, ³öÏÖ·ÃÎÊ´íÎó private¹¹ÔìÆ÷
+        //å‘ç°æŠ¥é”™äº†, å‡ºç°è®¿é—®é”™è¯¯ privateæ„é€ å™¨
 
 
     }

@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·û»º³åÁ÷.×Ö·û»º³åÁ÷ÌØÓĞ·½·¨;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦ç¼“å†²æµ.å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•;
 
 import java.io.*;
 
 /*
 
 BufferedWriter:
-    void newLine(): Ğ´Ò»ĞĞĞĞ·Ö¸ô·û, ĞĞ·Ö¸ô·û×Ö·û´®ÓÉÏµÍ³ÊôĞÔ¶¨Òå
+    void newLine(): å†™ä¸€è¡Œè¡Œåˆ†éš”ç¬¦, è¡Œåˆ†éš”ç¬¦å­—ç¬¦ä¸²ç”±ç³»ç»Ÿå±æ€§å®šä¹‰
 
 BufferedReader:
-    public String readLine(): ¶ÁÒ»ĞĞÎÄ×Ö¡£½á¹û°üº¬ĞĞµÄÄÚÈİµÄ×Ö·û´®,²»°üÀ¨ÈÎºÎĞĞÖÕÖ¹×Ö·û,
-                              Èç¹ûÁ÷µÄ½áÎ²ÒÑ¾­µ½´ï, ÔòÎªnull
+    public String readLine(): è¯»ä¸€è¡Œæ–‡å­—ã€‚ç»“æœåŒ…å«è¡Œçš„å†…å®¹çš„å­—ç¬¦ä¸²,ä¸åŒ…æ‹¬ä»»ä½•è¡Œç»ˆæ­¢å­—ç¬¦,
+                              å¦‚æœæµçš„ç»“å°¾å·²ç»åˆ°è¾¾, åˆ™ä¸ºnull
 
 */
 public class BufferedRWProMethod {
@@ -25,17 +25,17 @@ public class BufferedRWProMethod {
 
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷ÌØÓĞ·½·¨\\ÎÄ¼ş.txt"));
-            //Ğ´ÈëÊı¾İ
-            bw.write("Õâ¾ÍŞÏŞÎÁË");
+            bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•\\æ–‡ä»¶.txt"));
+            //å†™å…¥æ•°æ®
+            bw.write("è¿™å°±å°´å°¬äº†");
             bw.newLine();
-            bw.flush();//Ë¢ĞÂ
-            bw.write("šG£¡ÎÒ»»ĞĞÁË£¡");
+            bw.flush();//åˆ·æ–°
+            bw.write("æ¬¸ï¼æˆ‘æ¢è¡Œäº†ï¼");
             bw.newLine();
-            bw.flush();//Ë¢ĞÂ
-            bw.write("Â¬±¾Î°Å£±Æ,Â¬±¾Î°Ã»ÓĞ¿ª¹Ò£¡");
+            bw.flush();//åˆ·æ–°
+            bw.write("å¢æœ¬ä¼Ÿç‰›é€¼,å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚ï¼");
             bw.newLine();
-            bw.flush();//Ë¢ĞÂ
+            bw.flush();//åˆ·æ–°
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -56,22 +56,22 @@ public class BufferedRWProMethod {
         BufferedReader br1 = null;
         BufferedReader br2 = null;
         try {
-            br1 = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷ÌØÓĞ·½·¨\\ÎÄ¼ş.txt"));
-            br2 = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷ÌØÓĞ·½·¨\\ÎÄ¼ş.txt"));
+            br1 = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•\\æ–‡ä»¶.txt"));
+            br2 = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•\\æ–‡ä»¶.txt"));
 
-            //¶ÁÈ¡µÚÒ»ĞĞ
+            //è¯»å–ç¬¬ä¸€è¡Œ
             System.out.println(br1.readLine());
-            //¶ÁÈ¡µÚ¶şĞĞ
+            //è¯»å–ç¬¬äºŒè¡Œ
             System.out.println(br1.readLine());
-            //¶ÁÈ¡µÚÈıĞĞ
+            //è¯»å–ç¬¬ä¸‰è¡Œ
             System.out.println(br1.readLine());
-            //¶ÁÈ¡µÚËÄĞĞ
-            System.out.println(br1.readLine());//Îªnull
+            //è¯»å–ç¬¬å››è¡Œ
+            System.out.println(br1.readLine());//ä¸ºnull
             System.out.println("==============================");
 
             String str;
             while ((str = br2.readLine()) != null) {
-                System.out.println(str);//Õâ¸öÊÇÒª»»ĞĞµÄprintln
+                System.out.println(str);//è¿™ä¸ªæ˜¯è¦æ¢è¡Œçš„println
             }
 
         } catch (IOException e) {

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A6_Ïß³ÌÍ¬²½.B3_Í¬²½·½·¨;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A6_çº¿ç¨‹åŒæ­¥.B3_åŒæ­¥æ–¹æ³•;
 
 public class MyRunnable implements Runnable {
     private int tick = 100;
@@ -16,7 +16,7 @@ public class MyRunnable implements Runnable {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        System.out.println(Thread.currentThread().getName() + "ÕýÔÚ³öÊÛµÚ:" + tick + "ÕÅÆ±");
+                        System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬:" + tick + "å¼ ç¥¨");
                         tick--;
 
                     }
@@ -29,7 +29,7 @@ public class MyRunnable implements Runnable {
 //                        } catch (InterruptedException e) {
 //                            e.printStackTrace();
 //                        }
-//                        System.out.println(Thread.currentThread().getName() + "ÕýÔÚ³öÊÛµÚ:" + tick + "ÕÅÆ±");
+//                        System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬:" + tick + "å¼ ç¥¨");
 //                        tick--;
 //                    }
 //                }
@@ -39,15 +39,15 @@ public class MyRunnable implements Runnable {
         }
     }
 
-    //Ê¹ÓÃ[Í¬²½·½·¨]
+    //ä½¿ç”¨[åŒæ­¥æ–¹æ³•]
     public synchronized void method() {
         /*
-        ÕâÑù»á³öÏÖ°²È«ÎÊÌâ
-        ÉÏÃæµÄËøÊÇ obj ¶ÔÏó
-        ¶øÕâ¸ö·½·¨µÄ Ëø ÊÇobj
+        è¿™æ ·ä¼šå‡ºçŽ°å®‰å…¨é—®é¢˜
+        ä¸Šé¢çš„é”æ˜¯ obj å¯¹è±¡
+        è€Œè¿™ä¸ªæ–¹æ³•çš„ é” æ˜¯obj
 
-        ¶øÊÇthis±¾¶ÔÏó
-        °ÑÉÏÃæµÄobj »»³ÉthisÑéÖ¤
+        è€Œæ˜¯thisæœ¬å¯¹è±¡
+        æŠŠä¸Šé¢çš„obj æ¢æˆthiséªŒè¯
         */
         if (tick > 0) {
             try {
@@ -55,7 +55,7 @@ public class MyRunnable implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(Thread.currentThread().getName() + "ÕýÔÚ³öÊÛµÚ:" + tick + "ÕÅÆ±");
+            System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬:" + tick + "å¼ ç¥¨");
             tick--;
         }
     }

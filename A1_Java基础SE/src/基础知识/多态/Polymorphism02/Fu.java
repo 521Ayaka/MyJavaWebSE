@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¶àÌ¬.Polymorphism02;
+package åŸºç¡€çŸ¥è¯†.å¤šæ€.Polymorphism02;
 
 public class Fu /*extends Object*/{
 

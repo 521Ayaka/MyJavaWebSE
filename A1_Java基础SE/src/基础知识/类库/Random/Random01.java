@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Random;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Random;
 
 /*
-1.µ¼°ü
+1.å¯¼åŒ…
   import.java.util.Random;
 
-2.´´½¨
+2.åˆ›å»º
   Random r = new Random();
 
-3.Ê¹ÓÃ
-Õâ´ÎÀ´Ğ´¸ö²»´ø²ÎÊıµÄ
+3.ä½¿ç”¨
+è¿™æ¬¡æ¥å†™ä¸ªä¸å¸¦å‚æ•°çš„
 
-int x = r.nextInt();  //²»´ø²ÎÊı
+int x = r.nextInt();  //ä¸å¸¦å‚æ•°
 Boolean y = r.nextBoolean();
 .......
 
@@ -24,14 +24,14 @@ public class Random01 {
         boolean a ;
         for (int i = 0; i < 10; i++) {
             a = r.nextBoolean();
-            System.out.println("Ëæ»úÕæ¼ÙÖµÎª£º" + a);
+            System.out.println("éšæœºçœŸå‡å€¼ä¸ºï¼š" + a);
         }
         System.out.println("=====================");
 
         int b ;
         for (int i = 0; i < 10; i++) {
             b = r.nextInt();
-            System.out.println("Ëæ»úÊı×ÖÎª£º" + b);
+            System.out.println("éšæœºæ•°å­—ä¸ºï¼š" + b);
         }
     }
 }

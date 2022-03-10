@@ -1,70 +1,70 @@
-package C1_Junitµ¥Ôª²âÊÔ.A1_Junitµ¥Ôª²âÊÔ.tst;
+package C1_Junitå•å…ƒæµ‹è¯•.A1_Junitå•å…ƒæµ‹è¯•.tst;
 /*
-    Assertions  ¶ÏÑÔ Àà
+    Assertions  æ–­è¨€ ç±»
 
-    assert   ¶ÏÑÔ
-    Expected  Ô¤ÆÚ
+    assert   æ–­è¨€
+    Expected  é¢„æœŸ
 
     Assertions.assertEquals();
 
-    @Before  Ö®Ç°
-    @After   Ö®ºó
+    @Before  ä¹‹å‰
+    @After   ä¹‹å
                                 */
 
-import C1_Junitµ¥Ôª²âÊÔ.A1_Junitµ¥Ôª²âÊÔ.Calculator;
+import C1_Junitå•å…ƒæµ‹è¯•.A1_Junitå•å…ƒæµ‹è¯•.Calculator;
 
-//µ¼Èë»·¾³¡£
+//å¯¼å…¥ç¯å¢ƒã€‚
 import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-//½¨ÒéÀàÃû: ÀàÃû+Test
+//å»ºè®®ç±»å: ç±»å+Test
 public class CalculatorTest {
 
-    @Before //×¢½â @Before  ÏÈÔËĞĞËùÓĞ²âÊÔ·½·¨£¡
+    @Before //æ³¨è§£ @Before  å…ˆè¿è¡Œæ‰€æœ‰æµ‹è¯•æ–¹æ³•ï¼
     public void init(){
         System.out.println("init...");
     }
 
-    @After //×¢½â @After  ÔËĞĞÍêËùÓĞ²âÊÔ·½·¨ºó Ö´ĞĞ¸Ã·½·¨ÄÚÈİ£¡
+    @After //æ³¨è§£ @After  è¿è¡Œå®Œæ‰€æœ‰æµ‹è¯•æ–¹æ³•å æ‰§è¡Œè¯¥æ–¹æ³•å†…å®¹ï¼
     public void close(){
         System.out.println("close...");
     }
 
 
-    //Ê¹ÓÃ×¢½â:  @Test --> ½«Junitµ÷Èë jdk °üµ±ÖĞ¡£
+    //ä½¿ç”¨æ³¨è§£:  @Test --> å°†Junitè°ƒå…¥ jdk åŒ…å½“ä¸­ã€‚
     @Test
-    void/*½¨Òé·µ»ØÖµ: void*/ testSum/*½¨Òé·½·¨Ãû: test+·½·¨Ãû(¿ªÍ·´óĞ´)*/( /*½¨Òé²ÎÊıÁĞ±í: ¿Õ*/) {
+    void/*å»ºè®®è¿”å›å€¼: void*/ testSum/*å»ºè®®æ–¹æ³•å: test+æ–¹æ³•å(å¼€å¤´å¤§å†™)*/( /*å»ºè®®å‚æ•°åˆ—è¡¨: ç©º*/) {
         System.out.println("testSun...");
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         Calculator cal = new Calculator();
-        //µ÷ÓÃ·½·¨
+        //è°ƒç”¨æ–¹æ³•
         int num = cal.sum(1, 2);
-/*      //Êä³ö
+/*      //è¾“å‡º
         System.out.println(num);*/
-        //Ò»°ãÊ¹ÓÃÊä³ö, Ö»¿´ÑÕÉ«
-        //Ê¹ÓÃ: ¶ÏÑÔ:
-        //·½Ê½Ò»:
+        //ä¸€èˆ¬ä½¿ç”¨è¾“å‡º, åªçœ‹é¢œè‰²
+        //ä½¿ç”¨: æ–­è¨€:
+        //æ–¹å¼ä¸€:
         // assert 4 == num;
-        //·½Ê½¶ş:
+        //æ–¹å¼äºŒ:
         Assertions.assertEquals(3,num);
-        //²ÎÊı1£ºÔ¤ÆÚ   ²ÎÊı2£º³ÌĞòÔËĞĞ½á¹û
+        //å‚æ•°1ï¼šé¢„æœŸ   å‚æ•°2ï¼šç¨‹åºè¿è¡Œç»“æœ
     }
 
-    //½¨ÒéÊÓÍ¼: ½á¹¹ alt + 7    idea
+    //å»ºè®®è§†å›¾: ç»“æ„ alt + 7    idea
 
-    //TODO: ¼ÌĞøÑ§Ï°°É£¡
+    //TODO: ç»§ç»­å­¦ä¹ å§ï¼
 
     @Test
     void testCa() {
         System.out.println("testCa...");
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         Calculator cal = new Calculator();
-        //µ÷ÓÃ·½·¨
+        //è°ƒç”¨æ–¹æ³•
         int num = cal.ca(3, 2);
 
-        //¶ÏÑÔ
+        //æ–­è¨€
         Assertions.assertEquals(1,num);
     }
 

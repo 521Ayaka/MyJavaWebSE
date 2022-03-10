@@ -1,37 +1,37 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿6;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®6;
 
-//µ¼°ü NumberÓë¸ÃÀàÔÚÍ¬Ò»°üÏÂ£¬²»ÓÃµ¼°ü
+//å¯¼åŒ… Numberä¸è¯¥ç±»åœ¨åŒä¸€åŒ…ä¸‹ï¼Œä¸ç”¨å¯¼åŒ…
 import java.util.Scanner;
 
 public class Run {
-                                          //Ë­µ÷ÓÃË­Òª¸ú×ÅÅ×³öÒì³£
+                                          //è°è°ƒç”¨è°è¦è·Ÿç€æŠ›å‡ºå¼‚å¸¸
     public static void main(String[] args) throws XXXException {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëµÚÒ»¸öÊı");
+        System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°");
         int a = sc.nextInt();
         int b = sc.nextInt();
         Number number = new Number(a,b);
 
-        System.out.println("ÄúÊäÈëµÄµÚÒ»¸öÊıÎª:"+a+", ÄúÊäÈëµÄµÚ¶ş¸öÊıÎª:"+b);
+        System.out.println("æ‚¨è¾“å…¥çš„ç¬¬ä¸€ä¸ªæ•°ä¸º:"+a+", æ‚¨è¾“å…¥çš„ç¬¬äºŒä¸ªæ•°ä¸º:"+b);
         System.out.println("=========================================");
-        //ºÍ
-        System.out.println("Á½ÊıÏà¼ÓµÄ½á¹ûÎª: "+number.addition());
-        //²î
-        System.out.println("µÚÒ»¸öÊı¼õÈ¥µÚ¶ş¸öÊı½á¹ûÎª:"+number.subtrationAB());
-        System.out.println("µÚ¶ş¸öÊı¼õÈ¥µÚÒ»¸öÊı½á¹ûÎª:"+number.subtrationBA());
-        //»ı
-        System.out.println("Á½ÊıÏà³ËµÄ½á¹ûÎª:"+number.multiplication());
-        //ÉÌ
-        System.out.println("µÚÒ»¸öÊı³ıÒÔÈ¥µÚ¶ş¸öÊı½á¹ûÎª:"+number.divisionAB());
-        System.out.println("µÚ¶ş¸öÊı³ıÒÔÈ¥µÚÒ»¸öÊı½á¹ûÎª:"+number.divisionBA());
+        //å’Œ
+        System.out.println("ä¸¤æ•°ç›¸åŠ çš„ç»“æœä¸º: "+number.addition());
+        //å·®
+        System.out.println("ç¬¬ä¸€ä¸ªæ•°å‡å»ç¬¬äºŒä¸ªæ•°ç»“æœä¸º:"+number.subtrationAB());
+        System.out.println("ç¬¬äºŒä¸ªæ•°å‡å»ç¬¬ä¸€ä¸ªæ•°ç»“æœä¸º:"+number.subtrationBA());
+        //ç§¯
+        System.out.println("ä¸¤æ•°ç›¸ä¹˜çš„ç»“æœä¸º:"+number.multiplication());
+        //å•†
+        System.out.println("ç¬¬ä¸€ä¸ªæ•°é™¤ä»¥å»ç¬¬äºŒä¸ªæ•°ç»“æœä¸º:"+number.divisionAB());
+        System.out.println("ç¬¬äºŒä¸ªæ•°é™¤ä»¥å»ç¬¬ä¸€ä¸ªæ•°ç»“æœä¸º:"+number.divisionBA());
 
-        System.out.println("¸ĞĞ»ÄúµÄ¹âÁÙÊ¹ÓÃ£¬Ğ»Ğ»¡£¡£¡£¡£");
+        System.out.println("æ„Ÿè°¢æ‚¨çš„å…‰ä¸´ä½¿ç”¨ï¼Œè°¢è°¢ã€‚ã€‚ã€‚ã€‚");
 
-        /**Èç¹ûÆäÖĞÒ»¸öÊıÎªÁã£¬Å×³öÒì³££º
-         * Exception in thread "main" ÌâÄ¿6.XXXException: ³ıÊı²»ÄÜÎª0
-         * 	at ÌâÄ¿6.Number.divisionBA(Number.java:42)
-         * 	at ÌâÄ¿6.Run.main(Run.java:27)*/
+        /**å¦‚æœå…¶ä¸­ä¸€ä¸ªæ•°ä¸ºé›¶ï¼ŒæŠ›å‡ºå¼‚å¸¸ï¼š
+         * Exception in thread "main" é¢˜ç›®6.XXXException: é™¤æ•°ä¸èƒ½ä¸º0
+         * 	at é¢˜ç›®6.Number.divisionBA(Number.java:42)
+         * 	at é¢˜ç›®6.Run.main(Run.java:27)*/
     }
 
 }

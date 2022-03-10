@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Array;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Array;
 
 public class ArrayCopy {
 
@@ -6,7 +6,7 @@ public class ArrayCopy {
         int [] array1 = new int[] {0, 1, 2, 3, 4, 5, 6, 7};
 
         int [] array2 = new int[] {10,11,12,13,14,15,16,17};
-                      //À´Ô´Êı×é   //Ô´Êı×éÆğÊ¼Î»ÖÃ     //Ä¿µÄÊı×é     //Ä¿µÄÊı×éÆğÊ¼Î»ÖÃ       //¸´ÖÆ³¤¶È
+                      //æ¥æºæ•°ç»„   //æºæ•°ç»„èµ·å§‹ä½ç½®     //ç›®çš„æ•°ç»„     //ç›®çš„æ•°ç»„èµ·å§‹ä½ç½®       //å¤åˆ¶é•¿åº¦
         System.arraycopy(array1,    3,        array2,      4,            2);
 
         for (int i = 0; i < array1.length; i++) {

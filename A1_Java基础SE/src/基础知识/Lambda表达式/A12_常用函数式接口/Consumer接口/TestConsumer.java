@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A12_³£ÓÃº¯ÊýÊ½½Ó¿Ú.Consumer½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A12_å¸¸ç”¨å‡½æ•°å¼æŽ¥å£.ConsumeræŽ¥å£;
 
 import java.util.function.Consumer;
 
@@ -6,18 +6,18 @@ public class TestConsumer {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼
         setAccept( "Saber",(s)-> System.out.println(s) );
-        //Ê¹ÓÃLambda Ê¹ÓÃ·½·¨ÒýÓÃ ¼òÐ´¡£
+        //ä½¿ç”¨Lambda ä½¿ç”¨æ–¹æ³•å¼•ç”¨ ç®€å†™ã€‚
         setAccept("GanGa",System.out::println);
 
         System.out.println("======================");
 
-        //Ïû·ÑÕß ²Ù×÷
-        /*setAccept("ÞÏÞÎ½´",s -> {
+        //æ¶ˆè´¹è€… æ“ä½œ
+        /*setAccept("å°´å°¬é…±",s -> {
             System.out.println(new StringBuilder(s).reverse().toString());
         });*/
-        setAccept("ÞÏÞÎ½´",(s) -> System.out.println(new StringBuilder(s).reverse().toString()) );
+        setAccept("å°´å°¬é…±",(s) -> System.out.println(new StringBuilder(s).reverse().toString()) );
 
     }
 

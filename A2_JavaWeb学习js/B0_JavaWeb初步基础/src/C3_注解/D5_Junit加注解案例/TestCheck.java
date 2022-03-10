@@ -1,4 +1,4 @@
-package C3_×¢½â.D5_Junit¼Ó×¢½â°¸Àı;
+package C3_æ³¨è§£.D5_JunitåŠ æ³¨è§£æ¡ˆä¾‹;
 
 import org.junit.Test;
 
@@ -8,51 +8,51 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 /**
- * ¼òµ¥µÄ²âÊÔ¿ò¼Ü
+ * ç®€å•çš„æµ‹è¯•æ¡†æ¶
  * <p>
- * µ±Ö÷·½·¨Ö´ĞĞºó, »á×Ô¶¯×ÔĞĞ±»¼ì²âµÄËùÓĞ·½·¨ (¼ÓÁËTestAnn×¢½âµÄ·½·¨)
- * ÅĞ¶Ï·½·¨ÊÇ·ñÓĞÒì³£, ¼ÇÂ¼µ½ÎÄ¼şÀï
+ * å½“ä¸»æ–¹æ³•æ‰§è¡Œå, ä¼šè‡ªåŠ¨è‡ªè¡Œè¢«æ£€æµ‹çš„æ‰€æœ‰æ–¹æ³• (åŠ äº†TestAnnæ³¨è§£çš„æ–¹æ³•)
+ * åˆ¤æ–­æ–¹æ³•æ˜¯å¦æœ‰å¼‚å¸¸, è®°å½•åˆ°æ–‡ä»¶é‡Œ
  */
 
 public class TestCheck {
 
-    public static String file = "D:\\Ô´´úÂë\\A2_JavaWebÑ§Ï°js\\B0_JavaWeb³õ²½»ù´¡\\src\\C3_×¢½â\\D5_Junit¼Ó×¢½â°¸Àı\\bug.txt";
+    public static String file = "D:\\æºä»£ç \\A2_JavaWebå­¦ä¹ js\\B0_JavaWebåˆæ­¥åŸºç¡€\\src\\C3_æ³¨è§£\\D5_JunitåŠ æ³¨è§£æ¡ˆä¾‹\\bug.txt";
 
     @Test
     public void meTest() throws IOException {
 
-        //1.´´½¨Ğ¡Ã÷µÄ¼ÆËã»úÀà
+        //1.åˆ›å»ºå°æ˜çš„è®¡ç®—æœºç±»
         Calculator cal = new Calculator();
 
-        //2.»ñÈ¡¶ÔÏóµÄClass¶ÔÏó
+        //2.è·å–å¯¹è±¡çš„Classå¯¹è±¡
         Class<? extends Calculator> cla = cal.getClass();
 
-        int num = 0;//¼ÇÂ¼Òì³£´ÎÊı
-        //´´½¨IOÁ÷¼ÇÂ¼Òì³£ ÈÕÖ¾
+        int num = 0;//è®°å½•å¼‚å¸¸æ¬¡æ•°
+        //åˆ›å»ºIOæµè®°å½•å¼‚å¸¸ æ—¥å¿—
         BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
-        //3.»ñÈ¡¶ÔÏó·½·¨µÄ¶ÔÏó
+        //3.è·å–å¯¹è±¡æ–¹æ³•çš„å¯¹è±¡
         Method[] mes = cla.getMethods();
         for (Method me : mes) {
 
-            //4.ÅĞ¶Ï·½·¨ÉÏÊÇ·ñÓĞTestAnn×¢½â
+            //4.åˆ¤æ–­æ–¹æ³•ä¸Šæ˜¯å¦æœ‰TestAnnæ³¨è§£
             if (me.isAnnotationPresent(TestAnn.class)) {
 
-                //5.Èç¹ûÓĞµÄ»°,Ö´ĞĞ
+                //5.å¦‚æœæœ‰çš„è¯,æ‰§è¡Œ
                 try {
-                    //Í¨¹ı·´ÉäÊ¹ÓÃ·½·¨¡£
+                    //é€šè¿‡åå°„ä½¿ç”¨æ–¹æ³•ã€‚
                     me.invoke(cal);
 
                 }
                 catch (Exception e) {
 
-                    //6.²¶»ñÒì³£ ¼ÇÂ¼µ½ÎÄ¼şµ±ÖĞ
+                    //6.æ•è·å¼‚å¸¸ è®°å½•åˆ°æ–‡ä»¶å½“ä¸­
                     num++;
-                    bw.write(me.getName() + "³öÏÖÒì³£");
+                    bw.write(me.getName() + "å‡ºç°å¼‚å¸¸");
                     bw.newLine();
-                    bw.write("Òì³£µÄÃû³Æ: " + e.getCause().getClass().getSimpleName());
+                    bw.write("å¼‚å¸¸çš„åç§°: " + e.getCause().getClass().getSimpleName());
                     bw.newLine();
-                    bw.write("Òì³£µÄÔ­Òò: " + e.getCause().getMessage());
+                    bw.write("å¼‚å¸¸çš„åŸå› : " + e.getCause().getMessage());
                     bw.newLine();
                     bw.write("=======================================");
                     bw.newLine();
@@ -62,12 +62,12 @@ public class TestCheck {
 
         }
 
-        bw.write("±¾´Î²âÊÔ¹²³öÏÖ " + num + " ´ÎÒì³£¡£");
+        bw.write("æœ¬æ¬¡æµ‹è¯•å…±å‡ºç° " + num + " æ¬¡å¼‚å¸¸ã€‚");
         bw.flush();
         bw.close();
 
         System.out.println("==============================");
-        System.out.println("ÈÕÖ¾ÒÔÉú³É,³öÏÖ: "+num+" ´ÎÒì³£¡£");
+        System.out.println("æ—¥å¿—ä»¥ç”Ÿæˆ,å‡ºç°: "+num+" æ¬¡å¼‚å¸¸ã€‚");
 
     }
 

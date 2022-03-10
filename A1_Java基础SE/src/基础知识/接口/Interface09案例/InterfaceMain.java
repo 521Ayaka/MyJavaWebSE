@@ -1,37 +1,37 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface09°¸Àý;
+package åŸºç¡€çŸ¥è¯†.æŽ¥å£.Interface09æ¡ˆä¾‹;
 
 public class InterfaceMain {
 
     public static void main(String[] args) {
 
-        //´´½¨±Ê¼Ç±¾µçÄÔ¶ÔÏó
+        //åˆ›å»ºç¬”è®°æœ¬ç”µè„‘å¯¹è±¡
         Laptop laptop = new Laptop();
 
-        laptop.powerOn();  //´ò¿ªµçÄÔ
+        laptop.powerOn();  //æ‰“å¼€ç”µè„‘
 
         System.out.println("=========");
-        //µÚÒ»ÖÖ·½·¨: Ê¹ÓÃ¶àÌ¬£¬½Ó¿ÚÒýÓÃÖ¸ÏòÊµÏÖÀà¶ÔÏó
+        //ç¬¬ä¸€ç§æ–¹æ³•: ä½¿ç”¨å¤šæ€ï¼ŒæŽ¥å£å¼•ç”¨æŒ‡å‘å®žçŽ°ç±»å¯¹è±¡
         USB usb = new Mouse();
         laptop.useDevice(usb);
 
         System.out.println("=========");
-        //µÚ¶þÖÖ·½·¨: Ã»ÓÐÊ¹ÓÃ¶àÌ¬£¬µ«ÊÇ·½·¨´«Èë²ÎÊýÊ±£¬Ò²»á×Ô¶¯ÏòÉÏ×ªÐÍ¡£
+        //ç¬¬äºŒç§æ–¹æ³•: æ²¡æœ‰ä½¿ç”¨å¤šæ€ï¼Œä½†æ˜¯æ–¹æ³•ä¼ å…¥å‚æ•°æ—¶ï¼Œä¹Ÿä¼šè‡ªåŠ¨å‘ä¸Šè½¬åž‹ã€‚
         Keyboard keyboard = new Keyboard();
-        laptop.useDevice(keyboard);//                      keyboard ---> usb    Ò²»á×Ô¶¯ÏòÉÏ×ªÐÍÎªusb
+        laptop.useDevice(keyboard);//                      keyboard ---> usb    ä¹Ÿä¼šè‡ªåŠ¨å‘ä¸Šè½¬åž‹ä¸ºusb
 
         System.out.println("=========");
-        //ÁíÍâ Ò²¿ÉÒÔÊÇÓÉÄäÃû¶ÔÏó¸üÎª¼òµ¥:
-        laptop.useDevice(new UsbLight());//       Í¬Àí:     new UsbLight() ---> usb Ò²»á×Ô¶¯ÏòÉÏ×ªÐÍÎªusb
+        //å¦å¤– ä¹Ÿå¯ä»¥æ˜¯ç”±åŒ¿åå¯¹è±¡æ›´ä¸ºç®€å•:
+        laptop.useDevice(new UsbLight());//       åŒç†:     new UsbLight() ---> usb ä¹Ÿä¼šè‡ªåŠ¨å‘ä¸Šè½¬åž‹ä¸ºusb
 
         System.out.println("=========");
 
-        laptop.powerOff(); //¹Ø±ÕµçÄÔ
+        laptop.powerOff(); //å…³é—­ç”µè„‘
 
         System.out.println("==========================================================================================");
 
-        method(10.0);//                       ¾Í±ÈÈç:  int ---> double
+        method(10.0);//                       å°±æ¯”å¦‚:  int ---> double
         int num = 10;
-        method((double) num); //»áÏòÉÏ×ªÐÍÎªdouble           int ----> double
+        method((double) num); //ä¼šå‘ä¸Šè½¬åž‹ä¸ºdouble           int ----> double
 
     }
 

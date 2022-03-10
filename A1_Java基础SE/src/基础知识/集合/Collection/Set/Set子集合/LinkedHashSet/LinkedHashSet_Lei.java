@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.LinkedHashSet;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.LinkedHashSet;
 
 /*
-LinkedHashSet¼¯ºÏ¸ÅÊöºÍÌØµã:
-1. [¹şÏ£±í]ºÍ[Á´±í]ÊµÏÖµÄSet½Ó¿Ú£¬¾ßÓĞ¿ÉÔ¤²âµÄµü´ú´ÎĞò
-2. ÓÉ[Á´±í]±£Ö¤ÔªËØÓĞĞò£¬Ò²¾ÍÊÇËµÔªËØµÄ´æ´¢ºÍÈ¡³öË³ĞòÊÇÒ»ÖÂµÄ
-3. ÓÉ[¹şÏ£±í]±£Ö¤ÔªËØÎ¨Ò»£¬Ò²¾ÍÊÇËµÃ»ÓĞÖØ¸´µÄÔªËØ¡£
+LinkedHashSeté›†åˆæ¦‚è¿°å’Œç‰¹ç‚¹:
+1. [å“ˆå¸Œè¡¨]å’Œ[é“¾è¡¨]å®ç°çš„Setæ¥å£ï¼Œå…·æœ‰å¯é¢„æµ‹çš„è¿­ä»£æ¬¡åº
+2. ç”±[é“¾è¡¨]ä¿è¯å…ƒç´ æœ‰åºï¼Œä¹Ÿå°±æ˜¯è¯´å…ƒç´ çš„å­˜å‚¨å’Œå–å‡ºé¡ºåºæ˜¯ä¸€è‡´çš„
+3. ç”±[å“ˆå¸Œè¡¨]ä¿è¯å…ƒç´ å”¯ä¸€ï¼Œä¹Ÿå°±æ˜¯è¯´æ²¡æœ‰é‡å¤çš„å…ƒç´ ã€‚
 
 
 */
@@ -15,23 +15,23 @@ public class LinkedHashSet_Lei {
 
     public static void main(String[] args) {
 
-        //´´½¨LinkedHashList¼¯ºÏ¶ÔÏó
+        //åˆ›å»ºLinkedHashListé›†åˆå¯¹è±¡
         LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
 
-        //Ìí¼ÓÔªËØ
-        linkedHashSet.add("ŞÏŞÎ");
-        linkedHashSet.add("ÎÊ¾ıÄÜÓĞ¼¸¶à³î");
-        linkedHashSet.add("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷");
-        linkedHashSet.add("ŞÏŞÎ");//ÖØ¸´ÔªËØ
+        //æ·»åŠ å…ƒç´ 
+        linkedHashSet.add("å°´å°¬");
+        linkedHashSet.add("é—®å›èƒ½æœ‰å‡ å¤šæ„");
+        linkedHashSet.add("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµ");
+        linkedHashSet.add("å°´å°¬");//é‡å¤å…ƒç´ 
 
-        //±éÀú¼¯ºÏ
+        //éå†é›†åˆ
         for (String str :
                 linkedHashSet) {
             System.out.println(str);
         }/*
-        ŞÏŞÎ
-        ÎÊ¾ıÄÜÓĞ¼¸¶à³î
-        Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷
+        å°´å°¬
+        é—®å›èƒ½æœ‰å‡ å¤šæ„
+        æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµ
         */
 
 

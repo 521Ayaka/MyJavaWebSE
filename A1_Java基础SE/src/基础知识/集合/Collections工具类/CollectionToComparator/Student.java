@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collections¹¤¾ßÀà.CollectionToComparator;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collectionså·¥å…·ç±».CollectionToComparator;
 
 public class Student {
 

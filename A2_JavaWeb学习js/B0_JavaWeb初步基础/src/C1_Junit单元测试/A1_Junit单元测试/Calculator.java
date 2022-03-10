@@ -1,16 +1,16 @@
-package C1_Junitµ¥Ôª²âÊÔ.A1_Junitµ¥Ôª²âÊÔ;
+package C1_Junitå•å…ƒæµ‹è¯•.A1_Junitå•å…ƒæµ‹è¯•;
 /*
-    Ğ´Ò»¸ö¼ÆËãÆ÷Àà
+    å†™ä¸€ä¸ªè®¡ç®—å™¨ç±»
 */
 
 public class Calculator {
 
-    //Ğ´Ò»¸ö¼Ó·¨·½·¨
+    //å†™ä¸€ä¸ªåŠ æ³•æ–¹æ³•
     public int sum(int x, int y) {
         return x + y;
     }
 
-    //Ğ´Ò»¸ö¼õ·¨·½·¨
+    //å†™ä¸€ä¸ªå‡æ³•æ–¹æ³•
     public int ca(int x, int y) {
         return x - y;
     }

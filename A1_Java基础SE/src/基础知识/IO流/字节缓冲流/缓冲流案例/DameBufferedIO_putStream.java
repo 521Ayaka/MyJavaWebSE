@@ -1,70 +1,70 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú»º³åÁ÷.»º³åÁ÷°¸Àı;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚ç¼“å†²æµ.ç¼“å†²æµæ¡ˆä¾‹;
 
 import java.io.*;
 
 public class DameBufferedIO_putStream {
 
-    private static String IN = "A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú»º³åÁ÷\\»º³åÁ÷°¸Àı\\ÊÓÆµÎÄ¼ş\\À×Éñpv.mp4";
-    private static String OUT_OR_APPEND = "A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú»º³åÁ÷\\»º³åÁ÷°¸Àı\\";
-    private static String OUT_OR_FILE = "\\À×Éñpv.mp4";
+    private static String IN = "A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚ç¼“å†²æµ\\ç¼“å†²æµæ¡ˆä¾‹\\è§†é¢‘æ–‡ä»¶\\é›·ç¥pv.mp4";
+    private static String OUT_OR_APPEND = "A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚ç¼“å†²æµ\\ç¼“å†²æµæ¡ˆä¾‹\\";
+    private static String OUT_OR_FILE = "\\é›·ç¥pv.mp4";
 
     public static void main(String[] args) {
 
         /*
-        ½«ÎÄ¼ş¼Ğ ÊÓÆµÎÄ¼ş ÏÂµÄ ÂíÀÏÊ¦.mp4¸´ÖÆµ½µ±Ç°ÀàÎÄ¼ş¼Ğ¶ÔÓ¦µÄmethodÎÄ¼şÏÂ
+        å°†æ–‡ä»¶å¤¹ è§†é¢‘æ–‡ä»¶ ä¸‹çš„ é©¬è€å¸ˆ.mp4å¤åˆ¶åˆ°å½“å‰ç±»æ–‡ä»¶å¤¹å¯¹åº”çš„methodæ–‡ä»¶ä¸‹
         */
-        //¼ÆËãÊ±¼ä
-        //µ÷ÓÃ·½·¨
+        //è®¡ç®—æ—¶é—´
+        //è°ƒç”¨æ–¹æ³•
 
-        /*Ê¹ÓÃ»º³åÁ÷    µ¥¸ö×Ö·û¶ÁÈ¡*/
-        method1(); // method1ÓÃÊ±: 658ºÁÃë
+        /*ä½¿ç”¨ç¼“å†²æµ    å•ä¸ªå­—ç¬¦è¯»å–*/
+        method1(); // method1ç”¨æ—¶: 658æ¯«ç§’
 
-        /*²»Ê¹ÓÃ»º³åÁ÷  µ¥¸ö×Ö·û¶ÁÈ¡*/
-        method2(); // method1ÓÃÊ±: 71230ºÁÃë
+        /*ä¸ä½¿ç”¨ç¼“å†²æµ  å•ä¸ªå­—ç¬¦è¯»å–*/
+        method2(); // method1ç”¨æ—¶: 71230æ¯«ç§’
 
-        /*Ê¹ÓÃ»º³åÁ÷   Ê¹ÓÃbyte[1024]¶ÁÈ¡Ğ´Èë*/
-        method3(); // method2ÓÃÊ±: 31ºÁÃë
+        /*ä½¿ç”¨ç¼“å†²æµ   ä½¿ç”¨byte[1024]è¯»å–å†™å…¥*/
+        method3(); // method2ç”¨æ—¶: 31æ¯«ç§’
 
-        /*²»Ê¹ÓÃ»º³åÁ÷  Ê¹ÓÃbyte[1024]¶ÁÈ¡Ğ´Èë*/
-        method4(); // method1ÓÃÊ±: 94ºÁÃë
+        /*ä¸ä½¿ç”¨ç¼“å†²æµ  ä½¿ç”¨byte[1024]è¯»å–å†™å…¥*/
+        method4(); // method1ç”¨æ—¶: 94æ¯«ç§’
 
-        /*Ê¹ÓÃ»º³åÁ÷    Ê¹ÓÃbyte[1024*32]¶ÁÈ¡Ğ´Èë*/
-        method5(); // method3ÓÃÊ±: 17ºÁÃë
+        /*ä½¿ç”¨ç¼“å†²æµ    ä½¿ç”¨byte[1024*32]è¯»å–å†™å…¥*/
+        method5(); // method3ç”¨æ—¶: 17æ¯«ç§’
 
-        //ÔÙ´ÎÔËĞĞ½á¹û¿ÉÄÜ²»Í¬£¬ÏµÍ³µ×²ãÎÊÌâ¡£
+        //å†æ¬¡è¿è¡Œç»“æœå¯èƒ½ä¸åŒï¼Œç³»ç»Ÿåº•å±‚é—®é¢˜ã€‚
 
         /**
-        ½áÂÛ£º
-        Ê¹ÓÃbyte[]Êı×é  ¶ÁÈ¡ËÙ¶È¿ì Ğ´Èë¿ì
-        Ê¹ÓÃ×Ö½Ú»º³åÁ÷   ¶ÁÈ¡ËÙ¶È¿ì Ğ´Èë¿ì
+        ç»“è®ºï¼š
+        ä½¿ç”¨byte[]æ•°ç»„  è¯»å–é€Ÿåº¦å¿« å†™å…¥å¿«
+        ä½¿ç”¨å­—èŠ‚ç¼“å†²æµ   è¯»å–é€Ÿåº¦å¿« å†™å…¥å¿«
         */
 
 
     }
 
-    //¼ÆËãËùÓÃÊ±¼ä ¿ªÊ¼
+    //è®¡ç®—æ‰€ç”¨æ—¶é—´ å¼€å§‹
     public static long go() {
         return System.currentTimeMillis();
     }
 
-    //¼ÆËãËùÓÃÊ±¼ä ½áÊø
+    //è®¡ç®—æ‰€ç”¨æ—¶é—´ ç»“æŸ
     public static long end(long go) {
         return System.currentTimeMillis() - go;
     }
 
 
-    //Ê¹ÓÃ [»º³åÁ÷] [µ¥¸ö] byte½øĞĞ¶ÁÈ¡Êı¾İ
+    //ä½¿ç”¨ [ç¼“å†²æµ] [å•ä¸ª] byteè¿›è¡Œè¯»å–æ•°æ®
     public static void method1() {
-        //´´½¨
+        //åˆ›å»º
         BufferedInputStream bis = null;
         BufferedOutputStream bos = null;
-        //¿ªÊ¼¼ÆÊ±
+        //å¼€å§‹è®¡æ—¶
         long go = go();
 
         try {
             bis = new BufferedInputStream(new FileInputStream(IN));
             bos = new BufferedOutputStream(new FileOutputStream(String.valueOf(new StringBuilder(OUT_OR_APPEND).append("method1").append(OUT_OR_FILE))));
-            //¿ªÊ¼¶ÁÈ¡²¢Ğ´ÈëÊı¾İ
+            //å¼€å§‹è¯»å–å¹¶å†™å…¥æ•°æ®
             int by;
             while ((by = bis.read()) != -1) {
                 bos.write(by);
@@ -75,36 +75,36 @@ public class DameBufferedIO_putStream {
         } finally {
             if (bis != null) {
                 try {
-                    bis.close();//ÊÍ·Å×ÊÔ´
+                    bis.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (bos != null) {
                 try {
-                    bos.close();//ÊÍ·Å×ÊÔ´
+                    bos.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
-        //½áÊø¼ÆÊ±
+        //ç»“æŸè®¡æ—¶
         long end = end(go);
-        System.out.println("method1ÓÃÊ±: " + end + "ºÁÃë");
+        System.out.println("method1ç”¨æ—¶: " + end + "æ¯«ç§’");
     }
 
-    //²»Ê¹ÓÃ [»º³åÁ÷] [µ¥¸ö] byte½øĞĞ¶ÁÈ¡Êı¾İ
+    //ä¸ä½¿ç”¨ [ç¼“å†²æµ] [å•ä¸ª] byteè¿›è¡Œè¯»å–æ•°æ®
     public static void method2() {
-        //´´½¨
+        //åˆ›å»º
         FileInputStream fis = null;
         FileOutputStream fos = null;
-        //¿ªÊ¼¼ÆÊ±
+        //å¼€å§‹è®¡æ—¶
         long go = go();
 
         try {
             fis = new FileInputStream(IN);
             fos = new FileOutputStream(String.valueOf(new StringBuilder(OUT_OR_APPEND).append("method2").append(OUT_OR_FILE)));
-            //¿ªÊ¼¶ÁÈ¡²¢Ğ´ÈëÊı¾İ
+            //å¼€å§‹è¯»å–å¹¶å†™å…¥æ•°æ®
             int by;
             while ((by = fis.read()) != -1) {
                 fos.write(by);
@@ -115,41 +115,41 @@ public class DameBufferedIO_putStream {
         } finally {
             if (fis != null) {
                 try {
-                    fis.close();//ÊÍ·Å×ÊÔ´
+                    fis.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (fos != null) {
                 try {
-                    fos.close();//ÊÍ·Å×ÊÔ´
+                    fos.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
-        //½áÊø¼ÆÊ±
+        //ç»“æŸè®¡æ—¶
         long end = end(go);
-        System.out.println("method1ÓÃÊ±: " + end + "ºÁÃë");
+        System.out.println("method1ç”¨æ—¶: " + end + "æ¯«ç§’");
     }
 
 
-    //Ê¹ÓÃ×Ö½Ú»º³åÁ÷ Ê¹ÓÃbyte[]Êı×é½øĞĞ¶ÁÈ¡Êı¾İ £¬byte.length¸³ÖµÎª [1024]
+    //ä½¿ç”¨å­—èŠ‚ç¼“å†²æµ ä½¿ç”¨byte[]æ•°ç»„è¿›è¡Œè¯»å–æ•°æ® ï¼Œbyte.lengthèµ‹å€¼ä¸º [1024]
     public static void method3() {
-        //´´½¨
+        //åˆ›å»º
         BufferedInputStream bis = null;
         BufferedOutputStream bos = null;
-        //¿ªÊ¼¼ÆÊ±
+        //å¼€å§‹è®¡æ—¶
         long go = go();
 
         try {
             bis = new BufferedInputStream(new FileInputStream(IN));
             bos = new BufferedOutputStream(new FileOutputStream(String.valueOf(new StringBuilder(OUT_OR_APPEND).append("method3").append(OUT_OR_FILE))));
-            //¿ªÊ¼¶ÁÈ¡²¢Ğ´ÈëÊı¾İ
+            //å¼€å§‹è¯»å–å¹¶å†™å…¥æ•°æ®
             byte[] array = new byte[1024];
             int len;
-            while ((len = bis.read(array)) != -1) {//byte[]¹¹Ôì·½·¨
-                bos.write(array, 0, len);//Èı²Î¹¹Ôì·½·¨
+            while ((len = bis.read(array)) != -1) {//byte[]æ„é€ æ–¹æ³•
+                bos.write(array, 0, len);//ä¸‰å‚æ„é€ æ–¹æ³•
             }
 
         } catch (IOException e) {
@@ -157,38 +157,38 @@ public class DameBufferedIO_putStream {
         } finally {
             if (bis != null) {
                 try {
-                    bis.close();//ÊÍ·Å×ÊÔ´
+                    bis.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (bos != null) {
                 try {
-                    bos.close();//ÊÍ·Å×ÊÔ´
+                    bos.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
-        //½áÊø¼ÆÊ±
+        //ç»“æŸè®¡æ—¶
         long end = end(go);
-        System.out.println("method2ÓÃÊ±: " + end + "ºÁÃë");
+        System.out.println("method2ç”¨æ—¶: " + end + "æ¯«ç§’");
     }
 
 
-    //²»Ê¹ÓÃ [»º³åÁ÷] [Ê¹ÓÃbyte[]Êı×é] ½øĞĞ¶ÁÈ¡Êı¾İ
+    //ä¸ä½¿ç”¨ [ç¼“å†²æµ] [ä½¿ç”¨byte[]æ•°ç»„] è¿›è¡Œè¯»å–æ•°æ®
     public static void method4() {
-        //´´½¨
+        //åˆ›å»º
         FileInputStream fis = null;
         FileOutputStream fos = null;
-        //¿ªÊ¼¼ÆÊ±
+        //å¼€å§‹è®¡æ—¶
         long go = go();
 
         try {
             fis = new FileInputStream(IN);
             fos = new FileOutputStream(String.valueOf(new StringBuilder(OUT_OR_APPEND).append("method4").append(OUT_OR_FILE)));
-            //¿ªÊ¼¶ÁÈ¡²¢Ğ´ÈëÊı¾İ
-            byte[] array = new byte[1024];//³¤¶ÈÎª1024
+            //å¼€å§‹è¯»å–å¹¶å†™å…¥æ•°æ®
+            byte[] array = new byte[1024];//é•¿åº¦ä¸º1024
             int by;
             while ((by = fis.read(array)) != -1) {
                 fos.write(array, 0, by);
@@ -199,41 +199,41 @@ public class DameBufferedIO_putStream {
         } finally {
             if (fis != null) {
                 try {
-                    fis.close();//ÊÍ·Å×ÊÔ´
+                    fis.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (fos != null) {
                 try {
-                    fos.close();//ÊÍ·Å×ÊÔ´
+                    fos.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
-        //½áÊø¼ÆÊ±
+        //ç»“æŸè®¡æ—¶
         long end = end(go);
-        System.out.println("method1ÓÃÊ±: " + end + "ºÁÃë");
+        System.out.println("method1ç”¨æ—¶: " + end + "æ¯«ç§’");
     }
 
 
-    //Ê¹ÓÃ×Ö½Ú»º³åÁ÷ Ê¹ÓÃbyte[]Êı×é½øĞĞ¶ÁÈ¡Êı¾İ £¬byte.length¸³ÖµÎª [32*1024]
+    //ä½¿ç”¨å­—èŠ‚ç¼“å†²æµ ä½¿ç”¨byte[]æ•°ç»„è¿›è¡Œè¯»å–æ•°æ® ï¼Œbyte.lengthèµ‹å€¼ä¸º [32*1024]
     public static void method5() {
-        //´´½¨
+        //åˆ›å»º
         BufferedInputStream bis = null;
         BufferedOutputStream bos = null;
-        //¿ªÊ¼¼ÆÊ±
+        //å¼€å§‹è®¡æ—¶
         long go = go();
 
         try {
             bis = new BufferedInputStream(new FileInputStream(IN));
             bos = new BufferedOutputStream(new FileOutputStream(String.valueOf(new StringBuilder(OUT_OR_APPEND).append("method5").append(OUT_OR_FILE))));
-            //¿ªÊ¼¶ÁÈ¡²¢Ğ´ÈëÊı¾İ
+            //å¼€å§‹è¯»å–å¹¶å†™å…¥æ•°æ®
             byte[] array = new byte[1024 * 32];
             int len;
-            while ((len = bis.read(array)) != -1) {//byte[]¹¹Ôì·½·¨
-                bos.write(array, 0, len);//Èı²Î¹¹Ôì·½·¨
+            while ((len = bis.read(array)) != -1) {//byte[]æ„é€ æ–¹æ³•
+                bos.write(array, 0, len);//ä¸‰å‚æ„é€ æ–¹æ³•
             }
 
         } catch (IOException e) {
@@ -241,22 +241,22 @@ public class DameBufferedIO_putStream {
         } finally {
             if (bis != null) {
                 try {
-                    bis.close();//ÊÍ·Å×ÊÔ´
+                    bis.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (bos != null) {
                 try {
-                    bos.close();//ÊÍ·Å×ÊÔ´
+                    bos.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
-        //½áÊø¼ÆÊ±
+        //ç»“æŸè®¡æ—¶
         long end = end(go);
-        System.out.println("method3ÓÃÊ±: " + end + "ºÁÃë");
+        System.out.println("method3ç”¨æ—¶: " + end + "æ¯«ç§’");
     }
 
 

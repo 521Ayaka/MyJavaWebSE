@@ -1,15 +1,15 @@
-package 基础知识.调试练习;
+package 鍩虹鐭ヨ瘑.璋冭瘯缁冧範;
 
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class 不一样的数组反正 {
+public class 涓嶄竴鏍风殑鏁扮粍鍙嶆 {
 
     public static void main(String[] args) {
 
         int []array = {50,10,30,40,20,60};
 
-        //正序排列
+        //姝ｅ簭鎺掑垪
         TreeSet<Integer> set = new TreeSet<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -30,7 +30,7 @@ public class 不一样的数组反正 {
 
         System.out.println("============================================");
 
-        //反转
+        //鍙嶈浆
         TreeSet<Integer> treeSet = new TreeSet<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {

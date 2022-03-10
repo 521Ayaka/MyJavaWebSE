@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó;
+package åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡;
 
 public class Student {
 
-    //Ò»¸öË½ÓĞ³ÉÔ±±äÁ¿
+    //ä¸€ä¸ªç§æœ‰æˆå‘˜å˜é‡
     private String name;
-    //Ò»¸öÄ¬ÈÏ³ÉÔ±±äÁ¿
+    //ä¸€ä¸ªé»˜è®¤æˆå‘˜å˜é‡
     int age;
-    //Ò»¸ö¹«¹²³ÉÔ±±äÁ¿
+    //ä¸€ä¸ªå…¬å…±æˆå‘˜å˜é‡
     public String id;
 
     public Student(){
@@ -29,7 +29,7 @@ public class Student {
     }
 
     private void me(){
-        System.out.println("meË½ÓĞ·½·¨");
+        System.out.println("meç§æœ‰æ–¹æ³•");
     }
 
     public void method1() {
@@ -38,21 +38,21 @@ public class Student {
 
     public void method2(String name) {
         this.name = name;
-        System.out.println("method2"+"  ĞÕÃû:" + name);
+        System.out.println("method2"+"  å§“å:" + name);
     }
 
     public String method3(String name, int age) {
         this.name = name;
         this.age = age;
-        System.out.println("method3"+"  ĞÕÃû:" + name + "ÄêÁä:" + age);
-        return "ĞÕÃû:" + name + "ÄêÁä:" + age;
+        System.out.println("method3"+"  å§“å:" + name + "å¹´é¾„:" + age);
+        return "å§“å:" + name + "å¹´é¾„:" + age;
     }
 
     public void method4() {
         System.out.println("method4");
     }
 
-    //ÖØĞ´toString·½·¨
+    //é‡å†™toStringæ–¹æ³•
     @Override
     public String toString() {
         return "Student{" +

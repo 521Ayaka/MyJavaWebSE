@@ -1,21 +1,21 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿6;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®6;
 
 public class Number {
 
-    //¶¨ÒåË½ÓĞ³ÉÔ±±äÁ¿n1,n2
+    //å®šä¹‰ç§æœ‰æˆå‘˜å˜é‡n1,n2
     private int n1;
     private int n2;
-    //È«²Î¹¹Ôì·½·¨
+    //å…¨å‚æ„é€ æ–¹æ³•
     public Number(int n1, int n2) {
         this.n1 = n1;
         this.n2 = n2;
     }
 
-    //¼Ó·¨========================================
+    //åŠ æ³•========================================
     public int addition(){
         return n1+n2;
     }
-    //¼õ·¨========================================
+    //å‡æ³•========================================
     int subtrationAB(){
         return n1-n2;
     }
@@ -23,23 +23,23 @@ public class Number {
         return n2-n1;
     }
 
-    //³Ë·¨========================================
+    //ä¹˜æ³•========================================
     int multiplication(){
         return n1*n2;
     }
 
-    //³ı·¨========================================
+    //é™¤æ³•========================================
     // A/B
-    int divisionAB() throws XXXException {      //throwsÅ×³öÒì³£
+    int divisionAB() throws XXXException {      //throwsæŠ›å‡ºå¼‚å¸¸
         if (n2 == 0){
-            throw new XXXException("³ıÊı²»ÄÜÎª0");//Èç¹û³ıÊıÎªÁã£¬Å×³öÒì³£
+            throw new XXXException("é™¤æ•°ä¸èƒ½ä¸º0");//å¦‚æœé™¤æ•°ä¸ºé›¶ï¼ŒæŠ›å‡ºå¼‚å¸¸
         }
         return n1/n2;
     }
     // B/A
-    int divisionBA() throws XXXException {      //throwsÅ×³öÒì³£
+    int divisionBA() throws XXXException {      //throwsæŠ›å‡ºå¼‚å¸¸
         if (n1 == 0){
-            throw new XXXException("³ıÊı²»ÄÜÎª0");//Èç¹û³ıÊıÎªÁã£¬Å×³öÒì³£
+            throw new XXXException("é™¤æ•°ä¸èƒ½ä¸º0");//å¦‚æœé™¤æ•°ä¸ºé›¶ï¼ŒæŠ›å‡ºå¼‚å¸¸
         }
         return n2/n1;
     }

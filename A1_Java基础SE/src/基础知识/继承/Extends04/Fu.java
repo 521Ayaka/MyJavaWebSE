@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends04;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends04;
 
 public class Fu {
 
@@ -6,10 +6,10 @@ public class Fu {
     }
 
     public void methodFu() {
-        System.out.println("¸¸Àà·½·¨Ö´ĞĞ£¡");
+        System.out.println("çˆ¶ç±»æ–¹æ³•æ‰§è¡Œï¼");
     }
 
     public void method() {
-        System.out.println("¸¸ÀàÖØÃû·½·¨Ö´ĞĞ£¡");
+        System.out.println("çˆ¶ç±»é‡åæ–¹æ³•æ‰§è¡Œï¼");
     }
 }

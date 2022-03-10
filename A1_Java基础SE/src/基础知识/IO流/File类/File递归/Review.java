@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.Fileµİ¹é;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileé€’å½’;
 
-//»Ø¹Ëµ±Ê±ÉñÍÃÎÊÌâ: Ç°20Ö»ÍÃ×Ó{1,1,2,3,5,8,......}  Ç°Á½¸öÎª 1,1 Íùºó¶¼ÊÇÇ°Á½¸öÊıµÄºÍ 1,1,2,3,5,8,......
+//å›é¡¾å½“æ—¶ç¥å…”é—®é¢˜: å‰20åªå…”å­{1,1,2,3,5,8,......}  å‰ä¸¤ä¸ªä¸º 1,1 å¾€åéƒ½æ˜¯å‰ä¸¤ä¸ªæ•°çš„å’Œ 1,1,2,3,5,8,......
 
 import java.util.Arrays;
 
@@ -8,10 +8,10 @@ public class Review {
 
     public static void main(String[] args) {
 
-        //¶¨ÒåÒ»¸ö³¤¶ÈÎª20µÄintÊı×é
+        //å®šä¹‰ä¸€ä¸ªé•¿åº¦ä¸º20çš„intæ•°ç»„
         int [] array = new int[20];
 
-        //Ê¹ÓÃforÑ­»·
+        //ä½¿ç”¨forå¾ªç¯
         for (int i = 0; i < array.length; i++) {
             if (i < 2){
                 array[i] = 1;
@@ -20,7 +20,7 @@ public class Review {
             }
         }
 
-        //±éÀúÊı×é
+        //éå†æ•°ç»„
         System.out.println(Arrays.toString(array));
 
     }

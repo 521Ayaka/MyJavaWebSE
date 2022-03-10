@@ -1,36 +1,36 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı1;
-//µ¼°ü
-import »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends11°¸Àı.User;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹1;
+//å¯¼åŒ…
+import åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends11æ¡ˆä¾‹.User;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-//ÆÕÍ¨³ÉÔ±µÄÀà   //×ÓÃñµÄÀà  ×ÓÀà
+//æ™®é€šæˆå‘˜çš„ç±»   //å­æ°‘çš„ç±»  å­ç±»
 public class Member extends User {
 
-    //´«Èë×ÓÃñµÄ²ÎÊıĞÅÏ¢
+    //ä¼ å…¥å­æ°‘çš„å‚æ•°ä¿¡æ¯
     public Member(String name, double money) {
-        super(name, money); //µ÷ÓÃ¸¸Àà¹¹Ôì·½·¨£¬´òÓ¡¶ÔÏóĞÅÏ¢¡£
+        super(name, money); //è°ƒç”¨çˆ¶ç±»æ„é€ æ–¹æ³•ï¼Œæ‰“å°å¯¹è±¡ä¿¡æ¯ã€‚
     }
 
-    //ÆÕÍ¨³ÉÔ±ÊÕºì°üµÄ·½·¨
+    //æ™®é€šæˆå‘˜æ”¶çº¢åŒ…çš„æ–¹æ³•
     public void receive(ArrayList<Double> list, double max) {
 
-        //´´½¨Ëæ»úintÊı×Ö
+        //åˆ›å»ºéšæœºintæ•°å­—
         int index = new Random().nextInt(list.size());
-        //Ïòlist¼¯ºÏµ±ÖĞÌáÈ¡µ¥¸öºì°ü
+        //å‘listé›†åˆå½“ä¸­æå–å•ä¸ªçº¢åŒ…
         Double delta = list.remove(index);
 
-        //´òÓ¡ÇÀµ½µÄºì°ü½ğ¶î£¬²¢ÅĞ¶ÏË­µÄ½ğ¶î×î´ó¡£
+        //æ‰“å°æŠ¢åˆ°çš„çº¢åŒ…é‡‘é¢ï¼Œå¹¶åˆ¤æ–­è°çš„é‡‘é¢æœ€å¤§ã€‚
         if (max == delta){
-            System.out.println("===(¨Rv¨Q)?ĞÒÔËÍõo((>¦Ø< ))o===");
-            System.out.println(super.getName()+",ÇÀµ½"+delta+"Ôª¡£");
+            System.out.println("===(â‰§vâ‰¦)?å¹¸è¿ç‹o((>Ï‰< ))o===");
+            System.out.println(super.getName()+",æŠ¢åˆ°"+delta+"å…ƒã€‚");
             System.out.println();
         }else{
-            System.out.println(super.getName()+",ÇÀµ½"+delta+"Ôª¡£");
+            System.out.println(super.getName()+",æŠ¢åˆ°"+delta+"å…ƒã€‚");
             System.out.println();
         }
-        //µÃµ½ºì°ü²¢·µ»Øµ½×ÜÓà¶îµ±ÖĞ
+        //å¾—åˆ°çº¢åŒ…å¹¶è¿”å›åˆ°æ€»ä½™é¢å½“ä¸­
         double money = super.getMoney();
         super.setMoney(money + delta);
     }

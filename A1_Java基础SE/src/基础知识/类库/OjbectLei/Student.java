@@ -1,4 +1,4 @@
-package 基础知识.类库.OjbectLei;
+package 鍩虹鐭ヨ瘑.绫诲簱.OjbectLei;
 
 public class Student {
 

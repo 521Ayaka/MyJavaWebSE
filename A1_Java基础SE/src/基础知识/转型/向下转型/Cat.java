@@ -1,12 +1,12 @@
-package 基础知识.转型.向下转型;
+package 鍩虹鐭ヨ瘑.杞瀷.鍚戜笅杞瀷;
 public class Cat extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("次鱼");
+        System.out.println("娆￠奔");
     }
 
     public void catchMouse(){
-        System.out.println("猫抓老鼠");
+        System.out.println("鐚姄鑰侀紶");
     }
 }

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°1;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,34 +8,34 @@ public class DameMap {
 
     public static void main(String[] args) {
 
-        //´´½¨¼¯ºÏ
+        //åˆ›å»ºé›†åˆ
         HashMap<String, Student> map = new HashMap<>();
 
-        //´´½¨Ñ§Éú¶ÔÏó
-        Student stu1 = new Student("ŞÏŞÎ½´", 18);
-        Student stu2 = new Student("ŞÏŞÎµÛ", 20);
-        Student stu3 = new Student("ŞÏŞÎÁË", 11);
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+        Student stu1 = new Student("å°´å°¬é…±", 18);
+        Student stu2 = new Student("å°´å°¬å¸", 20);
+        Student stu3 = new Student("å°´å°¬äº†", 11);
 
-        //Ìí¼Óµ½¼¯ºÏÖĞ
+        //æ·»åŠ åˆ°é›†åˆä¸­
         map.put("20202218", stu1);
         map.put("20202220", stu2);
         map.put("20202211", stu3);
 
-        //±éÀú·½·¨ Ò»
+        //éå†æ–¹æ³• ä¸€
         Set<String> keySet = map.keySet();
         for (String id : keySet) {
             Student s1 = map.get(id);
-            System.out.println("Ñ§ºÅ:" + id + ", ĞÕÃû:" + s1.getName() + ", ÄêÁä:" + s1.getAge());
+            System.out.println("å­¦å·:" + id + ", å§“å:" + s1.getName() + ", å¹´é¾„:" + s1.getAge());
         }
 
         System.out.println("====================================================================");
 
-        //±éÀú·½·¨ ¶ş
+        //éå†æ–¹æ³• äºŒ
         Set<Map.Entry<String,Student>> entry =  map.entrySet();
         for (Map.Entry<String,Student> em: entry){
             String key = em.getKey();
             Student value = em.getValue();
-            System.out.println("Ñ§ºÅ:" + key + ", ĞÕÃû:" + value.getName() + ", ÄêÁä:" + value.getAge());
+            System.out.println("å­¦å·:" + key + ", å§“å:" + value.getName() + ", å¹´é¾„:" + value.getAge());
         }
 
     }

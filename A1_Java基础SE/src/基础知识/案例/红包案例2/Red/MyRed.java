@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı2.Red;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹2.Red;
 
 
 public class MyRed extends RedPacketFrame {
 
     /**
-     * ¹¹Ôì·½·¨£ºÉú³Éºì°ü½çÃæ¡£
+     * æ„é€ æ–¹æ³•ï¼šç”Ÿæˆçº¢åŒ…ç•Œé¢ã€‚
      *
-     * @param title ½çÃæµÄ±êÌâ
+     * @param title ç•Œé¢çš„æ ‡é¢˜
      */
     public MyRed(String title) {
         super(title);

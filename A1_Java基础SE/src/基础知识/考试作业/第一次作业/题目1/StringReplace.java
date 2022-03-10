@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿1;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®1;
 /*
-StringµÄ¾²Ì¬·½·¨»¹ÊÇ±È½Ï¶àµÄ¡£¡£¡£
+Stringçš„é™æ€æ–¹æ³•è¿˜æ˜¯æ¯”è¾ƒå¤šçš„ã€‚ã€‚ã€‚
 */
 public class StringReplace {
 
     public static void main(String[] args) {
 
-        //¶¨Òå×Ö·û´®
-        String str = "javaÄãºÃ£¡";
+        //å®šä¹‰å­—ç¬¦ä¸²
+        String str = "javaä½ å¥½ï¼";
         System.out.println(str);
 
-        //Ìæ»»²Ù×÷
+        //æ›¿æ¢æ“ä½œ
         String srtReplace = str.replace("java", "C");
         System.out.println(str);
     }

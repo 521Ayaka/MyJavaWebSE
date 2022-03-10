@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface03;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface03;
 
 public class MyInterfaceStaticImpl implements MyInterfaceStatic{
 
-    //ÕâÖÖÒ»¸öÊµÏÖÀàÊµÏÖÁ½¸ö½Ó¿Ú»¹Ã»Ñ§£¬ÔÚÊéÉÏ¿´µÄ¡£¡£¡£
+    //è¿™ç§ä¸€ä¸ªå®ç°ç±»å®ç°ä¸¤ä¸ªæ¥å£è¿˜æ²¡å­¦ï¼Œåœ¨ä¹¦ä¸Šçœ‹çš„ã€‚ã€‚ã€‚
 
 }

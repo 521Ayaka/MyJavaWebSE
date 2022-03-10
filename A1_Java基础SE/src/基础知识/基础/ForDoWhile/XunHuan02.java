@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.»ù´¡.ForDoWhile;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.ForDoWhile;
 
 public class XunHuan02 {
     public static void main (String[]args){
         for(int hour = 0; hour<24 ; hour++){
             for(int minute=0;minute<60;minute++){
                 for(int s=0;s<60;s++){
-                    System.out.println("                          "+hour+"µã"+minute+"·Ö"+s+"Ãë"+"ÔÚÏëÄã...");
+                    System.out.println("                          "+hour+"ç‚¹"+minute+"åˆ†"+s+"ç§’"+"åœ¨æƒ³ä½ ...");
                 }
             }
         }
-        System.out.println("                          24µã00·Ö00ÃëÔÚÈÔÈ»ÔÚÏëÄîÄã");
+        System.out.println("                          24ç‚¹00åˆ†00ç§’åœ¨ä»ç„¶åœ¨æƒ³å¿µä½ ");
     }
 }

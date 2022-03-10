@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Array;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Array;
 
 import java.util.Arrays;
 
 public class Arrays_toString {
     public static void main(String[] args) {
-        String [] ganga = new String [] {"Ò»ÆğLOL°É","ÎÒÔÚ¾ŞÁúÖ®³²","IDÊÇ£ºÓÀÔ¶i°®Äã"};
+        String [] ganga = new String [] {"ä¸€èµ·LOLå§","æˆ‘åœ¨å·¨é¾™ä¹‹å·¢","IDæ˜¯ï¼šæ°¸è¿œiçˆ±ä½ "};
         System.out.println(Arrays.toString(ganga));
         for (int i = 0; i < ganga.length; i++) {
             System.out.println(ganga[i]);

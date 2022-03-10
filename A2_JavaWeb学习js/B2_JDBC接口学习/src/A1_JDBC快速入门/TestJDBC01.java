@@ -1,4 +1,4 @@
-package A1_JDBC¿ìËÙÈëÃÅ;
+package A1_JDBCå¿«é€Ÿå…¥é—¨;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,42 +7,42 @@ import java.sql.Statement;
 public class TestJDBC01 {
 
 
-    //Í¨¹ıJava¿ØÖÆ [¹ØÏµĞÍÊı¾İ¿â] mysql µÄ²½Öè
+    //é€šè¿‡Javaæ§åˆ¶ [å…³ç³»å‹æ•°æ®åº“] mysql çš„æ­¥éª¤
     public static void main(String[] args) throws Exception {
 
-        //1: ×¢²áÇı¶¯
-        Class.forName("com.mysql.jdbc.Driver"); //jar5ºó ¿ÉÒÔÊ¡ÂÔÕâĞĞ
+        //1: æ³¨å†Œé©±åŠ¨
+        Class.forName("com.mysql.jdbc.Driver"); //jar5å å¯ä»¥çœç•¥è¿™è¡Œ
 
-        //2: »ñÈ¡Á¬½Ó
+        //2: è·å–è¿æ¥
         String url = "jdbc:mysql://172.20.48.100/testsql";
         String user = "root";
         String password = "ganga";
-        Connection conn = DriverManager.getConnection(url, user, password); //»ñÈ¡Connection¶ÔÏó
+        Connection conn = DriverManager.getConnection(url, user, password); //è·å–Connectionå¯¹è±¡
 
-        //3. ¶¨ÒåsqlÓï¾ä
-        String sql = "update student set math = 100 where id = 8"; //sqlºó²»ÓÃ·ÖºÅ
+        //3. å®šä¹‰sqlè¯­å¥
+        String sql = "update student set math = 100 where id = 8"; //sqlåä¸ç”¨åˆ†å·
 
-        //4. »ñÈ¡Ö´ĞĞsqlµÄ¶ÔÏó Statement
+        //4. è·å–æ‰§è¡Œsqlçš„å¯¹è±¡ Statement
         Statement stmt = conn.createStatement();
 
-        //5. Ö´ĞĞsql
-        int count = stmt.executeUpdate(sql); //Ö´ĞĞsql ·µ»ØÖµÊÇ ÊÜÓ°ÏìµÄĞĞÊı
+        //5. æ‰§è¡Œsql
+        int count = stmt.executeUpdate(sql); //æ‰§è¡Œsql è¿”å›å€¼æ˜¯ å—å½±å“çš„è¡Œæ•°
 
-        //6. ´¦Àí½á¹û
+        //6. å¤„ç†ç»“æœ
         System.out.println(count);
 
-        //7. ÊÍ·Å×ÊÔ´
-        //stmt¶ÔÏóÊÇÓÉconn¶ÔÏóµÃµ½µÄ, ËùÒÔÏÈÊÍ·Åstmt¶ÔÏó
+        //7. é‡Šæ”¾èµ„æº
+        //stmtå¯¹è±¡æ˜¯ç”±connå¯¹è±¡å¾—åˆ°çš„, æ‰€ä»¥å…ˆé‡Šæ”¾stmtå¯¹è±¡
         stmt.close();
         conn.close();
 
     }
     /*
-    Host is not allowed to connect to this MySQL server½â¾ö·½·¨
+    Host is not allowed to connect to this MySQL serverè§£å†³æ–¹æ³•
 
-    Ö´ĞĞuse mysql;
-    Ö´ĞĞupdate user set host = '%' where user = 'root';ÕâÒ»¾äÖ´ĞĞÍê¿ÉÄÜ»á±¨´í£¬²»ÓÃ¹ÜËü¡£
-    Ö´ĞĞFLUSH PRIVILEGES;
+    æ‰§è¡Œuse mysql;
+    æ‰§è¡Œupdate user set host = '%' where user = 'root';è¿™ä¸€å¥æ‰§è¡Œå®Œå¯èƒ½ä¼šæŠ¥é”™ï¼Œä¸ç”¨ç®¡å®ƒã€‚
+    æ‰§è¡ŒFLUSH PRIVILEGES;
 
     */
 

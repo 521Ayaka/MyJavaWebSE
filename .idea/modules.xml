@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A1_Java基础SE/A1_Java基础SE.iml" filepath="$PROJECT_DIR$/A1_Java基础SE/A1_Java基础SE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/A2_JavaWeb学习js.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/A2_JavaWeb学习js.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/B0_JavaWeb初步基础/B0_JavaWeb初步基础.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/B0_JavaWeb初步基础/B0_JavaWeb初步基础.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/B2_JDBC接口学习/B2_JDBC接口学习.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/B2_JDBC接口学习/B2_JDBC接口学习.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/B3_CSS样式学习/B3_CSS样式学习.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/B3_CSS样式学习/B3_CSS样式学习.iml" />
-      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/B4_JavaScript/B4_JavaScript.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/B4_JavaScript/B4_JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/B6_Tomcat_Maven.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/B6_Tomcat_Maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/源代码.iml" filepath="$PROJECT_DIR$/源代码.iml" />
     </modules>
   </component>

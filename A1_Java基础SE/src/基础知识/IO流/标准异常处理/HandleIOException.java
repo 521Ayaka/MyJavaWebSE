@@ -1,19 +1,19 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.±ê×¼Òì³£´¦Àí;
+package åŸºç¡€çŸ¥è¯†.IOæµ.æ ‡å‡†å¼‚å¸¸å¤„ç†;
 
 /*
-·ÖÎö½áÂÛ:
+åˆ†æç»“è®º:
 
-[·½·¨Ò» JDK7Ö®Ç°]£º
-    Ê¹ÓÃfinally±£Ö¤ÁËÊÍ·Å×ÊÔ´,Í¬Ê±²»ĞèÒªÔÚÅ×³öÒì³£,µ«ÊÇ²½ÖèÌ«·±Ëö
+[æ–¹æ³•ä¸€ JDK7ä¹‹å‰]ï¼š
+    ä½¿ç”¨finallyä¿è¯äº†é‡Šæ”¾èµ„æº,åŒæ—¶ä¸éœ€è¦åœ¨æŠ›å‡ºå¼‚å¸¸,ä½†æ˜¯æ­¥éª¤å¤ªç¹ç
 
-[·½·¨¶ş JDK7Ö®ºó]:
-    ÔÚtry()À¨ºÅÀï½øĞĞ´´½¨Á÷¶ÔÏóÍ¬Ê±¸³Öµ,×Ô¶¯ÊÍ·Å×ÊÔ´,²»ĞèÒªÊ¹ÓÃfinally,²»ĞèÒªÅ×³öÒì³£,¼ò»¯ÁË´úÂë£¡YYDS!
+[æ–¹æ³•äºŒ JDK7ä¹‹å]:
+    åœ¨try()æ‹¬å·é‡Œè¿›è¡Œåˆ›å»ºæµå¯¹è±¡åŒæ—¶èµ‹å€¼,è‡ªåŠ¨é‡Šæ”¾èµ„æº,ä¸éœ€è¦ä½¿ç”¨finally,ä¸éœ€è¦æŠ›å‡ºå¼‚å¸¸,ç®€åŒ–äº†ä»£ç ï¼YYDS!
 
-[·½·¨Èı JDK9Ö®ºó]:
-    ÔÚÍâÃæ´´½¨Á÷¶ÔÏó²¢¸³Öµ,ÔÚtry()À¨ºÅÄÚÊ¹ÓÃ´´½¨ºÃµÄÁ÷¶ÔÏó,ÓÉÓÚÔÚÍâÃæ´´½¨µÄÁ÷,ËùÒÔÈÔĞèÒªÅ×³öÒì³££¡
+[æ–¹æ³•ä¸‰ JDK9ä¹‹å]:
+    åœ¨å¤–é¢åˆ›å»ºæµå¯¹è±¡å¹¶èµ‹å€¼,åœ¨try()æ‹¬å·å†…ä½¿ç”¨åˆ›å»ºå¥½çš„æµå¯¹è±¡,ç”±äºåœ¨å¤–é¢åˆ›å»ºçš„æµ,æ‰€ä»¥ä»éœ€è¦æŠ›å‡ºå¼‚å¸¸ï¼
 
-[½áÂÛ]:
-    Ê¹ÓÃ·½°¸¶ş±È½ÏºÃµã,¼ò»¯ÁË´úÂë,»¹²»ÓÃÅ×³öÒì³££¡
+[ç»“è®º]:
+    ä½¿ç”¨æ–¹æ¡ˆäºŒæ¯”è¾ƒå¥½ç‚¹,ç®€åŒ–äº†ä»£ç ,è¿˜ä¸ç”¨æŠ›å‡ºå¼‚å¸¸ï¼
 
 */
 
@@ -21,18 +21,18 @@ import java.io.*;
 
 public class HandleIOException {
 
-    public static File fileYuan = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\±ê×¼Òì³£´¦Àí\\Ô´ÎÄ¼ş.txt");
-    public static File fileNewAppend = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\±ê×¼Òì³£´¦Àí");
+    public static File fileYuan = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\æ ‡å‡†å¼‚å¸¸å¤„ç†\\æºæ–‡ä»¶.txt");
+    public static File fileNewAppend = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\æ ‡å‡†å¼‚å¸¸å¤„ç†");
 
-    public static void main(String[] args) throws IOException/*À´Ô´ÓÚJDK9½â¾ö·½°¸*/ {
+    public static void main(String[] args) throws IOException/*æ¥æºäºJDK9è§£å†³æ–¹æ¡ˆ*/ {
 
-        //Æô¶¯Àà
+        //å¯åŠ¨ç±»
         new HandleIOException().init();
 
     }
 
-    //³õÊ¼»¯
-    public void init() throws IOException/*À´Ô´ÓÚJDK9½â¾ö·½°¸*/ {
+    //åˆå§‹åŒ–
+    public void init() throws IOException/*æ¥æºäºJDK9è§£å†³æ–¹æ¡ˆ*/ {
 
         ioeJDK6();
         ioeJDK7();
@@ -41,22 +41,22 @@ public class HandleIOException {
 
     }
 
-    //ÔÚJDK7Ö®Ç°Ê¹ÓÃµÄÒì³£´¦Àí·½·¨
+    //åœ¨JDK7ä¹‹å‰ä½¿ç”¨çš„å¼‚å¸¸å¤„ç†æ–¹æ³•
     public void ioeJDK6() {
-        //·â×°Ä¿µÄÂ·¾¶¶ÔÏó
+        //å°è£…ç›®çš„è·¯å¾„å¯¹è±¡
         File fileNew = new File(fileNewAppend, "\\IOEjdk6\\" + fileYuan.getName());
 
-        //¿ªÊ¼²Ù×÷Êı¾İÔ´
+        //å¼€å§‹æ“ä½œæ•°æ®æº
         BufferedReader br = null;
         BufferedWriter bw = null;
         try {
             br = new BufferedReader(new FileReader(fileYuan));
             bw = new BufferedWriter(new FileWriter(fileNew));
-            //¿ªÊ¼¸´ÖÆ
-            String str1;//×Ö·û»º³åÁ÷¾ÍÓÃÌØÓĞ·½·¨readLend()!!!
+            //å¼€å§‹å¤åˆ¶
+            String str1;//å­—ç¬¦ç¼“å†²æµå°±ç”¨ç‰¹æœ‰æ–¹æ³•readLend()!!!
             while ((str1 = br.readLine()) != null) {
                 bw.write(str1);
-                bw.newLine();//Ê¹ÓÃnewLine()²Ù×÷
+                bw.newLine();//ä½¿ç”¨newLine()æ“ä½œ
                 bw.flush();
             }
 
@@ -82,27 +82,27 @@ public class HandleIOException {
 
     }
 
-    //ÔÚJDK7Ö®ºóÊ¹ÓÃµÄÒì³£´¦Àí·½·¨
+    //åœ¨JDK7ä¹‹åä½¿ç”¨çš„å¼‚å¸¸å¤„ç†æ–¹æ³•
     public void ioeJDK7() {
-        //·â×°Ä¿µÄÂ·¾¶¶ÔÏó
+        //å°è£…ç›®çš„è·¯å¾„å¯¹è±¡
         File fileNew = new File(fileNewAppend, "\\IOEjdk7\\" + fileYuan.getName());
         /*
-        try(¶¨ÒåÁ÷¶ÔÏó){
+        try(å®šä¹‰æµå¯¹è±¡){
 
-        }catch (Òì³£ÀàÃû ±äÁ¿Ãû){
-            Òì³£´¦Àí´úÂë;
+        }catch (å¼‚å¸¸ç±»å å˜é‡å){
+            å¼‚å¸¸å¤„ç†ä»£ç ;
         }
         */
-        //¿ªÊ¼²Ù×÷
-        try (//ÔÚtry()À¨ºÅÀïÃæ ½øĞĞ ´´½¨¶ÔÏó ²¢¸³Öµ
-             //»á×Ô¶¯ÊÍ·Å×ÊÔ´
+        //å¼€å§‹æ“ä½œ
+        try (//åœ¨try()æ‹¬å·é‡Œé¢ è¿›è¡Œ åˆ›å»ºå¯¹è±¡ å¹¶èµ‹å€¼
+             //ä¼šè‡ªåŠ¨é‡Šæ”¾èµ„æº
              BufferedReader br = new BufferedReader(new FileReader(fileYuan));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(fileNew));) {//¿ªÊ¼²Ù×÷
+             BufferedWriter bw = new BufferedWriter(new FileWriter(fileNew));) {//å¼€å§‹æ“ä½œ
             String str2;
             while ((str2 = br.readLine()) != null) {
                 bw.write(str2);
                 bw.newLine();
-                bw.flush();//Ë¢ĞÂÁ÷
+                bw.flush();//åˆ·æ–°æµ
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -111,17 +111,17 @@ public class HandleIOException {
 
     }
 
-    //ÔÚJDK9Ö®ºóÊ¹ÓÃµÄÒì³£´¦Àí·½·¨
-    public void ioeJDK9() throws IOException /*ÈÔÈ»ĞèÒªÅ×³öÒì³£*/ {
-        //·â×°Ä¿µÄÂ·¾¶¶ÔÏó
+    //åœ¨JDK9ä¹‹åä½¿ç”¨çš„å¼‚å¸¸å¤„ç†æ–¹æ³•
+    public void ioeJDK9() throws IOException /*ä»ç„¶éœ€è¦æŠ›å‡ºå¼‚å¸¸*/ {
+        //å°è£…ç›®çš„è·¯å¾„å¯¹è±¡
         File fileNew = new File(fileNewAppend, "\\IOEjdk9\\" + fileYuan.getName());
 
-        //JDK9½â¾ö·½°¸ ÈÔÈ»ĞèÒªÅ×³öÒì³£
+        //JDK9è§£å†³æ–¹æ¡ˆ ä»ç„¶éœ€è¦æŠ›å‡ºå¼‚å¸¸
         BufferedReader br = new BufferedReader(new FileReader(fileYuan));
         BufferedWriter bw = new BufferedWriter(new FileWriter(fileNew));
 
         try (br; bw;) {
-            //¿ªÊ¼²Ù×÷
+            //å¼€å§‹æ“ä½œ
             String str3;
             while ((str3 = br.readLine()) != null) {
                 bw.write(str3);

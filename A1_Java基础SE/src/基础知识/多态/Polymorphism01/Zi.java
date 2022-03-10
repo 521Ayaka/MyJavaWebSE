@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.¶àÌ¬.Polymorphism01;
+package åŸºç¡€çŸ¥è¯†.å¤šæ€.Polymorphism01;
 
 public class Zi extends Fu{
 
     @Override
     public  void method(){
-        System.out.println("×ÓÀà·½·¨");
+        System.out.println("å­ç±»æ–¹æ³•");
     }
 
     public void methodZi(){
-        System.out.println("×ÓÀàÌØÓĞµÄ·½·¨");
+        System.out.println("å­ç±»ç‰¹æœ‰çš„æ–¹æ³•");
     }
 
 }

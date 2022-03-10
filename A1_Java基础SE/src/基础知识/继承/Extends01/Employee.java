@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends01;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends01;
 
 public class Employee {
 
     public void method() {
 
-        System.out.println("·½·¨Ö´ĞĞ£¡");
+        System.out.println("æ–¹æ³•æ‰§è¡Œï¼");
 
     }
 

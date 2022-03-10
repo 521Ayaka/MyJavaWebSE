@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A2_Ïß³Ìµ÷¶È;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A2_çº¿ç¨‹è°ƒåº¦;
 
 public class ThreadPriority extends Thread{
 

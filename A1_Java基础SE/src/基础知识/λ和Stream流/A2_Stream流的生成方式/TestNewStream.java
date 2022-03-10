@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.¦ËºÍStreamÁ÷.A2_StreamÁ÷µÄÉú³É·½Ê½;
+package åŸºç¡€çŸ¥è¯†.Î»å’ŒStreamæµ.A2_Streamæµçš„ç”Ÿæˆæ–¹å¼;
 /*
-    StreamÁ÷µÄ³£¼ûÉú³É·½Ê½:
-        1: Collection¼¯ºÏÌåÏµ ¿ÉÒÔÊ¹ÓÃÄ¬ÈÏ·½·¨stream()Éú³ÉÁ÷
+    Streamæµçš„å¸¸è§ç”Ÿæˆæ–¹å¼:
+        1: Collectioné›†åˆä½“ç³» å¯ä»¥ä½¿ç”¨é»˜è®¤æ–¹æ³•stream()ç”Ÿæˆæµ
                 default Stream<E> stream(){//...}
 
-        2: Map¼¯ºÏÌåÏµ ²»ÄÜÖ±½ÓÉú³É Ö»ÄÜ¼ä½ÓµÄÉú³ÉÁ÷
+        2: Mapé›†åˆä½“ç³» ä¸èƒ½ç›´æ¥ç”Ÿæˆ åªèƒ½é—´æ¥çš„ç”Ÿæˆæµ
 
-        3: Êı×é ¿ÉÒÔÍ¨¹ıStream½Ó¿ÚµÄ¾²Ì¬·½·¨:
-                of(T... values)Éú³ÉÁ÷
+        3: æ•°ç»„ å¯ä»¥é€šè¿‡Streamæ¥å£çš„é™æ€æ–¹æ³•:
+                of(T... values)ç”Ÿæˆæµ
 
 */
 
@@ -18,7 +18,7 @@ import java.util.stream.*;
 public class TestNewStream {
 
     public static void main(String[] args) {
-        //1: Collection¼¯ºÏÌåÏµ ¿ÉÒÔÊ¹ÓÃÄ¬ÈÏ·½·¨stream()Éú³ÉÁ÷
+        //1: Collectioné›†åˆä½“ç³» å¯ä»¥ä½¿ç”¨é»˜è®¤æ–¹æ³•stream()ç”Ÿæˆæµ
         //      default Stream<E> stream(){//...}
         List<String> list = new ArrayList<>();
         Stream<String> listStream = list.stream();
@@ -26,21 +26,21 @@ public class TestNewStream {
         Set<String> set = new HashSet<>();
         Stream<String> setStream = set.stream();
 
-        //2: Map¼¯ºÏÌåÏµ ²»ÄÜÖ±½ÓÉú³É Ö»ÄÜ¼ä½ÓµÄÉú³ÉÁ÷
+        //2: Mapé›†åˆä½“ç³» ä¸èƒ½ç›´æ¥ç”Ÿæˆ åªèƒ½é—´æ¥çš„ç”Ÿæˆæµ
         Map<String,Integer> map =new HashMap<>();
-        //Í¨¹ımapµÄ [¼ü] ºÍ [Öµ] À´Éú³ÉStreamÁ÷
+        //é€šè¿‡mapçš„ [é”®] å’Œ [å€¼] æ¥ç”ŸæˆStreamæµ
         Stream<String> mapKeyStream = map.keySet().stream();
         Stream<Integer> mapValueStream = map.values().stream();
 
-        //Í¨¹ı·ºĞÍÀàĞÍÎªMap¼¯ºÏ
+        //é€šè¿‡æ³›å‹ç±»å‹ä¸ºMapé›†åˆ
         //Stream<Map<String,Integer>> sm =map.entrySet().stream();
 
-        //3: Êı×é ¿ÉÒÔÍ¨¹ıStream½Ó¿ÚµÄ¾²Ì¬·½·¨:
-        //      of(T... values)Éú³ÉÁ÷
-        String[] strArray1 = {"ÓÀÔ¶","°®Äã"};
+        //3: æ•°ç»„ å¯ä»¥é€šè¿‡Streamæ¥å£çš„é™æ€æ–¹æ³•:
+        //      of(T... values)ç”Ÿæˆæµ
+        String[] strArray1 = {"æ°¸è¿œ","çˆ±ä½ "};
         Stream<String> strStream1 = Stream.of(strArray1);
-        Stream<String> strStream2 = Stream.of("ÓÀÔ¶","°®Äã");
-        Stream<Integer> intStream = Stream.of(1,2,3);//¿É±ä²ÎÊı£¬¿ÉÒÔÖ±½ÓĞ´¸öÊı×é£¬Ò²¿ÉÒÔµ¥¶ÀĞ´ÊıÖµ
+        Stream<String> strStream2 = Stream.of("æ°¸è¿œ","çˆ±ä½ ");
+        Stream<Integer> intStream = Stream.of(1,2,3);//å¯å˜å‚æ•°ï¼Œå¯ä»¥ç›´æ¥å†™ä¸ªæ•°ç»„ï¼Œä¹Ÿå¯ä»¥å•ç‹¬å†™æ•°å€¼
 
 
 

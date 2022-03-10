@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Scanner;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Scanner;
 import java.util.Scanner;
 
 public class ScannerLei {
@@ -6,11 +6,11 @@ public class ScannerLei {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("ÄãÒªÌÇ³ÔÂğ£¿Òª´Î£¿²»´Î£¿");
+        System.out.println("ä½ è¦ç³–åƒå—ï¼Ÿè¦æ¬¡ï¼Ÿä¸æ¬¡ï¼Ÿ");
         String wen = sc.next();
 
-        while(!wen.equals("Òª´Î") && !wen.equals("²»´Î")){
-            System.out.println("ŞÏŞÎÌı²»¶®");
+        while(!wen.equals("è¦æ¬¡") && !wen.equals("ä¸æ¬¡")){
+            System.out.println("å°´å°¬å¬ä¸æ‡‚");
             System.out.println("================");
             wen = sc.next();
         }
@@ -21,12 +21,12 @@ public class ScannerLei {
     }
 
     public static void method(String wen){
-        if(wen .equals("Òª´Î")){
+        if(wen .equals("è¦æ¬¡")){
             for(int i = 1; i<=100; i++){
-                System.out.println("²»¸ø²»¸ø>.< ");
+                System.out.println("ä¸ç»™ä¸ç»™>.< ");
             }
         }else{
-            System.out.println("²»´ÎËãÁË");
+            System.out.println("ä¸æ¬¡ç®—äº†");
         }
     }
 }

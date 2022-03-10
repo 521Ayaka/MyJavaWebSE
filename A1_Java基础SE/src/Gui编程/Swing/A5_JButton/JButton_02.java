@@ -1,4 +1,4 @@
-package Gui±à³Ì.Swing.A5_JButton;
+package Guiç¼–ç¨‹.Swing.A5_JButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,26 +9,26 @@ public class JButton_02 extends JFrame {
         super(title);
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init(){
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         Container container = this.getContentPane();
         this.setBounds(500,300,500,400);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         container.setBackground(new Color(47, 238, 212));
 
-        //Ìí¼Ó×é¼ş
-        JRadioButton radio1 = new JRadioButton("ÄĞ");
-        JRadioButton radio2= new JRadioButton("Å®");
-        JRadioButton radio3 = new JRadioButton("ÈËÑı");
+        //æ·»åŠ ç»„ä»¶
+        JRadioButton radio1 = new JRadioButton("ç”·");
+        JRadioButton radio2= new JRadioButton("å¥³");
+        JRadioButton radio3 = new JRadioButton("äººå¦–");
 
-        //´´½¨×é
+        //åˆ›å»ºç»„
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(radio1);
         buttonGroup.add(radio2);
         buttonGroup.add(radio3);
 
-        //Ìí¼Ó²¼¾Ö£¬·ÅÈëÈİÆ÷
+        //æ·»åŠ å¸ƒå±€ï¼Œæ”¾å…¥å®¹å™¨
         container.setLayout(new GridLayout(3,1));
         container.add(radio1);
         container.add(radio2);
@@ -38,7 +38,7 @@ public class JButton_02 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new JButton_02("µ¥Ñ¡¿ò°´Å¥").init();
+        new JButton_02("å•é€‰æ¡†æŒ‰é’®").init();
     }
 
 }

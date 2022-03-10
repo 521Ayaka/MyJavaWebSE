@@ -1,26 +1,26 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.interface07;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.interface07;
 
 public class MyInterfaceImpl extends MyInterfaceImplFu implements MyInterfaceA, MyInterfaceB {
 
 
     @Override
     public void methodA() {
-        System.out.println("¸²¸ÇÖØĞ´ÁË½Ó¿ÚAµ±ÖĞµÄ³éÏó·½·¨");
+        System.out.println("è¦†ç›–é‡å†™äº†æ¥å£Aå½“ä¸­çš„æŠ½è±¡æ–¹æ³•");
     }
 
     @Override
     public void methodB() {
-        System.out.println("¸²¸ÇÖØĞ´ÁË½Ó¿ÚBµ±ÖĞµÄ³éÏó·½·¨");
+        System.out.println("è¦†ç›–é‡å†™äº†æ¥å£Bå½“ä¸­çš„æŠ½è±¡æ–¹æ³•");
     }
 
     @Override
     public void method() {
-        System.out.println("¸²¸ÇÖØĞ´Ò»´Î¶à¸ö½Ó¿Úµ±ÖĞÖØ¸´µÄ³éÏó·½·¨");
+        System.out.println("è¦†ç›–é‡å†™ä¸€æ¬¡å¤šä¸ªæ¥å£å½“ä¸­é‡å¤çš„æŠ½è±¡æ–¹æ³•");
     }
 
     @Override
     public void methodDefault() {
-        System.out.println("¸²¸ÇÖØĞ´ÖØ¸´µÄÄ¬ÈÏ·½·¨£¬³ÉÎªÒ»¸öÆÕÍ¨·½·¨¡£");
+        System.out.println("è¦†ç›–é‡å†™é‡å¤çš„é»˜è®¤æ–¹æ³•ï¼Œæˆä¸ºä¸€ä¸ªæ™®é€šæ–¹æ³•ã€‚");
     }
 
 

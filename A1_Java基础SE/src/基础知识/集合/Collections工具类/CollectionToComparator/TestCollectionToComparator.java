@@ -1,26 +1,26 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collections¹¤¾ßÀà.CollectionToComparator;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collectionså·¥å…·ç±».CollectionToComparator;
 
 
 import java.util.*;
 
 public class TestCollectionToComparator {
 
-    //Æô¶¯Àà
+    //å¯åŠ¨ç±»
     public static void main(String[] args) {
         new TestCollectionToComparator().init();
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init(){
 
-        //´´½¨Ñ§Éú¶ÔÏó
-        Student stu1 = new Student("ŞÏŞÎ½´", 18);
-        Student stu2 = new Student("ŞÏŞÎµÛ", 20);
-        Student stu3 = new Student("ŞÏŞÎÁË", 11);
-        Student stu4 = new Student("Õâ¾ÍŞÏ", 20);
-        Student stu5 = new Student("ŞÏÄ³Ä³", 21);
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+        Student stu1 = new Student("å°´å°¬é…±", 18);
+        Student stu2 = new Student("å°´å°¬å¸", 20);
+        Student stu3 = new Student("å°´å°¬äº†", 11);
+        Student stu4 = new Student("è¿™å°±å°´", 20);
+        Student stu5 = new Student("å°´æŸæŸ", 21);
 
-        //´´½¨ArrayListÊı×é
+        //åˆ›å»ºArrayListæ•°ç»„
         ArrayList<Student> list = new ArrayList<>();
         list.add(stu1);
         list.add(stu2);
@@ -28,7 +28,7 @@ public class TestCollectionToComparator {
         list.add(stu4);
         list.add(stu5);
 
-        //½øĞĞÅÅĞò
+        //è¿›è¡Œæ’åº
         /*Collections.sort(list, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
@@ -36,7 +36,7 @@ public class TestCollectionToComparator {
                 int num = i == 0 ? o1.getName().compareTo(o2.getName()) : i;
                 return num;
             }
-        });*/ //Lambda±í´ïÊ½½øĞĞ¸Ä½ø
+        });*/ //Lambdaè¡¨è¾¾å¼è¿›è¡Œæ”¹è¿›
         Collections.sort(list, (s1,s2)-> {
             int num = s1.getAge() - s2.getAge();
             return num == 0 ? s1.getName().compareTo(s2.getName()) : num;
@@ -46,7 +46,7 @@ public class TestCollectionToComparator {
         Iterator<Student> itr = list.iterator();
         while (itr.hasNext()){
             Student stu = itr.next();
-            System.out.println("ĞÕÃû: "+stu.getName()+", ÄêÁä: "+stu.getAge());
+            System.out.println("å§“å: "+stu.getName()+", å¹´é¾„: "+stu.getAge());
         }
 
     }

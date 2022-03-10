@@ -1,4 +1,4 @@
-package Gui编程.AWT.A3_Layout;
+package Gui缂栫▼.AWT.A3_Layout;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -8,7 +8,7 @@ public class TestBorderLayout {
 
     public static void main(String[] args) {
 
-        Frame frame = new Frame("东西南北中布局");
+        Frame frame = new Frame("涓滆タ鍗楀寳涓竷灞�");
 
         Button north = new Button("north");
         Button south = new Button("south");
@@ -16,14 +16,14 @@ public class TestBorderLayout {
         Button east = new Button("east");
         Button center = new Button("center");
 
-        //将按钮添加到相应位置
+        //灏嗘寜閽坊鍔犲埌鐩稿簲浣嶇疆
         frame.add(north,BorderLayout.NORTH);
         frame.add(south,BorderLayout.SOUTH);
         frame.add(west,BorderLayout.WEST);
         frame.add(east,BorderLayout.EAST);
         frame.add(center,BorderLayout.CENTER);
 
-        //基本设置
+        //鍩烘湰璁剧疆
         frame.setSize(400,400);
         frame.setLocation(500,300);
         frame.setVisible(true);

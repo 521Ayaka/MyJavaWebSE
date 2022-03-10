@@ -1,42 +1,42 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.SimpleDameFormat;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».SimpleDameFormat;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 /*
 
-[¹¹Ôì·½·¨]:
-public SimpleDateFormat(){//...}  ¹¹ÔìÒ»¸öSimpleDateFormat, Ê¹ÓÃÄ¬ÈÏÄ£Ê½ºÍÈÕÆÚ¸ñÊ½
+[æ„é€ æ–¹æ³•]:
+public SimpleDateFormat(){//...}  æ„é€ ä¸€ä¸ªSimpleDateFormat, ä½¿ç”¨é»˜è®¤æ¨¡å¼å’Œæ—¥æœŸæ ¼å¼
 public SimpleDateFormat(String pattern){//...}
 
-[×ÖÄ¸´ú±íµÄ¸ñÊ½]:
-×ÖÄ¸  ÈÕÆÚ»òÊ±¼äÔªËØ  ±íÊ¾  Ê¾Àı
-G ------- Era ±êÖ¾·û  Text  AD
-y ------- Äê  Year  1996; 96
-M ------- ÄêÖĞµÄÔÂ·İ  Month  July; Jul; 07
-w ------- ÄêÖĞµÄÖÜÊı  Number  27
-W ------- ÔÂ·İÖĞµÄÖÜÊı  Number  2
-D ------- ÄêÖĞµÄÌìÊı  Number  189
-d ------- ÔÂ·İÖĞµÄÌìÊı  Number  10
-F ------- ÔÂ·İÖĞµÄĞÇÆÚ  Number  2
-E ------- ĞÇÆÚÖĞµÄÌìÊı  Text  Tuesday; Tue
-a ------- Am/pm ±ê¼Ç  Text  PM
-H ------- Ò»ÌìÖĞµÄĞ¡Ê±Êı£¨0-23£©  Number  0
-k ------- Ò»ÌìÖĞµÄĞ¡Ê±Êı£¨1-24£©  Number  24
-K ------- am/pm ÖĞµÄĞ¡Ê±Êı£¨0-11£© --------Number  0
-h ------- am/pm ÖĞµÄĞ¡Ê±Êı£¨1-12£© --------Number  12
-m ------- Ğ¡Ê±ÖĞµÄ·ÖÖÓÊı--------- Number  30
-s ------- ·ÖÖÓÖĞµÄÃëÊı ---------Number  55
-S ------- ºÁÃëÊı--------------  Number  978
-z ------- Ê±Çø -------------- General time zone  Pacific Standard Time; PST; GMT-08:00
-Z ------- Ê±Çø -------------- RFC 822 time zone  -0800
+[å­—æ¯ä»£è¡¨çš„æ ¼å¼]:
+å­—æ¯  æ—¥æœŸæˆ–æ—¶é—´å…ƒç´   è¡¨ç¤º  ç¤ºä¾‹
+G ------- Era æ ‡å¿—ç¬¦  Text  AD
+y ------- å¹´  Year  1996; 96
+M ------- å¹´ä¸­çš„æœˆä»½  Month  July; Jul; 07
+w ------- å¹´ä¸­çš„å‘¨æ•°  Number  27
+W ------- æœˆä»½ä¸­çš„å‘¨æ•°  Number  2
+D ------- å¹´ä¸­çš„å¤©æ•°  Number  189
+d ------- æœˆä»½ä¸­çš„å¤©æ•°  Number  10
+F ------- æœˆä»½ä¸­çš„æ˜ŸæœŸ  Number  2
+E ------- æ˜ŸæœŸä¸­çš„å¤©æ•°  Text  Tuesday; Tue
+a ------- Am/pm æ ‡è®°  Text  PM
+H ------- ä¸€å¤©ä¸­çš„å°æ—¶æ•°ï¼ˆ0-23ï¼‰  Number  0
+k ------- ä¸€å¤©ä¸­çš„å°æ—¶æ•°ï¼ˆ1-24ï¼‰  Number  24
+K ------- am/pm ä¸­çš„å°æ—¶æ•°ï¼ˆ0-11ï¼‰ --------Number  0
+h ------- am/pm ä¸­çš„å°æ—¶æ•°ï¼ˆ1-12ï¼‰ --------Number  12
+m ------- å°æ—¶ä¸­çš„åˆ†é’Ÿæ•°--------- Number  30
+s ------- åˆ†é’Ÿä¸­çš„ç§’æ•° ---------Number  55
+S ------- æ¯«ç§’æ•°--------------  Number  978
+z ------- æ—¶åŒº -------------- General time zone  Pacific Standard Time; PST; GMT-08:00
+Z ------- æ—¶åŒº -------------- RFC 822 time zone  -0800
 
-[³ÉÔ±·½·¨]:
-          [¸ñÊ½»¯]: Date ---> String
-          public final String format(Date date){//...} ½«ÈÕÆÚ¸ñÊ½»¯³ÉÈÕÆÚ/Ê±¼ä×Ö·û´®
+[æˆå‘˜æ–¹æ³•]:
+          [æ ¼å¼åŒ–]: Date ---> String
+          public final String format(Date date){//...} å°†æ—¥æœŸæ ¼å¼åŒ–æˆæ—¥æœŸ/æ—¶é—´å­—ç¬¦ä¸²
 
-          [½âÎöÈÕÆÚ]: String ---> Date
-          public Date parse(String source){//...} ´ÓÖ¸¶¨×Ö·û´®µÄ¿ªÊ¼½âÎöÎÄ±¾ÒÔÉú³ÉÈÕÆÚ
+          [è§£ææ—¥æœŸ]: String ---> Date
+          public Date parse(String source){//...} ä»æŒ‡å®šå­—ç¬¦ä¸²çš„å¼€å§‹è§£ææ–‡æœ¬ä»¥ç”Ÿæˆæ—¥æœŸ
 
 */
 public class SimpleDameFormat_Lei {
@@ -45,39 +45,39 @@ public class SimpleDameFormat_Lei {
 
         Date date1 = new Date();
 
-        //ÎŞ²Î¹¹Ôì·½·¨
+        //æ— å‚æ„é€ æ–¹æ³•
         SimpleDateFormat sdf1 = new SimpleDateFormat();
-        System.out.println("Ä¬ÈÏÎŞ²Î¹¹Ôì¸ñÊ½:"+sdf1.format(date1)); // Ä¬ÈÏÎŞ²Î¹¹Ôì¸ñÊ½:2021/6/17 ÏÂÎç7:39
+        System.out.println("é»˜è®¤æ— å‚æ„é€ æ ¼å¼:"+sdf1.format(date1)); // é»˜è®¤æ— å‚æ„é€ æ ¼å¼:2021/6/17 ä¸‹åˆ7:39
 
-        //ÓĞ²Î¹¹Ôì·½·¨
-        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss:SS \n a hh:mm:ss:SS \n E F d ");
-        String str = sdf2.format(date1); //¸Ã·½·¨·µ»ØÖµÊÇString, ¿ÉÒÔ½ÓÊÕString¡£
+        //æœ‰å‚æ„é€ æ–¹æ³•
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss:SS \n a hh:mm:ss:SS \n E F d ");
+        String str = sdf2.format(date1); //è¯¥æ–¹æ³•è¿”å›å€¼æ˜¯String, å¯ä»¥æ¥æ”¶Stringã€‚
         System.out.println(sdf2.format(date1));
 
         System.out.println("========================================================================================");
 
-        //³ÉÔ±·½·¨
+        //æˆå‘˜æ–¹æ³•
 
-        //[¸ñÊ½»¯]: Date ---> String
-        //public final String format(){//...} ½«ÈÕÆÚ¸ñÊ½»¯³ÉÈÕÆÚ/Ê±¼ä×Ö·û´®
-        SimpleDateFormat sdf3 = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ EE HH:mm:ss:SS");
+        //[æ ¼å¼åŒ–]: Date ---> String
+        //public final String format(){//...} å°†æ—¥æœŸæ ¼å¼åŒ–æˆæ—¥æœŸ/æ—¶é—´å­—ç¬¦ä¸²
+        SimpleDateFormat sdf3 = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ EE HH:mm:ss:SS");
         System.out.println(sdf1.format(date1));
         System.out.println(sdf3.format(date1));
 
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-        //[½âÎöÈÕÆÚ]: String ---> Date
-        //public Date parse(String source){//...} ´ÓÖ¸¶¨×Ö·û´®µÄ¿ªÊ¼½âÎöÎÄ±¾ÒÔÉú³ÉÈÕÆÚ
-        SimpleDateFormat pattern = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ E HH:mm:ss");
+        //[è§£ææ—¥æœŸ]: String ---> Date
+        //public Date parse(String source){//...} ä»æŒ‡å®šå­—ç¬¦ä¸²çš„å¼€å§‹è§£ææ–‡æœ¬ä»¥ç”Ÿæˆæ—¥æœŸ
+        SimpleDateFormat pattern = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ E HH:mm:ss");
         /*
-        String strDate = "1999-12-12 12:12:12:10";                  //¸ñÊ½¶Ô²»ÉÏ¾Í»á´íÎó
+        String strDate = "1999-12-12 12:12:12:10";                  //æ ¼å¼å¯¹ä¸ä¸Šå°±ä¼šé”™è¯¯
         Date dateX = pattern.parse(strDate);
         System.out.println(dateX);
         Exception in thread "main" java.text.ParseException: Unparseable date: "1999-12-12 12:12:12:10"
         at java.base/java.text.DateFormat.parse(DateFormat.java:396)
-        at MyJava.»ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.SimpleDameFormat.SimpleDameFormat_Lei.main(SimpleDameFormat_Lei.java:73)
+        at MyJava.åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».SimpleDameFormat.SimpleDameFormat_Lei.main(SimpleDameFormat_Lei.java:73)
         */
-        String strDate = "2021Äê6ÔÂ15ÈÕ ĞÇÆÚ¶ş 10:20:30";
+        String strDate = "2021å¹´6æœˆ15æ—¥ æ˜ŸæœŸäºŒ 10:20:30";
         Date dateX = pattern.parse(strDate);
         System.out.println(dateX);
     }

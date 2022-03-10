@@ -1,4 +1,4 @@
-package C3_×¢½â.D5_Junit¼Ó×¢½â°¸Àý;
+package C3_æ³¨è§£.D5_JunitåŠ æ³¨è§£æ¡ˆä¾‹;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface TestAnn {
 
-    //ÉèÖÃ×¢½â
+    //è®¾ç½®æ³¨è§£
 
 }

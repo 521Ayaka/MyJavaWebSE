@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ð.Extends07;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends07;
 
 public class Constructor {
     public Constructor() {

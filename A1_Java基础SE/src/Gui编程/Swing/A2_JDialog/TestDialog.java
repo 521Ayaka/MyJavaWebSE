@@ -1,12 +1,12 @@
-package Gui±à³Ì.Swing.A2_JDialog;
+package Guiç¼–ç¨‹.Swing.A2_JDialog;
 /*
-ÖØµã£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+é‡ç‚¹ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
-Dialogµ¯´°ÊÇÒ»¸öÀà£¬ÕæÊÇÕæÊµ´æÔÚµÄ£¬Ò»°ãVisibleÎªtrue
+Dialogå¼¹çª—æ˜¯ä¸€ä¸ªç±»ï¼ŒçœŸæ˜¯çœŸå®å­˜åœ¨çš„ï¼Œä¸€èˆ¬Visibleä¸ºtrue
 
-µ±µ÷ÓÃµ¯´°µÄÊ±ºò£¬»á´´½¨Õâ¸ö¶ÔÏó£¬Ê¹ÆäÔËĞĞ
+å½“è°ƒç”¨å¼¹çª—çš„æ—¶å€™ï¼Œä¼šåˆ›å»ºè¿™ä¸ªå¯¹è±¡ï¼Œä½¿å…¶è¿è¡Œ
 
-µ¯´°ÓĞÄ¬ÈÏµÄ¹Ø±Õ£¬²»ĞèÒªÔÙ¼ÓÈë£¬·ñÔò»á±¨´í
+å¼¹çª—æœ‰é»˜è®¤çš„å…³é—­ï¼Œä¸éœ€è¦å†åŠ å…¥ï¼Œå¦åˆ™ä¼šæŠ¥é”™
 
 */
 
@@ -27,22 +27,22 @@ class MyJFrame extends JFrame{
 
     private Container container;
 
-    //³õÊ¼»¯´°Ìå
+    //åˆå§‹åŒ–çª—ä½“
     public void init(){
         this.setBounds(500,300,500,400);
         this.setBackground(new Color(25, 204, 236));
         this.setVisible(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setLayout(null);
-        //Ìí¼ÓÈİÆ÷
+        //æ·»åŠ å®¹å™¨
         this.container = this.getContentPane();
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         Sub();
     }
 
-    //×é¼ş
+    //ç»„ä»¶
     public void Sub (){
-        JButton jButton = new JButton("µ¯´°°´Å¥");
+        JButton jButton = new JButton("å¼¹çª—æŒ‰é’®");
         jButton.setBounds(150,150,200,100);
         jButton.setBackground(new Color(224, 9, 231));
         jButton.addActionListener(new ActionListener() {
@@ -57,7 +57,7 @@ class MyJFrame extends JFrame{
     }
 
 }
-//JDialog±¾Éí¾ÍÊÇÒ»¸ö´°Ìå£¬²»ÄÜÔÚÁíÒ»¸ö´°Ìå×é¼şÖĞÌí¼Ó£¡£¡£¡
+//JDialogæœ¬èº«å°±æ˜¯ä¸€ä¸ªçª—ä½“ï¼Œä¸èƒ½åœ¨å¦ä¸€ä¸ªçª—ä½“ç»„ä»¶ä¸­æ·»åŠ ï¼ï¼ï¼
 class MyDialog extends JDialog{
 
     public MyDialog(){
@@ -67,14 +67,14 @@ class MyDialog extends JDialog{
         Container cPane = this.getContentPane();
         cPane.setBackground(new Color(255, 8, 132));
 
-        //ÉèÖÃÕâÖÖÎŞ²¼¾ÖÄ£Ê½Ê±²ÎÊıÎª(null)Ê±,Ìí¼ÓµÄ×é¼şÒªÉèÖÃ´óĞ¡Î»ÖÃµÈĞÅÏ¢£¡£¡£¡ÇÒÉèÖÃºóÏÂÃæ±êÇ©Ò²²»»á¾ÓÖĞÁË£¬³ı·Çµ÷½ÚLocation
+        //è®¾ç½®è¿™ç§æ— å¸ƒå±€æ¨¡å¼æ—¶å‚æ•°ä¸º(null)æ—¶,æ·»åŠ çš„ç»„ä»¶è¦è®¾ç½®å¤§å°ä½ç½®ç­‰ä¿¡æ¯ï¼ï¼ï¼ä¸”è®¾ç½®åä¸‹é¢æ ‡ç­¾ä¹Ÿä¸ä¼šå±…ä¸­äº†ï¼Œé™¤éè°ƒèŠ‚Location
         //cPane.setLayout(null);
 
-        JLabel label = new JLabel("µ¯´°ÒÑ±»µ¯´°£¡", SwingConstants.CENTER);
+        JLabel label = new JLabel("å¼¹çª—å·²è¢«å¼¹çª—ï¼", SwingConstants.CENTER);
         label.setSize(200,100);
-        label.setFont(new Font("ËÎÌå",Font.BOLD,25));
+        label.setFont(new Font("å®‹ä½“",Font.BOLD,25));
 
-        //Ìí¼Ó±êÇ©
+        //æ·»åŠ æ ‡ç­¾
         cPane.add(label);
 
     }

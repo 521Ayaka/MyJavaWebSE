@@ -1,7 +1,7 @@
-package Gui±à³Ì.AWT.A1_Frame;
+package Guiç¼–ç¨‹.AWT.A1_Frame;
 
 /*
-Ê¹ÓÃ·â×°´´½¨¶à¸ö´°Ìå
+ä½¿ç”¨å°è£…åˆ›å»ºå¤šä¸ªçª—ä½“
 */
 
 import java.awt.*;
@@ -18,14 +18,14 @@ public class Frame02 {
 
 }
 
-//¶¨Ò»¸ö¸öÄÚ²¿Àà
+//å®šä¸€ä¸ªä¸ªå†…éƒ¨ç±»
 class newFrame extends Frame{
-    //¿ÉÄÜÓĞ¶à¸ö´°¿Ú£¬ÉèÖÃÒ»¸ö¼ÆÊıÆ÷id
+    //å¯èƒ½æœ‰å¤šä¸ªçª—å£ï¼Œè®¾ç½®ä¸€ä¸ªè®¡æ•°å™¨id
     static int id=0;
 
-    //´´½¨¹¹ÔìÆ÷
+    //åˆ›å»ºæ„é€ å™¨
     public newFrame(int x,int y,int w,int h,Color color){
-        super("ÊÇÓÉAWT´´½¨javaÍ¼ĞÎ½çÃæ" + (++id));
+        super("æ˜¯ç”±AWTåˆ›å»ºjavaå›¾å½¢ç•Œé¢" + (++id));
         setVisible(true);
         setLocation(x,y);
         setSize(w,h);

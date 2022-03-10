@@ -1,32 +1,32 @@
-package Gui±‡≥Ã.JGame;
+package GuiÁºñÁ®ã.JGame;
 
 import javax.swing.*;
 import java.net.URL;
 
 public class URLGame {
 
-    //…ÌÃÂ
+    //Ë∫´‰Ωì
     public static URL bodyURL = URLGame.class.getResource("statics/body.png");
     public static ImageIcon body =new ImageIcon(bodyURL);
 
-    //Õ∑≤ø
+    //Â§¥ÈÉ®
     public static URL upURL = URLGame.class.getResource("statics/up.png");
-    public static ImageIcon up = new ImageIcon(upURL);//…œ
+    public static ImageIcon up = new ImageIcon(upURL);//‰∏ä
 
     public static URL downURL =  URLGame.class.getResource("statics/down.png");
-    public static ImageIcon down = new ImageIcon(downURL);//œ¬≤ø
+    public static ImageIcon down = new ImageIcon(downURL);//‰∏ãÈÉ®
 
     public static URL leftURL =  URLGame.class.getResource("statics/left.png");
-    public static ImageIcon left = new ImageIcon(leftURL);//◊Û≤ø
+    public static ImageIcon left = new ImageIcon(leftURL);//Â∑¶ÈÉ®
 
     public static URL rightURL =  URLGame.class.getResource("statics/right.png");
-    public static ImageIcon right = new ImageIcon(rightURL);//”“≤ø
+    public static ImageIcon right = new ImageIcon(rightURL);//Âè≥ÈÉ®
 
-    // ≥ŒÔ
+    //È£üÁâ©
     public static URL foodURL =  URLGame.class.getResource("statics/food.png");
-    public static ImageIcon food = new ImageIcon(foodURL);//œ¬≤ø
+    public static ImageIcon food = new ImageIcon(foodURL);//‰∏ãÈÉ®
 
-    //π„∏Ê
+    //ÂπøÂëä
     public static URL imgURL = URLGame.class.getResource("statics/TestOutputStreamImpl.png");
     public static ImageIcon img = new ImageIcon(imgURL);
 

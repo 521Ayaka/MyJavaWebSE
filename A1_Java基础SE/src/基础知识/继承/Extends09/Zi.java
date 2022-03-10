@@ -1,5 +1,5 @@
 
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends09;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends09;
 
 public class Zi extends Fu {
     int num;
@@ -23,17 +23,17 @@ public class Zi extends Fu {
 
     public Zi() {
         this(666);
-        System.out.println("×ÓÀàÎŞ²Î¹¹Ôì·½·¨Ö´ĞĞ");
+        System.out.println("å­ç±»æ— å‚æ„é€ æ–¹æ³•æ‰§è¡Œ");
     }
 
     public Zi(int x) {
         this(222, 333);
         System.out.println("====================================");
-        System.out.println("×ÓÀàÁíÒ»¸ö¹¹Ôì·½·¨Ö´ĞĞ£¡²ÎÊıÎª£º" + x + "¡£");
+        System.out.println("å­ç±»å¦ä¸€ä¸ªæ„é€ æ–¹æ³•æ‰§è¡Œï¼å‚æ•°ä¸ºï¼š" + x + "ã€‚");
     }
 
     public Zi(int x, int y) {
         this.num = 123;
-        System.out.println("×ÓÀàÁíÁíÒ»¸ö¹¹Ôì·½·¨Ö´ĞĞ£¡²ÎÊıÎª£º" + x + "&&" + y + "¡£");
+        System.out.println("å­ç±»å¦å¦ä¸€ä¸ªæ„é€ æ–¹æ³•æ‰§è¡Œï¼å‚æ•°ä¸ºï¼š" + x + "&&" + y + "ã€‚");
     }
 }

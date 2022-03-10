@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿2;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®2;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,57 +10,57 @@ public class Array_Method {
     public static void main(String[] args) {
 
         String str = "ABCDEFG";
-        //ÏÈ½øĞĞ×ª»»ÎªÊı×é   img_toCharArray_method.png
+        //å…ˆè¿›è¡Œè½¬æ¢ä¸ºæ•°ç»„   img_toCharArray_method.png
         char[] chars = str.toCharArray();
 
-        //½øĞĞ·´×ª    img_Array_²Ù×÷_±Ê¼Ç.png
+        //è¿›è¡Œåè½¬    img_Array_æ“ä½œ_ç¬”è®°.png
 
-        method1(chars);//·½·¨Ò»
-        System.out.println("»Ø¹é");
+        method1(chars);//æ–¹æ³•ä¸€
+        System.out.println("å›å½’");
         method1(chars);
 
         System.out.println("==================");
 
-        method2(chars);//·½·¨¶ş
+        method2(chars);//æ–¹æ³•äºŒ
 
         System.out.println("==================");
 
-        //×ª»»Îª×Ö·û´®    StringµÄÈıÖÖ´´½¨·½Ê½Ö® char[]´´½¨¡£
+        //è½¬æ¢ä¸ºå­—ç¬¦ä¸²    Stringçš„ä¸‰ç§åˆ›å»ºæ–¹å¼ä¹‹ char[]åˆ›å»ºã€‚
         String StringNewCharArray = new String(chars);
 
-        System.out.println("ĞÂ×Ö·û´®:"+StringNewCharArray);
+        System.out.println("æ–°å­—ç¬¦ä¸²:"+StringNewCharArray);
 
 
     }
 
-    //·½·¨Ò»
+    //æ–¹æ³•ä¸€
     public static void method1(char[] chars){
         for (int min = 0 , max = chars.length-1; min < max; min++,max--){
             char ling = chars[min];
             chars[min] = chars[max];
             chars[max] = ling;
         }
-        //½øĞĞ±éÀúÑéÖ¤
+        //è¿›è¡Œéå†éªŒè¯
         for (char ch:chars
         ) {
             System.out.println(ch);
         }
     }
 
-    //·½·¨¶ş ¸ÕÑ§µÄ¼¯ºÏ£¬¾ÍÓÃ¼¯ºÏ°É¡£
+    //æ–¹æ³•äºŒ åˆšå­¦çš„é›†åˆï¼Œå°±ç”¨é›†åˆå§ã€‚
     public static void method2(char[] chars){
         List<Character> arrayList = new ArrayList<Character>();
         for (int i = 0; i < chars.length; i++) {
             arrayList.add(chars[i]);
         }
-        //·´×ªµÄ·½·¨
+        //åè½¬çš„æ–¹æ³•
         Collections.reverse(arrayList);
-        //°Ñlist¼¯ºÏÖØĞÂ¸³Öµ¸øchars¼¯ºÏ
+        //æŠŠlisté›†åˆé‡æ–°èµ‹å€¼ç»™charsé›†åˆ
         for (int i = 0; i < chars.length; i++) {
             chars[i] = arrayList.get(i);
         }
 
-        //Ê¹ÓÃµü´úÆ÷½øĞĞ±éÀú
+        //ä½¿ç”¨è¿­ä»£å™¨è¿›è¡Œéå†
         Iterator<Character> itr = arrayList.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());

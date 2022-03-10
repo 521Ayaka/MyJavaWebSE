@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.Àà¿â.GetSet;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.GetSet;
 
 public class GetSet {
     public static void main(String[] args) {
         GetSetaLei01 lei03 = new GetSetaLei01();
-        lei03.setName("ŞÏŞÎ½´");
-        lei03.setGan("¾ŞÁúÖ®³²");
+        lei03.setName("å°´å°¬é…±");
+        lei03.setGan("å·¨é¾™ä¹‹å·¢");
         lei03.setEn(true);
-        System.out.println("ÎÒ½Ğ¡¾"+lei03.getName()+"¡¿£¬ÎÒÔÚ¡¾"+lei03.getGan()+"¡¿£¬Ò»¡¾"+lei03.wan+"¡¿£¬ÎÒºÜ¡¾"+lei03.i + "¡¿¶ÔÂğ?!"+"¡¾"+lei03.isEn()+"¡¿");
-        //ÆäÖĞµÄbooleanÖĞµÄget»»³Éis... ÈçisEn
+        System.out.println("æˆ‘å«ã€"+lei03.getName()+"ã€‘ï¼Œæˆ‘åœ¨ã€"+lei03.getGan()+"ã€‘ï¼Œä¸€ã€"+lei03.wan+"ã€‘ï¼Œæˆ‘å¾ˆã€"+lei03.i + "ã€‘å¯¹å—?!"+"ã€"+lei03.isEn()+"ã€‘");
+        //å…¶ä¸­çš„booleanä¸­çš„getæ¢æˆis... å¦‚isEn
     
     
     }

@@ -1,8 +1,8 @@
-package C3_×¢½â.D4_½âÎö×¢½â;
+package C3_æ³¨è§£.D4_è§£ææ³¨è§£;
 /*
 
-×¢½â£º
-À´ÃèÊöĞèÒªÖ´ĞĞµÄÀàÃû, ºÍ·½·¨Ãû
+æ³¨è§£ï¼š
+æ¥æè¿°éœ€è¦æ‰§è¡Œçš„ç±»å, å’Œæ–¹æ³•å
 
  */
 
@@ -12,7 +12,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-//Ìí¼ÓÔª×¢½â
+//æ·»åŠ å…ƒæ³¨è§£
 @Target(value = {ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 

@@ -1,4 +1,4 @@
-package 基础知识.类库.Random;
+package 鍩虹鐭ヨ瘑.绫诲簱.Random;
 
 import java.util.Random;
 

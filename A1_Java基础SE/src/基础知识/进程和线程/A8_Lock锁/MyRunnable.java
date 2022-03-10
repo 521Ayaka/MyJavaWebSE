@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A8_LockËø;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A8_Locké”;
 /*
-Ê¹ÓÃ ReentrantLockÀ´ÊµÏÖLock½Ó¿Ú
-Ê¹ÓÃ lock()·½·¨   ÉÏËø
-Ê¹ÓÃ unlock()·½·¨ ¿ªËø
+ä½¿ç”¨ ReentrantLockæ¥å®ç°Lockæ¥å£
+ä½¿ç”¨ lock()æ–¹æ³•   ä¸Šé”
+ä½¿ç”¨ unlock()æ–¹æ³• å¼€é”
 
-Ê¹ÓÃ try{
+ä½¿ç”¨ try{
         lock();
 
     }finally{
         unlock();
     }
-    ´úÂë¿é ½øĞĞ¼ÓËø¿ªËø ±£Ö¤Ò»¶¨Òª¿ªËø
+    ä»£ç å— è¿›è¡ŒåŠ é”å¼€é” ä¿è¯ä¸€å®šè¦å¼€é”
 
 */
 
@@ -19,45 +19,45 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class MyRunnable implements Runnable {
     private int tick = 100;
-    //´´½¨LockËø
+    //åˆ›å»ºLocké”
     private Lock lock = new ReentrantLock();
 
-    //ÖØĞ´run·½·¨
+    //é‡å†™runæ–¹æ³•
     @Override
     public void run() {
         while (true) {
 
             /*
-            //ÉÏËø
-            lock.lock();//ÉÏËø
+            //ä¸Šé”
+            lock.lock();//ä¸Šé”
             if (tick > 0) {
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + ":ÕıÔÚ³öÊÛµÚ" + tick + "ÕÅÆ±");
+                System.out.println(Thread.currentThread().getName() + ":æ­£åœ¨å‡ºå”®ç¬¬" + tick + "å¼ ç¥¨");
                 tick--;
             }
-            //¿ªËø
-            lock.unlock();//¿ªËø
+            //å¼€é”
+            lock.unlock();//å¼€é”
             */
 
-            //ÉÏËø
-            try {//Èç¹ûÕâÀïÃæ³öÏÖÁËÎÊÌâ,Ò²²»»áÓ°ÏìfinallyÀïÃæµÄ¿ªËø
-                lock.lock();//ÉÏËø
+            //ä¸Šé”
+            try {//å¦‚æœè¿™é‡Œé¢å‡ºç°äº†é—®é¢˜,ä¹Ÿä¸ä¼šå½±å“finallyé‡Œé¢çš„å¼€é”
+                lock.lock();//ä¸Šé”
                 if (tick > 0) {
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(Thread.currentThread().getName() + ":ÕıÔÚ³öÊÛµÚ" + tick + "ÕÅÆ±");
+                    System.out.println(Thread.currentThread().getName() + ":æ­£åœ¨å‡ºå”®ç¬¬" + tick + "å¼ ç¥¨");
                     tick--;
                 }
-            } finally {//finallyÒ»¶¨Ö´ĞĞ
-                //¿ªËø
-                lock.unlock();//¿ªËø
+            } finally {//finallyä¸€å®šæ‰§è¡Œ
+                //å¼€é”
+                lock.unlock();//å¼€é”
             }
 
 

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°2;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 2;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,57 +12,57 @@ public class DameHashMap {
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
 
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         System.out.println("===============================================");
 
-        //´´½¨HashMap¼¯ºÏ
+        //åˆ›å»ºHashMapé›†åˆ
         HashMap<Student, String> hashMap = new HashMap<>();
 
-        //´´½¨Ñ§Éú¶ÔÏó
-        //Ìí¼Ó¶ÔÏóÒª±£Ö¤³ÉÔ±±äÁ¿ºÍ³ÉÔ±·½·¨²»Í¬£¬±£Ö¤Î¨Ò»ĞÔ
-        //ĞèÒª¸øStudent_hashÖØĞ´hashCode()ºÍequals()·½·¨¡£
-        Student stu1 = new Student("ŞÏŞÎ½´", 18);
-        Student stu2 = new Student("ŞÏŞÎµÛ", 20);
-        Student stu3 = new Student("ŞÏŞÎÁË", 11);
-        Student stu4 = new Student("ŞÏŞÎÁË", 11);//ÖØ¸´ÔªËØ¶ÔÏó
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+        //æ·»åŠ å¯¹è±¡è¦ä¿è¯æˆå‘˜å˜é‡å’Œæˆå‘˜æ–¹æ³•ä¸åŒï¼Œä¿è¯å”¯ä¸€æ€§
+        //éœ€è¦ç»™Student_hashé‡å†™hashCode()å’Œequals()æ–¹æ³•ã€‚
+        Student stu1 = new Student("å°´å°¬é…±", 18);
+        Student stu2 = new Student("å°´å°¬å¸", 20);
+        Student stu3 = new Student("å°´å°¬äº†", 11);
+        Student stu4 = new Student("å°´å°¬äº†", 11);//é‡å¤å…ƒç´ å¯¹è±¡
 
-        //ÏòhashMap¼¯ºÏµ±ÖĞÌí¼Ó¼üÖµ¶Ô
+        //å‘hashMapé›†åˆå½“ä¸­æ·»åŠ é”®å€¼å¯¹
         hashMap.put(stu1, "20202218");
         hashMap.put(stu2, "20202220");
         hashMap.put(stu3, "20202211");
         hashMap.put(stu4, "20202211");
 
-        //Ö±½Ó´òÓ¡hashMap
+        //ç›´æ¥æ‰“å°hashMap
         System.out.println(hashMap);
-        //½á¹û£º
-        // {A1_MyJava.»ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°2.Student_hash@2b4d4e7e=20202211,
-        //  A1_MyJava.»ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°2.Student_hash@2b5568fa=20202218,
-        //  A1_MyJava.»ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°2.Student_hash@2b4f31d0=20202220}
+        //ç»“æœï¼š
+        // {A1_MyJava.åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 2.Student_hash@2b4d4e7e=20202211,
+        //  A1_MyJava.åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 2.Student_hash@2b5568fa=20202218,
+        //  A1_MyJava.åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 2.Student_hash@2b4f31d0=20202220}
 
-        //ÖØĞ´ÁËhashCode()ºÍequals()·½·¨ºó£¬¶ÔÓÚÊôĞÔ£¨³ÉÔ±±äÁ¿£©ÏàÍ¬Ê±£¬ÊÓÎªÏàÍ¬ÔªËØ
+        //é‡å†™äº†hashCode()å’Œequals()æ–¹æ³•åï¼Œå¯¹äºå±æ€§ï¼ˆæˆå‘˜å˜é‡ï¼‰ç›¸åŒæ—¶ï¼Œè§†ä¸ºç›¸åŒå…ƒç´ 
 
-        //Ñ­»·±éÀú ·½·¨Ò»
+        //å¾ªç¯éå† æ–¹æ³•ä¸€
         Set<Student> keyId = hashMap.keySet();
         for (Student stu : keyId) {
-            //µÃµ½¶ÔÓ¦µÄvalueÖµ
+            //å¾—åˆ°å¯¹åº”çš„valueå€¼
             String id = hashMap.get(stu);
-            //´òÓ¡ĞÅÏ¢
-            System.out.println("ĞÕÃûÎª: " + stu.getName() + ", ÄêÁä: " + stu.getAge() + ", Ñ§ºÅ: " + id);
+            //æ‰“å°ä¿¡æ¯
+            System.out.println("å§“åä¸º: " + stu.getName() + ", å¹´é¾„: " + stu.getAge() + ", å­¦å·: " + id);
         }
 
         System.out.println("===============================================");
 
-        //Ñ­»·±éÀú ·½·¨¶ş
+        //å¾ªç¯éå† æ–¹æ³•äºŒ
         Set<Map.Entry<Student, String>> hashEm = hashMap.entrySet();
         for (Map.Entry<Student, String> stuId : hashEm) {
-            //»ñµÃ¼üÖµ
+            //è·å¾—é”®å€¼
             Student key = stuId.getKey();
             String value = stuId.getValue();
-            //´òÓ¡ĞÅÏ¢
-            System.out.println("ĞÕÃûÎª: " + key.getName() + ", ÄêÁä: " + key.getAge() + ", Ñ§ºÅ: " + value);
+            //æ‰“å°ä¿¡æ¯
+            System.out.println("å§“åä¸º: " + key.getName() + ", å¹´é¾„: " + key.getAge() + ", å­¦å·: " + value);
         }
 
 

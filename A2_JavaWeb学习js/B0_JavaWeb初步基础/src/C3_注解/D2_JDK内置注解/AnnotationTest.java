@@ -1,42 +1,42 @@
-package C3_×¢½â.D2_JDKÄÚÖÃ×¢½â;
+package C3_æ³¨è§£.D2_JDKå†…ç½®æ³¨è§£;
 /*
 
-JDKÖĞÔ¤¶¨ÒåµÄÒ»Ğ©×¢½â
+JDKä¸­é¢„å®šä¹‰çš„ä¸€äº›æ³¨è§£
 
-	* @Override	£º¼ì²â±»¸Ã×¢½â±ê×¢µÄ·½·¨ÊÇ·ñÊÇ¼Ì³Ğ×Ô¸¸Àà(½Ó¿Ú)µÄ
-	* @Deprecated£º¸Ã×¢½â±ê×¢µÄÄÚÈİ£¬±íÊ¾ÒÑ¹ıÊ±
-	* @SuppressWarnings£ºÑ¹ÖÆ¾¯¸æ
-		* Ò»°ã´«µİ²ÎÊıall  @SuppressWarnings("all")
+	* @Override	ï¼šæ£€æµ‹è¢«è¯¥æ³¨è§£æ ‡æ³¨çš„æ–¹æ³•æ˜¯å¦æ˜¯ç»§æ‰¿è‡ªçˆ¶ç±»(æ¥å£)çš„
+	* @Deprecatedï¼šè¯¥æ³¨è§£æ ‡æ³¨çš„å†…å®¹ï¼Œè¡¨ç¤ºå·²è¿‡æ—¶
+	* @SuppressWarningsï¼šå‹åˆ¶è­¦å‘Š
+		* ä¸€èˆ¬ä¼ é€’å‚æ•°all  @SuppressWarnings("all")
 
-    @SuppressWarnings("all")  ÊÇÓĞ²ÎÊıµÄ£¡
+    @SuppressWarnings("all")  æ˜¯æœ‰å‚æ•°çš„ï¼
 */
 
 import org.junit.jupiter.api.Test;
 
-@SuppressWarnings("all") //×÷ÓÃÀàÇ°£¬ÕòÑ¹ÀàÈ«²¿°´¾¯¸æ
+@SuppressWarnings("all") //ä½œç”¨ç±»å‰ï¼Œé•‡å‹ç±»å…¨éƒ¨æŒ‰è­¦å‘Š
 public class AnnotationTest {
 
-    @SuppressWarnings("all")  //×÷ÓÃ·½·¨Ç°£¬ÕòÑ¹·½·¨È«²¿¾¯¸æ
-    @Override //Override ±àÒë¼ì²âÊÇ·ñÖØĞ´¸¸Àà·½·¨
+    @SuppressWarnings("all")  //ä½œç”¨æ–¹æ³•å‰ï¼Œé•‡å‹æ–¹æ³•å…¨éƒ¨è­¦å‘Š
+    @Override //Override ç¼–è¯‘æ£€æµ‹æ˜¯å¦é‡å†™çˆ¶ç±»æ–¹æ³•
     public String toString(){
-        String s = "ÖØĞ´toString";
+        String s = "é‡å†™toString";
         return s;
     }
 
     @Test
     public void testDeprecated(){
-        me1(); //idea»áÌáÊ¾¸Ã·½·¨ÒÑ¹ıÊ±¡£
+        me1(); //ideaä¼šæç¤ºè¯¥æ–¹æ³•å·²è¿‡æ—¶ã€‚
         me2();
 
     }
 
     @Deprecated
     public void me1(){
-        System.out.println("me1ÒÑ»Ä·Ï,²»ÍÆÑ¡Ê¹ÓÃ");
+        System.out.println("me1å·²è’åºŸ,ä¸æ¨é€‰ä½¿ç”¨");
     }
 
     public void me2(){
-        System.out.println("me2ÍêÉÆÁËme1·½·¨");
+        System.out.println("me2å®Œå–„äº†me1æ–¹æ³•");
     }
 
 

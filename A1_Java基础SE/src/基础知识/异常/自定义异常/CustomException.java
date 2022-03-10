@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Òì³£.×Ô¶¨ÒåÒì³£;
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.è‡ªå®šä¹‰å¼‚å¸¸;
 
 public class CustomException extends Exception{
 

@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷.A2_¶ÔÏó·´ĞòÁĞ»¯Á÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ.A2_å¯¹è±¡ååºåˆ—åŒ–æµ;
 /*
-¶ÔÏó·´ĞòÁĞ»¯Á÷: ObjectInputStream
-        -- ObjectInputStream·´ĞòÁĞ»¯ÏÈÇ°Ê¹ÓÃObjectOutputSteam±àĞ´µÄÔ­Ê¼Êı¾İºÍ¶ÔÏó
+å¯¹è±¡ååºåˆ—åŒ–æµ: ObjectInputStream
+        -- ObjectInputStreamååºåˆ—åŒ–å…ˆå‰ä½¿ç”¨ObjectOutputSteamç¼–å†™çš„åŸå§‹æ•°æ®å’Œå¯¹è±¡
 
-¹¹Ôì·½·¨:
-        -- ObjectInputSteam(InputSteam in): ´´½¨´ÓÖ¸¶¨µÄInputSteam¶ÁÈ¡µÄObjectStream
+æ„é€ æ–¹æ³•:
+        -- ObjectInputSteam(InputSteam in): åˆ›å»ºä»æŒ‡å®šçš„InputSteamè¯»å–çš„ObjectStream
 
-·´ĞòÁĞ»¯¶ÔÏóµÄ·½·¨:
-        -- Object readObject(): ´ÓObjectInputStream¶ÁÈ¡Ò»¸ö¶ÔÏó,·µ»ØÖµÊÇÒ»¸ö¶ÔÏó
+ååºåˆ—åŒ–å¯¹è±¡çš„æ–¹æ³•:
+        -- Object readObject(): ä»ObjectInputStreamè¯»å–ä¸€ä¸ªå¯¹è±¡,è¿”å›å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡
 
 */
 
-import »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷.A1_¶ÔÏóĞòÁĞ»¯Á÷.Student2;
+import åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ.A1_å¯¹è±¡åºåˆ—åŒ–æµ.Student2;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -21,18 +21,18 @@ public class TestObjectInputStream {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        //´´½¨·´ĞòÁĞ»¯Á÷¶ÔÏó¡£¹¹Ôì·½·¨:ObjectInputSteam(InputSteam in): ´´½¨´ÓÖ¸¶¨µÄInputSteam¶ÁÈ¡µÄObjectStream
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷\\A1_¶ÔÏóĞòÁĞ»¯Á÷\\¶ÔÏóĞòÁĞ»¯.txt"));
+        //åˆ›å»ºååºåˆ—åŒ–æµå¯¹è±¡ã€‚æ„é€ æ–¹æ³•:ObjectInputSteam(InputSteam in): åˆ›å»ºä»æŒ‡å®šçš„InputSteamè¯»å–çš„ObjectStream
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ\\A1_å¯¹è±¡åºåˆ—åŒ–æµ\\å¯¹è±¡åºåˆ—åŒ–.txt"));
 
-        //Ê¹ÓÃ·´ĞòÁĞ»¯Á÷µÄ·½·¨¡£·´ĞòÁĞ»¯¶ÔÏóµÄ·½·¨:Object readObject(): ´ÓObjectInputStream¶ÁÈ¡Ò»¸ö¶ÔÏó,·µ»ØÖµÊÇÒ»¸ö¶ÔÏó
-        Object oStu = ois.readObject();//Å×³öÒì³££ºClassNotFoundException
-        Student2 stu = (Student2) oStu;//ÏòÏÂ×ªĞÍÎªStudent2
+        //ä½¿ç”¨ååºåˆ—åŒ–æµçš„æ–¹æ³•ã€‚ååºåˆ—åŒ–å¯¹è±¡çš„æ–¹æ³•:Object readObject(): ä»ObjectInputStreamè¯»å–ä¸€ä¸ªå¯¹è±¡,è¿”å›å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡
+        Object oStu = ois.readObject();//æŠ›å‡ºå¼‚å¸¸ï¼šClassNotFoundException
+        Student2 stu = (Student2) oStu;//å‘ä¸‹è½¬å‹ä¸ºStudent2
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         ois.close();
 
-        //±éÀú¸Ã¶ÔÏó
-        System.out.println("ĞÕÃû: "+stu.getName()+", ÄêÁä: "+stu.getAge());
+        //éå†è¯¥å¯¹è±¡
+        System.out.println("å§“å: "+stu.getName()+", å¹´é¾„: "+stu.getAge());
 
     }
 

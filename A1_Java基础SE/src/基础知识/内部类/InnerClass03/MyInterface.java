@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass03;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass03;
 
 public interface MyInterface {
 

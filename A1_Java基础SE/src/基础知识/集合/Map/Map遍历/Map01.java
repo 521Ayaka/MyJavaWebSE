@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.Map±éÀú;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapéå†;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,24 +8,24 @@ public class Map01 {
 
     public static void main(String[] args) {
 
-        //¶àÌ¬´´½¨¼¯ºÏ
+        //å¤šæ€åˆ›å»ºé›†åˆ
         Map<String, Integer> map = new HashMap<>();
 
-        //Ìí¼Ó¼üÖµ¶Ô
-        map.put("ŞÏŞÎ½´", 1);
-        map.put("ŞÏŞÎÁË", 2);
-        map.put("ŞÏŞÎµÛ", 3);
-        map.put("ÕæŞÏŞÎ", 4);
-        map.put("ÔôŞÏŞÎ", 5);
+        //æ·»åŠ é”®å€¼å¯¹
+        map.put("å°´å°¬é…±", 1);
+        map.put("å°´å°¬äº†", 2);
+        map.put("å°´å°¬å¸", 3);
+        map.put("çœŸå°´å°¬", 4);
+        map.put("è´¼å°´å°¬", 5);
 
-        //´´½¨¼üµÄ¼¯ºÏ
+        //åˆ›å»ºé”®çš„é›†åˆ
         Set<String> key = map.keySet();
 
-        //±éÀú
+        //éå†
         for (String strKey: key){
-            //Í¨¹ı»ñÈ¡µÄ¼ü£¬»ñµÃÏàÓ¦µÄÖµ
+            //é€šè¿‡è·å–çš„é”®ï¼Œè·å¾—ç›¸åº”çš„å€¼
             Integer value = map.get(strKey);
-            //Êä³ö/±éÀú
+            //è¾“å‡º/éå†
             System.out.println(strKey+"="+value);
         }
 

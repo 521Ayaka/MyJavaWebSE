@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.HashSet.°¸ÀıÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.HashSet.æ¡ˆä¾‹ç»ƒä¹ ;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -8,23 +8,23 @@ public class HashSet_Stu {
     public static void main(String[] args) {
 
         HashSet<Student> hashSet = new HashSet<Student>();
-        Student stu1 = new Student("ŞÏŞÎ",18);
-        Student stu2 = new Student("ŞÏŞÎ½´",19);
-        Student stu3 = new Student("ŞÏŞÎµÛ",20);
+        Student stu1 = new Student("å°´å°¬",18);
+        Student stu2 = new Student("å°´å°¬é…±",19);
+        Student stu3 = new Student("å°´å°¬å¸",20);
 
-        Student stu4 = new Student("ŞÏŞÎ",18);
+        Student stu4 = new Student("å°´å°¬",18);
 
         hashSet.add(stu1);
         hashSet.add(stu2);
         hashSet.add(stu3);
 
         hashSet.add(stu4); /**
-        ²»Í¬¶ÔÏóµÄµØÖ·ÖµÊÇ²»»áÖØ¸´µÄ£¬ËùÒÔstu1 ºÍ stu3 ²»ÊôÓÚÖØ¸´ÔªËØ
-        Èç¹ûÏë´ïµ½ÒªÇó£º¡¾¶ÔÏóµÄ²ÎÊıÏàÍ¬£¬¼´ÎªÍ¬Ò»¸ö¶ÔÏó¡¿ ÔÙStudentÀàµ±ÖĞÖØĞ´equals()ºÍhashCode()·½·¨
+        ä¸åŒå¯¹è±¡çš„åœ°å€å€¼æ˜¯ä¸ä¼šé‡å¤çš„ï¼Œæ‰€ä»¥stu1 å’Œ stu3 ä¸å±äºé‡å¤å…ƒç´ 
+        å¦‚æœæƒ³è¾¾åˆ°è¦æ±‚ï¼šã€å¯¹è±¡çš„å‚æ•°ç›¸åŒï¼Œå³ä¸ºåŒä¸€ä¸ªå¯¹è±¡ã€‘ å†Studentç±»å½“ä¸­é‡å†™equals()å’ŒhashCode()æ–¹æ³•
         */
 
         for (Student stu: hashSet){
-            System.out.println("ÎÒ½Ğ£º"+stu.getName()+",ÄêÁä£º"+stu.getAge());
+            System.out.println("æˆ‘å«ï¼š"+stu.getName()+",å¹´é¾„ï¼š"+stu.getAge());
         }
 
         System.out.println("==============================================");
@@ -32,7 +32,7 @@ public class HashSet_Stu {
         Iterator<Student> ite = hashSet.iterator();
         while (ite.hasNext()){
             Student stu = ite.next();
-            System.out.println("ÎÒ½Ğ£º"+stu.getName()+",ÄêÁä£º"+stu.getAge());
+            System.out.println("æˆ‘å«ï¼š"+stu.getName()+",å¹´é¾„ï¼š"+stu.getAge());
         }
 
     }

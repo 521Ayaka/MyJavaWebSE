@@ -1,45 +1,45 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·ûÁ÷_×Ü½á°¸Àı;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹;
 
 import java.io.*;
 
 /*
-* ÒªÇó:
+* è¦æ±‚:
 *
-* ½«±¾javaÎÄ¼ş ¸´ÖÆµ½¸ÃjavaÎÄ¼şÍ¬°üÏÂµÄ [¸´ÖÆµ½ÕâÀï] ÎÄ¼ş¼Ğµ±ÖĞ
+* å°†æœ¬javaæ–‡ä»¶ å¤åˆ¶åˆ°è¯¥javaæ–‡ä»¶åŒåŒ…ä¸‹çš„ [å¤åˆ¶åˆ°è¿™é‡Œ] æ–‡ä»¶å¤¹å½“ä¸­
 *
 * */
 public class DameFileCopy {
 
     public static void main(String[] args) {
 
-        //´´½¨×Ö·ûÊäÈëÁ÷ À´ ¶ÁÈ¡Êı¾İ
+        //åˆ›å»ºå­—ç¬¦è¾“å…¥æµ æ¥ è¯»å–æ•°æ®
         InputStreamReader isr = null;
-        //´´½¨×Ö·ûÊä³öÁ÷ À´ Ğ´ÈëÊı¾İ
+        //åˆ›å»ºå­—ç¬¦è¾“å‡ºæµ æ¥ å†™å…¥æ•°æ®
         OutputStreamWriter osw = null;
 
-        try{//¸³Öµ
-            isr = new InputStreamReader(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_×Ü½á°¸Àı\\DameFileCopy.java"));
-            osw = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_×Ü½á°¸Àı\\¸´ÖÆµ½ÕâÀï\\DameFileCopy.java"));
-            //¿ªÊ¼¸³Öµ
+        try{//èµ‹å€¼
+            isr = new InputStreamReader(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹\\DameFileCopy.java"));
+            osw = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹\\å¤åˆ¶åˆ°è¿™é‡Œ\\DameFileCopy.java"));
+            //å¼€å§‹èµ‹å€¼
             char[] array = new char[1024];
             int len;
-            while ( (len = isr.read(array)) != -1){//¶ÁÈ¡
-                osw.write(array,0,len);//Ğ´Èë
+            while ( (len = isr.read(array)) != -1){//è¯»å–
+                osw.write(array,0,len);//å†™å…¥
             }
-            System.out.println("ÒÑ¸´ÖÆ");
+            System.out.println("å·²å¤åˆ¶");
         }catch(IOException e){
             e.printStackTrace();
         }finally{
             if (isr != null){
                 try{
-                    isr.close();//ÊÍ·Å×ÊÔ´
+                    isr.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }
             }
             if (osw != null){
                 try{
-                    osw.close();//Ë¢ĞÂ²¢ÊÍ·Å×ÊÔ´
+                    osw.close();//åˆ·æ–°å¹¶é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }

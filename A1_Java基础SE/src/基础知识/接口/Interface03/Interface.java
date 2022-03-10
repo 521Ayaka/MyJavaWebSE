@@ -1,21 +1,21 @@
-package ����֪ʶ.�ӿ�.Interface03;
+package 基础知识.接口.Interface03;
 
 /*
-��Java 8��ʼ���ӿ��������徲̬������
+从Java 8开始，接口允许定义静态方法。
 
-��ʽ��public static ����ֵ���� ��̬������(�����б�){
+格式：public static 返回值类型 静态方法名(参数列表){
           //......
      }
 
-��ʾ�����ǽ�abstract��default�ؼ��ֻ���static�ؼ��֣����Ϸ����弴�ɡ�
+提示：就是将abstract或default关键字换成static关键字，带上方法体即可。
 
 ====================================================================================
 
-ע���������ͨ���ӿ� ��ʵ���ࡰ �Ķ��������ýӿڵľ�̬���������� ���ص㡿
+注意事项：不能通过接口 ”实现类“ 的对象来调用接口的静态方法！！！ 【重点】
 
-��ȷʹ�ã��ӿ�����.��̬������(����);                        ���ص㡿
+正确使用：接口名称.静态方法名(参数);                        【重点】
 
-��ס����̬����򵥵ģ���̬�Ͷ�����û�й�ϵ�ģ���̬������صģ�������.��̬������(����);
+记住：静态是最简单的，静态和对象是没有关系的，静态和类相关的，类名称.静态方法名(参数);
 
 */
 
@@ -24,22 +24,22 @@ public class Interface {
     public static void main(String[] args) {
 
         /**
-        //����ʵ�������
+        //创建实现类对象。
         MyInterfaceStaticImpl impl = new MyInterfaceStaticImpl();
 
 
-        //����ʹ�÷����Ǵ���ģ�����
+        //这种使用方法是错误的！！！
         impl.method();
 
          */
 
-        //��ȷʹ�÷���
+        //正确使用方法
         MyInterfaceStatic.method();
 
-        //�����û��ʵ���࣬����˵��ʵ������
+        //这个都没用实现类，更别说用实现类了
         MyInterfaceStatic2.method();
 
-        //����Static��ľ�̬����
+        //调用Static类的静态方法
         Static.method();
 
 

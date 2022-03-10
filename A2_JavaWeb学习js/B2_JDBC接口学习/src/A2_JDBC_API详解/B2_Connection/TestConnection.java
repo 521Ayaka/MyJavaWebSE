@@ -1,64 +1,115 @@
-package A2_JDBC_APIÏê½â.B2_Connection;
+package A2_JDBC_APIè¯¦è§£.B2_Connection;
 
 import com.mysql.jdbc.exceptions.MySQLDataException;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class TestConnection {
 
-    //Í¨¹ıJava¿ØÖÆ [¹ØÏµĞÍÊı¾İ¿â] mysql µÄ²½Öè
+    //é€šè¿‡Javaæ§åˆ¶ [å…³ç³»å‹æ•°æ®åº“] mysql çš„æ­¥éª¤
     public static void main(String[] args) throws Exception {
 
-        //1: ×¢²áÇı¶¯
-        //Class.forName("com.mysql.jdbc.Driver"); //jar5ºó ¿ÉÒÔÊ¡ÂÔÕâĞĞ         */
+/*      Scanner sc = new Scanner(System.in);
+        System.out.print("è¯·è¾“å…¥å¯†ç : ");
 
-        //2: »ñÈ¡Á¬½Ó
-        String url = "jdbc:mysql:///testsql?false";
+        //æ³¨å†Œé©±åŠ¨
+        Class.forName("com.mysql.jdbc.Driver");
+
+        //è·å–è¿æ¥
+        String url = "jdbc:mysql:///testsql?userSSL=true";
+        String user = "root";
+        //è·å–è¾“å…¥çš„å¯†ç 
+        String password = sc.next();
+        Connection conn = DriverManager.getConnection(url,user,password);
+
+        //å®šä¹‰sqlè¯­å¥
+        String executeUpdateOne = "update student set math = 90 where id = 7";
+        String executeUpdateTwo = "update student set math = 100 where id = 8";
+
+        //è·å–æ‰§è¡Œsqlè¯­å¥å¯¹è±¡
+        Statement statement = conn.createStatement();
+
+        //ä½¿ç”¨æ‰‹åŠ¨å¼€å¯äº‹åŠ¡ æ‰§è¡Œsqlè¯­å¥ã€‚
+        try{
+            //å¼€å¯äº‹åŠ¡
+            conn.setAutoCommit(false); //å‚æ•°æ˜¯false
+
+            //ä½¿ç”¨Statement æ‰§è¡Œsqlè¯­å¥1
+            int num1 = statement.executeUpdate(executeUpdateOne);
+            System.out.println(num1);
+
+            //æ‰§è¡Œsqlè¯­å¥2
+            int num2 = statement.executeUpdate(executeUpdateTwo);
+            System.out.println(num2);
+
+            //å…³é—­äº‹åŠ¡ å¹¶æäº¤äº‹åŠ¡
+            conn.commit();
+
+        }catch (Exception e){
+
+            //å¦‚æœå‡ºç°å¼‚å¸¸ åˆ™å›æ»šäº‹åŠ¡
+            conn.rollback();
+            e.printStackTrace();
+
+        }
+
+        //é‡Šæ”¾èµ„æº
+        statement.close();
+        conn.close();*/
+
+        //1: æ³¨å†Œé©±åŠ¨
+        //Class.forName("com.mysql.jdbc.Driver"); //jar5å å¯ä»¥çœç•¥è¿™è¡Œ         */
+
+        //2: è·å–è¿æ¥
+        String url = "jdbc:mysql:///testsql?useSSL=false";
         String user = "root";
         String password = "ganga";
-        Connection conn = DriverManager.getConnection(url, user, password); //»ñÈ¡Connection¶ÔÏó
+        //è·å–Connectionå¯¹è±¡
+        Connection conn = DriverManager.getConnection(url, user, password);
 
-        //3. ¶¨ÒåsqlÓï¾ä
-        String sql1 = "update student set math = 99 where id = 8"; //sqlºó²»ÓÃ·ÖºÅ
+        //3. å®šä¹‰sqlè¯­å¥
+        String sql1 = "update student set math = 99 where id = 8"; //sqlåä¸ç”¨åˆ†å·
         String sql2 = "update student set math = 101 where id = 7";
 
-        //4. »ñÈ¡Ö´ĞĞsqlµÄ¶ÔÏó Statement
+        //4. è·å–æ‰§è¡Œsqlçš„å¯¹è±¡ Statement
         Statement stmt = conn.createStatement();
 
-        /*
-        */
 
-        //Ê¹ÓÃÒì³£´¦Àí
+
+        //ä½¿ç”¨å¼‚å¸¸å¤„ç†
         try {
-            //¿ªÆôÊÂÎñ
+
+            //å¼€å¯äº‹åŠ¡
             conn.setAutoCommit(false);
 
-            //5-1. Ö´ĞĞsql
-            int count1 = stmt.executeUpdate(sql1); //Ö´ĞĞsql ·µ»ØÖµÊÇ ÊÜÓ°ÏìµÄĞĞÊı
-            //6-1. ´¦Àí½á¹û
+            //5-1. æ‰§è¡Œsql
+            int count1 = stmt.executeUpdate(sql1); //æ‰§è¡Œsql è¿”å›å€¼æ˜¯ å—å½±å“çš„è¡Œæ•°
+            //6-1. å¤„ç†ç»“æœ
             System.out.println(count1);
 
-            //5-2. Ö´ĞĞsql
-            int count2 = stmt.executeUpdate(sql2); //Ö´ĞĞsql ·µ»ØÖµÊÇ ÊÜÓ°ÏìµÄĞĞÊı
-            //6-2. ´¦Àí½á¹û
+            //5-2. æ‰§è¡Œsql
+            int count2 = stmt.executeUpdate(sql2); //æ‰§è¡Œsql è¿”å›å€¼æ˜¯ å—å½±å“çš„è¡Œæ•°
+            //6-2. å¤„ç†ç»“æœ
             System.out.println(count2);
-            
-            //Ìá½»ÊÂÎñ
+
+            //æäº¤äº‹åŠ¡
             conn.commit();
+
         }catch(Exception e){
-            //³öÏÖÒì³£ »Ø¹ö
+
+            //å‡ºç°å¼‚å¸¸ å›æ»š
             conn.rollback();
-            //´òÓ¡Òì³£ÎÊÌâ
+            //æ‰“å°å¼‚å¸¸é—®é¢˜
             e.printStackTrace();
         }
 
 
 
-
-        //7. ÊÍ·Å×ÊÔ´
-        //stmt¶ÔÏóÊÇÓÉconn¶ÔÏóµÃµ½µÄ, ËùÒÔÏÈÊÍ·Åstmt¶ÔÏó
+        //7. é‡Šæ”¾èµ„æº
+        //stmtå¯¹è±¡æ˜¯ç”±connå¯¹è±¡å¾—åˆ°çš„, æ‰€ä»¥å…ˆé‡Šæ”¾stmtå¯¹è±¡
         stmt.close();
         conn.close();
 

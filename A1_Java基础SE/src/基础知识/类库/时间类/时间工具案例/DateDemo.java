@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.Ê±¼ä¹¤¾ß°¸Àı;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».æ—¶é—´å·¥å…·æ¡ˆä¾‹;
 
 import java.text.ParseException;
 import java.util.Date;
 
 /*
 *
-* ²âÊÔÀà
+* æµ‹è¯•ç±»
 *
 * */
 
@@ -15,10 +15,10 @@ public class DateDemo {
 
         Date date = new Date();
 
-        String dateString = DateUtils.DateToString(date, "yyyyÄêMMÔÂdd HH:mm:ss");
+        String dateString = DateUtils.DateToString(date, "yyyyå¹´MMæœˆdd HH:mm:ss");
         System.out.println(dateString);
 
-        Date date2 = DateUtils.StringToDate("2021/06/15 ĞÇÆÚ¶ş 12:12:12", "yyyy/MM/dd E HH:mm:ss");
+        Date date2 = DateUtils.StringToDate("2021/06/15 æ˜ŸæœŸäºŒ 12:12:12", "yyyy/MM/dd E HH:mm:ss");
         System.out.println(date2);
     }
 

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A12_³£ÓÃº¯ÊıÊ½½Ó¿Ú.Supplier½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A12_å¸¸ç”¨å‡½æ•°å¼æ¥å£.Supplieræ¥å£;
 
 import java.util.function.Supplier;
 
@@ -6,30 +6,30 @@ public class TestSupplier {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½½øĞĞµ÷ÓÃ
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼è¿›è¡Œè°ƒç”¨
 //        getString( () -> {
-//            return "Supplier½Ó¿Ú";
+//            return "Supplieræ¥å£";
 //        } );
 
-        //Lambda±í´ïÊ½¼òĞ´
-        String str = getString(() -> "Supplierº¯ÊıÊ½½Ó¿Ú");
+        //Lambdaè¡¨è¾¾å¼ç®€å†™
+        String str = getString(() -> "Supplierå‡½æ•°å¼æ¥å£");
         System.out.println(str);
 
-        //Lambda±í´ïÊ½»ñÈ¡
+        //Lambdaè¡¨è¾¾å¼è·å–
         Integer anInt = getInt(() -> 666);
         System.out.println(anInt);
 
 
     }
 
-    //Ê¹ÓÃSupplier½Ó¿Ú, »ñÈ¡Ò»¸ö×Ö·û´®
+    //ä½¿ç”¨Supplieræ¥å£, è·å–ä¸€ä¸ªå­—ç¬¦ä¸²
     private static String getString(Supplier<String> sup){
-        return sup.get(); //SupplierÀïÃæÓĞÒ»¸öget()·½·¨ , ÓÃÓÚ·µ»Ø·ºĞÍÄÚÈİ
+        return sup.get(); //Supplieré‡Œé¢æœ‰ä¸€ä¸ªget()æ–¹æ³• , ç”¨äºè¿”å›æ³›å‹å†…å®¹
     }
 
-    //Ê¹ÓÃSupplier½Ó¿Ú, »ñÈ¡Ò»¸öInteger
+    //ä½¿ç”¨Supplieræ¥å£, è·å–ä¸€ä¸ªInteger
     private static Integer getInt(Supplier<Integer> sup){
-        return sup.get(); //SupplierÀïÃæÓĞÒ»¸öget()·½·¨ , ÓÃÓÚ·µ»Ø·ºĞÍÄÚÈİ
+        return sup.get(); //Supplieré‡Œé¢æœ‰ä¸€ä¸ªget()æ–¹æ³• , ç”¨äºè¿”å›æ³›å‹å†…å®¹
     }
 
 }

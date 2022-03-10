@@ -1,7 +1,7 @@
-package Gui±à³Ì.AWT.A3_Layout;
+package Guiç¼–ç¨‹.AWT.A3_Layout;
 /*
-Ç¶Ì×Ê¹ÓÃLayout
-ÌâÄ¿ÒªÇó: Í¼:"Ç¶Ì×²¼¾Ö×÷Òµ.png"
+åµŒå¥—ä½¿ç”¨Layout
+é¢˜ç›®è¦æ±‚: å›¾:"åµŒå¥—å¸ƒå±€ä½œä¸š.png"
 */
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -11,10 +11,10 @@ public class ExDome {
 
     public static void main(String[] args) {
 
-        //´´½¨Ò»¸ö´°Ìå
-        Frame frame = new Frame("Ç¶Ì×²¼¾Ö");
+        //åˆ›å»ºä¸€ä¸ªçª—ä½“
+        Frame frame = new Frame("åµŒå¥—å¸ƒå±€");
 
-        //¶Ô´°Ìå½øĞĞ³õÊ¼»¯ÉèÖÃ
+        //å¯¹çª—ä½“è¿›è¡Œåˆå§‹åŒ–è®¾ç½®
         frame.setSize(400,300);
         frame.setLocation(500,400);
         frame.setBackground(new Color(9, 243, 216));
@@ -26,16 +26,16 @@ public class ExDome {
             }
         });
 
-        //¿ªÊ¼²¼¾Ö
+        //å¼€å§‹å¸ƒå±€
         frame.setLayout(new GridLayout(2,1));
 
-        //Ìí¼Ó4¸öÃæ°å
+        //æ·»åŠ 4ä¸ªé¢æ¿
         Panel panel1 = new Panel(new BorderLayout());
         Panel panel2 = new Panel(new GridLayout(2,1));
         Panel panel3 = new Panel(new BorderLayout());
         Panel panel4 = new Panel(new GridLayout(2,2));
 
-        //Ïò²¼¾ÖÖĞÌí¼Ó°´Å¥
+        //å‘å¸ƒå±€ä¸­æ·»åŠ æŒ‰é’®
         panel1.add(new Button("WEST-1"),BorderLayout.WEST);
         panel1.add(new Button("EAST-1"),BorderLayout.EAST);
 
@@ -50,11 +50,11 @@ public class ExDome {
         panel4.add(new Button("CENTER-Grid3-2"));
         panel4.add(new Button("CENTER-Grid4-2"));
 
-        //½«panel2,4·Ö±ğÌí¼Óµ½Ãæ°åpanel1,3 ,²¢ÇÒ·ÅÔÚCENTERÖĞ¼äÎ»ÖÃ¡£
+        //å°†panel2,4åˆ†åˆ«æ·»åŠ åˆ°é¢æ¿panel1,3 ,å¹¶ä¸”æ”¾åœ¨CENTERä¸­é—´ä½ç½®ã€‚
         panel1.add(panel2,BorderLayout.CENTER);
         panel3.add(panel4,BorderLayout.CENTER);
 
-        //½«Ãæ°åÌí¼Óµ½frame´°Ìåµ±ÖĞ
+        //å°†é¢æ¿æ·»åŠ åˆ°frameçª—ä½“å½“ä¸­
         frame.add(panel1);
         frame.add(panel3);
     }

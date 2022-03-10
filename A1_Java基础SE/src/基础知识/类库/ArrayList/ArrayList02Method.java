@@ -1,63 +1,63 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 
 import java.util.ArrayList;
 
 /*
-ArrayList³£ÓÃµÄMethod
+ArrayListå¸¸ç”¨çš„Method
 
-1.public boolean add(E e){...} :Ïò¼¯ºÏÖĞÌí¼ÓÔªËØ£¬²ÎÊıµÄÀàºÍºÍ·ºĞÍÏàÍ¬£¬·µ»ØÖµ´ú±íÌí¼Ó³É¹¦¡£
-  ×¢Òâ£º¶ÔArrayListÀ´Ëµ£¬addÌí¼Ó¶¯×÷Ò»¶¨»á³É¹¦£¬¤À¤«¤é·µ»ØÖµ¿ÉÒÔ²»ÓÃ£¬
-       µ«ÊÇ¶ÔÓÚÆäËûµÄ¼¯ºÏ£¨½ñºó»¹»áÑ§£©À´Ëµ£¬addÌí¼Ó²»Ò»¶¨³É¹¦¡£
+1.public boolean add(E e){...} :å‘é›†åˆä¸­æ·»åŠ å…ƒç´ ï¼Œå‚æ•°çš„ç±»å’Œå’Œæ³›å‹ç›¸åŒï¼Œè¿”å›å€¼ä»£è¡¨æ·»åŠ æˆåŠŸã€‚
+  æ³¨æ„ï¼šå¯¹ArrayListæ¥è¯´ï¼Œaddæ·»åŠ åŠ¨ä½œä¸€å®šä¼šæˆåŠŸï¼Œã ã‹ã‚‰è¿”å›å€¼å¯ä»¥ä¸ç”¨ï¼Œ
+       ä½†æ˜¯å¯¹äºå…¶ä»–çš„é›†åˆï¼ˆä»Šåè¿˜ä¼šå­¦ï¼‰æ¥è¯´ï¼Œaddæ·»åŠ ä¸ä¸€å®šæˆåŠŸã€‚
 
-2.public E get(int index){...} :ÖØ¼¯ºÏÖĞ»ñÈ¡ÔªËØ£¬ËùÒÔ²ÎÊı²ÅÊÇint£¬indexÊÇË÷ÒıÖµ¡£
+2.public E get(int index){...} :é‡é›†åˆä¸­è·å–å…ƒç´ ï¼Œæ‰€ä»¥å‚æ•°æ‰æ˜¯intï¼Œindexæ˜¯ç´¢å¼•å€¼ã€‚
 
-3.public E remove(int index){...} :´Ó¼¯ºÏµ±ÖĞÉ¾³ıÔªËØ£¬²ÎÊıÊÇË÷Òı±àºÅ£¬·µ»ØÖµÊÇÔªËØÄÚÈİ¡£
+3.public E remove(int index){...} :ä»é›†åˆå½“ä¸­åˆ é™¤å…ƒç´ ï¼Œå‚æ•°æ˜¯ç´¢å¼•ç¼–å·ï¼Œè¿”å›å€¼æ˜¯å…ƒç´ å†…å®¹ã€‚
 
-4.public int size(){...}  :»ñÈ¡ÔªËØµÄ³¤¶È£¬·µ»ØÖµ¾ÍÊÇÔªËØ³¤¶È¡£
+4.public int size(){...}  :è·å–å…ƒç´ çš„é•¿åº¦ï¼Œè¿”å›å€¼å°±æ˜¯å…ƒç´ é•¿åº¦ã€‚
 
-Êı×éµÄ±éÀú Ê¹ÓÃforÑ­»·
+æ•°ç»„çš„éå† ä½¿ç”¨forå¾ªç¯
 
 */
 public class ArrayList02Method {
     public static void main(String[] args) {
         ArrayList<String> array = new ArrayList<>();
-        System.out.println("ÒÔ´´½¨arraylistÊı×é");
+        System.out.println("ä»¥åˆ›å»ºarraylistæ•°ç»„");
 
-        System.out.println("¿ªÊ¼Ìí¼ÓµÚÒ»¸öÔªËØ...");
-        boolean v = array.add("ŞÏŞÎ½´");  // 1
-        //×¢Òâ£º¶ÔArrayListÀ´Ëµ£¬addÌí¼Ó¶¯×÷Ò»¶¨»á³É¹¦£¬¤À¤«¤é·µ»ØÖµ¿ÉÒÔ²»ÓÃ£¬
-        //     µ«ÊÇ¶ÔÓÚÆäËûµÄ¼¯ºÏ£¨½ñºó»¹»áÑ§£©À´Ëµ£¬addÌí¼Ó²»Ò»¶¨³É¹¦¡£
+        System.out.println("å¼€å§‹æ·»åŠ ç¬¬ä¸€ä¸ªå…ƒç´ ...");
+        boolean v = array.add("å°´å°¬é…±");  // 1
+        //æ³¨æ„ï¼šå¯¹ArrayListæ¥è¯´ï¼Œaddæ·»åŠ åŠ¨ä½œä¸€å®šä¼šæˆåŠŸï¼Œã ã‹ã‚‰è¿”å›å€¼å¯ä»¥ä¸ç”¨ï¼Œ
+        //     ä½†æ˜¯å¯¹äºå…¶ä»–çš„é›†åˆï¼ˆä»Šåè¿˜ä¼šå­¦ï¼‰æ¥è¯´ï¼Œaddæ·»åŠ ä¸ä¸€å®šæˆåŠŸã€‚
 
-        System.out.println("Ìí¼ÓÊÇ·ñ³É¹¦£º" + v );
-        System.out.println("Ìí¼ÓµÄÔªËØÎª£º" + array.get(0));  // 2
+        System.out.println("æ·»åŠ æ˜¯å¦æˆåŠŸï¼š" + v );
+        System.out.println("æ·»åŠ çš„å…ƒç´ ä¸ºï¼š" + array.get(0));  // 2
 
-        System.out.println("¼ÌĞøÌí¼ÓÔªËØ...");
+        System.out.println("ç»§ç»­æ·»åŠ å…ƒç´ ...");
 
-        array.add("ŞÏŞÎ½´ÍòËê");// 2
-        array.add("(¤Ã ¡ã§¥ ¡ã;)¤Ã");// 2
-        array.add("Ò»ÆğLOL°É");// 2
-        array.add("( *^-^)¦Ñ(*¨s^¨t)");// 2
-        array.add("ŞÏŞÎÁË ¡Ô(¨‰©n¨‰)¡Ô");
-        System.out.println("Ìí¼ÓÍê³É!");// 2
+        array.add("å°´å°¬é…±ä¸‡å²");// 2
+        array.add("(ã£ Â°Ğ” Â°;)ã£");// 2
+        array.add("ä¸€èµ·LOLå§");// 2
+        array.add("( *^-^)Ï(*â•¯^â•°)");// 2
+        array.add("å°´å°¬äº† â‰¡(â–”ï¹â–”)â‰¡");
+        System.out.println("æ·»åŠ å®Œæˆ!");// 2
 
-        System.out.println("Êı×é³¤¶ÈÎª£º" + array.size());//
-        System.out.println("¿ªÊ¼´òÓ¡Êı×é...");
-        System.out.println("´òÓ¡½á¹ûÎª£º" + array);
+        System.out.println("æ•°ç»„é•¿åº¦ä¸ºï¼š" + array.size());//
+        System.out.println("å¼€å§‹æ‰“å°æ•°ç»„...");
+        System.out.println("æ‰“å°ç»“æœä¸ºï¼š" + array);
 
-        System.out.println("¿ªÊ¼É¾³ı×îºóÒ»¸öÔªËØ...");
-        System.out.println("ÒÑÉ¾³ı...");
+        System.out.println("å¼€å§‹åˆ é™¤æœ€åä¸€ä¸ªå…ƒç´ ...");
+        System.out.println("å·²åˆ é™¤...");
 
         String str = array.remove( array.size() - 1 ); // 3 and 2
-        //×¢Òâ£ºÕâÒ²ÓĞ¸ö·µ»ØÖµ£¬Ò²¿ÉÒÔ²»ÓÃ array.remove(5);
+        //æ³¨æ„ï¼šè¿™ä¹Ÿæœ‰ä¸ªè¿”å›å€¼ï¼Œä¹Ÿå¯ä»¥ä¸ç”¨ array.remove(5);
 
-        System.out.println("É¾³ıµÄÔªËØÊÇ£º" + str );
+        System.out.println("åˆ é™¤çš„å…ƒç´ æ˜¯ï¼š" + str );
 
-        System.out.println("¿ªÊ¼ÖØĞÂ´òÓ¡Êı×é...");
-        System.out.println("´òÓ¡µÄÊı×éÎª£º" + array);
+        System.out.println("å¼€å§‹é‡æ–°æ‰“å°æ•°ç»„...");
+        System.out.println("æ‰“å°çš„æ•°ç»„ä¸ºï¼š" + array);
 
-        //±éÀú´òÓ¡
-        System.out.println("¿ªÊ¼½øĞĞÊı×é±ãÀû´òÓ¡...");
-        System.out.println("´òÓ¡½á¹û£º");
+        //éå†æ‰“å°
+        System.out.println("å¼€å§‹è¿›è¡Œæ•°ç»„ä¾¿åˆ©æ‰“å°...");
+        System.out.println("æ‰“å°ç»“æœï¼š");
         System.out.println();
         for (int i = 0; i < array.size(); i++ ){
             System.out.println(array.get(i));
@@ -66,8 +66,8 @@ public class ArrayList02Method {
 //            System.out.println(s);
 //        }
         System.out.println();
-        System.out.println("´òÓ¡½áÊø...");
-        System.out.println("³ÌĞò½áÊø... ...");
+        System.out.println("æ‰“å°ç»“æŸ...");
+        System.out.println("ç¨‹åºç»“æŸ... ...");
 
 
     }

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -6,50 +6,50 @@ import java.util.Map;
 import java.util.Set;
 
 /*
-Map¼¯ºÏ»ñÈ¡¹¦ÄÜ:
+Mapé›†åˆè·å–åŠŸèƒ½:
 
-V get(Object key)                  ¸ù¾İ¼ü»ñÈ¡Öµ
+V get(Object key)                  æ ¹æ®é”®è·å–å€¼
 
-Set<K> keySet()                    »ñÈ¡ËùÓĞ¼üµÄ¼¯ºÏ
+Set<K> keySet()                    è·å–æ‰€æœ‰é”®çš„é›†åˆ
 
-Collection<V> values()             »ñÈ¡ËùÓĞÖµµÄ¼¯ºÏ
+Collection<V> values()             è·å–æ‰€æœ‰å€¼çš„é›†åˆ
 
-Set<Map.Entry<K,V>> entrySet()     »ñÈ¡ËùÓĞ¼üÖµ¶Ô¶ÔÏóµÄ¼¯ºÏ
+Set<Map.Entry<K,V>> entrySet()     è·å–æ‰€æœ‰é”®å€¼å¯¹å¯¹è±¡çš„é›†åˆ
 
 */
 public class MapGetMethod {
 
     public static void main(String[] args) {
 
-        //´´½¨Map¼¯ºÏ
+        //åˆ›å»ºMapé›†åˆ
         Map<String, String> map = new HashMap<>();
 
-        //Ìí¼Ó¼üÖµ¶Ô
-        map.put("Ò÷ÁôµÄÊ«ÈË","ÎÂµÏ");
-        map.put("Ìì¶¯ÍòÏó","ÖÓÀë");
-        map.put("ÎŞÏëµÄÒ»µ¶","°Í¶û");
-        map.put("Íö","²İÉñ");
+        //æ·»åŠ é”®å€¼å¯¹
+        map.put("åŸç•™çš„è¯—äºº","æ¸©è¿ª");
+        map.put("å¤©åŠ¨ä¸‡è±¡","é’Ÿç¦»");
+        map.put("æ— æƒ³çš„ä¸€åˆ€","å·´å°”");
+        map.put("äº¡","è‰ç¥");
         System.out.println("==================================");
 
-        // V get(Object key)                  ¸ù¾İ¼ü»ñÈ¡Öµ
-        System.out.println(map.get("ÎŞÏëµÄÒ»µ¶")); //°Í¶û
-        System.out.println(map.get("Ìì¶¯ÍòÏó"));  //ÖÓÀë
-        System.out.println(map.get("ÉñÂŞÌìÕ÷"));  //null
+        // V get(Object key)                  æ ¹æ®é”®è·å–å€¼
+        System.out.println(map.get("æ— æƒ³çš„ä¸€åˆ€")); //å·´å°”
+        System.out.println(map.get("å¤©åŠ¨ä¸‡è±¡"));  //é’Ÿç¦»
+        System.out.println(map.get("ç¥ç½—å¤©å¾"));  //null
         System.out.println("==================================");
 
-        //Set<K> keySet()                    »ñÈ¡ËùÓĞ¼üµÄ¼¯ºÏ
-        System.out.println(map.keySet());//¿ÉÖ±½Ó´òÓ¡
-        Set<String> setMap = map.keySet();//¿É´´½¨¼¯ºÏ»ñÈ¡
-        System.out.println("¼ü¼¯ºÏ±éÀú:");
+        //Set<K> keySet()                    è·å–æ‰€æœ‰é”®çš„é›†åˆ
+        System.out.println(map.keySet());//å¯ç›´æ¥æ‰“å°
+        Set<String> setMap = map.keySet();//å¯åˆ›å»ºé›†åˆè·å–
+        System.out.println("é”®é›†åˆéå†:");
         for (String str :
                 setMap) {
             System.out.println(str);
         }
         System.out.println("==================================");
 
-        //Collection<V> values()             »ñÈ¡ËùÓĞÖµµÄ¼¯ºÏ
+        //Collection<V> values()             è·å–æ‰€æœ‰å€¼çš„é›†åˆ
         Collection<String> values = map.values();
-        System.out.println("Öµ¼¯ºÏ±ãÀû:");
+        System.out.println("å€¼é›†åˆä¾¿åˆ©:");
         for (String str :
                 values) {
             System.out.println(str);

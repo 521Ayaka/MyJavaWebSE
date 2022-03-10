@@ -1,32 +1,32 @@
-package »ù´¡ÖªÊ¶.»ù´¡.QiTa;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.QiTa;
 
 public class SwichYvJv{
 	public static void main(String[] args){
 		int mun = 1;
 			switch (mun){
 			case 1 :
-			System.out.println("ĞÇÆÚÒ»");
+			System.out.println("æ˜ŸæœŸä¸€");
 			break;
 			case 2 :
-			System.out.println("ĞÇÆÚ¶ş");
+			System.out.println("æ˜ŸæœŸäºŒ");
 			 break;
 			case 3 :
-			System.out.println("ĞÇÆÚÈı");
+			System.out.println("æ˜ŸæœŸä¸‰");
 			break;
 			case 4 :
-			System.out.println("ĞÇÆÚËÄ");
+			System.out.println("æ˜ŸæœŸå››");
 			 break;
 			case 5 :
-			System.out.println("ĞÇÆÚÎå");
+			System.out.println("æ˜ŸæœŸäº”");
 			 break;
 			case 6 :
-			System.out.println("ĞÇÆÚÁù");
+			System.out.println("æ˜ŸæœŸå…­");
 			break;
 			case 7 :
-			System.out.println("ĞÇÆÚÈÕ");
+			System.out.println("æ˜ŸæœŸæ—¥");
 			 break;
 			default :
-			System.out.println("¸ñÊ½´íÎó");
+			System.out.println("æ ¼å¼é”™è¯¯");
 			break; 
 		}
 	}

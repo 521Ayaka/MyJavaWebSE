@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A6_Ñ§Éú³É¼¨Â¼Èë;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A6_å­¦ç”Ÿæˆç»©å½•å…¥;
 
 import java.io.*;
 import java.util.Comparator;
@@ -9,68 +9,68 @@ public class StudentGradeToFile {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new StudentGradeToFile().init();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
 
-        //´´½¨TreeSet¼¯ºÏ, Ê¹ÓÃ±È½ÏÅÅĞò
+        //åˆ›å»ºTreeSeté›†åˆ, ä½¿ç”¨æ¯”è¾ƒæ’åº
         TreeSet<StudentGrade> treeSet = new TreeSet<>(new Comparator<StudentGrade>() {
             @Override
             public int compare(StudentGrade s1, StudentGrade s2) {
-                //Ö÷ÒªÌõ¼ş: °´ÕÕ×Ü·Ö´Ó¸ßµ½µÍÅÅĞò
+                //ä¸»è¦æ¡ä»¶: æŒ‰ç…§æ€»åˆ†ä»é«˜åˆ°ä½æ’åº
                 int num1 = s2.getSum() - s1.getSum();
-                //´ÎÒªÌõ¼ş1: °´ÕÕÓïÎÄ³É¼¨´Ó¸ßµ½µÍ
+                //æ¬¡è¦æ¡ä»¶1: æŒ‰ç…§è¯­æ–‡æˆç»©ä»é«˜åˆ°ä½
                 int num2 = num1 == 0 ? s2.getChinese() - s1.getChinese() : num1;
-                //´ÎÒªÌõ¼ş2: °´ÕÕÊıÑ§³É¼¨´Ó¸ßµ½µÍ
+                //æ¬¡è¦æ¡ä»¶2: æŒ‰ç…§æ•°å­¦æˆç»©ä»é«˜åˆ°ä½
                 int num3 = num2 == 0 ? s2.getMeth() - s1.getMeth() : num2;
-                //´ÎÒªÌõ¼ş3: Èı¿Æ·ÖÊıÏàÍ¬,±È½ÏÃû×Ö
+                //æ¬¡è¦æ¡ä»¶3: ä¸‰ç§‘åˆ†æ•°ç›¸åŒ,æ¯”è¾ƒåå­—
                 int num4 = num3 == 0 ? s2.getName().compareTo(s1.getName()) : num3;
                 return num4;
             }
         });
 
-        //¼üÅÌÂ¼ÈëÑ§ÉúĞÅÏ¢
+        //é”®ç›˜å½•å…¥å­¦ç”Ÿä¿¡æ¯
         Scanner sc = new Scanner(System.in);
-        System.out.println("===ÇëÂ¼Èë5ÃûÑ§ÉúĞÅÏ¢===");
+        System.out.println("===è¯·å½•å…¥5åå­¦ç”Ÿä¿¡æ¯===");
         for (int i = 0; i < 5; i++) {
-            System.out.println("ÊäÈëµÚ" + (i + 1) + "Î»Ñ§ÉúĞÅÏ¢");
-            System.out.print("ĞÕÃû: ");//²»»»ĞĞ
+            System.out.println("è¾“å…¥ç¬¬" + (i + 1) + "ä½å­¦ç”Ÿä¿¡æ¯");
+            System.out.print("å§“å: ");//ä¸æ¢è¡Œ
             String name = sc.next();
-            System.out.print("ÓïÎÄ³É¼¨: ");
+            System.out.print("è¯­æ–‡æˆç»©: ");
             int chinese = sc.nextInt();
-            System.out.print("ÊıÑ§³É¼¨: ");
+            System.out.print("æ•°å­¦æˆç»©: ");
             int math = sc.nextInt();
-            System.out.print("Ó¢Óï³É¼¨: ");
+            System.out.print("è‹±è¯­æˆç»©: ");
             int english = sc.nextInt();
             System.out.println("====================");
 
-            //´´½¨Ñ§Éú¶ÔÏó, Ìí¼ÓÑ§ÉúĞÅÏ¢
+            //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡, æ·»åŠ å­¦ç”Ÿä¿¡æ¯
             StudentGrade stu = new StudentGrade(name, chinese, math, english);
-            //Ìí¼Óµ½TreeSet¼¯ºÏµ±ÖĞ
+            //æ·»åŠ åˆ°TreeSeté›†åˆå½“ä¸­
             treeSet.add(stu);
         }
 
-        //´´½¨×Ö·û»º³åÊä³öÁ÷¶ÔÏó À´ Ğ´ÈëÊı¾İ
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²è¾“å‡ºæµå¯¹è±¡ æ¥ å†™å…¥æ•°æ®
         BufferedWriter bw = null;
 
         try {
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\A6_Ñ§Éú³É¼¨Â¼Èë\\Ñ§Éú³É¼¨.txt"));
-            //Ğ´ÈëÊı¾İ
+            bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\A6_å­¦ç”Ÿæˆç»©å½•å…¥\\å­¦ç”Ÿæˆç»©.txt"));
+            //å†™å…¥æ•°æ®
             for (StudentGrade stu : treeSet) {
-                bw.write("ĞÕÃû: " + stu.getName() + ", ÓïÎÄ³É¼¨: " + stu.getChinese() + ", ÊıÑ§³É¼¨: " + stu.getMeth() + ", Ó¢Óï³É¼¨: " + stu.getEnglish());
-                bw.newLine();//»»ĞĞ
-                bw.flush();//Ë¢ĞÂÁ÷
+                bw.write("å§“å: " + stu.getName() + ", è¯­æ–‡æˆç»©: " + stu.getChinese() + ", æ•°å­¦æˆç»©: " + stu.getMeth() + ", è‹±è¯­æˆç»©: " + stu.getEnglish());
+                bw.newLine();//æ¢è¡Œ
+                bw.flush();//åˆ·æ–°æµ
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             if (bw != null) {
                 try {
-                    bw.close();//ÊÍ·Å×ÊÔ´
+                    bw.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -79,37 +79,37 @@ public class StudentGradeToFile {
 
     }
 
-    /*ÎÒµÄÊäÈë:
-    ===ÇëÂ¼Èë5ÃûÑ§ÉúĞÅÏ¢===
-    ÊäÈëµÚ1Î»Ñ§ÉúĞÅÏ¢
-    ĞÕÃû: ŞÏŞÎ½´
-    ÓïÎÄ³É¼¨: 100
-    ÊıÑ§³É¼¨: 100
-    Ó¢Óï³É¼¨: 0
+    /*æˆ‘çš„è¾“å…¥:
+    ===è¯·å½•å…¥5åå­¦ç”Ÿä¿¡æ¯===
+    è¾“å…¥ç¬¬1ä½å­¦ç”Ÿä¿¡æ¯
+    å§“å: å°´å°¬é…±
+    è¯­æ–‡æˆç»©: 100
+    æ•°å­¦æˆç»©: 100
+    è‹±è¯­æˆç»©: 0
     ====================
-    ÊäÈëµÚ2Î»Ñ§ÉúĞÅÏ¢
-    ĞÕÃû: ŞÏŞÎµÛ
-    ÓïÎÄ³É¼¨: 100
-    ÊıÑ§³É¼¨: 100
-    Ó¢Óï³É¼¨: 99
+    è¾“å…¥ç¬¬2ä½å­¦ç”Ÿä¿¡æ¯
+    å§“å: å°´å°¬å¸
+    è¯­æ–‡æˆç»©: 100
+    æ•°å­¦æˆç»©: 100
+    è‹±è¯­æˆç»©: 99
     ====================
-    ÊäÈëµÚ3Î»Ñ§ÉúĞÅÏ¢
-    ĞÕÃû: ŞÏŞÎÁË
-    ÓïÎÄ³É¼¨: 60
-    ÊıÑ§³É¼¨: 0
-    Ó¢Óï³É¼¨: 0
+    è¾“å…¥ç¬¬3ä½å­¦ç”Ÿä¿¡æ¯
+    å§“å: å°´å°¬äº†
+    è¯­æ–‡æˆç»©: 60
+    æ•°å­¦æˆç»©: 0
+    è‹±è¯­æˆç»©: 0
     ====================
-    ÊäÈëµÚ4Î»Ñ§ÉúĞÅÏ¢
-    ĞÕÃû: ÕæŞÏŞÎ
-    ÓïÎÄ³É¼¨: 0
-    ÊıÑ§³É¼¨: 0
-    Ó¢Óï³É¼¨: 0
+    è¾“å…¥ç¬¬4ä½å­¦ç”Ÿä¿¡æ¯
+    å§“å: çœŸå°´å°¬
+    è¯­æ–‡æˆç»©: 0
+    æ•°å­¦æˆç»©: 0
+    è‹±è¯­æˆç»©: 0
     ====================
-    ÊäÈëµÚ5Î»Ñ§ÉúĞÅÏ¢
-    ĞÕÃû: ²»ŞÏŞÎ
-    ÓïÎÄ³É¼¨: 99
-    ÊıÑ§³É¼¨: 99
-    Ó¢Óï³É¼¨: 99
+    è¾“å…¥ç¬¬5ä½å­¦ç”Ÿä¿¡æ¯
+    å§“å: ä¸å°´å°¬
+    è¯­æ–‡æˆç»©: 99
+    æ•°å­¦æˆç»©: 99
+    è‹±è¯­æˆç»©: 99
     ====================
     */
 

@@ -1,49 +1,49 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.File´´½¨¹¦ÄÜ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileåˆ›å»ºåŠŸèƒ½;
 /*
-public boolean createNewFile(){//...}  µ±¾ßÓĞ¸ÃÃû³ÆµÄÎÄ¼ş²»´æÔÚÊ±£¬´´½¨Ò»¸öÓĞ¸Ã³éÏóÂ·¾¶ÃûÃüÃûµÄĞÂ¿ÕÎÄ¼ş
+public boolean createNewFile(){//...}  å½“å…·æœ‰è¯¥åç§°çš„æ–‡ä»¶ä¸å­˜åœ¨æ—¶ï¼Œåˆ›å»ºä¸€ä¸ªæœ‰è¯¥æŠ½è±¡è·¯å¾„åå‘½åçš„æ–°ç©ºæ–‡ä»¶
 
-public boolean mkdir(){//...}  ´´½¨ÓĞ´Ë³éÏóÂ·¾¶ÃüÃûµÄÄ¿Â¼
+public boolean mkdir(){//...}  åˆ›å»ºæœ‰æ­¤æŠ½è±¡è·¯å¾„å‘½åçš„ç›®å½•
 
-public boolean mkdirs(){//...} ´´½¨ÓÉ´Ë³éÏóÂ·¾¶ÃûÃüÃûµÄÄ¿Â¼, °üº¬ÈÎºÎ²»Ğèµ«²»´æÔÚµÄ¸¸Ä¿Â¼
+public boolean mkdirs(){//...} åˆ›å»ºç”±æ­¤æŠ½è±¡è·¯å¾„åå‘½åçš„ç›®å½•, åŒ…å«ä»»ä½•ä¸éœ€ä½†ä¸å­˜åœ¨çš„çˆ¶ç›®å½•
 
-[×¢Òâ]:
-Ê¹ÓÃcreateNewFile¸Ã·½·¨´´½¨Ê±£¬ĞèÒªÊ¹ÓÃtry...catch...Òì³£´¦Àí»·ÈÆ£¬»òÕßÊ¹ÓÃthrowsÒì³£Å×³ö, ·ñÔò»á±¨´í
-±¨´íÀà£ºjava.io.IOExceptionÀà
+[æ³¨æ„]:
+ä½¿ç”¨createNewFileè¯¥æ–¹æ³•åˆ›å»ºæ—¶ï¼Œéœ€è¦ä½¿ç”¨try...catch...å¼‚å¸¸å¤„ç†ç¯ç»•ï¼Œæˆ–è€…ä½¿ç”¨throwså¼‚å¸¸æŠ›å‡º, å¦åˆ™ä¼šæŠ¥é”™
+æŠ¥é”™ç±»ï¼šjava.io.IOExceptionç±»
 
 */
 
 import java.io.File;
-import java.io.IOException;//IOÒì³£Àà
+import java.io.IOException;//IOå¼‚å¸¸ç±»
 
 public class FileCreate {
 
-    public static void main (String[] args) throws/*Ğ¡Ğ´*/ IOException {
+    public static void main (String[] args) throws/*å°å†™*/ IOException {
 
-        //ĞèÇó1:ÎÒÒªÔÚ A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ Ä¿Â¼ÏÂ´´½¨Ò»¸öÎÄ¼şjava.txt
-        File file1 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼\\java.txt");
+        //éœ€æ±‚1:æˆ‘è¦åœ¨ A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½ ç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªæ–‡ä»¶java.txt
+        File file1 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½•\\java.txt");
         //System.out.println(file1.createNewFile());
-        try{//Ê¹ÓÃcreateNewFile()·½·¨ĞèÒªÊ¹ÓÃ try...catch...Òì³£»·ÈÆ´¦Àí¡£
+        try{//ä½¿ç”¨createNewFile()æ–¹æ³•éœ€è¦ä½¿ç”¨ try...catch...å¼‚å¸¸ç¯ç»•å¤„ç†ã€‚
             System.out.println(file1.createNewFile());
-        }catch(IOException/*I/OÒì³£Àà*/ e){
-            System.out.println("Òì³£");
+        }catch(IOException/*I/Oå¼‚å¸¸ç±»*/ e){
+            System.out.println("å¼‚å¸¸");
         }
 
-        //ĞèÇó2:ÎÒÒªÔÚ A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼ Ä¿Â¼ÏÂ´´½¨Ò»¸öÄ¿Â¼ Javase
-        File file2 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼\\Javase");
-        System.out.println(file2.mkdir());//Õâ¸öÃ»ÓĞÒì³£´¦Àí
+        //éœ€æ±‚2:æˆ‘è¦åœ¨ A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½• ç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªç›®å½• Javase
+        File file2 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½•\\Javase");
+        System.out.println(file2.mkdir());//è¿™ä¸ªæ²¡æœ‰å¼‚å¸¸å¤„ç†
 
-        //ĞèÇó3:ÎÒÒªÔÚ A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼ Ä¿Â¼ÏÂ´´½¨Ò»¸ö¶à¼¶Ä¿Â¼JavaWEB\\HTML
-        File file3 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼\\JavaWEB\\HTML");
-        System.out.println(file3.mkdirs());//Õâ¸öÒ²²»ÓÃÒì³£´¦Àí
+        //éœ€æ±‚3:æˆ‘è¦åœ¨ A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½• ç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªå¤šçº§ç›®å½•JavaWEB\\HTML
+        File file3 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½•\\JavaWEB\\HTML");
+        System.out.println(file3.mkdirs());//è¿™ä¸ªä¹Ÿä¸ç”¨å¼‚å¸¸å¤„ç†
 
-        //ĞèÇó4:ÎÒÒªÔÚ A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼ Ä¿Â¼ÏÂ´´½¨Ò»¸öÎÄ¼şYuanShen.txt
-        File file4 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File´´½¨¹¦ÄÜ\\²âÊÔÄ¿Â¼\\YuanShen.txt");
+        //éœ€æ±‚4:æˆ‘è¦åœ¨ A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½• ç›®å½•ä¸‹åˆ›å»ºä¸€ä¸ªæ–‡ä»¶YuanShen.txt
+        File file4 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ›å»ºåŠŸèƒ½\\æµ‹è¯•ç›®å½•\\YuanShen.txt");
 
-        //ÕâÁ½¸ö´´½¨µÄÊÇÎÄ¼ş¼Ğ
+        //è¿™ä¸¤ä¸ªåˆ›å»ºçš„æ˜¯æ–‡ä»¶å¤¹
         //System.out.println(file4.mkdir());
         //System.out.println(file4.mkdirs());
 
-        //createNewFile´´½¨µÄÊÇ.ÎÄ¼ş
+        //createNewFileåˆ›å»ºçš„æ˜¯.æ–‡ä»¶
         System.out.println(file4.createNewFile());
 
 

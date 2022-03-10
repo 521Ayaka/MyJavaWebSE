@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.Ê±¼ä¹¤¾ß°¸Àı;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».æ—¶é—´å·¥å…·æ¡ˆä¾‹;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,23 +6,23 @@ import java.util.Date;
 
 /*
 
-´´½¨Ò»¸ö¹¤¾ßÀàÒ»°ã°É¹¹Ôì·½·¨ÉèÎª¾²Ì¬£¬°Ñ³ÉÔ±·½·¨ÉèÎª¾²Ì¬
+åˆ›å»ºä¸€ä¸ªå·¥å…·ç±»ä¸€èˆ¬å§æ„é€ æ–¹æ³•è®¾ä¸ºé™æ€ï¼ŒæŠŠæˆå‘˜æ–¹æ³•è®¾ä¸ºé™æ€
 
 */
 public class DateUtils {
 
     private DateUtils(){
-        //ÎŞ²ÎË½ÓĞ¹¹Ôì·½·¨ Íâ²¿²»ÄÜ´´½¨¶ÔÏó
+        //æ— å‚ç§æœ‰æ„é€ æ–¹æ³• å¤–éƒ¨ä¸èƒ½åˆ›å»ºå¯¹è±¡
     }
 
-    //´«ÈëÒ»¸öÈÕÆÚDate¶ÔÏó£¬ºÍÒª×ª»»µÄÖ¸¶¨¸ñÊ½×Ö·û´®£¬ ·µ»ØÕâ¸öDateÊ±¼äÒÔÕâ¸ö¸ñÊ½Ëù¶ÔÓ¦µÄÊ±¼ä×Ö·û´®¡£
+    //ä¼ å…¥ä¸€ä¸ªæ—¥æœŸDateå¯¹è±¡ï¼Œå’Œè¦è½¬æ¢çš„æŒ‡å®šæ ¼å¼å­—ç¬¦ä¸²ï¼Œ è¿”å›è¿™ä¸ªDateæ—¶é—´ä»¥è¿™ä¸ªæ ¼å¼æ‰€å¯¹åº”çš„æ—¶é—´å­—ç¬¦ä¸²ã€‚
     public static String DateToString(Date date, String str){
         SimpleDateFormat sdf = new SimpleDateFormat(str);
         String formatDate = sdf.format(date);
         return formatDate;
     }
 
-    //´«ÈëÒ»¸öÈÕÆÚ×Ö·û´®£¬ºÍ´ËÈÕÆÚ¸ñÊ½×Ö·û´®£¬·µ»Ø½âÎöËùµÃµ½µÄ×Ö·û´®¡£
+    //ä¼ å…¥ä¸€ä¸ªæ—¥æœŸå­—ç¬¦ä¸²ï¼Œå’Œæ­¤æ—¥æœŸæ ¼å¼å­—ç¬¦ä¸²ï¼Œè¿”å›è§£ææ‰€å¾—åˆ°çš„å­—ç¬¦ä¸²ã€‚
     public static Date StringToDate(String str1, String str2) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat(str2);
         Date parseDate = sdf.parse(str1);

@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.×ªÐÍ.ÓÃInstanceof¹Ø¼ü×Ö;
+package åŸºç¡€çŸ¥è¯†.è½¬åž‹.ç”¨Instanceofå…³é”®å­—;
 
 public abstract class Animal {
 

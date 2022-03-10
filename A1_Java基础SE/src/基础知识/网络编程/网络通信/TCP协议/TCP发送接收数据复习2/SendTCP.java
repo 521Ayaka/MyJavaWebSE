@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°2;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 2;
 
 import java.io.*;
 import java.net.Socket;
 
 /*
-    ¿Í»§¶Ë:
-            ¿Í»§¶Ë·¢ÎÄ¼ş
+    å®¢æˆ·ç«¯:
+            å®¢æˆ·ç«¯å‘æ–‡ä»¶
 
-    Ê¹ÓÃÓÃ×Ô¶¯»¯½áÊø±êÓï ½áÊøio¶ÁÈ¡Êı¾İ
+    ä½¿ç”¨ç”¨è‡ªåŠ¨åŒ–ç»“æŸæ ‡è¯­ ç»“æŸioè¯»å–æ•°æ®
     socketObj.shutdownOutput();
 
 */
@@ -16,36 +16,36 @@ public class SendTCP {
     public static void main(String[] args) {
 
 
-        try (   //´´½¨¿Í»§¶ËSocket¶ÔÏó
+        try (   //åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
                 Socket s = new Socket("GanGaJiang", 10001);
-                //»ñÈ¡io¶ÔÏó,¶ÁÈ¡·¢ËÍÎÄ¼şÄÚÈİ
-                BufferedReader br = new BufferedReader(new FileReader(new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\ÍøÂç±à³Ì\\ÍøÂçÍ¨ĞÅ\\TCPĞ­Òé\\TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°2\\SendTCP.java")));
-                //½«s.getOutputStream()·â×°³É ×Ö·û»º´æÊä³öÁ÷
+                //è·å–ioå¯¹è±¡,è¯»å–å‘é€æ–‡ä»¶å†…å®¹
+                BufferedReader br = new BufferedReader(new FileReader(new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\ç½‘ç»œç¼–ç¨‹\\ç½‘ç»œé€šä¿¡\\TCPåè®®\\TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 2\\SendTCP.java")));
+                //å°†s.getOutputStream()å°è£…æˆ å­—ç¬¦ç¼“å­˜è¾“å‡ºæµ
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-                //½ÓÊÕÊı¾İ·´À¡ Í¬Ñù·â×°³ÉBufferedReader
+                //æ¥æ”¶æ•°æ®åé¦ˆ åŒæ ·å°è£…æˆBufferedReader
                 BufferedReader brx = new BufferedReader(new InputStreamReader(s.getInputStream()))
         ) {
 
 
-            //·¢ËÍÄÚÈİ==================
+            //å‘é€å†…å®¹==================
             String line;
             while ((line = br.readLine()) != null) {
                 bw.write(line);
                 bw.newLine();
                 bw.flush();
             }
-            //Ö±½ÓÊ¹ÓÃ ¸Ã·½·¨Õı³£Í£Ö¹±êÓï
+            //ç›´æ¥ä½¿ç”¨ è¯¥æ–¹æ³•æ­£å¸¸åœæ­¢æ ‡è¯­
             s.shutdownOutput();
-            /*//×Ô¶¨Òå½ÓÊÕ±êÓï
+            /*//è‡ªå®šä¹‰æ¥æ”¶æ ‡è¯­
             bw.write("!@#$%end");
-            bw.newLine();//newLine²»ÄÜÉÙ£¡!!
+            bw.newLine();//newLineä¸èƒ½å°‘ï¼!!
             bw.flush();*/
 
 
-            //½ÓÊÕ·şÎñÆ÷·´À¡
+            //æ¥æ”¶æœåŠ¡å™¨åé¦ˆ
             System.out.println(brx.readLine());
 
-            //ÒÑ×Ô¶¯ÊÍ·Å×ÊÔ´¡£
+            //å·²è‡ªåŠ¨é‡Šæ”¾èµ„æºã€‚
         } catch (IOException e) {
             e.printStackTrace();
         }

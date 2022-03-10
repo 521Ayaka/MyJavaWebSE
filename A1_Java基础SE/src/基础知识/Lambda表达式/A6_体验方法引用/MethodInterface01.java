@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A6_ÌåÑé·½·¨ÒıÓÃ;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A6_ä½“éªŒæ–¹æ³•å¼•ç”¨;
 
 public interface MethodInterface01 {
 
     void method(String s);
 
     static void me(String str){
-        System.out.println("meÖØÔØ ²ÎÊıÀàĞÍ: String :" + str);
-        System.out.println("MethodInterface01 ÄÚ²¿Ä¬ÈÏ·½·¨¡£");
+        System.out.println("meé‡è½½ å‚æ•°ç±»å‹: String :" + str);
+        System.out.println("MethodInterface01 å†…éƒ¨é»˜è®¤æ–¹æ³•ã€‚");
     }
 
     static void me(int a){
-        System.out.println("meÖØÔØ ²ÎÊıÀàĞÍ: int :" + a);
-        System.out.println("MethodInterface01 ÄÚ²¿Ä¬ÈÏ·½·¨¡£");
+        System.out.println("meé‡è½½ å‚æ•°ç±»å‹: int :" + a);
+        System.out.println("MethodInterface01 å†…éƒ¨é»˜è®¤æ–¹æ³•ã€‚");
     }
 
 }

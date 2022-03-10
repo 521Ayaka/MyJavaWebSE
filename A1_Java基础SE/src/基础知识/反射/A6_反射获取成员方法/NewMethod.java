@@ -1,43 +1,43 @@
-package »ù´¡ÖªÊ¶.·´Éä.A6_·´Éä»ñÈ¡³ÉÔ±·½·¨;
+package åŸºç¡€çŸ¥è¯†.åå°„.A6_åå°„è·å–æˆå‘˜æ–¹æ³•;
 /*
-Í¨¹ı·´Éä»ñÈ¡³ÉÔ±·½·¨:
+é€šè¿‡åå°„è·å–æˆå‘˜æ–¹æ³•:
 
-»ñÈ¡ËùÓĞ¹«¹²³ÉÔ±·½·¨ Êı×é:
-        Method[] getMethods()·µ»Ø°üº¬Ò»¸öÊı×é·½·¨¶ÔÏó·´ÉäÓÉ´Ë±íÊ¾µÄÀà
-        »ò½Ó¿ÚµÄËùÓĞ¹«¹²·½·¨ Àà¶ÔÏó£¬°üÀ¨ÄÇĞ©ÓÉÀà»ò½Ó¿ÚºÍÄÇĞ©´Ó³¬ÀàºÍ³¬½Ó¿Ú¼Ì³ĞµÄÉùÃ÷¡£
+è·å–æ‰€æœ‰å…¬å…±æˆå‘˜æ–¹æ³• æ•°ç»„:
+        Method[] getMethods()è¿”å›åŒ…å«ä¸€ä¸ªæ•°ç»„æ–¹æ³•å¯¹è±¡åå°„ç”±æ­¤è¡¨ç¤ºçš„ç±»
+        æˆ–æ¥å£çš„æ‰€æœ‰å…¬å…±æ–¹æ³• ç±»å¯¹è±¡ï¼ŒåŒ…æ‹¬é‚£äº›ç”±ç±»æˆ–æ¥å£å’Œé‚£äº›ä»è¶…ç±»å’Œè¶…æ¥å£ç»§æ‰¿çš„å£°æ˜ã€‚
 
 
-»ñÈ¡ËùÓĞ³ÉÔ±·½·¨ Êı×é:
-        Method[] getDeclaredMethods() ·µ»Ø°üº¬Ò»¸öÊı×é·½·¨¶ÔÏó·´ÉäµÄÀà»ò½Ó¿ÚµÄËùÓĞÉùÃ÷µÄ·½·¨£¬
-        Í¨¹ı´Ë±íÊ¾ Àà¶ÔÏó£¬°üÀ¨¹«¹²£¬±£»¤£¬Ä¬ÈÏ£¨°ü£©·ÃÎÊºÍË½ÓĞ·½·¨£¬µ«²»°üÀ¨¼Ì³ĞµÄ·½·¨¡£
+è·å–æ‰€æœ‰æˆå‘˜æ–¹æ³• æ•°ç»„:
+        Method[] getDeclaredMethods() è¿”å›åŒ…å«ä¸€ä¸ªæ•°ç»„æ–¹æ³•å¯¹è±¡åå°„çš„ç±»æˆ–æ¥å£çš„æ‰€æœ‰å£°æ˜çš„æ–¹æ³•ï¼Œ
+        é€šè¿‡æ­¤è¡¨ç¤º ç±»å¯¹è±¡ï¼ŒåŒ…æ‹¬å…¬å…±ï¼Œä¿æŠ¤ï¼Œé»˜è®¤ï¼ˆåŒ…ï¼‰è®¿é—®å’Œç§æœ‰æ–¹æ³•ï¼Œä½†ä¸åŒ…æ‹¬ç»§æ‰¿çš„æ–¹æ³•ã€‚
 
 =====================================================================================
 
-»ñÈ¡µ¥¸ö¹«¹²³ÉÔ±·½·¨ Êı×é:
+è·å–å•ä¸ªå…¬å…±æˆå‘˜æ–¹æ³• æ•°ç»„:
         Method getMethod(String name, class<?>... parameterTypes)
-        ·µ»ØÒ»¸ö ·½·¨¶ÔÏó£¬Ëü·´Ó³´Ë±íÊ¾µÄÀà»ò½Ó¿ÚµÄÖ¸¶¨¹«¹²³ÉÔ±·½·¨ Àà¶ÔÏó¡£
+        è¿”å›ä¸€ä¸ª æ–¹æ³•å¯¹è±¡ï¼Œå®ƒåæ˜ æ­¤è¡¨ç¤ºçš„ç±»æˆ–æ¥å£çš„æŒ‡å®šå…¬å…±æˆå‘˜æ–¹æ³• ç±»å¯¹è±¡ã€‚
 
-»ñÈ¡µ¥¸ö³ÉÔ±·½·¨ Êı×é:
+è·å–å•ä¸ªæˆå‘˜æ–¹æ³• æ•°ç»„:
         Method getDeclaredMethod(String name, class<?>... parameterTypes)
-        ·µ»ØÒ»¸ö ·½·¨¶ÔÏó£¬Ëü·´Ó³´Ë±íÊ¾µÄÀà»ò½Ó¿ÚµÄÖ¸¶¨ÉùÃ÷µÄ·½·¨ Àà¶ÔÏó¡£
+        è¿”å›ä¸€ä¸ª æ–¹æ³•å¯¹è±¡ï¼Œå®ƒåæ˜ æ­¤è¡¨ç¤ºçš„ç±»æˆ–æ¥å£çš„æŒ‡å®šå£°æ˜çš„æ–¹æ³• ç±»å¯¹è±¡ã€‚
 
-ÆäÖĞ:
-        name: nameÊÇµ÷ÓÃµÄ·½·¨Ãû³Æ
-        para: ¸Ãname·½·¨µÄ²ÎÊı [¸öÊı] ºÍ [ÀàĞÍµÄclass¶ÔÏó]
+å…¶ä¸­:
+        name: nameæ˜¯è°ƒç”¨çš„æ–¹æ³•åç§°
+        para: è¯¥nameæ–¹æ³•çš„å‚æ•° [ä¸ªæ•°] å’Œ [ç±»å‹çš„classå¯¹è±¡]
 
 =====================================================================================
 
-Ê¹ÓÃMethodÀà:
+ä½¿ç”¨Methodç±»:
 
         Object invoke(Object obj, Object... args)
-        ÔÚ¾ßÓĞÖ¸¶¨²ÎÊıµÄ ·½·¨¶ÔÏóÉÏµ÷ÓÃ´Ë ·½·¨¶ÔÏó±íÊ¾µÄµ×²ã·½·¨¡£
+        åœ¨å…·æœ‰æŒ‡å®šå‚æ•°çš„ æ–¹æ³•å¯¹è±¡ä¸Šè°ƒç”¨æ­¤ æ–¹æ³•å¯¹è±¡è¡¨ç¤ºçš„åº•å±‚æ–¹æ³•ã€‚
 
-        ÆäÖĞ:
-        Object: ·µ»ØÖµÀàĞÍ¶ÔÏó
-        obj:    µ÷ÓÃ·½·¨µÄ¶ÔÏó
-        args:   ´ıÓÃ·½·¨¶ÔÏóµÄ²ÎÊı¡£
+        å…¶ä¸­:
+        Object: è¿”å›å€¼ç±»å‹å¯¹è±¡
+        obj:    è°ƒç”¨æ–¹æ³•çš„å¯¹è±¡
+        args:   å¾…ç”¨æ–¹æ³•å¯¹è±¡çš„å‚æ•°ã€‚
 
-        TODO: Ë¼¿¼Ê¹ÓÃ·Ç¹«¹²³ÉÔ±±äÁ¿, ¼û [Á·Ï°]
+        TODO: æ€è€ƒä½¿ç”¨éå…¬å…±æˆå‘˜å˜é‡, è§ [ç»ƒä¹ ]
 
 */
 
@@ -49,18 +49,18 @@ public class NewMethod {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        //´´½¨class¶ÔÏó
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        //åˆ›å»ºclasså¯¹è±¡
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
 
-        //·ÃÎÊ³ÉÔ±·½·¨:
+        //è®¿é—®æˆå‘˜æ–¹æ³•:
 
-        method1(c); //test: »ñÈ¡ËùÓĞ[¹«¹²³ÉÔ±·½·¨] Êı×é
-        method2(c); //test: »ñÈ¡ËùÓĞ[³ÉÔ±·¢¸ø·¢]   Êı×é
+        method1(c); //test: è·å–æ‰€æœ‰[å…¬å…±æˆå‘˜æ–¹æ³•] æ•°ç»„
+        method2(c); //test: è·å–æ‰€æœ‰[æˆå‘˜å‘ç»™å‘]   æ•°ç»„
 
-        method3(c); //test: »ñÈ¡µ¥¸ö[¹«¹²³ÉÔ±·½·¨]
-        method4(c); //test: »ñÈ¡µ¥¸ö[³ÉÔ±·½·¨]
+        method3(c); //test: è·å–å•ä¸ª[å…¬å…±æˆå‘˜æ–¹æ³•]
+        method4(c); //test: è·å–å•ä¸ª[æˆå‘˜æ–¹æ³•]
 
-        useMethod(c); //Í¨¹ıMethodÀà, Ê¹ÓÃ³ÉÔ±·½·¨
+        useMethod(c); //é€šè¿‡Methodç±», ä½¿ç”¨æˆå‘˜æ–¹æ³•
 
     }
 
@@ -69,18 +69,18 @@ public class NewMethod {
     public static void method1(Class<?> c) {
         System.out.println("\n==================================================================\n");
 
-        //»ñÈ¡ËùÓĞ¹«¹²³ÉÔ±·½·¨ Êı×é:
+        //è·å–æ‰€æœ‰å…¬å…±æˆå‘˜æ–¹æ³• æ•°ç»„:
         Method[] mes = c.getMethods();
-        //±éÀú½á¹û:
+        //éå†ç»“æœ:
         for (Method me : mes) {
             System.out.println(me);
         }
-        /*ÔËĞĞ½á¹û:
-        public java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.toString()
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method1()
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method2(java.lang.String)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method3(java.lang.String,int)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method4()
+        /*è¿è¡Œç»“æœ:
+        public java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.toString()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method1()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method2(java.lang.String)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method3(java.lang.String,int)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method4()
         public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
         public final void java.lang.Object.wait() throws java.lang.InterruptedException
         public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
@@ -89,7 +89,7 @@ public class NewMethod {
         public final native java.lang.Class java.lang.Object.getClass()
         public final native void java.lang.Object.notify()
         public final native void java.lang.Object.notifyAll()
-        */ //·ÃÎÊËùÓĞ¹«¹²³ÉÔ±·½·¨, °üÀ¨¼Ì³ĞµÄ¸¸Àà·½·¨£¡
+        */ //è®¿é—®æ‰€æœ‰å…¬å…±æˆå‘˜æ–¹æ³•, åŒ…æ‹¬ç»§æ‰¿çš„çˆ¶ç±»æ–¹æ³•ï¼
 
         System.out.println("\n==================================================================\n");
 
@@ -99,20 +99,20 @@ public class NewMethod {
 //=======================================================================================================
 
     public static void method2(Class<?> c) {
-        //»ñÈ¡ËùÓĞ³ÉÔ±·½·¨ Êı×é:
+        //è·å–æ‰€æœ‰æˆå‘˜æ–¹æ³• æ•°ç»„:
         Method[] mes = c.getDeclaredMethods();
-        //±éÀú½á¹û:
+        //éå†ç»“æœ:
         for (Method me : mes) {
             System.out.println(me);
         }
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        public java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.toString()
-        private void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.me()
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method4()
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method3(java.lang.String,int)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method2(java.lang.String)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method1()
+        public java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.toString()
+        private void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.me()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method4()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method3(java.lang.String,int)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method2(java.lang.String)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method1()
         */
 
         System.out.println("\n==================================================================\n");
@@ -124,31 +124,31 @@ public class NewMethod {
 
     public static void method3(Class<?> c) throws NoSuchMethodException {
 
-        //»ñÈ¡µ¥¸ö¹«¹²³ÉÔ±·½·¨
+        //è·å–å•ä¸ªå…¬å…±æˆå‘˜æ–¹æ³•
         Method me1 = c.getMethod("method1");
         Method me2 = c.getMethod("method2", String.class);
         Method me3 = c.getMethod("method3", String.class, int.class);
         Method me4 = c.getMethod("method4");
         Method getC = c.getMethod("getClass");
         Method code = c.getMethod("hashCode");
-        /*ÆäÖĞ:
-        name: nameÊÇµ÷ÓÃµÄ·½·¨Ãû³Æ
-        para: ¸Ãname·½·¨µÄ²ÎÊı [¸öÊı] ºÍ [ÀàĞÍµÄclass¶ÔÏó]
+        /*å…¶ä¸­:
+        name: nameæ˜¯è°ƒç”¨çš„æ–¹æ³•åç§°
+        para: è¯¥nameæ–¹æ³•çš„å‚æ•° [ä¸ªæ•°] å’Œ [ç±»å‹çš„classå¯¹è±¡]
         */
 
-        //Êä³ö½á¹û
+        //è¾“å‡ºç»“æœ
         System.out.println(me1);
         System.out.println(me2);
         System.out.println(me3);
         System.out.println(me4);
         System.out.println(getC);
         System.out.println(code);
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method1()
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method2(java.lang.String)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method3(java.lang.String,int)
-        public void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.method4()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method1()
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method2(java.lang.String)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method3(java.lang.String,int)
+        public void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.method4()
         public final native java.lang.Class java.lang.Object.getClass()
         public native int java.lang.Object.hashCode()
         */
@@ -162,15 +162,15 @@ public class NewMethod {
 
     public static void method4(Class<?> c) throws NoSuchMethodException {
 
-        //»ñÈ¡µ¥¸ö³ÉÔ±·½·¨:
+        //è·å–å•ä¸ªæˆå‘˜æ–¹æ³•:
         Method me = c.getDeclaredMethod("me");
 
-        //Êä³ö½á¹û:
+        //è¾“å‡ºç»“æœ:
         System.out.println(me);
 
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        private void »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.me()
+        private void åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.me()
                                                                     */
 
         System.out.println("\n==================================================================\n");
@@ -182,43 +182,43 @@ public class NewMethod {
 
     public static void useMethod(Class<?> c) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
-        //ÒªÏëÊ¹ÓÃMethod, ÏÈÍ¨¹ı·´Éä»ñÈ¡¹¹ÔìÆ÷´´½¨¶ÔÏó
+        //è¦æƒ³ä½¿ç”¨Method, å…ˆé€šè¿‡åå°„è·å–æ„é€ å™¨åˆ›å»ºå¯¹è±¡
         Constructor<?> con = c.getDeclaredConstructor();
 
-        //Í¨¹ı»ñÈ¡µ½µÄ¹¹ÔìÆ÷´´½¨¶ÔÏó
+        //é€šè¿‡è·å–åˆ°çš„æ„é€ å™¨åˆ›å»ºå¯¹è±¡
         con.setAccessible(true);
         Object obj = con.newInstance();
 
-        //Í¨¹ı·´Éä»ñÈ¡³ÉÔ±·½·¨
+        //é€šè¿‡åå°„è·å–æˆå‘˜æ–¹æ³•
         Method method = c.getMethod("method1");
 
-        //Í¨¹ıMethodÀà objµ÷ÓÃmethod1·½·¨¡£
+        //é€šè¿‡Methodç±» objè°ƒç”¨method1æ–¹æ³•ã€‚
         /*
         Object invoke(Object obj, Object... args)
-        ÔÚ¾ßÓĞÖ¸¶¨²ÎÊıµÄ ·½·¨¶ÔÏóÉÏµ÷ÓÃ´Ë ·½·¨¶ÔÏó±íÊ¾µÄµ×²ã·½·¨¡£
+        åœ¨å…·æœ‰æŒ‡å®šå‚æ•°çš„ æ–¹æ³•å¯¹è±¡ä¸Šè°ƒç”¨æ­¤ æ–¹æ³•å¯¹è±¡è¡¨ç¤ºçš„åº•å±‚æ–¹æ³•ã€‚
 
-        ÆäÖĞ:
-        Object: ·µ»ØÖµÀàĞÍ¶ÔÏó
-        obj:    µ÷ÓÃ·½·¨µÄ¶ÔÏó
-        args:   ´ıÓÃ·½·¨¶ÔÏóµÄ²ÎÊı¡£
+        å…¶ä¸­:
+        Object: è¿”å›å€¼ç±»å‹å¯¹è±¡
+        obj:    è°ƒç”¨æ–¹æ³•çš„å¯¹è±¡
+        args:   å¾…ç”¨æ–¹æ³•å¯¹è±¡çš„å‚æ•°ã€‚
 
         */
 
         Object o = method.invoke(obj);
-        System.out.println(o);//method1ÎŞ·µ»ØÖµ
+        System.out.println(o);//method1æ— è¿”å›å€¼
         /*
-        ÆäÖĞ:
-        obj¶ÔÏó,objÖĞµÄmethod¶ÔÏó[method1]
-        objºóÃæÎª¿Õ,ÒòÎªmethod1ÖĞ²ÎÊıÁĞ±íÎª¿Õ
-        oÎªnull,ÒòÎªmethod1ÖĞÃ»ÓĞ·µ»ØÖµ
+        å…¶ä¸­:
+        objå¯¹è±¡,objä¸­çš„methodå¯¹è±¡[method1]
+        objåé¢ä¸ºç©º,å› ä¸ºmethod1ä¸­å‚æ•°åˆ—è¡¨ä¸ºç©º
+        oä¸ºnull,å› ä¸ºmethod1ä¸­æ²¡æœ‰è¿”å›å€¼
 
-        ÔËĞĞ½á¹û:
+        è¿è¡Œç»“æœ:
         method1
         null
 
         */
 
-        //TODO: Ë¼¿¼Ê¹ÓÃ·Ç¹«¹²³ÉÔ±±äÁ¿, ¼û [Á·Ï°]
+        //TODO: æ€è€ƒä½¿ç”¨éå…¬å…±æˆå‘˜å˜é‡, è§ [ç»ƒä¹ ]
 
     }
 

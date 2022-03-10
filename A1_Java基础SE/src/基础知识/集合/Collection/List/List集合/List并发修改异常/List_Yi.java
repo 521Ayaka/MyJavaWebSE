@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ.List²¢·¢ĞŞ¸ÄÒì³£;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ.Listå¹¶å‘ä¿®æ”¹å¼‚å¸¸;
 /*
-ÏÖÔÚÓĞÒ»¸öĞèÇó£º
-           ÎÒÓĞÒ»¸ö¼¯ºÏ: List<String> list = new ArrayList<String>();
-           ÀïÃæÓĞÈı¸öÔªËØ: list.add("ÑÇË÷");list.add("ÓÀ¶÷");list.add("ÍòºÀ");
-           ±éÀú¼¯¼¯ºÏ£¬µÃµ½Ã¿Ò»¸öÔªËØ£¬¿´ÓĞÃ»ÓĞÔªËØ[ÑÇË÷]£¬Èç¹ûÓĞ£¬ÎÒ¾ÍÌí¼ÓÒ»¸öÔªËØ[Å£Åú,Â¬±¾Î°Ã»ÓĞ¿ª¹Ò£¡]£¬ÇëĞ´´úÂëÊµÏÖ
+ç°åœ¨æœ‰ä¸€ä¸ªéœ€æ±‚ï¼š
+           æˆ‘æœ‰ä¸€ä¸ªé›†åˆ: List<String> list = new ArrayList<String>();
+           é‡Œé¢æœ‰ä¸‰ä¸ªå…ƒç´ : list.add("äºšç´¢");list.add("æ°¸æ©");list.add("ä¸‡è±ª");
+           éå†é›†é›†åˆï¼Œå¾—åˆ°æ¯ä¸€ä¸ªå…ƒç´ ï¼Œçœ‹æœ‰æ²¡æœ‰å…ƒç´ [äºšç´¢]ï¼Œå¦‚æœæœ‰ï¼Œæˆ‘å°±æ·»åŠ ä¸€ä¸ªå…ƒç´ [ç‰›æ‰¹,å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚ï¼]ï¼Œè¯·å†™ä»£ç å®ç°
 */
 
 import java.util.ArrayList;
@@ -15,37 +15,37 @@ public class List_Yi {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>();
-        list.add("ÑÇË÷");
-        list.add("ÓÀ¶÷");
-        list.add("ÍòºÀ");
+        list.add("äºšç´¢");
+        list.add("æ°¸æ©");
+        list.add("ä¸‡è±ª");
 
-        //Õâ¸öÊÇ¡¾ÖØµã=£¡£¡£¡£¡£¡¡¾²¢·¢ĞŞ¸ÄÒì³£¡¿
+        //è¿™ä¸ªæ˜¯ã€é‡ç‚¹=ï¼ï¼ï¼ï¼ï¼ã€å¹¶å‘ä¿®æ”¹å¼‚å¸¸ã€‘
         Iterator<String> itr = list.iterator();
 //        while (itr.hasNext()){
 //            String str = itr.next();
-//            if (str.equals("ÑÇË÷")){
-//                list.add("Å£Åú,Â¬±¾Î°Ã»ÓĞ¿ª¹Ò£¡");
+//            if (str.equals("äºšç´¢")){
+//                list.add("ç‰›æ‰¹,å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚ï¼");
 //            }
 //        }
-        /**Òì³£±¨´í£º
+        /**å¼‚å¸¸æŠ¥é”™ï¼š
         Exception in thread "main" java.util.ConcurrentModificationException
         at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1013)
         at java.base/java.util.ArrayList$Itr.next(ArrayList.java:967)
-        at MyJava.»ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ.List²¢·¢ĞŞ¸ÄÒì³£.List_Yi.main(List_Yi.java:24)
+        at MyJava.åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ.Listå¹¶å‘ä¿®æ”¹å¼‚å¸¸.List_Yi.main(List_Yi.java:24)
 
-        Òì³£·ÖÎöÔÚ£ºList²¢·¢ĞŞ¸ÄÒì³£µÄÔ´Âë.md ÎÄ¼şµ±ÖĞ¡£
+        å¼‚å¸¸åˆ†æåœ¨ï¼šListå¹¶å‘ä¿®æ”¹å¼‚å¸¸çš„æºç .md æ–‡ä»¶å½“ä¸­ã€‚
         */
 
 
-        //ÕıÈ·Ê¹ÓÃ:
+        //æ­£ç¡®ä½¿ç”¨:
         for (int i = 0; i < list.size(); i++) {
             String str = list.get(i);
-            if (str.equals("ÑÇË÷")){
-                list.add("Å£Åú,Â¬±¾Î°Ã»ÓĞ¿ª¹Ò£¡");
+            if (str.equals("äºšç´¢")){
+                list.add("ç‰›æ‰¹,å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚ï¼");
             }
         }
         System.out.println(list);
-        //forÑ­»·£¬y y d s
+        //forå¾ªç¯ï¼Œy y d s
     }
 
 }

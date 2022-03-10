@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.Comparator;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».Comparator;
 
 import java.util.Comparator;
 import java.util.TreeSet;
@@ -6,11 +6,11 @@ import java.util.TreeSet;
 public class TreeSet_Lei {
 
     public static void main(String[] args) {
-                                                //¹¹Ôì·½·¨µÄÊ±ºò£¬´´½¨Ò»¸ö±È½ÏÅÅĞò½Ó¿ÚµÄÊµÏÖÄäÃûÀà£¬·ºĞÍÓëTreeSetÀàĞÍÏàÍ¬
+                                                //æ„é€ æ–¹æ³•çš„æ—¶å€™ï¼Œåˆ›å»ºä¸€ä¸ªæ¯”è¾ƒæ’åºæ¥å£çš„å®ç°åŒ¿åç±»ï¼Œæ³›å‹ä¸TreeSetç±»å‹ç›¸åŒ
         TreeSet<Student> treeSet = new TreeSet<>(new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                //ÕâÀï±äÎªµ÷ÓÃÇ°ºóÁ½¸ö¶ÔÏóµÄ³ÉÔ±·½·¨¡£ÒòÎª³ÉÔ±±äÁ¿Ë½ÓĞ»¯ÁË
+                //è¿™é‡Œå˜ä¸ºè°ƒç”¨å‰åä¸¤ä¸ªå¯¹è±¡çš„æˆå‘˜æ–¹æ³•ã€‚å› ä¸ºæˆå‘˜å˜é‡ç§æœ‰åŒ–äº†
                 int num = o1.getAge() - o1.getAge();
                 int num1 = num == 0 ? o1.getName().compareTo(o2.getName()) : num;
                 return num1;
@@ -21,14 +21,14 @@ public class TreeSet_Lei {
         Student stu3 = new Student("GanGaDi", 20);
         Student stu4 = new Student("GanGaLe", 120);
         Student stu5 = new Student("GanGaBaoBao", 9);
-        Student stu6 = new Student("GanGaBaoBao", 9);//ÖØ¸´
+        Student stu6 = new Student("GanGaBaoBao", 9);//é‡å¤
 
         treeSet.add(stu1);
         treeSet.add(stu2);
         treeSet.add(stu3);
         treeSet.add(stu4);
         treeSet.add(stu5);
-        treeSet.add(stu6);//ÖØ¸´
+        treeSet.add(stu6);//é‡å¤
 
         for (Student stu :
                 treeSet) {

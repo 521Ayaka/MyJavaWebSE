@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Collection½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Collectionæ¥å£;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,21 +9,21 @@ public class Iterator_Method {
     public static void main(String[] args) {
 
         Collection<String> list = new ArrayList<>();
-        list.add("ÎÊÊÀ¼äÇéÎªºÎÎï£¬");
-        list.add("Ö±½ÌÈËÉúËÀÏàĞí¡£");
+        list.add("é—®ä¸–é—´æƒ…ä¸ºä½•ç‰©ï¼Œ");
+        list.add("ç›´æ•™äººç”Ÿæ­»ç›¸è®¸ã€‚");
 
         Iterator<String> it = list.iterator();
         /**
-        list.iterator;·µ»ØµÄÊÇIte¶ÔÏó£¬ItrÊÇIterator<E>µÄÊµÏÖÀà¡£
-        ËùÒÔËµÕâÀïÊÇÓÃÁË¶àÌ¬µÄ·½·¨´´½¨µÄ
+        list.iterator;è¿”å›çš„æ˜¯Iteå¯¹è±¡ï¼ŒItræ˜¯Iterator<E>çš„å®ç°ç±»ã€‚
+        æ‰€ä»¥è¯´è¿™é‡Œæ˜¯ç”¨äº†å¤šæ€çš„æ–¹æ³•åˆ›å»ºçš„
         */
 
         /*
         public Iterator<E> iterator() {
-            return new Itr();  //·µ»ØµÄÊÇItr¶ÔÏó
+            return new Itr();  //è¿”å›çš„æ˜¯Itrå¯¹è±¡
         }
                       ?
-        //ItrÊÇArrayListµÄÄÚ²¿Àà
+        //Itræ˜¯ArrayListçš„å†…éƒ¨ç±»
         private class Itr implements Iterator<E>{
                 //...
         }
@@ -33,12 +33,12 @@ public class Iterator_Method {
         System.out.println(it.next());
         System.out.println(it.next());
         //System.out.println(it.next());
-        // NoSuchElementException: ±íÃ÷Ã¶¾ÙÖĞÃ»ÓĞ¸ü¶àµÄÔªËØ¡£
+        // NoSuchElementException: è¡¨æ˜æšä¸¾ä¸­æ²¡æœ‰æ›´å¤šçš„å…ƒç´ ã€‚
 
         System.out.println("===================================");
 
-        list.add("±¾ÊÇÁ½ÇéÏàÔ¸");
-        list.add("ÓÖÆäÔÚ³¯³¯ÄºÄº");
+        list.add("æœ¬æ˜¯ä¸¤æƒ…ç›¸æ„¿");
+        list.add("åˆå…¶åœ¨æœæœæš®æš®");
         Iterator<String> ite = list.iterator();
         //1
         if (ite.hasNext()){
@@ -65,13 +65,13 @@ public class Iterator_Method {
             System.out.println(6+ite.next());
         }
 
-        //½øĞĞÑ­»·±éÀú
-        System.out.println("=====Ê¹ÓÃwhileÑ­»·=====");
-        //´´½¨µü´úÆ÷
+        //è¿›è¡Œå¾ªç¯éå†
+        System.out.println("=====ä½¿ç”¨whileå¾ªç¯=====");
+        //åˆ›å»ºè¿­ä»£å™¨
         Iterator<String> itr = list.iterator();
         int i = 1;
         while (itr.hasNext()){
-            String str = itr.next();//Ò»°ã»áÏÈÈ¡Öµ£¬ÔÙÊ¹ÓÃ¡£
+            String str = itr.next();//ä¸€èˆ¬ä¼šå…ˆå–å€¼ï¼Œå†ä½¿ç”¨ã€‚
             System.out.println((i++)+": "+str);
         }
 

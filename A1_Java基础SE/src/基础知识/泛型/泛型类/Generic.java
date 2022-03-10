@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.·ºĞÍÀà;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.æ³›å‹ç±»;
 /*
-* ²âÊÔÀà
+* æµ‹è¯•ç±»
 * */
 public class Generic {
 
@@ -8,23 +8,23 @@ public class Generic {
 
         Student stu = new Student();
 
-        //ĞÕÃû
-        stu.setName("ÎŞ¼«´óÊ¦");
+        //å§“å
+        stu.setName("æ— æå¤§å¸ˆ");
         System.out.println(stu.getName());
-        //ÄêÁä
+        //å¹´é¾„
         stu.setAge(10);
-        //stu.setAge("Ê®Ëê");
+        //stu.setAge("åå²");
         System.out.println(stu.getAge());
 
         System.out.println("==========");
 
-        //Ê¹ÓÃ·ºĞÍÀà
+        //ä½¿ç”¨æ³›å‹ç±»
         GenericLei<Integer> gan1 = new GenericLei<>();
         gan1.setT(10);
         System.out.println(gan1.getT());
 
         GenericLei<String> gan2 = new GenericLei<>();
-        gan2.setT("Ê®Ëê");
+        gan2.setT("åå²");
         System.out.println(gan2.getT());
 
         GenericLei<Boolean> gan3 = new GenericLei<>();

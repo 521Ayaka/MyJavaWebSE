@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A8_º¯ÊýÊ½½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A8_å‡½æ•°å¼æŽ¥å£;
 
 public class RunFunctional {
 
     public static void main(String[] args) {
-        String str = "ÕýÔÚÌý¡¶·âËøÎÒÒ»Éú--Íõ½Ü¡·";
+        String str = "æ­£åœ¨å¬ã€Šå°é”æˆ‘ä¸€ç”Ÿ--çŽ‹æ°ã€‹";
 
-        //Í¨¹ýLambda±í´ïÊ½´´½¨ º¯ÊýÊ½½Ó¿Ú¶ÔÏó
+        //é€šè¿‡Lambdaè¡¨è¾¾å¼åˆ›å»º å‡½æ•°å¼æŽ¥å£å¯¹è±¡
         MyInterface mi1 = () -> System.out.println(str);
 
-        //µ÷ÓÃ·½·¨
+        //è°ƒç”¨æ–¹æ³•
         mi1.method();
 
     }

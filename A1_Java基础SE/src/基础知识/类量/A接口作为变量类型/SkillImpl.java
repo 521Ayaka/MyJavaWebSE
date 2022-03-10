@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.A½Ó¿Ú×÷Îª±äÁ¿ÀàĞÍ;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Aæ¥å£ä½œä¸ºå˜é‡ç±»å‹;
 
-//skill ¼¼ÄÜÊµÏÖÀà
+//skill æŠ€èƒ½å®ç°ç±»
 public class SkillImpl implements Skill{
 
-    // ÊµÏÖ º®±ùÉäÊÖ°¬Ï£µÄ¼¼ÄÜ biu~biu~biu~
+    // å®ç° å¯’å†°å°„æ‰‹è‰¾å¸Œçš„æŠ€èƒ½ biu~biu~biu~
     @Override
     public void use() {
         System.out.print("biu~biu~biu~");

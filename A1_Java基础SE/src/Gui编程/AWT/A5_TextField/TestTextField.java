@@ -1,7 +1,7 @@
-package Gui±à³Ì.AWT.A5_TextField;
+package Guiç¼–ç¨‹.AWT.A5_TextField;
 /*
-* Ò»¸öÕı³£µÄµÄÈí¼ş£¬Ò»°ãmain·½·¨Ö»½øĞĞÆô¶¯²Ù×÷
-* °ÑÒªÍê³ÉµÄÊÂ¼ş½øĞĞ²ğ·Öµ½main·½·¨µÄÍâ²¿
+* ä¸€ä¸ªæ­£å¸¸çš„çš„è½¯ä»¶ï¼Œä¸€èˆ¬mainæ–¹æ³•åªè¿›è¡Œå¯åŠ¨æ“ä½œ
+* æŠŠè¦å®Œæˆçš„äº‹ä»¶è¿›è¡Œæ‹†åˆ†åˆ°mainæ–¹æ³•çš„å¤–éƒ¨
 *
 * */
 
@@ -21,10 +21,10 @@ public class TestTextField {
 
 }
 
-//´°ÌåÀà
+//çª—ä½“ç±»
 class MyFrame extends Frame{
     public MyFrame(){
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setLocation(500,300);
         setSize(500,300);
         setBackground(new Color(14, 150, 234));
@@ -36,30 +36,30 @@ class MyFrame extends Frame{
             }
         });
 
-        //ÉèÖÃÎÄ±¾¿ò
+        //è®¾ç½®æ–‡æœ¬æ¡†
         TextField textField = new TextField();
         add(textField);
 
-        //Ìí¼Ó¼àÌıÊÂ¼ş
+        //æ·»åŠ ç›‘å¬äº‹ä»¶
         MyActionListener myActionListener = new MyActionListener();
         textField.addActionListener(myActionListener);
 
-        //»¹¿ÉÒÔÉèÖÃÒ»Ğ©³£ÓÃµÄ²Ù×÷¡£Èç£ºsetEchoChar();
+        //è¿˜å¯ä»¥è®¾ç½®ä¸€äº›å¸¸ç”¨çš„æ“ä½œã€‚å¦‚ï¼šsetEchoChar();
         textField.setEchoChar('*');
 
     }
 }
 
-//ÎÄ±¾¿ò¼àÌıÀà
+//æ–‡æœ¬æ¡†ç›‘å¬ç±»
 class MyActionListener implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //»ñµÃÒ»Ğ©ĞÅÏ¢×ÊÔ´gerSource(); ·µ»ØÖµÎªObject,¿ÉÒÔ½øĞĞÏòÏÂ×ªĞÍ£¬Ò»°ãÊÇ¼àÌıÁËË­¾ÍÊÇ×ªĞÍ³ÉË­
+        //è·å¾—ä¸€äº›ä¿¡æ¯èµ„æºgerSource(); è¿”å›å€¼ä¸ºObject,å¯ä»¥è¿›è¡Œå‘ä¸‹è½¬å‹ï¼Œä¸€èˆ¬æ˜¯ç›‘å¬äº†è°å°±æ˜¯è½¬å‹æˆè°
         TextField field = (TextField) e.getSource();
-        field.getText();//»ñµÃÎÄ±¾¿òµÄĞÅÏ¢£¬¿´ÏÂĞĞ£¬ÕâĞĞ¿ÉÊ¡ÂÔ²»Ğ´
+        field.getText();//è·å¾—æ–‡æœ¬æ¡†çš„ä¿¡æ¯ï¼Œçœ‹ä¸‹è¡Œï¼Œè¿™è¡Œå¯çœç•¥ä¸å†™
         System.out.println(field.getText());
-        //ÓĞget»ù±¾¾ÍÓĞset£¬setTextÉèÖÃ»Ø³µºóÎÄ±¾¿òÀïµÄÎÄ±¾ÄÚÈİ±äÎª(String str)Ê²Ã´;
-        field.setText("");//²»ÊÇnull£¬¶øÊÇ¿Õ×Ö·û´® ¡°¡±
+        //æœ‰getåŸºæœ¬å°±æœ‰setï¼ŒsetTextè®¾ç½®å›è½¦åæ–‡æœ¬æ¡†é‡Œçš„æ–‡æœ¬å†…å®¹å˜ä¸º(String str)ä»€ä¹ˆ;
+        field.setText("");//ä¸æ˜¯nullï¼Œè€Œæ˜¯ç©ºå­—ç¬¦ä¸² â€œâ€
     }
 }

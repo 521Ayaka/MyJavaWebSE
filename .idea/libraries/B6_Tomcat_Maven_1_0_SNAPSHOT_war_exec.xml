@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="B6_Tomcat_Maven-1.0-SNAPSHOT-war-exec">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/target/B6_Tomcat_Maven-1.0-SNAPSHOT-war-exec.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

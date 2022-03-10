@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface04;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface04;
 
 public class Interface {
 
@@ -10,8 +10,8 @@ public class Interface {
         System.out.println("======================");
         impl.method2();
 
-        //ÕâÑù¸Ã½Ó¿ÚµÄ ¡°ÊµÏÖÀà¡± ¶ÔÏó¾Í²»ÄÜµ÷ÓÃ¸Ã½Ó¿Úmethod1¡¢2·½·¨µÄ¹²ÓĞ·½·¨ÁË¡£
-        //impl.methodCommon();//´ËÊ±£¬´íÎóĞ´·¨
+        //è¿™æ ·è¯¥æ¥å£çš„ â€œå®ç°ç±»â€ å¯¹è±¡å°±ä¸èƒ½è°ƒç”¨è¯¥æ¥å£method1ã€2æ–¹æ³•çš„å…±æœ‰æ–¹æ³•äº†ã€‚
+        //impl.methodCommon();//æ­¤æ—¶ï¼Œé”™è¯¯å†™æ³•
 
 
 

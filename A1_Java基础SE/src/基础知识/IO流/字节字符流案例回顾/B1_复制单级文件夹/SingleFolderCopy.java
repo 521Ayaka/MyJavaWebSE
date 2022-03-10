@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹;
 
 import java.io.*;
 
@@ -6,42 +6,42 @@ public class SingleFolderCopy {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new SingleFolderCopy().copy();
 
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void copy() {
 
-        //´´½¨Ô´ÎÄ¼şµØÖ·
-        File yuanFile = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ\\Ô´ÎÄ¼ş¼Ğ");
-        //»ñÈ¡Ô´ÎÄ¼ş¼ĞÃû³Æ
+        //åˆ›å»ºæºæ–‡ä»¶åœ°å€
+        File yuanFile = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹\\æºæ–‡ä»¶å¤¹");
+        //è·å–æºæ–‡ä»¶å¤¹åç§°
         String yuanName = yuanFile.getName();
 
-        //´´½¨Ä¿µÄµØÖ·
-        File destFile = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ\\¸±±¾ÎÄ¼ş¼Ğ");
-        //ÅĞ¶ÏÄ¿µÄµØÖ·ÊÇ·ñ´æÔÚ, Èç¹û²»´¿ÔÚ, ´´½¨¸ÃÎÄ¼ş¼Ğ
+        //åˆ›å»ºç›®çš„åœ°å€
+        File destFile = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹\\å‰¯æœ¬æ–‡ä»¶å¤¹");
+        //åˆ¤æ–­ç›®çš„åœ°å€æ˜¯å¦å­˜åœ¨, å¦‚æœä¸çº¯åœ¨, åˆ›å»ºè¯¥æ–‡ä»¶å¤¹
         if (!destFile.exists()) {
             destFile.mkdir();
         }
-        //»ñÈ¡Ô´ÎÄ¼ş¼ĞÄÚµÄÎÄ¼ş³éÏóµØÖ·, ·ÅÈëÒ»¸ö¼¯ºÏµ±ÖĞ
+        //è·å–æºæ–‡ä»¶å¤¹å†…çš„æ–‡ä»¶æŠ½è±¡åœ°å€, æ”¾å…¥ä¸€ä¸ªé›†åˆå½“ä¸­
         File[] listFiles = yuanFile.listFiles();
-        //½«Ô´ÎÄ¼ş¼ĞÀïÃæµÄÎÄ¼ş·â×°µ½µØÖ·µ±ÖĞ
+        //å°†æºæ–‡ä»¶å¤¹é‡Œé¢çš„æ–‡ä»¶å°è£…åˆ°åœ°å€å½“ä¸­
         for (File files : listFiles) {
             String nameFile = files.getName();
-            //µ±Ô´ÎÄ¼ş¼Ğµ±ÖĞ»ñÈ¡µ½µÄÎÄ¼şÃû³Æ×·¼Ó¸³Öµµ½ destFile Ä¿µÄÎÄ¼ş¼ĞµØÖ·µ±ÖĞ
-            File newNameFile = new File(destFile, nameFile);//ĞÂÎÄ¼ş
+            //å½“æºæ–‡ä»¶å¤¹å½“ä¸­è·å–åˆ°çš„æ–‡ä»¶åç§°è¿½åŠ èµ‹å€¼åˆ° destFile ç›®çš„æ–‡ä»¶å¤¹åœ°å€å½“ä¸­
+            File newNameFile = new File(destFile, nameFile);//æ–°æ–‡ä»¶
 
-            //²Ù×÷¸ÃÎÄ¼ş
+            //æ“ä½œè¯¥æ–‡ä»¶
             BufferedInputStream bis = null;
             BufferedOutputStream bos = null;
             try {
                 bis = new BufferedInputStream(new FileInputStream(files));
                 bos = new BufferedOutputStream(new FileOutputStream(newNameFile));
 
-                //¿ªÊ¼¸´ÖÆÎÄ¼ş
+                //å¼€å§‹å¤åˆ¶æ–‡ä»¶
                 byte[] array = new byte[1024];
                 int len;
                 while ((len = bis.read(array)) != -1) {
@@ -53,14 +53,14 @@ public class SingleFolderCopy {
             } finally {
                 if (bis != null) {
                     try {
-                        bis.close();//ÊÍ·Å×ÊÔ´
+                        bis.close();//é‡Šæ”¾èµ„æº
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }
                 if (bos != null) {
                     try {
-                        bos.close();//ÊÍ·Å×ÊÔ´
+                        bos.close();//é‡Šæ”¾èµ„æº
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

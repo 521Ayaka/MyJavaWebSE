@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Òì³£.Òì³£´¦Àí.Throws_method;
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.å¼‚å¸¸å¤„ç†.Throws_method;
 
 import java.text.ParseException;
 import java.util.Scanner;
@@ -8,12 +8,12 @@ import java.util.Date;
 public class Method {
 
     public static void method5() throws ParseException {
-        System.out.println("Ê¹ÓÃÀà´ıÓÃ");
+        System.out.println("ä½¿ç”¨ç±»å¾…ç”¨");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ÈÕÆÚ¸ñÊ½: Äê/ÔÂ/ÈÕ ");
+        System.out.println("æ—¥æœŸæ ¼å¼: å¹´/æœˆ/æ—¥ ");
         String string = scanner.next();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-        Date date = sdf.parse(string); //SimpleDateFormatÀàµÄparse·½·¨ÒªÊ¹ÓÃthrowsÒì³£Ç©Ãû¡£
+        Date date = sdf.parse(string); //SimpleDateFormatç±»çš„parseæ–¹æ³•è¦ä½¿ç”¨throwså¼‚å¸¸ç­¾åã€‚
         System.out.println(sdf.format(date));
     }
 

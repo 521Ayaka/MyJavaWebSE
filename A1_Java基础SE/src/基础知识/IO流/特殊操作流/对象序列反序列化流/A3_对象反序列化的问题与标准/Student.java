@@ -1,20 +1,20 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷.A3_¶ÔÏó·´ĞòÁĞ»¯µÄÎÊÌâÓë±ê×¼;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ.A3_å¯¹è±¡ååºåˆ—åŒ–çš„é—®é¢˜ä¸æ ‡å‡†;
 
 import java.io.Serializable;
 
-//±È½Ï±ê×¼µÄĞ´·¨£º
-public class Student implements Serializable/*1:ÊµÏÖSerializable½Ó¿Ú*/ {
-    //2:¸ø¶ÔÏóËùÊôµÄÀà¼ÓÒ»¸öserialVersionUID
-         //--±ØĞëÊÇ ¾²Ì¬µÄ finalĞŞÊÎ longÀàĞÍ Ãû×ÖÊÇserialVersionUID
+//æ¯”è¾ƒæ ‡å‡†çš„å†™æ³•ï¼š
+public class Student implements Serializable/*1:å®ç°Serializableæ¥å£*/ {
+    //2:ç»™å¯¹è±¡æ‰€å±çš„ç±»åŠ ä¸€ä¸ªserialVersionUID
+         //--å¿…é¡»æ˜¯ é™æ€çš„ finalä¿®é¥° longç±»å‹ åå­—æ˜¯serialVersionUID
     private static final long serialVersionUID = 42L;
 
-    //³ÉÔ±±äÁ¿
+    //æˆå‘˜å˜é‡
     private String name;
     private int age;
-    //3:Èç¹û²»ÏëĞòÁĞ»¯¸Ã³ÉÔ±±äÁ¿Ê¹ÓÃtransientĞŞÊÎ
+    //3:å¦‚æœä¸æƒ³åºåˆ—åŒ–è¯¥æˆå‘˜å˜é‡ä½¿ç”¨transientä¿®é¥°
     private transient int ID = 0;
 
-    //4:ÒªÏë²»±¨´í,±ØĞëÓĞ¿É·ÃÎÊµÄÎŞ²Î¹¹Ôì·½·¨£¡
+    //4:è¦æƒ³ä¸æŠ¥é”™,å¿…é¡»æœ‰å¯è®¿é—®çš„æ— å‚æ„é€ æ–¹æ³•ï¼
     public Student() {
     }
 
@@ -48,7 +48,7 @@ public class Student implements Serializable/*1:ÊµÏÖSerializable½Ó¿Ú*/ {
         this.ID = ID;
     }
 
-    //ÖØĞ´toString()·½·¨
+    //é‡å†™toString()æ–¹æ³•
 
     @Override
     public String toString() {

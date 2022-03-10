@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°1;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 1;
 
 /*
-    ·şÎñÆ÷
+    æœåŠ¡å™¨
 */
 
 import java.io.*;
@@ -11,24 +11,24 @@ import java.net.Socket;
 public class ReceiveTCP {
 
     public static void main(String[] args) throws IOException {
-        //´´½¨·şÎñÆ÷Socket¶ÔÏó
+        //åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
         ServerSocket ss = new ServerSocket(10002);
 
         try (
-                //¼àÌı¿Í»§¶ËÁ¬½Ó, ·µ»ØÒ»¸öSocket¶ÔÏó
+                //ç›‘å¬å®¢æˆ·ç«¯è¿æ¥, è¿”å›ä¸€ä¸ªSocketå¯¹è±¡
                 Socket s = ss.accept();
-                //»ñÈ¡ioÁ÷,¶ÁÊı¾İ,·â×°³ÉBufferedReader
+                //è·å–ioæµ,è¯»æ•°æ®,å°è£…æˆBufferedReader
                 BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
-                //´´½¨ioÁ÷, ·´À¡ÓÃ»§ĞÅÏ¢
+                //åˆ›å»ºioæµ, åé¦ˆç”¨æˆ·ä¿¡æ¯
                 BufferedWriter bwx = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
         ) {
 
-            //¸øÓÃ»§Á´½Ó·´À¡
-            bwx.write("·şÎñÆ÷½ÓÊÕµ½Á´½ÓÇëÇó");
+            //ç»™ç”¨æˆ·é“¾æ¥åé¦ˆ
+            bwx.write("æœåŠ¡å™¨æ¥æ”¶åˆ°é“¾æ¥è¯·æ±‚");
             bwx.newLine();
             bwx.flush();
 
-            //¶ÁÈ¡¿Í»§¶Ë·¢ËÍÀ´µÄÄÚÈİ ²¢´òÓ¡³öÀ´
+            //è¯»å–å®¢æˆ·ç«¯å‘é€æ¥çš„å†…å®¹ å¹¶æ‰“å°å‡ºæ¥
             String line;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);

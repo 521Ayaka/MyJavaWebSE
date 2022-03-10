@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·û»º³åÁ÷.×Ö·û»º³åÁ÷ÌØÓĞ·½·¨;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦ç¼“å†²æµ.å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•;
 /*
-¼ÌĞø¸Ä½ø, Ê¹ÓÃ×Ö·û»º³åÁ÷µÄ ÌØÓĞ·½·¨ ½øĞĞ¸Ä½ø¸´ÖÆjavaÎÄ¼ş
+ç»§ç»­æ”¹è¿›, ä½¿ç”¨å­—ç¬¦ç¼“å†²æµçš„ ç‰¹æœ‰æ–¹æ³• è¿›è¡Œæ”¹è¿›å¤åˆ¶javaæ–‡ä»¶
 */
 
 import java.io.*;
@@ -9,29 +9,29 @@ public class NewJavaCopyProMethod {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new NewJavaCopyProMethod().init();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
-        //´´½¨»º³åÀï¶ÔÏó¡£
+        //åˆ›å»ºç¼“å†²é‡Œå¯¹è±¡ã€‚
         BufferedReader br = null;
         BufferedWriter bw = null;
 
         try {
-            br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷ÌØÓĞ·½·¨\\NewJavaCopyProMethod.java"));
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷ÌØÓĞ·½·¨\\¸´ÖÆµ½ÕâÀï\\NewJavaCopyProMethod.java"));
-            //¶ÁĞ´²Ù×÷
+            br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•\\NewJavaCopyProMethod.java"));
+            bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµç‰¹æœ‰æ–¹æ³•\\å¤åˆ¶åˆ°è¿™é‡Œ\\NewJavaCopyProMethod.java"));
+            //è¯»å†™æ“ä½œ
             String str;
             while ((str = br.readLine())!=null){
                 bw.write(str);
-                bw.newLine();//²»ÒªÍüÁË»»ĞĞ
-                bw.flush();//²»ÒªÍüÁËË¢ĞÂÒ»ÏÂ
+                bw.newLine();//ä¸è¦å¿˜äº†æ¢è¡Œ
+                bw.flush();//ä¸è¦å¿˜äº†åˆ·æ–°ä¸€ä¸‹
 
-                //ÔÚ¿ØÖÆÌ¨Êä³öÒ»ÏÂ¿´¿´
-                System.out.println(str);//±ğÍüÁË¼Óln
+                //åœ¨æ§åˆ¶å°è¾“å‡ºä¸€ä¸‹çœ‹çœ‹
+                System.out.println(str);//åˆ«å¿˜äº†åŠ ln
             }
 
         } catch (IOException e) {
@@ -39,14 +39,14 @@ public class NewJavaCopyProMethod {
         } finally {
             if (br != null) {
                 try {
-                    br.close();//ÊÍ·Å×ÊÔ´
+                    br.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (bw != null){
                 try {
-                    bw.close();//ÊÍ·Å×ÊÔ´
+                    bw.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

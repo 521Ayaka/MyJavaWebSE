@@ -1,30 +1,30 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°1;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 1;
 
 import java.io.*;
 import java.net.Socket;
 
 /*
-    ¿Í»§¶Ë:
+    å®¢æˆ·ç«¯:
 */
 public class SendTCP {
 
     public static void main(String[] args) {
 
 
-        try (   //´´½¨¿Í»§¶ËSocket¶ÔÏó
+        try (   //åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
                 Socket s = new Socket("GanGaJiang", 10002);
-                //»ñÈ¡io¶ÔÏó,·â×°¼üÅÌÂ¼Èë
+                //è·å–ioå¯¹è±¡,å°è£…é”®ç›˜å½•å…¥
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                //½«s.getOutputStream()·â×°³É ×Ö·û»º´æÊä³öÁ÷
+                //å°†s.getOutputStream()å°è£…æˆ å­—ç¬¦ç¼“å­˜è¾“å‡ºæµ
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-                //½ÓÊÕÊı¾İ·´À¡ Í¬Ñù·â×°³ÉBufferedReader
+                //æ¥æ”¶æ•°æ®åé¦ˆ åŒæ ·å°è£…æˆBufferedReader
                 BufferedReader brx = new BufferedReader(new InputStreamReader(s.getInputStream()));
         ) {
 
-            //½ÓÊÕ·şÎñÆ÷·´À¡
+            //æ¥æ”¶æœåŠ¡å™¨åé¦ˆ
             System.out.println(brx.readLine());
 
-            //·¢ËÍÄÚÈİ======================
+            //å‘é€å†…å®¹======================
             String line;
             while ((line = br.readLine()) != null) {
                 if ("886".equals(line)) {
@@ -36,7 +36,7 @@ public class SendTCP {
             }
 
 
-            //ÒÑ×Ô¶¯ÊÍ·Å×ÊÔ´¡£
+            //å·²è‡ªåŠ¨é‡Šæ”¾èµ„æºã€‚
         } catch (IOException e) {
             e.printStackTrace();
         }

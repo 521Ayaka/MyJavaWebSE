@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.Àà¿â.This;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.This;
 
 public class ThisLei01 {
     String name;
     public void hello1(String who){
-        System.out.println(who+"ÄãºÃ£¬ÎÒ½Ğ"+name);
+        System.out.println(who+"ä½ å¥½ï¼Œæˆ‘å«"+name);
     }
 
     public void hello2(String namae){
-        System.out.println(name+"ÄãºÃ£¬ÎÒ½Ğ"+name);
+        System.out.println(name+"ä½ å¥½ï¼Œæˆ‘å«"+name);
     }
     public void hello3(String name){
-        System.out.println(name+"ÄãºÃ£¬ÎÒ½Ğ" + this.name);
-        //Ê¹ÓÃÁËthis·ÃÎÊ³ÉÔ±±äÁ¿
+        System.out.println(name+"ä½ å¥½ï¼Œæˆ‘å«" + this.name);
+        //ä½¿ç”¨äº†thisè®¿é—®æˆå‘˜å˜é‡
     }
 
     

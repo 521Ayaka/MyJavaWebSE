@@ -1,8 +1,8 @@
-package Gui±à³Ì.AWT.A6_DomeCalculator;
+package Guiç¼–ç¨‹.AWT.A6_DomeCalculator;
 
 /*
-Ê¹ÓÃ£ºÄÚ²¿Àà£¬¸üºÃµÄÌá¹©ÁË°ü×°¡£
-ÄÚ²¿ÀàµÄ×î´óÓÅÊÆ¾ÍÊÇ¿ÉÒÔ³©Í¨ÎŞ×èµÄ·ÃÎÊÍâ²¿ÀàµÄ³ÉÔ±·½·¨ºÍ³ÉÔ±±äÁ¿¡£
+ä½¿ç”¨ï¼šå†…éƒ¨ç±»ï¼Œæ›´å¥½çš„æä¾›äº†åŒ…è£…ã€‚
+å†…éƒ¨ç±»çš„æœ€å¤§ä¼˜åŠ¿å°±æ˜¯å¯ä»¥ç•…é€šæ— é˜»çš„è®¿é—®å¤–éƒ¨ç±»çš„æˆå‘˜æ–¹æ³•å’Œæˆå‘˜å˜é‡ã€‚
 */
 
 import java.awt.*;
@@ -13,25 +13,25 @@ import java.awt.event.WindowEvent;
 
 public class DameCalculatorOptimization2 {
 
-    //Æô¶¯Àà¼ÓÆô¶¯·½·¨main
+    //å¯åŠ¨ç±»åŠ å¯åŠ¨æ–¹æ³•main
     public static void main(String[] args) {
 
-        //Æô¶¯´°Ìå
+        //å¯åŠ¨çª—ä½“
         new CalculatorOpt2().loadFrame();
 
     }
 
 }
 
-//¼ÆËã»úÀà
+//è®¡ç®—æœºç±»
 class CalculatorOpt2 extends Frame {
 
-    //ÊôĞÔ£¬³ÉÔ±±äÁ¿
+    //å±æ€§ï¼Œæˆå‘˜å˜é‡
     TextField field1, field2, field3;
 
-    //¹¦ÄÜ£¬³ÉÔ±·½·¨
+    //åŠŸèƒ½ï¼Œæˆå‘˜æ–¹æ³•
     public void loadFrame() {
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setBounds(500, 300, 500, 200);
         setBackground(new Color(6, 229, 203));
         setVisible(true);
@@ -42,37 +42,37 @@ class CalculatorOpt2 extends Frame {
             }
         });
 
-        //Ìí¼Ó×é¼ş °´Å¥
+        //æ·»åŠ ç»„ä»¶ æŒ‰é’®
         Button button = new Button("=");
 
-        //Ìí¼Ó×é¼ş ÎÄ±¾Óò
-        field1 = new TextField(10);//TextFieldÎ¨Ò»Ò»¸ö´ø²Î¹¹Ôì£¬²ÎÊıÊÇ±íÊ¾Ò»ĞĞÎÄ±¾µÄÈİÁ¿
+        //æ·»åŠ ç»„ä»¶ æ–‡æœ¬åŸŸ
+        field1 = new TextField(10);//TextFieldå”¯ä¸€ä¸€ä¸ªå¸¦å‚æ„é€ ï¼Œå‚æ•°æ˜¯è¡¨ç¤ºä¸€è¡Œæ–‡æœ¬çš„å®¹é‡
         field2 = new TextField(10);
         field3 = new TextField(15);
         field3.setBackground(new Color(243, 185, 96));
 
-        //Ìí¼Ó×é¼ş ±êÇ©
+        //æ·»åŠ ç»„ä»¶ æ ‡ç­¾
         Label label = new Label("+");
 
-        //Ìí¼Ó²¼¾Ö
-        setLayout(new FlowLayout());//ÉèÖÃÎªÁ÷Á÷Ê½²¼¾Ö
+        //æ·»åŠ å¸ƒå±€
+        setLayout(new FlowLayout());//è®¾ç½®ä¸ºæµæµå¼å¸ƒå±€
 
-        //Ïñ´°Ìåµ±ÖĞÌí¼Ó×é¼ş
+        //åƒçª—ä½“å½“ä¸­æ·»åŠ ç»„ä»¶
         add(field1);
         add(label);
         add(field2);
         add(button);
         add(field3);
 
-        //Ìí¼Ó¼àÌıÊÂ¼ş
+        //æ·»åŠ ç›‘å¬äº‹ä»¶
         button.addActionListener(new MyActionListenerOpt2(/*this*/));
     }
 
-    //¼àÌıÊÂ¼şÄÚ²¿Àà
-    //Ë½ÓĞ»¯
+    //ç›‘å¬äº‹ä»¶å†…éƒ¨ç±»
+    //ç§æœ‰åŒ–
     private class MyActionListenerOpt2 implements ActionListener {
-        /*¿ÉÒÔÊ¡ÂÔÕâĞ©
-        //Ê¹ÓÃ×éºÏ£¬»ñÈ¡¼ÆËã»úÀà£¬ÔÚÒ»¸öÀàµ±ÖĞ×éºÏÁíÎªÒ»¸öÀà¡£
+        /*å¯ä»¥çœç•¥è¿™äº›
+        //ä½¿ç”¨ç»„åˆï¼Œè·å–è®¡ç®—æœºç±»ï¼Œåœ¨ä¸€ä¸ªç±»å½“ä¸­ç»„åˆå¦ä¸ºä¸€ä¸ªç±»ã€‚
         CalculatorOpt2 calculatorOpt2 = null;
 
         public MyActionListenerOpt2(CalculatorOpt2 calculatorOpt2) {
@@ -83,13 +83,13 @@ class CalculatorOpt2 extends Frame {
         @Override
         public void actionPerformed(ActionEvent e) {
 
-            //»ñÈ¡ÎÄ±¾Ò»¡¢¶şµÄÎÄ±¾ĞÅÏ¢       Ö±½Óµ÷ÓÃ
+            //è·å–æ–‡æœ¬ä¸€ã€äºŒçš„æ–‡æœ¬ä¿¡æ¯       ç›´æ¥è°ƒç”¨
             int num1 = Integer.parseInt(/*calculatorOpt2.*/field1.getText());
             int num2 = Integer.parseInt(/*calculatorOpt2.*/field2.getText());
-            //×ö¼Ó·¨ÔËËã
+            //åšåŠ æ³•è¿ç®—
             int sum = num1 + num2;
 
-            //Êä³ö½á¹û£¬²¢ÇÒÇå¿ÕÎÄ±¾1ºÍÎÄ±¾2
+            //è¾“å‡ºç»“æœï¼Œå¹¶ä¸”æ¸…ç©ºæ–‡æœ¬1å’Œæ–‡æœ¬2
             /*calculatorOpt2.*/field1.setText("");
             /*calculatorOpt2.*/field2.setText("");
             /*calculatorOpt2.*/field3.setText(Integer.toString(sum));
@@ -99,12 +99,12 @@ class CalculatorOpt2 extends Frame {
 
 }
 
-/*·Åµ½¼ÆËãÆ÷·½·¨ÄÚ²¿
+/*æ”¾åˆ°è®¡ç®—å™¨æ–¹æ³•å†…éƒ¨
 
-//¼àÌıÊÂ¼şÀà
+//ç›‘å¬äº‹ä»¶ç±»
 class MyActionListenerOpt2 implements ActionListener {
 
-    //Ê¹ÓÃ×éºÏ£¬»ñÈ¡¼ÆËã»úÀà£¬ÔÚÒ»¸öÀàµ±ÖĞ×éºÏÁíÎªÒ»¸öÀà¡£
+    //ä½¿ç”¨ç»„åˆï¼Œè·å–è®¡ç®—æœºç±»ï¼Œåœ¨ä¸€ä¸ªç±»å½“ä¸­ç»„åˆå¦ä¸ºä¸€ä¸ªç±»ã€‚
     CalculatorOpt2 calculatorOpt2 = null;
 
     public MyActionListenerOpt2(CalculatorOpt2 calculatorOpt2) {
@@ -114,13 +114,13 @@ class MyActionListenerOpt2 implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        //»ñÈ¡ÎÄ±¾Ò»¡¢¶şµÄÎÄ±¾ĞÅÏ¢
+        //è·å–æ–‡æœ¬ä¸€ã€äºŒçš„æ–‡æœ¬ä¿¡æ¯
         int num1 = Integer.parseInt(calculatorOpt2.field1.getText());
         int num2 = Integer.parseInt(calculatorOpt2.field2.getText());
-        //×ö¼Ó·¨ÔËËã
+        //åšåŠ æ³•è¿ç®—
         int sum = num1 + num2;
 
-        //Êä³ö½á¹û£¬²¢ÇÒÇå¿ÕÎÄ±¾1ºÍÎÄ±¾2
+        //è¾“å‡ºç»“æœï¼Œå¹¶ä¸”æ¸…ç©ºæ–‡æœ¬1å’Œæ–‡æœ¬2
         calculatorOpt2.field1.setText("");
         calculatorOpt2.field2.setText("");
         calculatorOpt2.field3.setText(Integer.toString(sum));

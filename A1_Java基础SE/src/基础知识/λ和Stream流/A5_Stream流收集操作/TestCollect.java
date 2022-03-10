@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.¦ËºÍStreamÁ÷.A5_StreamÁ÷ÊÕ¼¯²Ù×÷;
+package åŸºç¡€çŸ¥è¯†.Î»å’ŒStreamæµ.A5_Streamæµæ”¶é›†æ“ä½œ;
 /*
-StreamÁ÷µÄÊÕ¼¯·½·¨:
+Streamæµçš„æ”¶é›†æ–¹æ³•:
 
     R collect (Collector coll)
 
-    ÆäÖĞ: CollectorsÌá¹©ÁË¾ßÌåµÄÊé¼Ç·½Ê½¡£
-        public static <T> Collector toList(): °ÑÔªËØÊÕ¼¯µ½List¼¯ºÏÖĞ¡£
-        public static <T> Collector toSet():  °ÑÔªËØÊÖ»úµ½Set¼¯ºÏÖĞ
+    å…¶ä¸­: Collectorsæä¾›äº†å…·ä½“çš„ä¹¦è®°æ–¹å¼ã€‚
+        public static <T> Collector toList(): æŠŠå…ƒç´ æ”¶é›†åˆ°Listé›†åˆä¸­ã€‚
+        public static <T> Collector toSet():  æŠŠå…ƒç´ æ‰‹æœºåˆ°Seté›†åˆä¸­
         public static Collector toMap (Function keyMapper, Function valueMapper);
 
 */
@@ -27,21 +27,21 @@ public class TestCollect {
 
     }
 
-    //set¼¯ºÏ
+    //seté›†åˆ
     public static void listMe() {
-        //ÏÈ´´½¨Ò»¸ölist¼¯ºÏ
+        //å…ˆåˆ›å»ºä¸€ä¸ªlisté›†åˆ
         ArrayList<String> list = new ArrayList<>();
-        list.add("ŞÏŞÎ½´");
-        list.add("Õâ¾ÍŞÏŞÎÁË");
-        list.add("ŞÏŞÎ");
-        list.add("ŞÏŞÎµÛ");
-        list.add("ŞÏŞÎÁË");
-        list.add("²»ŞÏŞÎ");
+        list.add("å°´å°¬é…±");
+        list.add("è¿™å°±å°´å°¬äº†");
+        list.add("å°´å°¬");
+        list.add("å°´å°¬å¸");
+        list.add("å°´å°¬äº†");
+        list.add("ä¸å°´å°¬");
 
-        //ĞèÇó1: µÃµ½Ãû×ÖÎª3¸ö×Ö·ûµÄÁ÷
+        //éœ€æ±‚1: å¾—åˆ°åå­—ä¸º3ä¸ªå­—ç¬¦çš„æµ
         Stream<String> listStream = list.stream().filter(s -> s.length() == 3);
 
-        //ĞèÇó2: Ê¹ÓÃStreamÁ÷²Ù×÷Íê±ÏµÄÊı¾İÊÕ¼¯µ½List¼¯ºÏÖĞ²¢±ãÀû
+        //éœ€æ±‚2: ä½¿ç”¨Streamæµæ“ä½œå®Œæ¯•çš„æ•°æ®æ”¶é›†åˆ°Listé›†åˆä¸­å¹¶ä¾¿åˆ©
         List<String> list1 = listStream.collect(Collectors.toList());
         for (String str : list1) {
             System.out.println(str);
@@ -52,9 +52,9 @@ public class TestCollect {
     }
 
 
-    //set¼¯ºÏ
+    //seté›†åˆ
     public static void setMe() {
-        //´´½¨Set¼¯ºÏ
+        //åˆ›å»ºSeté›†åˆ
         HashSet<Integer> set = new HashSet<>();
         set.add(10);
         set.add(15);
@@ -63,10 +63,10 @@ public class TestCollect {
         set.add(55);
         set.add(66);
 
-        //ĞèÇó1: µÃµ½ÄêÁäÎª30ÒÔÉÏµÄÁ÷
+        //éœ€æ±‚1: å¾—åˆ°å¹´é¾„ä¸º30ä»¥ä¸Šçš„æµ
         Stream<Integer> setStream = set.stream().filter(i -> i > 30);
 
-        //ĞèÇó2: Ê¹ÓÃStreamÁ÷²Ù×÷Íê±ÏµÄÊı¾İÊÕ¼¯µ½Set¼¯ºÏÖĞ²¢±ãÀû
+        //éœ€æ±‚2: ä½¿ç”¨Streamæµæ“ä½œå®Œæ¯•çš„æ•°æ®æ”¶é›†åˆ°Seté›†åˆä¸­å¹¶ä¾¿åˆ©
         Set<Integer> setNew = setStream.collect(Collectors.toSet());
         for (int i : setNew) {
             System.out.println(i);
@@ -76,24 +76,24 @@ public class TestCollect {
     }
 
 
-    //Êı×é
+    //æ•°ç»„
     public static void mapMe() {
-        //´´½¨Ò»¸ö×Ö·ûÊı×é
-        String[] array = {"ŞÏŞÎ½´,16", "ŞÏŞÎµÛ,20,", "ŞÏŞÎÁË,9", "ŞÏŞÎ,18", "²»ŞÏŞÎ,13"};
+        //åˆ›å»ºä¸€ä¸ªå­—ç¬¦æ•°ç»„
+        String[] array = {"å°´å°¬é…±,16", "å°´å°¬å¸,20,", "å°´å°¬äº†,9", "å°´å°¬,18", "ä¸å°´å°¬,13"};
 
-        //ĞèÇó1: µÃµ½×Ö·û´®ÖĞÄêÁä´óÓÚ15ËêµÄÁ÷
+        //éœ€æ±‚1: å¾—åˆ°å­—ç¬¦ä¸²ä¸­å¹´é¾„å¤§äº15å²çš„æµ
         Stream<String> arrayStream =
                 Stream.of(array).filter(s -> Integer.parseInt(s.split(",")[1]) > 15);
 
-        //ĞèÇó2: ½«µÃµ½µÄ×Ö·û´® °´ĞÕÃûÎª¼ü ÄêÁäÎªÖµ ·ÅÈëmap¼¯ºÏµ±ÖĞ
-        Map<String,Integer> map =arrayStream.collect(Collectors.toMap( //Í¨¹ıCollectorsÖĞµÄtoMap»ñÈ¡CollectorÀà¶ÔÏó
-                s -> s.split(",")[0],//µÚÒ»¸öLambdaÎª¼ü ×Ô¶¯Ê¶±ğ·ºĞÍ
-                s -> Integer.parseInt(s.split(",")[1])));//µÚ¶ş¸öLambdaÎªÖµ ÕâÀï×ªÎªintÀàĞÍ
-        //±éÀú
+        //éœ€æ±‚2: å°†å¾—åˆ°çš„å­—ç¬¦ä¸² æŒ‰å§“åä¸ºé”® å¹´é¾„ä¸ºå€¼ æ”¾å…¥mapé›†åˆå½“ä¸­
+        Map<String,Integer> map =arrayStream.collect(Collectors.toMap( //é€šè¿‡Collectorsä¸­çš„toMapè·å–Collectorç±»å¯¹è±¡
+                s -> s.split(",")[0],//ç¬¬ä¸€ä¸ªLambdaä¸ºé”® è‡ªåŠ¨è¯†åˆ«æ³›å‹
+                s -> Integer.parseInt(s.split(",")[1])));//ç¬¬äºŒä¸ªLambdaä¸ºå€¼ è¿™é‡Œè½¬ä¸ºintç±»å‹
+        //éå†
         Set<String> mapK = map.keySet();
         for (String k : mapK) {
             int v = map.get(k);
-            System.out.println("ĞÕÃû: " + k + ", ÄêÁä: " + v);
+            System.out.println("å§“å: " + k + ", å¹´é¾„: " + v);
         }
 
 

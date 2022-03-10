@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface05;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface05;
 
 public class MyInterfaceConstImpl implements MyInterfaceConst{
 
     public void method(){
-        System.out.println("ÊµÏÖÀà¶ÔÏóµ÷ÓÃ½Ó¿ÚµÄ¡±³ÉÔ±±äÁ¿¡°:"+ NUM_OF_MY_CLASS);
+        System.out.println("å®ç°ç±»å¯¹è±¡è°ƒç”¨æ¥å£çš„â€æˆå‘˜å˜é‡â€œ:"+ NUM_OF_MY_CLASS);
     }
 
 }

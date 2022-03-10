@@ -1,23 +1,23 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·ûÁ÷_±àÂë½âÂë.×Ö·ûÁ÷ÀàMethod;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦æµ_ç¼–ç è§£ç .å­—ç¬¦æµç±»Method;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
-¶ÁÊı¾İµÄ·½·¨ºÍ×Ö½ÚÁ÷µÄ·½·¨²î²»¶à£¬Ö»²»¹ıÒ»¸öÊÇ×Ö½ÚÁ÷£¬Ò»¸öÊÇ×Ö·ûÁ÷£¬Ò»¸öÊÇbyteÊı×é£¬Ò»¸öÊÇcharÊı×é
+è¯»æ•°æ®çš„æ–¹æ³•å’Œå­—èŠ‚æµçš„æ–¹æ³•å·®ä¸å¤šï¼Œåªä¸è¿‡ä¸€ä¸ªæ˜¯å­—èŠ‚æµï¼Œä¸€ä¸ªæ˜¯å­—ç¬¦æµï¼Œä¸€ä¸ªæ˜¯byteæ•°ç»„ï¼Œä¸€ä¸ªæ˜¯charæ•°ç»„
 
-[·½·¨]:
-    int read()                Ò»´Î¶ÁÒ»¸ö×Ö·ûÊı¾İ
-    int read(char[] cbuf)     Ò»´Î¶ÁÒ»¸ö×Ö·ûÊı×éÊı¾İ
+[æ–¹æ³•]:
+    int read()                ä¸€æ¬¡è¯»ä¸€ä¸ªå­—ç¬¦æ•°æ®
+    int read(char[] cbuf)     ä¸€æ¬¡è¯»ä¸€ä¸ªå­—ç¬¦æ•°ç»„æ•°æ®
 
 */
 public class TestInputStreamReader_Method {
 
     public static void main(String[] args) throws IOException {
 
-        //·½·¨Ò»  int read()                Ò»´Î¶ÁÒ»¸ö×Ö·ûÊı¾İ
-        InputStreamReader isr1 = new InputStreamReader(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt"));
+        //æ–¹æ³•ä¸€  int read()                ä¸€æ¬¡è¯»ä¸€ä¸ªå­—ç¬¦æ•°æ®
+        InputStreamReader isr1 = new InputStreamReader(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt"));
         int by;
         while ((by = isr1.read()) != -1){
             System.out.print((char) by);
@@ -28,8 +28,8 @@ public class TestInputStreamReader_Method {
         System.out.println("========================================");
         System.out.println("========================================\n");
 
-        //·½·¨¶ş  int read(char[] cbuf)     Ò»´Î¶ÁÒ»¸ö×Ö·ûÊı×éÊı¾İ
-        InputStreamReader isr2 = new InputStreamReader(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt"));
+        //æ–¹æ³•äºŒ  int read(char[] cbuf)     ä¸€æ¬¡è¯»ä¸€ä¸ªå­—ç¬¦æ•°ç»„æ•°æ®
+        InputStreamReader isr2 = new InputStreamReader(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt"));
         char [] array = new char[1024];
         int len;
         while ((len = isr2.read(array)) != -1){
@@ -41,8 +41,8 @@ public class TestInputStreamReader_Method {
         System.out.println("========================================");
         System.out.println("========================================\n");
 
-        //¶ÁÒ»¸ö³¤ÎÄ¼ş
-        InputStreamReader isr3 = new InputStreamReader(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\TestOutputStreamWriter_Method.java"));
+        //è¯»ä¸€ä¸ªé•¿æ–‡ä»¶
+        InputStreamReader isr3 = new InputStreamReader(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\TestOutputStreamWriter_Method.java"));
         char[] arrayN = new char[1024];
         int lenN;
         while( (lenN = isr3.read(arrayN)) != -1 ){

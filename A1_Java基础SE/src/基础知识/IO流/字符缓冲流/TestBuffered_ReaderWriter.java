@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·û»º³åÁ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦ç¼“å†²æµ;
 
 import java.io.*;
-//±ê×¼µãÓÃtry...catch...finally»·ÈÆ´¦Àí,ÕâÀï¼òĞ´ÁËÎÒ!
+//æ ‡å‡†ç‚¹ç”¨try...catch...finallyç¯ç»•å¤„ç†,è¿™é‡Œç®€å†™äº†æˆ‘!
 /*
-×Ö·û»º³åÁ÷: Ä¬ÈÏÖµ×ã¹»´ó,·ûºÏ´ó¶àÊıÓÃÍ¾
+å­—ç¬¦ç¼“å†²æµ: é»˜è®¤å€¼è¶³å¤Ÿå¤§,ç¬¦åˆå¤§å¤šæ•°ç”¨é€”
 
-¹¹Ôì·½·¨:
+æ„é€ æ–¹æ³•:
     BufferedWriter(Writer out)
     BufferedReader(Reader in)
-    Ä¬ÈÏÖµ×ã¹»´ó,·ûºÏ´ó¶àÊıÓÃÍ¾
+    é»˜è®¤å€¼è¶³å¤Ÿå¤§,ç¬¦åˆå¤§å¤šæ•°ç”¨é€”
 
     BufferedWriter(Writer out, int si)
     BufferedReader(Reader in, int si)
@@ -18,42 +18,42 @@ public class TestBuffered_ReaderWriter {
 
     public static void main(String[] args) throws IOException {
 
-        goBufferedWriter();//Ğ´ÈëÊı¾İ
-        goBufferedReader(false);//¶ÁÈ¡Êı¾İ,µ¥¸ö×Ö·û
-        goBufferedReader(true); //¶ÁÈ¡Êı¾İ,charÊı×é
+        goBufferedWriter();//å†™å…¥æ•°æ®
+        goBufferedReader(false);//è¯»å–æ•°æ®,å•ä¸ªå­—ç¬¦
+        goBufferedReader(true); //è¯»å–æ•°æ®,charæ•°ç»„
 
     }
 
     public static void goBufferedWriter() throws IOException {
-        //´´½¨×Ö·û»º³åÊäÈëÁ÷ À´ Ğ´ÈëÊı¾İ
-        BufferedWriter bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\²âÊÔÎÄ¼ş.txt"));
-        //Ğ´Êı¾İ
-        bw.write("ÎÊ¾ıÄÜÓĞ¼¸¶à³î,\r\n");
-        bw.write("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷¡£\r\n");
-        //ÊÍ·Å×ÊÔ´
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²è¾“å…¥æµ æ¥ å†™å…¥æ•°æ®
+        BufferedWriter bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\æµ‹è¯•æ–‡ä»¶.txt"));
+        //å†™æ•°æ®
+        bw.write("é—®å›èƒ½æœ‰å‡ å¤šæ„,\r\n");
+        bw.write("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµã€‚\r\n");
+        //é‡Šæ”¾èµ„æº
         bw.close();
         System.out.println("==================");
     }
 
     public static void goBufferedReader(boolean isCharArray) throws IOException {
-        //´´½¨»º³å×Ö·ûÊäÈëÁ÷ À´ ¶ÁÈ¡Êı¾İ
-        BufferedReader br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\²âÊÔÎÄ¼ş.txt"));
-        //¶ÁÈ¡Êı¾İ Á½ÖÖ·½·¨
+        //åˆ›å»ºç¼“å†²å­—ç¬¦è¾“å…¥æµ æ¥ è¯»å–æ•°æ®
+        BufferedReader br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\æµ‹è¯•æ–‡ä»¶.txt"));
+        //è¯»å–æ•°æ® ä¸¤ç§æ–¹æ³•
         if (!isCharArray){
-            //Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·û
+            //ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦
             int by;
             while ((by = br.read()) != -1) {
                 System.out.print((char) by);
             }
         }else{
-            //¶ÁÈ¡char[] arrayÊı×é
+            //è¯»å–char[] arrayæ•°ç»„
             char[] array = new char[1024];
             int len;
             while ((len = br.read(array)) != -1) {
                 System.out.print(new String(array,0,len));
             }
         }
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         br.close();
         System.out.println("==================");
 

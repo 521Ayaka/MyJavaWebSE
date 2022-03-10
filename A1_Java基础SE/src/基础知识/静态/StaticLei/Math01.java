@@ -1,31 +1,31 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.StaticLei;
+package åŸºç¡€çŸ¥è¯†.é™æ€.StaticLei;
 
 /**
-java.util.MathÀàÊÇÊıÑ§Ïà¹ØµÄ¹¤¾ßÀà£¬ÀïÃæÌá¹©ÁË´óÁ¿µÄ¾²Ì¬·½·¨£¬Íê³ÉÓëÊıÑ§ÔËËãÏà¹ØµÄ²Ù×÷¡£
+java.util.Mathç±»æ˜¯æ•°å­¦ç›¸å…³çš„å·¥å…·ç±»ï¼Œé‡Œé¢æä¾›äº†å¤§é‡çš„é™æ€æ–¹æ³•ï¼Œå®Œæˆä¸æ•°å­¦è¿ç®—ç›¸å…³çš„æ“ä½œã€‚
 
-public static double abs(double num)£º»ñÈ¡¾ø¶ÔÖµ¡£ÓĞ¶àÖÖÖØÔØ¡£
-public static double ceil(double num)£ºÏòÉÏÈ¡Õû¡£
-public static double floor(double num)£ºÏòÏÂÈ¡Õû¡£
-public static long round(double num)£ºËÄÉáÎåÈë¡£
+public static double abs(double num)ï¼šè·å–ç»å¯¹å€¼ã€‚æœ‰å¤šç§é‡è½½ã€‚
+public static double ceil(double num)ï¼šå‘ä¸Šå–æ•´ã€‚
+public static double floor(double num)ï¼šå‘ä¸‹å–æ•´ã€‚
+public static long round(double num)ï¼šå››èˆäº”å…¥ã€‚
 
-Math.PI´ú±í½üËÆµÄÔ²ÖÜÂÊ³£Á¿£¨double£©¡£
+Math.PIä»£è¡¨è¿‘ä¼¼çš„åœ†å‘¨ç‡å¸¸é‡ï¼ˆdoubleï¼‰ã€‚
  */
 public class Math01 {
 
     public static void main(String[] args) {
-        // »ñÈ¡¾ø¶ÔÖµ
+        // è·å–ç»å¯¹å€¼
         System.out.println(Math.abs(3.14)); // 3.14
         System.out.println(Math.abs(0)); // 0
         System.out.println(Math.abs(-2.5)); // 2.5
         System.out.println("================");
 
-        // ÏòÉÏÈ¡Õû
+        // å‘ä¸Šå–æ•´
         System.out.println(Math.ceil(3.9)); // 4.0
         System.out.println(Math.ceil(3.1)); // 4.0
         System.out.println(Math.ceil(3.0)); // 3.0
         System.out.println("================");
 
-        // ÏòÏÂÈ¡Õû£¬Ä¨Áã
+        // å‘ä¸‹å–æ•´ï¼ŒæŠ¹é›¶
         System.out.println(Math.floor(30.1)); // 30.0
         System.out.println(Math.floor(30.9)); // 30.0
         System.out.println(Math.floor(31.0)); // 31.0

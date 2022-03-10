@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A1_Frame;
+package Guiç¼–ç¨‹.AWT.A1_Frame;
 
 import java.awt.*;
 
@@ -6,22 +6,22 @@ public class Frame01 {
 
     public static void main(String[] args) {
 
-        //´´½¨FrameÍ¼ĞÎ½çÃæ¶ÔÏó
-        Frame frame = new Frame("ÎÒµÄµÚÒ»¸öGui³ÌĞò");
+        //åˆ›å»ºFrameå›¾å½¢ç•Œé¢å¯¹è±¡
+        Frame frame = new Frame("æˆ‘çš„ç¬¬ä¸€ä¸ªGuiç¨‹åº");
 
-        //Ê×ÏÈÒª´´½¨Frame´°¿ÚµÄ¿É¼ûĞÔ
+        //é¦–å…ˆè¦åˆ›å»ºFrameçª—å£çš„å¯è§æ€§
         frame.setVisible(true);
 
-        //ÉèÖÃÉèÖÃ´°¿Ú´óĞ¡
+        //è®¾ç½®è®¾ç½®çª—å£å¤§å°
         frame.setSize(600,500);
 
-        //ÉèÖÃ±³¾°ÑÕÉ«
+        //è®¾ç½®èƒŒæ™¯é¢œè‰²
         frame.setBackground(new Color(16, 194, 159));
 
-        //ÉèÖÃÄ¬ÈÏ´ò¿ªÎ»ÖÃ
+        //è®¾ç½®é»˜è®¤æ‰“å¼€ä½ç½®
         frame.setLocation(500,200);
 
-        //ÉèÖÃ´óĞ¡¹Ì¶¨
+        //è®¾ç½®å¤§å°å›ºå®š
         frame.setResizable(false);
 
     }

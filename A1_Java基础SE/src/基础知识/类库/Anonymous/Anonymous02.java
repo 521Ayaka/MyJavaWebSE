@@ -1,33 +1,33 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Anonymous;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Anonymous;
 import java.util.Scanner;
 
 public class Anonymous02 {
     public static void main(String[] args) {
-        // ÆÕÍ¨Ê¹ÓÃ·½Ê½
+        // æ™®é€šä½¿ç”¨æ–¹å¼
 //        Scanner sc = new Scanner(System.in);
 //        int num = sc.nextInt();
 
-        // ÄäÃû¶ÔÏóµÄ·½Ê½
+        // åŒ¿åå¯¹è±¡çš„æ–¹å¼
 //        int num = new Scanner(System.in).nextInt();
-//        System.out.println("ÊäÈëµÄÊÇ£º" + num);
+//        System.out.println("è¾“å…¥çš„æ˜¯ï¼š" + num);
 
-        // Ê¹ÓÃÒ»°ãĞ´·¨´«Èë²ÎÊı
+        // ä½¿ç”¨ä¸€èˆ¬å†™æ³•ä¼ å…¥å‚æ•°
 //        Scanner sc = new Scanner(System.in);
 //        methodParam(sc);
 
-        // Ê¹ÓÃÄäÃû¶ÔÏóÀ´½øĞĞ´«²Î
+        // ä½¿ç”¨åŒ¿åå¯¹è±¡æ¥è¿›è¡Œä¼ å‚
 //        methodParam(new Scanner(System.in));
 
         Scanner sc = methodReturn();
         int num = sc.nextInt();
-        System.out.println("ÊäÈëµÄÊÇ£º" + num);
+        System.out.println("è¾“å…¥çš„æ˜¯ï¼š" + num);
     }
 
     public static void methodParam(Scanner sc) {
         int num = sc.nextInt();
-        System.out.println("ÊäÈëµÄÊÇ£º" + num);
+        System.out.println("è¾“å…¥çš„æ˜¯ï¼š" + num);
     }
-    //ÕâÀï¿ÉÒÔ¿´³ö£¬·½·¨·µ»ØÖµ¿ÉÒÔÊÇÒ»¸öÀà£¬ÔÚAPIÎÄ¼şÖĞµÄÀà£¬·µ»ØÖµ¡£
+    //è¿™é‡Œå¯ä»¥çœ‹å‡ºï¼Œæ–¹æ³•è¿”å›å€¼å¯ä»¥æ˜¯ä¸€ä¸ªç±»ï¼Œåœ¨APIæ–‡ä»¶ä¸­çš„ç±»ï¼Œè¿”å›å€¼ã€‚
 
     public static Scanner methodReturn() {
 //        Scanner sc = new Scanner(System.in);

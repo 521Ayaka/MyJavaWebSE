@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.±ê×¼ÊäÈëÊä³öÁ÷.±ê×¼ÊäÈëÁ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.æ ‡å‡†è¾“å…¥è¾“å‡ºæµ.æ ‡å‡†è¾“å…¥æµ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,122 +10,122 @@ public class StandardInputStream {
 
     public static void main(String[] args) throws IOException {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new StandardInputStream().init();
 
     }
 
-    //Ñ¡Ôñµ÷ÓÃÄÇ¸ö·½·¨
+    //é€‰æ‹©è°ƒç”¨é‚£ä¸ªæ–¹æ³•
     public void init() throws IOException {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("µ÷ÓÃ·½·¨:");
+        System.out.print("è°ƒç”¨æ–¹æ³•:");
         int isMethod = sc.nextInt();
-        //Ñ¡Ôñµ÷ÓÃ
+        //é€‰æ‹©è°ƒç”¨
         if (isMethod == 1) {
-            method1();//×Ö½ÚÁ÷
+            method1();//å­—èŠ‚æµ
         } else if (isMethod == 2) {
-            method2();//×Ö½ÚÁ÷ Êı×é¶ÁÈ¡
+            method2();//å­—èŠ‚æµ æ•°ç»„è¯»å–
         } else if (isMethod == 3) {
-            method3();//×Ö·ûÁ÷
+            method3();//å­—ç¬¦æµ
         } else if (isMethod == 4) {
-            method4();//×Ö·û»º³åÁ÷
+            method4();//å­—ç¬¦ç¼“å†²æµ
         } else if (isMethod == 5) {
-            method5();//ScannerµÄÒıÈë
+            method5();//Scannerçš„å¼•å…¥
         }
 
     }
 
-    //ÔÚSystemÖĞÓĞÒ»¸ö¾²Ì¬³£Á¿
-    //public static final InputStream in : ±ê×¼ÊäÈëÁ÷
+    //åœ¨Systemä¸­æœ‰ä¸€ä¸ªé™æ€å¸¸é‡
+    //public static final InputStream in : æ ‡å‡†è¾“å…¥æµ
     public void method1() throws IOException {
-        System.out.println("ÒÑµ÷ÓÃ·½·¨Ò»");
-        //´´½¨±ê×¼ÊäÈëÁ÷
+        System.out.println("å·²è°ƒç”¨æ–¹æ³•ä¸€");
+        //åˆ›å»ºæ ‡å‡†è¾“å…¥æµ
         InputStream in1 = System.in;
-        //µ¥¸ö×Ö½Ú¶ÁÈ¡Êı¾İ
+        //å•ä¸ªå­—èŠ‚è¯»å–æ•°æ®
         int by;
         while ((by = in1.read()) != -1) {
             System.out.print((char) by);
         }
         in1.close();
         /*
-        Êä³ö½á¹û¿ÉÒÔ, µ«ÊÇÓÉÓÚÕâÊÇ [×Ö½ÚÁ÷]
-        ËùÒÔ, µ±¶ÁÈ¡µ½ÖĞÎÄµÄÊ±ºò,
-        ÓÉÓÚÖĞÎÄ²ÉÓÃÁË UTF-8 / GBK / ...
-        ±àÂë»á³öÏÖ´íÎó
-        Èç:
-        ÊäÈë: ŞÏŞÎ
-        ½á¹û: ???? //ËÄ¸ö×Ö·û ±àÂë²ÉÓÃµÄÊ± [GBK±àÂë¼¯]
+        è¾“å‡ºç»“æœå¯ä»¥, ä½†æ˜¯ç”±äºè¿™æ˜¯ [å­—èŠ‚æµ]
+        æ‰€ä»¥, å½“è¯»å–åˆ°ä¸­æ–‡çš„æ—¶å€™,
+        ç”±äºä¸­æ–‡é‡‡ç”¨äº† UTF-8 / GBK / ...
+        ç¼–ç ä¼šå‡ºç°é”™è¯¯
+        å¦‚:
+        è¾“å…¥: å°´å°¬
+        ç»“æœ: ???? //å››ä¸ªå­—ç¬¦ ç¼–ç é‡‡ç”¨çš„æ—¶ [GBKç¼–ç é›†]
 
         */
     }
 
-    //Ê¹ÓÃ±ê×¼ÊäÈëÁ÷, Êı×é·½Ê½¶ÁÈ¡Êı¾İ
+    //ä½¿ç”¨æ ‡å‡†è¾“å…¥æµ, æ•°ç»„æ–¹å¼è¯»å–æ•°æ®
     private void method2() throws IOException {
-        System.out.println("ÒÑµ÷ÓÃ·½·¨¶ş");
-        //´´½¨±ê×¼ÊäÈëÁ÷
+        System.out.println("å·²è°ƒç”¨æ–¹æ³•äºŒ");
+        //åˆ›å»ºæ ‡å‡†è¾“å…¥æµ
         InputStream in = System.in;
-        //¶ÁÊı¾İ byte[]
+        //è¯»æ•°æ® byte[]
         byte[] array = new byte[1024];
         int len;
         while ((len = in.read(array)) != -1) {
             System.out.print(new String(array, 0, len));
         }
         /*
-        Ê¹ÓÃ×Ö½ÚÁ÷·½·¨ ÖĞµÄ Êı×é¶ÁÈ¡·½·¨ ¿ÉÒÔ¶ÁÈ¡ÖĞÎÄÁË
+        ä½¿ç”¨å­—èŠ‚æµæ–¹æ³• ä¸­çš„ æ•°ç»„è¯»å–æ–¹æ³• å¯ä»¥è¯»å–ä¸­æ–‡äº†
         */
         in.close();
     }
 
-    //½«[±ê×¼ÊäÈëÁ÷] ·â×°³ÉÎª [×Ö·ûÁ÷]
+    //å°†[æ ‡å‡†è¾“å…¥æµ] å°è£…æˆä¸º [å­—ç¬¦æµ]
     private void method3() throws IOException {
-        System.out.println("ÒÑµ÷ÓÃ·½·¨Èı");
-        //´´½¨±ê×¼ÊäÈëÁ÷
+        System.out.println("å·²è°ƒç”¨æ–¹æ³•ä¸‰");
+        //åˆ›å»ºæ ‡å‡†è¾“å…¥æµ
         InputStream in = System.in;
         InputStreamReader isr = new InputStreamReader(in);
 
-        //Ê¹ÓÃ·â×°ºÃºóµÄ ×Ö·ûÁ÷ ¶ÁÈ¡Êı¾İ
-        //Á½ÖÖ
-        /*µ¥¸ö×Ö·û¶ÁÈ¡
+        //ä½¿ç”¨å°è£…å¥½åçš„ å­—ç¬¦æµ è¯»å–æ•°æ®
+        //ä¸¤ç§
+        /*å•ä¸ªå­—ç¬¦è¯»å–
         int by;
         while ((by = isr.read()) != -1) {
             System.out.print((char) by);
         }*/
-        //×Ö·ûÊı×é¶ÁÈ¡
+        //å­—ç¬¦æ•°ç»„è¯»å–
         char[] array = new char[1024];
         int len;
         while ( (len = isr.read(array)) != -1 ){
             System.out.print(new String(array,0,len));
         }
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         isr.close();
     }
 
-    //°ü×°Îª×Ö·û»º³åÊäÈëÁ÷
+    //åŒ…è£…ä¸ºå­—ç¬¦ç¼“å†²è¾“å…¥æµ
     public void method4() throws IOException {
-        System.out.println("ÒÑµ÷ÓÃ·½·¨ËÄ");
+        System.out.println("å·²è°ƒç”¨æ–¹æ³•å››");
         // InputStream is = System.in;
         // InputStreamReader isr = new InputStreamReader(is);
         // BufferedReader br = new BufferedReader(isr);
-        // Èı²½¼òĞ´
+        // ä¸‰æ­¥ç®€å†™
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //Ê¹ÓÃÌØÊâµÄ·½·¨¶ÁÈ¡ µ¥ĞĞ¶ÁÈ¡
+        //ä½¿ç”¨ç‰¹æ®Šçš„æ–¹æ³•è¯»å– å•è¡Œè¯»å–
         String s = br.readLine();
         System.out.println(s);
         br.close();
     }
 
-    //¹ØÓÚÀàĞÍ¸ñÊ½ÓëScannerÀà
+    //å…³äºç±»å‹æ ¼å¼ä¸Scannerç±»
     public void method5() throws IOException {
-        System.out.println("ÒÑµ÷ÓÃ·½·¨Îå");
+        System.out.println("å·²è°ƒç”¨æ–¹æ³•äº”");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //Èç¹û¶ÁÈ¡µÄÊı¾İÎªÏëÒªµÄÊı¾İÀàĞÍ
+        //å¦‚æœè¯»å–çš„æ•°æ®ä¸ºæƒ³è¦çš„æ•°æ®ç±»å‹
         int num = Integer.parseInt(br.readLine());
-        System.out.println("»¹ĞèÒªÊ¹ÓÃ×ª»»¹¤¾ß £º"+num);
+        System.out.println("è¿˜éœ€è¦ä½¿ç”¨è½¬æ¢å·¥å…· ï¼š"+num);
         br.close();
-        //ÕâÑùÀ´»Ø×ª»»ºÜÂé·³¡£
+        //è¿™æ ·æ¥å›è½¬æ¢å¾ˆéº»çƒ¦ã€‚
         /*
-        System.out.println("ËùÒÔJavaÌá¹©ScannerÀà°ü×°µÄ¾ÍÊÇSystem.in");
+        System.out.println("æ‰€ä»¥Javaæä¾›Scannerç±»åŒ…è£…çš„å°±æ˜¯System.in");
         Scanner scanner = new Scanner(System.in);
         System.out.println("===");
         int abc = scanner.nextInt();

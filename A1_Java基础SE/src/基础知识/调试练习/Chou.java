@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,19 +11,19 @@ public class Chou {
     public static Scanner sc = new Scanner(System.in);
     public static Random random = new Random();
 
-    //ÓÃÒ»¸ömapÀ´Í³¼Æ¼ÇÂ¼
+    //ç”¨ä¸€ä¸ªmapæ¥ç»Ÿè®¡è®°å½•
     private static Map<String,Integer> map = new HashMap<String,Integer>();
 
     public static void main(String[] args) {
 
-        System.out.println("ÇëÊäÈë1£ºµ¥³é»òÕß10£ºÊ®Á¬³é,ÊäÈë0ÍË³ö");
-        //»ñµÃÓÃ»§ÊäÈëµÄ1»òÕß10
+        System.out.println("è¯·è¾“å…¥1ï¼šå•æŠ½æˆ–è€…10ï¼šåè¿æŠ½,è¾“å…¥0é€€å‡º");
+        //è·å¾—ç”¨æˆ·è¾“å…¥çš„1æˆ–è€…10
 
-        //³õÊ¼»¯map
-        map.put("×ÜÊı",0);
-        map.put("ËÄĞÇ",0);
-        map.put("ÎåĞÇ",0);
-        //±£µ×¼ÆÊıÆ÷
+        //åˆå§‹åŒ–map
+        map.put("æ€»æ•°",0);
+        map.put("å››æ˜Ÿ",0);
+        map.put("äº”æ˜Ÿ",0);
+        //ä¿åº•è®¡æ•°å™¨
         map.put("count4",0);
         map.put("count5",0);
 
@@ -45,7 +45,7 @@ public class Chou {
                     break;
                 }
                 default:
-                    System.out.println("ÍË³ö¡£¡£¡£");
+                    System.out.println("é€€å‡ºã€‚ã€‚ã€‚");
                     flag=false;
                     break;
             }
@@ -54,84 +54,84 @@ public class Chou {
 
     }
 
-    //Ä£Äâ³é¿¨·½·¨
+    //æ¨¡æ‹ŸæŠ½å¡æ–¹æ³•
     private static void run(){
-        /*Ëæ»úÒ»¸öÊı×Ö£¬¸ù¾İÊı×ÖµÄÖµµÄ·¶Î§À´¾ö¶¨³é³öÊ²Ã´¿¨£¬Î±Ëæ»ú£º
-        0µ½5£º5ĞÇ£¨0.6%£©
-        10µ½60£º4ĞÇ£¨5.1%£©
-        ÆäËû£º3ĞÇ*/
+        /*éšæœºä¸€ä¸ªæ•°å­—ï¼Œæ ¹æ®æ•°å­—çš„å€¼çš„èŒƒå›´æ¥å†³å®šæŠ½å‡ºä»€ä¹ˆå¡ï¼Œä¼ªéšæœºï¼š
+        0åˆ°5ï¼š5æ˜Ÿï¼ˆ0.6%ï¼‰
+        10åˆ°60ï¼š4æ˜Ÿï¼ˆ5.1%ï¼‰
+        å…¶ä»–ï¼š3æ˜Ÿ*/
         int ran1 = random.nextInt(1000);
 
-        /*System.out.println("run·½·¨");
+        /*System.out.println("runæ–¹æ³•");
         System.out.println(map.toString());*/
         int count4 = map.get("count4");
         int count5 = map.get("count5");
 
-        //ÏÈ¿´ÊÇ·ñÓĞ4ĞÇ±£µ×£¬²¢ÇÒÍ¬Ê±Ã»ÓĞ5ĞÇ±£µ×£¨ÒòÎªÁ½ÕßÍ¬Ê±±£µ×»áÑ¡Ôñ´¥·¢5ĞÇµÄ±£µ×£¬ËùÒÔ²»»á³öÏÖ4ĞÇ£©
-        //µ±4ĞÇ¼ÆÊıÆ÷´ïµ½9ÒÔÉÏÊ±£¬²¢ÇÒ²»´¥·¢5±£µ×Ê±£¬´¥·¢±£µ×»úÖÆ:0.06%Îª5,99.4%Îª4
+        //å…ˆçœ‹æ˜¯å¦æœ‰4æ˜Ÿä¿åº•ï¼Œå¹¶ä¸”åŒæ—¶æ²¡æœ‰5æ˜Ÿä¿åº•ï¼ˆå› ä¸ºä¸¤è€…åŒæ—¶ä¿åº•ä¼šé€‰æ‹©è§¦å‘5æ˜Ÿçš„ä¿åº•ï¼Œæ‰€ä»¥ä¸ä¼šå‡ºç°4æ˜Ÿï¼‰
+        //å½“4æ˜Ÿè®¡æ•°å™¨è¾¾åˆ°9ä»¥ä¸Šæ—¶ï¼Œå¹¶ä¸”ä¸è§¦å‘5ä¿åº•æ—¶ï¼Œè§¦å‘ä¿åº•æœºåˆ¶:0.06%ä¸º5,99.4%ä¸º4
         if(count4 >= 9 && count5 < 89){
-            System.out.println("´¥·¢4ĞÇ±£µ×£¬¼ÆÊıÆ÷Îª£º"+count4);
+            System.out.println("è§¦å‘4æ˜Ÿä¿åº•ï¼Œè®¡æ•°å™¨ä¸ºï¼š"+count4);
             Random random4 = new Random();
             int ran4 = random4.nextInt(1000);
             if(ran4 < 6){
                 rb.get(5);
-                int num = map.get("ÎåĞÇ");
-                //³ö5ĞÇºó£¬5ĞÇ±£µ×¼ÆÊıÆ÷count5¹éÁã
-                map.put("ÎåĞÇ",num+1);
+                int num = map.get("äº”æ˜Ÿ");
+                //å‡º5æ˜Ÿåï¼Œ5æ˜Ÿä¿åº•è®¡æ•°å™¨count5å½’é›¶
+                map.put("äº”æ˜Ÿ",num+1);
                 map.put("count5",0);
             }else{
                 rb.get(4);
-                int num = map.get("ËÄĞÇ");
-                //³ö4ĞÇ£¬5ĞÇ±£µ×¼ÆÊıÆ÷count5+1
-                map.put("ËÄĞÇ",num+1);
+                int num = map.get("å››æ˜Ÿ");
+                //å‡º4æ˜Ÿï¼Œ5æ˜Ÿä¿åº•è®¡æ•°å™¨count5+1
+                map.put("å››æ˜Ÿ",num+1);
                 map.put("count5",count5+1);
             }
-            //4ĞÇ±£µ×ÇåÁã
+            //4æ˜Ÿä¿åº•æ¸…é›¶
             map.put("count4",0);
         }
-        //µ±Ëæ»úÊıÎª0µ½5£¨0.6%¸ÅÂÊ£©»òÕß5ĞÇ±£µ×Êı´ïµ½89£¨µÚ90±Ø5£©µÄÊ±ºò£¬³öÏÖ5ĞÇ
+        //å½“éšæœºæ•°ä¸º0åˆ°5ï¼ˆ0.6%æ¦‚ç‡ï¼‰æˆ–è€…5æ˜Ÿä¿åº•æ•°è¾¾åˆ°89ï¼ˆç¬¬90å¿…5ï¼‰çš„æ—¶å€™ï¼Œå‡ºç°5æ˜Ÿ
         else if (ran1 < 6 || count5 == 89) {
-            System.out.println("³ö5ĞÇÁË£¡¼ÆÊıÆ÷Îª£º"+count5);
+            System.out.println("å‡º5æ˜Ÿäº†ï¼è®¡æ•°å™¨ä¸ºï¼š"+count5);
             rb.get(5);
-            int num = map.get("ÎåĞÇ");
-            //³ö5ĞÇºó£¬¼ÆÊıÆ÷count5¹éÁã
-            map.put("ÎåĞÇ",num+1);
+            int num = map.get("äº”æ˜Ÿ");
+            //å‡º5æ˜Ÿåï¼Œè®¡æ•°å™¨count5å½’é›¶
+            map.put("äº”æ˜Ÿ",num+1);
             map.put("count5",0);
-            //4ĞÇ±£µ×¼ÆÊı+1
+            //4æ˜Ÿä¿åº•è®¡æ•°+1
             map.put("count4",count4+1);
         }
 
-        //µ±Ëæ»úÊıÎª10µ½60Ê±£¨5.1%¸ÅÂÊ£©Ê±£¬³öÏÖ4ĞÇ
+        //å½“éšæœºæ•°ä¸º10åˆ°60æ—¶ï¼ˆ5.1%æ¦‚ç‡ï¼‰æ—¶ï¼Œå‡ºç°4æ˜Ÿ
         else if ((10 <= ran1 && ran1 < 61) ) {
-            System.out.println("³ö4ĞÇÁË,·Ç±£µ×£¬¼ÆÊıÆ÷Îª£º"+count4);
+            System.out.println("å‡º4æ˜Ÿäº†,éä¿åº•ï¼Œè®¡æ•°å™¨ä¸ºï¼š"+count4);
             rb.get(4);
-            int num = map.get("ËÄĞÇ");
-            map.put("ËÄĞÇ",num+1);
-            //¼ÆÊıÆ÷ÇåÁã
+            int num = map.get("å››æ˜Ÿ");
+            map.put("å››æ˜Ÿ",num+1);
+            //è®¡æ•°å™¨æ¸…é›¶
             map.put("count4",0);
-            //5ĞÇ±£µ×¼ÆÊı+1
+            //5æ˜Ÿä¿åº•è®¡æ•°+1
             map.put("count5",count5+1);
         }
-        //3ĞÇÇé¿ö£¬±£µ×¼ÆÊı¸÷+1
+        //3æ˜Ÿæƒ…å†µï¼Œä¿åº•è®¡æ•°å„+1
         else {
             rb.get(3);
-            //³ö3ĞÇµÄÊ±ºò£¬45ĞÇ±£µ×¼ÆÊı¸÷+1
+            //å‡º3æ˜Ÿçš„æ—¶å€™ï¼Œ45æ˜Ÿä¿åº•è®¡æ•°å„+1
             map.put("count4",count4+1);
             map.put("count5",count5+1);
         }
-        map.put("×ÜÊı",map.get("×ÜÊı")+1);
+        map.put("æ€»æ•°",map.get("æ€»æ•°")+1);
         System.out.println("============================");
     }
 
-    //ÄÚ²¿Àà
+    //å†…éƒ¨ç±»
     public static class RewardBean {
 
         public void get(int level){
-            //¸ù¾İĞÇ¼¶´òÓ¡¼¸ĞÇÎïÆ·
+            //æ ¹æ®æ˜Ÿçº§æ‰“å°å‡ æ˜Ÿç‰©å“
             for(int i = 0 ; i < level ; i++){
-                System.out.print("¡ï");
+                System.out.print("â˜…");
                 if(i == level-1){
-                    System.out.println("ÎïÆ·");
+                    System.out.println("ç‰©å“");
                 }
             }
 

@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A3_Layout;
+package Guiç¼–ç¨‹.AWT.A3_Layout;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -8,7 +8,7 @@ public class TestGridLayout {
 
     public static void main(String[] args) {
 
-        Frame frame = new Frame("±í¸ñ²¼¾Ö");
+        Frame frame = new Frame("è¡¨æ ¼å¸ƒå±€");
 
         Button grid1 = new Button("Grid1");
         Button grid2 = new Button("Grid2");
@@ -17,10 +17,10 @@ public class TestGridLayout {
         Button grid5 = new Button("Grid5");
         Button grid6 = new Button("Grid6");
 
-        //(rowsĞĞ,colsÁĞ,hgap,vgap)
+        //(rowsè¡Œ,colsåˆ—,hgap,vgap)
         frame.setLayout(new GridLayout(3,2,10,10));
 
-        //Ìí¼Óµ½´°Ìå
+        //æ·»åŠ åˆ°çª—ä½“
         frame.add(grid1);
         frame.add(grid2);
         frame.add(grid3);
@@ -28,13 +28,13 @@ public class TestGridLayout {
         frame.add(grid5);
         frame.add(grid6);
 
-        //»ù±¾ÉèÖÃ
+        //åŸºæœ¬è®¾ç½®
         frame.setSize(500,500);
         frame.setLocation(500,300);
         frame.setBackground(new Color(234, 100, 232));
         frame.setVisible(true);
 
-        //frame.pack();//×Ô¶¯²¼¾Ö ´óĞ¡ºÍÎ»ÖÃ
+        //frame.pack();//è‡ªåŠ¨å¸ƒå±€ å¤§å°å’Œä½ç½®
 
         frame.addWindowListener(new WindowAdapter() {
             @Override

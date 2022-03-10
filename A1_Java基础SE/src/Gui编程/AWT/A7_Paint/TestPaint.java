@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A7_Paint;
+package Guiç¼–ç¨‹.AWT.A7_Paint;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -29,21 +29,21 @@ class MyPaint extends Frame{
     public void paint(Graphics g) {
         //super.paint(g);
 
-        //»­±ÊĞèÒªÑÕÉ«£¬ĞèÒª»­»­
+        //ç”»ç¬”éœ€è¦é¢œè‰²ï¼Œéœ€è¦ç”»ç”»
         g.setColor(new Color(10, 227, 72));
 
-        //¿ÕĞÄµÄÔ°
+        //ç©ºå¿ƒçš„å›­
         g.drawOval(110,100,100,100);
 
         g.setColor(new Color(215, 13, 229));
-        //ÊµĞÄµÄÔ°
+        //å®å¿ƒçš„å›­
         g.fillOval(200,200,100,100);
 
         g.setColor(new Color(8, 201, 234));
-        //ÊµĞÄ¾ØĞÎ
+        //å®å¿ƒçŸ©å½¢
         g.fillRect(300,200,100,100);
 
-        //Ñø³ÉÒ»¸ö»¹Ï°¹ß£¬ÓÃÍê»­±Êºó£¬°ÑÑÕÉ«»Ö¸´ÎªÄ¬ÈÏÑÕÉ«
+        //å…»æˆä¸€ä¸ªè¿˜ä¹ æƒ¯ï¼Œç”¨å®Œç”»ç¬”åï¼ŒæŠŠé¢œè‰²æ¢å¤ä¸ºé»˜è®¤é¢œè‰²
 
     }
 }

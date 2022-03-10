@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.UDPĞ­Òé.A_UDPÑ§Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.UDPåè®®.A_UDPå­¦ä¹ ;
 /*
-    UDP·¢ËÍÊı¾İµÄ²½Öè
-        1.´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó(DatagramSocket)
-        2.´´½¨Êı¾İ, ²¢°ÑÊı¾İ´ò°ü
-        3.µ÷ÓÃDatagramSocket¶ÔÏóµÄ·½·¨·¢ËÍÊı¾İ
-        4.¹Ø±Õ·¢ËÍ¶Ë
+    UDPå‘é€æ•°æ®çš„æ­¥éª¤
+        1.åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡(DatagramSocket)
+        2.åˆ›å»ºæ•°æ®, å¹¶æŠŠæ•°æ®æ‰“åŒ…
+        3.è°ƒç”¨DatagramSocketå¯¹è±¡çš„æ–¹æ³•å‘é€æ•°æ®
+        4.å…³é—­å‘é€ç«¯
 
 */
 
@@ -16,14 +16,14 @@ public class TestUDP_01 {
     public static void main(String[] args) throws IOException {
 
 
-        //1.´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó(DatagramSocket)
-        //  ¹¹Ôì·½·¨£ºDatagramSocket() ¹¹ÔìÊı¾İ±¨Ì×½Ó×Ö²¢½«Æä°ó¶¨µ½±¾µØÖ÷»úÉÏµÄÈÎºÎ¿ÉÓÃ¶Ë¿Ú¡£
+        //1.åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡(DatagramSocket)
+        //  æ„é€ æ–¹æ³•ï¼šDatagramSocket() æ„é€ æ•°æ®æŠ¥å¥—æ¥å­—å¹¶å°†å…¶ç»‘å®šåˆ°æœ¬åœ°ä¸»æœºä¸Šçš„ä»»ä½•å¯ç”¨ç«¯å£ã€‚
         DatagramSocket ds = new DatagramSocket();
 
 
-        //2.´´½¨Êı¾İ, ²¢°ÑÊı¾İ´ò°ü
+        //2.åˆ›å»ºæ•°æ®, å¹¶æŠŠæ•°æ®æ‰“åŒ…
         //  DatagramPacket(byte[] buf, int length, InetAddress address, int port)
-        //  ¹¹ÔìÊı¾İ±¨°ü£¬ÓÃÀ´½«³¤¶ÈÎª length µÄ°ü·¢ËÍµ½Ö¸¶¨Ö÷»úÉÏµÄÖ¸¶¨¶Ë¿ÚºÅ¡£
+        //  æ„é€ æ•°æ®æŠ¥åŒ…ï¼Œç”¨æ¥å°†é•¿åº¦ä¸º length çš„åŒ…å‘é€åˆ°æŒ‡å®šä¸»æœºä¸Šçš„æŒ‡å®šç«¯å£å·ã€‚
         byte[] buf = "gan,ga,jiang".getBytes();
         /*int length = buf.length;
         InetAddress address = InetAddress.getByName("192.168.46.201");
@@ -32,13 +32,13 @@ public class TestUDP_01 {
         DatagramPacket dp = new DatagramPacket(buf,buf.length,InetAddress.getByName("192.168.94.201"),10086);
 
 
-        //3.µ÷ÓÃDatagramSocket¶ÔÏóµÄ·½·¨·¢ËÍÊı¾İ
-        //  send(DatagramPacket p) ´Ó´ËÌ×½Ó×Ö·¢ËÍÊı¾İ±¨°ü
-        ds.send(dp);//²ÎÊıÊÇ DatagramPacket
+        //3.è°ƒç”¨DatagramSocketå¯¹è±¡çš„æ–¹æ³•å‘é€æ•°æ®
+        //  send(DatagramPacket p) ä»æ­¤å¥—æ¥å­—å‘é€æ•°æ®æŠ¥åŒ…
+        ds.send(dp);//å‚æ•°æ˜¯ DatagramPacket
 
 
-        //4.¹Ø±Õ·¢ËÍ¶Ë
-        //  close() ¹Ø±Õ´ËÊı¾İ±¨Ì×½Ó×Ö¡£
+        //4.å…³é—­å‘é€ç«¯
+        //  close() å…³é—­æ­¤æ•°æ®æŠ¥å¥—æ¥å­—ã€‚
         ds.close();
 
 

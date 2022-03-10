@@ -1,4 +1,4 @@
-package Gui±à³Ì.Swing.A3_Icon_And_JLabel;
+package Guiç¼–ç¨‹.Swing.A3_Icon_And_JLabel;
 
 
 import javax.swing.*;
@@ -9,22 +9,22 @@ class MyImage extends JFrame{
 
     public MyImage(){
 
-        //»ñÈ¡Í¼Æ¬µØÖ·
+        //è·å–å›¾ç‰‡åœ°å€
         URL url = MyImage.class.getResource("A2.jpg");
 
         ImageIcon img = new ImageIcon(url);
-        //´´½¨ ·ÅÈë±êÇ©
+        //åˆ›å»º æ”¾å…¥æ ‡ç­¾
         JLabel jLabel = new JLabel("");
         jLabel.setIcon(img);
         jLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setBounds(500,300,500,400);
         setBackground(new Color(243, 185, 96));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
 
-        //Ìí¼Ó±êÇ©
+        //æ·»åŠ æ ‡ç­¾
         Container addF = getContentPane();
         addF.add(jLabel);
     }

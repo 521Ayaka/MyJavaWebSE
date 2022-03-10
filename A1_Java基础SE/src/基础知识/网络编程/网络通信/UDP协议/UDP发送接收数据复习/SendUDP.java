@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.UDPĞ­Òé.UDP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.UDPåè®®.UDPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ ;
 
 /*
-    UDP·¢ËÍ
+    UDPå‘é€
 */
 
 import java.io.*;
@@ -13,30 +13,30 @@ public class SendUDP {
     public static void main(String[] args){
 
 
-        //Â¼ÈëĞèÒª·¢ËÍµÄÊı¾İ
-        try (   //·â×°¼üÅÌÂ¼Èë¹¦ÄÜ
+        //å½•å…¥éœ€è¦å‘é€çš„æ•°æ®
+        try (   //å°è£…é”®ç›˜å½•å…¥åŠŸèƒ½
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                //´´½¨DatagramSocket¶ÔÏó
+                //åˆ›å»ºDatagramSocketå¯¹è±¡
                 DatagramSocket ds = new DatagramSocket();
             ) {
-            //Êı¾İ
+            //æ•°æ®
             String data;
             while ((data = br.readLine()) != null){
 
-                //´´½¨Êı¾İ±¨°ü DatagramPacket()¶ÔÏó
+                //åˆ›å»ºæ•°æ®æŠ¥åŒ… DatagramPacket()å¯¹è±¡
                 DatagramPacket dp = new DatagramPacket(data.getBytes(),data.getBytes().length, InetAddress.getByName("GanGaJiang"),10086);
 
-                //·¢ËÍÊı¾İ±¨°ü
+                //å‘é€æ•°æ®æŠ¥åŒ…
                 ds.send(dp);
 
                 if ( "end".equals(data) ){
-                    System.out.println("ÒÑ¹Ø±Õ·¢ËÍ¶Ë¡£");
+                    System.out.println("å·²å…³é—­å‘é€ç«¯ã€‚");
                     return;
                 }
 
             }
 
-            //ÊÍ·Å×ÊÔ´ ÔÚtry()ÖĞÒÑ¾­Íê³É
+            //é‡Šæ”¾èµ„æº åœ¨try()ä¸­å·²ç»å®Œæˆ
 
         } catch (IOException e) {
             e.printStackTrace();

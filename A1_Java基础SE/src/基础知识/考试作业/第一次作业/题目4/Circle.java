@@ -1,49 +1,49 @@
-package »ù´¡ÖªÊ¶.¿¼ÊÔ×÷Òµ.µÚÒ»´Î×÷Òµ.ÌâÄ¿4;
+package åŸºç¡€çŸ¥è¯†.è€ƒè¯•ä½œä¸š.ç¬¬ä¸€æ¬¡ä½œä¸š.é¢˜ç›®4;
 /*
-¾Íµ±¸´Ï°ÁË
-Õâ¸öÀà¾Í¶¨ÒåÎª¡¾±ê×¼Àà¡¿
+å°±å½“å¤ä¹ äº†
+è¿™ä¸ªç±»å°±å®šä¹‰ä¸ºã€æ ‡å‡†ç±»ã€‘
 
-Ò»¸ö±ê×¼µÄÀàÓĞ:
+ä¸€ä¸ªæ ‡å‡†çš„ç±»æœ‰:
 
-³ÉÔ±·½·¨Ë½ÓĞ»¯
-GetSet·½·¨µ÷ÓÃ¸ü°²È«¡£
+æˆå‘˜æ–¹æ³•ç§æœ‰åŒ–
+GetSetæ–¹æ³•è°ƒç”¨æ›´å®‰å…¨ã€‚
 
-ÓĞ²Î¹¹Ôì ºÍ ÎŞ²Î¹¹Ôì
+æœ‰å‚æ„é€  å’Œ æ— å‚æ„é€ 
 
-±ØÒªµÄÊ±ºòÖØĞ´toString()·½·¨ £¬equals()·½·¨¾ÍÃ»ÄÇÃ´±ØÒªÁË
+å¿…è¦çš„æ—¶å€™é‡å†™toString()æ–¹æ³• ï¼Œequals()æ–¹æ³•å°±æ²¡é‚£ä¹ˆå¿…è¦äº†
 
 */
 public class Circle implements Shape{
 
-    //³ÉÔ±·½·¨Ë½ÓĞ»¯ Ê¹ÓÃGetSet·½·¨µ÷ÓÃ
+    //æˆå‘˜æ–¹æ³•ç§æœ‰åŒ– ä½¿ç”¨GetSetæ–¹æ³•è°ƒç”¨
     private double S;
     private double Z;
 
-    //ÎŞ²Î¹¹Ôì
+    //æ— å‚æ„é€ 
     public Circle() {
     }
 
-    //ÓĞ²Î¹¹Ôì
+    //æœ‰å‚æ„é€ 
     public Circle(double s, double z) {
         S = s;
         Z = z;
     }
 
-    //ÊµÏÖ½Ó¿Ú
+    //å®ç°æ¥å£
     @Override
     public double MJ(double a, double b) {
         S = Math.pow(a,2) * Math.PI;
         return 0;
     }
 
-    //ÊµÏÖ½Ó¿Ú
+    //å®ç°æ¥å£
     @Override
     public double ZC(double a, double b) {
         Z = 2 * a * Math.PI;
         return 0;
     }
 
-    //GetSet·½·¨
+    //GetSetæ–¹æ³•
     public double getS() {
         return S;
     }

@@ -1,79 +1,79 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Collection½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Collectionæ¥å£;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-/* APIÖĞ½éÉÜ:
-Collection ²ã´Î½á¹¹ ÖĞµÄ¸ù½Ó¿Ú¡£Collection ±íÊ¾Ò»×é¶ÔÏó£¬ÕâĞ©¶ÔÏóÒ²³ÆÎª collection µÄÔªËØ¡£Ò»Ğ© collection ÔÊĞíÓĞÖØ¸´µÄÔªËØ£¬¶øÁíÒ»Ğ©Ôò²»ÔÊĞí¡£
-Ò»Ğ© collection ÊÇÓĞĞòµÄ£¬¶øÁíÒ»Ğ©ÔòÊÇÎŞĞòµÄ¡£JDK ²»Ìá¹©´Ë½Ó¿ÚµÄÈÎºÎÖ±½Ó ÊµÏÖ£ºËüÌá¹©¸ü¾ßÌåµÄ×Ó½Ó¿Ú£¨Èç Set ºÍ List£©ÊµÏÖ¡£
-´Ë½Ó¿ÚÍ¨³£ÓÃÀ´´«µİ collection£¬²¢ÔÚĞèÒª×î´óÆÕ±éĞÔµÄµØ·½²Ù×÷ÕâĞ© collection¡£
+/* APIä¸­ä»‹ç»:
+Collection å±‚æ¬¡ç»“æ„ ä¸­çš„æ ¹æ¥å£ã€‚Collection è¡¨ç¤ºä¸€ç»„å¯¹è±¡ï¼Œè¿™äº›å¯¹è±¡ä¹Ÿç§°ä¸º collection çš„å…ƒç´ ã€‚ä¸€äº› collection å…è®¸æœ‰é‡å¤çš„å…ƒç´ ï¼Œè€Œå¦ä¸€äº›åˆ™ä¸å…è®¸ã€‚
+ä¸€äº› collection æ˜¯æœ‰åºçš„ï¼Œè€Œå¦ä¸€äº›åˆ™æ˜¯æ— åºçš„ã€‚JDK ä¸æä¾›æ­¤æ¥å£çš„ä»»ä½•ç›´æ¥ å®ç°ï¼šå®ƒæä¾›æ›´å…·ä½“çš„å­æ¥å£ï¼ˆå¦‚ Set å’Œ Listï¼‰å®ç°ã€‚
+æ­¤æ¥å£é€šå¸¸ç”¨æ¥ä¼ é€’ collectionï¼Œå¹¶åœ¨éœ€è¦æœ€å¤§æ™®éæ€§çš„åœ°æ–¹æ“ä½œè¿™äº› collectionã€‚
 */
 /*
-Collection²»ÄÜÖ±½ÓÊµÏÖ£¬Ö»ÄÜÊµÏÖ×Ó½Ó¿Ú[List]ºÍ[Set]Á½¸ö×Ó½Ó¿Ú¡£
-java.util.Collection           Collection<·ºĞÍ>
+Collectionä¸èƒ½ç›´æ¥å®ç°ï¼Œåªèƒ½å®ç°å­æ¥å£[List]å’Œ[Set]ä¸¤ä¸ªå­æ¥å£ã€‚
+java.util.Collection           Collection<æ³›å‹>
 
-CollectionÊÇµ¥ÁĞ¼¯ºÏµÄ¶¥²ã½Ó¿Ú£¬Ëü±íÊ¾Ò»×é¶ÔÏó£¬ÕâĞ©¶ÔÏóÒ²³ÆÎªCollectionµÄÔªËØ¡£
-JDK²»Ìá¹©´Ë½Ó¿ÚµÄÈÎºÎÖ±½ÓÊµÏÖ£¬ËüÌá¹©¸ü¾ßÌåµÄ×Ó½Ó¿Ú(ListºÍSet)ÊµÏÖ¡£
+Collectionæ˜¯å•åˆ—é›†åˆçš„é¡¶å±‚æ¥å£ï¼Œå®ƒè¡¨ç¤ºä¸€ç»„å¯¹è±¡ï¼Œè¿™äº›å¯¹è±¡ä¹Ÿç§°ä¸ºCollectionçš„å…ƒç´ ã€‚
+JDKä¸æä¾›æ­¤æ¥å£çš„ä»»ä½•ç›´æ¥å®ç°ï¼Œå®ƒæä¾›æ›´å…·ä½“çš„å­æ¥å£(Listå’ŒSet)å®ç°ã€‚
 
-´´½¨Collection¼¯ºÏµÄ¶ÔÏó¡£
--Ê¹ÓÃ¶àÌ¬µÄ·½·¨
--¾ßÌåÊµÏÖÀàListµÄArrayList
-
-========================================================================================================================
-Collection¼¯ºÏ³£ÓÃ·½·¨
-
-   boolean add(E e)            Ìí¼ÓÔªËØ
-   boolean remove(Object o)    ´Ó¼¯ºÏÖĞÒÆ³ıÖ¸¶¨µÄÔªËØ ¡¾²ÎÊı²»ÊÇË÷ÒıÖµ£¬ÊÇ¶ÔÏóÔªËØÄÚÈİ¡¿
-   void clear()                Çå¿Õ¼¯ºÏÖĞµÄÔªËØ
-   boolean contains(Object o)  ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñ´æÔÚÖ¸¶¨µÄÔªËØ
-   boolean isEmpty()           ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
-   int size()                  ¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞÔªËØµÄ¸öÊı¡£
+åˆ›å»ºCollectioné›†åˆçš„å¯¹è±¡ã€‚
+-ä½¿ç”¨å¤šæ€çš„æ–¹æ³•
+-å…·ä½“å®ç°ç±»Listçš„ArrayList
 
 ========================================================================================================================
-Ê¹ÓÃ¿ì½İ¼üALT+7 ´ò¿ª½á¹¹£¬¿ÉÒÔ¿´µ½ÀàµÄËùÓĞĞÅÏ¢ ·½·¨
+Collectioné›†åˆå¸¸ç”¨æ–¹æ³•
+
+   boolean add(E e)            æ·»åŠ å…ƒç´ 
+   boolean remove(Object o)    ä»é›†åˆä¸­ç§»é™¤æŒ‡å®šçš„å…ƒç´  ã€å‚æ•°ä¸æ˜¯ç´¢å¼•å€¼ï¼Œæ˜¯å¯¹è±¡å…ƒç´ å†…å®¹ã€‘
+   void clear()                æ¸…ç©ºé›†åˆä¸­çš„å…ƒç´ 
+   boolean contains(Object o)  åˆ¤æ–­é›†åˆä¸­æ˜¯å¦å­˜åœ¨æŒ‡å®šçš„å…ƒç´ 
+   boolean isEmpty()           åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
+   int size()                  é›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­å…ƒç´ çš„ä¸ªæ•°ã€‚
+
+========================================================================================================================
+ä½¿ç”¨å¿«æ·é”®ALT+7 æ‰“å¼€ç»“æ„ï¼Œå¯ä»¥çœ‹åˆ°ç±»çš„æ‰€æœ‰ä¿¡æ¯ æ–¹æ³•
 
 */
 public class Collection_Lei {
 
     public static void main(String[] args) {
-        //Ê¹ÓÃ¶àÌ¬µÄĞ´·¨
+        //ä½¿ç”¨å¤šæ€çš„å†™æ³•
         Collection<String> arrayList = new ArrayList<String>();
-        arrayList.add("ÎÊ¾ıÄÜÓĞ¼¸¶à³î£¬");
-        arrayList.add("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷¡£");
+        arrayList.add("é—®å›èƒ½æœ‰å‡ å¤šæ„ï¼Œ");
+        arrayList.add("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµã€‚");
         System.out.println(arrayList);
-        //¶ÔÏóÊÇnew³öÀ´µÄ£¬Ö±½Ó´òÓ¡µÄÊÇµØÖ·Öµ£¬Èç¹û²»ÊÇ£¬ÖØĞ´ÁËtoString()·½·¨
+        //å¯¹è±¡æ˜¯newå‡ºæ¥çš„ï¼Œç›´æ¥æ‰“å°çš„æ˜¯åœ°å€å€¼ï¼Œå¦‚æœä¸æ˜¯ï¼Œé‡å†™äº†toString()æ–¹æ³•
 
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-        //boolean add(E e) Ìí¼ÓÔªËØ
-        boolean boo = arrayList.add("Á÷Ñ½Á÷Á÷µ½ÍâÆÅÇÅ");
+        //boolean add(E e) æ·»åŠ å…ƒç´ 
+        boolean boo = arrayList.add("æµå‘€æµæµåˆ°å¤–å©†æ¡¥");
         System.out.println(boo+" "+arrayList);
         System.out.println("==============================================");
 
-        //boolean remove(Object o) ´Ó¼¯ºÏÖĞÉ¾³ıÖ¸¶¨µÄÔªËØ
-        boolean boo1 = arrayList.remove(1);//ÊÇ¶ÔÏó£¬²»ÊÇË÷ÒıÖµ
-        boolean boo2 = arrayList.remove("Á÷Ñ½Á÷Á÷µ½ÍâÆÅÇÅ");
+        //boolean remove(Object o) ä»é›†åˆä¸­åˆ é™¤æŒ‡å®šçš„å…ƒç´ 
+        boolean boo1 = arrayList.remove(1);//æ˜¯å¯¹è±¡ï¼Œä¸æ˜¯ç´¢å¼•å€¼
+        boolean boo2 = arrayList.remove("æµå‘€æµæµåˆ°å¤–å©†æ¡¥");
         System.out.println(boo1 + " " + boo2 + arrayList);
         System.out.println("==============================================");
 
-        //void clear() Çå¿Õ¼¯ºÏÖĞµÄÔªËØ
+        //void clear() æ¸…ç©ºé›†åˆä¸­çš„å…ƒç´ 
         arrayList.clear();
         System.out.println(arrayList);
         System.out.println("==============================================");
 
-        //boolean contains(Object o) ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñ´æÔÚÖ¸¶¨µÄÔªËØ
-        arrayList.add("ÎÊ¾ıÄÜÓĞ¼¸¶à³î£¬");
-        arrayList.add("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷¡£");
-        boolean boole = arrayList.contains("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷¡£");
+        //boolean contains(Object o) åˆ¤æ–­é›†åˆä¸­æ˜¯å¦å­˜åœ¨æŒ‡å®šçš„å…ƒç´ 
+        arrayList.add("é—®å›èƒ½æœ‰å‡ å¤šæ„ï¼Œ");
+        arrayList.add("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµã€‚");
+        boolean boole = arrayList.contains("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµã€‚");
         System.out.println(boole+" "+arrayList);
         System.out.println("==============================================");
 
-        //boolean isEmpty() ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
+        //boolean isEmpty() åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
         boolean booE = arrayList.isEmpty();
         System.out.println(booE + " " + arrayList);
         System.out.println("==============================================");
 
-        //int size() ¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞÔªËØµÄ¸öÊı¡£
+        //int size() é›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­å…ƒç´ çš„ä¸ªæ•°ã€‚
         int size = arrayList.size();
         System.out.println(size + " " + arrayList);
         System.out.println("==============================================");

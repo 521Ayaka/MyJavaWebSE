@@ -1,42 +1,42 @@
-package »ù´¡ÖªÊ¶.Àà¿â.LeiShuoming;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.LeiShuoming;
 
 /*
-¶¨ÒåÒ»¸öÀà
+å®šä¹‰ä¸€ä¸ªç±»
 
-³ÉÔ±±äÁ¿£¨ÊôĞÔ£©£º
+æˆå‘˜å˜é‡ï¼ˆå±æ€§ï¼‰ï¼š
     String x;
     int y; 
 
 
-³ÉÔ±·½·¨£¨ĞĞÎª£©£º
+æˆå‘˜æ–¹æ³•ï¼ˆè¡Œä¸ºï¼‰ï¼š
     public void ganga01() {}
     public void ganga02() {} 
 
 
-×¢ÒâÊÂÏî£º
-1. ³ÉÔ±±äÁ¿ÊÇÖ±½Ó¶¨ÒåÔÚÀàµ±ÖĞµÄ£¬ÔÚ·½·¨Íâ±ß¡£
-2. ³ÉÔ±·½·¨²»ÒªĞ´static¹Ø¼ü×Ö¡£
+æ³¨æ„äº‹é¡¹ï¼š
+1. æˆå‘˜å˜é‡æ˜¯ç›´æ¥å®šä¹‰åœ¨ç±»å½“ä¸­çš„ï¼Œåœ¨æ–¹æ³•å¤–è¾¹ã€‚
+2. æˆå‘˜æ–¹æ³•ä¸è¦å†™staticå…³é”®å­—ã€‚
  */
 public class Lei01 {
-    String x = "ŞÏŞÎ½´ÍòËê";
+    String x = "å°´å°¬é…±ä¸‡å²";
     int y = 521;
     
     public void ganga01(){
-        System.out.println("ÓÀÔ¶àÖÉñ£¡");
+        System.out.println("æ°¸è¿œå˜€ç¥ï¼");
     }
 
     public void ganga02(){
-        System.out.println("ŞÏŞÎ£¬³Ô·¹³Ô·¹£¡");
+        System.out.println("å°´å°¬ï¼Œåƒé¥­åƒé¥­ï¼");
     }
     public  void nani (){
         for(int hour = 0; hour<24;hour++){
             for(int minute=0;minute<60;minute++){
                 for(int s=0;s<60;s++){
-                    System.out.println("                          "+hour+"µã"+minute+"·Ö"+s+"Ãë"+"ÔÚÏëÄã...");
+                    System.out.println("                          "+hour+"ç‚¹"+minute+"åˆ†"+s+"ç§’"+"åœ¨æƒ³ä½ ...");
                 }
             }
         }
-        System.out.println("                          24µã00·Ö00ÃëÔÚÈÔÈ»ÔÚÏëÄîÄã");
+        System.out.println("                          24ç‚¹00åˆ†00ç§’åœ¨ä»ç„¶åœ¨æƒ³å¿µä½ ");
     }
 
     public String getX() {

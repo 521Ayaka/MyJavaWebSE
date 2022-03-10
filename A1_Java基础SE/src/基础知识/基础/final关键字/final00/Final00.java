@@ -1,24 +1,24 @@
-package »ù´¡ÖªÊ¶.»ù´¡.final¹Ø¼ü×Ö.final00;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.finalå…³é”®å­—.final00;
 /*
-final¹Ø¼ü×Ö´ú±í×îÖÕ¡¢²»¿É¸Ä±äµÄ¡£
+finalå…³é”®å­—ä»£è¡¨æœ€ç»ˆã€ä¸å¯æ”¹å˜çš„ã€‚
 
-³£¼ûµÄËÄÖÖÓÃ·¨:
-1. ¿ÉÒÔÐÞÊÎÒ»¸öÀà
-2. ¿ÉÒÔÐÞÊÎÒ»¸ö·½·¨
-3. ¿ÉÒÔÐÞÊÎÒ»¸ö¾Ö²¿±äÁ¿
-4. ¿ÉÒÔÐÞÊÎÒ»¸ö³ÉÔ±±äÁ¿
+å¸¸è§çš„å››ç§ç”¨æ³•:
+1. å¯ä»¥ä¿®é¥°ä¸€ä¸ªç±»
+2. å¯ä»¥ä¿®é¥°ä¸€ä¸ªæ–¹æ³•
+3. å¯ä»¥ä¿®é¥°ä¸€ä¸ªå±€éƒ¨å˜é‡
+4. å¯ä»¥ä¿®é¥°ä¸€ä¸ªæˆå‘˜å˜é‡
 
 */
 
-//ÐÞÊÎÒ»¸öÀà
+//ä¿®é¥°ä¸€ä¸ªç±»
 public final class Final00 {
 
-    //ÐÞÊÎÒ»¸ö³ÉÔ±·½·¨
+    //ä¿®é¥°ä¸€ä¸ªæˆå‘˜æ–¹æ³•
     public final int num = 10;
 
-    //ÐÞÊÎÒ»¸ö·½·¨
+    //ä¿®é¥°ä¸€ä¸ªæ–¹æ³•
     public final void method(){
-        //ÐÞÊÎÒ»¸ö¾Ö²¿±äÁ¿
+        //ä¿®é¥°ä¸€ä¸ªå±€éƒ¨å˜é‡
         final int num = 20;
     }
 

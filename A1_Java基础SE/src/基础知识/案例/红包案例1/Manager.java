@@ -1,46 +1,46 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı1;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹1;
 
-//µ¼°ü
+//å¯¼åŒ…
 
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-//ÈºÖ÷µÄÀà   //×ÓÀà
+//ç¾¤ä¸»çš„ç±»   //å­ç±»
 public class Manager extends User {
 
-    //ÈºÖ÷µÄ²ÎÊıĞÅÏ¢
+    //ç¾¤ä¸»çš„å‚æ•°ä¿¡æ¯
     public Manager(String name, double money) {
-        super(name, money); //µ÷ÓÃ¸¸Àà¹¹Ôì·½·¨£¬´òÓ¡¶ÔÏóĞÅÏ¢¡£
+        super(name, money); //è°ƒç”¨çˆ¶ç±»æ„é€ æ–¹æ³•ï¼Œæ‰“å°å¯¹è±¡ä¿¡æ¯ã€‚
     }
 
-    //ÈºÖ÷¶ÀÓĞµÄ·¢ºì°ü·½·¨
+    //ç¾¤ä¸»ç‹¬æœ‰çš„å‘çº¢åŒ…æ–¹æ³•
     public ArrayList<Double> send(double totalMoney, int count) {
 
         ArrayList<Double> redList = new ArrayList<>();
 
-        //ÈºÖ÷µÄÓà¶î
+        //ç¾¤ä¸»çš„ä½™é¢
         double leftMoney = this.getMoney();
-        //ÅĞ¶Ïºì°ü½ğ¶îÊÇ·ñ´óÓÚµ±Ç°Óà¶î
+        //åˆ¤æ–­çº¢åŒ…é‡‘é¢æ˜¯å¦å¤§äºå½“å‰ä½™é¢
         if(totalMoney > leftMoney) {
-            System.out.println("µ±Ç°Óà¶î²»×ã£¡");
+            System.out.println("å½“å‰ä½™é¢ä¸è¶³ï¼");
             return redList;
         }
 
-        //´«ÈëÈºÖ÷Ê£ÓàµÄÇ®Êı£¬super½øĞĞµ÷ÓÃ£¬±ğÍüÁËGetSet·½·¨µ±ÖĞ£¬setMoney(²ÎÊı)ÊÇ½øĞĞ´«Èë¸¸ÀàÊı¾İµÄ£¡£¡£¡
+        //ä¼ å…¥ç¾¤ä¸»å‰©ä½™çš„é’±æ•°ï¼Œsuperè¿›è¡Œè°ƒç”¨ï¼Œåˆ«å¿˜äº†GetSetæ–¹æ³•å½“ä¸­ï¼ŒsetMoney(å‚æ•°)æ˜¯è¿›è¡Œä¼ å…¥çˆ¶ç±»æ•°æ®çš„ï¼ï¼ï¼
         super.setMoney(super.getMoney() - totalMoney);
 
-        //·Öºì°ü µ¥¸öºì°ü½ğ¶î
+        //åˆ†çº¢åŒ… å•ä¸ªçº¢åŒ…é‡‘é¢
         Random r = new Random();
 
-        //¶¨ÒåÁ½¸ödouble numÊÇÇ°n-1¸öºÍµÄÇ®£¬yv-numÊÇÎªÁË¼ÆËãÊ£ÓàµÄÁãÇ®¡£
+        //å®šä¹‰ä¸¤ä¸ªdouble numæ˜¯å‰n-1ä¸ªå’Œçš„é’±ï¼Œyv-numæ˜¯ä¸ºäº†è®¡ç®—å‰©ä½™çš„é›¶é’±ã€‚
         double num = 0;
         double yv = totalMoney;
-        //°ü×°ºì°ü
+        //åŒ…è£…çº¢åŒ…
         for (int i = 0; i < count; i++) {
             if(i == 0){
-                num = r.nextInt((int)(totalMoney/2)); //µÚÒ»¸ö·¶Î§ÔÚtotalMoneyµÄ°ë¡£¼õÉÙ·½²î
+                num = r.nextInt((int)(totalMoney/2)); //ç¬¬ä¸€ä¸ªèŒƒå›´åœ¨totalMoneyçš„åŠã€‚å‡å°‘æ–¹å·®
                 totalMoney = totalMoney - num;
             }else if (i == count - 1){
                 double x;
@@ -54,20 +54,20 @@ public class Manager extends User {
                 num = r.nextInt((int) totalMoney);
                 totalMoney = totalMoney - num;
             }
-            redList.add(num); //Ïò¼¯ºÏÖĞÌí¼ÓÔªËØ½ğ¶î¡£
+            redList.add(num); //å‘é›†åˆä¸­æ·»åŠ å…ƒç´ é‡‘é¢ã€‚
         }
-        //½øĞĞ´òÂÒÊı×é£¬»¹Ã»»¹Ã»Ñ§µ½£¬ÍøÉÏÕÒµÄ¡£
+        //è¿›è¡Œæ‰“ä¹±æ•°ç»„ï¼Œè¿˜æ²¡è¿˜æ²¡å­¦åˆ°ï¼Œç½‘ä¸Šæ‰¾çš„ã€‚
         Collections.shuffle(redList);
 
-        //×î´óµÄºì°ümax¡£
+        //æœ€å¤§çš„çº¢åŒ…maxã€‚
         double max = redList.get(0);;
         for (int i = 0; i < redList.size(); i++) {
             if (redList.get(i) > max){
                 max = redList.get(i);
             }
         }
-        super.setMax(max); //Ê¹ÓÃsetMax()Ïò¸¸Àà´«Èëmax
+        super.setMax(max); //ä½¿ç”¨setMax()å‘çˆ¶ç±»ä¼ å…¥max
 
-        return redList;  //·µ»Øºì°ü
+        return redList;  //è¿”å›çº¢åŒ…
     }
 }

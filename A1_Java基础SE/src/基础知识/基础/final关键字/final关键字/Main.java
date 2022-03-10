@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.»ù´¡.final¹Ø¼ü×Ö.final¹Ø¼ü×Ö;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.finalå…³é”®å­—.finalå…³é”®å­—;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Fu one = new Fu("ÞÏÞÎÁË");
+        Fu one = new Fu("å°´å°¬äº†");
         one.getName();
 
-        Fu two = new Fu("Õâ¾ÍÞÏÞÎÁË");
+        Fu two = new Fu("è¿™å°±å°´å°¬äº†");
 
     }
 

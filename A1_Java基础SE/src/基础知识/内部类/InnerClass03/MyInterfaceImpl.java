@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass03;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass03;
 
 public class MyInterfaceImpl implements MyInterface{
     @Override
     public void methodA() {
-        System.out.println("¸²¸ÇÖØĞ´½Ó¿ÚµÄ³éÏó·½·¨£¬111-A");
+        System.out.println("è¦†ç›–é‡å†™æ¥å£çš„æŠ½è±¡æ–¹æ³•ï¼Œ111-A");
     }
 
     @Override
     public void methodB() {
-        System.out.println("¸²¸ÇÖØĞ´½Ó¿ÚµÄ³éÏó·½·¨£¬222-B");
+        System.out.println("è¦†ç›–é‡å†™æ¥å£çš„æŠ½è±¡æ–¹æ³•ï¼Œ222-B");
     }
 }

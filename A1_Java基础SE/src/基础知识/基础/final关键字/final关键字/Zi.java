@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.»ù´¡.final¹Ø¼ü×Ö.final¹Ø¼ü×Ö;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.finalå…³é”®å­—.finalå…³é”®å­—;
 
 public class Zi extends Fu{
 
 
-    public Zi(String ÞÏÞÎÁË) {
+    public Zi(String å°´å°¬äº†) {
     }
 }

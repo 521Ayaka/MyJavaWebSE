@@ -1,32 +1,32 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface01;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface01;
 
-//¡°ÊµÏÖÀà¡± ÃüÃûÒ»°ãÊÇ ½Ó¿ÚÃû+Impl  //I´óĞ´µÄi lĞ¡Ğ´µÄl
+//â€œå®ç°ç±»â€ å‘½åä¸€èˆ¬æ˜¯ æ¥å£å+Impl  //Iå¤§å†™çš„i lå°å†™çš„l
 
 
-//¿ÉÒÔÊ¹ÓÃALT+»Ø³µ£¬¿ìËÙ¸²¸ÇÖØĞ´³éÏó·½·¨
+//å¯ä»¥ä½¿ç”¨ALT+å›è½¦ï¼Œå¿«é€Ÿè¦†ç›–é‡å†™æŠ½è±¡æ–¹æ³•
 public class MyInterfaceAbstractImpl implements MyInterfaceAbstract{
 
 
-    //¸²¸ÇÖØĞ´
+    //è¦†ç›–é‡å†™
     @Override
     public void methodAbs1(){
-        System.out.println("methodAbs1·½·¨Ìå");
+        System.out.println("methodAbs1æ–¹æ³•ä½“");
     }
 
     @Override
     public int methodAbs2(int x){
-        System.out.println("methodAbs2·½·¨Ìå");
+        System.out.println("methodAbs2æ–¹æ³•ä½“");
         return x;
     }
 
     @Override
     public void methodAbs3(){
-        System.out.println("methodAbs3·½·¨Ìå");
+        System.out.println("methodAbs3æ–¹æ³•ä½“");
     }
 
     @Override
     public boolean methodAbs4(double y){
-        System.out.println("methodAbs4·½·¨Ìå");
+        System.out.println("methodAbs4æ–¹æ³•ä½“");
         return true;
     }
 

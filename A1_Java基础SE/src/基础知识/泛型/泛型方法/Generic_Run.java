@@ -1,23 +1,23 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.·ºĞÍ·½·¨;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.æ³›å‹æ–¹æ³•;
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 public class Generic_Run {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃÆÕÍ¨Àà
+        //ä½¿ç”¨æ™®é€šç±»
         Ordinary_Lei ordinaryLei = new Ordinary_Lei();
-        ordinaryLei.method1("ÑÇË÷¸ç¸ç");
+        ordinaryLei.method1("äºšç´¢å“¥å“¥");
         ordinaryLei.method2(18);
         ordinaryLei.method3(true);
-        //ordinaryLei.method2("Ê®°ËËê");
-        // ·ÇintÎŞ·¨Ìí¼Ó
+        //ordinaryLei.method2("åå…«å²");
+        // éintæ— æ³•æ·»åŠ 
 
         System.out.println("========================");
 
-        //Ê¹ÓÃ·ºĞÍÀà
+        //ä½¿ç”¨æ³›å‹ç±»
         Generic_Lei<String> gen1 = new Generic_Lei<>();
-        gen1.method("ÓÀ¶÷µÜµÜ");
+        gen1.method("æ°¸æ©å¼Ÿå¼Ÿ");
 
         Generic_Lei<Integer> gen2 = new Generic_Lei<>();
         gen2.method(17);
@@ -27,9 +27,9 @@ public class Generic_Run {
 
         System.out.println("========================");
 
-        //Ê¹ÓÃ·ºĞÍ·½·¨
+        //ä½¿ç”¨æ³›å‹æ–¹æ³•
         Generic_Method generic = new Generic_Method();
-        generic.method("º®±ùÉäÊÖ");
+        generic.method("å¯’å†°å°„æ‰‹");
         generic.method(9);
         generic.method(true);
         generic.method(66.66);

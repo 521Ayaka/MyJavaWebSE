@@ -1,20 +1,20 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ.ÔöÇ¿forÑ­»·;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ.å¢žå¼ºforå¾ªçŽ¯;
 
 /*
-ÔöÇ¿forÑ­»·
-ÔöÇ¿for: ¼ò»¯Êý×éºÍCollection¼¯ºÏµÄ±éÀú¡£
+å¢žå¼ºforå¾ªçŽ¯
+å¢žå¼ºfor: ç®€åŒ–æ•°ç»„å’ŒCollectioné›†åˆçš„éåŽ†ã€‚
 
-Collection¼Ì³ÐÁËIterable½Ó¿Ú
-ÔÚ¡¾Iterable ½Ó¿ÚÀïÃæÒ»¸ö iterator()³éÏó·½·¨¡£¡¿£¡£¡£¡
-ÊµÏÖÕâ¸ö½Ó¿ÚÔÊÐí¶ÔÏó³ÉÎª "foreach" Óï¾äµÄÄ¿±ê¡£
+Collectionç»§æ‰¿äº†IterableæŽ¥å£
+åœ¨ã€Iterable æŽ¥å£é‡Œé¢ä¸€ä¸ª iterator()æŠ½è±¡æ–¹æ³•ã€‚ã€‘ï¼ï¼ï¼
+å®žçŽ°è¿™ä¸ªæŽ¥å£å…è®¸å¯¹è±¡æˆä¸º "foreach" è¯­å¥çš„ç›®æ ‡ã€‚
 
-[¸ÅÊö]:
-1. ÊµÏÖÁËIterable½Ó¿ÚµÄÀàÔÊÐíÆä¶ÔÏó³ÉÎªÔöÇ¿ÐÍforÓï¾äµÄÄ¿±ê
-2. ËüÊÇJDK5Ö®ºó³öÏÖµÄ£¬ÆäÄÚ²¿Ô­ÀíÊÇÒ»¸öIteratorµü´úÆ÷¡£
+[æ¦‚è¿°]:
+1. å®žçŽ°äº†IterableæŽ¥å£çš„ç±»å…è®¸å…¶å¯¹è±¡æˆä¸ºå¢žå¼ºåž‹forè¯­å¥çš„ç›®æ ‡
+2. å®ƒæ˜¯JDK5ä¹‹åŽå‡ºçŽ°çš„ï¼Œå…¶å†…éƒ¨åŽŸç†æ˜¯ä¸€ä¸ªIteratorè¿­ä»£å™¨ã€‚
 
-[¸ñÊ½]:
-for(ÔªËØÊý¾ÝÀàÐÍ ±äÁ¿Ãû: Êý×é/Collection¼¯ºÏ){
-   //Ê¹ÓÃ±äÁ¿¼´¿É£¬¸Ã±äÁ¿¾ÍÊÇÔªËØ
+[æ ¼å¼]:
+for(å…ƒç´ æ•°æ®ç±»åž‹ å˜é‡å: æ•°ç»„/Collectioné›†åˆ){
+   //ä½¿ç”¨å˜é‡å³å¯ï¼Œè¯¥å˜é‡å°±æ˜¯å…ƒç´ 
 }
 
 []
@@ -28,7 +28,7 @@ public class Foreach {
             System.out.println(num);
         }
         System.out.println("====");
-        //ÔÚIDEAÀïÃæÊäÈëforeach¿ÉÒÔ¿ìËÙÊ¹ÓÃ
+        //åœ¨IDEAé‡Œé¢è¾“å…¥foreachå¯ä»¥å¿«é€Ÿä½¿ç”¨
         for (int num :
                 array) {
             System.out.println(num);

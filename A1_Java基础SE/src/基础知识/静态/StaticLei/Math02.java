@@ -1,37 +1,37 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.StaticLei;
+package åŸºç¡€çŸ¥è¯†.é™æ€.StaticLei;
 
 /**
-ÌâÄ¿£º
-¼ÆËãÔÚ-10.8µ½5.9Ö®¼ä£¬¾ø¶ÔÖµ´óÓÚ6»òÕßÐ¡ÓÚ2.1µÄÕûÊýÓÐ¶àÉÙ¸ö£¿
+é¢˜ç›®ï¼š
+è®¡ç®—åœ¨-10.8åˆ°5.9ä¹‹é—´ï¼Œç»å¯¹å€¼å¤§äºŽ6æˆ–è€…å°äºŽ2.1çš„æ•´æ•°æœ‰å¤šå°‘ä¸ªï¼Ÿ
 
-·ÖÎö£º
-1. ¼ÈÈ»ÒÑ¾­È·¶¨ÁË·¶Î§£¬forÑ­»·
-2. ÆðµãÎ»ÖÃ-10.8Ó¦¸Ã×ª»»³ÉÎª-10£¬Á½ÖÖ°ì·¨£º
-    2.1 ¿ÉÒÔÊ¹ÓÃMath.ceil·½·¨£¬ÏòÉÏ£¨ÏòÕý·½Ïò£©È¡Õû
-    2.2 Ç¿×ª³ÉÎªint£¬×Ô¶¯ÉáÆúËùÓÐÐ¡ÊýÎ»
-3. Ã¿Ò»¸öÊý×Ö¶¼ÊÇÕûÊý£¬ËùÒÔ²½½ø±í´ïÊ½Ó¦¸ÃÊÇnum++£¬ÕâÑùÃ¿´Î¶¼ÊÇ+1µÄ¡£
-4. ÈçºÎÄÃµ½¾ø¶ÔÖµ£ºMath.abs·½·¨¡£
-5. Ò»µ©·¢ÏÖÁËÒ»¸öÊý×Ö£¬ÐèÒªÈÃ¼ÆÊýÆ÷++½øÐÐÍ³¼Æ¡£
+åˆ†æžï¼š
+1. æ—¢ç„¶å·²ç»ç¡®å®šäº†èŒƒå›´ï¼Œforå¾ªçŽ¯
+2. èµ·ç‚¹ä½ç½®-10.8åº”è¯¥è½¬æ¢æˆä¸º-10ï¼Œä¸¤ç§åŠžæ³•ï¼š
+    2.1 å¯ä»¥ä½¿ç”¨Math.ceilæ–¹æ³•ï¼Œå‘ä¸Šï¼ˆå‘æ­£æ–¹å‘ï¼‰å–æ•´
+    2.2 å¼ºè½¬æˆä¸ºintï¼Œè‡ªåŠ¨èˆå¼ƒæ‰€æœ‰å°æ•°ä½
+3. æ¯ä¸€ä¸ªæ•°å­—éƒ½æ˜¯æ•´æ•°ï¼Œæ‰€ä»¥æ­¥è¿›è¡¨è¾¾å¼åº”è¯¥æ˜¯num++ï¼Œè¿™æ ·æ¯æ¬¡éƒ½æ˜¯+1çš„ã€‚
+4. å¦‚ä½•æ‹¿åˆ°ç»å¯¹å€¼ï¼šMath.absæ–¹æ³•ã€‚
+5. ä¸€æ—¦å‘çŽ°äº†ä¸€ä¸ªæ•°å­—ï¼Œéœ€è¦è®©è®¡æ•°å™¨++è¿›è¡Œç»Ÿè®¡ã€‚
 
-±¸×¢£ºÈç¹ûÊ¹ÓÃMath.ceil·½·¨£¬-10.8¿ÉÒÔ±ä³É-10.0¡£×¢ÒâdoubleÒ²ÊÇ¿ÉÒÔ½øÐÐ++µÄ¡£
+å¤‡æ³¨ï¼šå¦‚æžœä½¿ç”¨Math.ceilæ–¹æ³•ï¼Œ-10.8å¯ä»¥å˜æˆ-10.0ã€‚æ³¨æ„doubleä¹Ÿæ˜¯å¯ä»¥è¿›è¡Œ++çš„ã€‚
  */
 public class Math02 {
 
     public static void main(String[] args) {
-        int count = 0; // ·ûºÏÒªÇóµÄÊýÁ¿
+        int count = 0; // ç¬¦åˆè¦æ±‚çš„æ•°é‡
 
         double min = -10.8;
         double max = 5.9;
-        // ÕâÑù´¦Àí£¬±äÁ¿i¾ÍÊÇÇø¼äÖ®ÄÚËùÓÐµÄÕûÊý
+        // è¿™æ ·å¤„ç†ï¼Œå˜é‡iå°±æ˜¯åŒºé—´ä¹‹å†…æ‰€æœ‰çš„æ•´æ•°
         for (int i = (int) min; i < max; i++) {
-            int abs = Math.abs(i); // ¾ø¶ÔÖµ
+            int abs = Math.abs(i); // ç»å¯¹å€¼
             if (abs > 6 || abs < 2.1) {
                 System.out.println(i);
                 count++;
             }
         }
 
-        System.out.println("×Ü¹²ÓÐ£º" + count); // 9
+        System.out.println("æ€»å…±æœ‰ï¼š" + count); // 9
     }
 
 }

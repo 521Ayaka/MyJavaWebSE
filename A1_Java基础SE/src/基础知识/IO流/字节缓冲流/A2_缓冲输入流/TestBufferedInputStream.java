@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú»º³åÁ÷.A2_»º³åÊäÈëÁ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚ç¼“å†²æµ.A2_ç¼“å†²è¾“å…¥æµ;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -8,25 +8,25 @@ public class TestBufferedInputStream {
 
     public static void main(String[] args) throws IOException {
 
-        //Í¬BufferedInputStreamÏàÍ¬£¬´´½¨¶ÔÏó
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú»º³åÁ÷\\²âÊÔÎÄ¼ş.txt"));
+        //åŒBufferedInputStreamç›¸åŒï¼Œåˆ›å»ºå¯¹è±¡
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚ç¼“å†²æµ\\æµ‹è¯•æ–‡ä»¶.txt"));
 
-        //Í¨¹ıbis½øĞĞ¶ÁÈ¡Êı¾İ
+        //é€šè¿‡bisè¿›è¡Œè¯»å–æ•°æ®
 
-        //µ¥¸ö¶ÁÈ¡
+        //å•ä¸ªè¯»å–
         /*
         int by;
         while((by = bis.read()) != -1){
             System.out.print((char) by);
         }*/
-        //Ê¹ÓÃbyteÊı×é»ñÈ¡
+        //ä½¿ç”¨byteæ•°ç»„è·å–
         byte [] array = new byte[1024];
         int len;
         while( (len = bis.read(array)) != -1 ){
             System.out.print(new String(array,0,len));
         }
 
-        //Í¬ÑùĞèÒªÊÍ·Å×ÊÔ´
+        //åŒæ ·éœ€è¦é‡Šæ”¾èµ„æº
         bis.close();
     }
 

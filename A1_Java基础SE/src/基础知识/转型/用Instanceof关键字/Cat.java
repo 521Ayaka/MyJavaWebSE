@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.×ªĞÍ.ÓÃInstanceof¹Ø¼ü×Ö;
+package åŸºç¡€çŸ¥è¯†.è½¬å‹.ç”¨Instanceofå…³é”®å­—;
 
 public class Cat extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("´ÎÓã");
+        System.out.println("æ¬¡é±¼");
     }
 
     public void catchMouse(){
-        System.out.println("Ã¨×¥ÀÏÊó");
+        System.out.println("çŒ«æŠ“è€é¼ ");
     }
 }

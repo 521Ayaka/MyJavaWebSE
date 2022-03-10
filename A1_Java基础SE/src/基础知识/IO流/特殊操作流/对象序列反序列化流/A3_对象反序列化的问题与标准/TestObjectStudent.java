@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷.A3_¶ÔÏó·´ĞòÁĞ»¯µÄÎÊÌâÓë±ê×¼;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ.A3_å¯¹è±¡ååºåˆ—åŒ–çš„é—®é¢˜ä¸æ ‡å‡†;
 
 import java.io.*;
 
@@ -9,12 +9,12 @@ public class TestObjectStudent {
         read();
     }
 
-    //¶ÔÏóĞòÁĞ»¯
+    //å¯¹è±¡åºåˆ—åŒ–
     public static void write() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷\\A3_¶ÔÏó·´ĞòÁĞ»¯µÄÎÊÌâÓë±ê×¼\\ĞòÁĞ»¯ÎÄ¼ş.txt"));) {
-            //ÏÈ´´½¨¶ÔÏó
-            Student stu = new Student("ŞÏŞÎ½´", 20, 202020);
-            //¶ÔÏóĞòÁĞ»¯
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ\\A3_å¯¹è±¡ååºåˆ—åŒ–çš„é—®é¢˜ä¸æ ‡å‡†\\åºåˆ—åŒ–æ–‡ä»¶.txt"));) {
+            //å…ˆåˆ›å»ºå¯¹è±¡
+            Student stu = new Student("å°´å°¬é…±", 20, 202020);
+            //å¯¹è±¡åºåˆ—åŒ–
             oos.writeObject(stu);
 
         } catch (IOException e) {
@@ -22,18 +22,18 @@ public class TestObjectStudent {
         }
     }
 
-    //¶ÔÏó·´ĞòÁĞ»¯
+    //å¯¹è±¡ååºåˆ—åŒ–
     public static void read() {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷\\A3_¶ÔÏó·´ĞòÁĞ»¯µÄÎÊÌâÓë±ê×¼\\ĞòÁĞ»¯ÎÄ¼ş.txt"))) {
-            //·´ĞòÁĞ»¯¶ÔÏó
-            Object oStu = ois.readObject();//ÕâÀï±¨µÄ²»ÔÚIOException°üÏÂ
-            //´´½¨¸Ã¶ÔÏó
-            Student stu = (Student) oStu;//ÏòÏÂ×ªĞÍ
-            //´òÓ¡¶ÔÏóÄÚÈİ
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ\\A3_å¯¹è±¡ååºåˆ—åŒ–çš„é—®é¢˜ä¸æ ‡å‡†\\åºåˆ—åŒ–æ–‡ä»¶.txt"))) {
+            //ååºåˆ—åŒ–å¯¹è±¡
+            Object oStu = ois.readObject();//è¿™é‡ŒæŠ¥çš„ä¸åœ¨IOExceptionåŒ…ä¸‹
+            //åˆ›å»ºè¯¥å¯¹è±¡
+            Student stu = (Student) oStu;//å‘ä¸‹è½¬å‹
+            //æ‰“å°å¯¹è±¡å†…å®¹
             if (stu.getID() == 0 ){
-                System.out.println("ĞÕÃû: " + stu.getName() + ", ÄêÁä: " + stu.getAge() + ", Ñ§ºÅ: ÎŞ·¨²é¿´");
+                System.out.println("å§“å: " + stu.getName() + ", å¹´é¾„: " + stu.getAge() + ", å­¦å·: æ— æ³•æŸ¥çœ‹");
             }else {
-                System.out.println("ĞÕÃû: " + stu.getName() + ", ÄêÁä: " + stu.getAge() + ", Ñ§ºÅ: " + stu.getID());
+                System.out.println("å§“å: " + stu.getName() + ", å¹´é¾„: " + stu.getAge() + ", å­¦å·: " + stu.getID());
             }
 
 

@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ArrayListTi {
     public static void main(String[] args) {
-        //ÌâÄ¿Ò»£ºÉú³É6¸ö1~33µÄËæ»úÊı×Ö£¬Ìí¼Óµ½¼¯ºÏ£¬²¢±éÀú¼¯ºÏ¡£
+        //é¢˜ç›®ä¸€ï¼šç”Ÿæˆ6ä¸ª1~33çš„éšæœºæ•°å­—ï¼Œæ·»åŠ åˆ°é›†åˆï¼Œå¹¶éå†é›†åˆã€‚
         ArrayList<Integer> array1 = new ArrayList<>();
         Random r = new Random();
 
@@ -19,13 +19,13 @@ public class ArrayListTi {
         }
         System.out.println("=============================");
 
-        //ÌâÄ¿¶ş£º×Ô¶¨ÒåÎå¸öÑ§Éú¶ÔÏó£¬Ìí¼Óµ½¼¯ºÏ£¬²¢±éÀú¼¯ºÏ
+        //é¢˜ç›®äºŒï¼šè‡ªå®šä¹‰äº”ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œæ·»åŠ åˆ°é›†åˆï¼Œå¹¶éå†é›†åˆ
         ArrayList<Student> array2 = new ArrayList<>();
-        Student a = new Student("¾ö¶·´óÊ¦" , 21);
-        Student b = new Student("Óù½£ÏÉ", 21);
-        Student c = new Student("Ä§·¨Ê¦",17);
-        Student d = new Student("ĞÉºìÖ®ÔÂ",24);
-        Student e = new Student("ÌìÉñ",9999);
+        Student a = new Student("å†³æ–—å¤§å¸ˆ" , 21);
+        Student b = new Student("å¾¡å‰‘ä»™", 21);
+        Student c = new Student("é­”æ³•å¸ˆ",17);
+        Student d = new Student("çŒ©çº¢ä¹‹æœˆ",24);
+        Student e = new Student("å¤©ç¥",9999);
 
         array2.add(a);
         array2.add(b);
@@ -35,21 +35,21 @@ public class ArrayListTi {
 
         for (int i = 0; i < array2.size(); i++) {
             Student stu = array2.get(i);
-            System.out.println("Ãû×Ö£º"+stu.getName()+"£¬ÄêÁä£º"+stu.getAge());
+            System.out.println("åå­—ï¼š"+stu.getName()+"ï¼Œå¹´é¾„ï¼š"+stu.getAge());
         }
 
         System.out.println("=============================");
 
-        //ÌâÄ¿Èı£º¶¨ÒåÒ»¸öÖ¸¶¨¸ñÊ½´òÓ¡¼¯ºÏµÄ·½·¨£¬¸ñÊ½Îª£º{ÔªËØ@ÔªËØ@ÔªËØ@ÔªËØ@ÔªËØ}
+        //é¢˜ç›®ä¸‰ï¼šå®šä¹‰ä¸€ä¸ªæŒ‡å®šæ ¼å¼æ‰“å°é›†åˆçš„æ–¹æ³•ï¼Œæ ¼å¼ä¸ºï¼š{å…ƒç´ @å…ƒç´ @å…ƒç´ @å…ƒç´ @å…ƒç´ }
         ArrayList<String> array03 = new ArrayList<>();
-        array03.add("¾ö¶·´óÊ¦");
-        array03.add("ĞÉºìÖ®ÔÂ");
-        array03.add("Èı¹úÃÍ½«");
-        array03.add("ÌìÑ¡¸£ĞÇ");
-        array03.add("ÌìÑ¡ÌìÉñ");
+        array03.add("å†³æ–—å¤§å¸ˆ");
+        array03.add("çŒ©çº¢ä¹‹æœˆ");
+        array03.add("ä¸‰å›½çŒ›å°†");
+        array03.add("å¤©é€‰ç¦æ˜Ÿ");
+        array03.add("å¤©é€‰å¤©ç¥");
         System.out.println(array03);
 
-        System.out.println("Ö¸¶¨¸ñÊ½´òÓ¡£º");
+        System.out.println("æŒ‡å®šæ ¼å¼æ‰“å°ï¼š");
         Print(array03);
 
     }

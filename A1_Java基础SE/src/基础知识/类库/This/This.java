@@ -1,37 +1,37 @@
-package »ù´¡ÖªÊ¶.Àà¿â.This;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.This;
 
 public class This {
     public static void main(String[] args) {
         ThisLei01 lei04 = new ThisLei01();
-        lei04.name= "Íõ½¡ÁÖ";
-        lei04.hello1("ÍõË¼´Ï");
+        lei04.name= "ç‹å¥æ—";
+        lei04.hello1("ç‹æ€èª");
         System.out.println("=================================");
         
-        //µ±·½·¨µÄ¾Ö²¿±äÁ¿ºÍÀàµÄ³ÉÔ±±äÁ¿ÖØÃûµÄÊ±ºò£¬¸ù¾İ¡°¾Í½üÔ­Ôò¡±£¬ÓÅÏÈÊ¹ÓÃ¾Ö²¿±äÁ¿¡£
+        //å½“æ–¹æ³•çš„å±€éƒ¨å˜é‡å’Œç±»çš„æˆå‘˜å˜é‡é‡åçš„æ—¶å€™ï¼Œæ ¹æ®â€œå°±è¿‘åŸåˆ™â€ï¼Œä¼˜å…ˆä½¿ç”¨å±€éƒ¨å˜é‡ã€‚
 
-        lei04.name= "Íõ½¡ÁÖ";
-        //²ÎÊı ¾Ö²¿±äÁ¿¡° Íõ½¡ÁÖ ¡±
+        lei04.name= "ç‹å¥æ—";
+        //å‚æ•° å±€éƒ¨å˜é‡â€œ ç‹å¥æ— â€
 
-        lei04.hello2("ÍõË¼´Ï");
+        lei04.hello2("ç‹æ€èª");
 
         System.out.println("================================");
-        lei04.name= "Íõ½¡ÁÖ";
-        //²ÎÊı ¾Ö²¿±äÁ¿¡° Íõ½¡ÁÖ ¡±
-        lei04.hello3("ÍõË¼´Ï");
-        // System.out.println(name+"ÄãºÃ£¬ÎÒ½Ğ"+this.name);
-        //Ê¹ÓÃÁËthis·ÃÎÊ³ÉÔ±±äÁ¿
+        lei04.name= "ç‹å¥æ—";
+        //å‚æ•° å±€éƒ¨å˜é‡â€œ ç‹å¥æ— â€
+        lei04.hello3("ç‹æ€èª");
+        // System.out.println(name+"ä½ å¥½ï¼Œæˆ‘å«"+this.name);
+        //ä½¿ç”¨äº†thisè®¿é—®æˆå‘˜å˜é‡
         
         System.out.println("======================================================");
 
         ThisLei02 lei02 = new ThisLei02();
-        lei02.fun("ÕâÊÇ¾Ö²¿±äÁ¿");
+        lei02.fun("è¿™æ˜¯å±€éƒ¨å˜é‡");
 
         
         /*      void fun(String str){
-                    System.out.println(str);  //´òÓ¡²ÎÊıstr
-                    System.out.println(this.str);   //Ê¹ÓÃthis.str ´òÓ¡È«¾Ö±äÁ¿
+                    System.out.println(str);  //æ‰“å°å‚æ•°str
+                    System.out.println(this.str);   //ä½¿ç”¨this.str æ‰“å°å…¨å±€å˜é‡
             
-                    //ÊÇ²ÎÊıstr¸³Öµ¸øÈ«¾Ö±äÁ¿str
+                    //æ˜¯å‚æ•°strèµ‹å€¼ç»™å…¨å±€å˜é‡str
                     this.str = str;
                     System.out.println(this.str);
                 }

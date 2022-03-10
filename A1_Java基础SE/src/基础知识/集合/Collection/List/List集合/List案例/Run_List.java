@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ.List°¸Àı;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ.Listæ¡ˆä¾‹;
 
 /*
-°¸ÀıÒªÇó:
-´´½¨Ò»¸ö´æ´¢Ñ§Éú¶ÔÏóµÄ¼¯ºÏ£¬´æ´¢Èı¸öÑ§Éú¶ÔÏó£¬Ê¹ÓÃ³ÌĞòÊµÏÖÔÚ¿ØÖÆÌ¨±éÀú¸Ã¼¯ºÏ¡£
-(Á½ÖÖ·½Ê½±éÀú£¬forÑ­»·±éÀú£¬µü´úÆ÷±éÀú)
+æ¡ˆä¾‹è¦æ±‚:
+åˆ›å»ºä¸€ä¸ªå­˜å‚¨å­¦ç”Ÿå¯¹è±¡çš„é›†åˆï¼Œå­˜å‚¨ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡ï¼Œä½¿ç”¨ç¨‹åºå®ç°åœ¨æ§åˆ¶å°éå†è¯¥é›†åˆã€‚
+(ä¸¤ç§æ–¹å¼éå†ï¼Œforå¾ªç¯éå†ï¼Œè¿­ä»£å™¨éå†)
 */
 
 import java.util.ArrayList;
@@ -14,29 +14,29 @@ public class Run_List {
 
     public static void main(String[] args) {
 
-        Student stu1 = new Student("ºÎÑ©³å", 16);
-        Student stu2 = new Student("ºÎÑ©³æ", 18);
-        Student stu3 = new Student("ºÎÑ§´Ò", 20);
+        Student stu1 = new Student("ä½•é›ªå†²", 16);
+        Student stu2 = new Student("ä½•é›ªè™«", 18);
+        Student stu3 = new Student("ä½•å­¦åŒ†", 20);
 
         List<Student> list = new ArrayList<>();
         list.add(stu1);
         list.add(stu2);
         list.add(stu3);
 
-        //forÑ­»·±éÀú
+        //forå¾ªç¯éå†
         for (int i = 0; i < list.size(); i++) {
-            System.out.println("ÎÒ½Ğ" + list.get(i).getName() + ",½ñÄê" + list.get(i).getAge() + "ËêÁË¡£");
+            System.out.println("æˆ‘å«" + list.get(i).getName() + ",ä»Šå¹´" + list.get(i).getAge() + "å²äº†ã€‚");
         }
 
         System.out.println("==================");
 
-        //Ê¹ÓÃµü´úÆ÷½øĞĞ±éÀú
+        //ä½¿ç”¨è¿­ä»£å™¨è¿›è¡Œéå†
         Iterator<Student> itr = list.iterator();
         while (itr.hasNext()) {
-            //´íÎóĞ´·¨
-            //System.out.println("ÎÒ½Ğ" + itr.next().getName() + ",½ñÄê" + itr.next().getAge() + "ËêÁË¡£");
+            //é”™è¯¯å†™æ³•
+            //System.out.println("æˆ‘å«" + itr.next().getName() + ",ä»Šå¹´" + itr.next().getAge() + "å²äº†ã€‚");
             Student stu = itr.next();
-            System.out.println("ÎÒ½Ğ" + stu.getName() + ",½ñÄê" + stu.getAge() + "ËêÁË¡£");
+            System.out.println("æˆ‘å«" + stu.getName() + ",ä»Šå¹´" + stu.getAge() + "å²äº†ã€‚");
         }
 
     }

@@ -1,18 +1,18 @@
-package 基础知识.接口.Interface09案例;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.Interface09妗堜緥;
 
 public class Keyboard implements USB{
 
     @Override
     public void open() {
-        System.out.println("打开键盘");
+        System.out.println("鎵撳紑閿洏");
     }
 
     @Override
     public void close() {
-        System.out.println("关闭键盘");
+        System.out.println("鍏抽棴閿洏");
     }
 
     public void type(){
-        System.out.println("键盘输入");
+        System.out.println("閿洏杈撳叆");
     }
 }

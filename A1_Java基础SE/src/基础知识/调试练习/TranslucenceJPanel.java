@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
 /*
- *ÖØĞ´Õâ¸öÀàÀ´ÊµÏÖ°ëÍ¸Ã÷µÄJPanel
+ *é‡å†™è¿™ä¸ªç±»æ¥å®ç°åŠé€æ˜çš„JPanel
  */
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -30,9 +30,9 @@ public class TranslucenceJPanel extends JPanel {
         }
     }
 
-    /**Õâ¸ö·½·¨ÓÃÀ´ÉèÖÃJPanelµÄÍ¸Ã÷¶È
+    /**è¿™ä¸ªæ–¹æ³•ç”¨æ¥è®¾ç½®JPanelçš„é€æ˜åº¦
      *
-     * @param transparency:Í¸Ã÷¶È
+     * @param transparency:é€æ˜åº¦
      *
      * @return void
      */
@@ -50,7 +50,7 @@ public class TranslucenceJPanel extends JPanel {
 
         graphics2d.setColor(Color.white);
 
-        graphics2d.drawImage(background, 0, 0, this);//ÕâÀïÈç¹ûÊ¹ÓÃImageµÄ¶ÔÏó£¬¶ø²»ÊÇBufferedImageµÄ¶ÔÏó£¬ÊÇ»æÖÆ²»³öÀ´µÄ£¬²»ÖªµÀÎªºÎ¡£
+        graphics2d.drawImage(background, 0, 0, this);//è¿™é‡Œå¦‚æœä½¿ç”¨Imageçš„å¯¹è±¡ï¼Œè€Œä¸æ˜¯BufferedImageçš„å¯¹è±¡ï¼Œæ˜¯ç»˜åˆ¶ä¸å‡ºæ¥çš„ï¼Œä¸çŸ¥é“ä¸ºä½•ã€‚
 
         graphics2d.dispose();
     }

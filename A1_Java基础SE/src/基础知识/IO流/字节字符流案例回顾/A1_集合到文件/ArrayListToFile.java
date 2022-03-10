@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A1_¼¯ºÏµ½ÎÄ¼ş;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A1_é›†åˆåˆ°æ–‡ä»¶;
 
 /*
-Õâ¸ö°¸ÀıºÜ¼òµ¥,
-Õâ¸ö°¸Àı¸æËßÎÒ:
-²»Ö»ÊÇÎÄ¼şĞ´Èëµ½ÎÄ¼şµ±ÖĞ,
-»¹¿ÉÒÔÀ´Ô´ÓÚÆäËûµØ·½ ±ÈÈçËµ[ArrayListÊı×é]µÈ...
+è¿™ä¸ªæ¡ˆä¾‹å¾ˆç®€å•,
+è¿™ä¸ªæ¡ˆä¾‹å‘Šè¯‰æˆ‘:
+ä¸åªæ˜¯æ–‡ä»¶å†™å…¥åˆ°æ–‡ä»¶å½“ä¸­,
+è¿˜å¯ä»¥æ¥æºäºå…¶ä»–åœ°æ–¹ æ¯”å¦‚è¯´[ArrayListæ•°ç»„]ç­‰...
 */
 
 import java.io.BufferedWriter;
@@ -16,30 +16,30 @@ public class ArrayListToFile {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new ArrayListToFile().arrayToFile();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void arrayToFile() {
-        //´´½¨ArrayListÊı×é
+        //åˆ›å»ºArrayListæ•°ç»„
         ArrayList<String> array = new ArrayList<>();
-        //Ìí¼ÓÔªËØ
-        array.add("ÎÊ¾ıÄÜÓĞ¼¸¶à³î");
-        array.add("Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷");
+        //æ·»åŠ å…ƒç´ 
+        array.add("é—®å›èƒ½æœ‰å‡ å¤šæ„");
+        array.add("æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµ");
         array.add("================");
-        array.add("ÎÒÂ¬±¾Î°NB,ÎÒÂ¬±¾Î°Ã»ÓĞ¿ª¹Ò");
+        array.add("æˆ‘å¢æœ¬ä¼ŸNB,æˆ‘å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚");
 
-        //´´½¨×Ö·û»º³åÊä³öÁ÷¶ÔÏó ÓÃÀ´ ÎüĞ´ÈëÊı¾İ
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²è¾“å‡ºæµå¯¹è±¡ ç”¨æ¥ å¸å†™å…¥æ•°æ®
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\A1_¼¯ºÏµ½ÎÄ¼ş\\ÎÄ¼ş.txt"));
-            //Ğ´Èëµ½ÎÄ¼ş
+            bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\A1_é›†åˆåˆ°æ–‡ä»¶\\æ–‡ä»¶.txt"));
+            //å†™å…¥åˆ°æ–‡ä»¶
             for (String str : array) {
                 bw.write(str);
-                bw.newLine();//±ğÍüÁË»»ĞĞ£¡
-                bw.flush();//Ë¢ĞÂÁ÷
+                bw.newLine();//åˆ«å¿˜äº†æ¢è¡Œï¼
+                bw.flush();//åˆ·æ–°æµ
             }
 
         } catch (IOException e) {
@@ -47,7 +47,7 @@ public class ArrayListToFile {
         } finally {
             if (bw != null) {
                 try {
-                    bw.close();//ÊÍ·Å×ÊÔ´
+                    bw.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

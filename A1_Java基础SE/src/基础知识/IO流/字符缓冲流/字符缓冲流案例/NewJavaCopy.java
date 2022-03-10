@@ -1,29 +1,29 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·û»º³åÁ÷.×Ö·û»º³åÁ÷°¸Àı;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦ç¼“å†²æµ.å­—ç¬¦ç¼“å†²æµæ¡ˆä¾‹;
 
 import java.io.*;
 /*
-¼ÌĞø¸Ä½ø¡¾×Ö·ûÁ÷°¸Àı¡¿Õâ´ÎÊ¹ÓÃ [×Ö·û»º³åÁ÷] À´ÊµÏÖ
+ç»§ç»­æ”¹è¿›ã€å­—ç¬¦æµæ¡ˆä¾‹ã€‘è¿™æ¬¡ä½¿ç”¨ [å­—ç¬¦ç¼“å†²æµ] æ¥å®ç°
 
 */
 public class NewJavaCopy {
 
     public static void main(String[] args) {
 
-        //´´½¨×Ö·û»º³åÁ÷
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²æµ
         BufferedReader br = null;
         BufferedWriter bw = null;
 
         try {
-            //¸³ÖµÂ·¾¶¶ÔÏó
-            br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷°¸Àı\\NewJavaCopy.java"));
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·û»º³åÁ÷\\×Ö·û»º³åÁ÷°¸Àı\\¸´ÖÆµ½ÕâÀï\\NewJavaCopy.java"));
-            //¿ªÊ¼¸´ÖÆ
+            //èµ‹å€¼è·¯å¾„å¯¹è±¡
+            br = new BufferedReader(new FileReader("D:\\æºä»£ç \\A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµæ¡ˆä¾‹\\NewJavaCopy.java"));
+            bw = new BufferedWriter(new FileWriter("D:\\æºä»£ç \\A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦ç¼“å†²æµ\\å­—ç¬¦ç¼“å†²æµæ¡ˆä¾‹\\å¤åˆ¶åˆ°è¿™é‡Œ\\NewJavaCopy.java"));
+            //å¼€å§‹å¤åˆ¶
             char[] array = new char[1024];
             int len;
             while ((len = br.read(array)) != -1) {
-                //¸´ÖÆ
+                //å¤åˆ¶
                 bw.write(array, 0, len);
-                //´òÓ¡Êä³öµ½¿ØÖÆÌ¨
+                //æ‰“å°è¾“å‡ºåˆ°æ§åˆ¶å°
                 System.out.print(new String(array,0,len));
             }
 
@@ -32,14 +32,14 @@ public class NewJavaCopy {
         } finally {
             if (br!=null) {
                 try {
-                    br.close();//ÊÍ·Å×ÊÔ´
+                    br.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (bw!=null) {
                 try {
-                    bw.close();//ÊÍ·Å×ÊÔ´
+                    bw.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

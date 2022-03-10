@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A6_Ñ§Éú³É¼¨Â¼Èë;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A6_å­¦ç”Ÿæˆç»©å½•å…¥;
 
 public class StudentGrade {
 
-    //ĞÕÃû
+    //å§“å
     private String name;
-    //ÓïÎÄ³É¼¨
+    //è¯­æ–‡æˆç»©
     private int Chinese;
-    //ÊıÑ§³É¼¨
+    //æ•°å­¦æˆç»©
     private int Meth;
-    //Ó¢Óï³É¼¨
+    //è‹±è¯­æˆç»©
     private int English;
 
-    //×Ü·Ö
+    //æ€»åˆ†
     public int getSum() {
         return this.Chinese + this.Meth + this.English;
     }

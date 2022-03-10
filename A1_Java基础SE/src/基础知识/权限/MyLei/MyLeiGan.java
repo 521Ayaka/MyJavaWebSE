@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.È¨ÏŞ.MyLei;
+package åŸºç¡€çŸ¥è¯†.æƒé™.MyLei;
 
 public class MyLeiGan {
 
@@ -9,26 +9,26 @@ public class MyLeiGan {
 
 
     private void method1(){
-        System.out.println("Ë½ÓĞ·½·¨");
+        System.out.println("ç§æœ‰æ–¹æ³•");
     }
 
     void method2(){
-        System.out.println("(default)·½·¨");
+        System.out.println("(default)æ–¹æ³•");
     }
 
     protected void method3(){
-        System.out.println("protected·½·¨");
+        System.out.println("protectedæ–¹æ³•");
     }
 
     public void method4(){
-        System.out.println("public·½·¨");
+        System.out.println("publicæ–¹æ³•");
     }
 
-    //ÎŞ²Î¹¹Ôì
+    //æ— å‚æ„é€ 
     public MyLeiGan() {
     }
 
-    //È«²Î¹¹Ôì
+    //å…¨å‚æ„é€ 
     public MyLeiGan(int num1, int num2, int num3, int num4) {
         this.num1 = num1;
         this.num2 = num2;
@@ -36,7 +36,7 @@ public class MyLeiGan {
         this.num4 = num4;
     }
 
-    //GetSet·½·¨
+    //GetSetæ–¹æ³•
     public int getNum1() {
         return num1;
     }

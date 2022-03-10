@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="B6_Tomcat_Maven:war">
+    <output-path>$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>B6_Tomcat_Maven</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="B6_Tomcat_Maven-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="B6_Tomcat_Maven:war exploded" />
+    </root>
+  </artifact>
+</component>

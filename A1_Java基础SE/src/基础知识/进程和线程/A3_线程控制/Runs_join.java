@@ -1,24 +1,24 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A3_Ïß³Ì¿ØÖÆ;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A3_çº¿ç¨‹æ§åˆ¶;
 
 public class Runs_join {
 
     public static void main(String[] args) {
 
-        //´´½¨Ïß³Ì¶ÔÏó
+        //åˆ›å»ºçº¿ç¨‹å¯¹è±¡
         ThreadJoin tj1 = new ThreadJoin();
         ThreadJoin tj2 = new ThreadJoin();
         ThreadJoin tj3 = new ThreadJoin();
-        //ÉèÖÃÏß³ÌÃû×Ö
-        tj1.setName("²Ü²Ù");
-        tj2.setName("²ÜØ§");
-        tj3.setName("²ÜÖ²");
+        //è®¾ç½®çº¿ç¨‹åå­—
+        tj1.setName("æ›¹æ“");
+        tj2.setName("æ›¹ä¸•");
+        tj3.setName("æ›¹æ¤");
 
-        //Æô¶¯Ïß³Ì
+        //å¯åŠ¨çº¿ç¨‹
         tj1.start();
 
-        try {//ÒÀÈ»ĞèÒªÒì³£´¦Àí try...catch...
-            tj1.join();//µÈ´ı²Ü²ÙËÀºó......
-                       //Èı¹ú³Æ°Ô Ì«×Ó¶áµÕ...
+        try {//ä¾ç„¶éœ€è¦å¼‚å¸¸å¤„ç† try...catch...
+            tj1.join();//ç­‰å¾…æ›¹æ“æ­»å......
+                       //ä¸‰å›½ç§°éœ¸ å¤ªå­å¤ºå«¡...
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

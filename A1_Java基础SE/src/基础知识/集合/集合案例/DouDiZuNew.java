@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.¼¯ºÏ°¸Àı;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.é›†åˆæ¡ˆä¾‹;
 /*
- * ´æ´¢Ê¹ÓÃ HashMap
- * Ï´ÅÆÊ¹ÓÃ ArrayList
- * ÓÃ»§³ÊÏÖ TreeSet
+ * å­˜å‚¨ä½¿ç”¨ HashMap
+ * æ´—ç‰Œä½¿ç”¨ ArrayList
+ * ç”¨æˆ·å‘ˆç° TreeSet
  *
  * */
 
@@ -13,14 +13,14 @@ import java.util.TreeSet;
 
 public class DouDiZuNew {
 
-    //´´½¨ÓÃ»§ĞÅÏ¢
-    private String userName1 = "ŞÏŞÎÁË";
-    private String userName2 = "ŞÏŞÎµÛ";
-    private String userName3 = "ŞÏŞÎ½´";
-    //´´½¨ÅÆÉ«ºÍÅÆÊı
-    private String[] colorOf = {"·½¿é", "ºìÌÒ", "ºÚÌÒ", "ºìÌÒ"};
+    //åˆ›å»ºç”¨æˆ·ä¿¡æ¯
+    private String userName1 = "å°´å°¬äº†";
+    private String userName2 = "å°´å°¬å¸";
+    private String userName3 = "å°´å°¬é…±";
+    //åˆ›å»ºç‰Œè‰²å’Œç‰Œæ•°
+    private String[] colorOf = {"æ–¹å—", "çº¢æ¡ƒ", "é»‘æ¡ƒ", "çº¢æ¡ƒ"};
     private String[] numOf = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
-    //ÓÃ»§µÄÅÆ,   ´´½¨ÓÃ»§ÅÆÈİÆ÷, Ê¹ÓÃTreeSet¼¯ºÏ£¬½øĞĞÅÅĞò£¬Ê¹ÓÃ×ÔÈ»ÅÅĞò(ÉıĞò)
+    //ç”¨æˆ·çš„ç‰Œ,   åˆ›å»ºç”¨æˆ·ç‰Œå®¹å™¨, ä½¿ç”¨TreeSeté›†åˆï¼Œè¿›è¡Œæ’åºï¼Œä½¿ç”¨è‡ªç„¶æ’åº(å‡åº)
     private TreeSet<Integer> user1 = new TreeSet<>();
     private TreeSet<Integer> user2 = new TreeSet<>();
     private TreeSet<Integer> user3 = new TreeSet<>();
@@ -28,36 +28,36 @@ public class DouDiZuNew {
 
 
     /**
-     * Æô¶¯
+     * å¯åŠ¨
      */
     public static void main(String[] args) {
-        //Æô¶¯
+        //å¯åŠ¨
         new DouDiZuNew().init();
     }
 
     /**
-     * ³õÊ¼»¯
+     * åˆå§‹åŒ–
      */
     public void init() {
 
-        //´´½¨HashMap¼¯ºÏ
+        //åˆ›å»ºHashMapé›†åˆ
         HashMap<Integer, String> map = new HashMap<>();
 
-        //´´½¨ÅÆÈİÆ÷,ÕâÀï´æ´¢µÄÊÇHashMap¼¯ºÏÖĞµÄ¼üÖµ index
+        //åˆ›å»ºç‰Œå®¹å™¨,è¿™é‡Œå­˜å‚¨çš„æ˜¯HashMapé›†åˆä¸­çš„é”®å€¼ index
         ArrayList<Integer> list = new ArrayList<>();
 
-        /**²Ù×÷Êı×é£º*/
-        //µ÷ÓÃ´æ´¢ÅÆ£¬´æ´¢±àºÅ
+        /**æ“ä½œæ•°ç»„ï¼š*/
+        //è°ƒç”¨å­˜å‚¨ç‰Œï¼Œå­˜å‚¨ç¼–å·
         this.hashMapAdd(map, list);
 
-        //µ÷ÓÃÏ´ÅÆ
+        //è°ƒç”¨æ´—ç‰Œ
         this.shuffle(list);
 
-        //µ÷ÓÃ·¢ÅÆ
+        //è°ƒç”¨å‘ç‰Œ
         this.distribute(list, map);
         System.out.println(list);
 
-        //µ÷ÓÃ²é¿´ÓÃ»§ÅÆ
+        //è°ƒç”¨æŸ¥çœ‹ç”¨æˆ·ç‰Œ
         look(userName1, user1, map);
         look(userName2, user2, map);
         look(userName3, user3, map);
@@ -68,35 +68,35 @@ public class DouDiZuNew {
      * ================================================================================
      */
 
-    //ÏòHashMapÖĞ´æ´¢ÅÆÊı , ²¢ÇÒÏòArrayList¼¯ºÏµ±ÖĞÌí¼Ó¼üÖµ±àºÅ
+    //å‘HashMapä¸­å­˜å‚¨ç‰Œæ•° , å¹¶ä¸”å‘ArrayListé›†åˆå½“ä¸­æ·»åŠ é”®å€¼ç¼–å·
     public void hashMapAdd(HashMap<Integer, String> map, ArrayList<Integer> list) {
-        //³õÊ¼»¯µãÊı
+        //åˆå§‹åŒ–ç‚¹æ•°
         int index = 0;
-        //ÏÈÊÇnumOf½øĞĞÑ­»·, ±£Ö¤TreeSet¿ÉÒÔÕı³£ÅÅĞò¡£
+        //å…ˆæ˜¯numOfè¿›è¡Œå¾ªç¯, ä¿è¯TreeSetå¯ä»¥æ­£å¸¸æ’åºã€‚
         for (String num : numOf) {
             for (String color : colorOf) {
-                //ÏòmapÖĞÌí¼Ó¼üÖµ¶Ô
+                //å‘mapä¸­æ·»åŠ é”®å€¼å¯¹
                 map.put(index, color + num);
-                //ÏòArrayListÌí¼Ó¼üÖµ±àºÅ
+                //å‘ArrayListæ·»åŠ é”®å€¼ç¼–å·
                 list.add(index);
                 //index++
                 index++;
             }
         }
-        //Ìí¼Ó´óĞ¡Íõ
-        map.put(index, "Ğ¡Íõ");
+        //æ·»åŠ å¤§å°ç‹
+        map.put(index, "å°ç‹");
         list.add(index);
         index++;
-        map.put(index, "´óÍõ");
+        map.put(index, "å¤§ç‹");
         list.add(index);
     }
 
-    //ÖØĞÂÏ´ÅÆ
+    //é‡æ–°æ´—ç‰Œ
     public void shuffle(ArrayList<Integer> list) {
         Collections.shuffle(list);
     }
 
-    //·¢ÅÆµÄ·½·¨
+    //å‘ç‰Œçš„æ–¹æ³•
     public void distribute(ArrayList<Integer> list, HashMap<Integer, String> map) {
         for (int i = 0; i < list.size(); i++) {
             if (i >= 54) {
@@ -111,16 +111,16 @@ public class DouDiZuNew {
         }
     }
 
-    //²é¿´ÅÆ , ÓÃ»§³ÊÏÖÅÅĞò
+    //æŸ¥çœ‹ç‰Œ , ç”¨æˆ·å‘ˆç°æ’åº
     public void look(String name, TreeSet<Integer> set, HashMap<Integer, String> map) {
-        System.out.println("ĞÕÃû:" + name);
-        System.out.print("ÅÆÊıÎª:");
+        System.out.println("å§“å:" + name);
+        System.out.print("ç‰Œæ•°ä¸º:");
         int in = 1;
         for (Integer index : set) {
             if (in < set.size()) {
                 System.out.print(map.get(index) + " , ");
             } else {
-                System.out.print(map.get(index + "¡£"));
+                System.out.print(map.get(index + "ã€‚"));
             }
             in++;
         }

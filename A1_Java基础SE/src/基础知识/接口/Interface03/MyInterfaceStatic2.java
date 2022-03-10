@@ -1,9 +1,9 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface03;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface03;
 
 public interface MyInterfaceStatic2 {
 
     public static void method(){
-        System.out.println("ÁíÒ»¸ö½Ó¿ÚµÄ¾²Ì¬·½·¨¡£¡£¡£");
+        System.out.println("å¦ä¸€ä¸ªæ¥å£çš„é™æ€æ–¹æ³•ã€‚ã€‚ã€‚");
     }
 
 }

@@ -1,34 +1,34 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.Date;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».Date;
 
 import java.util.Date;
 
 /*
-DateÀàµÄ³£ÓÃ·½·¨:
+Dateç±»çš„å¸¸ç”¨æ–¹æ³•:
 
-public long getTime():  »ñÈ¡µÄÊ±ÈÕÆÚ¶ÔÏó´Ó1970Äê1ÔÂ1ÈÕ00:00:00µ½ÏÖÔÚµÄºÁÃëÖµ
-[ËµÃ÷]: ·µ»ØÀàĞÍÊ±long ºÁÃëÖµ¡£
+public long getTime():  è·å–çš„æ—¶æ—¥æœŸå¯¹è±¡ä»1970å¹´1æœˆ1æ—¥00:00:00åˆ°ç°åœ¨çš„æ¯«ç§’å€¼
+[è¯´æ˜]: è¿”å›ç±»å‹æ—¶long æ¯«ç§’å€¼ã€‚
 
-public void setTime(long time):  ÉèÖÃÊ±¼ä£¬¸øµÄÊ±ºÁÃëÖµ¡£
-[ËµÃ÷]: ´«ÈëµÄÒ²ÊÇlongÀàĞÍµÄºÁÃëÖµ¡£
+public void setTime(long time):  è®¾ç½®æ—¶é—´ï¼Œç»™çš„æ—¶æ¯«ç§’å€¼ã€‚
+[è¯´æ˜]: ä¼ å…¥çš„ä¹Ÿæ˜¯longç±»å‹çš„æ¯«ç§’å€¼ã€‚
 
 */
 public class DateMethod {
 
     public static void main(String[] args) {
 
-        //´´½¨ÈÕÆÚ¶ÔÏó
+        //åˆ›å»ºæ—¥æœŸå¯¹è±¡
         Date date = new Date();
 
-        //public long getTime():  »ñÈ¡µÄÊ±ÈÕÆÚ¶ÔÏó´Ó1970Äê1ÔÂ1ÈÕ00:00:00µ½ÏÖÔÚµÄºÁÃëÖµ
+        //public long getTime():  è·å–çš„æ—¶æ—¥æœŸå¯¹è±¡ä»1970å¹´1æœˆ1æ—¥00:00:00åˆ°ç°åœ¨çš„æ¯«ç§’å€¼
         long dateTime = date.getTime();
-        System.out.println(date.getTime());//Ä¬ÈÏ·µ»Øµ±Ç°»ùÓÚ1970/1/1µÄºÁÃëÖµ
-        System.out.println(1970+32/365.2422+dateTime*1.0/1000/60/60/24/365+"Äê");
+        System.out.println(date.getTime());//é»˜è®¤è¿”å›å½“å‰åŸºäº1970/1/1çš„æ¯«ç§’å€¼
+        System.out.println(1970+32/365.2422+dateTime*1.0/1000/60/60/24/365+"å¹´");
 
 
-        //public void setTime(long time):  ÉèÖÃÊ±¼ä£¬¸øµÄÊ±ºÁÃëÖµ¡£
+        //public void setTime(long time):  è®¾ç½®æ—¶é—´ï¼Œç»™çš„æ—¶æ¯«ç§’å€¼ã€‚
         date.setTime(1000L*60*60*24*365*30);
         System.out.println(date.getTime());
-        System.out.println(1970+date.getTime()/1000*60*60*24*365+"Äê");
+        System.out.println(1970+date.getTime()/1000*60*60*24*365+"å¹´");
 
     }
 

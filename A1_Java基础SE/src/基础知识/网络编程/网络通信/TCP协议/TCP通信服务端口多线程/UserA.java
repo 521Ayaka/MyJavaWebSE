@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCPÍ¨ĞÅ·şÎñ¶Ë¿Ú¶àÏß³Ì;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPé€šä¿¡æœåŠ¡ç«¯å£å¤šçº¿ç¨‹;
 /*
 *
-* ÓÃ»§ A
+* ç”¨æˆ· A
 *
 * */
 
@@ -9,39 +9,39 @@ import java.io.*;
 import java.net.Socket;
 
 /*
-    ¿Í»§¶Ë:
-            ¿Í»§¶Ë·¢ÎÄ¼ş
+    å®¢æˆ·ç«¯:
+            å®¢æˆ·ç«¯å‘æ–‡ä»¶
 */
 public class UserA {
 
     public static void main(String[] args) {
 
 
-        try (   //´´½¨¿Í»§¶ËSocket¶ÔÏó
+        try (   //åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
                 Socket s = new Socket("GanGaJiang", 10086);
-                //»ñÈ¡io¶ÔÏó,¶ÁÈ¡·¢ËÍÎÄ¼şÄÚÈİ
-                BufferedReader br = new BufferedReader(new FileReader(new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\ÍøÂç±à³Ì\\ÍøÂçÍ¨ĞÅ\\TCPĞ­Òé\\TCPÍ¨ĞÅ·şÎñ¶Ë¿Ú¶àÏß³Ì\\UserA.java")));
-                //½«s.getOutputStream()·â×°³É ×Ö·û»º´æÊä³öÁ÷
+                //è·å–ioå¯¹è±¡,è¯»å–å‘é€æ–‡ä»¶å†…å®¹
+                BufferedReader br = new BufferedReader(new FileReader(new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\ç½‘ç»œç¼–ç¨‹\\ç½‘ç»œé€šä¿¡\\TCPåè®®\\TCPé€šä¿¡æœåŠ¡ç«¯å£å¤šçº¿ç¨‹\\UserA.java")));
+                //å°†s.getOutputStream()å°è£…æˆ å­—ç¬¦ç¼“å­˜è¾“å‡ºæµ
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
-                //½ÓÊÕÊı¾İ·´À¡ Í¬Ñù·â×°³ÉBufferedReader
+                //æ¥æ”¶æ•°æ®åé¦ˆ åŒæ ·å°è£…æˆBufferedReader
                 BufferedReader brx = new BufferedReader(new InputStreamReader(s.getInputStream()))
         ) {
 
 
-            //·¢ËÍÄÚÈİ==================
+            //å‘é€å†…å®¹==================
             String line;
             while ((line = br.readLine()) != null) {
                 bw.write(line);
                 bw.newLine();
                 bw.flush();
             }
-            //Í£Ö¹±êÓï
+            //åœæ­¢æ ‡è¯­
             s.shutdownOutput();
 
-            //½ÓÊÕ·şÎñÆ÷·´À¡
+            //æ¥æ”¶æœåŠ¡å™¨åé¦ˆ
             System.out.println(brx.readLine());
 
-            //ÒÑ×Ô¶¯ÊÍ·Å×ÊÔ´¡£
+            //å·²è‡ªåŠ¨é‡Šæ”¾èµ„æºã€‚
         } catch (IOException e) {
             e.printStackTrace();
         }

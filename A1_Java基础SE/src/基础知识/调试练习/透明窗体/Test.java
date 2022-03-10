@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°.Í¸Ã÷´°Ìå;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ .é€æ˜çª—ä½“;
 
 
 import java.awt.Dimension;
@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
- * ÊµÏÖÍ¸Ã÷´°Ìå
+ * å®ç°é€æ˜çª—ä½“
  * @author Administrator
  *
  */
@@ -21,14 +21,14 @@ public final class Test extends JFrame {
 
     JPanel jp;
 
-    Image Background;//»ñÈ¡µ½Í¼Æ¬
+    Image Background;//è·å–åˆ°å›¾ç‰‡
     Point p0;
     Point p1;
 
     public Test() {
         jp = new JPanel();
         this.getContentPane().add(jp);
-        // »ñÈ¡Õû¸öÆÁÄ»Í¼Ïñ
+        // è·å–æ•´ä¸ªå±å¹•å›¾åƒ
         try {
             Robot r = new Robot();
             Toolkit tk = Toolkit.getDefaultToolkit();
@@ -41,11 +41,11 @@ public final class Test extends JFrame {
             e.printStackTrace();
         }
         this.setSize(600, 600);
-        //this.setUndecorated(true); //Õâ¾äÒª²»×¢ÊÍµô£¬¾ÍÉ¶¶¼¿´²»µ½ÁË
+        //this.setUndecorated(true); //è¿™å¥è¦ä¸æ³¨é‡Šæ‰ï¼Œå°±å•¥éƒ½çœ‹ä¸åˆ°äº†
         this.setVisible(true);
     }
 
-    //»­°å
+    //ç”»æ¿
     public void paint(Graphics g) {
         p0 = this.getLocationOnScreen();
         System.out.println(p0);
@@ -54,7 +54,7 @@ public final class Test extends JFrame {
         repaint();
     }
 
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
         new Test();
     }

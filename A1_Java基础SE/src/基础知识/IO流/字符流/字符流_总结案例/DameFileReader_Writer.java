@@ -1,22 +1,22 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·ûÁ÷_×Ü½á°¸Àı;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹;
 
 /*
-    ÓÅ»¯°¸Àı: Ê¹ÓÃ [Êı¾İÔ´FileReader] [Ä¿µÄµØFileWriter] ÊµÏÖ
+    ä¼˜åŒ–æ¡ˆä¾‹: ä½¿ç”¨ [æ•°æ®æºFileReader] [ç›®çš„åœ°FileWriter] å®ç°
 
-    FileReader: ÎªÁËÓÃÓÚ [¶ÁÈ¡×Ö·ûÎÄ¼ş] µÄ [±ãÀû±ã½İ] ¼Ì³ĞÁË InputStreamReader
+    FileReader: ä¸ºäº†ç”¨äº [è¯»å–å­—ç¬¦æ–‡ä»¶] çš„ [ä¾¿åˆ©ä¾¿æ·] ç»§æ‰¿äº† InputStreamReader
                 FileReader(File file)
                 FileReader(String fileName)
 
-    FileWriter: ÎªÁËÓÃÓÚ [Ğ´Èë×Ö·ûÎÄ¼ş] µÄ [±ãÀû±ã½İ] ¼Ì³ĞÁË OutputStreamWriter
+    FileWriter: ä¸ºäº†ç”¨äº [å†™å…¥å­—ç¬¦æ–‡ä»¶] çš„ [ä¾¿åˆ©ä¾¿æ·] ç»§æ‰¿äº† OutputStreamWriter
                 FileWriter(File file)
                 FileWriter(String fileName)
 
-Êı¾İÔ´: Ô´ÎÄ¼şµØÖ·File¡ª¡ª¡ª¡ª>¶ÁÊı¾İ¡ª¡ª¡ª¡ª>Reader¡ª¡ª¡ª¡ª>InputStreamReader¡ª¡ª¡ª¡ª>FileReader
-       FileÀà·â×°µØÖ·¡ª¡ª¡ª¡ª>¡ª¡ª¡ª¡ª>×Ö·ûÁ÷³éÏóÀà¡ª¡ª¡ª¡ª>Ê¹ÓÃÊµÏÖÀà¡ü¡ıÊµÏÖ¡ª¡ª¡ª¡ª>Ê¹ÓÃÆä×ÓÀà¡ü¡ı¼ò»¯
-Ä¿µÄµØ: Ô´ÎÄ¼şµØÖ·File¡ª¡ª¡ª¡ª>Ğ´Êı¾İ¡ª¡ª¡ª¡ª>Writer¡ª¡ª¡ª¡ª>OutputStreamWriter¡ª¡ª¡ª¡ª>FileWriter
+æ•°æ®æº: æºæ–‡ä»¶åœ°å€Fileâ€”â€”â€”â€”>è¯»æ•°æ®â€”â€”â€”â€”>Readerâ€”â€”â€”â€”>InputStreamReaderâ€”â€”â€”â€”>FileReader
+       Fileç±»å°è£…åœ°å€â€”â€”â€”â€”>â€”â€”â€”â€”>å­—ç¬¦æµæŠ½è±¡ç±»â€”â€”â€”â€”>ä½¿ç”¨å®ç°ç±»â†‘â†“å®ç°â€”â€”â€”â€”>ä½¿ç”¨å…¶å­ç±»â†‘â†“ç®€åŒ–
+ç›®çš„åœ°: æºæ–‡ä»¶åœ°å€Fileâ€”â€”â€”â€”>å†™æ•°æ®â€”â€”â€”â€”>Writerâ€”â€”â€”â€”>OutputStreamWriterâ€”â€”â€”â€”>FileWriter
 
-[×¢Òâ]: FileReader FileWriter ËäÈ»±ãÀûµÄÊéĞ´,
-       µ«ÊÇ,Èç¹ûÉæ¼°µ½±àÂë½âÂëÎÊÌâÊ±,¾Í²»ÄÜÓÃÁË¡£
+[æ³¨æ„]: FileReader FileWriter è™½ç„¶ä¾¿åˆ©çš„ä¹¦å†™,
+       ä½†æ˜¯,å¦‚æœæ¶‰åŠåˆ°ç¼–ç è§£ç é—®é¢˜æ—¶,å°±ä¸èƒ½ç”¨äº†ã€‚
 
 */
 
@@ -27,27 +27,27 @@ import java.io.IOException;
 public class DameFileReader_Writer {
 
     public static void main(String[] args) throws IOException {
-        //ÕâÀïÎÒÖ±½ÓÅ×³öÁËÒì³£,Ã»ÓĞÓÃtry...catch...finally»·ÈÆ,±ê×¼Ó¦¸ÃÓÃ»·ÈÆ
+        //è¿™é‡Œæˆ‘ç›´æ¥æŠ›å‡ºäº†å¼‚å¸¸,æ²¡æœ‰ç”¨try...catch...finallyç¯ç»•,æ ‡å‡†åº”è¯¥ç”¨ç¯ç»•
 
-        //¸ù¾İÊı¾İÔ´´´½¨×Ö·ûÊäÈëÁ÷¶ÔÏó,ÓÃÓÚ¶ÁÈ¡Êı¾İ
-        FileReader fr = new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_×Ü½á°¸Àı\\DameFileCopy.java");
-        //¸ù¾İÄ¿µÄµØ´´½¨×Ö·ûÊä³öÁ÷¶ÔÏó,ÓÃÓÚĞ´ÈëÊı¾İ
-        FileWriter fw = new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_×Ü½á°¸Àı\\¸´ÖÆµ½ÕâÀï\\DameFileCopy_FUBEN.java");
+        //æ ¹æ®æ•°æ®æºåˆ›å»ºå­—ç¬¦è¾“å…¥æµå¯¹è±¡,ç”¨äºè¯»å–æ•°æ®
+        FileReader fr = new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹\\DameFileCopy.java");
+        //æ ¹æ®ç›®çš„åœ°åˆ›å»ºå­—ç¬¦è¾“å‡ºæµå¯¹è±¡,ç”¨äºå†™å…¥æ•°æ®
+        FileWriter fw = new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_æ€»ç»“æ¡ˆä¾‹\\å¤åˆ¶åˆ°è¿™é‡Œ\\DameFileCopy_FUBEN.java");
 
-        //¶ÁĞ´²Ù×÷
-        /*µ¥¸ö×Ö½Ú¶ÁÈ¡Êı¾İ
+        //è¯»å†™æ“ä½œ
+        /*å•ä¸ªå­—èŠ‚è¯»å–æ•°æ®
         int by;
         while ((by = fr.read()) != -1) {
             fw.write((char) by);
         }*/
-        //char[] Êı×é
+        //char[] æ•°ç»„
         char[] array = new char[1024];
         int len;
         while ((len = fr.read(array))!=-1){
             fw.write(new String(array,0,len));
         }
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         fr.close();
         fw.close();
     }

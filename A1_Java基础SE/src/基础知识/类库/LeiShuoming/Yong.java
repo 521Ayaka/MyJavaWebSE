@@ -1,9 +1,9 @@
-package 基础知识.类库.LeiShuoming;
+package 鍩虹鐭ヨ瘑.绫诲簱.LeiShuoming;
 
 public class Yong {
 
     public static void main(String[] args) {
-        Ganga lei = new Ganga(666,true,"林shang");
+        Ganga lei = new Ganga(666,true,"鏋梥hang");
 
         System.out.println(lei.getGanga());
         System.out.println(lei.isWen());

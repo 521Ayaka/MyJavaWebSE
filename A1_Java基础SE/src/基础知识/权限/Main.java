@@ -1,18 +1,18 @@
-package »ù´¡ÖªÊ¶.È¨ÏŞ;
+package åŸºç¡€çŸ¥è¯†.æƒé™;
 /*
-Javaµ±ÖĞÓĞËÄÖÖÈ¨ÏŞĞŞÊÎ·û¡£
+Javaå½“ä¸­æœ‰å››ç§æƒé™ä¿®é¥°ç¬¦ã€‚
 
                      public    >     protected    >     (default)     >     private
-Í¬Ò»¸öÀà                YES               YES               YES                 YES
-Í¬Ò»¸ö°ü                YES               YES               YES                 NO
-²»Í¬°ü×ÓÀà               YES               YES               NO                  NO
-²»Í¬°ü·Ç×ÓÀà              YES               NO                NO                  NO
+åŒä¸€ä¸ªç±»                YES               YES               YES                 YES
+åŒä¸€ä¸ªåŒ…                YES               YES               YES                 NO
+ä¸åŒåŒ…å­ç±»               YES               YES               NO                  NO
+ä¸åŒåŒ…éå­ç±»              YES               NO                NO                  NO
 */
 
-//µ¼°ü
+//å¯¼åŒ…
 
-import »ù´¡ÖªÊ¶.È¨ÏŞ.MyLei.MyLei;
-import »ù´¡ÖªÊ¶.È¨ÏŞ.MyLei.MyLeiGan;
+import åŸºç¡€çŸ¥è¯†.æƒé™.MyLei.MyLei;
+import åŸºç¡€çŸ¥è¯†.æƒé™.MyLei.MyLeiGan;
 
 
 public class Main extends MyLei {
@@ -24,59 +24,59 @@ public class Main extends MyLei {
 
     public static void main(String[] args) {
 
-        //Í¬Ò»¸öÀà
-        System.out.println("=======Í¬Ò»¸öÀà=======");
+        //åŒä¸€ä¸ªç±»
+        System.out.println("=======åŒä¸€ä¸ªç±»=======");
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(num3);
         System.out.println(num4);
         method();
 
-        //Í¬Ò»¸ö°ü
-        System.out.println("=======Í¬Ò»¸ö°ü=======");
+        //åŒä¸€ä¸ªåŒ…
+        System.out.println("=======åŒä¸€ä¸ªåŒ…=======");
         MyClass myClass = new MyClass();
         System.out.println(myClass.num1);
         System.out.println(myClass.num2);
         System.out.println(myClass.num3);
-//      System.out.println(myClass.num4);  //private³ÉÔ±±äÁ¿ ÎŞ·¨µ÷ÓÃ
-//      myClass.method1();                 //private·½·¨·½·¨ ÎŞ·¨µ÷ÓÃ
+//      System.out.println(myClass.num4);  //privateæˆå‘˜å˜é‡ æ— æ³•è°ƒç”¨
+//      myClass.method1();                 //privateæ–¹æ³•æ–¹æ³• æ— æ³•è°ƒç”¨
         myClass.method2();//default
 
  /*
-        //²»Í¬°ü×ÓÀà
+        //ä¸åŒåŒ…å­ç±»
         System.out.println(super.num1);
         System.out.println(super.num2);
         System.out.println(super.num3);
         System.out.println(super.num4);
-        //ÔÚstatic main·½·¨ÖĞ²»¿Éµ÷ÓÃ¸¸Àà???
-        //staticµ±ÖĞ ²»ÄÜÊ¹ÓÃthisºÍsuper
+        //åœ¨static mainæ–¹æ³•ä¸­ä¸å¯è°ƒç”¨çˆ¶ç±»???
+        //staticå½“ä¸­ ä¸èƒ½ä½¿ç”¨thiså’Œsuper
 */
 
-        //²»Í¬°ü·Ç×ÓÀà
-        System.out.println("======²»Í¬°ü·Ç×ÓÀà======");
+        //ä¸åŒåŒ…éå­ç±»
+        System.out.println("======ä¸åŒåŒ…éå­ç±»======");
         MyLeiGan gan = new MyLeiGan();
         System.out.println(gan.num1);
-//      System.out.println(gan.num2);  //  protected³ÉÔ±·½·¨  ²»ÄÜµ÷ÓÃ
-//      System.out.println(gan.num3);  //  (default)³ÉÔ±·½·¨  ²»ÄÜµ÷ÓÃ
-//      System.out.println(gan.num4);  //  private  ³ÉÔ±·½·¨  ²»ÄÜµ÷ÓÃ
+//      System.out.println(gan.num2);  //  protectedæˆå‘˜æ–¹æ³•  ä¸èƒ½è°ƒç”¨
+//      System.out.println(gan.num3);  //  (default)æˆå‘˜æ–¹æ³•  ä¸èƒ½è°ƒç”¨
+//      System.out.println(gan.num4);  //  private  æˆå‘˜æ–¹æ³•  ä¸èƒ½è°ƒç”¨
         gan.method4();
-//      gan.method3();                 //  Í¬Ñù³ÉÔ±·½·¨Ò²²»ÄÜµ÷ÓÃ
-//      gan.method2();                 //  Í¬Ñù³ÉÔ±·½·¨Ò²²»ÄÜµ÷ÓÃ
-//      gan.method1();                 //  Í¬Ñù³ÉÔ±·½·¨Ò²²»ÄÜµ÷ÓÃ
+//      gan.method3();                 //  åŒæ ·æˆå‘˜æ–¹æ³•ä¹Ÿä¸èƒ½è°ƒç”¨
+//      gan.method2();                 //  åŒæ ·æˆå‘˜æ–¹æ³•ä¹Ÿä¸èƒ½è°ƒç”¨
+//      gan.method1();                 //  åŒæ ·æˆå‘˜æ–¹æ³•ä¹Ÿä¸èƒ½è°ƒç”¨
 
 
     }
 
     private static void method(){
-        System.out.println("Ë½ÓĞ·½·¨");
+        System.out.println("ç§æœ‰æ–¹æ³•");
     }
 
     void method0(){
-        //²»Í¬°ü×ÓÀà
+        //ä¸åŒåŒ…å­ç±»
         System.out.println(super.num1);
         System.out.println(super.num2);
-//      System.out.println(super.num3);  //(default) ²»ÄÜµ÷ÓÃ
-//      System.out.println(super.num4);  //private   ²»ÄÜµ÷ÓÃ
+//      System.out.println(super.num3);  //(default) ä¸èƒ½è°ƒç”¨
+//      System.out.println(super.num4);  //private   ä¸èƒ½è°ƒç”¨
     }
 
 }

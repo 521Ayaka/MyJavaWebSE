@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A6_ÌåÑé·½·¨ÒıÓÃ;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A6_ä½“éªŒæ–¹æ³•å¼•ç”¨;
 
 public class Me {
 
     public void method(String s){
-        System.out.println("MeÀà, »ñ²ÎString:" + s);
+        System.out.println("Meç±», è·å‚String:" + s);
     }
 
     public void method(int s){
-        System.out.println("MeÀà, »ñ²Îint:" + s);
+        System.out.println("Meç±», è·å‚int:" + s);
     }
 
 

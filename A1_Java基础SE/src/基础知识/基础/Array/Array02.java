@@ -1,35 +1,35 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Array;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Array;
 
 /*
-1£ºÇóÊı×éÖĞÔªËØµÄmaxÖµ»òÕßminÖµ
-2£ºÊı×é·´×ª
+1ï¼šæ±‚æ•°ç»„ä¸­å…ƒç´ çš„maxå€¼æˆ–è€…minå€¼
+2ï¼šæ•°ç»„åè½¬
 
 */
 public class Array02 {
     public static void main(String[] args) {
         int [] array = new int[]{156,48,864,64,51,665,645,89,49,949165};
 
-        //ÇóÊı×éarrayÖĞµÄmaxÖµ      //µ÷ÓÃ·½·¨arraymax
-        System.out.println("Êı×éarrayÖĞµÄmaxÖµÎª£º"+arraymax(array));
+        //æ±‚æ•°ç»„arrayä¸­çš„maxå€¼      //è°ƒç”¨æ–¹æ³•arraymax
+        System.out.println("æ•°ç»„arrayä¸­çš„maxå€¼ä¸ºï¼š"+arraymax(array));
         System.out.println("=====================================");
 
-        //Í¬Àí ÇóÊı×éarrayÖĞµÄminÖµ  //µ÷ÓÃ·½·¨arraymin
-        System.out.println("Êı×éarrayÖĞµÄminÖµÎª£º"+arraymin(array));
+        //åŒç† æ±‚æ•°ç»„arrayä¸­çš„minå€¼  //è°ƒç”¨æ–¹æ³•arraymin
+        System.out.println("æ•°ç»„arrayä¸­çš„minå€¼ä¸ºï¼š"+arraymin(array));
         System.out.println("=====================================");
         
-        //ÖØµã£¡£¡£¡£¡ÇóarrayÊı×éµÄ·´×ª£¡£¡£¡£¡  
-        System.out.println("Ô­Êı×éÎª£º");
+        //é‡ç‚¹ï¼ï¼ï¼ï¼æ±‚arrayæ•°ç»„çš„åè½¬ï¼ï¼ï¼ï¼  
+        System.out.println("åŸæ•°ç»„ä¸ºï¼š");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
         System.out.println("=====================================");
-        System.out.println("·´×ªºóµÄÊı×éÎª£º");
-        fanzhuanarray(array);    //µ÷ÓÃ·Å·¨fanzhuanarray
-        System.out.println("ŞÏŞÎ½´ÍòËê>.<");
+        System.out.println("åè½¬åçš„æ•°ç»„ä¸ºï¼š");
+        fanzhuanarray(array);    //è°ƒç”¨æ”¾æ³•fanzhuanarray
+        System.out.println("å°´å°¬é…±ä¸‡å²>.<");
         
     }
 
-    // ·½·¨Çó max
+    // æ–¹æ³•æ±‚ max
     public static int arraymax(int [] array){
         int max=array[0];
         for (int i = 1; i < array.length; i++) {
@@ -40,7 +40,7 @@ public class Array02 {
         return max;
     }
 
-    //·½·¨Çó min
+    //æ–¹æ³•æ±‚ min
     public static int arraymin(int [] array){
         int min =array[0];
         for (int i = 1; i < array.length; i++) {
@@ -51,7 +51,7 @@ public class Array02 {
         return min;
     }
 
-    //·½·¨Çó ·´×ª
+    //æ–¹æ³•æ±‚ åè½¬
     public static void fanzhuanarray(int [] array){
         for(int min = 0, max = array.length-1; max >= min ;max--,min++){
             int ling = array[min];

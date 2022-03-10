@@ -1,42 +1,42 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.File²Ù×÷·½·¨;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileæ“ä½œæ–¹æ³•;
 
 import java.io.File;
 
 /*
-FileÀàÅĞ¶ÏºÍ»ñÈ¡¹¦ÄÜ£º
-public boolean isDirectory(){//...} ²âÊÔ´Ë³éÏó·½·¨Â·¾¶Ãû±íÊ¾µÄFileÊÇ·ñÎªÄ¿Â¼
+Fileç±»åˆ¤æ–­å’Œè·å–åŠŸèƒ½ï¼š
+public boolean isDirectory(){//...} æµ‹è¯•æ­¤æŠ½è±¡æ–¹æ³•è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦ä¸ºç›®å½•
 
-public boolean isFile(){//...} ²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄFileÊÇ·ñÎªÎÄ¼ş
+public boolean isFile(){//...} æµ‹è¯•æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦ä¸ºæ–‡ä»¶
 
-public boolean exists(){//...} ²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄFileÊÇ·ñ´æÔÚ
+public boolean exists(){//...} æµ‹è¯•æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦å­˜åœ¨
 
-public String getAbsolutePath(){//...} ·µ»Ø´Ë³éÏóÂ·¾¶ÃûµÄ¾ø¶ÔÂ·¾¶Ãû×Ö·û´®
+public String getAbsolutePath(){//...} è¿”å›æ­¤æŠ½è±¡è·¯å¾„åçš„ç»å¯¹è·¯å¾„åå­—ç¬¦ä¸²
 
-public String getPath(){//...}  ½«´Ë³éÏóÂ·¾¶Ãû×ª»»ÎªÂ·¾¶Ãû×Ö·û´®
+public String getPath(){//...}  å°†æ­¤æŠ½è±¡è·¯å¾„åè½¬æ¢ä¸ºè·¯å¾„åå­—ç¬¦ä¸²
 
-public String getName(){//...}  ·µ»ØÓÉ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼ş»òÄ¿Â¼Ãû³Æ
+public String getName(){//...}  è¿”å›ç”±æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„æ–‡ä»¶æˆ–ç›®å½•åç§°
 
-public String[] list(){//...}   ·µ»Ø´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖĞµÄÎÄ¼şºÍÄ¿Â¼µÄÃû³Æ×Ö·û´®Êı×é
+public String[] list(){//...}   è¿”å›æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„ç›®å½•ä¸­çš„æ–‡ä»¶å’Œç›®å½•çš„åç§°å­—ç¬¦ä¸²æ•°ç»„
 
-public File[] listFiles(){//...} ·µ»Ø´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖĞµÄÎÄ¼şºÍÄ¿Â¼µÄFile¶ÔÏóÊı×é
+public File[] listFiles(){//...} è¿”å›æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„ç›®å½•ä¸­çš„æ–‡ä»¶å’Œç›®å½•çš„Fileå¯¹è±¡æ•°ç»„
 
 
 */
 public class FileMethod {
 
     public static void main(String[] args) {
-        //´´½¨File³éÏóÂ·¾¶
-        //ÎÄ¼ş¼Ğ ²âÊÔÎÄ¼ş°ü
-        File file1 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File²Ù×÷·½·¨\\²âÊÔÎÄ¼ş°ü");
-        //ÎÄ¼ş  ÎÄ¼ş1.txt
-        File file2 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File²Ù×÷·½·¨\\²âÊÔÎÄ¼ş°ü\\ÎÄ¼ş1.txt");
-        //²»´æÔÚµÄÎÄ¼ş ÎÄ¼ş3.txt
-        File file3 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\File²Ù×÷·½·¨\\²âÊÔÎÄ¼ş°ü\\ÎÄ¼ş3.txt");
-        //·Ç¾ø¶ÔÂ·¾¶£¬Ö±½Ó·â×°
-        File file4 = new File("ÆäËûÎÄ¼ş\\1.jpg");
+        //åˆ›å»ºFileæŠ½è±¡è·¯å¾„
+        //æ–‡ä»¶å¤¹ æµ‹è¯•æ–‡ä»¶åŒ…
+        File file1 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileæ“ä½œæ–¹æ³•\\æµ‹è¯•æ–‡ä»¶åŒ…");
+        //æ–‡ä»¶  æ–‡ä»¶1.txt
+        File file2 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileæ“ä½œæ–¹æ³•\\æµ‹è¯•æ–‡ä»¶åŒ…\\æ–‡ä»¶1.txt");
+        //ä¸å­˜åœ¨çš„æ–‡ä»¶ æ–‡ä»¶3.txt
+        File file3 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileæ“ä½œæ–¹æ³•\\æµ‹è¯•æ–‡ä»¶åŒ…\\æ–‡ä»¶3.txt");
+        //éç»å¯¹è·¯å¾„ï¼Œç›´æ¥å°è£…
+        File file4 = new File("å…¶ä»–æ–‡ä»¶\\1.jpg");
 
 
-        //public boolean isDirectory(){//...} ²âÊÔ´Ë³éÏó·½·¨Â·¾¶Ãû±íÊ¾µÄFileÊÇ·ñÎªÄ¿Â¼
+        //public boolean isDirectory(){//...} æµ‹è¯•æ­¤æŠ½è±¡æ–¹æ³•è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦ä¸ºç›®å½•
         System.out.println(file1.isDirectory());//true
         System.out.println(file2.isDirectory());//false
         System.out.println(file3.isDirectory());//false
@@ -44,15 +44,15 @@ public class FileMethod {
 
 
         System.out.println("=====================================================================");
-        //public boolean isFile(){//...} ²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄFileÊÇ·ñÎªÎÄ¼ş
+        //public boolean isFile(){//...} æµ‹è¯•æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦ä¸ºæ–‡ä»¶
         System.out.println(file1.isFile());//false
         System.out.println(file2.isFile());//true
-        System.out.println(file3.isFile());//Ò²ÊÇfalse
+        System.out.println(file3.isFile());//ä¹Ÿæ˜¯false
 
 
 
         System.out.println("=====================================================================");
-        //public boolean exists(){//...} ²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄFileÊÇ·ñ´æÔÚ
+        //public boolean exists(){//...} æµ‹è¯•æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„Fileæ˜¯å¦å­˜åœ¨
         System.out.println(file1.exists());//true
         System.out.println(file2.exists());//true
         System.out.println(file3.exists());//false
@@ -60,45 +60,45 @@ public class FileMethod {
 
 
 
-        //public String getAbsolutePath(){//...} ·µ»Ø´Ë³éÏóÂ·¾¶ÃûµÄ¾ø¶ÔÂ·¾¶Ãû×Ö·û´®
+        //public String getAbsolutePath(){//...} è¿”å›æ­¤æŠ½è±¡è·¯å¾„åçš„ç»å¯¹è·¯å¾„åå­—ç¬¦ä¸²
         System.out.println(file1.getAbsolutePath());
-        //ÔËĞĞ½á¹ûÎª: D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü
+        //è¿è¡Œç»“æœä¸º: D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…
         System.out.println(file2.getAbsolutePath());
-        //ÔËĞĞ½á¹ûÎª: D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş1.txt
+        //è¿è¡Œç»“æœä¸º: D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶1.txt
         System.out.println(file3.getAbsolutePath());
-        //½á¹ûÒ²ÄÜ³öÀ´: D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş1.txt
+        //ç»“æœä¹Ÿèƒ½å‡ºæ¥: D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶1.txt
 
         System.out.println(file4.getAbsolutePath());
-        //D:\Ô´´úÂë\ÆäËûÎÄ¼ş\1.jpg  !!!!!!!!!!!!!!!!!!!!!!!!!!·â×°µÄÊÇ "ÆäËûÎÄ¼ş\1.jpg" ÕâÀïÊä³öµÄÊÇ¾ø¶ÔÂ·¾¶
+        //D:\æºä»£ç \å…¶ä»–æ–‡ä»¶\1.jpg  !!!!!!!!!!!!!!!!!!!!!!!!!!å°è£…çš„æ˜¯ "å…¶ä»–æ–‡ä»¶\1.jpg" è¿™é‡Œè¾“å‡ºçš„æ˜¯ç»å¯¹è·¯å¾„
 
 
 
         System.out.println("=====================================================================");
-        //public String getPath(){//...}  ½«´Ë³éÏóÂ·¾¶Ãû×ª»»ÎªÂ·¾¶Ãû×Ö·û´®
+        //public String getPath(){//...}  å°†æ­¤æŠ½è±¡è·¯å¾„åè½¬æ¢ä¸ºè·¯å¾„åå­—ç¬¦ä¸²
         System.out.println(file1.getPath());
-        //D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü
+        //D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…
         System.out.println(file2.getPath());
-        //D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş1.txt
+        //D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶1.txt
         System.out.println(file3.getPath());
-        //D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş3.txt
+        //D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶3.txt
 
         System.out.println(file4.getPath());
-        //ÆäËûÎÄ¼ş\1.jpg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ÕâÀïÊÇ·â×°µÄÂ·¾¶£¬²»ÊÇ¾ø¶ÔÂ·¾¶¡£
+        //å…¶ä»–æ–‡ä»¶\1.jpg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!è¿™é‡Œæ˜¯å°è£…çš„è·¯å¾„ï¼Œä¸æ˜¯ç»å¯¹è·¯å¾„ã€‚
 
         System.out.println("=====================================================================");
-        //public String getName(){//...}  ·µ»ØÓÉ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼ş»òÄ¿Â¼Ãû³Æ
-        System.out.println(file1.getName());//²âÊÔÎÄ¼ş°ü
-        System.out.println(file2.getName());//ÎÄ¼ş1.txt
-        System.out.println(file3.getName());//ÎÄ¼ş3.txt
+        //public String getName(){//...}  è¿”å›ç”±æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„æ–‡ä»¶æˆ–ç›®å½•åç§°
+        System.out.println(file1.getName());//æµ‹è¯•æ–‡ä»¶åŒ…
+        System.out.println(file2.getName());//æ–‡ä»¶1.txt
+        System.out.println(file3.getName());//æ–‡ä»¶3.txt
 
 
 
         System.out.println("=====================================================================");
-        //public String[] list(){//...}   ·µ»Ø´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖĞµÄÎÄ¼şºÍÄ¿Â¼µÄÃû³Æ×Ö·û´®Êı×é
+        //public String[] list(){//...}   è¿”å›æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„ç›®å½•ä¸­çš„æ–‡ä»¶å’Œç›®å½•çš„åç§°å­—ç¬¦ä¸²æ•°ç»„
         String[] list1 = file1.list();
         for (String str : list1) {
             System.out.print(str+" ");
-        }//ÎÄ¼ş1.txt ÎÄ¼ş2.txt ÎÄ¼ş°ü1 ÎÄ¼ş°ü2
+        }//æ–‡ä»¶1.txt æ–‡ä»¶2.txt æ–‡ä»¶åŒ…1 æ–‡ä»¶åŒ…2
 
         try {
             String[] list2 = file2.list();
@@ -106,26 +106,26 @@ public class FileMethod {
                 System.out.println(str+" ");
             }
         }catch (NullPointerException e){
-            System.out.println("\n¿ÕÖ¸ÕëÒì³£¡£");
+            System.out.println("\nç©ºæŒ‡é’ˆå¼‚å¸¸ã€‚");
         }
 
 
 
         System.out.println("====================================================");
-        //public File[] listFiles(){//...} ·µ»Ø´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖĞµÄÎÄ¼şºÍÄ¿Â¼µÄFile¶ÔÏóÊı×é
+        //public File[] listFiles(){//...} è¿”å›æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„ç›®å½•ä¸­çš„æ–‡ä»¶å’Œç›®å½•çš„Fileå¯¹è±¡æ•°ç»„
         File[] files1 = file1.listFiles();
         for (File listFiles1 : files1) {
             System.out.println(listFiles1.getAbsolutePath());
             System.out.println(listFiles1.getName());
-            /* ½á¹ûÎª£º
-            D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş1.txt
-            ÎÄ¼ş1.txt
-            D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş2.txt
-            ÎÄ¼ş2.txt
-            D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş°ü1
-            ÎÄ¼ş°ü1
-            D:\Ô´´úÂë\src\A1_MyJava\»ù´¡ÖªÊ¶\IOÁ÷\FileÀà\File²Ù×÷·½·¨\²âÊÔÎÄ¼ş°ü\ÎÄ¼ş°ü2
-            ÎÄ¼ş°ü2
+            /* ç»“æœä¸ºï¼š
+            D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶1.txt
+            æ–‡ä»¶1.txt
+            D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶2.txt
+            æ–‡ä»¶2.txt
+            D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶åŒ…1
+            æ–‡ä»¶åŒ…1
+            D:\æºä»£ç \src\A1_MyJava\åŸºç¡€çŸ¥è¯†\IOæµ\Fileç±»\Fileæ“ä½œæ–¹æ³•\æµ‹è¯•æ–‡ä»¶åŒ…\æ–‡ä»¶åŒ…2
+            æ–‡ä»¶åŒ…2
             */
         }
 
@@ -136,10 +136,10 @@ public class FileMethod {
                 System.out.println(listFiles2.getName());
             }
         }catch (NullPointerException e){
-            System.out.println("¿ÕÖ¸ÕëÒì³£¡£");
+            System.out.println("ç©ºæŒ‡é’ˆå¼‚å¸¸ã€‚");
         }
 
-        //ºóÃæµÄÁ½¸ö·½·¨ÊÇÓÃÓÚÄ¿Â¼ÏÂµÄÂ·¾¶£¬Èç¹ûÊÇÎÄ¼ş£¬ÔòÊÊÓÃ
+        //åé¢çš„ä¸¤ä¸ªæ–¹æ³•æ˜¯ç”¨äºç›®å½•ä¸‹çš„è·¯å¾„ï¼Œå¦‚æœæ˜¯æ–‡ä»¶ï¼Œåˆ™é€‚ç”¨
         System.out.println("====================================================");
 
 

@@ -1,4 +1,4 @@
-package 基础知识.继承.Extends02;
+package 鍩虹鐭ヨ瘑.缁ф壙.Extends02;
 
 public class Fu {
 
@@ -7,7 +7,7 @@ public class Fu {
 
     public void methodFu() {
 
-        // 使用的是本类当中的，不会向下找子类的
+        // 浣跨敤鐨勬槸鏈被褰撲腑鐨勶紝涓嶄細鍚戜笅鎵惧瓙绫荤殑
         System.out.println(this.num);
 
     }

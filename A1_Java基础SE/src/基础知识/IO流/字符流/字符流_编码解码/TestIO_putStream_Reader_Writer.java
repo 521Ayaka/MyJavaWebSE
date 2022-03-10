@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·ûÁ÷_±àÂë½âÂë;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦æµ_ç¼–ç è§£ç ;
 /*
-InputStreamReader: ÊÇ´Ó×Ö½ÚÁ÷µ½×Ö·ûÁ÷µÄÇÅÁº
-    Ëü¶ÁÈ¡×Ö½Ú£¬²¢Ê¹ÓÃÖ¸¶¨µÄ±àÂë½«Æä½âÂëÎª×Ö·û
-    ËüÊ¹ÓÃµÄ×Ö·û¼¯¿ÉÒÔÓÉÃû³ÆÖ¸¶¨£¬Ò²¿ÉÒÔ±»Ã÷È·Ö¸¶¨£¬»òÕß¿ÉÒÔ½ÓÊÜÆ½Ì¨µÄÄ¬ÈÏ×Ö·û¼¯
-OutputStreamWriter: ÊÇ´Ó×Ö·ûÁ÷µ½×Ö½ÚÁ÷µÄÇÅÁº
-    ËüÊÇ´Ó×Ö·ûÁ÷µ½×Ö½ÚÁ÷µÄÇÅÁº£¬Ê¹ÓÃÖ¸¶¨µÄ±àÂë½«Ğ´ÈëµÄ×Ö·û±àÂëÎª×Ö½Ú
-    ËüÊ¹ÓÃµÄ×Ö·û¼¯¿ÉÒÔÓÉÃû³ÆÖ¸¶¨£¬Ò²¿ÉÒÔ±»Ã÷È·Ö¸¶¨£¬»òÕß¿ÉÒÔ½ÓÊÜÆ½Ì¨µÄÄ¬ÈÏ×Ö·û¼¯
+InputStreamReader: æ˜¯ä»å­—èŠ‚æµåˆ°å­—ç¬¦æµçš„æ¡¥æ¢
+    å®ƒè¯»å–å­—èŠ‚ï¼Œå¹¶ä½¿ç”¨æŒ‡å®šçš„ç¼–ç å°†å…¶è§£ç ä¸ºå­—ç¬¦
+    å®ƒä½¿ç”¨çš„å­—ç¬¦é›†å¯ä»¥ç”±åç§°æŒ‡å®šï¼Œä¹Ÿå¯ä»¥è¢«æ˜ç¡®æŒ‡å®šï¼Œæˆ–è€…å¯ä»¥æ¥å—å¹³å°çš„é»˜è®¤å­—ç¬¦é›†
+OutputStreamWriter: æ˜¯ä»å­—ç¬¦æµåˆ°å­—èŠ‚æµçš„æ¡¥æ¢
+    å®ƒæ˜¯ä»å­—ç¬¦æµåˆ°å­—èŠ‚æµçš„æ¡¥æ¢ï¼Œä½¿ç”¨æŒ‡å®šçš„ç¼–ç å°†å†™å…¥çš„å­—ç¬¦ç¼–ç ä¸ºå­—èŠ‚
+    å®ƒä½¿ç”¨çš„å­—ç¬¦é›†å¯ä»¥ç”±åç§°æŒ‡å®šï¼Œä¹Ÿå¯ä»¥è¢«æ˜ç¡®æŒ‡å®šï¼Œæˆ–è€…å¯ä»¥æ¥å—å¹³å°çš„é»˜è®¤å­—ç¬¦é›†
 
 */
 
@@ -15,99 +15,99 @@ public class TestIO_putStream_Reader_Writer {
 
     public static void main(String[] args) throws IOException {
 
-        /*OutputStreamWriterµÄ¹¹Ôì·½·¨£º
-        OutputStreamWriter(OutputStream out)  ´´½¨Ê¹ÓÃÄ¬ÈÏ×Ö·û±àÂëµÄ OutputStreamWriter¡£
-        OutputStreamWriter(OutputStream out, Charset cs)  ´´½¨Ê¹ÓÃ¸ø¶¨×Ö·û¼¯µÄ OutputStreamWriter¡£
+        /*OutputStreamWriterçš„æ„é€ æ–¹æ³•ï¼š
+        OutputStreamWriter(OutputStream out)  åˆ›å»ºä½¿ç”¨é»˜è®¤å­—ç¬¦ç¼–ç çš„ OutputStreamWriterã€‚
+        OutputStreamWriter(OutputStream out, Charset cs)  åˆ›å»ºä½¿ç”¨ç»™å®šå­—ç¬¦é›†çš„ OutputStreamWriterã€‚
         */
-        //ÏÈ´´½¨Ò»¸ö×Ö½ÚÁ÷Êä³ö¶ÔÏó
-        FileOutputStream fos = new /*±ğÍüÁËÒì³£´¦Àí*/ FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\ÎÄ¼ş1.txt");
-        //½«fos×÷Îª²ÎÊı´«ÈëOutputStreamWriter¹¹Ôì·Å·¨µ±ÖĞ¡£
+        //å…ˆåˆ›å»ºä¸€ä¸ªå­—èŠ‚æµè¾“å‡ºå¯¹è±¡
+        FileOutputStream fos = new /*åˆ«å¿˜äº†å¼‚å¸¸å¤„ç†*/ FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\æ–‡ä»¶1.txt");
+        //å°†fosä½œä¸ºå‚æ•°ä¼ å…¥OutputStreamWriteræ„é€ æ”¾æ³•å½“ä¸­ã€‚
 
-        /**¹¹Ôì·½·¨Ò»£º   OutputStreamWriter(OutputStream out)  ´´½¨Ê¹ÓÃÄ¬ÈÏ×Ö·û±àÂëµÄ OutputStreamWriter¡£*/
+        /**æ„é€ æ–¹æ³•ä¸€ï¼š   OutputStreamWriter(OutputStream out)  åˆ›å»ºä½¿ç”¨é»˜è®¤å­—ç¬¦ç¼–ç çš„ OutputStreamWriterã€‚*/
 
         OutputStreamWriter osw = new OutputStreamWriter(fos);
-        //Ê¹ÓÃosw¶ÔÏóĞ´ÈëÎÄ¼şÄÚÈİ£¬Æ½Ì¨Ä¬ÈÏ±àÂë±í
-        osw.write("ÖĞ¹úºº×Ö");
-        osw.write("\r\n");//Windows Linux Mac ÏµÍ³Ê¶±ğ²»Í¬
+        //ä½¿ç”¨oswå¯¹è±¡å†™å…¥æ–‡ä»¶å†…å®¹ï¼Œå¹³å°é»˜è®¤ç¼–ç è¡¨
+        osw.write("ä¸­å›½æ±‰å­—");
+        osw.write("\r\n");//Windows Linux Mac ç³»ç»Ÿè¯†åˆ«ä¸åŒ
         osw.write("=======");
         osw.write("\r\n");
         /*
-        Èç¹ûÊ¹ÓÃ×Ö½ÚÁ÷µÄ»°,write()·½·¨,Ã»ÓĞ²ÎÊı´ø(String str)µÄÖØÔØ·½·¨¡£
-        ÒÔÇ°ÊÇÍ¨¹ı×Ö·û´®±àÂë½âÂëºóĞ´ÈëµÄ:
-        ¡¾ "ÖĞ¹úºº×Ö".getBytes(String charSetName); ¡¿          À´ÊµÏÖµÄ
-        ¡¾ new String(byte[] array , String charSetName ) ¡¿  À´ÊµÏÖµÄ
+        å¦‚æœä½¿ç”¨å­—èŠ‚æµçš„è¯,write()æ–¹æ³•,æ²¡æœ‰å‚æ•°å¸¦(String str)çš„é‡è½½æ–¹æ³•ã€‚
+        ä»¥å‰æ˜¯é€šè¿‡å­—ç¬¦ä¸²ç¼–ç è§£ç åå†™å…¥çš„:
+        ã€ "ä¸­å›½æ±‰å­—".getBytes(String charSetName); ã€‘          æ¥å®ç°çš„
+        ã€ new String(byte[] array , String charSetName ) ã€‘  æ¥å®ç°çš„
         */
-        //ÒÀÈ»ĞèÒªÊÍ·Å×ÊÔ´£¡£¡£¡
+        //ä¾ç„¶éœ€è¦é‡Šæ”¾èµ„æºï¼ï¼ï¼
         osw.close();
 
         //============================================================================================================
 
-        //±ê×¼ ×Ö·ûÁ÷Êä³öÁ÷ Ğ´Êı¾İ¡£
+        //æ ‡å‡† å­—ç¬¦æµè¾“å‡ºæµ å†™æ•°æ®ã€‚
         method();
 
-        /**¹¹Ôì·½·¨¶ş£º   OutputStreamWriter(OutputStream out, Charset cs)  ´´½¨Ê¹ÓÃ¸ø¶¨×Ö·û¼¯µÄ OutputStreamWriter¡£*/
+        /**æ„é€ æ–¹æ³•äºŒï¼š   OutputStreamWriter(OutputStream out, Charset cs)  åˆ›å»ºä½¿ç”¨ç»™å®šå­—ç¬¦é›†çš„ OutputStreamWriterã€‚*/
 
         OutputStreamWriter oswNew = null;
         InputStreamReader isr = null;
         InputStreamReader isrNew = null;
-        try{//try...catch...finallyÒì³£»·ÈÆ´¦Àí·½Ê½ ´¦ÀíÒì³£
+        try{//try...catch...finallyå¼‚å¸¸ç¯ç»•å¤„ç†æ–¹å¼ å¤„ç†å¼‚å¸¸
 
             oswNew = new OutputStreamWriter(
                      new FileOutputStream
-                         ("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\ÎÄ¼ş2.txt",true/*×·¼ÓĞ´Èë*/)
-            /*¹æ¶¨±àÂë*/  ,"UTF8");//ÕâÀïÊ¹ÓÃUTF8×Ö·û¼¯½øĞĞ½âÂë±àÂë¡£
-            //Ğ´ÈëÊı¾İ
-            oswNew.write("\r\nÕâÀï¿ÉÄÜ»á³öÏÖÂÒÂë£¡");//è¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼
+                         ("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\æ–‡ä»¶2.txt",true/*è¿½åŠ å†™å…¥*/)
+            /*è§„å®šç¼–ç */  ,"UTF8");//è¿™é‡Œä½¿ç”¨UTF8å­—ç¬¦é›†è¿›è¡Œè§£ç ç¼–ç ã€‚
+            //å†™å…¥æ•°æ®
+            oswNew.write("\r\nè¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼");//æ©æ¬“å™·é™îˆå…˜æµ¼æ°¬åš­éœé¢è´¡é®ä¾Šç´’
             /**
              *
-             * ·ÖÎöÔ­Òò£º
-             * ÎÄ¼ş.txtÊÇGBKÎÄ¼ş
-             * Ğ´ÈëÊ±ÓÃµÄÊ±UTF8½øĞĞ±àÒë½âÂëµÄ
-             * ËùÒÔ»á³öÏÖÂÒÂë
+             * åˆ†æåŸå› ï¼š
+             * æ–‡ä»¶.txtæ˜¯GBKæ–‡ä»¶
+             * å†™å…¥æ—¶ç”¨çš„æ—¶UTF8è¿›è¡Œç¼–è¯‘è§£ç çš„
+             * æ‰€ä»¥ä¼šå‡ºç°ä¹±ç 
              * */
 
             //============================================================================================================
             //============================================================================================================
             //============================================================================================================
-            //Ê¹ÓÃInputStreamReader×Ö·ûÊäÈëÁ÷ ¶ÁÈ¡Êı¾İ£º
+            //ä½¿ç”¨InputStreamReaderå­—ç¬¦è¾“å…¥æµ è¯»å–æ•°æ®ï¼š
             /*
-            ¹¹Ôì·½·¨
-            InputStreamReader(InputStream in)  ´´½¨Ò»¸öÊ¹ÓÃÄ¬ÈÏ×Ö·û¼¯µÄ InputStreamReader¡£
-            InputStreamReader(InputStream in, Charset cs)  ´´½¨Ê¹ÓÃ¸ø¶¨×Ö·û¼¯µÄ InputStreamReader¡£
+            æ„é€ æ–¹æ³•
+            InputStreamReader(InputStream in)  åˆ›å»ºä¸€ä¸ªä½¿ç”¨é»˜è®¤å­—ç¬¦é›†çš„ InputStreamReaderã€‚
+            InputStreamReader(InputStream in, Charset cs)  åˆ›å»ºä½¿ç”¨ç»™å®šå­—ç¬¦é›†çš„ InputStreamReaderã€‚
             */
-            //¹¹Ôì·½·¨Ò»:
+            //æ„é€ æ–¹æ³•ä¸€:
             isr = new InputStreamReader(
                   new FileInputStream
-                      ("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\ÎÄ¼ş2.txt"));
-            //¶ÁÊı¾İ
-            int by;//Ê¹ÓÃµ¥¸ö×Ö·û¶Á
+                      ("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\æ–‡ä»¶2.txt"));
+            //è¯»æ•°æ®
+            int by;//ä½¿ç”¨å•ä¸ªå­—ç¬¦è¯»
             while((by = isr.read()) != -1){
                 System.out.print((char) by);
             }
-            /*½á¹ûÊÇ£º
+            /*ç»“æœæ˜¯ï¼š
 
-            ========ÕâÀï¿ÉÄÜ»á³öÏÖÂÒÂë£¡=========
-            è¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼
+            ========è¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼=========
+            æ©æ¬“å™·é™îˆå…˜æµ¼æ°¬åš­éœé¢è´¡é®ä¾Šç´’
 
             */
-            // [è¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼] ÎŞ·¨¶ÁÈ¡ Õâ¶ÎÊÇUTF8Ğ´ÈëµÄ
+            // [æ©æ¬“å™·é™îˆå…˜æµ¼æ°¬åš­éœé¢è´¡é®ä¾Šç´’] æ— æ³•è¯»å– è¿™æ®µæ˜¯UTF8å†™å…¥çš„
             System.out.println("\n///////////////////////////////////");
-            //¹¹Ôì·½·¨Ò»:
+            //æ„é€ æ–¹æ³•ä¸€:
             isrNew = new InputStreamReader(
                      new FileInputStream
-                         ("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\ÎÄ¼ş2.txt")
-            /*¹æ¶¨±àÂë*/ ,"UTF8");
-            //¶ÁÊı¾İ
-            int byN;//Ê¹ÓÃµ¥¸ö×Ö·û¶Á
+                         ("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\æ–‡ä»¶2.txt")
+            /*è§„å®šç¼–ç */ ,"UTF8");
+            //è¯»æ•°æ®
+            int byN;//ä½¿ç”¨å•ä¸ªå­—ç¬¦è¯»
             while((byN = isrNew.read()) != -1){
                 System.out.print((char) byN);
             }
             /*
-            ÔËĞĞ½á¹û:
+            è¿è¡Œç»“æœ:
             ========???????????????=========
-            ÕâÀï¿ÉÄÜ»á³öÏÖÂÒÂë£¡
+            è¿™é‡Œå¯èƒ½ä¼šå‡ºç°ä¹±ç ï¼
 
-            ËäÈ»GBK¶ÁÈ¡²»ÁËÁË,µ«ÊÇ,Õâ´Î¿ÉÒÔ¶ÁÈ¡UTF8µÄ´úÂëÁË!
+            è™½ç„¶GBKè¯»å–ä¸äº†äº†,ä½†æ˜¯,è¿™æ¬¡å¯ä»¥è¯»å–UTF8çš„ä»£ç äº†!
             */
 
             //============================================================================================================
@@ -118,21 +118,21 @@ public class TestIO_putStream_Reader_Writer {
             e.printStackTrace();
         }finally{
             if (oswNew != null){
-                try{//ÊÍ·Å×ÊÔ´
+                try{//é‡Šæ”¾èµ„æº
                     oswNew.close();
                 }catch (IOException e){
                     e.printStackTrace();
                 }
             }
             if (isr != null){
-                try{//ÊÍ·Å×ÊÔ´
+                try{//é‡Šæ”¾èµ„æº
                     isr.close();
                 }catch (IOException e){
                     e.printStackTrace();
                 }
             }
             if (isrNew != null){
-                try{//ÊÍ·Å×ÊÔ´
+                try{//é‡Šæ”¾èµ„æº
                     isrNew.close();
                 }catch (IOException e){
                     e.printStackTrace();
@@ -150,22 +150,22 @@ public class TestIO_putStream_Reader_Writer {
 
 
 
-    //ÓÅ»¯Code , ±ê×¼Ğ´·¨
+    //ä¼˜åŒ–Code , æ ‡å‡†å†™æ³•
     public static void method(){
 
         OutputStreamWriter osw = null;
 
-        try{//try...catch...finallyÒì³£»·ÈÆ´¦Àí·½Ê½ ´¦ÀíÒì³£
-            //!!!!!!!!!!!!!!!!!!!!ÕâÀïÊÇ×·¼ÓĞ´Èë£¬ËùÒÔÒªÓÃappend ²ÎÊıÎªtrue
-            osw = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\ÎÄ¼ş1.txt",true));
-            //Ğ´ÈëÊı¾İ
-            osw.write("±ê×¼×Ö·ûÁ÷Ğ´Êı¾İµÄCode");
+        try{//try...catch...finallyå¼‚å¸¸ç¯ç»•å¤„ç†æ–¹å¼ å¤„ç†å¼‚å¸¸
+            //!!!!!!!!!!!!!!!!!!!!è¿™é‡Œæ˜¯è¿½åŠ å†™å…¥ï¼Œæ‰€ä»¥è¦ç”¨append å‚æ•°ä¸ºtrue
+            osw = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\æ–‡ä»¶1.txt",true));
+            //å†™å…¥æ•°æ®
+            osw.write("æ ‡å‡†å­—ç¬¦æµå†™æ•°æ®çš„Code");
             osw.write("\r\n=======\n");
         }catch (IOException e){
             e.printStackTrace();
         }finally{
             if (osw != null){
-                try{//ÊÍ·Å×ÊÔ´
+                try{//é‡Šæ”¾èµ„æº
                     osw.close();
                 }catch (IOException e){
                     e.printStackTrace();

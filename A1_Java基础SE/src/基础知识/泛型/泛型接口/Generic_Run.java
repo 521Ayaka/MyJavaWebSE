@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.·ºĞÍ½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.æ³›å‹æ¥å£;
 
 public class Generic_Run {
 
     public static void main(String[] args) {
 
         Generic_InterfaceImpl<String> gen1 = new Generic_InterfaceImpl<>();
-        gen1.method("ŞÏŞÎ");
+        gen1.method("å°´å°¬");
 
         Generic_InterfaceImpl<Integer> gen2 = new Generic_InterfaceImpl<Integer>();
         gen2.method(9);
@@ -16,7 +16,7 @@ public class Generic_Run {
                 System.out.println(s);
             }
         };
-        gen3.method("ÄäÃûÄÚ²¿Àà");
+        gen3.method("åŒ¿åå†…éƒ¨ç±»");
     }
 
 }

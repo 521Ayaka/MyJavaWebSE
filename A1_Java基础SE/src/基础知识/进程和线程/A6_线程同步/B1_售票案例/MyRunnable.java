@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A6_Ïß³ÌÍ¬²½.B1_ÊÛÆ±°¸Àı;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A6_çº¿ç¨‹åŒæ­¥.B1_å”®ç¥¨æ¡ˆä¾‹;
 
 public class MyRunnable implements Runnable {
 
-    private int tick = 100;//ÃÅÆ±×ÜÊı
+    private int tick = 100;//é—¨ç¥¨æ€»æ•°
 
     @Override
     public void run() {
@@ -14,7 +14,7 @@ public class MyRunnable implements Runnable {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "ÕıÔÚ³öÊÛµÚ:" + tick + "ÕÅÆ±");
+                System.out.println(Thread.currentThread().getName() + "æ­£åœ¨å‡ºå”®ç¬¬:" + tick + "å¼ ç¥¨");
                 tick--;
 
             }

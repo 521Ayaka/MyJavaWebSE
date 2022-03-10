@@ -1,4 +1,4 @@
-package 基础知识.接口.Interface04;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.Interface04;
 
 public class MyInterfacePrivateImpl implements MyInterfacePrivate{
 

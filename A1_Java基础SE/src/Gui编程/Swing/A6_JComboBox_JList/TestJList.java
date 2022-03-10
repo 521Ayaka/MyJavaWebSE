@@ -1,7 +1,7 @@
-package Gui±à³Ì.Swing.A6_JComboBox_JList;
+package Guiç¼–ç¨‹.Swing.A6_JComboBox_JList;
 
 /*
-Ó¦ÓÃ³¡¾°£º±íÊ¾ĞÅÏ¢£¬Ò»°ãÊÇ¶¯Ì¬À©Èİ
+åº”ç”¨åœºæ™¯ï¼šè¡¨ç¤ºä¿¡æ¯ï¼Œä¸€èˆ¬æ˜¯åŠ¨æ€æ‰©å®¹
 
 */
 
@@ -16,37 +16,37 @@ public class TestJList extends JFrame {
     }
 
     public void init(){
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         Container container = this.getContentPane();
         this.setBounds(300,200,700,600);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         container.setBackground(new Color(8, 241, 215));
 
-        //´´½¨ÁĞ±í¿ò
-        //1.ÏÈÉú³ÉÁĞ±íÄÚÈİ
-        String [] str = {"¹ÅÁ¦ÄÈÔú","µÏÀöÈÈ°Í","Âê¶ûÔú¹ş"};
-        //2.´´½¨ÁĞ±í¿ò£¬ÏòÁĞ±íÖĞ·ÅÈëÄÚÈİ¡£ Ö±½Ó·ÅÈë¹¹Ôìµ±ÖĞ¡£
+        //åˆ›å»ºåˆ—è¡¨æ¡†
+        //1.å…ˆç”Ÿæˆåˆ—è¡¨å†…å®¹
+        String [] str = {"å¤åŠ›å¨œæ‰","è¿ªä¸½çƒ­å·´","ç›å°”æ‰å“ˆ"};
+        //2.åˆ›å»ºåˆ—è¡¨æ¡†ï¼Œå‘åˆ—è¡¨ä¸­æ”¾å…¥å†…å®¹ã€‚ ç›´æ¥æ”¾å…¥æ„é€ å½“ä¸­ã€‚
         JList<String> jList = new JList<String>(str);
-        //ÁíÍâ.»¹¿ÉÒÔÏò¼¯ºÏµ±ÖĞÌí¼ÓÄÚÈİ¡£
+        //å¦å¤–.è¿˜å¯ä»¥å‘é›†åˆå½“ä¸­æ·»åŠ å†…å®¹ã€‚
         Vector vector = new Vector();
         /*
-        Ò²¿ÉÒÔ´´½¨Ò»¸ö¼¯ºÏ
+        ä¹Ÿå¯ä»¥åˆ›å»ºä¸€ä¸ªé›†åˆ
         Vector vector = new Vector();
-        ÔÚÏò¼¯ºÏµ±ÖĞÌí¼ÓÔªËØ
+        åœ¨å‘é›†åˆå½“ä¸­æ·»åŠ å…ƒç´ 
         vector.add();
 
         */
 
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         container.add(jList);
 
         this.setVisible(true);
 
     }
 
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
-        new TestJList("ÁĞ±í¿ò").init();
+        new TestJList("åˆ—è¡¨æ¡†").init();
     }
 
 }

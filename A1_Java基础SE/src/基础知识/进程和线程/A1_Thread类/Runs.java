@@ -1,28 +1,28 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A1_ThreadÀà;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A1_Threadç±»;
 /*
-·½Ê½1: ¼Ì³ĞThreadÀà
-        -- ¶¨ÒåÒ»¸öMyThreadÀàÈ¥¼Ì³ĞThreadÀà
-        -- ÔÚMyThreadÀàÖĞÖØĞ´run()·½·¨
-        -- ´´½¨MyThreadÀàµÄ¶ÔÏó
-        -- Æô¶¯Ïß³Ì start()·½·¨
+æ–¹å¼1: ç»§æ‰¿Threadç±»
+        -- å®šä¹‰ä¸€ä¸ªMyThreadç±»å»ç»§æ‰¿Threadç±»
+        -- åœ¨MyThreadç±»ä¸­é‡å†™run()æ–¹æ³•
+        -- åˆ›å»ºMyThreadç±»çš„å¯¹è±¡
+        -- å¯åŠ¨çº¿ç¨‹ start()æ–¹æ³•
 
 */
 
 public class Runs {
 
     public static void main(String[] args) {
-        //´´½¨¶àÏß³Ì
+        //åˆ›å»ºå¤šçº¿ç¨‹
         MyThread thread1 = new MyThread();
         MyThread thread2 = new MyThread();
 
-        thread1.str = "Ïß³Ì1:";
-        thread2.str = "Ïß³Ì2:";
+        thread1.str = "çº¿ç¨‹1:";
+        thread2.str = "çº¿ç¨‹2:";
 
-        //Æô¶¯Ïß³Ì
-//        thread1.run(); //run²¢²»»áÆô¶¯¶àÏß³Ì
+        //å¯åŠ¨çº¿ç¨‹
+//        thread1.run(); //runå¹¶ä¸ä¼šå¯åŠ¨å¤šçº¿ç¨‹
 //        thread2.run();
 
-        // void start() Ê¹¸ÃÏß³Ì¿ªÊ¼Ö´ĞĞ£»Java ĞéÄâ»úµ÷ÓÃ¸ÃÏß³ÌµÄ run ·½·¨¡£
+        // void start() ä½¿è¯¥çº¿ç¨‹å¼€å§‹æ‰§è¡Œï¼›Java è™šæ‹Ÿæœºè°ƒç”¨è¯¥çº¿ç¨‹çš„ run æ–¹æ³•ã€‚
         thread1.start();
         thread2.start();
 
@@ -30,12 +30,12 @@ public class Runs {
 
 }
 
-//¼Ì³ĞThread½Ó¿Ú
+//ç»§æ‰¿Threadæ¥å£
 class MyThread extends Thread{
 
-    //ÖØĞ´run()·½·¨
-    //ËµÃ÷: Èç¹û¸ÃÏß³ÌÊÇÊ¹ÓÃ¶ÀÁ¢µÄ Runnable ÔËĞĞ¶ÔÏó¹¹ÔìµÄ£¬Ôòµ÷ÓÃ¸Ã Runnable ¶ÔÏóµÄ run ·½·¨£»
-    //      ·ñÔò£¬¸Ã·½·¨²»Ö´ĞĞÈÎºÎ²Ù×÷²¢·µ»Ø¡£
+    //é‡å†™run()æ–¹æ³•
+    //è¯´æ˜: å¦‚æœè¯¥çº¿ç¨‹æ˜¯ä½¿ç”¨ç‹¬ç«‹çš„ Runnable è¿è¡Œå¯¹è±¡æ„é€ çš„ï¼Œåˆ™è°ƒç”¨è¯¥ Runnable å¯¹è±¡çš„ run æ–¹æ³•ï¼›
+    //      å¦åˆ™ï¼Œè¯¥æ–¹æ³•ä¸æ‰§è¡Œä»»ä½•æ“ä½œå¹¶è¿”å›ã€‚
     public String str;
     @Override
     public void run() {

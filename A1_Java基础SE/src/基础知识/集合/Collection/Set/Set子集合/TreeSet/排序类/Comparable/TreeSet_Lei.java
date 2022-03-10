@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.Comparable;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».Comparable;
 /*
-[½áÂÛ]:
-1. ÓÃTreeSet¼¯ºÏ´æ´¢×Ô¶¨Òå¶ÔÏó£¬ÎŞ²Î¹¹Ôì·½·¨Ê¹ÓÃµÄÊÇ×ÔÈ»ÅÅĞò¶ÔÔªËØ½øĞĞÅÅĞòµÄ¡£
-2. ×ÔÈ»ÅÅĞò£¬¾ÍÊÇ¡¾ÈÃÔªËØËùÊôµÄÀàÊµÏÖComparable½Ó¿Ú¡¿£¬¡¾ÖØĞ´compareTo(T o)·½·¨¡¿¡£
-3. ÖØĞ´·½·¨Ê±£¬Ò»¶¨Òª×¢ÒâÅÅĞò¹æÔò±ØĞë°´ÕÕÒªÇóµÄ¡¾Ö÷ÒªÌõ¼ş¡¿ºÍ¡¾´ÎÒªÌõ¼ş¡¿À´Ğ´¡£
+[ç»“è®º]:
+1. ç”¨TreeSeté›†åˆå­˜å‚¨è‡ªå®šä¹‰å¯¹è±¡ï¼Œæ— å‚æ„é€ æ–¹æ³•ä½¿ç”¨çš„æ˜¯è‡ªç„¶æ’åºå¯¹å…ƒç´ è¿›è¡Œæ’åºçš„ã€‚
+2. è‡ªç„¶æ’åºï¼Œå°±æ˜¯ã€è®©å…ƒç´ æ‰€å±çš„ç±»å®ç°Comparableæ¥å£ã€‘ï¼Œã€é‡å†™compareTo(T o)æ–¹æ³•ã€‘ã€‚
+3. é‡å†™æ–¹æ³•æ—¶ï¼Œä¸€å®šè¦æ³¨æ„æ’åºè§„åˆ™å¿…é¡»æŒ‰ç…§è¦æ±‚çš„ã€ä¸»è¦æ¡ä»¶ã€‘å’Œã€æ¬¡è¦æ¡ä»¶ã€‘æ¥å†™ã€‚
 */
 import java.util.TreeSet;
 public class TreeSet_Lei {
 
     public static void main(String[] args) {
 
-        //Ìí¼Ótry...catchÒì³£´¦Àí
+        //æ·»åŠ try...catchå¼‚å¸¸å¤„ç†
         try {
             Student_1 stu1 = new Student_1("GanGa", 18);
             Student_1 stu2 = new Student_1("GanGaJiang", 9);
@@ -26,17 +26,17 @@ public class TreeSet_Lei {
             for (Student_1 stu :
                     tree) {
                 System.out.println(stu.getName() + "," + stu.getAge());
-            }//ClassCastException ±¨´í
+            }//ClassCastException æŠ¥é”™
         }catch(ClassCastException e){
-            System.out.println("ClassCastException ±¨´í");
+            System.out.println("ClassCastException æŠ¥é”™");
         }
 
-        //±¨´íÔ­ÒòÊÇ£ºComparable¸Ã½Ó¿Ú¶ÔÊµÏÖËûµÄÃ¿Ò»¸öÀàµÄ¶ÔÏóÇ¿¼ÓÒ»¸öÕûÌåÅÅĞò
-        //Ò²¾ÍÊÇËµ£º  Àà<E>¸ÃÀà±ØĞëÊµÏÖComparable½Ó¿Ú£¬²¢ÖØĞ´compareTo()·½·¨
+        //æŠ¥é”™åŸå› æ˜¯ï¼šComparableè¯¥æ¥å£å¯¹å®ç°ä»–çš„æ¯ä¸€ä¸ªç±»çš„å¯¹è±¡å¼ºåŠ ä¸€ä¸ªæ•´ä½“æ’åº
+        //ä¹Ÿå°±æ˜¯è¯´ï¼š  ç±»<E>è¯¥ç±»å¿…é¡»å®ç°Comparableæ¥å£ï¼Œå¹¶é‡å†™compareTo()æ–¹æ³•
 
         System.out.println("===========================================================================================");
 
-        //ÊµÏÖComparable½Ó¿Ú£¬²¢ÖØĞ´compareTo()·½·¨
+        //å®ç°Comparableæ¥å£ï¼Œå¹¶é‡å†™compareTo()æ–¹æ³•
         Student_2 stu1 = new Student_2("GanGa", 18);
         Student_2 stu2 = new Student_2("GanGaJiang", 9);
         Student_2 stu3 = new Student_2("GanGaDi", 20);
@@ -53,12 +53,12 @@ public class TreeSet_Lei {
             System.out.println(stu.getName() + "," + stu.getAge());
         }
         /*
-        ÖØĞ´compareTo()·½·¨£¬·µ»ØÖµÊÇ
-        return 0;  ±íÊ¾±È½ÏÖµ½á¹ûÏàÍ¬£¬²»Ìí¼Ó¸ÃÔªËØ
-        return 1;  ±íÊ¾±È½ÏÖµ½á¹û´óÓÚ£¬Ìí¼Ó¸ÃÔªËØ
-        return -1; ±íÊ¾±È½ÏÖµ½á¹ûĞ¡ÓÚ£¬Ìí¼Ó¸ÃÔªËØÇ°Ãæ¡£
+        é‡å†™compareTo()æ–¹æ³•ï¼Œè¿”å›å€¼æ˜¯
+        return 0;  è¡¨ç¤ºæ¯”è¾ƒå€¼ç»“æœç›¸åŒï¼Œä¸æ·»åŠ è¯¥å…ƒç´ 
+        return 1;  è¡¨ç¤ºæ¯”è¾ƒå€¼ç»“æœå¤§äºï¼Œæ·»åŠ è¯¥å…ƒç´ 
+        return -1; è¡¨ç¤ºæ¯”è¾ƒå€¼ç»“æœå°äºï¼Œæ·»åŠ è¯¥å…ƒç´ å‰é¢ã€‚
 
-        ÈıÖÖ·½Ê½ÔËĞĞ½á¹û·Ö±ğÎª:
+        ä¸‰ç§æ–¹å¼è¿è¡Œç»“æœåˆ†åˆ«ä¸º:
         return 0;
                     GanGa,18
         return 1;
@@ -77,25 +77,25 @@ public class TreeSet_Lei {
 
 
          /*
-        [Èç¹ûÏë°´ÕÕÄêÁä´óĞ¡±È½Ï(ÉıĞòÅÅÁĞ)]:
+        [å¦‚æœæƒ³æŒ‰ç…§å¹´é¾„å¤§å°æ¯”è¾ƒ(å‡åºæ’åˆ—)]:
             @Override
             public int compareTo(Student_2 o) {
                 int num = this.age - o.age;
                 return num;
             }
-        this.ageÊÇ´ËÊ±Ìí¼ÓµÄ¶ÔÏóµÄageÖµ£¬
-        o.ageÊÇÇ°ÔªËØµÄageÖµ£¬
-        µ±·µ»ØÖµ´óÓÚÁã¾Í·ÅÔÚºóÃæ£¬Ğ¡ÓÚÁã¾Í·ÅÔÚÇ°Ãæ
+        this.ageæ˜¯æ­¤æ—¶æ·»åŠ çš„å¯¹è±¡çš„ageå€¼ï¼Œ
+        o.ageæ˜¯å‰å…ƒç´ çš„ageå€¼ï¼Œ
+        å½“è¿”å›å€¼å¤§äºé›¶å°±æ”¾åœ¨åé¢ï¼Œå°äºé›¶å°±æ”¾åœ¨å‰é¢
 
-        Í¬Àí:[½µĞòÅÅÁĞ]
+        åŒç†:[é™åºæ’åˆ—]
            @Override
             public int compareTo(Student_2 o) {
                 int num = o.age - this.age;
                 return num;
             }
 
-         ¡¾×¢Òâ¡¿£ºÖ»ÕâÑùĞ´£¬stu5ÊÇÌí¼Ó²»ÁËµÄ£¬ÕâÀïÖ»ÊÇ±È½ÏÁËÄêÁä
-         ¡¾½â¾ö·½·¨¡¿£»¸½¼ÓÌõ¼ş£¬ÄêÁäÏàÍ¬Ê±£¬±È½ÏÃû×ÖÅÅÁĞ
+         ã€æ³¨æ„ã€‘ï¼šåªè¿™æ ·å†™ï¼Œstu5æ˜¯æ·»åŠ ä¸äº†çš„ï¼Œè¿™é‡Œåªæ˜¯æ¯”è¾ƒäº†å¹´é¾„
+         ã€è§£å†³æ–¹æ³•ã€‘ï¼›é™„åŠ æ¡ä»¶ï¼Œå¹´é¾„ç›¸åŒæ—¶ï¼Œæ¯”è¾ƒåå­—æ’åˆ—
             @Override
             public int compareTo(Student_2 o) {
                 int num = this.age - o.age;
@@ -108,7 +108,7 @@ public class TreeSet_Lei {
         Student_3 stu03 = new Student_3("GanGaDi", 20);
         Student_3 stu04 = new Student_3("GanGaLe", 120);
         Student_3 stu05 = new Student_3("GanGaBaoBao",9);
-        Student_3 stu06 = new Student_3("GanGaBaoBao",9);//ÖØ¸´
+        Student_3 stu06 = new Student_3("GanGaBaoBao",9);//é‡å¤
 
         TreeSet<Student_3> treeSet = new TreeSet<>();
         treeSet.add(stu01);
@@ -116,7 +116,7 @@ public class TreeSet_Lei {
         treeSet.add(stu03);
         treeSet.add(stu04);
         treeSet.add(stu05);
-        treeSet.add(stu06);//ÖØ¸´
+        treeSet.add(stu06);//é‡å¤
 
         for (Student_3 stu :
                 treeSet) {
@@ -129,18 +129,18 @@ public class TreeSet_Lei {
         GanGaLe,120
         */
 
-        //»Ø¹Ë¸´Ï°==============================================================================================
+        //å›é¡¾å¤ä¹ ==============================================================================================
         System.out.println("==================================================================================");
         System.out.println("==================================================================================");
 
-        TreeSet<Student_»Ø¹Ë¸´Ï°> treeSet00 = new TreeSet<>();
+        TreeSet<Student_å›é¡¾å¤ä¹ > treeSet00 = new TreeSet<>();
 
-        Student_»Ø¹Ë¸´Ï° student1 = new Student_»Ø¹Ë¸´Ï°("GanGa", 18);
-        Student_»Ø¹Ë¸´Ï° student2 = new Student_»Ø¹Ë¸´Ï°("GanGaJiang", 9);
-        Student_»Ø¹Ë¸´Ï° student3 = new Student_»Ø¹Ë¸´Ï°("GanGaDi", 20);
-        Student_»Ø¹Ë¸´Ï° student4 = new Student_»Ø¹Ë¸´Ï°("GanGaLe", 120);
-        Student_»Ø¹Ë¸´Ï° student5 = new Student_»Ø¹Ë¸´Ï°("GanGaBaoBao",9);
-        Student_»Ø¹Ë¸´Ï° student6 = new Student_»Ø¹Ë¸´Ï°("GanGaBaoBao",9);//ÖØ¸´
+        Student_å›é¡¾å¤ä¹  student1 = new Student_å›é¡¾å¤ä¹ ("GanGa", 18);
+        Student_å›é¡¾å¤ä¹  student2 = new Student_å›é¡¾å¤ä¹ ("GanGaJiang", 9);
+        Student_å›é¡¾å¤ä¹  student3 = new Student_å›é¡¾å¤ä¹ ("GanGaDi", 20);
+        Student_å›é¡¾å¤ä¹  student4 = new Student_å›é¡¾å¤ä¹ ("GanGaLe", 120);
+        Student_å›é¡¾å¤ä¹  student5 = new Student_å›é¡¾å¤ä¹ ("GanGaBaoBao",9);
+        Student_å›é¡¾å¤ä¹  student6 = new Student_å›é¡¾å¤ä¹ ("GanGaBaoBao",9);//é‡å¤
 
         treeSet00.add(student1);
         treeSet00.add(student2);
@@ -149,7 +149,7 @@ public class TreeSet_Lei {
         treeSet00.add(student5);
         treeSet00.add(student6);
 
-        for (Student_»Ø¹Ë¸´Ï° stu :
+        for (Student_å›é¡¾å¤ä¹  stu :
                 treeSet00) {
             System.out.println(stu.getName() + "," + stu.getAge());
         }

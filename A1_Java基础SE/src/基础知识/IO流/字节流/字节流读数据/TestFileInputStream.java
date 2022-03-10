@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½ÚÁ÷.×Ö½ÚÁ÷¶ÁÊı¾İ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚æµ.å­—èŠ‚æµè¯»æ•°æ®;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,110 +7,110 @@ public class TestFileInputStream {
 
     public static void main(String[] args) throws IOException {
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-        FileInputStream input1 = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş1.txt");
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+        FileInputStream input1 = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶1.txt");
 
-        //¶ÁÈ¡Êı¾İ£¬Ê¹ÓÃ·½·¨ÊÇread()·½·¨£¬¶ÁÈ¡·µ»ØµÄÊÇbyteÀàĞÍ
-        //µÚÒ»´Î¶ÁÈ¡
+        //è¯»å–æ•°æ®ï¼Œä½¿ç”¨æ–¹æ³•æ˜¯read()æ–¹æ³•ï¼Œè¯»å–è¿”å›çš„æ˜¯byteç±»å‹
+        //ç¬¬ä¸€æ¬¡è¯»å–
         int i1 = input1.read();
-        System.out.print(i1);// µ×²ãÊÇbyte
-        System.out.println((char) i1); //Ç¿×ªÎªÏëÒªµÄÀàĞÍ char
-        //µÚ¶ş´Î¶ÁÈ¡
+        System.out.print(i1);// åº•å±‚æ˜¯byte
+        System.out.println((char) i1); //å¼ºè½¬ä¸ºæƒ³è¦çš„ç±»å‹ char
+        //ç¬¬äºŒæ¬¡è¯»å–
         int i2 = input1.read();
         System.out.print(i2);
         System.out.println((char) i2);
-        //µÚÈı´Î¶ÁÈ¡
+        //ç¬¬ä¸‰æ¬¡è¯»å–
         int i3 = input1.read();
         System.out.print(i3);
         System.out.println((char) i3);
-        //µÚËÄ´Î¶ÁÈ¡
+        //ç¬¬å››æ¬¡è¯»å–
         int i4 = input1.read();
-        System.out.print(i4); //¿Õ¸ñÊÇ 32
-        System.out.println((char) i4); //¶ÔÓ¦µÄcharÊÇÊÇ¿Õ¸ñ
-        //µÚÎå´Î¶ÁÈ¡
+        System.out.print(i4); //ç©ºæ ¼æ˜¯ 32
+        System.out.println((char) i4); //å¯¹åº”çš„charæ˜¯æ˜¯ç©ºæ ¼
+        //ç¬¬äº”æ¬¡è¯»å–
         int i5 = input1.read();
         System.out.print(i5);
         System.out.println((char) i5);
         System.out.println("=======");
-        //ÒòÎª²»ÖªµÀÎÄ¼şÀïµÄÄÚÈİÁ¿ ËùÒÔ¶à¶Á¼¸´Î
+        //å› ä¸ºä¸çŸ¥é“æ–‡ä»¶é‡Œçš„å†…å®¹é‡ æ‰€ä»¥å¤šè¯»å‡ æ¬¡
         System.out.println(input1.read()); //-1
         System.out.println(input1.read()); //-1
-        System.out.println((char) input1.read()); // ? ½âÂë²»³ö
-        //×îºó±ğÍüÁËÊÍ·Å×ÊÔ´
+        System.out.println((char) input1.read()); // ? è§£ç ä¸å‡º
+        //æœ€ååˆ«å¿˜äº†é‡Šæ”¾èµ„æº
         input1.close();
         /*
-        * ÉÏÃæ¿ÉÖª, µ±ÎŞÊı¾İµÄÊ±ºò£¬¶ÔÓ¦µÄbyteÊÇ -1
-        * ÄÇÃ´¿ÉÒÔÅĞ¶Ï input.read() != -1 ¾ÍÊÇÓĞÊı¾İµÄ
+        * ä¸Šé¢å¯çŸ¥, å½“æ— æ•°æ®çš„æ—¶å€™ï¼Œå¯¹åº”çš„byteæ˜¯ -1
+        * é‚£ä¹ˆå¯ä»¥åˆ¤æ–­ input.read() != -1 å°±æ˜¯æœ‰æ•°æ®çš„
         *
-        * ÏÂÃæ½øĞĞ¸Ä½ø£º
+        * ä¸‹é¢è¿›è¡Œæ”¹è¿›ï¼š
         * */
 
         System.out.println("================================================");
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-        FileInputStream input2 = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş1.txt");
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+        FileInputStream input2 = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶1.txt");
 
-        //¶ÁÈ¡Êı¾İ
-        int by = input2.read();//»ñÈ¡
+        //è¯»å–æ•°æ®
+        int by = input2.read();//è·å–
         while (by != -1){
-            System.out.print((char) by);  //ÕâÀï²»Òª»»ĞĞ
-            by = input2.read();//ÖØĞÂ¶ÁÈ¡¸³Öµ¸øby
+            System.out.print((char) by);  //è¿™é‡Œä¸è¦æ¢è¡Œ
+            by = input2.read();//é‡æ–°è¯»å–èµ‹å€¼ç»™by
         }
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         input2.close();
 
-        //¿É½øĞĞÔÙ´ÎÓÅ»¯£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
-        System.out.println("\n£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡±ê×¼Ğ´·¨£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡");
+        //å¯è¿›è¡Œå†æ¬¡ä¼˜åŒ–ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+        System.out.println("\nï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼æ ‡å‡†å†™æ³•ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼");
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-        FileInputStream input3 = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş2.txt");
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+        FileInputStream input3 = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶2.txt");
 
-        //¶ÁÈ¡Êı¾İ
-        int byt; //ÏÈ¶¨ÒåÒ»¸ö±äÁ¿ÓÃÓÚ»ñÈ¡£¬µ«²»¸³Öµ
+        //è¯»å–æ•°æ®
+        int byt; //å…ˆå®šä¹‰ä¸€ä¸ªå˜é‡ç”¨äºè·å–ï¼Œä½†ä¸èµ‹å€¼
         /*
-        * ( byt = input3.read() ) != -1ÕâÀï¸ÉÁËÈı¼şÊÂ
-        * µÚÒ»: input3.read()        »ñÈ¡µÄÎÄ¼şÄÚÈİ
-        * µÚ¶ş: byt = input3.read()  °Ñ»ñÈ¡µ½µÄbyte¸³Öµ¸øbut
-        * µÚÈı: byt != -1            ×îºóÔÚÅĞ¶ÏÊÇ·ñÎª -1
+        * ( byt = input3.read() ) != -1è¿™é‡Œå¹²äº†ä¸‰ä»¶äº‹
+        * ç¬¬ä¸€: input3.read()        è·å–çš„æ–‡ä»¶å†…å®¹
+        * ç¬¬äºŒ: byt = input3.read()  æŠŠè·å–åˆ°çš„byteèµ‹å€¼ç»™but
+        * ç¬¬ä¸‰: byt != -1            æœ€ååœ¨åˆ¤æ–­æ˜¯å¦ä¸º -1
         * */
         while ( ( byt = input3.read() ) != -1){
-            System.out.print((char) byt);  //ÕâÀï²»Òª»»ĞĞ
+            System.out.print((char) byt);  //è¿™é‡Œä¸è¦æ¢è¡Œ
         }
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         input3.close();
 
-        /*Õâ¾ÍÊÇ±ê×¼µÄ¶ÁÎÄ¼şµÄ´úÂë
+        /*è¿™å°±æ˜¯æ ‡å‡†çš„è¯»æ–‡ä»¶çš„ä»£ç 
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-        FileInputStream input3 = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş2.txt");
-        //¶ÁÈ¡Êı¾İ
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
+        FileInputStream input3 = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶2.txt");
+        //è¯»å–æ•°æ®
         int byt;
         while ( ( byt = input3.read() ) != -1){
             System.out.print((char) byt);
         }
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         input2.close();
 
         */
 
 
-        //ÍêÈ«±ê×¼Ğ´·¨
-        System.out.println("\n£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡ÍêÈ«±ê×¼Ğ´·¨£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡");
-        System.out.println("£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡ÍêÈ«±ê×¼Ğ´·¨£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡");
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
+        //å®Œå…¨æ ‡å‡†å†™æ³•
+        System.out.println("\nï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼å®Œå…¨æ ‡å‡†å†™æ³•ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼");
+        System.out.println("ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼å®Œå…¨æ ‡å‡†å†™æ³•ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼");
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
         FileInputStream fileInput = null;
         int getByte ;
-        //¶ÁÈ¡Êı¾İ£¬Ê¹ÓÃtry...catch...finally»·ÈÆ´¦Àí
+        //è¯»å–æ•°æ®ï¼Œä½¿ç”¨try...catch...finallyç¯ç»•å¤„ç†
         try{
-            fileInput =  new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş2.txt");
-            //¶ÁÈ¡Êı¾İ
+            fileInput =  new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶2.txt");
+            //è¯»å–æ•°æ®
             while((getByte = fileInput.read()) != -1){
                 System.out.print((char) getByte);
             }
         }catch(IOException e){
             e.printStackTrace();
         }finally{
-            //ÊÍ·Å×ÊÔ´
+            //é‡Šæ”¾èµ„æº
             if(fileInput != null){
                 try {
                     fileInput.close();

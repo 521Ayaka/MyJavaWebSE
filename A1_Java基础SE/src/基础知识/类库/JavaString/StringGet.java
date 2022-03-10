@@ -1,44 +1,44 @@
-package »ù´¡ÖªÊ¶.Àà¿â.JavaString;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.JavaString;
 
 /*
-StringÖĞ³£ÓÃÓë»ñÈ¡Ïà¹ØµÄ·½·¨ÓĞ£º
+Stringä¸­å¸¸ç”¨ä¸è·å–ç›¸å…³çš„æ–¹æ³•æœ‰ï¼š
 
-1.public int length()               »ñÈ¡×Ö·û´®µÄ³¤¶È¡£   ×¢Òâ£ºÎŞ²ÎÊı£¡£¡£¡£¡..
-2.public String concat(String str)  ½«µ±Ç°×Ö·û´®ºÍ²ÎÊı×Ö·û´®Æ´½Ó³ÉÎªĞÂµÄ×Ö·û´®£¬²¢·µ»Ø×Ö·û´®¡£
-3.public char charAt(int index)     »ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄµ¥¸ö×Ö·û¡££¨Ë÷Òı´ÓÁã¿ªÊ¼£©¡£
-3.public int indexOf(String str)    ²éÕÒ²ÎÊı×Ö·û´®ÔÚµ±Ç°×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃË÷ÒıÖµ£¬Èç¹ûÃ»ÓĞÕâ·µ»ØÖµÎª-1¡££¨Ë÷Òı´ÓÁã¿ªÊ¼£©¡£
+1.public int length()               è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ã€‚   æ³¨æ„ï¼šæ— å‚æ•°ï¼ï¼ï¼ï¼..
+2.public String concat(String str)  å°†å½“å‰å­—ç¬¦ä¸²å’Œå‚æ•°å­—ç¬¦ä¸²æ‹¼æ¥æˆä¸ºæ–°çš„å­—ç¬¦ä¸²ï¼Œå¹¶è¿”å›å­—ç¬¦ä¸²ã€‚
+3.public char charAt(int index)     è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å•ä¸ªå­—ç¬¦ã€‚ï¼ˆç´¢å¼•ä»é›¶å¼€å§‹ï¼‰ã€‚
+3.public int indexOf(String str)    æŸ¥æ‰¾å‚æ•°å­—ç¬¦ä¸²åœ¨å½“å‰å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ç´¢å¼•å€¼ï¼Œå¦‚æœæ²¡æœ‰è¿™è¿”å›å€¼ä¸º-1ã€‚ï¼ˆç´¢å¼•ä»é›¶å¼€å§‹ï¼‰ã€‚
 
 
  */
 public class StringGet {
     public static void main(String[] args) {
 
-        //»ñÈ¡×Ö·û´®³¤¶È
+        //è·å–å­—ç¬¦ä¸²é•¿åº¦
         int length = "gangajiangwansui".length();
-        System.out.println("×Ö·û´®³¤¶ÈÎª£º"+length);
+        System.out.println("å­—ç¬¦ä¸²é•¿åº¦ä¸ºï¼š"+length);
         System.out.println("===========================");
 
-        //Á¬½Ó×Ö·û´®
-        String str1 = "ŞÏŞÎ½´";
-        String str2 = "ÍòËê";
+        //è¿æ¥å­—ç¬¦ä¸²
+        String str1 = "å°´å°¬é…±";
+        String str2 = "ä¸‡å²";
         String str3 = str1.concat(str2);
         System.out.println(str1);
         System.out.println(str2);
         System.out.println(str3);
         System.out.println("===========================");
 
-        //»ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄµ¥¸ö×Ö·û
-        String str4 = "ÓÀÔ¶°®ÄãŞÏŞÎ½´£¡";
+        //è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å•ä¸ªå­—ç¬¦
+        String str4 = "æ°¸è¿œçˆ±ä½ å°´å°¬é…±ï¼";
         for (int i = 0; i < str4.length(); i++) {
             char charat = str4.charAt(i);
             System.out.println(charat);
         }
         System.out.println("============================");
 
-        //²éÕÒ²ÎÊı×Ö·û´®ÔÚµ±Ç°×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃË÷ÒıÖµ
-        String str5 = "ÓÀÔ¶°®ÄãŞÏŞÎ½´£¡ŞÏŞÎ½´ÍòËê£¡";
-        int ŞÏŞÎ½´ = str5.indexOf("ŞÏŞÎ½´");
-        System.out.println("ÎÒµÄµÚÒ»´ÎÎ»ÖÃÊÇ£º"+ŞÏŞÎ½´);
+        //æŸ¥æ‰¾å‚æ•°å­—ç¬¦ä¸²åœ¨å½“å‰å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ç´¢å¼•å€¼
+        String str5 = "æ°¸è¿œçˆ±ä½ å°´å°¬é…±ï¼å°´å°¬é…±ä¸‡å²ï¼";
+        int å°´å°¬é…± = str5.indexOf("å°´å°¬é…±");
+        System.out.println("æˆ‘çš„ç¬¬ä¸€æ¬¡ä½ç½®æ˜¯ï¼š"+å°´å°¬é…±);
 
 
     }

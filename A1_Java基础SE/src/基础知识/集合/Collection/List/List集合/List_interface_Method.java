@@ -1,25 +1,25 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /*
 
-List¼¯ºÏÌØÓĞ·½·¨:
+Listé›†åˆç‰¹æœ‰æ–¹æ³•:
 
-void add(int index, E element)   ÔÙ´Ë¼¯ºÏÖĞµÄÖ¸¶¨Î»ÖÃ²åÈëÖ¸¶¨µÄÔªËØ¡£
-E remove(int index)              É¾³ıÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»É¾³ıµÄÔªËØ¡£
-E set(int index, E element)      ĞŞ¸ÄÖ¸¶¨Î»ÖÃ´¦µÄÔªËØ£¬·µ»Ø±»ĞŞ¸ÄµÄÔªËØ¡£
-E get(int index)                 ·µ»ØÖ¸¶¨Ë÷Òı´¦µÄÔªËØ¡£
+void add(int index, E element)   å†æ­¤é›†åˆä¸­çš„æŒ‡å®šä½ç½®æ’å…¥æŒ‡å®šçš„å…ƒç´ ã€‚
+E remove(int index)              åˆ é™¤æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«åˆ é™¤çš„å…ƒç´ ã€‚
+E set(int index, E element)      ä¿®æ”¹æŒ‡å®šä½ç½®å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«ä¿®æ”¹çš„å…ƒç´ ã€‚
+E get(int index)                 è¿”å›æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ã€‚
 
-[×¢Òâ]:
-remove set get ·½·¨µÄ²ÎÊı index ¿ÉÄÜ»áÒı·¢Ë÷ÒıÔ½½çÒì³££¬Ê¹ÓÃÊ±²»ÄÜÔ½½ç¡£
+[æ³¨æ„]:
+remove set get æ–¹æ³•çš„å‚æ•° index å¯èƒ½ä¼šå¼•å‘ç´¢å¼•è¶Šç•Œå¼‚å¸¸ï¼Œä½¿ç”¨æ—¶ä¸èƒ½è¶Šç•Œã€‚
 */
 public class List_interface_Method {
 
     public static void main(String[] args) {
 
-        //void add(int index, E element)   ÔÙ´Ë¼¯ºÏÖĞµÄÖ¸¶¨Î»ÖÃ²åÈëÖ¸¶¨µÄÔªËØ¡£
+        //void add(int index, E element)   å†æ­¤é›†åˆä¸­çš„æŒ‡å®šä½ç½®æ’å…¥æŒ‡å®šçš„å…ƒç´ ã€‚
         System.out.print("1: ");
         List<Double> list1 = new ArrayList<>();
         list1.add(0.0);
@@ -28,13 +28,13 @@ public class List_interface_Method {
         list1.add(3.0);
         list1.add(2,1.5);
         System.out.println(list1);//[0.0, 1.0, 1.5, 2.0, 3.0]
-        System.out.println("list1[2] = "+list1.get(2));//½á¹ûÊÇ£º1.5
-        //Ò²¾ÍÊÇËµ£¬ÔÙindex²ÎÊıË÷ÒıÎ»ÖÃÌí¼ÓÔªËØ,×îÖÕÕâ¸öÔªËØ½«ÔÚ´ËindexË÷ÒıÎ»ÖÃ£¬¶øÔ­À´Õâ¸öindexÎ»ÖÃ¼°ºóÃæµÄÔªËØ½«»áÏòºóÒÆ¶¯Ò»¸öËµË÷ÒıÖµ¡£
-        //list1.add(7,6.66);  //.IndexOutOfBoundsException Ë÷ÒıÔ½½çÒì³££¡£¡£¡
+        System.out.println("list1[2] = "+list1.get(2));//ç»“æœæ˜¯ï¼š1.5
+        //ä¹Ÿå°±æ˜¯è¯´ï¼Œå†indexå‚æ•°ç´¢å¼•ä½ç½®æ·»åŠ å…ƒç´ ,æœ€ç»ˆè¿™ä¸ªå…ƒç´ å°†åœ¨æ­¤indexç´¢å¼•ä½ç½®ï¼Œè€ŒåŸæ¥è¿™ä¸ªindexä½ç½®åŠåé¢çš„å…ƒç´ å°†ä¼šå‘åç§»åŠ¨ä¸€ä¸ªè¯´ç´¢å¼•å€¼ã€‚
+        //list1.add(7,6.66);  //.IndexOutOfBoundsException ç´¢å¼•è¶Šç•Œå¼‚å¸¸ï¼ï¼ï¼
 
         System.out.println("=========================================================================================");
 
-        //E remove(int index)              É¾³ıÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»É¾³ıµÄÔªËØ¡£
+        //E remove(int index)              åˆ é™¤æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«åˆ é™¤çš„å…ƒç´ ã€‚
         System.out.print("2: ");
         List<Integer> list2 = new ArrayList<>();
         list2.add(0);
@@ -42,12 +42,12 @@ public class List_interface_Method {
         list2.add(2);
         list2.add(3);
         int LIST_2 = list2.remove(0);
-        System.out.println(list2);//½á¹ûÊÇ: [1, 2, 3]
-        System.out.println("±»É¾³ıµÄÔªËØÊÇ: "+ LIST_2);//±»É¾³ıµÄÔªËØÊÇ: 0
+        System.out.println(list2);//ç»“æœæ˜¯: [1, 2, 3]
+        System.out.println("è¢«åˆ é™¤çš„å…ƒç´ æ˜¯: "+ LIST_2);//è¢«åˆ é™¤çš„å…ƒç´ æ˜¯: 0
 
         System.out.println("=========================================================================================");
 
-        //E set(int index, E element)      ĞŞ¸ÄÖ¸¶¨Î»ÖÃ´¦µÄÔªËØ£¬·µ»Ø±»ĞŞ¸ÄµÄÔªËØ¡£
+        //E set(int index, E element)      ä¿®æ”¹æŒ‡å®šä½ç½®å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«ä¿®æ”¹çš„å…ƒç´ ã€‚
         System.out.print("3: ");
         List<Integer> list3 = new ArrayList<>();
         list3.add(0);
@@ -56,11 +56,11 @@ public class List_interface_Method {
         list3.add(3);
         int LIST_3 = list3.set(0, 666);
         System.out.println(list3);//[666, 1, 2, 3]
-        System.out.println("±»ĞŞ¸ÄµÄÔ­ÔªËØÊÇ: "+LIST_3);//±»ĞŞ¸ÄµÄÔ­ÔªËØÊÇ: 0
+        System.out.println("è¢«ä¿®æ”¹çš„åŸå…ƒç´ æ˜¯: "+LIST_3);//è¢«ä¿®æ”¹çš„åŸå…ƒç´ æ˜¯: 0
 
         System.out.println("=========================================================================================");
 
-        //E get(int index)                 ·µ»ØÖ¸¶¨Ë÷Òı´¦µÄÔªËØ¡£
+        //E get(int index)                 è¿”å›æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ã€‚
         System.out.print("4: ");
         List<Integer> list4 = new ArrayList<>();
         list4.add(0);

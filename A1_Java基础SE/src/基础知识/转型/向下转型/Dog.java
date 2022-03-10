@@ -1,13 +1,13 @@
-package 基础知识.转型.向下转型;
+package 鍩虹鐭ヨ瘑.杞瀷.鍚戜笅杞瀷;
 
 public class Dog extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("狗吃SHIT");
+        System.out.println("鐙楀悆SHIT");
     }
 
     public void watchMouse(){
-        System.out.println("狗狗看家");
+        System.out.println("鐙楃嫍鐪嬪");
     }
 }

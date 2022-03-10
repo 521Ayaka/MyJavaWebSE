@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends01;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends01;
 
-// ¶¨ÒåÁËÒ»¸öÔ±¹¤µÄ×ÓÀà£º½²Ê¦
+// å®šä¹‰äº†ä¸€ä¸ªå‘˜å·¥çš„å­ç±»ï¼šè®²å¸ˆ
 public class Teacher extends Employee {
 
 }

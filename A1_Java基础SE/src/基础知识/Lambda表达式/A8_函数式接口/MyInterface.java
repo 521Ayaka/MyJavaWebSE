@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A8_º¯ÊıÊ½½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A8_å‡½æ•°å¼æ¥å£;
 
-@FunctionalInterface//º¯ÊıÊ½½Ó¿ÚµÄ×¢½â£¡
+@FunctionalInterface//å‡½æ•°å¼æ¥å£çš„æ³¨è§£ï¼
 public interface MyInterface {
 
     void method();
 
-    //void method1(); //×¢½â±¨´í£¡
+    //void method1(); //æ³¨è§£æŠ¥é”™ï¼
 
 }

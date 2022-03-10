@@ -1,20 +1,20 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
 import javax.swing.*;
 import java.awt.*;
 
-//²âÊÔÀà
+//æµ‹è¯•ç±»
 class Demo1 {
-    //´´½¨´°Ìå
-    private JFrame myJFrame = new JFrame("ÓĞ±³¾°Í¼Æ¬");
+    //åˆ›å»ºçª—ä½“
+    private JFrame myJFrame = new JFrame("æœ‰èƒŒæ™¯å›¾ç‰‡");
     public Demo1(){
-        //»ñÈ¡Í¼Æ¬
-        Image im = new ImageIcon("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\µ÷ÊÔÁ·Ï°\\Í¸Ã÷´°Ìå\\A00.jpg").getImage();
-        //ÉèÖÃ´°Ìå´óĞ¡
+        //è·å–å›¾ç‰‡
+        Image im = new ImageIcon("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\è°ƒè¯•ç»ƒä¹ \\é€æ˜çª—ä½“\\A00.jpg").getImage();
+        //è®¾ç½®çª—ä½“å¤§å°
         myJFrame.setSize(500,800);
-        //»ñÈ¡ÉèÖÃ±³¾°ºóµÄÃæ°å
+        //è·å–è®¾ç½®èƒŒæ™¯åçš„é¢æ¿
         MyJPanel myJPanel = new MyJPanel(im);
-        //Ìí¼Ó°´Å¥²âÊÔ
+        //æ·»åŠ æŒ‰é’®æµ‹è¯•
         JButton jb1 = new JButton("hello");
         JButton jb2 = new JButton("hello1");
         jb1.setOpaque(false);
@@ -33,19 +33,19 @@ class Demo1 {
         new Demo1();
     }
 
-    //´´½¨Ò»¸öÀà¼Ì³Ğ»­°åÀà
+    //åˆ›å»ºä¸€ä¸ªç±»ç»§æ‰¿ç”»æ¿ç±»
     public class MyJPanel extends JPanel{
-        //¹¹Ôì·½·¨³õÊ¼»¯±³¾°Í¼Æ¬
+        //æ„é€ æ–¹æ³•åˆå§‹åŒ–èƒŒæ™¯å›¾ç‰‡
         private Image image;
         public MyJPanel(Image image){
             this.image = image;
         }
-        //ÖØĞ´paintComponent·½·¨
+        //é‡å†™paintComponentæ–¹æ³•
         @Override
         public void paintComponent(Graphics g) {
-            //µ÷ÓÃ¸¸ÀàpaintComponent·½·¨»æÖÆÆäËû×é¼ş
+            //è°ƒç”¨çˆ¶ç±»paintComponentæ–¹æ³•ç»˜åˆ¶å…¶ä»–ç»„ä»¶
             super.paintComponent(g);
-            //»æÖÆ±³¾°Í¼Æ¬£¬´óĞ¡Îª´°Ìå´óĞ¡
+            //ç»˜åˆ¶èƒŒæ™¯å›¾ç‰‡ï¼Œå¤§å°ä¸ºçª—ä½“å¤§å°
             g.drawImage(image, 0, 0,getWidth(),getHeight(), null);
 
             g.setColor(new Color(26, 24, 24,50));

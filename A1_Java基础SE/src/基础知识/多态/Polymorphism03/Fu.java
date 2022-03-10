@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.¶àÌ¬.Polymorphism03;
+package åŸºç¡€çŸ¥è¯†.å¤šæ€.Polymorphism03;
 
 public class Fu {
 
     public void method(){
-        System.out.println("¸¸Àà·½·¨Ö´ĞĞ");
+        System.out.println("çˆ¶ç±»æ–¹æ³•æ‰§è¡Œ");
     }
 
     public void methodFu(){
-        System.out.println("¸¸ÀàÌØÓĞµÄ·½·¨");
+        System.out.println("çˆ¶ç±»ç‰¹æœ‰çš„æ–¹æ³•");
     }
 }

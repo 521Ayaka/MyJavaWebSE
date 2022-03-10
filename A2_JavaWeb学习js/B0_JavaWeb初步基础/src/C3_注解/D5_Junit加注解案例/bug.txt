@@ -1,9 +1,9 @@
-add³öÏÖÒì³£
-Òì³£µÄÃû³Æ: NullPointerException
-Òì³£µÄÔ­Òò: Cannot invoke "String.equals(Object)" because "str" is null
+addå‡ºç°å¼‚å¸¸
+å¼‚å¸¸çš„åç§°: NullPointerException
+å¼‚å¸¸çš„åŸå› : Cannot invoke "String.equals(Object)" because "str" is null
 =======================================
-div³öÏÖÒì³£
-Òì³£µÄÃû³Æ: ArithmeticException
-Òì³£µÄÔ­Òò: / by zero
+divå‡ºç°å¼‚å¸¸
+å¼‚å¸¸çš„åç§°: ArithmeticException
+å¼‚å¸¸çš„åŸå› : / by zero
 =======================================
-±¾´Î²âÊÔ¹²³öÏÖ 2 ´ÎÒì³£¡£
+æœ¬æ¬¡æµ‹è¯•å…±å‡ºç° 2 æ¬¡å¼‚å¸¸ã€‚

@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.Fileµİ¹é;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileé€’å½’;
 
 /**
- * ¸ù¾İReviewÖĞµÄÎÊÌâ£¬Ê¹ÓÃµİ¹éµÄ·½·¨½øĞĞ²Ù×÷
- * µİ¹é½â¾öÎÊÌâ: Ê¹ÓÃµİ¹é¾Í±ØĞëÏÈ¶¨ÒåÒ»¸ö·½·¨
- * ¶¨ÒåÒ»¸ö·½·¨ f(n) À´±íÊ¾µÚn¸öÔÂµÄÍÃ×ÓÊı
- * ÄÇÃ´, µÚ n-1 ¸öÔÂµÄÍÃ×ÓÊı¾ÍÊÇ f(n-1)
- * Í¬Àí, µÚ n-2 ¸öÔÂµÄÍÃ×ÓÊı¾ÍÊÇ f(n-2)
+ * æ ¹æ®Reviewä¸­çš„é—®é¢˜ï¼Œä½¿ç”¨é€’å½’çš„æ–¹æ³•è¿›è¡Œæ“ä½œ
+ * é€’å½’è§£å†³é—®é¢˜: ä½¿ç”¨é€’å½’å°±å¿…é¡»å…ˆå®šä¹‰ä¸€ä¸ªæ–¹æ³•
+ * å®šä¹‰ä¸€ä¸ªæ–¹æ³• f(n) æ¥è¡¨ç¤ºç¬¬nä¸ªæœˆçš„å…”å­æ•°
+ * é‚£ä¹ˆ, ç¬¬ n-1 ä¸ªæœˆçš„å…”å­æ•°å°±æ˜¯ f(n-1)
+ * åŒç†, ç¬¬ n-2 ä¸ªæœˆçš„å…”å­æ•°å°±æ˜¯ f(n-2)
  */
 
 
@@ -13,42 +13,42 @@ public class DameNewMethod {
 
     public static void main(String[] args) {
 
-        //µ÷ÓÃf(int n)
+        //è°ƒç”¨f(int n)
         try{
-            System.out.println(f(20));//ÕâÑù»á³öÏÖÒì³£¡£¶øÇÒ»¹ÊÇErrorÌåÏµÖĞµÄÒì³££¬ÎŞ·¨½â¾ö¡£
-            System.out.println("f(int n) Î´³öÏÖÒì³££¡£¡£¡");
+            System.out.println(f(20));//è¿™æ ·ä¼šå‡ºç°å¼‚å¸¸ã€‚è€Œä¸”è¿˜æ˜¯Errorä½“ç³»ä¸­çš„å¼‚å¸¸ï¼Œæ— æ³•è§£å†³ã€‚
+            System.out.println("f(int n) æœªå‡ºç°å¼‚å¸¸ï¼ï¼ï¼");
         }catch (StackOverflowError e) {
-            System.out.println("f(int n) ³öÏÖÒì³££¡£¡£¡");
-            System.out.println("·¢ÉúÒì³£, Òì³£Àà: ErrorÌåÏµµÄ£ºStackOverflowError Àà");
-            System.out.println("APIËµÃ÷: µ±Ó¦ÓÃ³ÌĞòµİ¹éÌ«Éî¶ø·¢Éú¶ÑÕ»Òç³öÊ±£¬Å×³ö¸Ã´íÎó¡£");
+            System.out.println("f(int n) å‡ºç°å¼‚å¸¸ï¼ï¼ï¼");
+            System.out.println("å‘ç”Ÿå¼‚å¸¸, å¼‚å¸¸ç±»: Errorä½“ç³»çš„ï¼šStackOverflowError ç±»");
+            System.out.println("APIè¯´æ˜: å½“åº”ç”¨ç¨‹åºé€’å½’å¤ªæ·±è€Œå‘ç”Ÿå †æ ˆæº¢å‡ºæ—¶ï¼ŒæŠ›å‡ºè¯¥é”™è¯¯ã€‚");
         }
 
         System.out.println("=========================================================");
 
-        //ĞŞ¸ÄºóµÄfx(int n)
+        //ä¿®æ”¹åçš„fx(int n)
         try{
-            System.out.println(fx(20));//ÕâÑù¾Í²»»á³öÏÖÕ»Òç³öÒì³£ÁË¡£
-            System.out.println("fx(int n) Î´³öÏÖÒì³££¡£¡£¡");
+            System.out.println(fx(20));//è¿™æ ·å°±ä¸ä¼šå‡ºç°æ ˆæº¢å‡ºå¼‚å¸¸äº†ã€‚
+            System.out.println("fx(int n) æœªå‡ºç°å¼‚å¸¸ï¼ï¼ï¼");
         }catch (StackOverflowError e) {
-            System.out.println("fx(int n) ³öÏÖÒì³££¡£¡£¡");
-            System.out.println("·¢ÉúÒì³£, Òì³£Àà: ErrorÌåÏµµÄ£ºStackOverflowError Àà");
-            System.out.println("APIËµÃ÷: µ±Ó¦ÓÃ³ÌĞòµİ¹éÌ«Éî¶ø·¢Éú¶ÑÕ»Òç³öÊ±£¬Å×³ö¸Ã´íÎó¡£");
+            System.out.println("fx(int n) å‡ºç°å¼‚å¸¸ï¼ï¼ï¼");
+            System.out.println("å‘ç”Ÿå¼‚å¸¸, å¼‚å¸¸ç±»: Errorä½“ç³»çš„ï¼šStackOverflowError ç±»");
+            System.out.println("APIè¯´æ˜: å½“åº”ç”¨ç¨‹åºé€’å½’å¤ªæ·±è€Œå‘ç”Ÿå †æ ˆæº¢å‡ºæ—¶ï¼ŒæŠ›å‡ºè¯¥é”™è¯¯ã€‚");
         }
 
-        //ÍØÕ¹£¬Ê¹ÓÃµİ¹éÇó½×³Ë
+        //æ‹“å±•ï¼Œä½¿ç”¨é€’å½’æ±‚é˜¶ä¹˜
         System.out.println(y(10));
         System.out.println(10*9*8*7*6*5*4*3*2*1);
 
     }
 
-    //·µ»ØÖµ ºÍ ²ÎÊıÀàĞÍ ¶¼ÊÇint
+    //è¿”å›å€¼ å’Œ å‚æ•°ç±»å‹ éƒ½æ˜¯int
     public static int f(int n) {
         n = f(n - 1) + f(n - 2);
-        return n;//·µ»ØÖµÊÇ²ÎÊı±äÁ¿n
+        return n;//è¿”å›å€¼æ˜¯å‚æ•°å˜é‡n
     }
 
 
-    //ÖØÏÖĞŞ¸ÄºóµÄ
+    //é‡ç°ä¿®æ”¹åçš„
     public static int fx(int n) {
         if (n == 1 || n == 2) {
             return 1;
@@ -57,7 +57,7 @@ public class DameNewMethod {
         }
     }
 
-    //Çó½×³ËµÄ·½·¨
+    //æ±‚é˜¶ä¹˜çš„æ–¹æ³•
     public static int y(int n){
         if (n == 1){
             return 1;

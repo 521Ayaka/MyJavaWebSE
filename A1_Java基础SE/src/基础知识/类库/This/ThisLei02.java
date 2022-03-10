@@ -1,14 +1,14 @@
-package 基础知识.类库.This;
+package 鍩虹鐭ヨ瘑.绫诲簱.This;
 
 public class ThisLei02{
 
-    String str = "这是成员变量";
+    String str = "杩欐槸鎴愬憳鍙橀噺";
 
     void fun(String str){
-        System.out.println(str);  //打印参数str
-        System.out.println(this.str);   //使用this.str 打印全局变量
+        System.out.println(str);  //鎵撳嵃鍙傛暟str
+        System.out.println(this.str);   //浣跨敤this.str 鎵撳嵃鍏ㄥ眬鍙橀噺
         
-        //是参数str赋值给全局变量str
+        //鏄弬鏁皊tr璧嬪�肩粰鍏ㄥ眬鍙橀噺str
         this.str = str;
         System.out.println(this.str);
     }

@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends07;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends07;
 
 public class Fu {
     int num = 100;
-    String str = "ŞÏŞÎ½´";
+    String str = "å°´å°¬é…±";
 
     public Fu() {
-        System.out.println("¸¸ÀàÎŞ²Î¹¹Ôì·½·¨¡£");
+        System.out.println("çˆ¶ç±»æ— å‚æ„é€ æ–¹æ³•ã€‚");
     }
 
     public Fu(int num) {
-        System.out.println("¸¸ÀàÓĞ²Î¹¹Ôì·½·¨¡£");
+        System.out.println("çˆ¶ç±»æœ‰å‚æ„é€ æ–¹æ³•ã€‚");
     }
 
     public Fu(int num, String str) {

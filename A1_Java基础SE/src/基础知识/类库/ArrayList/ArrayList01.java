@@ -1,19 +1,19 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 /*
-Ê¹ÓÃArrayMethod£¬Êı×éµÄ³¤¶È²»¿ÉÒÔ·¢Éú¸Ä±ä¡£
-µ«ArrayList¼¯ºÏµÄ³¤¶È¿ÉÒÔËæÒâ·¢Éú¸Ä±ä¡£
+ä½¿ç”¨ArrayMethodï¼Œæ•°ç»„çš„é•¿åº¦ä¸å¯ä»¥å‘ç”Ÿæ”¹å˜ã€‚
+ä½†ArrayListé›†åˆçš„é•¿åº¦å¯ä»¥éšæ„å‘ç”Ÿæ”¹å˜ã€‚
 
-1.µ¼°ü
+1.å¯¼åŒ…
 import java.util.ArrayList;
 
-2.´´½¨
-ArrayList<ÀàĞÍ> list = new ArrayList<>();
+2.åˆ›å»º
+ArrayList<ç±»å‹> list = new ArrayList<>();
 
-×¢Òâ£º
-¶ÔÓÚArrayListÀ´Ëµ£¬¶¼ÓĞÒ»¶Ô<>´ú±í ¡± ·ºĞÍ ¡°
-·ºĞÍ Ö»ÄÜÒıÓÃÀàĞÍ£¬²»ÄÜÊÇ»ù±¾ÀàĞÍ¡£
+æ³¨æ„ï¼š
+å¯¹äºArrayListæ¥è¯´ï¼Œéƒ½æœ‰ä¸€å¯¹<>ä»£è¡¨ â€ æ³›å‹ â€œ
+æ³›å‹ åªèƒ½å¼•ç”¨ç±»å‹ï¼Œä¸èƒ½æ˜¯åŸºæœ¬ç±»å‹ã€‚
 
-3.Ê¹ÓÃ
+3.ä½¿ç”¨
 
 
  */
@@ -23,19 +23,19 @@ public class ArrayList01 {
     public static void main(String[] args) {
 
         ArrayList<String> list = new ArrayList<>();
-        //´´½¨Ê± ÓÒ±ßÒª´ø<>ÄÚÈİ¿ÉÒÔ²»Ğ´£¬µ«<>±ØĞëÒª´ø£¡
+        //åˆ›å»ºæ—¶ å³è¾¹è¦å¸¦<>å†…å®¹å¯ä»¥ä¸å†™ï¼Œä½†<>å¿…é¡»è¦å¸¦ï¼
 
         System.out.println(list);
-        //¶ÔArrayListL¼¯ºÏÀ´Ëµ£¬Ö±½Ó´òÓ¡µÃµ½µÄ²»ÊÇµØÖ·Öµ£¬¶øÊÇÄÚÈİ¡£
+        //å¯¹ArrayListLé›†åˆæ¥è¯´ï¼Œç›´æ¥æ‰“å°å¾—åˆ°çš„ä¸æ˜¯åœ°å€å€¼ï¼Œè€Œæ˜¯å†…å®¹ã€‚
         System.out.println("==========================");
 
         list.add("gangajiang");
         System.out.println(list);
 
-        list.add("¾ÍÊÇ");
-        list.add("ŞÏŞÎ½´");
-        list.add("¶ş´ÎÔª");
-        list.add("´óºÃ");
+        list.add("å°±æ˜¯");
+        list.add("å°´å°¬é…±");
+        list.add("äºŒæ¬¡å…ƒ");
+        list.add("å¤§å¥½");
         System.out.println(list);
 
         ArrayList<Integer> array = new ArrayList<>();

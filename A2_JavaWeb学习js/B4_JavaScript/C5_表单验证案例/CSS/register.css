@@ -12,7 +12,8 @@ a, img {
 }
 
 body {
-    background-image: url("../../img/ssss.png") ;
+    background-image: url("../../img/ss.jpg");
+    background-position: 50%;
     text-align: center;
 }
 

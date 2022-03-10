@@ -1,24 +1,24 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.File¹¹Ôì·½·¨;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileæ„é€ æ–¹æ³•;
 
 import java.io.File;
 
 /*
 
-FileÀà£ºËıÊÇÎÄ¼şºÍÄ¿Â¼Â·¾¶ÃûµÄ³éÏó±íÊ¾
-1. ÎÄ¼şºÍÄ¿Â¼ÊÇ¿ÉÒÔÍ¨¹ıFile·â×°³É¶ÔÏóµÄ¡£
-2. ¶ÔÓÚFile¶øÑÔ, Æä·â×°µÄ²¢²»ÊÇÒ»¸öÕæÕı´æÔÚµÄÎÄ¼ş,
-   ½ö½öÊÇÒ»¸öÂ·¾¶Ãû¶øÒÑ¡£Ëı¿ÉÒÔÊÇ´æÔÚµÄ, Ò²¿ÉÒÔÊÇ²»´æÔÚµÄ¡£
-   ½«À´ÊÇÒªÍ¨¹ı¾ßÌåµÄ²Ù×÷°ÑÕâ¸öÂ·¾¶µÄÄÚÈİ×ª»»Îª¾ßÌå´æÔÚµÄ¡£
+Fileç±»ï¼šå¥¹æ˜¯æ–‡ä»¶å’Œç›®å½•è·¯å¾„åçš„æŠ½è±¡è¡¨ç¤º
+1. æ–‡ä»¶å’Œç›®å½•æ˜¯å¯ä»¥é€šè¿‡Fileå°è£…æˆå¯¹è±¡çš„ã€‚
+2. å¯¹äºFileè€Œè¨€, å…¶å°è£…çš„å¹¶ä¸æ˜¯ä¸€ä¸ªçœŸæ­£å­˜åœ¨çš„æ–‡ä»¶,
+   ä»…ä»…æ˜¯ä¸€ä¸ªè·¯å¾„åè€Œå·²ã€‚å¥¹å¯ä»¥æ˜¯å­˜åœ¨çš„, ä¹Ÿå¯ä»¥æ˜¯ä¸å­˜åœ¨çš„ã€‚
+   å°†æ¥æ˜¯è¦é€šè¿‡å…·ä½“çš„æ“ä½œæŠŠè¿™ä¸ªè·¯å¾„çš„å†…å®¹è½¬æ¢ä¸ºå…·ä½“å­˜åœ¨çš„ã€‚
 
-¹¹Ôì·½·¨£º
+æ„é€ æ–¹æ³•ï¼š
 public File(String pathname){//...}
-Í¨¹ı½«¸ø¶¨Â·¾¶Ãû×Ö·û´®×ª»»Îª³éÏóÂ·¾¶ÃûÀ´´´½¨Ò»¸öĞÂFileÊµÀı
+é€šè¿‡å°†ç»™å®šè·¯å¾„åå­—ç¬¦ä¸²è½¬æ¢ä¸ºæŠ½è±¡è·¯å¾„åæ¥åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹
 
 public File(String parent, String child){//...}
-¸ù¾İ parent Â·¾¶Ãû×Ö·û´®ºÍ child Â·¾¶Ãû×Ö·û´®´´½¨Ò»¸öĞÂFileÊµÀı¡£
+æ ¹æ® parent è·¯å¾„åå­—ç¬¦ä¸²å’Œ child è·¯å¾„åå­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹ã€‚
 
 public File(File parent, String child){//...}
-¸ù¾İ parent ³éÏóÂ·¾¶ÃûºÍ child Â·¾¶Ãû×Ö·û´®´´½¨Ò»¸öĞÂFileÊµÀı¡£
+æ ¹æ® parent æŠ½è±¡è·¯å¾„åå’Œ child è·¯å¾„åå­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹ã€‚
 
 */
 public class FileLei {
@@ -26,26 +26,26 @@ public class FileLei {
     public static void main(String[] args) {
 
         //public File(String pathname){//...}
-        //Í¨¹ı½«¸ø¶¨Â·¾¶Ãû×Ö·û´®×ª»»Îª³éÏóÂ·¾¶ÃûÀ´´´½¨Ò»¸öĞÂFileÊµÀı
-        File file1 = new File("ideback\\ÑÇË÷.txt");
-        //ideback´æÔÚ£¬µ«ÊÇ ¡±ÑÇË÷.txt¡° ÊÇ²»´æÔÚµÄ
-        System.out.println(file1);// ÖØĞ´ÁËtoString()·½·¨ D:\Ô´´úÂë\ideback\ÑÇË÷.txt
+        //é€šè¿‡å°†ç»™å®šè·¯å¾„åå­—ç¬¦ä¸²è½¬æ¢ä¸ºæŠ½è±¡è·¯å¾„åæ¥åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹
+        File file1 = new File("ideback\\äºšç´¢.txt");
+        //idebackå­˜åœ¨ï¼Œä½†æ˜¯ â€äºšç´¢.txtâ€œ æ˜¯ä¸å­˜åœ¨çš„
+        System.out.println(file1);// é‡å†™äº†toString()æ–¹æ³• D:\æºä»£ç \ideback\äºšç´¢.txt
         /*public String toString() {
             return getPath();
         }*/
 
         //public File(String parent, String child){//...}
-        //¸ù¾İ parent Â·¾¶Ãû×Ö·û´®ºÍ child Â·¾¶Ãû×Ö·û´®´´½¨Ò»¸öĞÂFileÊµÀı¡£
-        String parent = "D:\\Ô´´úÂë";       //¸¸Ä¿Â¼
-        String child = "ideback\\ÑÇË÷.txt"; //×ÓÄ¿Â¼
+        //æ ¹æ® parent è·¯å¾„åå­—ç¬¦ä¸²å’Œ child è·¯å¾„åå­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹ã€‚
+        String parent = "D:\\æºä»£ç ";       //çˆ¶ç›®å½•
+        String child = "ideback\\äºšç´¢.txt"; //å­ç›®å½•
         File file2 = new File(parent, child);
-        System.out.println(file2);//  D:\Ô´´úÂë\ideback\ÑÇË÷.txt
+        System.out.println(file2);//  D:\æºä»£ç \ideback\äºšç´¢.txt
 
         //public File(File parent, String child){//...}
-        //¸ù¾İ parent ³éÏóÂ·¾¶ÃûºÍ child Â·¾¶Ãû×Ö·û´®´´½¨Ò»¸öĞÂFileÊµÀı¡£
-        File file3 = new File("D:\\Ô´´úÂë");
+        //æ ¹æ® parent æŠ½è±¡è·¯å¾„åå’Œ child è·¯å¾„åå­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªæ–°Fileå®ä¾‹ã€‚
+        File file3 = new File("D:\\æºä»£ç ");
         File file4 = new File(file3, child);
-        System.out.println(file4);//  D:\Ô´´úÂë\ideback\ÑÇË÷.txt
+        System.out.println(file4);//  D:\æºä»£ç \ideback\äºšç´¢.txt
 
 
     }

@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.IPµØÖ·;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.IPåœ°å€;
 /*
-1.4 InetAddressµÄÊ¹ÓÃ
-ÎªÁË·½±ãÎÒÃÇ¶ÔIPµØÖ·µÄ»ñÈ¡ºÍ²Ù×÷,JavaÌá¹©ÁËÒ»¸öÀà InetAddress¹©ÎÒÃÇÊ¹ÓÃ
+1.4 InetAddressçš„ä½¿ç”¨
+ä¸ºäº†æ–¹ä¾¿æˆ‘ä»¬å¯¹IPåœ°å€çš„è·å–å’Œæ“ä½œ,Javaæä¾›äº†ä¸€ä¸ªç±» InetAddressä¾›æˆ‘ä»¬ä½¿ç”¨
 
-InetAddress:´ËÀà±íÊ¾ InternetĞ­Òé(IP)µØÖ·
+InetAddress:æ­¤ç±»è¡¨ç¤º Internetåè®®(IP)åœ°å€
 
-    static InetAddress getByName(String host) È·¶¨Ö÷»úÃû³ÆµÄIPµØÖ·¡£Ö÷»úÃû³Æ¿ÉÒÔÊÇ»úÆ÷Ãû³Æ,Ò²¿ÉÒÔÊÇIPµØÖ·
+    static InetAddress getByName(String host) ç¡®å®šä¸»æœºåç§°çš„IPåœ°å€ã€‚ä¸»æœºåç§°å¯ä»¥æ˜¯æœºå™¨åç§°,ä¹Ÿå¯ä»¥æ˜¯IPåœ°å€
 
-    String getHostName()       »ñÈ¡´ËIPµØÖ·µÄÖ÷»úÃû
+    String getHostName()       è·å–æ­¤IPåœ°å€çš„ä¸»æœºå
 
-    String getHostAddress()    ·µ»ØÎÄ±¾ÏÔÊ¾ÖĞµÄPµØÖ·×Ö·û´®
+    String getHostAddress()    è¿”å›æ–‡æœ¬æ˜¾ç¤ºä¸­çš„Påœ°å€å­—ç¬¦ä¸²
 
 */
 
@@ -21,15 +21,15 @@ public class Test_InetAddress {
     public static void main(String[] args) throws UnknownHostException {
 
         //static InetAddress getByName(String host)
-        //È·¶¨Ö÷»úÃû³ÆµÄIPµØÖ·¡£Ö÷»úÃû³Æ¿ÉÒÔÊÇ»úÆ÷Ãû³Æ,Ò²¿ÉÒÔÊÇIPµØÖ·
-        //ĞèÒªÒì³£´¦Àí
-        InetAddress iaIP = InetAddress.getByName("GanGaJiang"/*" 192.168.46.201 "*/);//²ÎÊı¿ÉÒÔÊÇIP Ò²¿ÉÒÔÊÇÖ÷»úÃû
+        //ç¡®å®šä¸»æœºåç§°çš„IPåœ°å€ã€‚ä¸»æœºåç§°å¯ä»¥æ˜¯æœºå™¨åç§°,ä¹Ÿå¯ä»¥æ˜¯IPåœ°å€
+        //éœ€è¦å¼‚å¸¸å¤„ç†
+        InetAddress iaIP = InetAddress.getByName("GanGaJiang"/*" 192.168.46.201 "*/);//å‚æ•°å¯ä»¥æ˜¯IP ä¹Ÿå¯ä»¥æ˜¯ä¸»æœºå
 
-        //String getHostName()       »ñÈ¡´ËIPµØÖ·µÄÖ÷»úÃû
-        System.out.println("Ö÷»úÃû³Æ: " + iaIP.getHostName() + "\n");
+        //String getHostName()       è·å–æ­¤IPåœ°å€çš„ä¸»æœºå
+        System.out.println("ä¸»æœºåç§°: " + iaIP.getHostName() + "\n");
 
-        //String getHostAddress()    ·µ»ØÎÄ±¾ÏÔÊ¾ÖĞµÄPµØÖ·×Ö·û´®
-        System.out.println("Ö÷»úIPµØÖ·: " + iaIP.getHostAddress());
+        //String getHostAddress()    è¿”å›æ–‡æœ¬æ˜¾ç¤ºä¸­çš„Påœ°å€å­—ç¬¦ä¸²
+        System.out.println("ä¸»æœºIPåœ°å€: " + iaIP.getHostAddress());
 
     }
 

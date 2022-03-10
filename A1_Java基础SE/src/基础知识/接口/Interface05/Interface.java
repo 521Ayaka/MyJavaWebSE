@@ -1,21 +1,21 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface05;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface05;
 
 public class Interface {
 
     public static void main(String[] args) {
 
-        //µ÷ÓÃ½Ó¿ÚµÄ³£Á¿
+        //è°ƒç”¨æ¥å£çš„å¸¸é‡
         System.out.println(MyInterfaceConst.NUM_OF_MY_CLASS);
         System.out.println(MyInterfaceConst.BOOL_MY_LIU_BU_LIU);
         System.out.println(MyInterfaceConst.STR_CONST);
 
         System.out.println("=================================");
 
-        //´´½¨½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó
+        //åˆ›å»ºæ¥å£çš„å®ç°ç±»å¯¹è±¡
         MyInterfaceConstImpl impl = new MyInterfaceConstImpl();
         impl.method();
 
-        //µ«ÊÇ²»ÄÜĞŞ¸Ä½Ó¿ÚµÄ³£Á¿ÊıÖµ
+        //ä½†æ˜¯ä¸èƒ½ä¿®æ”¹æ¥å£çš„å¸¸é‡æ•°å€¼
 /**
         MyInterfaceConst.BOOL_MY_LIU_BU_LIU = false;
         impl.BOOL_MY_LIU_BU_LIU = false ;

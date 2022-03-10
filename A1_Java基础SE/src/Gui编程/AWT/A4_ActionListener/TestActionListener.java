@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A4_ActionListener;
+package Guiç¼–ç¨‹.AWT.A4_ActionListener;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,34 +10,34 @@ public class TestActionListener {
 
     public static void main(String[] args) {
 
-        Frame frame = new Frame("¿ªÊ¼¡ª¡ª½áÊø");
+        Frame frame = new Frame("å¼€å§‹â€”â€”ç»“æŸ");
 
-        //³õÊ¼»¯frame´°Ìå
+        //åˆå§‹åŒ–frameçª—ä½“
         frame.setLocation(500,300);
         frame.setSize(500,400);
         frame.setVisible(true);
         frame.setLayout(new GridLayout(2,1));
-        //µ÷ÓÃ¹Ø±Õ¼àÌıÊÂ¼ş
+        //è°ƒç”¨å…³é—­ç›‘å¬äº‹ä»¶
         FrameEndAndClosing(frame);
 
-        //´´½¨°´Å¥
-        Button start = new Button("¿ªÊ¼");
-        Button end = new Button("½áÊø");
+        //åˆ›å»ºæŒ‰é’®
+        Button start = new Button("å¼€å§‹");
+        Button end = new Button("ç»“æŸ");
 
-        //½«°´Å¥Ìí¼Óµ½´°Ìåµ±ÖĞ
+        //å°†æŒ‰é’®æ·»åŠ åˆ°çª—ä½“å½“ä¸­
         frame.add(start);
         frame.add(end);
 
-        //´´½¨¼àÌıÊµÏÖ¶ÔÏó
+        //åˆ›å»ºç›‘å¬å®ç°å¯¹è±¡
         MyActionListener myActionListener = new MyActionListener();
-//        start.setActionCommand("ÉèÖÃ°´Å¥ĞÅÏ¢µÄ·½·¨");
+//        start.setActionCommand("è®¾ç½®æŒ‰é’®ä¿¡æ¯çš„æ–¹æ³•");
 
         start.addActionListener(myActionListener);
         end.addActionListener(myActionListener);
 
     }
 
-    //´´½¨ÍË³ö³ÌĞòµÄ¼àÌıÊÂ¼ş·½·¨
+    //åˆ›å»ºé€€å‡ºç¨‹åºçš„ç›‘å¬äº‹ä»¶æ–¹æ³•
     private static void FrameEndAndClosing(Frame frame){
         frame.addWindowListener(new WindowAdapter() {
             @Override
@@ -50,15 +50,15 @@ public class TestActionListener {
 
 }
 
-//´´½¨ÄÚ²¿Àà£¬¼àÌıÊÂ¼şµÄÊµÏÖÀà¡£
+//åˆ›å»ºå†…éƒ¨ç±»ï¼Œç›‘å¬äº‹ä»¶çš„å®ç°ç±»ã€‚
 class MyActionListener implements ActionListener {
 /*
-e.getActionCommand():»ñÈ¡°´Å¥ĞÅÏ¢
+e.getActionCommand():è·å–æŒ‰é’®ä¿¡æ¯
 
 
 */
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("¼àÌıÊÂ¼şÖ´ĞĞ===>"+e.getActionCommand());//Èç¹û²»½øĞĞbutton.setActionCommand();ÉèÖÃ£¬Ä¬ÈÏĞÅÏ¢ÊÇ°´Å¥Ãû³Æ
+        System.out.println("ç›‘å¬äº‹ä»¶æ‰§è¡Œ===>"+e.getActionCommand());//å¦‚æœä¸è¿›è¡Œbutton.setActionCommand();è®¾ç½®ï¼Œé»˜è®¤ä¿¡æ¯æ˜¯æŒ‰é’®åç§°
     }
 }

@@ -1,4 +1,4 @@
-package 基础知识.类库.ArrayMethod;
+package 鍩虹鐭ヨ瘑.绫诲簱.ArrayMethod;
 
 public class Lei {
     private int i;

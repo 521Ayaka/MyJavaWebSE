@@ -1,3 +1,3 @@
-package »ù´¡ÖªÊ¶.·´Éä.A7_·´ÉäÍê³É²»¿ÉÄÜµÄÊÂÇé.A1_Íê³É·ÃÎÊË½ÓÐ_³ÉÔ±±äÁ¿_³ÉÔ±·½·¨_¹¹ÔìÆ÷;
+package åŸºç¡€çŸ¥è¯†.åå°„.A7_åå°„å®Œæˆä¸å¯èƒ½çš„äº‹æƒ….A1_å®Œæˆè®¿é—®ç§æœ‰_æˆå‘˜å˜é‡_æˆå‘˜æ–¹æ³•_æž„é€ å™¨;
 
-public class UseFanShe {        /*¾ßÌå¼ûÇ°¼¸¸ö°ü ÒÑ¾­ÑÝÊ¾¹ýÁË*/      }
+public class UseFanShe {        /*å…·ä½“è§å‰å‡ ä¸ªåŒ… å·²ç»æ¼”ç¤ºè¿‡äº†*/      }

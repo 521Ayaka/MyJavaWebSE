@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A12_³£ÓÃº¯ÊıÊ½½Ó¿Ú.Function½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A12_å¸¸ç”¨å‡½æ•°å¼æ¥å£.Functionæ¥å£;
 
 import java.util.function.Function;
 
@@ -6,13 +6,13 @@ public class TestFunction {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼
         convert("4399", (String s) -> {
             return Integer.parseInt(s);
         });
-        //ÓÅ»¯
+        //ä¼˜åŒ–
         convert("3213", s -> Integer.parseInt(s));
-        //ÔÙ´ÎÓÅ»¯ Àà·½·¨ÒıÓÃ
+        //å†æ¬¡ä¼˜åŒ– ç±»æ–¹æ³•å¼•ç”¨
         convert("6666", Integer::parseInt);
 
         System.out.println("===================================");
@@ -25,27 +25,27 @@ public class TestFunction {
 
     }
 
-    //¶¨ÒåÒ»¸ö·½·¨,°ÑÒ»¸ö×Ö·û´®×ªÎªintÀàĞÍ, ÔÚ¿ØÖÆÌ¨Êä³ö
+    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•,æŠŠä¸€ä¸ªå­—ç¬¦ä¸²è½¬ä¸ºintç±»å‹, åœ¨æ§åˆ¶å°è¾“å‡º
     private static void convert(String s, Function<String, Integer> function) {
         int i = function.apply(s);
-        //ÕâÀïÖ»ÊÇµ÷ÓÃapply×ª»»½ÓÊÕ
-        //¾ßÌåÊµÏÖÊµÔÚLambda±í´ïÊ½µ±ÖĞÀ´²Ù×÷µÄ¡£
+        //è¿™é‡Œåªæ˜¯è°ƒç”¨applyè½¬æ¢æ¥æ”¶
+        //å…·ä½“å®ç°å®åœ¨Lambdaè¡¨è¾¾å¼å½“ä¸­æ¥æ“ä½œçš„ã€‚
         System.out.println(i);
     }
 
-    //¶¨ÒåÒ»¸ö·½·¨,°ÑÒ»¸öintÀàĞÍµÄÊı¾İ¼ÓÉÏÒ»¸öÕûÊıÖ®ºó, ×ªÎª×Ö·û´®ÔÚ¿ØÖÆÌ¨Êä³ö
+    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•,æŠŠä¸€ä¸ªintç±»å‹çš„æ•°æ®åŠ ä¸Šä¸€ä¸ªæ•´æ•°ä¹‹å, è½¬ä¸ºå­—ç¬¦ä¸²åœ¨æ§åˆ¶å°è¾“å‡º
     private static void convert(int i, Function<Integer, String> function) {
         String str = function.apply(i);
-        //ÕâÀïÖ»ÊÇµ÷ÓÃapply×ª»»½ÓÊÕ
-        //¾ßÌåÊµÏÖÊµÔÚLambda±í´ïÊ½µ±ÖĞÀ´²Ù×÷µÄ¡£
+        //è¿™é‡Œåªæ˜¯è°ƒç”¨applyè½¬æ¢æ¥æ”¶
+        //å…·ä½“å®ç°å®åœ¨Lambdaè¡¨è¾¾å¼å½“ä¸­æ¥æ“ä½œçš„ã€‚
         System.out.println(str);
     }
 
-    //¶¨ÒåÒ»¸ö·½·¨,°ÑÒ»¸ö×Ö·û´®×ªÎªintÀàĞÍ, intÀàĞÍµÄÊı¾İ¼ÓÉÏÒ»¸öÕûÊıÖ®ºóÔÙ×ªÎª×Ö·û´®, ÔÚ¿ØÖÆÌ¨Êä³ö
+    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•,æŠŠä¸€ä¸ªå­—ç¬¦ä¸²è½¬ä¸ºintç±»å‹, intç±»å‹çš„æ•°æ®åŠ ä¸Šä¸€ä¸ªæ•´æ•°ä¹‹åå†è½¬ä¸ºå­—ç¬¦ä¸², åœ¨æ§åˆ¶å°è¾“å‡º
     private static void converts(String str, Function<String, Integer> e1, Function<Integer, String> e2) {
         int i = e1.apply(str);
         String newStr = e2.apply(i);
-        //¾ßÌåÊµÏÖÊµÔÚLambda±í´ïÊ½µ±ÖĞÀ´²Ù×÷µÄ¡£
+        //å…·ä½“å®ç°å®åœ¨Lambdaè¡¨è¾¾å¼å½“ä¸­æ¥æ“ä½œçš„ã€‚
         System.out.println("newString:"+newStr);
     }
 

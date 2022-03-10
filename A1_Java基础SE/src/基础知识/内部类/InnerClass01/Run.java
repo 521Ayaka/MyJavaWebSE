@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass01;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass01;
 
 public class Run {
 
@@ -9,19 +9,19 @@ public class Run {
 
         System.out.println("=====================================================");
 
-        //¼ä½ÓÊ¹ÓÃ
+        //é—´æ¥ä½¿ç”¨
         wai.method01();
 
         System.out.println("=============================");
 
-        //Ö±½ÓÊ¹ÓÃ
+        //ç›´æ¥ä½¿ç”¨
         Wai.Nei nei = new Wai().new Nei();
-        System.out.println("Ö±½Óµ÷ÓÃ"+nei.string);
+        System.out.println("ç›´æ¥è°ƒç”¨"+nei.string);
         nei.methodNei();
 
         System.out.println("=====================================================");
 
-        //ÖØÃû±äÁ¿µÄµ÷ÓÃ
+        //é‡åå˜é‡çš„è°ƒç”¨
         nei.methodNum();
 
 

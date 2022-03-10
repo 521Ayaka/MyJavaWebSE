@@ -1,23 +1,23 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface04;
+package åŸºç¡€çŸ¥è¯†.æŽ¥å£.Interface04;
 /*
-ÎÊÌâÃèÊö:
-ÎªÁË¼õÉÙÖØ¸´´úÂëµÄÇé¿ö£¬ÎÒÃÇÐèÒª´´½¨Ò»¸ö¹²ÓÐµÄ·½·¨£¬ÓÃÀ´½â¾ö´ËÎÊÌâ¡£
-µ«ÊÇ£ºÓÖ²»ÄÜÍ¨¹ý½Ó¿ÚµÄ ¡°ÊµÏÖÀà¡± ¶ÔÏó½øÐÐµ÷ÓÃ¸Ã¹²ÓÐµÄ·½·¨¡£
+é—®é¢˜æè¿°:
+ä¸ºäº†å‡å°‘é‡å¤ä»£ç çš„æƒ…å†µï¼Œæˆ‘ä»¬éœ€è¦åˆ›å»ºä¸€ä¸ªå…±æœ‰çš„æ–¹æ³•ï¼Œç”¨æ¥è§£å†³æ­¤é—®é¢˜ã€‚
+ä½†æ˜¯ï¼šåˆä¸èƒ½é€šè¿‡æŽ¥å£çš„ â€œå®žçŽ°ç±»â€ å¯¹è±¡è¿›è¡Œè°ƒç”¨è¯¥å…±æœ‰çš„æ–¹æ³•ã€‚
 
-½â¾ö·½·¨£º
-Ê¹ÓÃJava9 ,JDK9¿ªÊ¼£¬javaÔÊÐí´´½¨Ë½ÓÐµÄ·½·¨¡£
+è§£å†³æ–¹æ³•ï¼š
+ä½¿ç”¨Java9 ,JDK9å¼€å§‹ï¼Œjavaå…è®¸åˆ›å»ºç§æœ‰çš„æ–¹æ³•ã€‚
 
-1.ÆÕÍ¨Ë½ÓÐ·½·¨£º½â¾ö¶à¸öÄ¬ÈÏ·½·¨Ö®¼äµÄÖØ¸´´úÂëÎÊÌâ¡£
-¸ñÊ½£º
-private ·µ»ØÖµÀàÐÍ ·½·¨Ãû³Æ(²ÎÊýÁÐ±í){
-     //·½·¨Ìå
+1.æ™®é€šç§æœ‰æ–¹æ³•ï¼šè§£å†³å¤šä¸ªé»˜è®¤æ–¹æ³•ä¹‹é—´çš„é‡å¤ä»£ç é—®é¢˜ã€‚
+æ ¼å¼ï¼š
+private è¿”å›žå€¼ç±»åž‹ æ–¹æ³•åç§°(å‚æ•°åˆ—è¡¨){
+     //æ–¹æ³•ä½“
 }
 
 
-2.¾²Ì¬ÊÇÓÐ·½·¨£º½â¾ö¶à¸ö¾²Ì¬·½·¨Ö®¼äµÄÖØ¸´´úÂëÎÊÌâ¡£
-¸ñÊ½£º
-private static ·µ»ØÖµÀàÐÍ ·½·¨Ãû³Æ(²ÎÊýÁÐ±í){
-     //·½·¨Ìå
+2.é™æ€æ˜¯æœ‰æ–¹æ³•ï¼šè§£å†³å¤šä¸ªé™æ€æ–¹æ³•ä¹‹é—´çš„é‡å¤ä»£ç é—®é¢˜ã€‚
+æ ¼å¼ï¼š
+private static è¿”å›žå€¼ç±»åž‹ æ–¹æ³•åç§°(å‚æ•°åˆ—è¡¨){
+     //æ–¹æ³•ä½“
 }
 
  */
@@ -25,19 +25,19 @@ private static ·µ»ØÖµÀàÐÍ ·½·¨Ãû³Æ(²ÎÊýÁÐ±í){
 public interface MyInterfacePrivate {
 
     public default void method1(){
-        System.out.println("Ä¬ÈÏ·½·¨1Ö´ÐÐ£¡");
+        System.out.println("é»˜è®¤æ–¹æ³•1æ‰§è¡Œï¼");
         methodCommon();
     }
 
     public default void method2(){
-        System.out.println("Ä¬ÈÏ·½·¨2Ö´ÐÐ");
+        System.out.println("é»˜è®¤æ–¹æ³•2æ‰§è¡Œ");
         methodCommon();
     }
 
     /**
 
-    //ÎªÁË²»ÖØ¸´method1£¬2µÄ´úÂë£¬³éÈ¡¹²Í¬Ìå
-    //µ«ÊÇÕâÖÖ·½·¨ÊÇ²»¶ÔµÄ£¬Ïàµ±ÓÚÓÖ´´½¨ÁËÒ»¸öÄ¬ÈÏ·½·¨£¬´ËÊ± ¡°ÊµÏÖÀà¡± ¾Í¿ÉÒÔµ÷ÓÃÕâ¸ö·½·¨ÁË£¬ÕâÊÇ²»Ïë¿´µ½µÄ
+    //ä¸ºäº†ä¸é‡å¤method1ï¼Œ2çš„ä»£ç ï¼ŒæŠ½å–å…±åŒä½“
+    //ä½†æ˜¯è¿™ç§æ–¹æ³•æ˜¯ä¸å¯¹çš„ï¼Œç›¸å½“äºŽåˆåˆ›å»ºäº†ä¸€ä¸ªé»˜è®¤æ–¹æ³•ï¼Œæ­¤æ—¶ â€œå®žçŽ°ç±»â€ å°±å¯ä»¥è°ƒç”¨è¿™ä¸ªæ–¹æ³•äº†ï¼Œè¿™æ˜¯ä¸æƒ³çœ‹åˆ°çš„
     public default void methodCommon(){
         System.out.println("AAA");
         System.out.println("BBB");
@@ -47,8 +47,8 @@ public interface MyInterfacePrivate {
     */
 
 
-    //´ËÊ±£¬¿ÉÒÔÓÃË½ÓÐ»¯½øÐÐ¶¨Òå Java9¿ÉÒÔÊµÏÖ
-    //Ê¹ÓÃÆÕÍ¨µÄË½ÓÐ»¯·½·¨
+    //æ­¤æ—¶ï¼Œå¯ä»¥ç”¨ç§æœ‰åŒ–è¿›è¡Œå®šä¹‰ Java9å¯ä»¥å®žçŽ°
+    //ä½¿ç”¨æ™®é€šçš„ç§æœ‰åŒ–æ–¹æ³•
     private void methodCommon(){
         System.out.println("AAA");
         System.out.println("BBB");

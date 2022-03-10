@@ -1,18 +1,18 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Scanner;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Scanner;
 
-import java.util.Scanner; //µ¼°ü
+import java.util.Scanner; //å¯¼åŒ…
 
 public class Scanner01 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); //´´½¨
+        Scanner sc = new Scanner(System.in); //åˆ›å»º
 
         int i = sc.nextInt();
         System.out.println("==================");
-        System.out.println("ÊäÈëµÄÊı×ÖÎª£º" + i);
+        System.out.println("è¾“å…¥çš„æ•°å­—ä¸ºï¼š" + i);
 
         System.out.println("==================");
         String str = sc.next();
         System.out.println("==================");
-        System.out.println("ÊäÈëµÄ×Ö·û´®Îª£º" + str );
+        System.out.println("è¾“å…¥çš„å­—ç¬¦ä¸²ä¸ºï¼š" + str );
     }
 }

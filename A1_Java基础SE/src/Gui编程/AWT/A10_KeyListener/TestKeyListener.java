@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A10_KeyListener;
+package Guiç¼–ç¨‹.AWT.A10_KeyListener;
 
 import java.awt.*;
 import java.awt.event.KeyAdapter;
@@ -8,7 +8,7 @@ import java.awt.event.WindowEvent;
 
 public class TestKeyListener {
     public static void main(String[] args) {
-        new MyFrame("¼üÅÌ¼àÌıÊÂ¼ş");
+        new MyFrame("é”®ç›˜ç›‘å¬äº‹ä»¶");
     }
 }
 
@@ -17,7 +17,7 @@ class MyFrame extends Frame {
     public MyFrame(String title) {
         super(title);
 
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setBounds(500, 300, 500, 400);
         setBackground(new Color(6, 229, 203));
         setVisible(true);
@@ -28,7 +28,7 @@ class MyFrame extends Frame {
             }
         });
 
-        //Ìí¼Ó¼àÌı
+        //æ·»åŠ ç›‘å¬
         addKeyListener(new MyKeyListener());
 
 
@@ -39,21 +39,21 @@ class MyFrame extends Frame {
         @Override
         public void keyPressed(KeyEvent e) {
 
-            System.out.println("ÄãÊäÈëµÄÊÇ" + e.getKeyCode());
+            System.out.println("ä½ è¾“å…¥çš„æ˜¯" + e.getKeyCode());
 
-            //ÉÏ¼ü
+            //ä¸Šé”®
             if (e.getKeyCode() == e.VK_UP) {
                 setLocation(getLocation().x, getLocation().y - 10);
             }
-            //ÏÂ¼ü
+            //ä¸‹é”®
             if (e.getKeyCode() == e.VK_DOWN) {
                 setLocation(getLocation().x, getLocation().y + 10);
             }
-            //×ó¼ü
+            //å·¦é”®
             if (e.getKeyCode() == e.VK_LEFT){
                 setLocation(getLocation().x-10,getLocation().y);
             }
-            //ÓÒ¼ü
+            //å³é”®
             if (e.getKeyCode() == e.VK_RIGHT) {
                 setLocation(getLocation().x + 10, getLocation().y);
             }

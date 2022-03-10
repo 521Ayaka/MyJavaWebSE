@@ -1,35 +1,35 @@
-package »ù´¡ÖªÊ¶.·´Éä.A5_·´Éä»ñÈ¡³ÉÔ±±äÁ¿;
+package åŸºç¡€çŸ¥è¯†.åå°„.A5_åå°„è·å–æˆå‘˜å˜é‡;
 /*
-Í¨¹ı·´Éä»ñÈ¡ ³ÉÔ±±äÁ¿:
+é€šè¿‡åå°„è·å– æˆå‘˜å˜é‡:
 
-»ñÈ¡¹«¹²³ÉÔ±±äÁ¿ Êı×é:
+è·å–å…¬å…±æˆå‘˜å˜é‡ æ•°ç»„:
         Field[]	getFields()
-        ·µ»Ø°üº¬Ò»¸öÊı×é Field¶ÔÏó·´ÉäÓÉ´Ë±íÊ¾µÄÀà»ò½Ó¿ÚµÄËùÓĞ¿É·ÃÎÊµÄ¹«¹²×Ö¶Î Àà¶ÔÏó¡£
+        è¿”å›åŒ…å«ä¸€ä¸ªæ•°ç»„ Fieldå¯¹è±¡åå°„ç”±æ­¤è¡¨ç¤ºçš„ç±»æˆ–æ¥å£çš„æ‰€æœ‰å¯è®¿é—®çš„å…¬å…±å­—æ®µ ç±»å¯¹è±¡ã€‚
 
-»ñÈ¡ËùÓĞ³ÉÔ±±äÁ¿ Êı×é:
+è·å–æ‰€æœ‰æˆå‘˜å˜é‡ æ•°ç»„:
         Field[]	getDeclaredFields()
-        ·µ»ØµÄÊı×é Field¶ÔÏó·´Ó³´Ë±íÊ¾µÄÀà»ò½Ó¿ÚÉùÃ÷µÄËùÓĞ×Ö¶Î Àà¶ÔÏó¡£
+        è¿”å›çš„æ•°ç»„ Fieldå¯¹è±¡åæ˜ æ­¤è¡¨ç¤ºçš„ç±»æˆ–æ¥å£å£°æ˜çš„æ‰€æœ‰å­—æ®µ ç±»å¯¹è±¡ã€‚
 
 =======================================================================================
 
-»ñÈ¡¹«¹²³ÉÔ±±äÁ¿µÄÒ»¸ö:
+è·å–å…¬å…±æˆå‘˜å˜é‡çš„ä¸€ä¸ª:
         Field[]	getFields(String name)
 
-»ñÈ¡ËùÓĞ³ÉÔ±±äÁ¿ÖĞµÄÒ»¸ö:
+è·å–æ‰€æœ‰æˆå‘˜å˜é‡ä¸­çš„ä¸€ä¸ª:
         Field[]	getDeclaredFields(String name)
 
-²ÎÊıÊÇ: ³ÉÔ±±äÁ¿Ãû³Æ
+å‚æ•°æ˜¯: æˆå‘˜å˜é‡åç§°
 
 =======================================================================================
 
-FieldÀàµ±ÖĞÓĞÒ»¸ö·½·¨:
+Fieldç±»å½“ä¸­æœ‰ä¸€ä¸ªæ–¹æ³•:
         void set(Object obj, Object value)
-        ½«Ö¸¶¨¶ÔÏó±äÁ¿ÉÏ´Ë Field ¶ÔÏó±íÊ¾µÄ×Ö¶ÎÉèÖÃÎªÖ¸¶¨µÄĞÂÖµ¡£
+        å°†æŒ‡å®šå¯¹è±¡å˜é‡ä¸Šæ­¤ Field å¯¹è±¡è¡¨ç¤ºçš„å­—æ®µè®¾ç½®ä¸ºæŒ‡å®šçš„æ–°å€¼ã€‚
 
 */
 
 
-import »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student;
+import åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -39,8 +39,8 @@ public class GetField {
 
     public static void main(String[] args) throws NoSuchFieldException, ClassNotFoundException, IllegalAccessException, InvocationTargetException, NoSuchMethodException, InstantiationException {
 
-        //Ê×ÏÈ´´½¨class¶ÔÏó
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        //é¦–å…ˆåˆ›å»ºclasså¯¹è±¡
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
 
         method1(c);//test: getFields
         method2(c);//test: getDeclaredFields
@@ -48,24 +48,24 @@ public class GetField {
         method3(c);//test: getField
         method4(c);//test: getDeclaredField
 
-        method5(c);//Ê¹ÓÃ
-        //TODO: ¾ßÌå¿´Á·Ï° ½â¾ö·½°¸
+        method5(c);//ä½¿ç”¨
+        //TODO: å…·ä½“çœ‹ç»ƒä¹  è§£å†³æ–¹æ¡ˆ
 
     }
 
 
     public static void method1(Class<?> c) {
         System.out.println("======================================================================\n");
-        //»ñÈ¡¹«¹²³ÉÔ±±äÁ¿¡£
+        //è·å–å…¬å…±æˆå‘˜å˜é‡ã€‚
         Field[] fs = c.getFields();
-        //±éÀú
+        //éå†
         for (Field f : fs) {
             System.out.println(f);
         }
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        //Ö»ÓĞ¹«¹²³ÉÔ±±äÁ¿
-        public java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.id
+        //åªæœ‰å…¬å…±æˆå‘˜å˜é‡
+        public java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.id
 
         */
         System.out.println("\n======================================================================\n");
@@ -73,28 +73,28 @@ public class GetField {
 
 
     public static void method2(Class<?> c) {
-        //»ñÈ¡cµÄËùÓĞ³ÉÔ±±äÁ¿
+        //è·å–cçš„æ‰€æœ‰æˆå‘˜å˜é‡
         Field[] fs = c.getDeclaredFields();
-        //±éÀú
+        //éå†
         for (Field f : fs) {
             System.out.println(f);
-        }/*ÔËĞĞ½á¹û:
+        }/*è¿è¡Œç»“æœ:
 
-        private java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.name
-        int »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.age
-        public java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.id
+        private java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.name
+        int åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.age
+        public java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.id
 
         */
         System.out.println("\n======================================================================\n");
     }
 
     public static void method3(Class<?> c) throws NoSuchFieldException {
-        //»ñÈ¡µ¥¸ö¹«¹²³ÉÔ±±äÁ¿
-        Field f = c.getField("id");//²ÎÊıÊÇ [³ÉÔ±±äÁ¿Ãû]
+        //è·å–å•ä¸ªå…¬å…±æˆå‘˜å˜é‡
+        Field f = c.getField("id");//å‚æ•°æ˜¯ [æˆå‘˜å˜é‡å]
         System.out.println(f);
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
-        public java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.id
+        public java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.id
 
         */
         System.out.println("\n======================================================================\n");
@@ -102,51 +102,51 @@ public class GetField {
 
 
     public static void method4(Class<?> c) throws NoSuchFieldException {
-        //»ñÈ¡È«²¿µ±ÖĞµÄµ¥¸ö³ÉÔ±±äÁ¿
+        //è·å–å…¨éƒ¨å½“ä¸­çš„å•ä¸ªæˆå‘˜å˜é‡
 
 
-        //»ñÈ¡: Ä¬ÈÏ³ÉÔ±±äÁ¿ int age;
+        //è·å–: é»˜è®¤æˆå‘˜å˜é‡ int age;
         Field age = c.getDeclaredField("age");
         System.out.println(age);
-        //ÔËĞĞ½á¹û: int »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.age
+        //è¿è¡Œç»“æœ: int åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.age
 
 
-        //»ñÈ¡: Ë½ÓĞ³ÉÔ±±äÁ¿ private String name;
+        //è·å–: ç§æœ‰æˆå‘˜å˜é‡ private String name;
         Field name = c.getDeclaredField("name");
         System.out.println(name);
-        //ÔËĞĞ½á¹û: private java.lang.String »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student.name
+        //è¿è¡Œç»“æœ: private java.lang.String åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student.name
 
         System.out.println("\n======================================================================\n");
     }
 
 
     public static void method5(Class<?> c) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
-        //»ñÈ¡: Ë½ÓĞ³ÉÔ±±äÁ¿ private String name;
+        //è·å–: ç§æœ‰æˆå‘˜å˜é‡ private String name;
         Field name = c.getDeclaredField("name");
-        //»ñÈ¡: Ä¬ÈÏ³ÉÔ±±äÁ¿ int age;
+        //è·å–: é»˜è®¤æˆå‘˜å˜é‡ int age;
         Field age = c.getDeclaredField("age");
-        //»ñÈ¡: ¹«¹²³ÉÔ±±äÁ¿ public int id;
+        //è·å–: å…¬å…±æˆå‘˜å˜é‡ public int id;
         Field id = c.getDeclaredField("id");
 
 
-        //·´Éä»ñÈ¡cµÄ¹¹ÔìÆ÷¶ÔÏó¡£
+        //åå°„è·å–cçš„æ„é€ å™¨å¯¹è±¡ã€‚
         Constructor<?> con = c.getConstructor();
         Object obj = con.newInstance();
 
-        // stu.id = id; ÕâÖÖ·½·¨Ê¹ÓÃÊÇ´íÎóµÄ
+        // stu.id = id; è¿™ç§æ–¹æ³•ä½¿ç”¨æ˜¯é”™è¯¯çš„
         /*
-        FieldÀàµ±ÖĞÓĞÒ»¸ö·½·¨:
+        Fieldç±»å½“ä¸­æœ‰ä¸€ä¸ªæ–¹æ³•:
                 void set(Object obj, Object value)
-                ½«Ö¸¶¨¶ÔÏó±äÁ¿ÉÏ´Ë Field ¶ÔÏó±íÊ¾µÄ×Ö¶ÎÉèÖÃÎªÖ¸¶¨µÄĞÂÖµ¡£
+                å°†æŒ‡å®šå¯¹è±¡å˜é‡ä¸Šæ­¤ Field å¯¹è±¡è¡¨ç¤ºçš„å­—æ®µè®¾ç½®ä¸ºæŒ‡å®šçš„æ–°å€¼ã€‚
         */
-        //name.set(obj,"ŞÏŞÎ½´"); //nameÊÇË½ÓĞ³ÉÔ±±äÁ¿
-        //age.set(obj,9);        //ageÊÇÄ¬ÈÏ³ÉÔ±±äÁ¿
-        //½â¾ö·½·¨:  ¿´Á·Ï°
-        //TODO: ¾ßÌå¿´Á·Ï° ½â¾ö·½°¸
+        //name.set(obj,"å°´å°¬é…±"); //nameæ˜¯ç§æœ‰æˆå‘˜å˜é‡
+        //age.set(obj,9);        //ageæ˜¯é»˜è®¤æˆå‘˜å˜é‡
+        //è§£å†³æ–¹æ³•:  çœ‹ç»ƒä¹ 
+        //TODO: å…·ä½“çœ‹ç»ƒä¹  è§£å†³æ–¹æ¡ˆ
         id.set(obj, "202002");
 
         /*
-        ¸øobjµÄ [³ÉÔ±±äÁ¿ id] ¸³ÖµÎª 202002
+        ç»™objçš„ [æˆå‘˜å˜é‡ id] èµ‹å€¼ä¸º 202002
         */
 
         System.out.println(obj);

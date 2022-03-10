@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Ê±¼äÀà.Calendar;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.æ—¶é—´ç±».Calendar;
 /*
-³ÉÔ±·½·¨:
- public int get(int field){//...} ·µ»Ø¸ø¶¨ÈÕÀú×Ö¶ÎµÄÖµ¡£//²ÎÊıÊÇµ÷ÓÃCalendarµÄ [¾²Ì¬·½·¨] !
+æˆå‘˜æ–¹æ³•:
+ public int get(int field){//...} è¿”å›ç»™å®šæ—¥å†å­—æ®µçš„å€¼ã€‚//å‚æ•°æ˜¯è°ƒç”¨Calendarçš„ [é™æ€æ–¹æ³•] !
 
- public abstract void add(int field,int amount) ¸ù¾İÈÕÀúµÄ¹æÔò£¬½«Ö¸¶¨µÄÊ±¼äÁ¿Ìí¼Ó»ò¼õÈ¥¸ø¶¨µÄÈÕÀú×Ö¶Î
+ public abstract void add(int field,int amount) æ ¹æ®æ—¥å†çš„è§„åˆ™ï¼Œå°†æŒ‡å®šçš„æ—¶é—´é‡æ·»åŠ æˆ–å‡å»ç»™å®šçš„æ—¥å†å­—æ®µ
 
- public final void set(int year, int month, int date){//...} ÉèÖÃµ±Ç°ÈÕÀúµÄÄêÔÂÈÕ
+ public final void set(int year, int month, int date){//...} è®¾ç½®å½“å‰æ—¥å†çš„å¹´æœˆæ—¥
 */
 
 import java.util.Calendar;
@@ -15,44 +15,44 @@ public class Calendar_Lei_Method {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃ¶àÌ¬½øĞĞ´´½¨Calendar¶ÔÏó¡£
+        //ä½¿ç”¨å¤šæ€è¿›è¡Œåˆ›å»ºCalendarå¯¹è±¡ã€‚
         Calendar calendar = Calendar.getInstance();
         System.out.println(calendar);
         //java.util.GregorianCalendar[time=1623932023895,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2021,MONTH=5,WEEK_OF_YEAR=25,WEEK_OF_MONTH=3,DAY_OF_MONTH=17,DAY_OF_YEAR=168,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=3,AM_PM=1,HOUR=8,HOUR_OF_DAY=20,MINUTE=13,SECOND=43,MILLISECOND=895,ZONE_OFFSET=28800000,DST_OFFSET=0]
 
 
-        //·½·¨Ê¹ÓÃ
-        //public int get(int field){//...} ·µ»Ø¸ø¶¨ÈÕÀú×Ö¶ÎµÄÖµ¡£//²ÎÊıÊÇµ÷ÓÃCalendarµÄ [¾²Ì¬·½·¨] !
+        //æ–¹æ³•ä½¿ç”¨
+        //public int get(int field){//...} è¿”å›ç»™å®šæ—¥å†å­—æ®µçš„å€¼ã€‚//å‚æ•°æ˜¯è°ƒç”¨Calendarçš„ [é™æ€æ–¹æ³•] !
         int year1 = calendar.get(Calendar.YEAR);
-        int month1 = calendar.get(Calendar.MONTH) + 1; // ¡¾±ğÍüÁË¼Ó1¡¿ £¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        int month1 = calendar.get(Calendar.MONTH) + 1; // ã€åˆ«å¿˜äº†åŠ 1ã€‘ ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         int date1 = calendar.get(Calendar.DATE);
-        System.out.println(year1 + "Äê" + month1 + "ÔÂ" + date1 + "ÈÕ");
-        //2021Äê6ÔÂ17ÈÕ
+        System.out.println(year1 + "å¹´" + month1 + "æœˆ" + date1 + "æ—¥");
+        //2021å¹´6æœˆ17æ—¥
 
         System.out.println("============================================================================================");
 
-        //public abstract void add(int field,int amount) ¸ù¾İÈÕÀúµÄ¹æÔò£¬½«Ö¸¶¨µÄÊ±¼äÁ¿Ìí¼Ó»ò¼õÈ¥¸ø¶¨µÄÈÕÀú×Ö¶Î
-        //ÏëÒª10ÄêºóµÄ½ñÌì£¬½ñÌìµÄÇ°10Ìì ¿ÉÒÔÊ¹ÓÃadd()·½·¨½øĞĞ²Ù×÷
+        //public abstract void add(int field,int amount) æ ¹æ®æ—¥å†çš„è§„åˆ™ï¼Œå°†æŒ‡å®šçš„æ—¶é—´é‡æ·»åŠ æˆ–å‡å»ç»™å®šçš„æ—¥å†å­—æ®µ
+        //æƒ³è¦10å¹´åçš„ä»Šå¤©ï¼Œä»Šå¤©çš„å‰10å¤© å¯ä»¥ä½¿ç”¨add()æ–¹æ³•è¿›è¡Œæ“ä½œ
         calendar.add(Calendar.YEAR , 10);
         calendar.add(Calendar.DATE, -10);
-        //´òÓ¡----------------------------------
+        //æ‰“å°----------------------------------
         int year2 = calendar.get(Calendar.YEAR);
-        int month2 = calendar.get(Calendar.MONTH) + 1; // ¡¾±ğÍüÁË¼Ó1¡¿ £¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        int month2 = calendar.get(Calendar.MONTH) + 1; // ã€åˆ«å¿˜äº†åŠ 1ã€‘ ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         int date2 = calendar.get(Calendar.DATE);
-        System.out.println(year2 + "Äê" + month2 + "ÔÂ" + date2 + "ÈÕ");
-        //2031Äê6ÔÂ7ÈÕ
+        System.out.println(year2 + "å¹´" + month2 + "æœˆ" + date2 + "æ—¥");
+        //2031å¹´6æœˆ7æ—¥
 
         System.out.println("============================================================================================");
 
-        //public final void set(int year, int month, int date){//...} ÉèÖÃµ±Ç°ÈÕÀúµÄÄêÔÂÈÕ
-        //°ÑÈÕÆÚÉèÖÃ³É 2222Äê 12ÔÂ 22ÈÕ ¿ÉÒÔÊ¹ÓÃset()·½·¨½øĞĞ²Ù×÷
+        //public final void set(int year, int month, int date){//...} è®¾ç½®å½“å‰æ—¥å†çš„å¹´æœˆæ—¥
+        //æŠŠæ—¥æœŸè®¾ç½®æˆ 2222å¹´ 12æœˆ 22æ—¥ å¯ä»¥ä½¿ç”¨set()æ–¹æ³•è¿›è¡Œæ“ä½œ
         calendar.set(2222,12-1,22); // 2222/12/22
-        //´òÓ¡----------------------------------
+        //æ‰“å°----------------------------------
         int year3 = calendar.get(Calendar.YEAR);
-        int month3 = calendar.get(Calendar.MONTH) + 1; // ¡¾±ğÍüÁË¼Ó1¡¿ £¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+        int month3 = calendar.get(Calendar.MONTH) + 1; // ã€åˆ«å¿˜äº†åŠ 1ã€‘ ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
         int date3 = calendar.get(Calendar.DATE);
-        System.out.println(year3 + "Äê" + month3 + "ÔÂ" + date3 + "ÈÕ");
-        //2223Äê1ÔÂ22ÈÕ
+        System.out.println(year3 + "å¹´" + month3 + "æœˆ" + date3 + "æ—¥");
+        //2223å¹´1æœˆ22æ—¥
         System.out.println("===========================================================================================");
 
         Date dateCalender = calendar.getTime();

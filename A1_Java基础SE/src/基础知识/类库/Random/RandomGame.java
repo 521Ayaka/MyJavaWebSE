@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Random;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Random;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -8,17 +8,17 @@ public class RandomGame {
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
         int num = r.nextInt(100) + 1;
-        System.out.println("ÒÑÉú³É100ÒÔÄÚµÄÕûÊı");
+        System.out.println("å·²ç”Ÿæˆ100ä»¥å†…çš„æ•´æ•°");
         while( true ){
-            System.out.println("ÇëÊäÈëÄãµÄ²Â²â£º");
+            System.out.println("è¯·è¾“å…¥ä½ çš„çŒœæµ‹ï¼š");
 
             int x = sc.nextInt();
             if( x > num){
-                System.out.println("ÊäÈëµÄÊı×ÖÌ«´óÁË£¬ÇëÖØĞÂÊäÈë£º");
+                System.out.println("è¾“å…¥çš„æ•°å­—å¤ªå¤§äº†ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
             }else if( x < num ){
-                System.out.println("ÊäÈëµÄÊı×ÖÌ«Ğ¡ÁË£¬ÇëÖØĞÂÊäÈë£º");
+                System.out.println("è¾“å…¥çš„æ•°å­—å¤ªå°äº†ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
             }else{
-                System.out.println("¹§Ï²Äã£¬´ğ¶ÔÁË£¡");
+                System.out.println("æ­å–œä½ ï¼Œç­”å¯¹äº†ï¼");
                 break;
             }
 

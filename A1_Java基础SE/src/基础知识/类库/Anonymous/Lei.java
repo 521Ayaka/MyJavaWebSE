@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Anonymous;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Anonymous;
 
 public class Lei {
 
     String name;
 
     public void showName() {
-        System.out.println("ÎÒ½Ğ£º" + name);
+        System.out.println("æˆ‘å«ï¼š" + name);
     }
 
 }

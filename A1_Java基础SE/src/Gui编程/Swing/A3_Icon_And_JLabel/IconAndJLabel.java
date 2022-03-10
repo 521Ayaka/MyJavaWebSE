@@ -1,24 +1,24 @@
-package Gui±à³Ì.Swing.A3_Icon_And_JLabel;
+package Guiç¼–ç¨‹.Swing.A3_Icon_And_JLabel;
 
 import javax.swing.*;
 import java.awt.*;
 
 /**
- * IconÊÇÒ»¸ö½Ó¿Ú£¬ĞèÒªÊµÏÖ¸Ã½Ó¿Ú£¬²¢ÖØĞ´ÀïÃæµÄ3¸ö·½·¨
- * IconÒªÔÚ´°ÌåÀïÃæÏÔÊ¾£¬ĞèÒª¼Ì³Ğ´°Ìå
+ * Iconæ˜¯ä¸€ä¸ªæ¥å£ï¼Œéœ€è¦å®ç°è¯¥æ¥å£ï¼Œå¹¶é‡å†™é‡Œé¢çš„3ä¸ªæ–¹æ³•
+ * Iconè¦åœ¨çª—ä½“é‡Œé¢æ˜¾ç¤ºï¼Œéœ€è¦ç»§æ‰¿çª—ä½“
  *
  * extends JFrame implements Icon
  * */
 class MyIcon extends JFrame implements Icon{
 
-    //ÉèÖÃÁ½¸ö³ÉÔ±±äÁ¿/ÊôĞÔ,ÓÃÓÚÉèÖÃ¿í¶È,¸ß¶È
+    //è®¾ç½®ä¸¤ä¸ªæˆå‘˜å˜é‡/å±æ€§,ç”¨äºè®¾ç½®å®½åº¦,é«˜åº¦
     private int width;
     private int height;
 
-    //È»ºóÔÙ´´½¨Á½¸ö¹¹Ôì·½·¨
-    /**ÎŞ²Î¹¹Ôì*/
+    //ç„¶åå†åˆ›å»ºä¸¤ä¸ªæ„é€ æ–¹æ³•
+    /**æ— å‚æ„é€ */
     public MyIcon(){}
-    /**È«²Î¹¹Ôì*/
+    /**å…¨å‚æ„é€ */
     public MyIcon(int width,int height){
         this.width = width;
         this.height = height;
@@ -26,8 +26,8 @@ class MyIcon extends JFrame implements Icon{
 
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
-        //Õâ¸ö·½·¨ÀïÃæÊÇÒª²Ù×÷µÄ
-        //·ÅÈëµÄÎ»ÖÃ , Òª»­µÄÍ¼ĞÎ , Í¼Ïñ´óĞ¡²ÎÊı1 , Í¼ĞÎ´óĞ¡²ÎÊı2
+        //è¿™ä¸ªæ–¹æ³•é‡Œé¢æ˜¯è¦æ“ä½œçš„
+        //æ”¾å…¥çš„ä½ç½® , è¦ç”»çš„å›¾å½¢ , å›¾åƒå¤§å°å‚æ•°1 , å›¾å½¢å¤§å°å‚æ•°2
         g.fillOval(x,y,width,height);
     }
 
@@ -46,27 +46,27 @@ class MyIcon extends JFrame implements Icon{
 
 public class IconAndJLabel {
 
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
 
         new IconAndJLabel().init();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init(){
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         MyIcon setF = new MyIcon(10,10);
-        //Ìí¼ÓÈİÆ÷
+        //æ·»åŠ å®¹å™¨
         Container addF = setF.getContentPane();
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setF.setBounds(500,300,500,400);
         setF.setBackground(new Color(8, 201, 234));
         setF.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setF.setVisible(true);
 
-        //´´½¨Ìí¼Ó×é¼ş
-        JLabel jLabel = new JLabel("Í¼Æ¬±êÇ©", setF, SwingConstants.CENTER);
+        //åˆ›å»ºæ·»åŠ ç»„ä»¶
+        JLabel jLabel = new JLabel("å›¾ç‰‡æ ‡ç­¾", setF, SwingConstants.CENTER);
         addF.add(jLabel);
 
     }

@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A8_LockËø;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A8_Locké”;
 
 public class TestLock {
 
     public static void main(String[] args) {
 
-        //´´½¨ÊµÏÖRunnable½Ó¿ÚÊµÏÖÀà¶ÔÏó
+        //åˆ›å»ºå®ç°Runnableæ¥å£å®ç°ç±»å¯¹è±¡
         MyRunnable mr = new MyRunnable();
-        //´´½¨¶àÏß³Ì mrÎª²ÎÊı
-        Thread t1 = new Thread(mr, "´°¿Ú1");
-        Thread t2 = new Thread(mr, "´°¿Ú2");
-        Thread t3 = new Thread(mr, "´°¿Ú3");
-        //Æô¶¯¶àÏß³Ì
+        //åˆ›å»ºå¤šçº¿ç¨‹ mrä¸ºå‚æ•°
+        Thread t1 = new Thread(mr, "çª—å£1");
+        Thread t2 = new Thread(mr, "çª—å£2");
+        Thread t3 = new Thread(mr, "çª—å£3");
+        //å¯åŠ¨å¤šçº¿ç¨‹
         t1.start();
         t2.start();
         t3.start();

@@ -1,7 +1,7 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.A_TCPÑ§Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.A_TCPå­¦ä¹ ;
 /*
 ServerSocket:
-    Õâ¸öÀàÊµÏÖÁË·şÎñÆ÷Ì×½Ó×Ö¡£·şÎñÆ÷Ì×½Ó×ÖµÈ´ıÍ¨¹ıÍøÂç½øÈëµÄÇëÇó¡£Ëü¸ù¾İ¸ÃÇëÇóÖ´ĞĞÒ»Ğ©²Ù×÷£¬È»ºó¿ÉÄÜ½«½á¹û·µ»Ø¸øÇëÇóÕß¡£
+    è¿™ä¸ªç±»å®ç°äº†æœåŠ¡å™¨å¥—æ¥å­—ã€‚æœåŠ¡å™¨å¥—æ¥å­—ç­‰å¾…é€šè¿‡ç½‘ç»œè¿›å…¥çš„è¯·æ±‚ã€‚å®ƒæ ¹æ®è¯¥è¯·æ±‚æ‰§è¡Œä¸€äº›æ“ä½œï¼Œç„¶åå¯èƒ½å°†ç»“æœè¿”å›ç»™è¯·æ±‚è€…ã€‚
 */
 
 
@@ -11,34 +11,34 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 /*
-    ·şÎñÆ÷: ½ÓÊÕÊı¾İ, ¸ø³ö·´À¡
+    æœåŠ¡å™¨: æ¥æ”¶æ•°æ®, ç»™å‡ºåé¦ˆ
 */
 
 public class Test_ReceiveTCP {
 
     public static void main(String[] args) throws IOException {
 
-        //´´½¨·şÎñ¶ËµÄSocket¶ÔÏó(ServerSocket)
-        ServerSocket ss = new ServerSocket(/*¶Ë¿ÚºÅ*/10000);
+        //åˆ›å»ºæœåŠ¡ç«¯çš„Socketå¯¹è±¡(ServerSocket)
+        ServerSocket ss = new ServerSocket(/*ç«¯å£å·*/10000);
 
-        //¼àÌı¿Í»§¶ËÁ¬½Ó, ·µ»ØÒ»¸öSocket¶ÔÏó
-        // Socket accept() ÕìÌı²¢½ÓÊÜµ½´ËÌ×½Ó×ÖµÄÁ¬½Ó¡£
+        //ç›‘å¬å®¢æˆ·ç«¯è¿æ¥, è¿”å›ä¸€ä¸ªSocketå¯¹è±¡
+        // Socket accept() ä¾¦å¬å¹¶æ¥å—åˆ°æ­¤å¥—æ¥å­—çš„è¿æ¥ã€‚
         Socket accept = ss.accept();
 
-        //»ñÈ¡ÊäÈëÁ÷, ¶ÁÊı¾İ, ²¢°ÑÊı¾İÏÔÊ¾ÔÚ¿ØÖÆÌ¨
+        //è·å–è¾“å…¥æµ, è¯»æ•°æ®, å¹¶æŠŠæ•°æ®æ˜¾ç¤ºåœ¨æ§åˆ¶å°
         InputStream is = accept.getInputStream();
         byte[] bys = new byte[1024];
-        int len = is.read(bys);//¶ÁÈ¡Êı¾İ »ñÈ¡Êı¾İ³¤¶È
-        String datas = new String(bys, 0, len);//»ñÈ¡½ÓÊÕÊı¾İ£¬×Ö·û´®ĞĞ
-        System.out.println("·şÎñÆ÷½ÓÊÕµ½Êı¾İ:" + datas);
+        int len = is.read(bys);//è¯»å–æ•°æ® è·å–æ•°æ®é•¿åº¦
+        String datas = new String(bys, 0, len);//è·å–æ¥æ”¶æ•°æ®ï¼Œå­—ç¬¦ä¸²è¡Œ
+        System.out.println("æœåŠ¡å™¨æ¥æ”¶åˆ°æ•°æ®:" + datas);
 
 
-        //¸ø³ö·´À¡
+        //ç»™å‡ºåé¦ˆ
         OutputStream os = accept.getOutputStream();
-        os.write("·şÎñÆ÷½ÓÊÕµ½Êı¾İ".getBytes());
-        //¾ÍÊÇioÁ÷Ğ´ÈëÊı¾İ[byteÊı×é] Ğ´Èë·´À¡¡£
+        os.write("æœåŠ¡å™¨æ¥æ”¶åˆ°æ•°æ®".getBytes());
+        //å°±æ˜¯ioæµå†™å…¥æ•°æ®[byteæ•°ç»„] å†™å…¥åé¦ˆã€‚
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         ss.close();
 
     }

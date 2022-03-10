@@ -1,9 +1,9 @@
-package 基础知识.接口.Interface03;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.Interface03;
 
 public class Static {
 
     public static void method(){
-        System.out.println("有时候静态方法都不用创建对象，直接使用类名称.静态方法名();");
+        System.out.println("鏈夋椂鍊欓潤鎬佹柟娉曢兘涓嶇敤鍒涘缓瀵硅薄锛岀洿鎺ヤ娇鐢ㄧ被鍚嶇О.闈欐�佹柟娉曞悕();");
     }
 
 }

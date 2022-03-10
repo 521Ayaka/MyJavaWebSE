@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A7_ÒıÓÃ¹¹ÔìÆ÷;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A7_å¼•ç”¨æ„é€ å™¨;
 
 public class Student {
     private String name;

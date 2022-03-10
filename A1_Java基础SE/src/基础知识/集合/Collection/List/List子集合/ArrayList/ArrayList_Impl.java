@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List×Ó¼¯ºÏ.ArrayList;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listå­é›†åˆ.ArrayList;
 
 public class ArrayList_Impl {
 

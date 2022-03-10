@@ -1,12 +1,12 @@
-package ª˘¥°÷™ ∂.¿‡ø‚.GetSet;
+package Âü∫Á°ÄÁü•ËØÜ.Á±ªÂ∫ì.GetSet;
 
 public class FuXi {
     public static void main(String[] args) {
-        System.out.println("=========∏¥œ∞========");
+        System.out.println("=========Â§ç‰π†========");
 
         LeiFuXi lei1 = new LeiFuXi();
         lei1.setGanga(888);
-        lei1.setName("ﬁœﬁŒ¡À");
+        lei1.setName("Â∞¥Â∞¨‰∫Ü");
         lei1.setWen(true);
 
         System.out.println(lei1.getGanga());
@@ -15,7 +15,7 @@ public class FuXi {
 
         System.out.println("===================================================");
 
-        LeiFuXi lei2 = new LeiFuXi(66666,"ﬁœﬁŒﬁœﬁŒﬁœﬁŒ¡À",true);
+        LeiFuXi lei2 = new LeiFuXi(66666,"Â∞¥Â∞¨Â∞¥Â∞¨Â∞¥Â∞¨‰∫Ü",true);
         System.out.println(lei2.getGanga());
         System.out.println(lei2.getName());
         System.out.println(lei2.isWen());

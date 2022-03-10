@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A4_ÌØÊâÇé¿öµÄLambda±í´ïÊ½;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A4_ç‰¹æ®Šæƒ…å†µçš„Lambdaè¡¨è¾¾å¼;
 
 public interface RutInterface {
 

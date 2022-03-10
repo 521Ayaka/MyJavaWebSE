@@ -1,18 +1,18 @@
-package »ù´¡ÖªÊ¶.·´Éä.A6_·´Éä»ñÈ¡³ÉÔ±·½·¨.Á·Ï°;
+package åŸºç¡€çŸ¥è¯†.åå°„.A6_åå°„è·å–æˆå‘˜æ–¹æ³•.ç»ƒä¹ ;
 /*
-Í¨¹ı·´Éä, Íê³ÉÏÂÃæ¹ı³Ì:
+é€šè¿‡åå°„, å®Œæˆä¸‹é¢è¿‡ç¨‹:
 
-        //´´½¨¶ÔÏó
+        //åˆ›å»ºå¯¹è±¡
         Student stu = new Student();
         stu.method1();
-        stu.method2("ŞÏŞÎ½´");
-        String ss = stu.method3("ŞÏŞÎ½´",30);
+        stu.method2("å°´å°¬é…±");
+        String ss = stu.method3("å°´å°¬é…±",30);
         System.out.println(ss);
         s.me();
 
 */
 
-import »ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student;
+import åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -23,7 +23,7 @@ public class UseMethodClass {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 
         //Student stu = new Student();
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
         Constructor<?> con = c.getDeclaredConstructor();
         Object obj = con.newInstance();
 
@@ -31,40 +31,40 @@ public class UseMethodClass {
         Method me1 = c.getDeclaredMethod("method1");
         me1.invoke(obj);
 
-        //stu.method2("ŞÏŞÎ½´");
+        //stu.method2("å°´å°¬é…±");
         Method me2 = c.getDeclaredMethod("method2", String.class);
-        me2.invoke(obj, "ŞÏŞÎ½´");
+        me2.invoke(obj, "å°´å°¬é…±");
 
-        //String ss = stu.method3("ŞÏŞÎ½´",30);
+        //String ss = stu.method3("å°´å°¬é…±",30);
         //System.out.println(ss);
         Method me3 = c.getDeclaredMethod("method3", String.class, int.class);
-        String str = (String) me3.invoke(obj, "ŞÏŞÎ½´", 17);
+        String str = (String) me3.invoke(obj, "å°´å°¬é…±", 17);
         System.out.println(str);
 
         //s.me();
         Method me = c.getDeclaredMethod("me");
         me.setAccessible(true);
-        me.invoke(obj);//Èç¹ûÃ»ÓĞme.setAccessible(true);Óï¾ä ³öÏÖÒì³£: IllegalAccessException
+        me.invoke(obj);//å¦‚æœæ²¡æœ‰me.setAccessible(true);è¯­å¥ å‡ºç°å¼‚å¸¸: IllegalAccessException
       /*
-      me()·½·¨ÊÇË½ÓĞ·½·¨, ³öÏÖ·Ç·¨·ÃÎÊÒì³£:
+      me()æ–¹æ³•æ˜¯ç§æœ‰æ–¹æ³•, å‡ºç°éæ³•è®¿é—®å¼‚å¸¸:
 
-      ½â¾ö·½°¸: ±©Á¦·ÃÎÊ:
+      è§£å†³æ–¹æ¡ˆ: æš´åŠ›è®¿é—®:
       public void setAccessible(boolean flag)
-      Ô½¹ıÈ¨ÏŞ¼ì²â¡£                           */
+      è¶Šè¿‡æƒé™æ£€æµ‹ã€‚                           */
 
 
         System.out.println("=========================================");
         System.out.println(obj);
 
-        /*ÔËĞĞ½á¹û:
+        /*è¿è¡Œç»“æœ:
 
         method1
-        method2  ĞÕÃû:ŞÏŞÎ½´
-        method3  ĞÕÃû:ŞÏŞÎ½´ÄêÁä:17
-        ĞÕÃû:ŞÏŞÎ½´ÄêÁä:17
-        meË½ÓĞ·½·¨
+        method2  å§“å:å°´å°¬é…±
+        method3  å§“å:å°´å°¬é…±å¹´é¾„:17
+        å§“å:å°´å°¬é…±å¹´é¾„:17
+        meç§æœ‰æ–¹æ³•
         =========================================
-        Student{name='ŞÏŞÎ½´', age=17, id='null'}
+        Student{name='å°´å°¬é…±', age=17, id='null'}
 */
     }
 

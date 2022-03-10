@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A4_Ñ§Éú¼¯ºÏµ½ÎÄ¼ş;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A4_å­¦ç”Ÿé›†åˆåˆ°æ–‡ä»¶;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -9,22 +9,22 @@ public class StudentArrayToFile {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new StudentArrayToFile().setStudentToFile();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void setStudentToFile() {
 
-        //´´½¨Ñ§Éú¶ÔÏó
-        Student stu1 = new Student("ŞÏŞÎ½´", 2020521, 18);
-        Student stu2 = new Student("ŞÏŞÎµÛ", 2020999, 20);
-        Student stu3 = new Student("ŞÏŞÎÁË", 2020555, 19);
-        Student stu4 = new Student("²»ŞÏŞÎ", 2020001, 9);
-        Student stu5 = new Student("ºÜŞÏŞÎ", 2020020, 99);
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+        Student stu1 = new Student("å°´å°¬é…±", 2020521, 18);
+        Student stu2 = new Student("å°´å°¬å¸", 2020999, 20);
+        Student stu3 = new Student("å°´å°¬äº†", 2020555, 19);
+        Student stu4 = new Student("ä¸å°´å°¬", 2020001, 9);
+        Student stu5 = new Student("å¾ˆå°´å°¬", 2020020, 99);
 
-        //´´½¨¼¯ºÏ,²¢·ÅÈëÑ§Éú¶ÔÏó
+        //åˆ›å»ºé›†åˆ,å¹¶æ”¾å…¥å­¦ç”Ÿå¯¹è±¡
         ArrayList<Student> list = new ArrayList<>();
         list.add(stu1);
         list.add(stu2);
@@ -32,17 +32,17 @@ public class StudentArrayToFile {
         list.add(stu4);
         list.add(stu5);
 
-        //´´½¨×Ö·û»º³åÊä³öÁ÷ À´ Ğ´Êı¾İ
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²è¾“å‡ºæµ æ¥ å†™æ•°æ®
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\A4_Ñ§Éú¼¯ºÏµ½ÎÄ¼ş\\Ñ§ÉúÎÄ¼ş.txt"));
-            //¶ÁÈ¡Êı×éÄÚÈİ
+            bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\A4_å­¦ç”Ÿé›†åˆåˆ°æ–‡ä»¶\\å­¦ç”Ÿæ–‡ä»¶.txt"));
+            //è¯»å–æ•°ç»„å†…å®¹
             for (Student stu : list) {
-                String str = "ĞÕÃû: " + stu.getName() + ", Ñ§ºÅ: " + stu.getId() + ", ÄêÁä: " + stu.getAge();
-                //Ğ´Èë[Ñ§ÉúÎÄ¼ş]µ±ÖĞ
-                bw.write(str);//Ğ´Èë
-                bw.newLine();//»»ĞĞ
-                bw.flush();//Ë¢ĞÂ
+                String str = "å§“å: " + stu.getName() + ", å­¦å·: " + stu.getId() + ", å¹´é¾„: " + stu.getAge();
+                //å†™å…¥[å­¦ç”Ÿæ–‡ä»¶]å½“ä¸­
+                bw.write(str);//å†™å…¥
+                bw.newLine();//æ¢è¡Œ
+                bw.flush();//åˆ·æ–°
             }
 
         } catch (IOException e) {
@@ -50,7 +50,7 @@ public class StudentArrayToFile {
         } finally {
             if (bw != null) {
                 try {
-                    bw.close();//ÊÍ·Å×ÊÔ´
+                    bw.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

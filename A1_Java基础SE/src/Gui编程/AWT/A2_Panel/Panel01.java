@@ -1,40 +1,40 @@
-package Gui±à³Ì.AWT.A2_Panel;
+package Guiç¼–ç¨‹.AWT.A2_Panel;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-//PanelÃæ°å ¿ÉÒÔ¿´³ÉÊÇÒ»¸ö¿Õ¼ä£¬µ«ÊÇ²»ÄÜµ¥¶À´æÔÚ¡£
+//Panelé¢æ¿ å¯ä»¥çœ‹æˆæ˜¯ä¸€ä¸ªç©ºé—´ï¼Œä½†æ˜¯ä¸èƒ½å•ç‹¬å­˜åœ¨ã€‚
 public class Panel01 {
 
     public static void main(String[] args) {
 
-        //Ìí¼Ó´°Ìå
-        Frame frame = new Frame("´°ÌåÃû³Æ");
+        //æ·»åŠ çª—ä½“
+        Frame frame = new Frame("çª—ä½“åç§°");
         Panel panel = new Panel();
 
-        //ÉèÖÃ²¼¾Ö
+        //è®¾ç½®å¸ƒå±€
         frame.setLayout(null);
 
-        //ÉèÖÃ´°ÌåÎ»ÖÃ¡¢´óĞ¡¡¢ÑÕÉ«
+        //è®¾ç½®çª—ä½“ä½ç½®ã€å¤§å°ã€é¢œè‰²
         frame.setBounds(300,300,600,500);
         frame.setBackground(new Color(8, 201, 234));
 
-        //ÉèÖÃÃæ°åÏà¶ÔÓÚ´°ÌåÎ»ÖÃ¡¢´óĞ¡£¬Ãæ°åÑÕÉ«
+        //è®¾ç½®é¢æ¿ç›¸å¯¹äºçª—ä½“ä½ç½®ã€å¤§å°ï¼Œé¢æ¿é¢œè‰²
         panel.setBounds(100,100,200,200);
         panel.setBackground(new Color(226, 23, 216));
 
-        //½«Ãæ°åÌí¼Óµ½´°Ìå
+        //å°†é¢æ¿æ·»åŠ åˆ°çª—ä½“
         frame.add(panel);
 
-        //ÉèÖÃ¿ÉÊÓ»¯
+        //è®¾ç½®å¯è§†åŒ–
         frame.setVisible(true);
 
-        //ÉèÖÃ´°¿Ú¹Ø±ÕÊÂ¼ş
-        //¼àÌıÊ¹ÊÂ¼ş£¬¼àÌı´°¿Ú¹Ø±ÕÊÂ¼ş System.exit(0);
-        //ÊÊÅäÆ÷Ä£Ê½:
+        //è®¾ç½®çª—å£å…³é—­äº‹ä»¶
+        //ç›‘å¬ä½¿äº‹ä»¶ï¼Œç›‘å¬çª—å£å…³é—­äº‹ä»¶ System.exit(0);
+        //é€‚é…å™¨æ¨¡å¼:
         frame.addWindowListener(new WindowAdapter() {
-            //´°¿Úµã»÷¹Ø±ÕµÄÊ±ºòĞèÒª×öµÄÊÂÇé
+            //çª—å£ç‚¹å‡»å…³é—­çš„æ—¶å€™éœ€è¦åšçš„äº‹æƒ…
             @Override
             public void windowClosing(WindowEvent e) {
                 System.exit(0);

@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.UDPĞ­Òé.A_UDPÑ§Ï°;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.UDPåè®®.A_UDPå­¦ä¹ ;
 /*
-    UDP·¢ËÍÊı¾İµÄ²½Öè
-        1:´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó(DatagramSocket)
-        2:´´½¨Ò»¸öÊı¾İ°ü, ÓÃÓÚ½ÓÊÕÊı¾İ
-        3:µ÷ÓÃDatagramSocket¶ÔÏóµÄ·½·¨½ÓÊÕÊı¾İ
-        4:½âÎöÊı¾İ°ü, ²¢°ÑÊı¾İÔÚ¿ØÖÆÌ¨ÏÔÊ¾
-        5:¹Ø±Õ·¢ËÍ¶Ë
+    UDPå‘é€æ•°æ®çš„æ­¥éª¤
+        1:åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡(DatagramSocket)
+        2:åˆ›å»ºä¸€ä¸ªæ•°æ®åŒ…, ç”¨äºæ¥æ”¶æ•°æ®
+        3:è°ƒç”¨DatagramSocketå¯¹è±¡çš„æ–¹æ³•æ¥æ”¶æ•°æ®
+        4:è§£ææ•°æ®åŒ…, å¹¶æŠŠæ•°æ®åœ¨æ§åˆ¶å°æ˜¾ç¤º
+        5:å…³é—­å‘é€ç«¯
 
 */
 
@@ -18,35 +18,35 @@ public class TestUDP_02 {
     public static void main(String[] args) throws IOException {
 
 
-        //1:´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó(DatagramSocket)
-        //  ¹¹Ôì·½·¨:DatagramSocket(int port)¹¹ÔìÊı¾İ±¨Ì×½Ó×Ö²¢½«Æä°ó¶¨µ½±¾µØÖ÷»úÉÏµÄÖ¸¶¨¶Ë¿Ú¡£
+        //1:åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡(DatagramSocket)
+        //  æ„é€ æ–¹æ³•:DatagramSocket(int port)æ„é€ æ•°æ®æŠ¥å¥—æ¥å­—å¹¶å°†å…¶ç»‘å®šåˆ°æœ¬åœ°ä¸»æœºä¸Šçš„æŒ‡å®šç«¯å£ã€‚
         DatagramSocket ds = new DatagramSocket(10086);
 
-        //2:´´½¨Ò»¸öÊı¾İ°ü, ÓÃÓÚ½ÓÊÕÊı¾İ
-        //  ¹¹Ôì·½·¨:DatagramPacket(byte[] buf, int length)¹¹ÔìÒ»¸ö DatagramPacketÓÃÓÚ½ÓÊÕ³¤¶ÈµÄÊı¾İ°ü length ¡£
+        //2:åˆ›å»ºä¸€ä¸ªæ•°æ®åŒ…, ç”¨äºæ¥æ”¶æ•°æ®
+        //  æ„é€ æ–¹æ³•:DatagramPacket(byte[] buf, int length)æ„é€ ä¸€ä¸ª DatagramPacketç”¨äºæ¥æ”¶é•¿åº¦çš„æ•°æ®åŒ… length ã€‚
         byte[] bys = new byte[1024];
         DatagramPacket dp = new DatagramPacket(bys, bys.length);
 
 
-        //3:µ÷ÓÃDatagramSocket¶ÔÏóµÄ·½·¨½ÓÊÕÊı¾İ
-        //  receive(DatagramPacket p)´Ó´ËÌ×½Ó×Ö½ÓÊÕÊı¾İ±¨°ü¡£
+        //3:è°ƒç”¨DatagramSocketå¯¹è±¡çš„æ–¹æ³•æ¥æ”¶æ•°æ®
+        //  receive(DatagramPacket p)ä»æ­¤å¥—æ¥å­—æ¥æ”¶æ•°æ®æŠ¥åŒ…ã€‚
         ds.receive(dp);
 
 
-        //4:½âÎöÊı¾İ°ü, ²¢°ÑÊı¾İÔÚ¿ØÖÆÌ¨ÏÔÊ¾
-        //  byte[] getData() ·µ»ØÊı¾İ»º³åÇø¡£
-        //  int	getLength() ·µ»ØÒª·¢ËÍµÄÊı¾İµÄ³¤¶È»ò½ÓÊÕµ½µÄÊı¾İµÄ³¤¶È¡£
+        //4:è§£ææ•°æ®åŒ…, å¹¶æŠŠæ•°æ®åœ¨æ§åˆ¶å°æ˜¾ç¤º
+        //  byte[] getData() è¿”å›æ•°æ®ç¼“å†²åŒºã€‚
+        //  int	getLength() è¿”å›è¦å‘é€çš„æ•°æ®çš„é•¿åº¦æˆ–æ¥æ”¶åˆ°çš„æ•°æ®çš„é•¿åº¦ã€‚
 
         byte[] datas = dp.getData();
         int len = dp.getLength();
         String dataString = new String(datas,0,len);
         System.out.println(dataString);
 
-        //¼òĞ´
+        //ç®€å†™
         System.out.println(new String(dp.getData(),0,dp.getLength()));
 
 
-        //¹Ø±Õ·¢ËÍ¶Ë
+        //å…³é—­å‘é€ç«¯
         ds.close();
     }
 

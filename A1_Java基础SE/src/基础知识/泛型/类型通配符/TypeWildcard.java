@@ -1,40 +1,40 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.ÀàĞÍÍ¨Åä·û;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.ç±»å‹é€šé…ç¬¦;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /*
-[ÀàĞÍÍ¨Åä·û]:
+[ç±»å‹é€šé…ç¬¦]:
 
-# ÎªÁË±íÊ¾¸÷ÖÖ·ºĞÍListµÄ¸¸Àà,¿ÉÒÔÊ¹ÓÃÀàĞÍÍ¨Åä·û
-    ## [ÀàĞÍÍ¨Åä·û]: <?>
-    ## List<?>: ±íÊ¾ÔªËØÀàĞÍÎ´ÖªµÄList,ËüµÄÔªËØ¿ÉÒÔÆ¥ÅäÈÎºÎµÄÀàĞÍ¡£
-    ## ÕâÖÖ´øÍ¨Åä·ûµÄList½ö±íÊ¾ËûµÄ¸÷ÖÖ·ºĞÍListµÄ¸¸Àà,²¢²»ÄÜ°ÑÔªËØÌí¼Óµ½ÆäÖĞ
+# ä¸ºäº†è¡¨ç¤ºå„ç§æ³›å‹Listçš„çˆ¶ç±»,å¯ä»¥ä½¿ç”¨ç±»å‹é€šé…ç¬¦
+    ## [ç±»å‹é€šé…ç¬¦]: <?>
+    ## List<?>: è¡¨ç¤ºå…ƒç´ ç±»å‹æœªçŸ¥çš„List,å®ƒçš„å…ƒç´ å¯ä»¥åŒ¹é…ä»»ä½•çš„ç±»å‹ã€‚
+    ## è¿™ç§å¸¦é€šé…ç¬¦çš„Listä»…è¡¨ç¤ºä»–çš„å„ç§æ³›å‹Listçš„çˆ¶ç±»,å¹¶ä¸èƒ½æŠŠå…ƒç´ æ·»åŠ åˆ°å…¶ä¸­
 
-# Èç¹ûËµÎÒÃÇ²»Ï£ÍûList<?>ÊÇÈÎºÎ·ºĞÍListµÄ¸¸Àà,Ö»Ï£ÍûËü´ú±íÄ³Ò»Àà·ºĞÍListµÄ¸¸Àà,¿ÉÒÔÊ¹ÓÃÀàĞÍÍ¨Åä·ûµÄÉÏÏŞ
-    ## [ÀàĞÍÍ¨Åä·ûÉÏÏŞ]: <? extends ÀàĞÍ>
-    ## List<? extends Number>: ±íÊ¾µÄÀàĞÍÊÇNumber»òÕßÆä×ÓÀàÀàĞÍ
+# å¦‚æœè¯´æˆ‘ä»¬ä¸å¸Œæœ›List<?>æ˜¯ä»»ä½•æ³›å‹Listçš„çˆ¶ç±»,åªå¸Œæœ›å®ƒä»£è¡¨æŸä¸€ç±»æ³›å‹Listçš„çˆ¶ç±»,å¯ä»¥ä½¿ç”¨ç±»å‹é€šé…ç¬¦çš„ä¸Šé™
+    ## [ç±»å‹é€šé…ç¬¦ä¸Šé™]: <? extends ç±»å‹>
+    ## List<? extends Number>: è¡¨ç¤ºçš„ç±»å‹æ˜¯Numberæˆ–è€…å…¶å­ç±»ç±»å‹
 
-# ³ıÁË¿ÉÒÔÖ¸¶¨ÀàĞÍÍ¨Åä·ûµÄÉÏÏŞ,ÎÒÃÇÒ²¿ÉÒÔÖ¸¶¨ÀàĞÍÍ¨Åä·ûµÄÏÂÏŞ
-    ## [ÀàĞÍÍ¨Åä·ûÏÂÏŞ]: <? super ÀàĞÍ>
-    ## List<? super Number>: Ëü±íÊ¾µÄÀàĞÍÊÇNumber»òÕßÆä¸¸ÀàĞÍ
+# é™¤äº†å¯ä»¥æŒ‡å®šç±»å‹é€šé…ç¬¦çš„ä¸Šé™,æˆ‘ä»¬ä¹Ÿå¯ä»¥æŒ‡å®šç±»å‹é€šé…ç¬¦çš„ä¸‹é™
+    ## [ç±»å‹é€šé…ç¬¦ä¸‹é™]: <? super ç±»å‹>
+    ## List<? super Number>: å®ƒè¡¨ç¤ºçš„ç±»å‹æ˜¯Numberæˆ–è€…å…¶çˆ¶ç±»å‹
 
 */
 public class TypeWildcard {
 
     public static void main(String[] args) {
 
-        //ÀàĞÍÍ¨Åä·û
+        //ç±»å‹é€šé…ç¬¦
         List<?> list2 = new ArrayList<Object>();
         List<?> list3 = new ArrayList<Number>();
         List<?> list1 = new ArrayList<Integer>();
 
-        //Ê¹ÓÃÍ¨Åä·ûÉÏÏŞ
-        //List<? extends Number> list4 = new ArrayList<Object>(); //ObjectÊÇNumberµÄ¸¸Àà
+        //ä½¿ç”¨é€šé…ç¬¦ä¸Šé™
+        //List<? extends Number> list4 = new ArrayList<Object>(); //Objectæ˜¯Numberçš„çˆ¶ç±»
         List<? extends Number> list5 = new ArrayList<Number>();
         List<? extends Number> list6 = new ArrayList<Integer>();
 
-        //Ê¹ÓÃÍ¨Åä·ûÏÂÏŞ
+        //ä½¿ç”¨é€šé…ç¬¦ä¸‹é™
         //List<? super Number> list7 = new ArrayList<Integer>();
         List<? super Number> list8 = new ArrayList<Number>();
         List<? super Number> list9 = new ArrayList<Object>();

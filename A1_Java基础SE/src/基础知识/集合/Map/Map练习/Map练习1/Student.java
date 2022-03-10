@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°1;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 1;
 
 public class Student {
 
@@ -13,7 +13,7 @@ public class Student {
         this.age = age;
     }
 
-    //GetSet·½·¨¶Ô
+    //GetSetæ–¹æ³•å¯¹
     public String getName() {
         return name;
     }

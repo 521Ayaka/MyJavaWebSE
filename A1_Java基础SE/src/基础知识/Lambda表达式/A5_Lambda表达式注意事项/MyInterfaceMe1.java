@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A5_Lambda±í´ïÊ½×¢ÒâÊÂÏî;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A5_Lambdaè¡¨è¾¾å¼æ³¨æ„äº‹é¡¹;
 
 public interface MyInterfaceMe1 {
 

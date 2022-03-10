@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A10_º¯ÊıÊ½½Ó¿Ú×÷Îª·½·¨µÄ·µ»ØÖµ;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A10_å‡½æ•°å¼æ¥å£ä½œä¸ºæ–¹æ³•çš„è¿”å›å€¼;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,33 +7,33 @@ import java.util.Comparator;
 public class RunList {
 
     public static void main(String[] args) {
-        //´´½¨Êı×é
+        //åˆ›å»ºæ•°ç»„
         ArrayList<String> list = new ArrayList<>();
         list.add("aaa");
         list.add("bbbb");
         list.add("d");
         list.add("cc");
 
-        //ÅÅĞòÇ°µÄ¼¯ºÏ
-        System.out.println("ÅÅĞòÇ°µÄ¼¯ºÏ:" + list);
+        //æ’åºå‰çš„é›†åˆ
+        System.out.println("æ’åºå‰çš„é›†åˆ:" + list);
 
-        //×ÔÈ»ÅÅĞòºóµÄ¼¯ºÏ
+        //è‡ªç„¶æ’åºåçš„é›†åˆ
         Collections.sort(list);
-        System.out.println("×ÔÈ»ÅÅĞòºóµÄ¼¯ºÏ:" + list);
+        System.out.println("è‡ªç„¶æ’åºåçš„é›†åˆ:" + list);
 
-        //Ê¹ÓÃ±È½ÏÆ÷ÅÅĞòºóµÄ¼¯ºÏ
+        //ä½¿ç”¨æ¯”è¾ƒå™¨æ’åºåçš„é›†åˆ
         Collections.sort(list, getComparator02());
-        System.out.println("±È½ÏÆ÷ÅÅĞòºóµÄ¼¯ºÏ:" + list);
+        System.out.println("æ¯”è¾ƒå™¨æ’åºåçš„é›†åˆ:" + list);
 
 
     }
 
 
-    //Comparator½Ó¿ÚÊÇº¯ÊıÊ½½Ó¿Ú:  @FunctionalInterface
+    //Comparatoræ¥å£æ˜¯å‡½æ•°å¼æ¥å£:  @FunctionalInterface
 
-    //Ê¹ÓÃÄäÃûÄÚ²¿Àà
+    //ä½¿ç”¨åŒ¿åå†…éƒ¨ç±»
     private static Comparator<String> getComparator01() {
-        //ÄäÃûÄÚ²¿Àà×÷Îª·µ»ØÖµ
+        //åŒ¿åå†…éƒ¨ç±»ä½œä¸ºè¿”å›å€¼
         return new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
@@ -42,7 +42,7 @@ public class RunList {
         };
     }
 
-    //Ê¹ÓÃLambda±í´ïÊ½×÷Îª²ÎÊı·µ»ØÖµ
+    //ä½¿ç”¨Lambdaè¡¨è¾¾å¼ä½œä¸ºå‚æ•°è¿”å›å€¼
     private static Comparator<String> getComparator02() {
         //compare(String o1,String o2)
         return (o1, o2) -> o1.length() - o2.length();

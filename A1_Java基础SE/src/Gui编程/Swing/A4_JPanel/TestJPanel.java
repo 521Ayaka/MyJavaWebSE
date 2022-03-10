@@ -1,4 +1,4 @@
-package Gui±à³Ì.Swing.A4_JPanel;
+package Guiç¼–ç¨‹.Swing.A4_JPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,57 +6,57 @@ import java.awt.*;
 public class TestJPanel extends JFrame {
 
     public TestJPanel() {
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         Container container = this.getContentPane();
 
-        this.setBounds(500,300,600,500);                     //´°ÌåµÄ´óĞ¡ÊÇ´°Ìå±¾ÉíµÄ£¬ÓëÈİÆ÷ÎŞ¹Ø£¬²»ÄÜÓÃ´°ÌåÉèÖÃ¡£
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);          //¹Ø±ÕÊÂ¼şÒ²Í¬ÑùÊÇÓÃ´°Ìå±¾ÉíÈ¥ÉèÖÃµÄ¡£
+        this.setBounds(500,300,600,500);                     //çª—ä½“çš„å¤§å°æ˜¯çª—ä½“æœ¬èº«çš„ï¼Œä¸å®¹å™¨æ— å…³ï¼Œä¸èƒ½ç”¨çª—ä½“è®¾ç½®ã€‚
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);          //å…³é—­äº‹ä»¶ä¹ŸåŒæ ·æ˜¯ç”¨çª—ä½“æœ¬èº«å»è®¾ç½®çš„ã€‚
         container.setLayout(new GridLayout(2,2,20,20));
         container.setBackground(new Color(6, 229, 203));
 
-        //this.setBackground(new Color(9, 243, 216));    //Õâ¸öÊÇ´°ÌåµÄÑÕÉ«£¬¶øÈİÆ÷ÊÇÔÚ´°ÌåÉÏÃæµÄ£¬³ı·Ç°ÑÈİÆ÷µÄVisibleÉèÖÃÎªtrue
-        //this.setLayout(new GridLayout(2,2,20,20));     //¾¡Á¿ÔÚÈİÆ÷ÖĞÉèÖÃ
+        //this.setBackground(new Color(9, 243, 216));    //è¿™ä¸ªæ˜¯çª—ä½“çš„é¢œè‰²ï¼Œè€Œå®¹å™¨æ˜¯åœ¨çª—ä½“ä¸Šé¢çš„ï¼Œé™¤éæŠŠå®¹å™¨çš„Visibleè®¾ç½®ä¸ºtrue
+        //this.setLayout(new GridLayout(2,2,20,20));     //å°½é‡åœ¨å®¹å™¨ä¸­è®¾ç½®
 
-        //´´½¨×é¼ş
+        //åˆ›å»ºç»„ä»¶
         JPanel jPanel1 = new JPanel(new GridLayout(1,3));
         JPanel jPanel2 = new JPanel(new GridLayout(2,1));
         JPanel jPanel3 = new JPanel(new GridLayout(3,1));
         JPanel jPanel4 = new JPanel(new GridLayout(2,2));
 
-        /*//ÕâÖÖĞ´·¨ÊÇ´íÎóµÄ,Ó¦¸ÃÔÚ¹¹ÔìÆ÷ÀïÉèÖÃ,ÉÏÃæ¡ü¡ü¡ü
+        /*//è¿™ç§å†™æ³•æ˜¯é”™è¯¯çš„,åº”è¯¥åœ¨æ„é€ å™¨é‡Œè®¾ç½®,ä¸Šé¢â†‘â†‘â†‘
         jPanel1.setLayout(new GridLayout(1,3));
         jPanel1.setLayout(new GridLayout(2,1));
         jPanel1.setLayout(new GridLayout(3,1));
         jPanel1.setLayout(new GridLayout(2,2));
         */
 
-        jPanel1.add(new JButton("ŞÏŞÎ"));
-        jPanel1.add(new JButton("ŞÏŞÎ"));
-        jPanel1.add(new JButton("ŞÏŞÎ"));
+        jPanel1.add(new JButton("å°´å°¬"));
+        jPanel1.add(new JButton("å°´å°¬"));
+        jPanel1.add(new JButton("å°´å°¬"));
 
-        jPanel2.add(new JButton("ŞÏŞÎ"));
-        jPanel2.add(new JButton("ŞÏŞÎ"));
-        jPanel3.add(new JButton("ŞÏŞÎ"));
-        jPanel3.add(new JButton("ŞÏŞÎ"));
-        jPanel3.add(new JButton("ŞÏŞÎ"));
+        jPanel2.add(new JButton("å°´å°¬"));
+        jPanel2.add(new JButton("å°´å°¬"));
+        jPanel3.add(new JButton("å°´å°¬"));
+        jPanel3.add(new JButton("å°´å°¬"));
+        jPanel3.add(new JButton("å°´å°¬"));
 
-        jPanel4.add(new JButton("ŞÏŞÎ"));
-        jPanel4.add(new JButton("ŞÏŞÎ"));
-        jPanel4.add(new JButton("ŞÏŞÎ"));
-        jPanel4.add(new JButton("ŞÏŞÎ"));
+        jPanel4.add(new JButton("å°´å°¬"));
+        jPanel4.add(new JButton("å°´å°¬"));
+        jPanel4.add(new JButton("å°´å°¬"));
+        jPanel4.add(new JButton("å°´å°¬"));
 
-        //Ìí¼Ó×é¼ş
+        //æ·»åŠ ç»„ä»¶
         container.add(jPanel1);
         container.add(jPanel2);
         container.add(jPanel3);
         container.add(jPanel4);
 
-        //¿É¼ûĞÔ×îºÃ×îºóÉèÖÃ
+        //å¯è§æ€§æœ€å¥½æœ€åè®¾ç½®
         this.setVisible(true);
 
     }
 
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
 
         new TestJPanel();

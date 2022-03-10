@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.FileÀà.FileÉ¾³ı¹¦ÄÜ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.Fileç±».Fileåˆ é™¤åŠŸèƒ½;
 
-//public boolean delete(){//...}   É¾³ıÓÉ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼ş»òÄ¿Â¼
+//public boolean delete(){//...}   åˆ é™¤ç”±æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„æ–‡ä»¶æˆ–ç›®å½•
 
 import java.io.File;
 import java.io.IOException;
@@ -9,26 +9,26 @@ public class FileDelete {
 
     public static void main(String[] args) throws IOException {
 
-        //´´½¨Ä¿Â¼
-        File file1 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\FileÉ¾³ı¹¦ÄÜ\\²âÊÔÎÄ¼ş\\ÎÄ¼ş1.txt");
-        File file2 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\FileÉ¾³ı¹¦ÄÜ\\²âÊÔÎÄ¼ş\\Ä¿Â¼1");
+        //åˆ›å»ºç›®å½•
+        File file1 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ é™¤åŠŸèƒ½\\æµ‹è¯•æ–‡ä»¶\\æ–‡ä»¶1.txt");
+        File file2 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ é™¤åŠŸèƒ½\\æµ‹è¯•æ–‡ä»¶\\ç›®å½•1");
 
-        File file3 = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\FileÀà\\FileÉ¾³ı¹¦ÄÜ\\²âÊÔÎÄ¼ş\\²»´æÔÚµÄÎÄ¼ş.txt");
+        File file3 = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\Fileç±»\\Fileåˆ é™¤åŠŸèƒ½\\æµ‹è¯•æ–‡ä»¶\\ä¸å­˜åœ¨çš„æ–‡ä»¶.txt");
 
-        //Ê¹ÓÃdelete·½·¨½øĞĞÉ¾³ı³éÏóÂ·¾¶
+        //ä½¿ç”¨deleteæ–¹æ³•è¿›è¡Œåˆ é™¤æŠ½è±¡è·¯å¾„
         System.out.println(file1.delete());
         System.out.println(file2.delete());
         System.out.println(file3.delete());
 
         System.out.println("==============================");
 
-        //Ä¬ÈÏ´´½¨ÊÇÔÚÏîÄ¿Ä¿Â¼ÏÂµÄ
-        new File("´´½¨ÎÄ¼ş.txt").createNewFile();
+        //é»˜è®¤åˆ›å»ºæ˜¯åœ¨é¡¹ç›®ç›®å½•ä¸‹çš„
+        new File("åˆ›å»ºæ–‡ä»¶.txt").createNewFile();
 
-        //¿É×·¼Óµ½Ä£¿éÏÂ
-        new File("src\\´´½¨Ä£¿éÏÂµÄÎÄ¼ş.txt").createNewFile();
+        //å¯è¿½åŠ åˆ°æ¨¡å—ä¸‹
+        new File("src\\åˆ›å»ºæ¨¡å—ä¸‹çš„æ–‡ä»¶.txt").createNewFile();
 
-        //Í¬ÑùµÄ£¬É¾³ıÒ²ÊÇÕâÑùµÄ£¬²é¿´ »Ö¸´Àà [ File_Redo ] ½øĞĞ»Ö¸´²Ù×÷
+        //åŒæ ·çš„ï¼Œåˆ é™¤ä¹Ÿæ˜¯è¿™æ ·çš„ï¼ŒæŸ¥çœ‹ æ¢å¤ç±» [ File_Redo ] è¿›è¡Œæ¢å¤æ“ä½œ
 
 
     }

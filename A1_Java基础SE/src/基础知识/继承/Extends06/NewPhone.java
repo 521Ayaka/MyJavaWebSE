@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends06;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends06;
 
 public class NewPhone extends Phone {
     public NewPhone() {
     }
 
-    @Override  //¸²¸ÇÖØĞ´ĞÂµÄ·½·¨£¬ÊµÏÖĞÂ¹¦ÄÜ¡£//ĞÂ¹¦ÄÜÔÚshow·½·¨Àï¶àµÄ¹¦ÄÜ£¬¸²¸ÇÖØĞ´
+    @Override  //è¦†ç›–é‡å†™æ–°çš„æ–¹æ³•ï¼Œå®ç°æ–°åŠŸèƒ½ã€‚//æ–°åŠŸèƒ½åœ¨showæ–¹æ³•é‡Œå¤šçš„åŠŸèƒ½ï¼Œè¦†ç›–é‡å†™
     public void show() {
 
-        //super.¸²¸ÇÖØĞ´ÀÏ¹¦ÄÜµÄ·½·¨Ãû¡£
-        super.show(); //µ÷ÓÃ¸¸ÀàµÄshow()·½·¨£¬Ô­ÓĞµÄ¹¦ÄÜ¡£
+        //super.è¦†ç›–é‡å†™è€åŠŸèƒ½çš„æ–¹æ³•åã€‚
+        super.show(); //è°ƒç”¨çˆ¶ç±»çš„show()æ–¹æ³•ï¼ŒåŸæœ‰çš„åŠŸèƒ½ã€‚
 
-        //superºóµÄÏÈ¹¦ÄÜ¡£
-        System.out.println("ÏÔÊ¾ĞÕÃû");
-        System.out.println("ÏÔÊ¾Í·Ïñ");
+        //superåçš„å…ˆåŠŸèƒ½ã€‚
+        System.out.println("æ˜¾ç¤ºå§“å");
+        System.out.println("æ˜¾ç¤ºå¤´åƒ");
     }
 }

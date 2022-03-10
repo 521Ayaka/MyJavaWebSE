@@ -1,19 +1,19 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A12_³£ÓÃº¯ÊıÊ½½Ó¿Ú.Predicate½Ó¿Ú;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A12_å¸¸ç”¨å‡½æ•°å¼æ¥å£.Predicateæ¥å£;
 
 import java.util.function.Predicate;
 /*
-    boolean	test(T t) ÔÚ¸ø¶¨µÄ²ÎÊıÉÏÆÀ¹ÀÕâ¸öÎ½´Ê¡£
+    boolean	test(T t) åœ¨ç»™å®šçš„å‚æ•°ä¸Šè¯„ä¼°è¿™ä¸ªè°“è¯ã€‚
 
-    //Âß¼­ÅĞ¶Ï ·Ç
-    default Predicate<T> negate() ·µ»Ø±íÊ¾´ËÎ½´ÊµÄÂß¼­·ñ¶¨µÄÎ½´Ê¡£
+    //é€»è¾‘åˆ¤æ–­ é
+    default Predicate<T> negate() è¿”å›è¡¨ç¤ºæ­¤è°“è¯çš„é€»è¾‘å¦å®šçš„è°“è¯ã€‚
 
-    //Âß¼­ÅĞ¶Ï Óë
+    //é€»è¾‘åˆ¤æ–­ ä¸
     default Predicate<T> and(Predicate<? super T> other)
-          ·µ»ØÒ»¸ö×éºÏµÄÎ½´Ê£¬±íÊ¾¸ÃÎ½´ÊÓëÁíÒ»¸öÎ½´ÊµÄ¶ÌÂ·Âß¼­AND¡£
+          è¿”å›ä¸€ä¸ªç»„åˆçš„è°“è¯ï¼Œè¡¨ç¤ºè¯¥è°“è¯ä¸å¦ä¸€ä¸ªè°“è¯çš„çŸ­è·¯é€»è¾‘ANDã€‚
 
-    //Âß¼­ÅĞ¶Ï »ò
+    //é€»è¾‘åˆ¤æ–­ æˆ–
     default Predicate<T> or(Predicate<? super T> other)
-            ·µ»ØÒ»¸ö×éºÏµÄÎ½´Ê£¬±íÊ¾¸ÃÎ½´ÊÓëÁíÒ»¸öÎ½´ÊµÄ¶ÌÂ·Âß¼­»ò¡£
+            è¿”å›ä¸€ä¸ªç»„åˆçš„è°“è¯ï¼Œè¡¨ç¤ºè¯¥è°“è¯ä¸å¦ä¸€ä¸ªè°“è¯çš„çŸ­è·¯é€»è¾‘æˆ–ã€‚
 
 */
 
@@ -21,66 +21,66 @@ public class TestPredicate {
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½
-        boolean p1 = pre1("Õâ¾ÍŞÏŞÎÁË", (s) -> {
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼
+        boolean p1 = pre1("è¿™å°±å°´å°¬äº†", (s) -> {
             return s.length() >= 6;
         });
         System.out.println(p1);//false
 
-        //Lambda±í´ïÊ½ ¼òĞ´
-        p1 = pre1("Ò»µã¶¼²»ŞÏŞÎ", s -> s.length() >= 6);
+        //Lambdaè¡¨è¾¾å¼ ç®€å†™
+        p1 = pre1("ä¸€ç‚¹éƒ½ä¸å°´å°¬", s -> s.length() >= 6);
         System.out.println(p1);//true
 
         //=======================================================
 
-        boolean p2 = pre2("Ò»µã¶¼²»ŞÏŞÎ", (s -> s.length() >= 6));
+        boolean p2 = pre2("ä¸€ç‚¹éƒ½ä¸å°´å°¬", (s -> s.length() >= 6));
         System.out.println(p2);//false
 
         //=======================================================
 
-        boolean p3 = pre3("Ò»µã¶¼²»ŞÏŞÎ", (s) -> s.length() < 4, s -> s.length() < 8);
+        boolean p3 = pre3("ä¸€ç‚¹éƒ½ä¸å°´å°¬", (s) -> s.length() < 4, s -> s.length() < 8);
         System.out.println(p3);//false
 
         //=======================================================
 
-        boolean p4 = pre4("Ò»µã¶¼²»ŞÏŞÎ", (s) -> s.length() < 4, s -> s.length() < 8);
+        boolean p4 = pre4("ä¸€ç‚¹éƒ½ä¸å°´å°¬", (s) -> s.length() < 4, s -> s.length() < 8);
         System.out.println(p4);//true
 
     }
 
-    //TestMe ÔÚ¸ø¶¨µÄ²ÎÊıÉÏÆÀ¹ÀÕâ¸öÎ½´Ê¡£
+    //TestMe åœ¨ç»™å®šçš„å‚æ•°ä¸Šè¯„ä¼°è¿™ä¸ªè°“è¯ã€‚
     private static boolean pre1(String str, Predicate<String> e) {
-        //boolean	test(T t) ÔÚ¸ø¶¨µÄ²ÎÊıÉÏÆÀ¹ÀÕâ¸öÎ½´Ê¡£
+        //boolean	test(T t) åœ¨ç»™å®šçš„å‚æ•°ä¸Šè¯„ä¼°è¿™ä¸ªè°“è¯ã€‚
         return e.test(str);
     }
 
-    //negate Âß¼­·Ç
+    //negate é€»è¾‘é
     private static boolean pre2(String str, Predicate<String> e) {
         //return !e.test(str);
-        //default Predicate<T> negate() ·µ»Ø±íÊ¾´ËÎ½´ÊµÄÂß¼­·ñ¶¨µÄÎ½´Ê¡£
+        //default Predicate<T> negate() è¿”å›è¡¨ç¤ºæ­¤è°“è¯çš„é€»è¾‘å¦å®šçš„è°“è¯ã€‚
         return e.negate().test(str);
-        //Ê¹ÓÃ·½·¨ Ö»ÊÇ·Ç ÈÔÒªµ÷ÓÃtest ÏÈµ÷ÓÃnegate negateÔÙµ÷ÓÃtest·½·¨
+        //ä½¿ç”¨æ–¹æ³• åªæ˜¯é ä»è¦è°ƒç”¨test å…ˆè°ƒç”¨negate negateå†è°ƒç”¨testæ–¹æ³•
     }
 
-    //and Âß¼­Óë
+    //and é€»è¾‘ä¸
     private static boolean pre3(String str, Predicate<String> e1, Predicate<String> e2) {
         //boolean b1 = e1.test(str);
         //boolean b2 = e2.test(str);
         //return b1 && b2;
 
         //default Predicate<T> and(Predicate<? super T> other)
-        //·µ»ØÒ»¸ö×éºÏµÄÎ½´Ê£¬±íÊ¾¸ÃÎ½´ÊÓëÁíÒ»¸öÎ½´ÊµÄ¶ÌÂ·Âß¼­AND¡£
+        //è¿”å›ä¸€ä¸ªç»„åˆçš„è°“è¯ï¼Œè¡¨ç¤ºè¯¥è°“è¯ä¸å¦ä¸€ä¸ªè°“è¯çš„çŸ­è·¯é€»è¾‘ANDã€‚
         return e1.and(e2).test(str);
     }
 
-    //or Âß¼­»ò
+    //or é€»è¾‘æˆ–
     private static boolean pre4(String str,Predicate<String> e1,Predicate<String> e2){
         //boolean b1 = e1.test(str);
         //boolean b2 = e2.test(str);
         //return b1 && b2;
 
         //default Predicate<T> and(Predicate<? super T> other)
-        //·µ»ØÒ»¸ö×éºÏµÄÎ½´Ê£¬±íÊ¾¸ÃÎ½´ÊÓëÁíÒ»¸öÎ½´ÊµÄ¶ÌÂ·Âß¼­AND¡£
+        //è¿”å›ä¸€ä¸ªç»„åˆçš„è°“è¯ï¼Œè¡¨ç¤ºè¯¥è°“è¯ä¸å¦ä¸€ä¸ªè°“è¯çš„çŸ­è·¯é€»è¾‘ANDã€‚
         return e1.or(e2).test(str);
     }
 

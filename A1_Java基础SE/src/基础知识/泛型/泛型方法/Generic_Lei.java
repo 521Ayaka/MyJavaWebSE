@@ -1,6 +1,6 @@
-package »ù´¡ÖªÊ¶.·ºÐÍ.·ºÐÍ·½·¨;
+package åŸºç¡€çŸ¥è¯†.æ³›åž‹.æ³›åž‹æ–¹æ³•;
 
-//·ºÐÍÀà
+//æ³›åž‹ç±»
 public class Generic_Lei<T> {
 
     public void method(T t){

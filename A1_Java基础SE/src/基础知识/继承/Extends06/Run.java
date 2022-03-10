@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ð.Extends06;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends06;
 
 public class Run {
 

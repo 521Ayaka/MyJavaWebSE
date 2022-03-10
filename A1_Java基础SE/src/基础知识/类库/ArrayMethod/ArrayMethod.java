@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayMethod;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayMethod;
 
 import java.util.Arrays;
 
@@ -6,10 +6,10 @@ public class ArrayMethod {
     public static void main(String[] args) {
         Lei[] array = new Lei[4];
 
-        Lei a = new Lei(6,"ŞÏŞÎ½´", true);
+        Lei a = new Lei(6,"å°´å°¬é…±", true);
         Lei b = new Lei( 66, "gangajaing", false);
-        Lei c = new Lei(666, "¾ÍÊÇºÜÁù" , true);
-        Lei d = new Lei(666666, "Áù¸öÁù",false);
+        Lei c = new Lei(666, "å°±æ˜¯å¾ˆå…­" , true);
+        Lei d = new Lei(666666, "å…­ä¸ªå…­",false);
 
         array[0] = a;
         array[1] = b;
@@ -17,7 +17,7 @@ public class ArrayMethod {
         array[3] = d;
 
         System.out.println("=============================================================================================================");
-        System.out.println(Arrays.toString(array));//´òÓ¡µØÖ·¹şÏ£Öµ
+        System.out.println(Arrays.toString(array));//æ‰“å°åœ°å€å“ˆå¸Œå€¼
         System.out.println("=============================================================================================================");
 
         System.out.println(array[2].getStr());

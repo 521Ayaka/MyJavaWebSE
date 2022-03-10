@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.Òì³£.×Ô¶¨ÒåÒì³£;
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.è‡ªå®šä¹‰å¼‚å¸¸;
 
 public class Teacher {
 
     public void scoreMethod(int score) throws CustomException {
         if (score < 0 || score > 100){
-            throw new CustomException("Äã¸ø³öµÄ·ÖÊıÓĞÎó£¬·ÖÊı·¶Î§ÔÚ0~100Ö®¼ä"); //¡¾×¢Òâ!¡¿¡¾¹Ø¼ü×Ö¡¿¡¾throw¡¿ ¡¾²»ÊÇthrows¡¿
+            throw new CustomException("ä½ ç»™å‡ºçš„åˆ†æ•°æœ‰è¯¯ï¼Œåˆ†æ•°èŒƒå›´åœ¨0~100ä¹‹é—´"); //ã€æ³¨æ„!ã€‘ã€å…³é”®å­—ã€‘ã€throwã€‘ ã€ä¸æ˜¯throwsã€‘
         }else{
-            System.out.println("ÊäÈëµÄ·ÖÊıÕı³£¡£");
+            System.out.println("è¾“å…¥çš„åˆ†æ•°æ­£å¸¸ã€‚");
         }
     }
 

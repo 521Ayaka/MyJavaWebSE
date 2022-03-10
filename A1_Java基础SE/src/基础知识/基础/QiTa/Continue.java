@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.»ù´¡.QiTa;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.QiTa;
 
 class GetSet {
     public static void main(String[]args){
@@ -6,7 +6,7 @@ class GetSet {
             if(i==4){
                 continue;
             }
-            System.out.printf("%dÂ¥µ½À²£¡\n",i); //Ò»¶¨Ò»¶¨Òª×¢Òâ Ñ­»·ÌåÒªÔÚifÅĞ¶Ïºó
+            System.out.printf("%dæ¥¼åˆ°å•¦ï¼\n",i); //ä¸€å®šä¸€å®šè¦æ³¨æ„ å¾ªç¯ä½“è¦åœ¨ifåˆ¤æ–­å
         }
     }
 }

@@ -1,0 +1,66 @@
+body{
+    background: rgba(0, 0, 0, 0.74);
+}
+
+
+.butt{
+    width: 60px;
+    height: 40px;
+}
+
+
+#panel{
+    width: 80%;
+    height: 2000px;
+    background: rgb(46, 160, 210);
+    margin: 0 auto;
+}
+
+.box{
+    width: 805px;
+    height: 630px;
+    background: rgba(235, 39, 243, 0.71);
+    border: 5px solid rgba(238, 61, 108, 0.81);
+    margin: 50px auto;
+    position: relative;
+}
+
+.special{
+    width: 95px;
+    /*border: 1px solid black;*/
+    height: 150px;
+    position: absolute;
+    left: -100px;
+}
+
+#spe{
+    width: 95px;
+    height: 160px;
+}
+
+.left{
+    width: 580px;
+    height: 100%;
+    float: left;
+}
+.right{
+    width: 220px;
+    height: 300px;
+    background-color: yellow;
+    float: left;
+
+}
+.right img{
+    width: 220px;
+    height: 300px;
+}
+.left-top{
+    background: rgba(235, 39, 243, 0.71);
+    width: 100%;
+    height: 200px;
+}
+.left-bottom{
+    background: rgba(246, 84, 18, 0.84);
+    width: 100%;
+    height: 400px;
+}

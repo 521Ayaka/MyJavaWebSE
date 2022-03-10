@@ -1337,13 +1337,11 @@ public void testDeleteById() throws Exception {
 
 ```java
 package A1_JDBC快速入门;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class TestJDBC01 {
-
 
     //通过Java控制 [关系型数据库] mysql 的步骤
     public static void main(String[] args) throws Exception {

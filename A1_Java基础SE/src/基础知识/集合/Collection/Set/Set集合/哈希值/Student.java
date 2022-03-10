@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set¼¯ºÏ.¹şÏ£Öµ;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Seté›†åˆ.å“ˆå¸Œå€¼;
 
 public class Student {
 
@@ -30,7 +30,7 @@ public class Student {
     }
 
     /**
-     * ÖØĞ´hashCode·½·¨
+     * é‡å†™hashCodeæ–¹æ³•
     @Override
     public int hashCode(){
         return 0;

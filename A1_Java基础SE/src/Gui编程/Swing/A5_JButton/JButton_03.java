@@ -1,4 +1,4 @@
-package Gui±à³Ì.Swing.A5_JButton;
+package Guiç¼–ç¨‹.Swing.A5_JButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,24 +9,24 @@ public class JButton_03 extends JFrame {
         this.setTitle(title);
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init(){
         this.setBounds(500,300,600,500);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container container = this.getContentPane();
         container.setBackground(new Color(9, 236, 236));
 
-        //Ìí¼Ó×é¼ş
-        JCheckBox jCheckBox1 = new JCheckBox("ÂÜÀò");
-        JCheckBox jCheckBox2 = new JCheckBox("Óù½ã");
-        JCheckBox jCheckBox3 = new JCheckBox("Å®ºº×Ó");
-        JCheckBox jCheckBox4 = new JCheckBox("¶ş´ÎÔªÃÃ×Ó");
-        JCheckBox jCheckBox5 = new JCheckBox("Å¯ÄĞ");
-        JCheckBox jCheckBox6 = new JCheckBox("Å·°Í");
-        JCheckBox jCheckBox7 = new JCheckBox("ÄĞÓ²ºº");
-        JCheckBox jCheckBox8 = new JCheckBox("¶ş´ÎÔª¸ç¸ç");
+        //æ·»åŠ ç»„ä»¶
+        JCheckBox jCheckBox1 = new JCheckBox("èè‰");
+        JCheckBox jCheckBox2 = new JCheckBox("å¾¡å§");
+        JCheckBox jCheckBox3 = new JCheckBox("å¥³æ±‰å­");
+        JCheckBox jCheckBox4 = new JCheckBox("äºŒæ¬¡å…ƒå¦¹å­");
+        JCheckBox jCheckBox5 = new JCheckBox("æš–ç”·");
+        JCheckBox jCheckBox6 = new JCheckBox("æ¬§å·´");
+        JCheckBox jCheckBox7 = new JCheckBox("ç”·ç¡¬æ±‰");
+        JCheckBox jCheckBox8 = new JCheckBox("äºŒæ¬¡å…ƒå“¥å“¥");
 
-        //Ìí¼Ó²¼¾Ö,·ÅÈë×é¼ş
+        //æ·»åŠ å¸ƒå±€,æ”¾å…¥ç»„ä»¶
         container.setLayout(new GridLayout(2,4));
         container.add(jCheckBox1);
         container.add(jCheckBox2);
@@ -41,6 +41,6 @@ public class JButton_03 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new JButton_03("¸´Ñ¡¿ò/¶àÑ¡¿ò").init();
+        new JButton_03("å¤é€‰æ¡†/å¤šé€‰æ¡†").init();
     }
 }

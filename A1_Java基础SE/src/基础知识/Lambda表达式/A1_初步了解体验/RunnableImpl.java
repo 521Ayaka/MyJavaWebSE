@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A1_³õ²½ÁË½âÌåÑé;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A1_åˆæ­¥äº†è§£ä½“éªŒ;
 
 public class RunnableImpl implements Runnable {
     @Override
     public void run() {
-        System.out.println("·½Ê½Ò»: ¶àÏß³Ì³ÌĞòÆô¶¯£¡");
+        System.out.println("æ–¹å¼ä¸€: å¤šçº¿ç¨‹ç¨‹åºå¯åŠ¨ï¼");
     }
 }

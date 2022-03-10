@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A3_Layout;
+package Guiç¼–ç¨‹.AWT.A3_Layout;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -8,9 +8,9 @@ public class ExDome_Expand {
 
     public static void main(String[] args) {
 
-        Frame frame = new Frame("Á·Ï°2");
+        Frame frame = new Frame("ç»ƒä¹ 2");
 
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         frame.setVisible(true);
         frame.setLocation(500,300);
         frame.setSize(500,500);
@@ -22,14 +22,14 @@ public class ExDome_Expand {
             }
         });
 
-        //¿ªÊ¼ÉèÖÃ²¼¾Ö
+        //å¼€å§‹è®¾ç½®å¸ƒå±€
         frame.setLayout(new GridLayout(2,3));
 
-        //Ìí¼ÓÃæ°å
+        //æ·»åŠ é¢æ¿
         Panel panel1 = new Panel(new GridLayout(2, 1));
         Panel panel2 = new Panel(new GridLayout(2, 2));
 
-        //ÏòÃæ°åÖĞÌí¼Ó°´Å¥
+        //å‘é¢æ¿ä¸­æ·»åŠ æŒ‰é’®
         panel1.add(new Button("Button"));
         panel1.add(new Button("Button"));
 
@@ -38,7 +38,7 @@ public class ExDome_Expand {
         panel2.add(new Button("Button"));
         panel2.add(new Button("Button"));
 
-        //°´Ë³ĞòÏò´°ÌåÖĞÌí¼Ó°´Å¥ºÍÃæ°å
+        //æŒ‰é¡ºåºå‘çª—ä½“ä¸­æ·»åŠ æŒ‰é’®å’Œé¢æ¿
         frame.add(new Button("Button"));
         frame.add(panel1);
         frame.add(new Button("Button"));

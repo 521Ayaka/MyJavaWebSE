@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.AÀà×÷Îª±äÁ¿ÀàĞÍ;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Aç±»ä½œä¸ºå˜é‡ç±»å‹;
 
 public class Hero {
 
@@ -7,7 +7,7 @@ public class Hero {
     private Weapon weapon;
 
     public void method(){
-        System.out.println("ÄêÁäÎª"+age+"µÄ"+name+",ÕıÔÚÄÃ×Å["+ weapon.getCode()+"]´òÒ°......Õæ¿Ó£¡");
+        System.out.println("å¹´é¾„ä¸º"+age+"çš„"+name+",æ­£åœ¨æ‹¿ç€["+ weapon.getCode()+"]æ‰“é‡......çœŸå‘ï¼");
     }
 
     public Hero() {

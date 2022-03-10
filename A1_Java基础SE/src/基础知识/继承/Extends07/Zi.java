@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends07;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends07;
 
 public class Zi extends Fu {
     int num = 200;
-    String str = "ŞÏŞÎÁË";
+    String str = "å°´å°¬äº†";
 
     public Zi() {
-        System.out.println("×ÓÀàÎŞ²Î¹¹Ôì·½·¨¡£");
+        System.out.println("å­ç±»æ— å‚æ„é€ æ–¹æ³•ã€‚");
     }
 
     public Zi(int num, String str) {
         super(num, str);
-        System.out.println("×ÓÀàÓĞ²Î¹¹Ôì·½·¨¡£");
+        System.out.println("å­ç±»æœ‰å‚æ„é€ æ–¹æ³•ã€‚");
     }
 }

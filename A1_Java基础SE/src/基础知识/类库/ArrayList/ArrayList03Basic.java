@@ -1,15 +1,15 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 /*
-Èç¹ûÏ£ÍûÏëArrayListµ±ÖĞ ´¢´æ»ù±¾ÀàĞÍµÄ»°£¬±ØĞëÊ¹ÓÃ»ù±¾ÀàĞÍ¶ÔÓ¦µÄ¡°°ü×°Àà¡±¡£
+å¦‚æœå¸Œæœ›æƒ³ArrayListå½“ä¸­ å‚¨å­˜åŸºæœ¬ç±»å‹çš„è¯ï¼Œå¿…é¡»ä½¿ç”¨åŸºæœ¬ç±»å‹å¯¹åº”çš„â€œåŒ…è£…ç±»â€ã€‚
 
-»ù±¾ÀàĞÍ        °ü×°Àà£¨ÒıÓÃÀàĞÍ£¬°ü×°Àà¶¼Î»ÓÚjava.lang°üÏÂ£©
+åŸºæœ¬ç±»å‹        åŒ…è£…ç±»ï¼ˆå¼•ç”¨ç±»å‹ï¼ŒåŒ…è£…ç±»éƒ½ä½äºjava.langåŒ…ä¸‹ï¼‰
 byte          Byte
 short         Short
-int           Integer     ¡¾ÌØÊâ¡¿
+int           Integer     ã€ç‰¹æ®Šã€‘
 long          Long
 float         Float
 double        Double
-char          Character   ¡¾ÌØÊâ¡¿
+char          Character   ã€ç‰¹æ®Šã€‘
 boolean       Boolean
 
 */
@@ -26,7 +26,7 @@ public class ArrayList03Basic {
 
         System.out.println(array1);
         System.out.println(array1.get(3));
-        System.out.println("Êı×éµÄ³¤¶ÈÎª£º" + array1.size());
+        System.out.println("æ•°ç»„çš„é•¿åº¦ä¸ºï¼š" + array1.size());
 
     }
 }

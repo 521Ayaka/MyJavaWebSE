@@ -1,66 +1,66 @@
-package C3_×¢½â.D4_½âÎö×¢½â;
-/*      ¿ò¼ÜÀà
+package C3_æ³¨è§£.D4_è§£ææ³¨è§£;
+/*      æ¡†æ¶ç±»
 
 
                             */
 
 import java.lang.reflect.Method;
 
-//Ìí¼Ó×¢½â, ²¢¸³ÖµÊôĞÔ
-@MyAnnotation(className = "C3_×¢½â.D4_½âÎö×¢½â.TestLei01",methodName = "me")
+//æ·»åŠ æ³¨è§£, å¹¶èµ‹å€¼å±æ€§
+@MyAnnotation(className = "C3_æ³¨è§£.D4_è§£ææ³¨è§£.TestLei01",methodName = "me")
 public class ReflectTest {
 
     public static void main(String[] args) throws NoSuchMethodException {
 
 
-        //½âÎö×¢½â
-        //1»ñÈ¡¸ÃÀàµÄ×Ö½ÚÂëÎÄ¼ş¶ÔÏó
+        //è§£ææ³¨è§£
+        //1è·å–è¯¥ç±»çš„å­—èŠ‚ç æ–‡ä»¶å¯¹è±¡
         Class<ReflectTest> c = ReflectTest.class;
 
-        //2»ñÈ¡ÉÏ±ßµÄ×¢½â¶ÔÏó
+        //2è·å–ä¸Šè¾¹çš„æ³¨è§£å¯¹è±¡
         MyAnnotation ann = c.getAnnotation(MyAnnotation.class);
-/*      ÆäÊµ¾ÍÊÇÔÚÄÚ´æÖĞÉú²úÁËÒ»¸ö¸Ã×¢½â½Ó¿ÚµÄ×ÓÀà½ÓÊµÏÖ¶ÔÏó
-        ²¢ÇÒÊµÏÖÁË·½·¨, ·µ»Ø¸³ÖµºÃµÄÊôĞÔÖµ
+/*      å…¶å®å°±æ˜¯åœ¨å†…å­˜ä¸­ç”Ÿäº§äº†ä¸€ä¸ªè¯¥æ³¨è§£æ¥å£çš„å­ç±»æ¥å®ç°å¯¹è±¡
+        å¹¶ä¸”å®ç°äº†æ–¹æ³•, è¿”å›èµ‹å€¼å¥½çš„å±æ€§å€¼
         public class MyAnnotationImpl implements MyAnnotation{
             public String className(){
-                return "C3_×¢½â.D4_½âÎö×¢½â.TestLei01";
+                return "C3_æ³¨è§£.D4_è§£ææ³¨è§£.TestLei01";
             }
             public String methodName(){
                 return "me";
             }
         }                                                   */
 
-        //3µ÷ÓÃ×¢½â¶ÔÏóÖĞ¶¨ÒåµÄ³éÏó·½·¨(ÊôĞÔ), »ñÈ¡·µ»ØÖµ¡£
+        //3è°ƒç”¨æ³¨è§£å¯¹è±¡ä¸­å®šä¹‰çš„æŠ½è±¡æ–¹æ³•(å±æ€§), è·å–è¿”å›å€¼ã€‚
         String className = ann.className();
         String methodName = ann.methodName();
 
-        System.out.println("ÀàÃû: "+className+"\n·½·¨Ãû: "+methodName);
+        System.out.println("ç±»å: "+className+"\næ–¹æ³•å: "+methodName);
         System.out.println("=======================================");
 
-        //×¢½âÔÚ³ÉÔ±·½·¨ÉÏµÄ²½Öè
+        //æ³¨è§£åœ¨æˆå‘˜æ–¹æ³•ä¸Šçš„æ­¥éª¤
         method();
 
     }
 
 
-    //Í¬Àí µ÷ÓÃÔÚ·½·¨ÉÏ:
-    @MyAnnotation(className = "C3_×¢½â.D4_½âÎö×¢½â.TestLei02",methodName = "me")
+    //åŒç† è°ƒç”¨åœ¨æ–¹æ³•ä¸Š:
+    @MyAnnotation(className = "C3_æ³¨è§£.D4_è§£ææ³¨è§£.TestLei02",methodName = "me")
     public static void method() throws NoSuchMethodException {
 
-        //1.»ñÈ¡¸ÃÀà¶ÔÏó
+        //1.è·å–è¯¥ç±»å¯¹è±¡
         Class<ReflectTest> c = ReflectTest.class;
 
-        //2.»ñÈ¡¸Ã·½·¨¶ÔÏó
+        //2.è·å–è¯¥æ–¹æ³•å¯¹è±¡
         Method me = c.getDeclaredMethod("method");
 
-        //3.»ñÈ¡Õâ¸ö·½·¨µÄ×¢½â¶ÔÏó
+        //3.è·å–è¿™ä¸ªæ–¹æ³•çš„æ³¨è§£å¯¹è±¡
         MyAnnotation ann = me.getAnnotation(MyAnnotation.class);
 
-        //4.µ÷ÓÃ×¢½â¶ÔÏóÖĞ¶¨ÒåµÄ³éÏó·½·¨(ÊôĞÔ), »ñÈ¡·µ»ØÖµ
+        //4.è°ƒç”¨æ³¨è§£å¯¹è±¡ä¸­å®šä¹‰çš„æŠ½è±¡æ–¹æ³•(å±æ€§), è·å–è¿”å›å€¼
         String className = ann.className();
         String methodName = ann.methodName();
 
-        System.out.println("ÀàÃû: "+className+"\n·½·¨Ãû: "+methodName);
+        System.out.println("ç±»å: "+className+"\næ–¹æ³•å: "+methodName);
 
 
     }

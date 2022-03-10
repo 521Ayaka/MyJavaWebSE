@@ -1,19 +1,19 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.Static01;
+package åŸºç¡€çŸ¥è¯†.é™æ€.Static01;
 /**
 
-¹¹½¨¾²Ì¬´úÂë¿é
+æ„å»ºé™æ€ä»£ç å—
 
 */
 
 public class Static04Person {
 
-    //¾²Ì¬´úÂë¿é
+    //é™æ€ä»£ç å—
     static {
-        System.out.println("¾²Ì¬´úÂë¿éÖ´ĞĞ£¡");
+        System.out.println("é™æ€ä»£ç å—æ‰§è¡Œï¼");
     }
 
     public Static04Person() {
-        System.out.println("¹¹Ôì·½·¨Ö´ĞĞ£¡");
+        System.out.println("æ„é€ æ–¹æ³•æ‰§è¡Œï¼");
     }
 
 }

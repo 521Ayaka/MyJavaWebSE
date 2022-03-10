@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.A5_Ñ§ÉúÎÄ¼şµ½¼¯ºÏ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.A5_å­¦ç”Ÿæ–‡ä»¶åˆ°é›†åˆ;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,32 +9,32 @@ public class StudentFileToList {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new StudentFileToList().setStudentList();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void setStudentList() {
 
-        //´´½¨¼¯ºÏ¶ÔÏó
+        //åˆ›å»ºé›†åˆå¯¹è±¡
         ArrayList<Student> list = new ArrayList<>();
 
-        //´´½¨×Ö·û»º³åÊäÈëÁ÷¶ÔÏó À´ ¶ÁÈ¡Êı¾İ
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²è¾“å…¥æµå¯¹è±¡ æ¥ è¯»å–æ•°æ®
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\A5_Ñ§ÉúÎÄ¼şµ½¼¯ºÏ\\Ñ§ÉúÎÄ¼ş.txt"));
-            //¶ÁÈ¡Êı¾İ
+            br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\A5_å­¦ç”Ÿæ–‡ä»¶åˆ°é›†åˆ\\å­¦ç”Ÿæ–‡ä»¶.txt"));
+            //è¯»å–æ•°æ®
             String str;
             while ((str = br.readLine()) != null) {
-                //·Ö¸î×Ö·û´®
+                //åˆ†å‰²å­—ç¬¦ä¸²
                 String[] strArray = str.split(",");
-                //´´½¨Ñ§Éú¶ÔÏó , ²¢·ÅÈëlist¼¯ºÏµ±ÖĞ
+                //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡ , å¹¶æ”¾å…¥listé›†åˆå½“ä¸­
                 list.add(new Student(strArray[0], Integer.parseInt(strArray[1]), Integer.parseInt(strArray[2])));
             }
-            //±éÀúÊı×é, ²é¿´½á¹û
+            //éå†æ•°ç»„, æŸ¥çœ‹ç»“æœ
             for (Student stu : list) {
-                System.out.println("ĞÕÃû: " + stu.getName() + ", Ñ§ºÅ: " + stu.getId() + ", ÄêÁä: " + stu.getAge());
+                System.out.println("å§“å: " + stu.getName() + ", å­¦å·: " + stu.getId() + ", å¹´é¾„: " + stu.getAge());
             }
 
         } catch (IOException e) {
@@ -42,7 +42,7 @@ public class StudentFileToList {
         } finally {
             if (br != null) {
                 try {
-                    br.close();//ÊÍ·Å×ÊÔ´
+                    br.close();//é‡Šæ”¾èµ„æº
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

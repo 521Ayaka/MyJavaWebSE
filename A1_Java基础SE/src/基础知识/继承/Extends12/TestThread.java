@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends12;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends12;
 
 import java.util.Random;
 
 public class TestThread {
     public static void main(String[] args) {
-        //1.Éú³É3¸öËæ»úµÄÊÛÆ±Êı
+        //1.ç”Ÿæˆ3ä¸ªéšæœºçš„å”®ç¥¨æ•°
         Random r1 = new Random();
         Random r2 = new Random();
 
@@ -13,17 +13,17 @@ public class TestThread {
         int b = r2.nextInt(loss);
         int c = 100-b-a;
 
-        //3.Éú³É3¸ö´°¿Ú
+        //3.ç”Ÿæˆ3ä¸ªçª—å£
         MyThread sell1 = new MyThread(a);
-        sell1.setName("´°¿Ú1");
+        sell1.setName("çª—å£1");
 
         MyThread sell2 = new MyThread(b);
-        sell2.setName("´°¿Ú2");
+        sell2.setName("çª—å£2");
 
         MyThread sell3 = new MyThread(c);
-        sell3.setName("´°¿Ú3");
+        sell3.setName("çª—å£3");
 
-        //4.ÊÛÆ±»·½Ú
+        //4.å”®ç¥¨ç¯èŠ‚
         sell1.start();
         sell2.start();
         sell3.start();

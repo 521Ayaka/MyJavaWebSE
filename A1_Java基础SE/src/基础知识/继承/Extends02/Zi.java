@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends02;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends02;
 
 public class Zi extends Fu {
 
@@ -6,7 +6,7 @@ public class Zi extends Fu {
     int num = 200;
 
     public void methodZi() {
-        //thisµ÷ÓÃ±¾ÀàµÄ³ÉÔ±±äÁ¿
+        //thisè°ƒç”¨æœ¬ç±»çš„æˆå‘˜å˜é‡
         int num = 30;
         System.out.println(this.num);
     }

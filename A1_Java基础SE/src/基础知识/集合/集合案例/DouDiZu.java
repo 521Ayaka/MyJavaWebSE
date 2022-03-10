@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.¼¯ºÏ°¸Àı;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.é›†åˆæ¡ˆä¾‹;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,46 +6,46 @@ import java.util.HashMap;
 
 public class DouDiZu {
 
-    private String userName1 = "ŞÏŞÎÁË";
-    private String userName2 = "ŞÏŞÎµÛ";
-    private String userName3 = "ŞÏŞÎ½´";
+    private String userName1 = "å°´å°¬äº†";
+    private String userName2 = "å°´å°¬å¸";
+    private String userName3 = "å°´å°¬é…±";
 
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
         new DouDiZu().init();
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
 
-        //´´½¨ÅÆºĞ£¬Ê¹ÓÃArrayListÊı×é
+        //åˆ›å»ºç‰Œç›’ï¼Œä½¿ç”¨ArrayListæ•°ç»„
         ArrayList<String> list = new ArrayList<>();
 
-        //´´½¨»¨É«×é
-        String[] colors = {"·½¿é", "ºìÌÒ", "ºÚÌÒ", "ºìÌÒ"};
-        //´´½¨ÅÆµãÊı
+        //åˆ›å»ºèŠ±è‰²ç»„
+        String[] colors = {"æ–¹å—", "çº¢æ¡ƒ", "é»‘æ¡ƒ", "çº¢æ¡ƒ"};
+        //åˆ›å»ºç‰Œç‚¹æ•°
         String[] nums = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
-        //½«numÌí¼Óµ½colorsÖĞ
+        //å°†numæ·»åŠ åˆ°colorsä¸­
         for (String color : colors) {
             for (String num : nums) {
                 list.add(color + num);
             }
         }
-        //Ìí¼Ó´óĞ¡Íõ
-        list.add("Ğ¡Íõ");
-        list.add("´óÍõ");
+        //æ·»åŠ å¤§å°ç‹
+        list.add("å°ç‹");
+        list.add("å¤§ç‹");
 
-        //½øĞĞÏ´ÅÆÊ¹ÓÃCollectionsµÄshuffle()¾²Ì¬·½·¨
+        //è¿›è¡Œæ´—ç‰Œä½¿ç”¨Collectionsçš„shuffle()é™æ€æ–¹æ³•
         Collections.shuffle(list);
 
-        //´´½¨3Êı×é£¬·Ö±ğ´æ´¢3¸öÈËµÄÅÆÊı
+        //åˆ›å»º3æ•°ç»„ï¼Œåˆ†åˆ«å­˜å‚¨3ä¸ªäººçš„ç‰Œæ•°
         ArrayList<String> user1 = new ArrayList<>();
         ArrayList<String> user2 = new ArrayList<>();
         ArrayList<String> user3 = new ArrayList<>();
         ArrayList<String> dp = new ArrayList<>();
 
-        //·ÖÅÆ£¬Ê¹ÓÃÆÕÍ¨forÑ­»·
+        //åˆ†ç‰Œï¼Œä½¿ç”¨æ™®é€šforå¾ªç¯
         for (int i = 0; i < list.size(); i++) {
             String str = list.get(i);
             if (i >= list.size() - 3) {
@@ -58,31 +58,31 @@ public class DouDiZu {
                 user3.add(str);
             }
         }
-        //½øĞĞ¶ÔÅÆµÄÅÅĞò
+        //è¿›è¡Œå¯¹ç‰Œçš„æ’åº
         HashMap<String, Integer> map = new HashMap<>();
 
 
 
-        //µ÷ÓÃ²é¿´ÅÆµÄ·½·¨
+        //è°ƒç”¨æŸ¥çœ‹ç‰Œçš„æ–¹æ³•
         Value(userName1, user1);
         Value(userName2, user2);
         Value(userName3, user3);
-        Value("µ×ÅÆÊı", dp);
+        Value("åº•ç‰Œæ•°", dp);
 
 
     }
 
-    //¶ÔÓÃ»§µÄÅÆÅÅĞò
+    //å¯¹ç”¨æˆ·çš„ç‰Œæ’åº
     public static void sort(String userName,ArrayList<String> list){
         HashMap<String, String> map = new HashMap<>();
-        //ÀûÓÃMap¼¯ºÏ´æ´¢ÅÆºÍÅÆµÄ¸öÊı
+        //åˆ©ç”¨Mapé›†åˆå­˜å‚¨ç‰Œå’Œç‰Œçš„ä¸ªæ•°
 
     }
 
-    //²é¿´ÅÆÊıµÄ·½·¨¡£
+    //æŸ¥çœ‹ç‰Œæ•°çš„æ–¹æ³•ã€‚
     public static void Value(String name, ArrayList<String> array) {
-        System.out.println("ĞÕÃû£º" + name);
-        System.out.print("ÅÆÎª£º");
+        System.out.println("å§“åï¼š" + name);
+        System.out.print("ç‰Œä¸ºï¼š");
         for (String str : array) {
             System.out.print(str + " ");
         }

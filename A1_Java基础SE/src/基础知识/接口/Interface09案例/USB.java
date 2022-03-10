@@ -1,4 +1,4 @@
-package 基础知识.接口.Interface09案例;
+package 鍩虹鐭ヨ瘑.鎺ュ彛.Interface09妗堜緥;
 
 public interface USB {
 

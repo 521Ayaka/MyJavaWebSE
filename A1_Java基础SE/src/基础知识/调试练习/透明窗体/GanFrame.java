@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°.Í¸Ã÷´°Ìå;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ .é€æ˜çª—ä½“;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,11 +23,11 @@ public class GanFrame extends JFrame {
 
 
         JComboBox box = new JComboBox();
-        box.addItem("ÇëÑ¡Ôñ");
-        box.addItem("ÂÜÀò");
-        box.addItem("Óù½ã");
-        box.addItem("¶ş´ÎÔªÃÃ×Ó");
-        box.addItem("½¿Èá¿É°®µÄÃÃ×Ó");
+        box.addItem("è¯·é€‰æ‹©");
+        box.addItem("èè‰");
+        box.addItem("å¾¡å§");
+        box.addItem("äºŒæ¬¡å…ƒå¦¹å­");
+        box.addItem("å¨‡æŸ”å¯çˆ±çš„å¦¹å­");
         box.setBounds(150, 100, 180, 35);
         box.setOpaque(false);
 

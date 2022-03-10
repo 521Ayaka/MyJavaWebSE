@@ -1,40 +1,40 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A2_Ïß³Ìµ÷¶È;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A2_çº¿ç¨‹è°ƒåº¦;
 
 public class runs {
 
     public static void main(String[] args) {
-        //´´½¨¶àÏß³Ì¶ÔÏó
+        //åˆ›å»ºå¤šçº¿ç¨‹å¯¹è±¡
         ThreadPriority tp1 = new ThreadPriority();
         ThreadPriority tp2 = new ThreadPriority();
         ThreadPriority tp3 = new ThreadPriority();
 
-        //ÉèÖÃÃû×Ö
-        tp1.setName("¸ßÌú");  //5 Ä¬ÈÏµ÷¶ÈÊÇ5
-        tp2.setName("·É»ú");  //5
-        tp3.setName("ÍÏÀ­»ú");//5
+        //è®¾ç½®åå­—
+        tp1.setName("é«˜é“");  //5 é»˜è®¤è°ƒåº¦æ˜¯5
+        tp2.setName("é£žæœº");  //5
+        tp3.setName("æ‹–æ‹‰æœº");//5
 
-        //ThreadÀàÖÐÓÐÈý¸ö¾²Ì¬³ÉÔ±±äÁ¿
+        //Threadç±»ä¸­æœ‰ä¸‰ä¸ªé™æ€æˆå‘˜å˜é‡
         System.out.println(Thread.MIN_PRIORITY); //1
         System.out.println(Thread.NORM_PRIORITY);//5
         System.out.println(Thread.MAX_PRIORITY); //10
-        System.out.println("»¹¿ÉÒÔÔÚÖÐ¼äÈ¡intÉèÖÃµ÷¶È");
+        System.out.println("è¿˜å¯ä»¥åœ¨ä¸­é—´å–intè®¾ç½®è°ƒåº¦");
 
         System.out.println("==========================");
 
-        //µ÷¶ÈÊÇÎÞÐòµÄ ÉèÖÃÁËµ÷¶ÈÖ»ÊÇÇÀµ½CPUÆ¬µÄ¸ÅÂÊ¸ßÁË¶øÒÑ,²¢²»´ú±íÒ»¶¨ÏÈÔËÐÐ¡£
+        //è°ƒåº¦æ˜¯æ— åºçš„ è®¾ç½®äº†è°ƒåº¦åªæ˜¯æŠ¢åˆ°CPUç‰‡çš„æ¦‚çŽ‡é«˜äº†è€Œå·²,å¹¶ä¸ä»£è¡¨ä¸€å®šå…ˆè¿è¡Œã€‚
 
-        //Ä¬ÈÏµ÷¶È Æô¶¯¶àÏß³Ì
+        //é»˜è®¤è°ƒåº¦ å¯åŠ¨å¤šçº¿ç¨‹
 //        priority_NORM(tp1);
 //        priority_NORM(tp2);
 //        priority_NORM(tp3);
 
-        //ÉèÖÃµ÷¶È
+        //è®¾ç½®è°ƒåº¦
         priority_MIN_TO_MAX(tp1,5);
         priority_MIN_TO_MAX(tp2,10);
         priority_MIN_TO_MAX(tp3,1);
 
 
-        //²é¿´¸÷Ïß³ÌµÄµ÷¶È
+        //æŸ¥çœ‹å„çº¿ç¨‹çš„è°ƒåº¦
         System.out.println(tp1.getPriority());
         System.out.println(tp2.getPriority());
         System.out.println(tp3.getPriority());
@@ -46,7 +46,7 @@ public class runs {
     }
 
     public static void priority_MIN_TO_MAX(ThreadPriority tp,int p){
-        //ÉèÖÃÏß³Ìµ÷¶È
+        //è®¾ç½®çº¿ç¨‹è°ƒåº¦
         if (p>0 && p<=10){
             tp.setPriority(p);
         }else {

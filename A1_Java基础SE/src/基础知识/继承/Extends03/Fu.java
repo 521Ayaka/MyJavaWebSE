@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends03;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends03;
 
 public class Fu {
 
     int num = 10;
 
     public void method() {
-        System.out.println("¸¸Àà·½·¨£¡");
+        System.out.println("çˆ¶ç±»æ–¹æ³•ï¼");
     }
 
 }

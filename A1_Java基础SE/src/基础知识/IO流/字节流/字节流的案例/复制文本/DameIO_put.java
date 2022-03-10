@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½ÚÁ÷.×Ö½ÚÁ÷µÄ°¸Àı.¸´ÖÆÎÄ±¾;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚æµ.å­—èŠ‚æµçš„æ¡ˆä¾‹.å¤åˆ¶æ–‡æœ¬;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,19 +9,19 @@ public class DameIO_put {
     public static void main(String[] args) {
 
         method1();
-        method1();//±ß¶Á±àĞ´¿ÉÒÔ¼ò»¯ºÜ¶à´úÂë¡£
+        method1();//è¾¹è¯»ç¼–å†™å¯ä»¥ç®€åŒ–å¾ˆå¤šä»£ç ã€‚
 
     }
 
-    //·½·¨Ò»: ÏÈ¶ÁÈ¡ËùÓĞÄÚÈİ£¬È»ºóÔÚÈ«²¿Ğ´Èë
+    //æ–¹æ³•ä¸€: å…ˆè¯»å–æ‰€æœ‰å†…å®¹ï¼Œç„¶ååœ¨å…¨éƒ¨å†™å…¥
     public static void method1(){
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÁÈ¡Êı¾İ
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµè¯»å–æ•°æ®
         FileInputStream input = null;
         String str = "";
         int by;
         try{
-            input = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÎÄ±¾\\²âÊÔÎÄ¼ş1.txt");
-            //¶ÁÊı¾İ
+            input = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶æ–‡æœ¬\\æµ‹è¯•æ–‡ä»¶1.txt");
+            //è¯»æ•°æ®
             while( (by = (input.read())) != -1 ){
                 str = str + (char)by;
             }
@@ -30,7 +30,7 @@ public class DameIO_put {
         }finally{
             if(input != null){
                 try{
-                    input.close();//ÊÍ·Å×ÊÔ´
+                    input.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }
@@ -38,19 +38,19 @@ public class DameIO_put {
         }
 
 
-        //¿ªÊ¼¸´ÖÆÊı¾İ
+        //å¼€å§‹å¤åˆ¶æ•°æ®
         FileOutputStream output = null;
         try{
-            //×·¼ÓĞ´Èë
-            output = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÎÄ±¾\\²âÊÔÎÄ¼ş2.txt",true);
-            output.write("\n\n".getBytes());//ÏÈ¸øËü»»ĞĞ
-            output.write(str.getBytes());   //Ğ´ÈëÊı¾İ
+            //è¿½åŠ å†™å…¥
+            output = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶æ–‡æœ¬\\æµ‹è¯•æ–‡ä»¶2.txt",true);
+            output.write("\n\n".getBytes());//å…ˆç»™å®ƒæ¢è¡Œ
+            output.write(str.getBytes());   //å†™å…¥æ•°æ®
         }catch (IOException e){
             e.printStackTrace();
         }finally{
             if (output != null){
                 try{
-                    output.close();//ÊÍ·Å×ÊÔ´
+                    output.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }
@@ -62,38 +62,38 @@ public class DameIO_put {
 
 
 
-    //·½·¨¶ş: ±ß¶È±àĞ´
+    //æ–¹æ³•äºŒ: è¾¹åº¦ç¼–å†™
     public static void method2(){
 
         FileInputStream input = null;
         FileOutputStream output = null;
         try{
-            input = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÎÄ±¾\\²âÊÔÎÄ¼ş1.txt");
-            output = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷µÄ°¸Àı\\¸´ÖÆÎÄ±¾\\²âÊÔÎÄ¼ş2.txt",true);//×·¼ÓĞ´Èë
-            //±ß¶Á±ğĞ´
-            output.write("\n\n".getBytes());//ÏÈ¸øËü»»ĞĞ
+            input = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶æ–‡æœ¬\\æµ‹è¯•æ–‡ä»¶1.txt");
+            output = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµçš„æ¡ˆä¾‹\\å¤åˆ¶æ–‡æœ¬\\æµ‹è¯•æ–‡ä»¶2.txt",true);//è¿½åŠ å†™å…¥
+            //è¾¹è¯»åˆ«å†™
+            output.write("\n\n".getBytes());//å…ˆç»™å®ƒæ¢è¡Œ
             int by;
-            while((by = input.read() ) != -1){//¶ÁÈ¡Êı¾İ
-                output.write((char) by);      //Ğ´ÈëÊı¾İ
+            while((by = input.read() ) != -1){//è¯»å–æ•°æ®
+                output.write((char) by);      //å†™å…¥æ•°æ®
             }
 
         }catch (IOException e){
             e.printStackTrace();
         }finally{
 
-            //ÊÍ·Å×Ö½ÚÊä³öÁ÷
+            //é‡Šæ”¾å­—èŠ‚è¾“å‡ºæµ
             if (input != null){
                 try{
-                    input.close();//ÊÍ·Å×ÊÔ´
+                    input.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }
             }
 
-            //ÊÍ·Å×Ö½ÚÊäÈëÁ÷¡£
+            //é‡Šæ”¾å­—èŠ‚è¾“å…¥æµã€‚
             if (output != null ){
                 try{
-                    output.close();//ÊÍ·Å×ÊÔ´
+                    output.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }

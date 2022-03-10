@@ -1,11 +1,11 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú»º³åÁ÷.A1_»º³åÊä³öÁ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚ç¼“å†²æµ.A1_ç¼“å†²è¾“å‡ºæµ;
 
 /*
-¹¹Ôì·½·¨£º
+æ„é€ æ–¹æ³•ï¼š
 
-    //²ÎÊıÊÇOutputStream ÀàµÄ¶ÔÏó £¬Ö»ÓĞÒ»¸ö²ÎÊı
+    //å‚æ•°æ˜¯OutputStream ç±»çš„å¯¹è±¡ ï¼Œåªæœ‰ä¸€ä¸ªå‚æ•°
     public BufferedOutputStream(OutputStream out) {
-        this(out, 8192);     //ÕâÀïµ÷ÓÃÁËÏÂÃæÒ»¸ö¹¹Ôì·½·¨£¬Ä¬ÈÏ sizeÊÇ 8*1024 = 8192
+        this(out, 8192);     //è¿™é‡Œè°ƒç”¨äº†ä¸‹é¢ä¸€ä¸ªæ„é€ æ–¹æ³•ï¼Œé»˜è®¤ sizeæ˜¯ 8*1024 = 8192
     }
 
 
@@ -14,7 +14,7 @@ package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú»º³åÁ÷.A1_»º³åÊä³öÁ÷;
         if (size <= 0) {
             throw new IllegalArgumentException("Buffer size <= 0");
         }
-        buf = new byte[size];   //´´½¨ÁË»º³å×Ö½ÚÊı×é¡£
+        buf = new byte[size];   //åˆ›å»ºäº†ç¼“å†²å­—èŠ‚æ•°ç»„ã€‚
     }
 
 
@@ -29,18 +29,18 @@ public class TestBufferedOutputStream {
 
     public static void main(String[] args) throws IOException {
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó¡£
-//        FileOutputStream out = new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú»º³åÁ÷\\²âÊÔÎÄ¼ş.txt");
-//        BufferedOutputStream bOut = new BufferedOutputStream(out);//ÕâÀï·ÅÈë
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡ã€‚
+//        FileOutputStream out = new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚ç¼“å†²æµ\\æµ‹è¯•æ–‡ä»¶.txt");
+//        BufferedOutputStream bOut = new BufferedOutputStream(out);//è¿™é‡Œæ”¾å…¥
 
-        //out¶ÔÏóÖ»ÓÃÁËÒ»´Î£¬Ê¹ÓÃÄäÃû¶ÔÏóÓÅ»¯
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú»º³åÁ÷\\²âÊÔÎÄ¼ş.txt"));
-        //Ê¹ÓÃBufferedOutputStream À´Ğ´Êı¾İ
-        bos.write("ÎÊ¾ıÄÜÓĞ¼¸¶à³î\r\n".getBytes());
-        bos.write("½£Ê¥ËşÏÂ´ï²»Áï\r\n".getBytes());
+        //outå¯¹è±¡åªç”¨äº†ä¸€æ¬¡ï¼Œä½¿ç”¨åŒ¿åå¯¹è±¡ä¼˜åŒ–
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚ç¼“å†²æµ\\æµ‹è¯•æ–‡ä»¶.txt"));
+        //ä½¿ç”¨BufferedOutputStream æ¥å†™æ•°æ®
+        bos.write("é—®å›èƒ½æœ‰å‡ å¤šæ„\r\n".getBytes());
+        bos.write("å‰‘åœ£å¡”ä¸‹è¾¾ä¸æºœ\r\n".getBytes());
 
-        //ÒÀÈ»ĞèÒªÊÍ·Å×ÊÔ´
-        bos.close();//Èç¹ûÕâÀïÃ»ÓĞÊÍ·Å×ÊÔ´µÄ»°£¬¾Í²»»á½øĞĞĞ´ÈëÄÚÈİ£¡£¡£¡
+        //ä¾ç„¶éœ€è¦é‡Šæ”¾èµ„æº
+        bos.close();//å¦‚æœè¿™é‡Œæ²¡æœ‰é‡Šæ”¾èµ„æºçš„è¯ï¼Œå°±ä¸ä¼šè¿›è¡Œå†™å…¥å†…å®¹ï¼ï¼ï¼
     }
 
 }

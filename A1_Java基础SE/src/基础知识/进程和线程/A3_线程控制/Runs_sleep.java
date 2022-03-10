@@ -1,47 +1,47 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A3_Ïß³Ì¿ØÖÆ;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A3_çº¿ç¨‹æ§åˆ¶;
 
 public class Runs_sleep {
 
     public static void main(String[] args) {
 
-        //´´½¨Ïß³Ì
+        //åˆ›å»ºçº¿ç¨‹
         ThreadSleep ts1 = new ThreadSleep();
         ThreadSleep ts2 = new ThreadSleep();
         ThreadSleep ts3 = new ThreadSleep();
-        //ÉèÖÃÏß³ÌÃû×Ö
-        ts1.setName("²Ü²Ù");
-        ts2.setName("Áõ±¸");
-        ts3.setName("ËïÈ¨");
+        //è®¾ç½®çº¿ç¨‹åå­—
+        ts1.setName("æ›¹æ“");
+        ts2.setName("åˆ˜å¤‡");
+        ts3.setName("å­™æƒ");
 
-        //Æô¶¯Ïß³Ì
+        //å¯åŠ¨çº¿ç¨‹
         ts1.start();
         ts2.start();
         ts3.start();
-        // Áõ±¸:0
-        // ²Ü²Ù:0
-        // ËïÈ¨:0
-        // ²Ü²Ù:1
-        // Áõ±¸:1
-        // ËïÈ¨:1
-        // Áõ±¸:2
-        // ²Ü²Ù:2
-        // ËïÈ¨:2
-        // Áõ±¸:3
-        // ²Ü²Ù:3
-        // ËïÈ¨:3
+        // åˆ˜å¤‡:0
+        // æ›¹æ“:0
+        // å­™æƒ:0
+        // æ›¹æ“:1
+        // åˆ˜å¤‡:1
+        // å­™æƒ:1
+        // åˆ˜å¤‡:2
+        // æ›¹æ“:2
+        // å­™æƒ:2
+        // åˆ˜å¤‡:3
+        // æ›¹æ“:3
+        // å­™æƒ:3
         // ...
     }
 
 }
 
-//Ïß³ÌÀà
+//çº¿ç¨‹ç±»
 class ThreadSleep extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
             System.out.println(getName() + ":" + i);
-            //Ê¹ÓÃsleep¾²Ì¬·½·¨£¬Ã»Ö´ĞĞÒ»´ÎÍ£Áô1000ºÁÃë
-            try {//ĞèÒªÒì³£´¦Àí try...catch
+            //ä½¿ç”¨sleepé™æ€æ–¹æ³•ï¼Œæ²¡æ‰§è¡Œä¸€æ¬¡åœç•™1000æ¯«ç§’
+            try {//éœ€è¦å¼‚å¸¸å¤„ç† try...catch
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();

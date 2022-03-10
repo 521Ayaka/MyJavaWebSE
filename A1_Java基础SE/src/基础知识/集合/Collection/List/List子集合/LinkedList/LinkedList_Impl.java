@@ -1,71 +1,71 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List×Ó¼¯ºÏ.LinkedList;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listå­é›†åˆ.LinkedList;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
 /*
-ListÓĞµÄ·½·¨LinkedListÒ²ÓĞ¾Í²»Ğ´ÁË
+Listæœ‰çš„æ–¹æ³•LinkedListä¹Ÿæœ‰å°±ä¸å†™äº†
 
-[LinkedListÌØÓĞµÄ·½·¨]:
+[LinkedListç‰¹æœ‰çš„æ–¹æ³•]:
 
-public void addFirst(E e)  ÔÚ¸ÃÁĞ±í¿ªÍ·²åÈëÖ¸¶¨µÄÔªËØ
-public void addLast(E e)   ½«Ö¸¶¨µÄÔªËØ×·¼Óµ½´ËÁĞ±íµÄÄ©Î²
+public void addFirst(E e)  åœ¨è¯¥åˆ—è¡¨å¼€å¤´æ’å…¥æŒ‡å®šçš„å…ƒç´ 
+public void addLast(E e)   å°†æŒ‡å®šçš„å…ƒç´ è¿½åŠ åˆ°æ­¤åˆ—è¡¨çš„æœ«å°¾
 
-public E getFirst()        ·µ»Ø´ËÁĞ±íÖĞµÄµÚÒ»¸öÔªËØ
-public E getLast()         ·µ»Ø´ËÁĞ±íÖĞµÄ×îºóÒ»¸öÔªËØ
+public E getFirst()        è¿”å›æ­¤åˆ—è¡¨ä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ 
+public E getLast()         è¿”å›æ­¤åˆ—è¡¨ä¸­çš„æœ€åä¸€ä¸ªå…ƒç´ 
 
-public E removeFirst()     ´Ó´ËÁĞ±íÖĞÉ¾³ı²¢·µ»ØµÚÒ»¸öÔªËØ
-public E removeLast()      ´Ó´ËÁĞ±íÖĞÉ¾³ı²¢·µ»Ø×îºóÒ»¸öÔªËØ
+public E removeFirst()     ä»æ­¤åˆ—è¡¨ä¸­åˆ é™¤å¹¶è¿”å›ç¬¬ä¸€ä¸ªå…ƒç´ 
+public E removeLast()      ä»æ­¤åˆ—è¡¨ä¸­åˆ é™¤å¹¶è¿”å›æœ€åä¸€ä¸ªå…ƒç´ 
 
-[First]µÚÒ»           [List] ×îºó
+[First]ç¬¬ä¸€           [List] æœ€å
 ========================================================================================================================
-ListÓĞÈıÖÖ·½·¨±éÀú¼¯ºÏ,
-ËùÒÔLinkedListÒ²ÓĞÈıÖÖ·½·¨±éÀú¼¯ºÏ
+Listæœ‰ä¸‰ç§æ–¹æ³•éå†é›†åˆ,
+æ‰€ä»¥LinkedListä¹Ÿæœ‰ä¸‰ç§æ–¹æ³•éå†é›†åˆ
 
 */
 public class LinkedList_Impl {
 
     public static void main(String[] args) {
 
-        //´´½¨ÁĞ±í
+        //åˆ›å»ºåˆ—è¡¨
         LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.add("ÑÇË÷");
-        linkedList.add("¸ç¸ç");
-        linkedList.add("ÄãºÃÀËÑ½");
-        linkedList.add(1,"ßÏÓ´ßÏ");
+        linkedList.add("äºšç´¢");
+        linkedList.add("å“¥å“¥");
+        linkedList.add("ä½ å¥½æµªå‘€");
+        linkedList.add(1,"å‘¦å“Ÿå‘¦");
         System.out.println(linkedList);
         System.out.println("========================");
 
-        //public void addFirst(E e)  ÔÚ¸ÃÁĞ±í¿ªÍ·²åÈëÖ¸¶¨µÄÔªËØ
-        //public void addLast(E e)   ½«Ö¸¶¨µÄÔªËØ×·¼Óµ½´ËÁĞ±íµÄÄ©Î²
-        linkedList.addFirst("ÍÛ£¡");
-        linkedList.addLast("²»¹ıÎÒÏ¡·¹");
+        //public void addFirst(E e)  åœ¨è¯¥åˆ—è¡¨å¼€å¤´æ’å…¥æŒ‡å®šçš„å…ƒç´ 
+        //public void addLast(E e)   å°†æŒ‡å®šçš„å…ƒç´ è¿½åŠ åˆ°æ­¤åˆ—è¡¨çš„æœ«å°¾
+        linkedList.addFirst("å“‡ï¼");
+        linkedList.addLast("ä¸è¿‡æˆ‘ç¨€é¥­");
         System.out.println(linkedList);
         System.out.println("========================");
 
-        //public E removeFirst()     ´Ó´ËÁĞ±íÖĞÉ¾³ı²¢·µ»ØµÚÒ»¸öÔªËØ
-        //public E removeLast()      ´Ó´ËÁĞ±íÖĞÉ¾³ı²¢·µ»Ø×îºóÒ»¸öÔªËØ
-        String strFirst = linkedList.removeFirst(); //ÒÆ³ıµÚÒ»¸öÔªËØ
-        String strLast = linkedList.removeLast();   //ÒÆ³ı×îºóÒ»¸öÔªËØ
-        System.out.println("ÒÆ³ıµÚÒ»¸öÔªËØ:" + strFirst);
-        System.out.println("ÒÆ³ı×îºóÒ»¸öÔªËØ" + strLast);
+        //public E removeFirst()     ä»æ­¤åˆ—è¡¨ä¸­åˆ é™¤å¹¶è¿”å›ç¬¬ä¸€ä¸ªå…ƒç´ 
+        //public E removeLast()      ä»æ­¤åˆ—è¡¨ä¸­åˆ é™¤å¹¶è¿”å›æœ€åä¸€ä¸ªå…ƒç´ 
+        String strFirst = linkedList.removeFirst(); //ç§»é™¤ç¬¬ä¸€ä¸ªå…ƒç´ 
+        String strLast = linkedList.removeLast();   //ç§»é™¤æœ€åä¸€ä¸ªå…ƒç´ 
+        System.out.println("ç§»é™¤ç¬¬ä¸€ä¸ªå…ƒç´ :" + strFirst);
+        System.out.println("ç§»é™¤æœ€åä¸€ä¸ªå…ƒç´ " + strLast);
         System.out.println(linkedList);
         System.out.println("========================");
 
-        //public E getFirst()        ·µ»Ø´ËÁĞ±íÖĞµÄµÚÒ»¸öÔªËØ
-        //public E getLast()         ·µ»Ø´ËÁĞ±íÖĞµÄ×îºóÒ»¸öÔªËØ
+        //public E getFirst()        è¿”å›æ­¤åˆ—è¡¨ä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ 
+        //public E getLast()         è¿”å›æ­¤åˆ—è¡¨ä¸­çš„æœ€åä¸€ä¸ªå…ƒç´ 
         String strGetFirst = linkedList.getFirst();
         String strGetLast = linkedList.getLast();
-        System.out.println("»ñÈ¡µÚÒ»¸öÔªËØ:" + strGetFirst);
-        System.out.println("»ñÈ¡×îºóÒ»¸öÔªËØ:" + strGetLast);
+        System.out.println("è·å–ç¬¬ä¸€ä¸ªå…ƒç´ :" + strGetFirst);
+        System.out.println("è·å–æœ€åä¸€ä¸ªå…ƒç´ :" + strGetLast);
         System.out.println(linkedList);
         System.out.println("========================");
 
         //==============================================================================================================
-        //ÈıÖÖ·½Ê½±éÀúLinkedList¼¯ºÏ
-        System.out.println("ÈıÖÖ·½Ê½±éÀúLinkedList¼¯ºÏ");
+        //ä¸‰ç§æ–¹å¼éå†LinkedListé›†åˆ
+        System.out.println("ä¸‰ç§æ–¹å¼éå†LinkedListé›†åˆ");
 
-        //1. Ê¹ÓÃµü´úÆ÷
+        //1. ä½¿ç”¨è¿­ä»£å™¨
         Iterator<String> itr = linkedList.iterator();
         while (itr.hasNext()){
             String str = itr.next();
@@ -74,13 +74,13 @@ public class LinkedList_Impl {
         System.out.println("========================");
 
 
-        //2. Ê¹ÓÃforÑ­»·±éÀú
+        //2. ä½¿ç”¨forå¾ªç¯éå†
         for (int i = 0; i < linkedList.size(); i++) {
             System.out.println(linkedList.get(i));
         }
         System.out.println("========================");
 
-        //3. Ê¹ÓÃÔöÇ¿forÑ­»·
+        //3. ä½¿ç”¨å¢å¼ºforå¾ªç¯
         for (String name:
              linkedList) {
             System.out.println(name);

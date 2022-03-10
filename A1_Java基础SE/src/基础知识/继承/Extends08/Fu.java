@@ -1,13 +1,13 @@
-package 基础知识.继承.Extends08;
+package 鍩虹鐭ヨ瘑.缁ф壙.Extends08;
 
 public class Fu {
     int sup = 10;
 
     public void method() {
-        System.out.println("同名父类方法");
+        System.out.println("鍚屽悕鐖剁被鏂规硶");
     }
 
     public Fu() {
-        System.out.println("父类构造方法执行！");
+        System.out.println("鐖剁被鏋勯�犳柟娉曟墽琛岋紒");
     }
 }

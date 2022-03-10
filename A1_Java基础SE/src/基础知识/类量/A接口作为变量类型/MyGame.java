@@ -1,47 +1,47 @@
-package »ù´¡ÖªÊ¶.ÀàÁ¿.A½Ó¿Ú×÷Îª±äÁ¿ÀàĞÍ;
+package åŸºç¡€çŸ¥è¯†.ç±»é‡.Aæ¥å£ä½œä¸ºå˜é‡ç±»å‹;
 
 public class MyGame {
 
     public static void main(String[] args) {
 
         Hero hero = new Hero();
-        hero.setName("º®±ùÉäÊÖ-°¬Ï£");
+        hero.setName("å¯’å†°å°„æ‰‹-è‰¾å¸Œ");
         hero.setAge(18);
 
-        //´´½¨ÎäÆ÷
+        //åˆ›å»ºæ­¦å™¨
         Weapon weapon = new Weapon("AK-47");
-        //´´½¨¼¼ÄÜ
+        //åˆ›å»ºæŠ€èƒ½
         SkillImpl impl = new SkillImpl();
 
-        //´«µİÀàĞÍ²ÎÊı
+        //ä¼ é€’ç±»å‹å‚æ•°
         hero.setWeapon(weapon);
         hero.setSkill(impl);
 
-        //µ÷ÓÃÓ¢ĞÛ
+        //è°ƒç”¨è‹±é›„
         hero.method();
 
         System.out.println("==========================================================================================");
 
-        //¼ò±ãĞ´·¨
+        //ç®€ä¾¿å†™æ³•
 
-        //ÄäÃûÄÚ²¿ÀàÀ´ÊµÏÖ½Ó¿Ú
+        //åŒ¿åå†…éƒ¨ç±»æ¥å®ç°æ¥å£
         Skill skill = new Skill() {
             @Override
             public void use() {
-                System.out.print("ÀûÈĞ»ª¶û×È / »ª¶û×ÈÔ²ÎèÇú");
+                System.out.print("åˆ©åˆƒåå°”å…¹ / åå°”å…¹åœ†èˆæ›²");
             }
         };
-        //´´½¨Ó¢ĞÛ²¢´«ÈëÓ¢ĞÛÊı¾İ
-        Hero hero1 = new Hero("ÎŞË«½£¼§" , 3 , new Weapon("¶àÀ¼½£") , skill);
+        //åˆ›å»ºè‹±é›„å¹¶ä¼ å…¥è‹±é›„æ•°æ®
+        Hero hero1 = new Hero("æ— åŒå‰‘å§¬" , 3 , new Weapon("å¤šå…°å‰‘") , skill);
         hero1.method();
 
         System.out.println("==========================================================================================");
 
-        //ÁíÍâµÄ
+        //å¦å¤–çš„
         hero1.setSkill(new Skill() {
             @Override
             public void use() {
-                System.out.print("ÎŞË«ÌôÕ½");
+                System.out.print("æ— åŒæŒ‘æˆ˜");
             }
         });
 

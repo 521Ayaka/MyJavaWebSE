@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A7_ÒıÓÃ¹¹ÔìÆ÷;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A7_å¼•ç”¨æ„é€ å™¨;
 
 public class RunStudent {
 
     public static void main(String[] args) {
 
-        //Í¨¹ıLambda±í´ïÊ½´´½¨
+        //é€šè¿‡Lambdaè¡¨è¾¾å¼åˆ›å»º
         /*useStudent( (name,age)->{
             Student stu = new Student(name,age);
             return stu;
@@ -13,17 +13,17 @@ public class RunStudent {
 
         System.out.println("====================");
 
-        //Í¨¹ıLambda±í´ïÊ½£¬µ÷ÓÃ¹¹ÔìÆ÷
+        //é€šè¿‡Lambdaè¡¨è¾¾å¼ï¼Œè°ƒç”¨æ„é€ å™¨
         useStudent(Student::new);
-        //Lambda±í´ïÊ½±»¹¹ÔìÆ÷´úÌæµÄÊ±ºò, ËüµÄĞÎÊ½²ÎÊıÈ«²¿´«µİ¸ø¹¹ÔìÆ÷µÄ²ÎÊı
-        //·µ»ØStudent ´´½¨Student ½«²ÎÊı°´Ë³Ğò´«¸øpublic Student(String name,int age){//...}
+        //Lambdaè¡¨è¾¾å¼è¢«æ„é€ å™¨ä»£æ›¿çš„æ—¶å€™, å®ƒçš„å½¢å¼å‚æ•°å…¨éƒ¨ä¼ é€’ç»™æ„é€ å™¨çš„å‚æ•°
+        //è¿”å›Student åˆ›å»ºStudent å°†å‚æ•°æŒ‰é¡ºåºä¼ ç»™public Student(String name,int age){//...}
 
     }
 
 
     private static void useStudent(StudentInterface e) {
-        Student stu = e.builder("ŞÏŞÎ½´", 20);
-        System.out.println("ĞÕÃû: " + stu.getName() + ", ÄêÁä: " + stu.getAge());
+        Student stu = e.builder("å°´å°¬é…±", 20);
+        System.out.println("å§“å: " + stu.getName() + ", å¹´é¾„: " + stu.getAge());
     }
 
 }

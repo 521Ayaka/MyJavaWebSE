@@ -1,24 +1,24 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.List.List¼¯ºÏ.ListIteratorµü´úÆ÷;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.List.Listé›†åˆ.ListIteratorè¿­ä»£å™¨;
 /*
 java.util.ListIterator<E>
-ListIteratorÒ²½Ğ: ÁĞ±íµü´úÆ÷
+ListIteratorä¹Ÿå«: åˆ—è¡¨è¿­ä»£å™¨
 
-[ListIterator¸ÅÊö]:
+[ListIteratoræ¦‚è¿°]:
 
---- ListIteratorÊÇListµÄlistIterator()·½·¨µÃµ½µÄ£¬ÊÇListÌØÓĞµÄµü´úÆ÷¡£
---- ListIterator¼Ì³ĞÁËIterator½Ó¿Ú¡£
---- ÓÃÓÚÔÊĞí³ÌĞòÔ±ÑØÈÎÒâ·½Ïò±éÀúÁĞ±íµü´úÆ÷£¬ÔÚµü´úÆÚ¼äĞŞ¸ÄÁĞ±í£¬²¢»ñµÃÁĞ±íÖĞµü´úÆ÷µÄµ±Ç°Î»ÖÃ¡£
+--- ListIteratoræ˜¯Listçš„listIterator()æ–¹æ³•å¾—åˆ°çš„ï¼Œæ˜¯Listç‰¹æœ‰çš„è¿­ä»£å™¨ã€‚
+--- ListIteratorç»§æ‰¿äº†Iteratoræ¥å£ã€‚
+--- ç”¨äºå…è®¸ç¨‹åºå‘˜æ²¿ä»»æ„æ–¹å‘éå†åˆ—è¡¨è¿­ä»£å™¨ï¼Œåœ¨è¿­ä»£æœŸé—´ä¿®æ”¹åˆ—è¡¨ï¼Œå¹¶è·å¾—åˆ—è¡¨ä¸­è¿­ä»£å™¨çš„å½“å‰ä½ç½®ã€‚
 
 
-[ListIterator³£ÓÃ·½·¨]:
+[ListIteratorå¸¸ç”¨æ–¹æ³•]:
 
---- E next()                ·µ»ØµÄµü´úÆ÷ÖĞµÄÏÂÒ»¸öÔªËØ¡£
---- boolean hasNext()       Èç¹ûµü´úÆ÷¾ßÓĞ¸ü¶àÔªËØ£¬Ôò·µ»Øtrue
---- E previous()            ·µ»ØÁĞ±íÖĞµÄÉÏÒ»¸öÔªËØ¡£
---- boolean hasPrevious()   Èç¹û´ËÁĞ±íµü´úÆ÷ÔÚÏà·´·½Ïò±éÀúÁĞ±í¾ßÓĞ¸ü¶àÔªËØ£¬Ôò·µ»Øture
+--- E next()                è¿”å›çš„è¿­ä»£å™¨ä¸­çš„ä¸‹ä¸€ä¸ªå…ƒç´ ã€‚
+--- boolean hasNext()       å¦‚æœè¿­ä»£å™¨å…·æœ‰æ›´å¤šå…ƒç´ ï¼Œåˆ™è¿”å›true
+--- E previous()            è¿”å›åˆ—è¡¨ä¸­çš„ä¸Šä¸€ä¸ªå…ƒç´ ã€‚
+--- boolean hasPrevious()   å¦‚æœæ­¤åˆ—è¡¨è¿­ä»£å™¨åœ¨ç›¸åæ–¹å‘éå†åˆ—è¡¨å…·æœ‰æ›´å¤šå…ƒç´ ï¼Œåˆ™è¿”å›ture
 
---- void add(E e)           ½«Ö¸¶¨µÄÔªËØ²åÈëÁĞ±í                        ¡¾ÖØµã£¡¡¿
-                            ¡¾×¢Òâ¡¿:ÓÃµÄÊÇListIteratorµÄ¶ÔÏó½øĞĞaddÌí¼ÓÔªËØ£¬¶ø²»ÊÇÔ­¼¯ºÏlistÌí¼Ó¡£
+--- void add(E e)           å°†æŒ‡å®šçš„å…ƒç´ æ’å…¥åˆ—è¡¨                        ã€é‡ç‚¹ï¼ã€‘
+                            ã€æ³¨æ„ã€‘:ç”¨çš„æ˜¯ListIteratorçš„å¯¹è±¡è¿›è¡Œaddæ·»åŠ å…ƒç´ ï¼Œè€Œä¸æ˜¯åŸé›†åˆlistæ·»åŠ ã€‚
 
 */
 import java.util.ArrayList;
@@ -30,19 +30,19 @@ public class ListIterator_Method {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>();
-        list.add("ÑÇË÷");
-        list.add("ÓÀ¶÷");
-        list.add("ÍòºÀ");
+        list.add("äºšç´¢");
+        list.add("æ°¸æ©");
+        list.add("ä¸‡è±ª");
 
-        //¶àÌ¬´´½¨ListIterator¶ÔÏó¡£
+        //å¤šæ€åˆ›å»ºListIteratorå¯¹è±¡ã€‚
         ListIterator<String> listItr = list.listIterator();
-        //ÕıÏò±éÀú
+        //æ­£å‘éå†
         while (listItr.hasNext()){
             String str = listItr.next();
             System.out.println(str);
         }
         System.out.println("========");
-        //·´Ïò±éÀú
+        //åå‘éå†
         while (listItr.hasPrevious()){
             String str = listItr.previous();
             System.out.println(str);
@@ -51,21 +51,21 @@ public class ListIterator_Method {
 
         System.out.println("===========================================================================================");
 
-        //¸Õ´´½¨µÄµÄListIterator¶ÔÏóµÄÊ±ºò£¬²»ÄÜÖ±½ÓÊ¹ÓÃPrevious·½·¨¡£
-        //µü´úÆ÷Î»ÖÃÔÚ0Ë÷ÒıÎ»ÖÃ£¬ÉÏÒ»¸öÔªËØÊÇÃ»ÓĞµÄ¡£
+        //åˆšåˆ›å»ºçš„çš„ListIteratorå¯¹è±¡çš„æ—¶å€™ï¼Œä¸èƒ½ç›´æ¥ä½¿ç”¨Previousæ–¹æ³•ã€‚
+        //è¿­ä»£å™¨ä½ç½®åœ¨0ç´¢å¼•ä½ç½®ï¼Œä¸Šä¸€ä¸ªå…ƒç´ æ˜¯æ²¡æœ‰çš„ã€‚
         ListIterator<String> listIte = list.listIterator();
         while (listIte.hasPrevious()){
             String str = listIte.previous();
             System.out.println(str);
         }
 
-        System.out.println("Êä³ö½á¹û: ");
-//      System.out.println( listIte.previous() );//Òì³£³ö´í: NoSuchElementException
-        System.out.println( listIte.next() );//³õÊ¼»¯µÚÒ»¸öÔªËØÊÇ[ÑÇË÷]£¬·µ»ØÔªËØºó£¬µü´úÆ÷»áÏòºóÍË1(Ë÷Òı+1)
-        System.out.println( listIte.previous() );//µü´úÆ÷Î»ÓÚµÚ¶ş¸öÔªËØ£¬Ö´ĞĞºóÏòÇ°½ø1(Ë÷Òı-1)£¬·µ»ØÇ°½øºóµÄÔªËØ[ÑÇË÷]
-        //±¨´í
-        //ÑÇË÷
-        //ÑÇË÷
+        System.out.println("è¾“å‡ºç»“æœ: ");
+//      System.out.println( listIte.previous() );//å¼‚å¸¸å‡ºé”™: NoSuchElementException
+        System.out.println( listIte.next() );//åˆå§‹åŒ–ç¬¬ä¸€ä¸ªå…ƒç´ æ˜¯[äºšç´¢]ï¼Œè¿”å›å…ƒç´ åï¼Œè¿­ä»£å™¨ä¼šå‘åé€€1(ç´¢å¼•+1)
+        System.out.println( listIte.previous() );//è¿­ä»£å™¨ä½äºç¬¬äºŒä¸ªå…ƒç´ ï¼Œæ‰§è¡Œåå‘å‰è¿›1(ç´¢å¼•-1)ï¼Œè¿”å›å‰è¿›åçš„å…ƒç´ [äºšç´¢]
+        //æŠ¥é”™
+        //äºšç´¢
+        //äºšç´¢
 
         /**
         ListIterator<String> ier = list.listIterator();
@@ -80,13 +80,13 @@ public class ListIterator_Method {
                 System.out.print(str);
          }  }
         */
-        System.out.print("ÖØµã: ");
-        //ÖØµãadd()·½·¨
+        System.out.print("é‡ç‚¹: ");
+        //é‡ç‚¹add()æ–¹æ³•
         ListIterator<String> listIterator = list.listIterator();
         while (listIterator.hasNext()){
             String str = listIterator.next();
-            if (str.equals("ÑÇË÷")){
-                listIterator.add("Å£Åú,Â¬±¾Î°Ã»ÓĞ¿ª¹Ò£¡"); //ÓÃµÄÊÇListIteratorµÄ¶ÔÏó½øĞĞaddÌí¼ÓÔªËØ£¬¶ø²»ÊÇÔ­¼¯ºÏlistÌí¼Ó¡£
+            if (str.equals("äºšç´¢")){
+                listIterator.add("ç‰›æ‰¹,å¢æœ¬ä¼Ÿæ²¡æœ‰å¼€æŒ‚ï¼"); //ç”¨çš„æ˜¯ListIteratorçš„å¯¹è±¡è¿›è¡Œaddæ·»åŠ å…ƒç´ ï¼Œè€Œä¸æ˜¯åŸé›†åˆlistæ·»åŠ ã€‚
             }
         }
         System.out.println(list);

@@ -1,26 +1,26 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.±ê×¼ÊäÈëÊä³öÁ÷.±ê×¼Êä³öÁ÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.æ ‡å‡†è¾“å…¥è¾“å‡ºæµ.æ ‡å‡†è¾“å‡ºæµ;
 
 import java.io.PrintStream;
 
-// public static final PrintStream out : ±ê×¼Êä³öÁ÷
+// public static final PrintStream out : æ ‡å‡†è¾“å‡ºæµ
 public class StandardPrintStream {
 
     public static void main(String[] args) {
-        //·µ»ØÖµÀàĞÍÎª: PrintStream
+        //è¿”å›å€¼ç±»å‹ä¸º: PrintStream
         PrintStream ps = System.out;
-        //PrintStream¼Ì³ĞÁËOutputStream
-        //´ËÀàÀïÃæÓĞºÜ¶à·½·¨ÓÃÓÚÊä³ö¸÷ÖÖÀàĞÍ
-        ps.println("×Ö·û´®");
+        //PrintStreamç»§æ‰¿äº†OutputStream
+        //æ­¤ç±»é‡Œé¢æœ‰å¾ˆå¤šæ–¹æ³•ç”¨äºè¾“å‡ºå„ç§ç±»å‹
+        ps.println("å­—ç¬¦ä¸²");
         ps.println(521);
         ps.println(true);
-        ps.println('ŞÏ');
+        ps.println('å°´');
         ps.print(123);
         ps.print("Go");
 
-        //Ö±½ÓÊ±Ê¹ÓÃ£¡
-        System.out.println("Õâ¾ÍÊÇSystem.out.println()");
+        //ç›´æ¥æ—¶ä½¿ç”¨ï¼
+        System.out.println("è¿™å°±æ˜¯System.out.println()");
         System.out.println();
-        //System.out.print(); //°ÑlnÈ¥µô²»·Å²ÎÊı»á±¨´í£¬ÒòÎªÃ»ÓĞ¸Ã·½·¨
+        //System.out.print(); //æŠŠlnå»æ‰ä¸æ”¾å‚æ•°ä¼šæŠ¥é”™ï¼Œå› ä¸ºæ²¡æœ‰è¯¥æ–¹æ³•
 
     }
 

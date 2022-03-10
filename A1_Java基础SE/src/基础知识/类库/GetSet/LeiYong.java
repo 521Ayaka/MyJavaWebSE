@@ -1,29 +1,29 @@
-package »ù´¡ÖªÊ¶.Àà¿â.GetSet;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.GetSet;
 
 public class LeiYong {
     public static void main(String[] args) {
-        //ÓÃÎŞ²ÎÊıµÄ¹¹Ôì·½·¨
+        //ç”¨æ— å‚æ•°çš„æ„é€ æ–¹æ³•
         Lei lei1 = new Lei();
-        lei1.setName("ŞÏŞÎ½´");
+        lei1.setName("å°´å°¬é…±");
         lei1.setAge(18);
-        lei1.setAihao("ÍæLOL£¬´Î·¹£¬Ñ§Ï°£¬Ë¯¾õ£¬ÇÃ´úÂë");
+        lei1.setAihao("ç©LOLï¼Œæ¬¡é¥­ï¼Œå­¦ä¹ ï¼Œç¡è§‰ï¼Œæ•²ä»£ç ");
         lei1.setLiubu(true);
 
-        System.out.println("ÎÒ½Ğ" + lei1.getName());
-        System.out.println("½ñÄêÒÑ¾­" + lei1.getAge() + "ËêÁË");
-        System.out.println("ÎÒµÄ°®ºÃÊÇ£º" + lei1.getAaihao());
-        System.out.println("ÎÒÍæLOLºÜ6µÄ£¬" + lei1.isLiubu() + "µÄ!!!");
+        System.out.println("æˆ‘å«" + lei1.getName());
+        System.out.println("ä»Šå¹´å·²ç»" + lei1.getAge() + "å²äº†");
+        System.out.println("æˆ‘çš„çˆ±å¥½æ˜¯ï¼š" + lei1.getAaihao());
+        System.out.println("æˆ‘ç©LOLå¾ˆ6çš„ï¼Œ" + lei1.isLiubu() + "çš„!!!");
         System.out.println("========================================");
 
-        //ÓÃÓĞ²ÎÊıµÄ¹¹Ôì·½·¨
-        Lei lei2 = new Lei( "ŞÏŞÎ½´", 18, "ÍæLOL£¬´Î·¹£¬Ñ§Ï°£¬Ë¯¾õ£¬ÇÃ´úÂë", true,666);
-        System.out.println("ÎÒ½Ğ" + lei2.getName());
-        System.out.println("½ñÄêÒÑ¾­" + lei2.getAge() + "ËêÁË");
-        System.out.println("ÎÒµÄ°®ºÃÊÇ£º" + lei2.getAaihao());
-        System.out.println("ÎÒÍæLOLºÜ6µÄ£¬" + lei2.isLiubu() + "µÄ!!!");
+        //ç”¨æœ‰å‚æ•°çš„æ„é€ æ–¹æ³•
+        Lei lei2 = new Lei( "å°´å°¬é…±", 18, "ç©LOLï¼Œæ¬¡é¥­ï¼Œå­¦ä¹ ï¼Œç¡è§‰ï¼Œæ•²ä»£ç ", true,666);
+        System.out.println("æˆ‘å«" + lei2.getName());
+        System.out.println("ä»Šå¹´å·²ç»" + lei2.getAge() + "å²äº†");
+        System.out.println("æˆ‘çš„çˆ±å¥½æ˜¯ï¼š" + lei2.getAaihao());
+        System.out.println("æˆ‘ç©LOLå¾ˆ6çš„ï¼Œ" + lei2.isLiubu() + "çš„!!!");
         System.out.println("========================================");
-        lei2.setAge(19);//ÈÔÈ»¿ÉÒÔÔÚ·½·¨ÄÚ²¿Ê¹ÓÃGetter/Settet·½·¨¡£
-        System.out.println("¿ì¹ıÄêÁË£¬ÎÒ¿ì" + lei2.getAge() + "ÁË");
+        lei2.setAge(19);//ä»ç„¶å¯ä»¥åœ¨æ–¹æ³•å†…éƒ¨ä½¿ç”¨Getter/Settetæ–¹æ³•ã€‚
+        System.out.println("å¿«è¿‡å¹´äº†ï¼Œæˆ‘å¿«" + lei2.getAge() + "äº†");
         System.out.println("========================================");
     }
 }

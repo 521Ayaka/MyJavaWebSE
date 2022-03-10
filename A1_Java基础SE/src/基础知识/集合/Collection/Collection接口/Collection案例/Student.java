@@ -1,4 +1,4 @@
-package 基础知识.集合.Collection.Collection接口.Collection案例;
+package 鍩虹鐭ヨ瘑.闆嗗悎.Collection.Collection鎺ュ彛.Collection妗堜緥;
 
 public class Student {
 

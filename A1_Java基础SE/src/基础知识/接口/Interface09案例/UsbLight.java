@@ -1,18 +1,18 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface09°¸Àı;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface09æ¡ˆä¾‹;
 
 public class UsbLight implements USB{
 
     @Override
     public void open() {
-        System.out.println("´ò¿ªUSBµÆ");
+        System.out.println("æ‰“å¼€USBç¯");
     }
 
     @Override
     public void close() {
-        System.out.println("¹Ø±ÕUSBµÆ");
+        System.out.println("å…³é—­USBç¯");
     }
 
     public void adjust(){
-        System.out.println("µ÷½ÚÁÁ¶È");
+        System.out.println("è°ƒèŠ‚äº®åº¦");
     }
 }

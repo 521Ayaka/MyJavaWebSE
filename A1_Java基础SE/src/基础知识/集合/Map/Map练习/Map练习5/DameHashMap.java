@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°5;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 5;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,15 +13,15 @@ public class DameHashMap {
 
     public void init(){
 
-        //´´½¨×Ö·û´®
-        System.out.println("ÇëÊäÈë:");
+        //åˆ›å»ºå­—ç¬¦ä¸²
+        System.out.println("è¯·è¾“å…¥:");
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();//É¨ÃèÏÂÒ»ĞĞ£¬·µ»ØÀàĞÍÎªString
+        String str = sc.nextLine();//æ‰«æä¸‹ä¸€è¡Œï¼Œè¿”å›ç±»å‹ä¸ºString
 
-        //´´½¨Ò»¸öHashMap¼¯ºÏ
+        //åˆ›å»ºä¸€ä¸ªHashMapé›†åˆ
         HashMap<Character, Integer> map = new HashMap<>();
 
-        //»ñµÃ×Ö·û
+        //è·å¾—å­—ç¬¦
         for (int i = 0; i<str.length(); i++){
             char key = str.charAt(i);
 
@@ -34,25 +34,25 @@ public class DameHashMap {
 
         }
 
-        //±éÀúHashMap   ·½·¨Ò»
+        //éå†HashMap   æ–¹æ³•ä¸€
         Set<Character> keySet = map.keySet();
         for (Character keyL :keySet) {
-            //»ñµÃÖµ
+            //è·å¾—å€¼
             Integer value = map.get(keyL);
-            //´òÓ¡½á¹û
+            //æ‰“å°ç»“æœ
             System.out.print(new StringBuilder().append(keyL).append("(").append(value).append(")"));
-            //ÕâÀïÊ¹ÓÃÁËStringBuilder()Àà£¬·½·¨ÊÇappend();
+            //è¿™é‡Œä½¿ç”¨äº†StringBuilder()ç±»ï¼Œæ–¹æ³•æ˜¯append();
         }
         System.out.println();
         System.out.println("=====================================================");
 
-        //±éÀúHashMap   ·½·¨¶ş
+        //éå†HashMap   æ–¹æ³•äºŒ
         Set<Map.Entry<Character, Integer>> em = map.entrySet();
         for (Map.Entry<Character, Integer> keyToValue :em) {
-            //»ñÈ¡¼üºÍÖµ
+            //è·å–é”®å’Œå€¼
             Character key = keyToValue.getKey();
             Integer value = keyToValue.getValue();
-            //±éÀú×Ö·û´®
+            //éå†å­—ç¬¦ä¸²
             System.out.print(new StringBuilder().append(key).append("(").append(value).append(")"));
 
         }

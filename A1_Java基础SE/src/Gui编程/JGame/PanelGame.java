@@ -1,10 +1,10 @@
-package Gui±à³Ì.JGame;
+package Guiç¼–ç¨‹.JGame;
 
 import javax.swing.*;
 
 public class PanelGame extends JPanel {
 
-    //¹¹Ôì·½·¨
+    //æž„é€ æ–¹æ³•
     public PanelGame() {
 
 

@@ -1,62 +1,62 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /*
-Map¼¯ºÏµÄ»ù±¾¹¦ÄÜ
+Mapé›†åˆçš„åŸºæœ¬åŠŸèƒ½
 
-V put(K key, V value)                 Ìí¼Ó¼üÖµ¶Ô
-V remove(Object key)                  ¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ
-void clear()                          ÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
-boolean containsKey(Object key)       ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
-boolean containsKey(Object value)     ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄÖµ
-int size()                            ¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞ¼üÖµ¶ÔµÄ¸öÊı
-boolean isEmpty()                     ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
+V put(K key, V value)                 æ·»åŠ é”®å€¼å¯¹
+V remove(Object key)                  æ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ 
+void clear()                          ç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
+boolean containsKey(Object key)       åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
+boolean containsKey(Object value)     åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„å€¼
+int size()                            é›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­é”®å€¼å¯¹çš„ä¸ªæ•°
+boolean isEmpty()                     åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
 */
 public class MapMethod {
 
     public static void main(String[] args) {
 
-        //¶àÌ¬´´½¨Map¼¯ºÏ¶ÔÏó
+        //å¤šæ€åˆ›å»ºMapé›†åˆå¯¹è±¡
         Map<String, String> map = new HashMap<>();
 
-        //V put(K key, V value)                 Ìí¼Ó¼üÖµ¶Ô
-        map.put("Ò÷ÁôµÄÊ«ÈË","ÎÂµÏ");
-        map.put("Ìì¶¯ÍòÏó","ÖÓÀë");
-        map.put("ÎŞÏëµÄÒ»µ¶","°Í¶û");
-        map.put("Íö","²İÉñ");
+        //V put(K key, V value)                 æ·»åŠ é”®å€¼å¯¹
+        map.put("åŸç•™çš„è¯—äºº","æ¸©è¿ª");
+        map.put("å¤©åŠ¨ä¸‡è±¡","é’Ÿç¦»");
+        map.put("æ— æƒ³çš„ä¸€åˆ€","å·´å°”");
+        map.put("äº¡","è‰ç¥");
         System.out.println(map);
 
-        //V remove(Object key)                  ¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ
-        map.remove("Íö");
-        System.out.println(map.remove("Íö"));//ÒÑÉ¾³ınull
+        //V remove(Object key)                  æ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ 
+        map.remove("äº¡");
+        System.out.println(map.remove("äº¡"));//å·²åˆ é™¤null
 
-        //void clear()                          ÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
+        //void clear()                          ç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
         map.clear();
         System.out.println(map);
 
-        //ÖØĞÂÌí¼Ó»ØÀ´
-        map.put("Ò÷ÁôµÄÊ«ÈË","ÎÂµÏ");
-        map.put("Ìì¶¯ÍòÏó","ÖÓÀë");
-        map.put("ÎŞÏëµÄÒ»µ¶","°Í¶û");
-        System.out.println("ÖØĞÂÌí¼Ó»ØÀ´£º" + map);
+        //é‡æ–°æ·»åŠ å›æ¥
+        map.put("åŸç•™çš„è¯—äºº","æ¸©è¿ª");
+        map.put("å¤©åŠ¨ä¸‡è±¡","é’Ÿç¦»");
+        map.put("æ— æƒ³çš„ä¸€åˆ€","å·´å°”");
+        System.out.println("é‡æ–°æ·»åŠ å›æ¥ï¼š" + map);
 
-        //boolean containsKey(Object key)       ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
-        System.out.println(map.containsKey("ÎŞÏëµÄÒ»µ¶"));
-        System.out.println(map.containsKey("Íö"));
+        //boolean containsKey(Object key)       åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
+        System.out.println(map.containsKey("æ— æƒ³çš„ä¸€åˆ€"));
+        System.out.println(map.containsKey("äº¡"));
 
-        //boolean containsKey(Object value)     ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄÖµ
-        System.out.println(map.containsValue("°Í¶û"));
-        System.out.println(map.containsValue("²İÉñ"));
+        //boolean containsKey(Object value)     åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„å€¼
+        System.out.println(map.containsValue("å·´å°”"));
+        System.out.println(map.containsValue("è‰ç¥"));
 
-        //int size()                            ¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞ¼üÖµ¶ÔµÄ¸öÊı
-        System.out.println("¼üÖµ¶Ó¸öÊı£º" + map.size());
+        //int size()                            é›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­é”®å€¼å¯¹çš„ä¸ªæ•°
+        System.out.println("é”®å€¼é˜Ÿä¸ªæ•°ï¼š" + map.size());
 
-        //boolean isEmpty()                     ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
+        //boolean isEmpty()                     åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
         System.out.println(map.isEmpty());
         map.clear();
-        System.out.println("clearºó£º" + map.isEmpty());
+        System.out.println("clearåï¼š" + map.isEmpty());
 
 
     }

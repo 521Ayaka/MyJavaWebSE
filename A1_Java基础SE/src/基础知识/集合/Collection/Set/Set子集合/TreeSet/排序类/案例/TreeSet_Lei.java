@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection.Set.Set×Ó¼¯ºÏ.TreeSet.ÅÅĞòÀà.°¸Àı;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection.Set.Setå­é›†åˆ.TreeSet.æ’åºç±».æ¡ˆä¾‹;
 
 import java.util.Comparator;
 import java.util.TreeSet;
@@ -7,18 +7,18 @@ public class TreeSet_Lei {
 
     public static void main(String[] args) {
 
-        //´´½¨¼¯ºÏ¶ÔÏó
+        //åˆ›å»ºé›†åˆå¯¹è±¡
         TreeSet<Student> treeSet = new TreeSet<Student>(new Comparator<Student>() {
-            @Override //´´½¨ÄäÃûÄÚ²¿Àà£¬²¢´ÓĞ´compare()·½·¨£¬¹æ¶¨±È½Ï¹æÔò
+            @Override //åˆ›å»ºåŒ¿åå†…éƒ¨ç±»ï¼Œå¹¶ä»å†™compare()æ–¹æ³•ï¼Œè§„å®šæ¯”è¾ƒè§„åˆ™
             public int compare(Student s1, Student s2) {
-                int num1 = (s2.getChinese() + s2.getMath()) - (s1.getChinese() + s1.getChinese()); //×Ü·Ö½µĞò
-                int num2 = num1 == 0 ? s2.getChinese() - s1.getChinese() : num1;                   //ÓïÎÄ½µĞò
-                int num = num2 == 0 ? s1.getName().compareTo(s2.getName()) : num2;                 //ĞÕÃûÉıĞò
+                int num1 = (s2.getChinese() + s2.getMath()) - (s1.getChinese() + s1.getChinese()); //æ€»åˆ†é™åº
+                int num2 = num1 == 0 ? s2.getChinese() - s1.getChinese() : num1;                   //è¯­æ–‡é™åº
+                int num = num2 == 0 ? s1.getName().compareTo(s2.getName()) : num2;                 //å§“åå‡åº
                 return num;
             }
         });
 
-        //´´½¨Ñ§Éú¶ÔÏó
+        //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
         Student stu1 = new Student("GanGa", 100, 120);
         Student stu2 = new Student("GanGaJiang", 150, 150);
         Student stu3 = new Student("GanGaDi", 120, 120);
@@ -29,7 +29,7 @@ public class TreeSet_Lei {
         Student stu8 = new Student("GanGaLou",100,120);
 
 
-        //Ìí¼ÓÔªËØstu1
+        //æ·»åŠ å…ƒç´ stu1
         treeSet.add(stu1);
         treeSet.add(stu2);
         treeSet.add(stu3);
@@ -39,19 +39,19 @@ public class TreeSet_Lei {
         treeSet.add(stu7);
         treeSet.add(stu8);
 
-        //±éÀú¼¯ºÏ
+        //éå†é›†åˆ
         for (Student stu : treeSet) {
             System.out.println(stu.getName());
-            System.out.println("ÓïÎÄ:" + stu.getChinese() + ",ÊıÑ§:" + stu.getMath() + "×Ü·ÖÎª£º" + (stu.getChinese() + stu.getMath()));
+            System.out.println("è¯­æ–‡:" + stu.getChinese() + ",æ•°å­¦:" + stu.getMath() + "æ€»åˆ†ä¸ºï¼š" + (stu.getChinese() + stu.getMath()));
             System.out.println();
         }
 
-        //ÔËĞĞ½á¹û£º
-        //GaGaLe×Ü·ÖÎª£º300
-        //GanGaJiang×Ü·ÖÎª£º300
-        //GanGaDi×Ü·ÖÎª£º240
-        //GanGa×Ü·ÖÎª£º220
-        //GanGaBaoBao×Ü·ÖÎª£º1
+        //è¿è¡Œç»“æœï¼š
+        //GaGaLeæ€»åˆ†ä¸ºï¼š300
+        //GanGaJiangæ€»åˆ†ä¸ºï¼š300
+        //GanGaDiæ€»åˆ†ä¸ºï¼š240
+        //GanGaæ€»åˆ†ä¸ºï¼š220
+        //GanGaBaoBaoæ€»åˆ†ä¸ºï¼š1
 
     }
 

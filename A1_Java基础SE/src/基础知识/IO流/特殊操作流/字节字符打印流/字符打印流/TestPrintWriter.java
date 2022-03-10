@@ -1,55 +1,55 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.×Ö½Ú×Ö·û´òÓ¡Á÷.×Ö·û´òÓ¡Á÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å­—èŠ‚å­—ç¬¦æ‰“å°æµ.å­—ç¬¦æ‰“å°æµ;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 /*
-×Ö·û´òÓ¡Á÷ÆäÖĞµÄÁ½¸ö¹¹Ôì·½·¨
+å­—ç¬¦æ‰“å°æµå…¶ä¸­çš„ä¸¤ä¸ªæ„é€ æ–¹æ³•
         PrintWriter(String fileName)
-            Ê¹ÓÃÖ¸¶¨µÄÎÄ¼şÃû´´½¨Ò»¸öĞÂµÄPrintWriter,¶ø²»×Ô¶¯Ö´ĞĞË¢ĞÂ
+            ä½¿ç”¨æŒ‡å®šçš„æ–‡ä»¶ååˆ›å»ºä¸€ä¸ªæ–°çš„PrintWriter,è€Œä¸è‡ªåŠ¨æ‰§è¡Œåˆ·æ–°
 
         PrintWriter(Writer out,boolean autoFlush)
-            ´´½¨Ò»¸öĞÂµÄPrintWriter
-            -- out: ×Ö·ûÊäÈëÁ÷
-            -- autoFlush: Ò»¸ö²¼¶ûÖµ£¬Èç¹ûÎªtrue£¬
-                          Ôòprintln,printf,format
-                          ·½·¨½«Ë¢ĞÂÊä³ö»º³åÇø
+            åˆ›å»ºä¸€ä¸ªæ–°çš„PrintWriter
+            -- out: å­—ç¬¦è¾“å…¥æµ
+            -- autoFlush: ä¸€ä¸ªå¸ƒå°”å€¼ï¼Œå¦‚æœä¸ºtrueï¼Œ
+                          åˆ™println,printf,format
+                          æ–¹æ³•å°†åˆ·æ–°è¾“å‡ºç¼“å†²åŒº
 */
 public class TestPrintWriter {
 
     public static void main(String[] args) throws IOException {
-        //PrintWriter(String fileName) Ê¹ÓÃÖ¸¶¨µÄÎÄ¼şÃû´´½¨Ò»¸öĞÂµÄPrintWriter,¶ø²»×Ô¶¯Ö´ĞĞË¢ĞÂ
-        PrintWriter rw = new PrintWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\×Ö·û´òÓ¡Á÷\\ÎÄ¼ş.txt");
-        rw.write(97); //Ê¹ÓÃwrite¿ÉÒÔµ¥¸ö×Ö·ûĞ´Èë ¿ÉÒÔcharÊı×éĞ´Èë
-        //ĞèÒªË¢ĞÂ
-        rw.flush();//ĞèÒªË¢ĞÂÁ÷²Ù×÷
+        //PrintWriter(String fileName) ä½¿ç”¨æŒ‡å®šçš„æ–‡ä»¶ååˆ›å»ºä¸€ä¸ªæ–°çš„PrintWriter,è€Œä¸è‡ªåŠ¨æ‰§è¡Œåˆ·æ–°
+        PrintWriter rw = new PrintWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\å­—ç¬¦æ‰“å°æµ\\æ–‡ä»¶.txt");
+        rw.write(97); //ä½¿ç”¨writeå¯ä»¥å•ä¸ªå­—ç¬¦å†™å…¥ å¯ä»¥charæ•°ç»„å†™å…¥
+        //éœ€è¦åˆ·æ–°
+        rw.flush();//éœ€è¦åˆ·æ–°æµæ“ä½œ
         rw.println();
-        rw.println("ŞÏŞÎ½´ÍòËê£¡");
+        rw.println("å°´å°¬é…±ä¸‡å²ï¼");
         rw.flush();
         rw.println("============");
         rw.flush();
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         rw.close();
 
 /*      PrintWriter(Writer out,boolean autoFlush)
-            ´´½¨Ò»¸öĞÂµÄPrintWriter
-                -- out: ×Ö·ûÊäÈëÁ÷
-                -- autoFlush: Ò»¸ö²¼¶ûÖµ£¬Èç¹ûÎªtrue£¬Ôòprintln,printf,format·½·¨½«Ë¢ĞÂÊä³ö»º³åÇø
+            åˆ›å»ºä¸€ä¸ªæ–°çš„PrintWriter
+                -- out: å­—ç¬¦è¾“å…¥æµ
+                -- autoFlush: ä¸€ä¸ªå¸ƒå°”å€¼ï¼Œå¦‚æœä¸ºtrueï¼Œåˆ™println,printf,formatæ–¹æ³•å°†åˆ·æ–°è¾“å‡ºç¼“å†²åŒº
 */
         PrintWriter rwAuto = new PrintWriter(
-                new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\×Ö·û´òÓ¡Á÷\\ÎÄ¼ş.txt")
-                ,true);//²ÎÊıÎªtrue
-        //Ê¹ÓÃprintln printf format »á×Ô¶¯Ë¢ĞÂ
-        rwAuto.println("Õâ¾ÍŞÏŞÎÁË");
-        rwAuto.print("ÖĞÎÄ");
+                new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\å­—ç¬¦æ‰“å°æµ\\æ–‡ä»¶.txt")
+                ,true);//å‚æ•°ä¸ºtrue
+        //ä½¿ç”¨println printf format ä¼šè‡ªåŠ¨åˆ·æ–°
+        rwAuto.println("è¿™å°±å°´å°¬äº†");
+        rwAuto.print("ä¸­æ–‡");
         rwAuto.flush();
-        rwAuto.printf("±àÂë");
+        rwAuto.printf("ç¼–ç ");
         rwAuto.println();
-        rwAuto.format("Íê³ÉĞ´Èë");
+        rwAuto.format("å®Œæˆå†™å…¥");
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         rwAuto.close();
 
     }

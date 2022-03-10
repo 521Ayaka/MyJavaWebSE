@@ -1,38 +1,38 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
 
 import java.util.Arrays;
 import java.util.Scanner;
-//Íâ²¿Àà
+//å¤–éƒ¨ç±»
 public class Two implements Comparable<Two>{
-//ÊäÈë½Ó¿Úºó±¨´í£¬Êó±êµã»÷ºìÏß£¬ALT+»Ø³µ
-    //implements Comparable<Two> ·½·¨£¬ÈÃÊµÌåÀàÊµÏÖÄÚ²¿±È½ÏÆ÷½Ó¿Ú
+//è¾“å…¥æ¥å£åæŠ¥é”™ï¼Œé¼ æ ‡ç‚¹å‡»çº¢çº¿ï¼ŒALT+å›è½¦
+    //implements Comparable<Two> æ–¹æ³•ï¼Œè®©å®ä½“ç±»å®ç°å†…éƒ¨æ¯”è¾ƒå™¨æ¥å£
 
-    private String name;//Ãû×Ö
-    private double difficulty;//ÄÑ¶È
-    private String code;//Ö°Òµ
+    private String name;//åå­—
+    private double difficulty;//éš¾åº¦
+    private String code;//èŒä¸š
 
     public void show(){
-        System.out.println("ÕæÕıµÄ´óÊ¦£¬ÓÀÔ¶¶¼»³×ÅÒ»¿ÅÑ§Í½µÄĞÄ");
+        System.out.println("çœŸæ­£çš„å¤§å¸ˆï¼Œæ°¸è¿œéƒ½æ€€ç€ä¸€é¢—å­¦å¾’çš„å¿ƒ");
     }
 
     @Override
     public int compareTo(Two o) {
-        //Ê¹ÓÃ»ù±¾Êı¾İÀàĞÍdouble µÄ°ü×°ÀàDoubleµÄcompare·½·¨¿ÉÒÔ±È½ÏÁ©¸ödoubleÀàĞÍµÄÊı¾İ£¬·µ»ØintÀàĞÍ
+        //ä½¿ç”¨åŸºæœ¬æ•°æ®ç±»å‹double çš„åŒ…è£…ç±»Doubleçš„compareæ–¹æ³•å¯ä»¥æ¯”è¾ƒä¿©ä¸ªdoubleç±»å‹çš„æ•°æ®ï¼Œè¿”å›intç±»å‹
         return Double.compare(this.difficulty,o.difficulty);
     }
-    //ALT+insert¼ü Ñ¡toString()·½·¨£¬ÀïÃæ£¬Ctrl+AÈ«Ñ¡¼´¿É
+    //ALT+inserté”® é€‰toString()æ–¹æ³•ï¼Œé‡Œé¢ï¼ŒCtrl+Aå…¨é€‰å³å¯
     @Override
     public String toString() {
-        //¡°¡±Ë«ÒıºÅÄÚµÄÄÚÈİ¸ù¾İ×Ô¼ºÏ°¹ß½øĞĞĞŞ¸Ä
+        //â€œâ€åŒå¼•å·å†…çš„å†…å®¹æ ¹æ®è‡ªå·±ä¹ æƒ¯è¿›è¡Œä¿®æ”¹
         return "\n" +
-                "Ó¢ĞÛ:" + name  +
-                ", ²Ù×÷ÏµÊı:" + difficulty +
-                ", Ö°Òµ:" + code  +
+                "è‹±é›„:" + name  +
+                ", æ“ä½œç³»æ•°:" + difficulty +
+                ", èŒä¸š:" + code  +
                 ';';
     }
 
-    //ALT+insert¼ü Ñ¡Getter and Setter·½·¨ ÀïÃæ£¬Ctrl+AÈ«Ñ¡¼´¿É
+    //ALT+inserté”® é€‰Getter and Setteræ–¹æ³• é‡Œé¢ï¼ŒCtrl+Aå…¨é€‰å³å¯
     public String getName() {
         return name;
     }
@@ -52,51 +52,51 @@ public class Two implements Comparable<Two>{
         this.code = code;
     }
 
-    //¾²Ì¬ÄÚ²¿Àà
+    //é™æ€å†…éƒ¨ç±»
     public static class One{
-        //Ö÷·½·¨Ğ´ÔÚÄÚ²¿ÀàÖĞ
+        //ä¸»æ–¹æ³•å†™åœ¨å†…éƒ¨ç±»ä¸­
         public static void main(String[] args) {
-            //ÒıÈëScanner
+            //å¼•å…¥Scanner
             Scanner sc=new Scanner(System.in);
-            System.out.print("ÇëÊäÈëÊı×é³¤¶È£º");
+            System.out.print("è¯·è¾“å…¥æ•°ç»„é•¿åº¦ï¼š");
             int a=sc.nextInt();
-            //´´½¨Ò»¸öÍâ²¿ÀàµÄÊı×é£¬¶¨ÒåÎªtsÊı×é
+            //åˆ›å»ºä¸€ä¸ªå¤–éƒ¨ç±»çš„æ•°ç»„ï¼Œå®šä¹‰ä¸ºtsæ•°ç»„
             Two[] ts=new Two[a];
 
             for (int i = 0; i <ts.length ; i++) {
-                //ÄÚ²¿Ààµ÷ÓÃÍâ²¿ÀàµÄ³ÉÔ±
-                //ĞÂ£¨new£©´´½¨Ò»¸ö¶ÔÏó
+                //å†…éƒ¨ç±»è°ƒç”¨å¤–éƒ¨ç±»çš„æˆå‘˜
+                //æ–°ï¼ˆnewï¼‰åˆ›å»ºä¸€ä¸ªå¯¹è±¡
                 Two t=new Two();
-                System.out.print("ÊäÈëµÚ"+(i+1)+"¸öÓ¢ĞÛÃû×Ö£º");
+                System.out.print("è¾“å…¥ç¬¬"+(i+1)+"ä¸ªè‹±é›„åå­—ï¼š");
                 t.name=sc.next();
-                System.out.print("²Ù×÷ÄÑ¶È£º");
+                System.out.print("æ“ä½œéš¾åº¦ï¼š");
                 t.difficulty=sc.nextDouble();
-                System.out.print("Ö°Òµ£º");
+                System.out.print("èŒä¸šï¼š");
                 t.code=sc.next();
-                //½«ÊäÈëµÄÊı¾İ×°ÈëÍâ²¿ÀàtsÊı×é
+                //å°†è¾“å…¥çš„æ•°æ®è£…å…¥å¤–éƒ¨ç±»tsæ•°ç»„
                 ts[i]=t;
             }
             System.out.println("-----------------------------");
 
-            //½«ÊäÈëµÄÊı¾İ£¬ÒÔÊı×éµÄ·½Ê½Ò»¸öÒ»¸öÊä³ö
-            System.out.print("Ó¢ĞÛÃûµ¥£º");
+            //å°†è¾“å…¥çš„æ•°æ®ï¼Œä»¥æ•°ç»„çš„æ–¹å¼ä¸€ä¸ªä¸€ä¸ªè¾“å‡º
+            System.out.print("è‹±é›„åå•ï¼š");
             for (int i = 0; i <ts.length ; i++) {
                 System.out.print(ts[i]);
-                //ÎªÁËÃÀ»¯Êä³ö£¬×îºóÒ»×éÊı¾İÊä³öºó×Ô¶¯×ªĞĞ
+                //ä¸ºäº†ç¾åŒ–è¾“å‡ºï¼Œæœ€åä¸€ç»„æ•°æ®è¾“å‡ºåè‡ªåŠ¨è½¬è¡Œ
                 if (i==ts.length-1){
                     System.out.println();
                 }
             }
             System.out.println("-----------------------------");
 
-            System.out.print("¸ù¾İ²Ù×÷ÄÑ¶ÈÅÅĞò£º");
-            //´Ë´¦´«Èë±È½ÏµÄ Êı×é ºÍ ÄÚ²¿±È½ÏÆ÷¶ÔÏó
+            System.out.print("æ ¹æ®æ“ä½œéš¾åº¦æ’åºï¼š");
+            //æ­¤å¤„ä¼ å…¥æ¯”è¾ƒçš„ æ•°ç»„ å’Œ å†…éƒ¨æ¯”è¾ƒå™¨å¯¹è±¡
             Arrays.sort(ts);
-            //½«¶ÔÏóÊı×é×ª»»Îª×Ö·û´®Êä³ö
+            //å°†å¯¹è±¡æ•°ç»„è½¬æ¢ä¸ºå­—ç¬¦ä¸²è¾“å‡º
             System.out.println(Arrays.toString(ts));
             System.out.println("-----------------------------");
 
-            //µ÷ÓÃÍâ²¿ÀàÄÚµÄshow()·½·¨
+            //è°ƒç”¨å¤–éƒ¨ç±»å†…çš„show()æ–¹æ³•
             Two t=new Two();
             t.show();
         }

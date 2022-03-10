@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.µ÷ÊÔÁ·Ï°;
+package åŸºç¡€çŸ¥è¯†.è°ƒè¯•ç»ƒä¹ ;
 
 import javax.swing.*;
 
@@ -13,16 +13,16 @@ public class Laypane {
 
 class Laypanel extends JFrame{
     Laypanel(){
-        JPanel pane2=new JPanel();//ÆÕÍ¨Ãæ°å
+        JPanel pane2=new JPanel();//æ™®é€šé¢æ¿
         pane2.setBackground(new Color(11, 35, 246,50));
         JButton btn3=new JButton("deng ");
         pane2.add(btn3);
 
 
-        JLayeredPane pane=new JLayeredPane();//·Ö²ãÃæ°å
+        JLayeredPane pane=new JLayeredPane();//åˆ†å±‚é¢æ¿
 
-        JButton btn1=new JButton("È·¶¨");
-        JButton btn2=new JButton("È¡Ïû");
+        JButton btn1=new JButton("ç¡®å®š");
+        JButton btn2=new JButton("å–æ¶ˆ");
 
         pane.add(btn1, ( Integer)(JLayeredPane.PALETTE_LAYER+50));
         pane.add(btn2,( Integer)(JLayeredPane.PALETTE_LAYER+50));
@@ -30,14 +30,14 @@ class Laypanel extends JFrame{
         btn1.setBounds(30, 50, 80, 80);
         btn2.setBounds(50, 80, 80, 80);
 
-        //this.add(pane);//Ïò´°¿ÚÌí¼Ó·Ö²ãÃæ°å
+        //this.add(pane);//å‘çª—å£æ·»åŠ åˆ†å±‚é¢æ¿
         pane2.setOpaque(false);
 
         TranslucenceJPanel tjp = new TranslucenceJPanel();
         tjp.setTransparent(40);
-        this.getContentPane().add(tjp);//Ïò´°¿ÚÌí¼ÓÆÕÍ¨Ãæ°å
+        this.getContentPane().add(tjp);//å‘çª—å£æ·»åŠ æ™®é€šé¢æ¿
 
-        //this.getContentPane().add(pane2);//Ïò´°¿ÚÌí¼ÓÆÕÍ¨Ãæ°å
+        //this.getContentPane().add(pane2);//å‘çª—å£æ·»åŠ æ™®é€šé¢æ¿
 
         this.getContentPane().setBackground(Color.red);
 

@@ -1,58 +1,58 @@
-package »ù´¡ÖªÊ¶.»ù´¡.ForDoWhile;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.ForDoWhile;
 /*
-ÈýÖÖÑ­»·µÄ¸ñÊ½£º
+ä¸‰ç§å¾ªçŽ¯çš„æ ¼å¼ï¼š
 
-1£ºforÑ­»·        for(³õÊ¼»¯±í´ïÊ½¢Ù; ²¼¶û±í´ïÊ½¢Ú; ²½½ø±í´ïÊ½¢Ü){
-                      Ñ­»·Ìå;
+1ï¼šforå¾ªçŽ¯        for(åˆå§‹åŒ–è¡¨è¾¾å¼â‘ ; å¸ƒå°”è¡¨è¾¾å¼â‘¡; æ­¥è¿›è¡¨è¾¾å¼â‘£){
+                      å¾ªçŽ¯ä½“;
                   }
 
-2£ºwhile          ³õÊ¼»¯±í´ïÊ½ //¿ÉÓÐ¿ÉÎÞ
-                  while(²¼¶û±í´ïÊ½){
-                       Ñ­»·Ìå;
-                       ²½½ø±í´ïÊ½  //¿ÉÓÐ¿ÉÎÞ
-                  }                //µ±ÉÏÃæÁ½¸ö¿ÉÓÐ¿ÉÎÞµÄ¶¼ÓÐÊ±£¬Ïàµ±ÓÚforÑ­»·
+2ï¼šwhile          åˆå§‹åŒ–è¡¨è¾¾å¼ //å¯æœ‰å¯æ— 
+                  while(å¸ƒå°”è¡¨è¾¾å¼){
+                       å¾ªçŽ¯ä½“;
+                       æ­¥è¿›è¡¨è¾¾å¼  //å¯æœ‰å¯æ— 
+                  }                //å½“ä¸Šé¢ä¸¤ä¸ªå¯æœ‰å¯æ— çš„éƒ½æœ‰æ—¶ï¼Œç›¸å½“äºŽforå¾ªçŽ¯
 
-3£ºdo-while       ³õÊ¼»¯±í´ïÊ½;
+3ï¼šdo-while       åˆå§‹åŒ–è¡¨è¾¾å¼;
                   do{
-                      Ñ­»·Ìå;
-                      ²½½ø±í´ïÊ½;
-                  }while(²¼¶û±í´ïÊ½);
+                      å¾ªçŽ¯ä½“;
+                      æ­¥è¿›è¡¨è¾¾å¼;
+                  }while(å¸ƒå°”è¡¨è¾¾å¼);
 
 =========================================================================================
 
-ÈýÖÖÑ­»·µÄÇø±ð¡£
+ä¸‰ç§å¾ªçŽ¯çš„åŒºåˆ«ã€‚
 
-1. Èç¹ûÌõ¼þÅÐ¶ÏÖØÀ´Ã»ÓÐÂú×ã¹ý£¬ÄÇÃ´forºÍwhileÑ­»·½«»áÒ»´Î¶¼²»Ö´ÐÐ£¬µ«do-whileÑ­»·Ö´ÐÐÖÁÉÙÒ»´Î
-2. forÑ­»·µÄ±äÁ¿ÔÚÐ¡À¨ºÅµ±ÖÐ¶¨Òå£¬Ö»ÓÐÑ­»·ÄÚ²¿²Å¿ÉÒÔÊ¹ÓÃ
+1. å¦‚æžœæ¡ä»¶åˆ¤æ–­é‡æ¥æ²¡æœ‰æ»¡è¶³è¿‡ï¼Œé‚£ä¹ˆforå’Œwhileå¾ªçŽ¯å°†ä¼šä¸€æ¬¡éƒ½ä¸æ‰§è¡Œï¼Œä½†do-whileå¾ªçŽ¯æ‰§è¡Œè‡³å°‘ä¸€æ¬¡
+2. forå¾ªçŽ¯çš„å˜é‡åœ¨å°æ‹¬å·å½“ä¸­å®šä¹‰ï¼Œåªæœ‰å¾ªçŽ¯å†…éƒ¨æ‰å¯ä»¥ä½¿ç”¨
            int x = 0;
            for(int i1=1;i1 <= 100;i1++){
                if(i1 % 2 ==0){
                   x = x + i1;
                 }
             }
-            System.out.println(i1);       //Õâ¸öÌõÓï¾ä¾ÍÊÇ´íÎóµÄ£¬ÒòÎªi1ÊÇÔÚforÀïÃæ¶¨ÒåµÄ  µ±È»ÒÔºó¿ÉÒÔ¼ÌÐø¶¨ÒåÒ»¸öi1
-    µ«ÊÇwhileÑ­»·ºÍde-whileÑ­»·³õÊ¼»¯Óï¾ä±¾À´¾ÍÔÚÍâÃæ£¬ËùÒÔ³öÑ­»·ºó¿ÉÒÔ¼ÌÐøÊ¹ÓÃ
+            System.out.println(i1);       //è¿™ä¸ªæ¡è¯­å¥å°±æ˜¯é”™è¯¯çš„ï¼Œå› ä¸ºi1æ˜¯åœ¨foré‡Œé¢å®šä¹‰çš„  å½“ç„¶ä»¥åŽå¯ä»¥ç»§ç»­å®šä¹‰ä¸€ä¸ªi1
+    ä½†æ˜¯whileå¾ªçŽ¯å’Œde-whileå¾ªçŽ¯åˆå§‹åŒ–è¯­å¥æœ¬æ¥å°±åœ¨å¤–é¢ï¼Œæ‰€ä»¥å‡ºå¾ªçŽ¯åŽå¯ä»¥ç»§ç»­ä½¿ç”¨
 
 ==========================================================================================
 
-for¿ÉÒÔÓÃ break return continue
+forå¯ä»¥ç”¨ break return continue
 
  */
 public class XunHuan01{
     public static void main(String[]args){
-        System.out.println("==========================Ñ­»·Ìâ==============================");
-        //Çó100ÒÔÄÚµÄÅ¼ÊýºÍ
+        System.out.println("==========================å¾ªçŽ¯é¢˜==============================");
+        //æ±‚100ä»¥å†…çš„å¶æ•°å’Œ
 
-        //Ê¹ÓÃforÑ­»·
+        //ä½¿ç”¨forå¾ªçŽ¯
         int x = 0;
         for(int i1=1;i1 <= 100;i1++){
             if(i1 % 2 ==0){
                x = x + i1;
             }
         }
-        System.out.println("for½á¹ûÎª"+x);
+        System.out.println("forç»“æžœä¸º"+x);
 
-        //Ê¹ÓÃwhileÑ­»·                                               
+        //ä½¿ç”¨whileå¾ªçŽ¯                                               
         int y = 0;
         int i2 = 1;
         while (i2 <= 100){
@@ -61,49 +61,49 @@ public class XunHuan01{
            }
            i2++;
         }
-        System.out.println("while½á¹ûÎª"+y);
+        System.out.println("whileç»“æžœä¸º"+y);
 
-        //do-whileÊÔÊÔ
+        //do-whileè¯•è¯•
         int z =0;
         int i3 =2;
         do{
             z = z + i3;
             i3+=2;
         }while(i3<=100);
-        System.out.println("do-while½á¹ûÎª"+z);
+        System.out.println("do-whileç»“æžœä¸º"+z);
         System.out.println("==========================================");
 
 //============================================================================================
 
-        // forÀïÃæ¿ÉÒÔÊ¹ÓÃbreak½øÐÐÖÐ¶Ï
+        // foré‡Œé¢å¯ä»¥ä½¿ç”¨breakè¿›è¡Œä¸­æ–­
         for(int i =1; i<=10 ; i++){
-            System.out.println(i+"===ÞÏÞÎÍòËê==="+i);
+            System.out.println(i+"===å°´å°¬ä¸‡å²==="+i);
             if(i==6){
                 break;
             }
         }
         System.out.println("===========================");
 
-        //fouÀïÃæÊ¹ÓÃcontinue½øÐÐÌø¹ý
+        //foué‡Œé¢ä½¿ç”¨continueè¿›è¡Œè·³è¿‡
         for (int i = 1; i < 10; i++) {
             if(i % 2 != 0){
                 continue;
             }else{
-                System.out.println(i+"===ÞÏÞÎÍòËê==="+i);
+                System.out.println(i+"===å°´å°¬ä¸‡å²==="+i);
             }
             
         }
         System.out.println("==========================");
 
-        //fouÀïÃæÊ¹ÓÃreburn½øÐÐÖÐ¶Ï
+        //foué‡Œé¢ä½¿ç”¨reburnè¿›è¡Œä¸­æ–­
         for (int i = 1; i < 10; i++) {
-            System.out.println(i+"===ÞÏÞÎÍòËê=="+i);
+            System.out.println(i+"===å°´å°¬ä¸‡å²=="+i);
             if(i>=6){
                 return;
-            }  //  Ò»°ã²»ÓÃÕâ¸ö Èç¹ûÔÚÒ»¸ö·½·¨ÖÐ return»á½áÊø·µ»Ø¸Ã·½·¨
+            }  //  ä¸€èˆ¬ä¸ç”¨è¿™ä¸ª å¦‚æžœåœ¨ä¸€ä¸ªæ–¹æ³•ä¸­ returnä¼šç»“æŸè¿”å›žè¯¥æ–¹æ³•
         }
-        //ÏÂÃæÔÙÔÚÕâ¸ö·½·¨ÀïÃæÐ´´úÂëÊÇ²»»áÔËÐÐµÄ£¬ÒòÎªreturnÒÑ¾­ÖÐ¶Ï·µ»Ø¸Ã·½·¨ÁË
-        System.out.println("¶¼¹Öreturn£¬ÎÒ²»ÄÜÔËÐÐÏÔÊ¾ÁË/ºÃÆøÑ¼");
+        //ä¸‹é¢å†åœ¨è¿™ä¸ªæ–¹æ³•é‡Œé¢å†™ä»£ç æ˜¯ä¸ä¼šè¿è¡Œçš„ï¼Œå› ä¸ºreturnå·²ç»ä¸­æ–­è¿”å›žè¯¥æ–¹æ³•äº†
+        System.out.println("éƒ½æ€ªreturnï¼Œæˆ‘ä¸èƒ½è¿è¡Œæ˜¾ç¤ºäº†/å¥½æ°”é¸­");
 
     }
 }

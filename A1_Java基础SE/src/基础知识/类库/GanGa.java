@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,13 +16,13 @@ public class GanGa extends JDialog implements ActionListener {
     private Random random = new Random();
     private Dimension screenSize;
     private JPanel graphicsPanel;
-    //ĞĞ¸ß,ÁĞ¿í
+    //è¡Œé«˜,åˆ—å®½
     private final static int gap = 20;
-    //´æ·ÅÓêµã¶¥²¿µÄÎ»ÖÃĞÅÏ¢(marginTop)
+    //å­˜æ”¾é›¨ç‚¹é¡¶éƒ¨çš„ä½ç½®ä¿¡æ¯(marginTop)
     private int[] posArr;
-    //ĞĞÊı
+    //è¡Œæ•°
     private int lines;
-    //ÁĞÊı
+    //åˆ—æ•°
     private int columns;
 
     public GanGa() {
@@ -33,18 +33,18 @@ public class GanGa extends JDialog implements ActionListener {
         setLayout(new BorderLayout());
         graphicsPanel = new GraphicsPanel();
         add(graphicsPanel, BorderLayout.CENTER);
-        //ÉèÖÃ¹â±ê²»¿É¼û
+        //è®¾ç½®å…‰æ ‡ä¸å¯è§
         Toolkit defaultToolkit = Toolkit.getDefaultToolkit();
         Image image = defaultToolkit.createImage(new MemoryImageSource(0, 0, null, 0, 0));
         Cursor invisibleCursor = defaultToolkit.createCustomCursor(image, new Point(0, 0), "cursor");
         setCursor(invisibleCursor);
-        //ESC¼üÍË³ö
+        //ESCé”®é€€å‡º
         KeyPressListener keyPressListener = new KeyPressListener();
         this.addKeyListener(keyPressListener);
         //this.setAlwaysOnTop(true);
-        //È¥±êÌâÀ¸
+        //å»æ ‡é¢˜æ 
         this.setUndecorated(true);
-        //È«ÆÁ
+        //å…¨å±
         this.getGraphicsConfiguration().getDevice().setFullScreenWindow(this);
         this.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         setVisible(true);
@@ -59,12 +59,12 @@ public class GanGa extends JDialog implements ActionListener {
             posArr[i] = random.nextInt(lines);
         }
 
-        //Ã¿Ãë10Ö¡
+        //æ¯ç§’10å¸§
         new Timer(85, this).start();
     }
 
     /*
-     * @return Ëæ»ú×Ö·û
+     * @return éšæœºå­—ç¬¦
      */
     private char getChr() {
         return (char) (random.nextInt(94) + 33);
@@ -82,7 +82,7 @@ public class GanGa extends JDialog implements ActionListener {
             g2d.setFont(getFont().deriveFont(Font.BOLD));
             g2d.setColor(Color.BLACK);
             g2d.fillRect(0, 0, screenSize.width, screenSize.height);
-            //µ±Ç°ÁĞ
+            //å½“å‰åˆ—
             int currentColumn = 0;
             for (int x = 0; x < screenSize.width; x += gap) {
                 int endPos = posArr[currentColumn];
@@ -90,7 +90,7 @@ public class GanGa extends JDialog implements ActionListener {
                 g2d.drawString(String.valueOf(getChr()), x, endPos * gap);
                 int cg = 0;
                 for (int j = endPos - 15; j < endPos; j++) {
-                    //ÑÕÉ«½¥±ä
+                    //é¢œè‰²æ¸å˜
                     cg += 20;
                     if (cg > 255) {
                         cg = 255;
@@ -98,9 +98,9 @@ public class GanGa extends JDialog implements ActionListener {
                     g2d.setColor(new Color(0, cg, 0));
                     g2d.drawString(String.valueOf(getChr()), x, j * gap);
                 }
-                //Ã¿·ÅÍêÒ»Ö¡£¬µ±Ç°ÁĞÉÏÓêµãµÄÎ»ÖÃËæ»úÏÂÒÆ1~5ĞĞ
+                //æ¯æ”¾å®Œä¸€å¸§ï¼Œå½“å‰åˆ—ä¸Šé›¨ç‚¹çš„ä½ç½®éšæœºä¸‹ç§»1~5è¡Œ
                 posArr[currentColumn] += random.nextInt(5);
-                //µ±ÓêµãÎ»ÖÃ³¬¹ıÆÁÄ»¸ß¶ÈÊ±£¬ÖØĞÂ²úÉúÒ»¸öËæ»úÎ»ÖÃ
+                //å½“é›¨ç‚¹ä½ç½®è¶…è¿‡å±å¹•é«˜åº¦æ—¶ï¼Œé‡æ–°äº§ç”Ÿä¸€ä¸ªéšæœºä½ç½®
                 if (posArr[currentColumn] * gap > getHeight()) {
                     posArr[currentColumn] = random.nextInt(lines);
                 }

@@ -1,6 +1,6 @@
-package 基础知识.类量.A接口作为变量类型;
+package 鍩虹鐭ヨ瘑.绫婚噺.A鎺ュ彛浣滀负鍙橀噺绫诲瀷;
 
-// weapon 武器
+// weapon 姝﹀櫒
 public class Weapon {
 
     private String code;

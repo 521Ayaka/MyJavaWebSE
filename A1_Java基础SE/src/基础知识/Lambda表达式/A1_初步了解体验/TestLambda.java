@@ -1,27 +1,27 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A1_³õ²½ÁË½âÌåÑé;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A1_åˆæ­¥äº†è§£ä½“éªŒ;
 
 public class TestLambda {
 
     public static void main(String[] args) {
 
-        //·½Ê½Ò»:
+        //æ–¹å¼ä¸€:
         RunnableImpl runImpl = new RunnableImpl();
         Thread t = new Thread(runImpl);
         t.start();
 
 
-        //·½Ê½¶ş: Í¨¹ıÄäÃûÄÚ²¿Àà¸Ä½ø
+        //æ–¹å¼äºŒ: é€šè¿‡åŒ¿åå†…éƒ¨ç±»æ”¹è¿›
         new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println("·½Ê½¶ş: ¶àÏß³Ì³ÌĞòÆô¶¯£¡");
+                System.out.println("æ–¹å¼äºŒ: å¤šçº¿ç¨‹ç¨‹åºå¯åŠ¨ï¼");
             }
         }).start();
 
 
-        //·½Ê½Èı: Í¨¹ıLambda±í´ïÊ½¸Ä½ø
+        //æ–¹å¼ä¸‰: é€šè¿‡Lambdaè¡¨è¾¾å¼æ”¹è¿›
         new Thread(() -> {
-            System.out.println("·½Ê½Èı: ¶àÏß³Ì³ÌĞòÆô¶¯£¡");
+            System.out.println("æ–¹å¼ä¸‰: å¤šçº¿ç¨‹ç¨‹åºå¯åŠ¨ï¼");
         }).start();
 
 

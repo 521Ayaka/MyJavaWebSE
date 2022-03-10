@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.×Ö½Ú×Ö·û´òÓ¡Á÷.×Ö½Ú´òÓ¡Á÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å­—èŠ‚å­—ç¬¦æ‰“å°æµ.å­—èŠ‚æ‰“å°æµ;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -7,15 +7,15 @@ public class TestPrintStream {
 
     public static void main(String[] args) throws IOException {
 
-        PrintStream ps = new PrintStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\×Ö½Ú´òÓ¡Á÷\\ÎÄ¼ş.txt");
-        //Ê¹ÓÃ·½·¨
-        ps.write(97);//a     //writeÓĞÈıÖÖ·½·¨,µ¥¸ö×Ö·û,byteÊı×é,byteÊı×éÒ»²¿·Ö
-        ps.println();  //»»ĞĞ
-        ps.print(97);  //97    //print / println ÌØÓĞ·½·¨||Ğ´ÈëµÄÄÚÈİÊÇÊ²Ã´,Ğ´½øÈ¥µÄÄÚÈİ¾ÍÊÇÊ²Ã´
+        PrintStream ps = new PrintStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\å­—èŠ‚æ‰“å°æµ\\æ–‡ä»¶.txt");
+        //ä½¿ç”¨æ–¹æ³•
+        ps.write(97);//a     //writeæœ‰ä¸‰ç§æ–¹æ³•,å•ä¸ªå­—ç¬¦,byteæ•°ç»„,byteæ•°ç»„ä¸€éƒ¨åˆ†
+        ps.println();  //æ¢è¡Œ
+        ps.print(97);  //97    //print / println ç‰¹æœ‰æ–¹æ³•||å†™å…¥çš„å†…å®¹æ˜¯ä»€ä¹ˆ,å†™è¿›å»çš„å†…å®¹å°±æ˜¯ä»€ä¹ˆ
         ps.println();
-        ps.println("ÖĞÎÄĞ´Èë");
+        ps.println("ä¸­æ–‡å†™å…¥");
 
-        //ĞèÒªÊÍ·Å×ÊÔ´
+        //éœ€è¦é‡Šæ”¾èµ„æº
         ps.close();
     }
 

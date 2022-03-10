@@ -1,23 +1,23 @@
-package »ù´¡ÖªÊ¶.¾²Ì¬.StaticLei;
+package åŸºç¡€çŸ¥è¯†.é™æ€.StaticLei;
 
 import java.util.Arrays;
 
 /*
-ÌâÄ¿£º
-ÇëÊ¹ÓÃArraysÏà¹ØµÄAPI£¬½«Ò»¸öËæ»ú×Ö·û´®ÖÐµÄËùÓÐ×Ö·ûÉýÐòÅÅÁÐ£¬²¢µ¹Ðò´òÓ¡¡£
+é¢˜ç›®ï¼š
+è¯·ä½¿ç”¨Arraysç›¸å…³çš„APIï¼Œå°†ä¸€ä¸ªéšæœºå­—ç¬¦ä¸²ä¸­çš„æ‰€æœ‰å­—ç¬¦å‡åºæŽ’åˆ—ï¼Œå¹¶å€’åºæ‰“å°ã€‚
  */
 public class ArraysLei02 {
 
     public static void main(String[] args) {
         String str = "asv76agfqwdfvasdfvjh";
 
-        // ÈçºÎ½øÐÐÉýÐòÅÅÁÐ£ºsort
-        // ±ØÐëÊÇÒ»¸öÊý×é£¬²ÅÄÜÓÃArrays.sort·½·¨
-        // String --> Êý×é£¬ÓÃtoCharArray
+        // å¦‚ä½•è¿›è¡Œå‡åºæŽ’åˆ—ï¼šsort
+        // å¿…é¡»æ˜¯ä¸€ä¸ªæ•°ç»„ï¼Œæ‰èƒ½ç”¨Arrays.sortæ–¹æ³•
+        // String --> æ•°ç»„ï¼Œç”¨toCharArray
         char[] chars = str.toCharArray();
-        Arrays.sort(chars); // ¶Ô×Ö·ûÊý×é½øÐÐÉýÐòÅÅÁÐ
+        Arrays.sort(chars); // å¯¹å­—ç¬¦æ•°ç»„è¿›è¡Œå‡åºæŽ’åˆ—
 
-        // ÐèÒªµ¹Ðò±éÀú
+        // éœ€è¦å€’åºéåŽ†
         for (int i = chars.length - 1; i >= 0; i--) {
             System.out.println(chars[i]);
         }

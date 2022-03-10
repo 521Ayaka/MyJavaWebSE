@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Map.MapÁ·Ï°.MapÁ·Ï°3;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Map.Mapç»ƒä¹ .Mapç»ƒä¹ 3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,61 +8,61 @@ import java.util.Set;
 public class DameHashMap {
 
     public static void main(String[] args) {
-        //Æô¶¯
+        //å¯åŠ¨
         new DameHashMap().init();
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
 
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         System.out.println("=========================");
 
-        //´´½¨ArrayList¼¯ºÏ, ·ºĞÍÎª:< HapMap<T,V> >Öµ¡£
+        //åˆ›å»ºArrayListé›†åˆ, æ³›å‹ä¸º:< HapMap<T,V> >å€¼ã€‚
         ArrayList<HashMap<String, String>> arrayMap = new ArrayList<>();
 
-        //´´½¨HashMap¼¯ºÏ,²¢Ìí¼ÓÏàÓ¦µÄ¼üÖµ¶Ô
+        //åˆ›å»ºHashMapé›†åˆ,å¹¶æ·»åŠ ç›¸åº”çš„é”®å€¼å¯¹
         HashMap<String, String> map1 = new HashMap<>();
-        map1.put("Ëï²ß", "´óÇÅ");
-        map1.put("ÖÜè¤", "Ğ¡ÇÅ");
+        map1.put("å­™ç­–", "å¤§æ¡¥");
+        map1.put("å‘¨ç‘œ", "å°æ¡¥");
         HashMap<String, String> map2 = new HashMap<>();
-        map1.put("¹ù¾¸", "»ÆÈØ");
-        map1.put("Ñî¹ı", "Ğ¡ÁúÅ®");
+        map1.put("éƒ­é–", "é»„è“‰");
+        map1.put("æ¨è¿‡", "å°é¾™å¥³");
         HashMap<String, String> map3 = new HashMap<>();
-        map1.put("ÑÇË÷", "ÈğÎÄ");
-        map1.put("°¬Ï£", "ÂùÍõ");
+        map1.put("äºšç´¢", "ç‘æ–‡");
+        map1.put("è‰¾å¸Œ", "è›®ç‹");
 
-        //ÏòArrayListÖĞÌí¼ÓHashMap¶ÔÏó¡£
+        //å‘ArrayListä¸­æ·»åŠ HashMapå¯¹è±¡ã€‚
         arrayMap.add(map1);
         arrayMap.add(map2);
         arrayMap.add(map3);
 
-        //±éÀúArrayList    ·½·¨Ò»
+        //éå†ArrayList    æ–¹æ³•ä¸€
         for (HashMap<String, String> mapH1 : arrayMap) {
-            //»ñÈ¡mapÖĞµÄ¼ü¼¯ºÏ
+            //è·å–mapä¸­çš„é”®é›†åˆ
             Set<String> keySet = mapH1.keySet();
             for (String keyL : keySet) {
-                //»ñµÃ¼ü¶ÔÓ¦µÄÖµ
+                //è·å¾—é”®å¯¹åº”çš„å€¼
                 String valueL = mapH1.get(keyL);
-                //´òÓ¡½á¹û
-                System.out.println(keyL + " Ï²»¶ " + valueL);
+                //æ‰“å°ç»“æœ
+                System.out.println(keyL + " å–œæ¬¢ " + valueL);
                 System.out.println("-------------");
             }
         }
 
         System.out.println("=========================");
 
-        //±éÀúArrayList    ·½·¨¶ş
+        //éå†ArrayList    æ–¹æ³•äºŒ
         for (HashMap<String,String> mapH2: arrayMap) {
-            //»ñÈ¡µ±Ç°µÄ¼üÖµ¶Ô¼¯ºÏ
+            //è·å–å½“å‰çš„é”®å€¼å¯¹é›†åˆ
             Set<Map.Entry<String, String>> em = mapH2.entrySet();
-            //±éÀúHashMap¼¯ºÏ
+            //éå†HashMapé›†åˆ
             for (Map.Entry<String, String> keyToValue :em) {
-                //»ñµÃ¼ü
+                //è·å¾—é”®
                 String key = keyToValue.getKey();
                 String value = keyToValue.getValue();
-                //´òÓ¡½á¹û
-                System.out.println(key + " Ï²»¶ " + value);
+                //æ‰“å°ç»“æœ
+                System.out.println(key + " å–œæ¬¢ " + value);
                 System.out.println("-------------");
 
             }

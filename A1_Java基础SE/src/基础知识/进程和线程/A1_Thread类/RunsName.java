@@ -1,61 +1,61 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A1_ThreadÀà;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A1_Threadç±»;
 /*
 
-²é¿´µ±Ç°Ïß³ÌµÄÃû³Æ Thread.currentThread().getName()
-ÉèÖÃÏß³ÌÃû³Æ setName();
-µ÷ÓÃÏß³ÌÃû³Æ getName();
+æŸ¥çœ‹å½“å‰çº¿ç¨‹çš„åç§° Thread.currentThread().getName()
+è®¾ç½®çº¿ç¨‹åç§° setName();
+è°ƒç”¨çº¿ç¨‹åç§° getName();
 
-Ä¬ÈÏÏß³ÌÃû³Æ Thread-0 Thread-1 ...   ´Ó0¿ªÊ¼
+é»˜è®¤çº¿ç¨‹åç§° Thread-0 Thread-1 ...   ä»0å¼€å§‹
 
 */
 
 public class RunsName {
 
     public static void main(String[] args) {
-        //²é¿´µ±Ç°Ïß³ÌµÄÃû³Æ main
+        //æŸ¥çœ‹å½“å‰çº¿ç¨‹çš„åç§° main
         System.out.println(Thread.currentThread().getName());
 
-        method1();//Ä¬ÈÏÏß³ÌÃû×Ö
-        method2();//ÉèÖÃÏß³ÌÃû³Æ
+        method1();//é»˜è®¤çº¿ç¨‹åå­—
+        method2();//è®¾ç½®çº¿ç¨‹åç§°
 
 
     }
 
-    //Ä¬ÈÏÏß³ÌÃû×Ö
+    //é»˜è®¤çº¿ç¨‹åå­—
     public static void method1(){
-        //´´½¨¶àÏß³Ì
+        //åˆ›å»ºå¤šçº¿ç¨‹
         MyThreadName t1 = new MyThreadName();
         MyThreadName t2 = new MyThreadName();
 
-        //Ä¬ÈÏÇé¿öÏÂ ²é¿´Ãû³Æ
+        //é»˜è®¤æƒ…å†µä¸‹ æŸ¥çœ‹åç§°
         t1.start(); // Thread-0 : 0 ...
         t2.start(); // Thread-1 : 0 ...
     }
 
 
-    //ÉèÖÃÏß³ÌÃû³Æ
+    //è®¾ç½®çº¿ç¨‹åç§°
     public static void method2(){
-        //´´½¨Ïß³Ì
+        //åˆ›å»ºçº¿ç¨‹
         MyThreadName tn1 = new MyThreadName();
         MyThreadName tn2 = new MyThreadName();
-        //ÉèÖÃÃû×Ö
-        tn1.setName("ŞÏŞÎ001")/*ÉèÖÃÃû×Ö*/;
-        tn2.setName("ŞÏŞÎ002")/*ÉèÖÃÃû×Ö*/;
-        //Æô¶¯Ïß³Ì
-        tn1.start(); // ŞÏŞÎ001 : 67 ...
-        tn2.start(); // ŞÏŞÎ002 : 66 ...
+        //è®¾ç½®åå­—
+        tn1.setName("å°´å°¬001")/*è®¾ç½®åå­—*/;
+        tn2.setName("å°´å°¬002")/*è®¾ç½®åå­—*/;
+        //å¯åŠ¨çº¿ç¨‹
+        tn1.start(); // å°´å°¬001 : 67 ...
+        tn2.start(); // å°´å°¬002 : 66 ...
     }
 
 }
 
-//¼Ì³ĞThreadÀà ÖØĞ´run·½·¨ µ÷ÓÃgetName·½·¨
+//ç»§æ‰¿Threadç±» é‡å†™runæ–¹æ³• è°ƒç”¨getNameæ–¹æ³•
 class MyThreadName extends Thread {
 
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName());
         for (int i = 0; i < 100; i++) {
-            System.out.println(getName()/*µ÷ÓÃÃû×Ö*/ + " : " + i);
+            System.out.println(getName()/*è°ƒç”¨åå­—*/ + " : " + i);
         }
     }
 }

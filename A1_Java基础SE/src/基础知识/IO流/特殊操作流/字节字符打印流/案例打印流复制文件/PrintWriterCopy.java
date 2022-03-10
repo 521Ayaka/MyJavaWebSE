@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.×Ö½Ú×Ö·û´òÓ¡Á÷.°¸Àı´òÓ¡Á÷¸´ÖÆÎÄ¼ş;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å­—èŠ‚å­—ç¬¦æ‰“å°æµ.æ¡ˆä¾‹æ‰“å°æµå¤åˆ¶æ–‡ä»¶;
 
 import java.io.*;
 
@@ -6,10 +6,10 @@ public class PrintWriterCopy {
 
     public static void main(String[] args) throws IOException{
 
-        //×Ö·û»º³åÁ÷
+        //å­—ç¬¦ç¼“å†²æµ
         method1();
 
-        //×Ö·û´òÓ¡Á÷¸Ä½ø
+        //å­—ç¬¦æ‰“å°æµæ”¹è¿›
         method2();
 
 
@@ -18,38 +18,38 @@ public class PrintWriterCopy {
 
 
     private static void method1() throws IOException {
-        //´´½¨×Ö·û»º³åÁ÷¶ÔÏó
-        BufferedReader br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\°¸Àı´òÓ¡Á÷¸´ÖÆÎÄ¼ş\\PrintWriterCopy.java"));
-        BufferedWriter bw = new BufferedWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\°¸Àı´òÓ¡Á÷¸´ÖÆÎÄ¼ş\\NewCopy001.txt"));
-        //¶ÁĞ´Êı¾İ
+        //åˆ›å»ºå­—ç¬¦ç¼“å†²æµå¯¹è±¡
+        BufferedReader br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\æ¡ˆä¾‹æ‰“å°æµå¤åˆ¶æ–‡ä»¶\\PrintWriterCopy.java"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\æ¡ˆä¾‹æ‰“å°æµå¤åˆ¶æ–‡ä»¶\\NewCopy001.txt"));
+        //è¯»å†™æ•°æ®
         String str;
         while ( (str=br.readLine())!= null ){
-            bw.write(str); //Ğ´ÈëÊı¾İ
-            bw.newLine();  //»»ĞĞ
-            bw.flush();    //Ë¢ĞÂ
+            bw.write(str); //å†™å…¥æ•°æ®
+            bw.newLine();  //æ¢è¡Œ
+            bw.flush();    //åˆ·æ–°
         }
 
-        //×îºóÊÍ·Å×ÊÔ´
+        //æœ€åé‡Šæ”¾èµ„æº
         br.close();
         bw.close();
 
     }
 
     private static void method2() throws IOException {
-        //×¢Òâ£º´òÓ¡Á÷Ö»¸ºÔğĞ´Êı¾İ£¬²»¸ºÔğ¶ÁÈ¡Êı¾İ
+        //æ³¨æ„ï¼šæ‰“å°æµåªè´Ÿè´£å†™æ•°æ®ï¼Œä¸è´Ÿè´£è¯»å–æ•°æ®
 
-        //¶ÁÊı¾İÈÔÈ»Ê¹ÓÃ×Ö·û»º³åÊäÈëÁ÷
-        BufferedReader br = new BufferedReader(new FileReader("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\°¸Àı´òÓ¡Á÷¸´ÖÆÎÄ¼ş\\PrintWriterCopy.java"));
-        //´´½¨´òÓ¡Á÷
-        PrintWriter pw = new PrintWriter(new FileWriter("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\ÌØÊâ²Ù×÷Á÷\\×Ö½Ú×Ö·û´òÓ¡Á÷\\°¸Àı´òÓ¡Á÷¸´ÖÆÎÄ¼ş\\NewCopy002.txt")
-                                         , true);//µÚ¶ş¸ö²ÎÊıÎªtrue
-        //¶ÁĞ´Êı¾İ
+        //è¯»æ•°æ®ä»ç„¶ä½¿ç”¨å­—ç¬¦ç¼“å†²è¾“å…¥æµ
+        BufferedReader br = new BufferedReader(new FileReader("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\æ¡ˆä¾‹æ‰“å°æµå¤åˆ¶æ–‡ä»¶\\PrintWriterCopy.java"));
+        //åˆ›å»ºæ‰“å°æµ
+        PrintWriter pw = new PrintWriter(new FileWriter("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\ç‰¹æ®Šæ“ä½œæµ\\å­—èŠ‚å­—ç¬¦æ‰“å°æµ\\æ¡ˆä¾‹æ‰“å°æµå¤åˆ¶æ–‡ä»¶\\NewCopy002.txt")
+                                         , true);//ç¬¬äºŒä¸ªå‚æ•°ä¸ºtrue
+        //è¯»å†™æ•°æ®
         String str;
         while ( (str = br.readLine())!= null ){
-            pw.println(str);//Èı²½£ºĞ´Èë »»ĞĞ Ë¢ĞÂ
+            pw.println(str);//ä¸‰æ­¥ï¼šå†™å…¥ æ¢è¡Œ åˆ·æ–°
         }
 
-        //ÊÍ·Å×ÊÔ´
+        //é‡Šæ”¾èµ„æº
         br.close();
         pw.close();
 

@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.ÍøÂç±à³Ì.ÍøÂçÍ¨ĞÅ.TCPĞ­Òé.TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°2;
+package åŸºç¡€çŸ¥è¯†.ç½‘ç»œç¼–ç¨‹.ç½‘ç»œé€šä¿¡.TCPåè®®.TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 2;
 
 /*
-    ·şÎñÆ÷
-        Õâ´Î·şÎñÆ÷½«½ÓÊÜµ½µÄÊı¾İ Ğ´³ÉÒ»¸öÎÄ±¾
+    æœåŠ¡å™¨
+        è¿™æ¬¡æœåŠ¡å™¨å°†æ¥å—åˆ°çš„æ•°æ® å†™æˆä¸€ä¸ªæ–‡æœ¬
 
 */
 
@@ -13,27 +13,27 @@ import java.net.Socket;
 public class ReceiveTCP {
 
     public static void main(String[] args) throws IOException {
-        //´´½¨·şÎñÆ÷Socket¶ÔÏó
+        //åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
         ServerSocket ss = new ServerSocket(10001);
 
         try (
-                //¼àÌı¿Í»§¶ËÁ¬½Ó, ·µ»ØÒ»¸öSocket¶ÔÏó
+                //ç›‘å¬å®¢æˆ·ç«¯è¿æ¥, è¿”å›ä¸€ä¸ªSocketå¯¹è±¡
                 Socket s = ss.accept();
-                //»ñÈ¡ioÁ÷,¶ÁÊı¾İ,·â×°³ÉBufferedReader
+                //è·å–ioæµ,è¯»æ•°æ®,å°è£…æˆBufferedReader
                 BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 
-                //´´½¨ioÁ÷,½«¶ÁÈ¡µ½µÄÊı¾İĞ´Èë³É ĞÂÎÄ¼ş
-                BufferedWriter bw = new BufferedWriter(new FileWriter(new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\ÍøÂç±à³Ì\\ÍøÂçÍ¨ĞÅ\\TCPĞ­Òé\\TCP·¢ËÍ½ÓÊÕÊı¾İ¸´Ï°2\\½ÓÊÕÎÄ¼ş.txt")));
+                //åˆ›å»ºioæµ,å°†è¯»å–åˆ°çš„æ•°æ®å†™å…¥æˆ æ–°æ–‡ä»¶
+                BufferedWriter bw = new BufferedWriter(new FileWriter(new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\ç½‘ç»œç¼–ç¨‹\\ç½‘ç»œé€šä¿¡\\TCPåè®®\\TCPå‘é€æ¥æ”¶æ•°æ®å¤ä¹ 2\\æ¥æ”¶æ–‡ä»¶.txt")));
 
-                //´´½¨ioÁ÷, ·´À¡ÓÃ»§ĞÅÏ¢
+                //åˆ›å»ºioæµ, åé¦ˆç”¨æˆ·ä¿¡æ¯
                 /*OutputStream os = s.getOutputStream();*/
                 BufferedWriter bwx = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
         ) {
 
-            //¶ÁÈ¡¿Í»§¶Ë·¢ËÍÀ´µÄÄÚÈİ
+            //è¯»å–å®¢æˆ·ç«¯å‘é€æ¥çš„å†…å®¹
             String line;
             while ((line = br.readLine()) != null) {
-                /*//×Ô¶¨Òå½áÊø±êÓï
+                /*//è‡ªå®šä¹‰ç»“æŸæ ‡è¯­
                 if ("!@#$%end".equals(line)) {
                     break;
                 }*/
@@ -42,8 +42,8 @@ public class ReceiveTCP {
                 bw.flush();
             }
 
-            //¸øÓÃ»§Á´½Ó·´À¡
-            bwx.write("ÎÄ¼şÉÏ´«³É¹¦");
+            //ç»™ç”¨æˆ·é“¾æ¥åé¦ˆ
+            bwx.write("æ–‡ä»¶ä¸Šä¼ æˆåŠŸ");
             bwx.newLine();
             bwx.flush();
 

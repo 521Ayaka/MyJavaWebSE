@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Scanner;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Scanner;
 
 import java.util.Scanner;
 
@@ -9,25 +9,25 @@ public class ScannerTi02 {
         Scanner sc = new Scanner(System.in);
 
         while(true){
-            System.out.println("========»¶Ó­Ê¹ÓÃŞÏŞÎµÄjava¼Ó·¨¼ÆËãÆ÷========");
-            System.out.println("ÇëÊäÈëµÚÒ»¸ö¼ÓÊı£º");
+            System.out.println("========æ¬¢è¿ä½¿ç”¨å°´å°¬çš„javaåŠ æ³•è®¡ç®—å™¨========");
+            System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªåŠ æ•°ï¼š");
             double a = sc.nextDouble();
-            System.out.println("ÇëÊäÈëµÚ¶ş¸ö¼ÓÊı£º");
+            System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªåŠ æ•°ï¼š");
             double b = sc.nextDouble();
             double sum = a + b;
-            System.out.println("¼ÆËã½á¹ûÎª£º" + sum);
-            System.out.println("ÊÇ·ñÍË³öàÏ£¿yes£¿no£¿");
+            System.out.println("è®¡ç®—ç»“æœä¸ºï¼š" + sum);
+            System.out.println("æ˜¯å¦é€€å‡ºå˜ï¼Ÿyesï¼Ÿnoï¼Ÿ");
             String str = sc.next();
             if(!str.equals("yes")&& !str.equals("no")){
-                System.out.println("ŞÏŞÎÌı²»¶®šG ¡Ô(¨‰©n¨‰)¡Ô");
-                System.out.println("ÊÇ·ñÍË³öàÏ£¿yes£¿no£¿");
+                System.out.println("å°´å°¬å¬ä¸æ‡‚æ¬¸ â‰¡(â–”ï¹â–”)â‰¡");
+                System.out.println("æ˜¯å¦é€€å‡ºå˜ï¼Ÿyesï¼Ÿnoï¼Ÿ");
                 str = sc.next();
             }
             if(str.equals("yes")){
-                System.out.println("=====¸ĞĞ»Ê¹ÓÃ©d(¨R¨Œ¨Q*)o=====");
+                System.out.println("=====æ„Ÿè°¢ä½¿ç”¨ãƒ¾(â‰§â–½â‰¦*)o=====");
                 break;
             }else{
-                System.out.println("»¶Ó­¼ÌĞøÊ¹ÓÃ©d(?¦Ø?`)o");
+                System.out.println("æ¬¢è¿ç»§ç»­ä½¿ç”¨ãƒ¾(?Ï‰?`)o");
                 System.out.println("=======================================");
             }
 

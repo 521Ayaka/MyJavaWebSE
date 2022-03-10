@@ -1,8 +1,8 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.ÌØÊâ²Ù×÷Á÷.¶ÔÏóĞòÁĞ·´ĞòÁĞ»¯Á÷.A1_¶ÔÏóĞòÁĞ»¯Á÷;
+package åŸºç¡€çŸ¥è¯†.IOæµ.ç‰¹æ®Šæ“ä½œæµ.å¯¹è±¡åºåˆ—ååºåˆ—åŒ–æµ.A1_å¯¹è±¡åºåˆ—åŒ–æµ;
 
 import java.io.Serializable;
 
-public class Student2 implements Serializable/*ÊµÏÖ¸Ã½Ó¿Úºó¸ÃÀàµÄ¶ÔÏóÄÜ±»ĞòÁĞ»¯*/ {
+public class Student2 implements Serializable/*å®ç°è¯¥æ¥å£åè¯¥ç±»çš„å¯¹è±¡èƒ½è¢«åºåˆ—åŒ–*/ {
 
     private String name;
     private int age;

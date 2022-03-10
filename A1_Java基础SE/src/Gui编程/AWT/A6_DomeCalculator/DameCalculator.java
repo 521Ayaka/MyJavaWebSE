@@ -1,4 +1,4 @@
-package Gui±à³Ì.AWT.A6_DomeCalculator;
+package Guiç¼–ç¨‹.AWT.A6_DomeCalculator;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +10,7 @@ public class DameCalculator {
 
     public static void main(String[] args) {
 
-        //Æô¶¯´°Ìå
+        //å¯åŠ¨çª—ä½“
         new Calculator();
 
     }
@@ -20,7 +20,7 @@ public class DameCalculator {
 class Calculator extends Frame {
 
     public Calculator() {
-        //³õÊ¼»¯´°Ìå
+        //åˆå§‹åŒ–çª—ä½“
         setBounds(500, 300, 500, 200);
         setBackground(new Color(6, 229, 203));
         setVisible(true);
@@ -31,28 +31,28 @@ class Calculator extends Frame {
             }
         });
 
-        //Ìí¼Ó×é¼ş °´Å¥
+        //æ·»åŠ ç»„ä»¶ æŒ‰é’®
         Button button = new Button("=");
 
-        //Ìí¼Ó×é¼ş ÎÄ±¾Óò
-        TextField field1 = new TextField(10);//TextFieldÎ¨Ò»Ò»¸ö´ø²Î¹¹Ôì£¬²ÎÊıÊÇ±íÊ¾Ò»ĞĞÎÄ±¾µÄÈİÁ¿
+        //æ·»åŠ ç»„ä»¶ æ–‡æœ¬åŸŸ
+        TextField field1 = new TextField(10);//TextFieldå”¯ä¸€ä¸€ä¸ªå¸¦å‚æ„é€ ï¼Œå‚æ•°æ˜¯è¡¨ç¤ºä¸€è¡Œæ–‡æœ¬çš„å®¹é‡
         TextField field2 = new TextField(10);
         TextField field3 = new TextField(10);
 
-        //Ìí¼Ó×é¼ş ±êÇ©
+        //æ·»åŠ ç»„ä»¶ æ ‡ç­¾
         Label label = new Label("+");
 
-        //Ìí¼Ó²¼¾Ö
-        setLayout(new FlowLayout());//ÉèÖÃÎªÁ÷Á÷Ê½²¼¾Ö
+        //æ·»åŠ å¸ƒå±€
+        setLayout(new FlowLayout());//è®¾ç½®ä¸ºæµæµå¼å¸ƒå±€
 
-        //Ïñ´°Ìåµ±ÖĞÌí¼Ó×é¼ş
+        //åƒçª—ä½“å½“ä¸­æ·»åŠ ç»„ä»¶
         add(field1);
         add(label);
         add(field2);
         add(button);
         add(field3);
 
-        //Ìí¼Ó¼àÌıÊÂ¼ş
+        //æ·»åŠ ç›‘å¬äº‹ä»¶
         MyActionListener myActionListener = new MyActionListener(field1, field2, field3);
         button.addActionListener(myActionListener);
 
@@ -60,13 +60,13 @@ class Calculator extends Frame {
 
 }
 
-//¼àÌıÊÂ¼şÀà
+//ç›‘å¬äº‹ä»¶ç±»
 class MyActionListener implements ActionListener {
 
 
     private TextField field1, field2, field3;
 
-    //´´½¨Ò»¸ö¹¹ÔìÆ÷£¬½ÓÊÜ²¢´«ÈëÊı¾İ
+    //åˆ›å»ºä¸€ä¸ªæ„é€ å™¨ï¼Œæ¥å—å¹¶ä¼ å…¥æ•°æ®
     public MyActionListener(TextField field1, TextField field2, TextField field3) {
         this.field1 = field1;
         this.field2 = field2;
@@ -77,14 +77,14 @@ class MyActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        //»ñÈ¡ÎÄ±¾Ò»¡¢¶şµÄÎÄ±¾ĞÅÏ¢
-        int num1 = Integer.parseInt(field1.getText());//Ç¿×ªÊ±£¬ÒªÓÃ°ü×°Àà¡£
+        //è·å–æ–‡æœ¬ä¸€ã€äºŒçš„æ–‡æœ¬ä¿¡æ¯
+        int num1 = Integer.parseInt(field1.getText());//å¼ºè½¬æ—¶ï¼Œè¦ç”¨åŒ…è£…ç±»ã€‚
         int num2 = Integer.parseInt(field2.getText());
 
-        //×ö¼Ó·¨ÔËËã
+        //åšåŠ æ³•è¿ç®—
         int sum = num1 + num2;
 
-        //Êä³ö½á¹û£¬²¢ÇÒÇå¿ÕÎÄ±¾1ºÍÎÄ±¾2
+        //è¾“å‡ºç»“æœï¼Œå¹¶ä¸”æ¸…ç©ºæ–‡æœ¬1å’Œæ–‡æœ¬2
         field1.setText("");
         field2.setText("");
         field3.setText(Integer.toString(sum));

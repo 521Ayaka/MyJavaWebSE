@@ -1,6 +1,6 @@
-package 基础知识.泛型.泛型方法;
+package 鍩虹鐭ヨ瘑.娉涘瀷.娉涘瀷鏂规硶;
 
-//泛型方法
+//娉涘瀷鏂规硶
 public class Generic_Method {
 
     public<T> void method(T t){

@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.°¸Àý.ºì°ü°¸Àý2;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹2;
 
 
-import »ù´¡ÖªÊ¶.°¸Àý.ºì°ü°¸Àý2.Red.MyRed;
+import åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹2.Red.MyRed;
 
 /*
-³¡¾°ËµÃ÷:
-   ºì°ü·¢³öÈ¥Ö®ºó£¬ËùÓÐÈË¶¼ÓÐºì°ü£¬´ó¼ÒÇÀÍêÖ®ºó£¬×îºóÒ»¸öºì°ü¸øÈºÖ÷×Ô¼º¡£
-´ó¶àÊý´úÂë¶¼ÊÇÏÖ³ÉµÄ£¬ÎÒÃÇÐèÒª×öµÄ¾ÍÊÇÌî¿ÕÌâ¡£
+åœºæ™¯è¯´æ˜Ž:
+   çº¢åŒ…å‘å‡ºåŽ»ä¹‹åŽï¼Œæ‰€æœ‰äººéƒ½æœ‰çº¢åŒ…ï¼Œå¤§å®¶æŠ¢å®Œä¹‹åŽï¼Œæœ€åŽä¸€ä¸ªçº¢åŒ…ç»™ç¾¤ä¸»è‡ªå·±ã€‚
+å¤§å¤šæ•°ä»£ç éƒ½æ˜¯çŽ°æˆçš„ï¼Œæˆ‘ä»¬éœ€è¦åšçš„å°±æ˜¯å¡«ç©ºé¢˜ã€‚
 
 
 */
@@ -14,7 +14,7 @@ public class Boostrap {
 
     public static void main(String[] args) {
 
-        MyRed red = new MyRed("Õâ¾ÍÞÏÞÎÁË");
+        MyRed red = new MyRed("è¿™å°±å°´å°¬äº†");
     }
 
 }

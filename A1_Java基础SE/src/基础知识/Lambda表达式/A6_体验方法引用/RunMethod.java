@@ -1,39 +1,39 @@
-package »ù´¡ÖªÊ¶.Lambda±í´ïÊ½.A6_ÌåÑé·½·¨ÒıÓÃ;
+package åŸºç¡€çŸ¥è¯†.Lambdaè¡¨è¾¾å¼.A6_ä½“éªŒæ–¹æ³•å¼•ç”¨;
 
 
 public class RunMethod {
 
-    public String string = "°¢Î÷°É°ÉÎ÷°ÍÎ÷°Í";
+    public String string = "é˜¿è¥¿å§å§è¥¿å·´è¥¿å·´";
 
     public static void main(String[] args) {
 
-        //Ê¹ÓÃLambda±í´ïÊ½
+        //ä½¿ç”¨Lambdaè¡¨è¾¾å¼
         method1(e -> System.out.println(e));
         System.out.println("=================");
 
-        //½Ó×ÅÊ¹ÓÃ·½·¨ÒıÓÃ
-        method1(System.out::println);//Ê¹ÓÃ·½·¨ÒıÓÃ¡£
+        //æ¥ç€ä½¿ç”¨æ–¹æ³•å¼•ç”¨
+        method1(System.out::println);//ä½¿ç”¨æ–¹æ³•å¼•ç”¨ã€‚
         System.out.println("=================");
 
-        //Í¨¹ıÀàµÄ¾²Ì¬·½·¨µÄµ÷ÓÃ ÊµÏÖ·½·¨ÒıÓÃ
-        method1(MethodInterface01::me);//×Ô¶¯Ê¶±ğ²ÎÊıÀàĞÍ String
+        //é€šè¿‡ç±»çš„é™æ€æ–¹æ³•çš„è°ƒç”¨ å®ç°æ–¹æ³•å¼•ç”¨
+        method1(MethodInterface01::me);//è‡ªåŠ¨è¯†åˆ«å‚æ•°ç±»å‹ String
         System.out.println("=================");
-        method1(RunMethod::me);//×Ô¶¯Ê¶±ğ²ÎÊıÀàĞÍ String
+        method1(RunMethod::me);//è‡ªåŠ¨è¯†åˆ«å‚æ•°ç±»å‹ String
         System.out.println("=================");
 
-        //Í¨¹ı¶ÔÏóµ÷ÓÃ¸Ã¶ÔÏó·½·¨ ÊµÏÖ·½·¨ÒıÓÃ
+        //é€šè¿‡å¯¹è±¡è°ƒç”¨è¯¥å¯¹è±¡æ–¹æ³• å®ç°æ–¹æ³•å¼•ç”¨
         Me meObj = new Me();
         method1(meObj::method);
         System.out.println("=================");
 
-        //StringÖĞÓÃÒ»¸ö¾²Ì¬·½·¨substring ²ÎÊıÁĞ±íÓĞ(String,int,int)
+        //Stringä¸­ç”¨ä¸€ä¸ªé™æ€æ–¹æ³•substring å‚æ•°åˆ—è¡¨æœ‰(String,int,int)
         subString((s,i,eI)->s.substring(i,eI));
         System.out.println("=================");
         subString(String::substring);
-        //×¢Òâ/½âÊÍ:
-        //Lambda±í´ïÊ½±»ÀàµÄÊµÀı·½·¨Ìæ´úµÄÊ±ºò
-        //µÚÒ»¸ö²ÎÊı×÷Îªµ÷ÓÃÕß
-        //ºóÃæµÄ²ÎÊıÈ«²¿°´Ë³Ğò´«µİ¸ø¸Ã·½·¨×÷Îª²ÎÊı¡£
+        //æ³¨æ„/è§£é‡Š:
+        //Lambdaè¡¨è¾¾å¼è¢«ç±»çš„å®ä¾‹æ–¹æ³•æ›¿ä»£çš„æ—¶å€™
+        //ç¬¬ä¸€ä¸ªå‚æ•°ä½œä¸ºè°ƒç”¨è€…
+        //åé¢çš„å‚æ•°å…¨éƒ¨æŒ‰é¡ºåºä¼ é€’ç»™è¯¥æ–¹æ³•ä½œä¸ºå‚æ•°ã€‚
         System.out.println("=================");
 
 
@@ -41,12 +41,12 @@ public class RunMethod {
     }
 
     private static void subString(MySubString e){
-        String str = e.meSubString("ÁãÒ»¶şÈıËÄÎåÁùÆß°Ë", 3, 7);
+        String str = e.meSubString("é›¶ä¸€äºŒä¸‰å››äº”å…­ä¸ƒå…«", 3, 7);
         System.out.println(str);
     }
 
     private static void method1(MethodInterface01 e) {
-        e.method("Õâ¾ÍŞÏŞÎÁË");
+        e.method("è¿™å°±å°´å°¬äº†");
     }
 
 
@@ -56,15 +56,15 @@ public class RunMethod {
     }
 
 
-    //¸ÃÀàÖĞµÄÁ½¸öÖØÔØ·½·¨
+    //è¯¥ç±»ä¸­çš„ä¸¤ä¸ªé‡è½½æ–¹æ³•
     public static void me(String str) {
-        System.out.println("meÖØÔØ ²ÎÊıÀàĞÍ: String :" + str);
-        System.out.println("RunMethod ÄÚ²¿Ä¬ÈÏ·½·¨¡£");
+        System.out.println("meé‡è½½ å‚æ•°ç±»å‹: String :" + str);
+        System.out.println("RunMethod å†…éƒ¨é»˜è®¤æ–¹æ³•ã€‚");
     }
 
     public static void me(int a) {
-        System.out.println("meÖØÔØ ²ÎÊıÀàĞÍ: int :" + a);
-        System.out.println("RunMethod ÄÚ²¿Ä¬ÈÏ·½·¨¡£");
+        System.out.println("meé‡è½½ å‚æ•°ç±»å‹: int :" + a);
+        System.out.println("RunMethod å†…éƒ¨é»˜è®¤æ–¹æ³•ã€‚");
     }
 
 }

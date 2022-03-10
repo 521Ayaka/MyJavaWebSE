@@ -1,70 +1,70 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collections¹¤¾ßÀà;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collectionså·¥å…·ç±»;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /*
-1:¹¹Ôì·½·¨Ë½ÓĞ»¯£¬²»ÄÜ´´½¨¶ÔÏó
+1:æ„é€ æ–¹æ³•ç§æœ‰åŒ–ï¼Œä¸èƒ½åˆ›å»ºå¯¹è±¡
 private Collections() {
 }
 
-2:³ÉÔ±±äÁ¿¾²Ì¬»¯; ³ÉÔ±·½·¨¾²Ì¬»¯;
+2:æˆå‘˜å˜é‡é™æ€åŒ–; æˆå‘˜æ–¹æ³•é™æ€åŒ–;
 
-ËùÒÔ£¬CollectionsÊÇÒ»¸ö¹¤¾ßÀà¡£
+æ‰€ä»¥ï¼ŒCollectionsæ˜¯ä¸€ä¸ªå·¥å…·ç±»ã€‚
 
-APIÃèÊö£º
-´ËÀàÍêÈ«ÓÉÔÚ collection ÉÏ½øĞĞ²Ù×÷»ò·µ»Ø collection µÄ¾²Ì¬·½·¨×é³É¡£
-Ëü°üº¬ÔÚ collection ÉÏ²Ù×÷µÄ¶àÌ¬Ëã·¨£¬¼´¡°°ü×°Æ÷¡±£¬
-°ü×°Æ÷·µ»ØÓÉÖ¸¶¨ collection Ö§³ÖµÄĞÂ collection£¬ÒÔ¼°ÉÙÊıÆäËûÄÚÈİ¡£
+APIæè¿°ï¼š
+æ­¤ç±»å®Œå…¨ç”±åœ¨ collection ä¸Šè¿›è¡Œæ“ä½œæˆ–è¿”å› collection çš„é™æ€æ–¹æ³•ç»„æˆã€‚
+å®ƒåŒ…å«åœ¨ collection ä¸Šæ“ä½œçš„å¤šæ€ç®—æ³•ï¼Œå³â€œåŒ…è£…å™¨â€ï¼Œ
+åŒ…è£…å™¨è¿”å›ç”±æŒ‡å®š collection æ”¯æŒçš„æ–° collectionï¼Œä»¥åŠå°‘æ•°å…¶ä»–å†…å®¹ã€‚
 
-ËµÃ÷:¡¾CollectionsÀàÊÇÕë¶Ô¼¯ºÏ²Ù×÷µÄ¹¤¾ßÀà¡¿
+è¯´æ˜:ã€Collectionsç±»æ˜¯é’ˆå¯¹é›†åˆæ“ä½œçš„å·¥å…·ç±»ã€‘
 
-³£ÓÃµÄ·½·¨
---public static <T extends Comparable<? sup T> > void sort(List<T> list): ½«Ö¸¶¨µÄÁĞ±í°´ÉıĞòÅÅÁĞ
+å¸¸ç”¨çš„æ–¹æ³•
+--public static <T extends Comparable<? sup T> > void sort(List<T> list): å°†æŒ‡å®šçš„åˆ—è¡¨æŒ‰å‡åºæ’åˆ—
 
---public static void reverse(List<?> list):            ·´×ªÖ¸¶¨µÄÁĞ±íÖĞµÄÔªËØµÄË³Ğò¡£
+--public static void reverse(List<?> list):            åè½¬æŒ‡å®šçš„åˆ—è¡¨ä¸­çš„å…ƒç´ çš„é¡ºåºã€‚
 
---public static void shuffle(List<?> list):            Ê¹ÓÃÄ¬ÈÏµÄËæ»úÔ´Ëæ»úÅÅÁĞÖ¸¶¨µÄÁĞ±í¡£
+--public static void shuffle(List<?> list):            ä½¿ç”¨é»˜è®¤çš„éšæœºæºéšæœºæ’åˆ—æŒ‡å®šçš„åˆ—è¡¨ã€‚
 */
 public class TestCollection {
-    //Æô¶¯
+    //å¯åŠ¨
     public static void main(String[] args) {
         new TestCollection().init();
     }
 
     public void init(){
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         System.out.println("===============================================================");
 
 
-        //ÏÈ´´½¨Ò»¸öList¼¯ºÏ
+        //å…ˆåˆ›å»ºä¸€ä¸ªListé›†åˆ
         List<String> list = new ArrayList<>();
-        list.add("3ÎÊ¾ıÄÜÓĞ¼¸¶à³î");
-        list.add("4½£Ê¥ËşÏÂ´ï²»Áï");
-        list.add("1·çÏôÏôÙâÒ×Ë®º®");
-        list.add("2×³Ê¿Ò»È¥Ùâ²»¸´»¹");
+        list.add("3é—®å›èƒ½æœ‰å‡ å¤šæ„");
+        list.add("4å‰‘åœ£å¡”ä¸‹è¾¾ä¸æºœ");
+        list.add("1é£è§è§å…®æ˜“æ°´å¯’");
+        list.add("2å£®å£«ä¸€å»å…®ä¸å¤è¿˜");
 
-        //Í¨¹ıCollections¹¤¾ßÀàĞŞ¸ÄÊı×é
+        //é€šè¿‡Collectionså·¥å…·ç±»ä¿®æ”¹æ•°ç»„
 
-        //public static <T extends Comparable<? sup T> > void sort(List<T> list): ½«Ö¸¶¨µÄÁĞ±í°´ÉıĞòÅÅÁĞ
+        //public static <T extends Comparable<? sup T> > void sort(List<T> list): å°†æŒ‡å®šçš„åˆ—è¡¨æŒ‰å‡åºæ’åˆ—
         Collections.sort(list);
         System.out.println(list);
-        //[1·çÏôÏôÙâÒ×Ë®º®, 2×³Ê¿Ò»È¥Ùâ²»¸´»¹, 3ÎÊ¾ıÄÜÓĞ¼¸¶à³î, 4½£Ê¥ËşÏÂ´ï²»Áï]
+        //[1é£è§è§å…®æ˜“æ°´å¯’, 2å£®å£«ä¸€å»å…®ä¸å¤è¿˜, 3é—®å›èƒ½æœ‰å‡ å¤šæ„, 4å‰‘åœ£å¡”ä¸‹è¾¾ä¸æºœ]
 
         System.out.println("===============================================================");
 
-        //public static void reverse(List<?> list):            ·´×ªÖ¸¶¨µÄÁĞ±íÖĞµÄÔªËØµÄË³Ğò¡£
+        //public static void reverse(List<?> list):            åè½¬æŒ‡å®šçš„åˆ—è¡¨ä¸­çš„å…ƒç´ çš„é¡ºåºã€‚
         Collections.reverse(list);
         System.out.println(list);
-        //[4½£Ê¥ËşÏÂ´ï²»Áï, 3ÎÊ¾ıÄÜÓĞ¼¸¶à³î, 2×³Ê¿Ò»È¥Ùâ²»¸´»¹, 1·çÏôÏôÙâÒ×Ë®º®]
+        //[4å‰‘åœ£å¡”ä¸‹è¾¾ä¸æºœ, 3é—®å›èƒ½æœ‰å‡ å¤šæ„, 2å£®å£«ä¸€å»å…®ä¸å¤è¿˜, 1é£è§è§å…®æ˜“æ°´å¯’]
 
         System.out.println("===============================================================");
 
-        //public static void shuffle(List<?> list):            Ê¹ÓÃÄ¬ÈÏµÄËæ»úÔ´Ëæ»úÅÅÁĞÖ¸¶¨µÄÁĞ±í¡£
+        //public static void shuffle(List<?> list):            ä½¿ç”¨é»˜è®¤çš„éšæœºæºéšæœºæ’åˆ—æŒ‡å®šçš„åˆ—è¡¨ã€‚
         Collections.shuffle(list);
         System.out.println(list);
-        //[2×³Ê¿Ò»È¥Ùâ²»¸´»¹, 1·çÏôÏôÙâÒ×Ë®º®, 3ÎÊ¾ıÄÜÓĞ¼¸¶à³î, 4½£Ê¥ËşÏÂ´ï²»Áï]
+        //[2å£®å£«ä¸€å»å…®ä¸å¤è¿˜, 1é£è§è§å…®æ˜“æ°´å¯’, 3é—®å›èƒ½æœ‰å‡ å¤šæ„, 4å‰‘åœ£å¡”ä¸‹è¾¾ä¸æºœ]
 
         System.out.println("===============================================================");
 

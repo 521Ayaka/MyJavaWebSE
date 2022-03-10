@@ -1,28 +1,28 @@
-package »ù´¡ÖªÊ¶.Òì³£.Throwable.Exception.RuntimeException;
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable.Exception.RuntimeException;
 /*
 ArrayIndexOutOfBoundsException --> IndexOutOfBoundsException --> RuntimeException --> Exception --> Throwable
 
-ArrayIndexOutOfBoundsExceptionÊÇÒì³£
-ÊôÓÚExceptionµÄ RuntimeExceptionÒì³£
-ÆäÖĞ:
-Exception³ÆÎªÒì³£Àà£¬ËüÊÇÖ¸³ÌĞò±¾Éí¿ÉÒÔ´¦ÀíµÄÎÊÌâ
-RuntimeException: ÔÚ±àÒëÆÚ¼äÊÇ²»»á¼ì²éµÄ£¬±àÒë³öÏÖÎÊÌâÊ±£¬ĞèÒªÎÒÃÇ·µ»Ø³ÌĞòĞŞ¸Ä´úÂë
+ArrayIndexOutOfBoundsExceptionæ˜¯å¼‚å¸¸
+å±äºExceptionçš„ RuntimeExceptionå¼‚å¸¸
+å…¶ä¸­:
+Exceptionç§°ä¸ºå¼‚å¸¸ç±»ï¼Œå®ƒæ˜¯æŒ‡ç¨‹åºæœ¬èº«å¯ä»¥å¤„ç†çš„é—®é¢˜
+RuntimeException: åœ¨ç¼–è¯‘æœŸé—´æ˜¯ä¸ä¼šæ£€æŸ¥çš„ï¼Œç¼–è¯‘å‡ºç°é—®é¢˜æ—¶ï¼Œéœ€è¦æˆ‘ä»¬è¿”å›ç¨‹åºä¿®æ”¹ä»£ç 
 
 ======================================================================
 
-·¢ÏÖÒì³£ºó£¬classÎÄ¼ş±»ĞŞ¸Ä
-Ö¸³ö´íÎóµÄ Ô­Òò ºÍ Î»ÖÃ µÈ¡£
-³ö´íºó±ßµÄ³ÌĞò½«²»ÔÙÔËĞĞ
+å‘ç°å¼‚å¸¸åï¼Œclassæ–‡ä»¶è¢«ä¿®æ”¹
+æŒ‡å‡ºé”™è¯¯çš„ åŸå›  å’Œ ä½ç½® ç­‰ã€‚
+å‡ºé”™åè¾¹çš„ç¨‹åºå°†ä¸å†è¿è¡Œ
 
 */
-public class Òì³£ {
+public class å¼‚å¸¸ {
 
     public static void main(String[] args) {
         System.out.println("==========");
-        System.out.println("³ÌĞò¿ªÊ¼");
+        System.out.println("ç¨‹åºå¼€å§‹");
         method();
         System.out.println("==========");
-        System.out.println("³ÌĞò½áÊø");
+        System.out.println("ç¨‹åºç»“æŸ");
     }
 
     public static void method(){
@@ -34,16 +34,16 @@ public class Òì³£ {
     }
 
     /*
-    ÔËĞĞ½á¹û:
+    è¿è¡Œç»“æœ:
 
     ==========
-    ³ÌĞò¿ªÊ¼
+    ç¨‹åºå¼€å§‹
     3
     Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
-    	at MyJava.»ù´¡ÖªÊ¶.Òì³£.Throwable.Exception.RuntimeException.Òì³£.method(Òì³£.java:17)
-    	at MyJava.»ù´¡ÖªÊ¶.Òì³£.Throwable.Exception.RuntimeException.Òì³£.main(Òì³£.java:8)
+    	at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable.Exception.RuntimeException.å¼‚å¸¸.method(å¼‚å¸¸.java:17)
+    	at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.Throwable.Exception.RuntimeException.å¼‚å¸¸.main(å¼‚å¸¸.java:8)
 
-    ½ø³ÌÒÑ½áÊø£¬ÍË³ö´úÂëÎª 1
+    è¿›ç¨‹å·²ç»“æŸï¼Œé€€å‡ºä»£ç ä¸º 1
 
     */
 

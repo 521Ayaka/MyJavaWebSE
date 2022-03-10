@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±»;
 
 import java.util.Scanner;
 public class Lei {

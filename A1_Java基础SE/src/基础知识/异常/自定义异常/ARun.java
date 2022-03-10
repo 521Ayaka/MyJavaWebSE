@@ -1,34 +1,34 @@
-package ����֪ʶ.�쳣.�Զ����쳣;
+package 基础知识.异常.自定义异常;
 import java.util.Scanner;
 /*
-[�����쳣]:
-��ʽ:        ���η� class �Զ����쳣�� extends Exception { //... }
-�������췽��:  public �Զ����쳣��(){ }
-             public �Զ����쳣��(String message){
+[创建异常]:
+格式:        修饰符 class 自定义异常名 extends Exception { //... }
+两个构造方法:  public 自定义异常名(){ }
+             public 自定义异常名(String message){
                     super(message);
              }
 
-[ʹ��]:
-��ʽ: throw new �Զ����쳣��(  "�쳣����ʾ(�ַ�����Ҳ��������)"  );
-ע��: ����ͷ()����Ҫʹ�� throws �Զ����쳣��{ //... }
-     �ڵ���������쳣�ķ�����ʱ�� ���Զ��������ʹ�� try...catch...����
+[使用]:
+格式: throw new 自定义异常名(  "异常的提示(字符串，也可以留空)"  );
+注意: 方法头()后面要使用 throws 自定义异常名{ //... }
+     在调用这个带异常的方法的时候 可以对这个方法使用 try...catch...处理
 
 ========================================================================================================================
 
-[ע��]:
-throws �� throw ������:
+[注意]:
+throws 和 throw 的区别:
 
 [1]
-throws ���ڷ����������棬����ʱ�쳣������
-throw  ���ڷ����ڲ�������ʱ�쳣��������
+throws 用在方法声明后面，跟的时异常类名。
+throw  用在方法内部，跟的时异常对象名。
 
 [2]
-throws ��ʾ�׳��쳣���и÷����ĵ�����������
-throw  ��ʾ�׳��쳣���з������ڵ���䴦��
+throws 表示抛出异常，有该方法的调用者来处理
+throw  表示抛出异常，有方法体内的语句处理
 
 [3]
-throws ��ʾ�����쳣��һ�ֿ����ԣ�����һ���ᷢ����Щ�쳣
-throw  ִ��throwһ��������ĳ���쳣
+throws 表示出现异常的一种可能性，并不一定会发生这些异常
+throw  执行throw一定出现了某种异常
 
 */
 
@@ -37,7 +37,7 @@ public class ARun {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("�����������");
+        System.out.println("请输入分数：");
         int score = sc.nextInt();
 
         Teacher teacher = new Teacher();

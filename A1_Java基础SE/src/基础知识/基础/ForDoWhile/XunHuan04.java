@@ -1,32 +1,32 @@
-package »ù´¡ÖªÊ¶.»ù´¡.ForDoWhile;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.ForDoWhile;
 
 /*
 =========================
-do-whileÑ­»·½á¹¹±ê×¼¸ñÊ½£º
+do-whileå¾ªçŽ¯ç»“æž„æ ‡å‡†æ ¼å¼ï¼š
 
 do{
-    Ñ­»·Ìå£»
-} while£¨Ìõ¼þÅÐ¶Ï£©;
+    å¾ªçŽ¯ä½“ï¼›
+} whileï¼ˆæ¡ä»¶åˆ¤æ–­ï¼‰;
 =========================
-À©ÕÅ¸ñÊ½£º
+æ‰©å¼ æ ¼å¼ï¼š
 
-³õÊ¼»¯Óï¾ä;
+åˆå§‹åŒ–è¯­å¥;
 do {
-    Ñ­»·Óï¾ä;
-    ²½½øÓï¾ä;
-} while(Ìõ¼þÓï¾ä)£»
+    å¾ªçŽ¯è¯­å¥;
+    æ­¥è¿›è¯­å¥;
+} while(æ¡ä»¶è¯­å¥)ï¼›
 =========================
 */
 public class XunHuan04 {
     public static void main(String[] args){
         for (int i = 1; i<=30; i++ ){
-            System.out.println("Ô­ÁÂÄãÀ²£¡ÆðÀ´°É! µØÉÏ¹ÖÁ¹µÄ£¡" + i);
+            System.out.println("åŽŸè°…ä½ å•¦ï¼èµ·æ¥å§! åœ°ä¸Šæ€ªå‡‰çš„ï¼" + i);
         }
         System.out.println("==================================================================");
-    // Ê¹ÓÃdo-whlieÓï¾ä
+    // ä½¿ç”¨do-whlieè¯­å¥
         int x = 1;
         do {
-            System.out.println("Ô­ÁÂÄãÀ²£¡ÆðÀ´°É! µØÉÏ¹ÖÁ¹µÄ£¡" + x);
+            System.out.println("åŽŸè°…ä½ å•¦ï¼èµ·æ¥å§! åœ°ä¸Šæ€ªå‡‰çš„ï¼" + x);
             x++;
         } while ( x <= 30 );
     }

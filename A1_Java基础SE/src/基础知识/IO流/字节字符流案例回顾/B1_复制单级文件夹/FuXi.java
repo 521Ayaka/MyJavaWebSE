@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë.B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾.B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹;
 
 import java.io.*;
 
@@ -6,43 +6,43 @@ public class FuXi {
 
     public static void main(String[] args) {
 
-        //Æô¶¯
+        //å¯åŠ¨
         new FuXi().init();
 
     }
 
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
     public void init() {
 
-        //´´½¨Ô´ÎÄ¼şFile³éÏóµØÖ·
-        File fileYuan = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ\\Ô´ÎÄ¼ş¼Ğ");
-        //»ñÈ¡Ô´ÎÄ¼şµØÖ·Ãû
+        //åˆ›å»ºæºæ–‡ä»¶FileæŠ½è±¡åœ°å€
+        File fileYuan = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹\\æºæ–‡ä»¶å¤¹");
+        //è·å–æºæ–‡ä»¶åœ°å€å
         String yuanName = fileYuan.getName();
 
-        //´´½¨Ä¿µÄFile³éÏóµØÖ·
-        File fileNew = new File("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½Ú×Ö·ûÁ÷°¸Àı»Ø¹Ë\\B1_¸´ÖÆµ¥¼¶ÎÄ¼ş¼Ğ\\newFolder");
-        //ÅĞ¶Ï¸ÃÄ¿Â¼ÊÇ·ñ´æÔÚ, Èç¹û²»´æÔÚ, ´´½¨Ä¿Â¼
+        //åˆ›å»ºç›®çš„FileæŠ½è±¡åœ°å€
+        File fileNew = new File("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚å­—ç¬¦æµæ¡ˆä¾‹å›é¡¾\\B1_å¤åˆ¶å•çº§æ–‡ä»¶å¤¹\\newFolder");
+        //åˆ¤æ–­è¯¥ç›®å½•æ˜¯å¦å­˜åœ¨, å¦‚æœä¸å­˜åœ¨, åˆ›å»ºç›®å½•
         if (!fileNew.exists()) {
-            //´´½¨Ä¿µÄµØÖ·
+            //åˆ›å»ºç›®çš„åœ°å€
             fileNew.mkdirs();
         }
 
-        //»ñÈ¡Ô´ÎÄ¼şÄÚµÄÎÄ¼şµÄFile³éÏóÂ·¾¶
+        //è·å–æºæ–‡ä»¶å†…çš„æ–‡ä»¶çš„FileæŠ½è±¡è·¯å¾„
         File[] fileArray = fileYuan.listFiles();
-        //¸³Öµ¸øĞÂµÄÎÄ¼şFile³éÏóÂ·¾¶Ãû
+        //èµ‹å€¼ç»™æ–°çš„æ–‡ä»¶FileæŠ½è±¡è·¯å¾„å
         for (File files : fileArray) {
-            //×·¼Ó´´½¨
+            //è¿½åŠ åˆ›å»º
             File file = new File(fileNew, files.getName());
 
-            //¿ªÊ¼×¼±¸¸´ÖÆÎÄ¼ş
-            BufferedInputStream bis = null;  //Ô´: files
-            BufferedOutputStream bos = null; //Ä¿: file
+            //å¼€å§‹å‡†å¤‡å¤åˆ¶æ–‡ä»¶
+            BufferedInputStream bis = null;  //æº: files
+            BufferedOutputStream bos = null; //ç›®: file
 
             try {
                 bis = new BufferedInputStream(new FileInputStream(files));
                 bos = new BufferedOutputStream(new FileOutputStream(file));
 
-                //¿ªÊ¼¸´ÖÆ
+                //å¼€å§‹å¤åˆ¶
                 byte[] array = new byte[1024 * 4];
                 int len;
                 while ((len = bis.read(array)) != -1) {

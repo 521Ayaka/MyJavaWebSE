@@ -1,22 +1,22 @@
-package »ù´¡ÖªÊ¶.·´Éä.A5_·´Éä»ñÈ¡³ÉÔ±±äÁ¿.Á·Ï°¼ÓÊ¹ÓÃ;
+package åŸºç¡€çŸ¥è¯†.åå°„.A5_åå°„è·å–æˆå‘˜å˜é‡.ç»ƒä¹ åŠ ä½¿ç”¨;
 /*
-Í¨¹ı·´ÉäÊµÏÖÏÂÃæ¹ı³Ì
+é€šè¿‡åå°„å®ç°ä¸‹é¢è¿‡ç¨‹
 
     Student stu = new Student();
-    stu.name = "ŞÏŞÎ½´"; //²»¿ÉÈ¡µÄ
-    stu.age = 17;       //²»¿ÉÈ¡µÄ
+    stu.name = "å°´å°¬é…±"; //ä¸å¯å–çš„
+    stu.age = 17;       //ä¸å¯å–çš„
     stu.id = "202002";
 
     System.out.println(stu);
 
 
-½â³ı·ÃÎÊÅÅ²é:
-        ±©Á¦·ÃÎÊ:
+è§£é™¤è®¿é—®æ’æŸ¥:
+        æš´åŠ›è®¿é—®:
         nameField.setAccessible(true);
         ageField.setAccessible(true);
 
         idField.setAccessible(true);
-        //¼´Ê¹idÊÇ¹«¹²µÄ Ò²ÍÆÑ¡µ÷ÓÃÒÔÏÂÅÅ³ı·ÃÎÊÈ¨ÏŞ
+        //å³ä½¿idæ˜¯å…¬å…±çš„ ä¹Ÿæ¨é€‰è°ƒç”¨ä»¥ä¸‹æ’é™¤è®¿é—®æƒé™
 
 */
 
@@ -29,35 +29,35 @@ public class DameGetField {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
 
         //Student stu = new Student();
-        Class<?> c = Class.forName("»ù´¡ÖªÊ¶.·´Éä.A3_»ñÈ¡classÀàµÄ¶ÔÏó.Student");
+        Class<?> c = Class.forName("åŸºç¡€çŸ¥è¯†.åå°„.A3_è·å–classç±»çš„å¯¹è±¡.Student");
         Constructor<?> con = c.getConstructor();
         Object obj = con.newInstance();
 
-        //ÉèÖÃ³ÉÔ±±äÁ¿
-        //stu.name = "ŞÏŞÎ½´"; //²»¿ÉÈ¡µÄ
-        //stu.age = 17;       //²»¿ÉÈ¡µÄ
+        //è®¾ç½®æˆå‘˜å˜é‡
+        //stu.name = "å°´å°¬é…±"; //ä¸å¯å–çš„
+        //stu.age = 17;       //ä¸å¯å–çš„
         //stu.id = "202002";
 
         Field nameField = c.getDeclaredField("name");
         Field ageField = c.getDeclaredField("age");
         Field idField = c.getField("id");
 
-        //±©Á¦·ÃÎÊ
+        //æš´åŠ›è®¿é—®
         nameField.setAccessible(true);
         ageField.setAccessible(true);
-        idField.setAccessible(true);//¼´Ê¹idÊÇ¹«¹²µÄ Ò²ÍÆÑ¡µ÷ÓÃÒÔÏÂÅÅ³ı·ÃÎÊÈ¨ÏŞ
+        idField.setAccessible(true);//å³ä½¿idæ˜¯å…¬å…±çš„ ä¹Ÿæ¨é€‰è°ƒç”¨ä»¥ä¸‹æ’é™¤è®¿é—®æƒé™
 
-        nameField.set(obj,"ŞÏŞÎ½´");
-        //Èç¹ûÃ»ÓĞ [nameField.setAccessible(true);] »á³öÏÖÒì³£: IllegalAccessException
+        nameField.set(obj,"å°´å°¬é…±");
+        //å¦‚æœæ²¡æœ‰ [nameField.setAccessible(true);] ä¼šå‡ºç°å¼‚å¸¸: IllegalAccessException
         ageField.set(obj,9);
-        //Èç¹ûÃ»ÓĞ [ageField.setAccessible(true);]  »á³öÏÖÒì³£: IllegalAccessException
+        //å¦‚æœæ²¡æœ‰ [ageField.setAccessible(true);]  ä¼šå‡ºç°å¼‚å¸¸: IllegalAccessException
         idField.set(obj,"202002");
 
 
         //System.out.println(stu);
         System.out.println(obj);
         /*
-        Student{name='ŞÏŞÎ½´', age=9, id='202002'}
+        Student{name='å°´å°¬é…±', age=9, id='202002'}
         */
 
     }

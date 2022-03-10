@@ -1,19 +1,19 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·û´®_±àÂë½âÂë;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦ä¸²_ç¼–ç è§£ç ;
 /*
-±àÂë: [StringÀà ÖĞµÄ ¾²Ì¬·½·¨]
+ç¼–ç : [Stringç±» ä¸­çš„ é™æ€æ–¹æ³•]
 
-    byte[] getBytes(): Ê¹ÓÃÆ½Ì¨Ä¬ÈÏ×Ö·û¼¯½«¸ÃString±àÂëÎªÒ»ÏµÁĞ×Ö½Ú£¬½«½á¹û´æ´¢µ½ĞÂµÄ×Ö½Ú×éÖĞ
-    byte[] getBytes(String charsetName): Í¨¹ıÖ¸¶¨µÄ×Ö·û¼¯±àÂë...
+    byte[] getBytes(): ä½¿ç”¨å¹³å°é»˜è®¤å­—ç¬¦é›†å°†è¯¥Stringç¼–ç ä¸ºä¸€ç³»åˆ—å­—èŠ‚ï¼Œå°†ç»“æœå­˜å‚¨åˆ°æ–°çš„å­—èŠ‚ç»„ä¸­
+    byte[] getBytes(String charsetName): é€šè¿‡æŒ‡å®šçš„å­—ç¬¦é›†ç¼–ç ...
 
-½âÂë: [StringÀà ÖĞµÄ ¹¹Ôì·½·¨]
+è§£ç : [Stringç±» ä¸­çš„ æ„é€ æ–¹æ³•]
 
-    String(byte[] bytes): Í¨¹ıÊ¹ÓÃÆ½Ì¨µÄÄ¬ÈÏ×Ö·û¼¯½âÂëÖ¸¶¨µÄ×Ö½ÚÊı×éÀ´¹¹ÔìĞÂµÄString
-    String(byte[] bytes,String charsetName): Í¨¹ıÖ¸¶¨µÄ×Ö·û¼¯½âÂë...
+    String(byte[] bytes): é€šè¿‡ä½¿ç”¨å¹³å°çš„é»˜è®¤å­—ç¬¦é›†è§£ç æŒ‡å®šçš„å­—èŠ‚æ•°ç»„æ¥æ„é€ æ–°çš„String
+    String(byte[] bytes,String charsetName): é€šè¿‡æŒ‡å®šçš„å­—ç¬¦é›†è§£ç ...
 
-×¢Òâ:
-    1.ÕâÀïµ±È»ÓÃµÄIDEAÆ½Ì¨À´±àĞ´´úÂëÁË£¡IDEAYYDS
-    2.²»¹ÜÊÇ±àÂë»¹ÊÇ½âÂë£¬¹æ¶¨ ±àÂë½âÂë¸ñÊ½ µÄ²Ù×÷£¬¶¼Òª½øĞĞÒì³£´¦Àí
-      Òì³£Àà: UnsupportedEncodingException
+æ³¨æ„:
+    1.è¿™é‡Œå½“ç„¶ç”¨çš„IDEAå¹³å°æ¥ç¼–å†™ä»£ç äº†ï¼IDEAYYDS
+    2.ä¸ç®¡æ˜¯ç¼–ç è¿˜æ˜¯è§£ç ï¼Œè§„å®š ç¼–ç è§£ç æ ¼å¼ çš„æ“ä½œï¼Œéƒ½è¦è¿›è¡Œå¼‚å¸¸å¤„ç†
+      å¼‚å¸¸ç±»: UnsupportedEncodingException
 
 */
 
@@ -25,21 +25,21 @@ public class CodeAndDecode {
 
     public static void main(String[] args) {
 
-        /**±àÂë  String(byte[] bytes): Í¨¹ıÊ¹ÓÃÆ½Ì¨µÄÄ¬ÈÏ×Ö·û¼¯½âÂëÖ¸¶¨µÄ×Ö½ÚÊı×éÀ´¹¹ÔìĞÂµÄString*/
-        String str1 = "ÖĞ¹úºº×Ö";
+        /**ç¼–ç   String(byte[] bytes): é€šè¿‡ä½¿ç”¨å¹³å°çš„é»˜è®¤å­—ç¬¦é›†è§£ç æŒ‡å®šçš„å­—èŠ‚æ•°ç»„æ¥æ„é€ æ–°çš„String*/
+        String str1 = "ä¸­å›½æ±‰å­—";
         byte[] bytes1 = str1.getBytes();
         System.out.println(Arrays.toString(bytes1));
-        //ÎÄ¼şÊÇGBK,IDEA¾ÍÓÃµ±Ç°ÎÄ¼şµÄ±àÂë¸ñÊ½:
+        //æ–‡ä»¶æ˜¯GBK,IDEAå°±ç”¨å½“å‰æ–‡ä»¶çš„ç¼–ç æ ¼å¼:
         //[-42, -48, -71, -6, -70, -70, -41, -42]
 
         System.out.println("===============================");
 
-        /**±àÂë  String(byte[] bytes,String charsetName): Í¨¹ıÖ¸¶¨µÄ×Ö·û¼¯½âÂë...*/
-        String str2 = "ÖĞ¹úºº×Ö";
-        try {//ĞèÒªÒì³£´¦Àí£¬ÕâÀïÎÒÓÃµÄÊÇtry...catch...Òì³£»·ÈÆ
-            byte[] utf8s = str2.getBytes("UTF8");//Ö¸¶¨UTF8½øĞĞ±àÂë
+        /**ç¼–ç   String(byte[] bytes,String charsetName): é€šè¿‡æŒ‡å®šçš„å­—ç¬¦é›†è§£ç ...*/
+        String str2 = "ä¸­å›½æ±‰å­—";
+        try {//éœ€è¦å¼‚å¸¸å¤„ç†ï¼Œè¿™é‡Œæˆ‘ç”¨çš„æ˜¯try...catch...å¼‚å¸¸ç¯ç»•
+            byte[] utf8s = str2.getBytes("UTF8");//æŒ‡å®šUTF8è¿›è¡Œç¼–ç 
             System.out.println(Arrays.toString(utf8s));
-            //UTF8ºº×ÖÊÇÈı¸ö×Ö½Ú:
+            //UTF8æ±‰å­—æ˜¯ä¸‰ä¸ªå­—èŠ‚:
             //[-28, -72, -83, -27, -101, -67, -26, -79, -119, -27, -83, -105]
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -48,19 +48,19 @@ public class CodeAndDecode {
         System.out.println("===============================");
         System.out.println("===============================");
 
-        /**½âÂë  String(byte[] bytes): Í¨¹ıÊ¹ÓÃÆ½Ì¨µÄÄ¬ÈÏ×Ö·û¼¯½âÂëÖ¸¶¨µÄ×Ö½ÚÊı×éÀ´¹¹ÔìĞÂµÄString*/
+        /**è§£ç   String(byte[] bytes): é€šè¿‡ä½¿ç”¨å¹³å°çš„é»˜è®¤å­—ç¬¦é›†è§£ç æŒ‡å®šçš„å­—èŠ‚æ•°ç»„æ¥æ„é€ æ–°çš„String*/
         byte [] bytes2 = {-42, -48, -71, -6, -70, -70, -41, -42};
         System.out.println(new String(bytes2));
-        //Ä¬ÈÏIDEA½âÂë£¬µ±Ç°ÎÄ¼şÊÇGBK,ÄÇÃ´IDEAÒ²ÓÃGBK
-        //Êä³ö½á¹û£ºÖĞ¹úºº×Ö
+        //é»˜è®¤IDEAè§£ç ï¼Œå½“å‰æ–‡ä»¶æ˜¯GBK,é‚£ä¹ˆIDEAä¹Ÿç”¨GBK
+        //è¾“å‡ºç»“æœï¼šä¸­å›½æ±‰å­—
 
         System.out.println("===============================");
 
-        /**½âÂë  String(byte[] bytes,String charsetName): Í¨¹ıÖ¸¶¨µÄ×Ö·û¼¯½âÂë...*/
+        /**è§£ç   String(byte[] bytes,String charsetName): é€šè¿‡æŒ‡å®šçš„å­—ç¬¦é›†è§£ç ...*/
         byte [] bytes3 = {-28, -72, -83, -27, -101, -67, -26, -79, -119, -27, -83, -105};
-        try {//ÒÀÈ»ĞèÒªÒì³£´¦Àí£¬ÕâÀïÎÒÓÃµÄÊÇtry...catch...Òì³£»·ÈÆ
+        try {//ä¾ç„¶éœ€è¦å¼‚å¸¸å¤„ç†ï¼Œè¿™é‡Œæˆ‘ç”¨çš„æ˜¯try...catch...å¼‚å¸¸ç¯ç»•
             System.out.println(new String(bytes3,"UTF8"));
-            //Êä³ö½á¹ûÊÇ£ºÖĞ¹úºº×Ö
+            //è¾“å‡ºç»“æœæ˜¯ï¼šä¸­å›½æ±‰å­—
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -68,11 +68,11 @@ public class CodeAndDecode {
         System.out.println("===============================");
         System.out.println("===============================");
 
-        /* GBK½âÂë³öµÄbyteÊı×é,Ê¹ÓÃUTF8½øĞĞ½âÂë */
-        try {//±ğÍüÁËÒì³£´¦Àí
+        /* GBKè§£ç å‡ºçš„byteæ•°ç»„,ä½¿ç”¨UTF8è¿›è¡Œè§£ç  */
+        try {//åˆ«å¿˜äº†å¼‚å¸¸å¤„ç†
             System.out.println(new String(bytes2,"UTF8"));
-            //ÔËĞĞ½á¹û: ?§Û?????
-            //±àÂë¿Ï¶¨»á³öÏÖ´íÎó£¡
+            //è¿è¡Œç»“æœ: ?Ğ¹?????
+            //ç¼–ç è‚¯å®šä¼šå‡ºç°é”™è¯¯ï¼
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

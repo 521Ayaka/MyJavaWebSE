@@ -1,59 +1,59 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö·ûÁ÷.×Ö·ûÁ÷_±àÂë½âÂë.×Ö·ûÁ÷ÀàMethod;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—ç¬¦æµ.å­—ç¬¦æµ_ç¼–ç è§£ç .å­—ç¬¦æµç±»Method;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /*
-OutputStreamWriter ÖĞĞ´Êı¾İµÄ·½·¨
-    void write(int c)                       Ğ´Ò»¸ö×Ö·û
-    void write(char[] cbuf)                 Ğ´ÈëÒ»¸ö×Ö·ûÊı×é
-    void write(char[] cbuf,int off,int len) Ğ´Èë×Ö·ûÊı×éµÄÒ»²¿·Ö
-    void write(String str)                  Ğ´Ò»¸ö×Ö·û´®
-    void write(String str,int off, int len) Ğ´Ò»¸ö×Ö·û´®µÄÒ»²¿·Ö
+OutputStreamWriter ä¸­å†™æ•°æ®çš„æ–¹æ³•
+    void write(int c)                       å†™ä¸€ä¸ªå­—ç¬¦
+    void write(char[] cbuf)                 å†™å…¥ä¸€ä¸ªå­—ç¬¦æ•°ç»„
+    void write(char[] cbuf,int off,int len) å†™å…¥å­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†
+    void write(String str)                  å†™ä¸€ä¸ªå­—ç¬¦ä¸²
+    void write(String str,int off, int len) å†™ä¸€ä¸ªå­—ç¬¦ä¸²çš„ä¸€éƒ¨åˆ†
 
-[×¢Òâ]:
-×Ö·ûÁ÷Ïà¶ÔÓÚ×Ö½ÚÁ÷ ÊÇÓĞ»º³åµÄ£¡£¡£¡
-Ê¹ÓÃË¢ĞÂÁ÷: flush();½øĞĞË¢ĞÂ¡£
-closeÖ´ĞĞ,ÏÈË¢ĞÂÒ»´Î,ÔÙ¹Ø±ÕÁ÷,¹Ø±Õºó²»ÄÜÔÙĞ´ÈçÊı¾İ
+[æ³¨æ„]:
+å­—ç¬¦æµç›¸å¯¹äºå­—èŠ‚æµ æ˜¯æœ‰ç¼“å†²çš„ï¼ï¼ï¼
+ä½¿ç”¨åˆ·æ–°æµ: flush();è¿›è¡Œåˆ·æ–°ã€‚
+closeæ‰§è¡Œ,å…ˆåˆ·æ–°ä¸€æ¬¡,å†å…³é—­æµ,å…³é—­åä¸èƒ½å†å†™å¦‚æ•°æ®
 
 */
 public class TestOutputStreamWriter_Method {
 
     public static void main(String[] args) throws IOException {
 
-        OutputStreamWriter osw1 = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt"));
-        //void write(int c)                       Ğ´Ò»¸ö×Ö·û
+        OutputStreamWriter osw1 = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt"));
+        //void write(int c)                       å†™ä¸€ä¸ªå­—ç¬¦
         osw1.write(97);
-        osw1.flush();//Ë¢ĞÂÁ÷
+        osw1.flush();//åˆ·æ–°æµ
         osw1.write("\r\n");
-        //Õâ¸öÃ»ÓĞflush()Ë¢ĞÂÒ²³öÀ´ÁË£¬ÒòÎªclose() ÏÈË¢ĞÂ,ºó¹Ø±Õ
-        osw1.close();//ÊÍ·Å×ÊÔ´
+        //è¿™ä¸ªæ²¡æœ‰flush()åˆ·æ–°ä¹Ÿå‡ºæ¥äº†ï¼Œå› ä¸ºclose() å…ˆåˆ·æ–°,åå…³é—­
+        osw1.close();//é‡Šæ”¾èµ„æº
         //osw1.write(98);
         /**
-         * ÆäÊµ,closeÊÇ¹Ø±ÕÁ÷£¬×¢Òâ:closeÖ´ĞĞ,ÏÈË¢ĞÂÒ»´Î,ÔÙ¹Ø±ÕÁ÷,¹Ø±Õºó²»ÄÜÔÙĞ´ÈçÊı¾İ
+         * å…¶å®,closeæ˜¯å…³é—­æµï¼Œæ³¨æ„:closeæ‰§è¡Œ,å…ˆåˆ·æ–°ä¸€æ¬¡,å†å…³é—­æµ,å…³é—­åä¸èƒ½å†å†™å¦‚æ•°æ®
          * Exception in thread "main" java.io.IOException: Stream closed
          * */
 
-        OutputStreamWriter osw2 = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt",true));
-        //void write(char[] cbuf)                 Ğ´ÈëÒ»¸ö×Ö·ûÊı×é
-        char[] array = {'a','b','c','ÖĞ','¹ú','ºº','×Ö','\n'};
+        OutputStreamWriter osw2 = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt",true));
+        //void write(char[] cbuf)                 å†™å…¥ä¸€ä¸ªå­—ç¬¦æ•°ç»„
+        char[] array = {'a','b','c','ä¸­','å›½','æ±‰','å­—','\n'};
         osw2.write(array);
-        osw2.close();//Ë¢ĞÂ+¹Ø±ÕÁ÷
+        osw2.close();//åˆ·æ–°+å…³é—­æµ
 
-        OutputStreamWriter osw3 = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt",true));
-        //void write(char[] cbuf,int off,int len) Ğ´Èë×Ö·ûÊı×éµÄÒ»²¿·Ö
-        osw3.write(array,3,array.length-3);//¹æ¶¨Îª 'ÖĞ','¹ú','ºº','×Ö','\n'
+        OutputStreamWriter osw3 = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt",true));
+        //void write(char[] cbuf,int off,int len) å†™å…¥å­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†
+        osw3.write(array,3,array.length-3);//è§„å®šä¸º 'ä¸­','å›½','æ±‰','å­—','\n'
         osw3.close();
 
-        OutputStreamWriter osw4 = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt",true));
-        //void write(String str)                  Ğ´Ò»¸ö×Ö·û´®
-        String str = "ÎÊ¾ıÄÜÓĞ¼¸¶à³î,Ç¡ËÆÒ»½­´ºË®Ïò¶«Á÷¡£\r\n";
+        OutputStreamWriter osw4 = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt",true));
+        //void write(String str)                  å†™ä¸€ä¸ªå­—ç¬¦ä¸²
+        String str = "é—®å›èƒ½æœ‰å‡ å¤šæ„,æ°ä¼¼ä¸€æ±Ÿæ˜¥æ°´å‘ä¸œæµã€‚\r\n";
         osw4.write(str);
         osw4.close();
 
-        OutputStreamWriter osw5 = new OutputStreamWriter(new FileOutputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö·ûÁ÷\\×Ö·ûÁ÷_±àÂë½âÂë\\×Ö·ûÁ÷ÀàMethod\\ÎÄ¼ş1.txt",true));
-        //void write(String str,int off, int len) Ğ´Ò»¸ö×Ö·û´®µÄÒ»²¿·Ö
+        OutputStreamWriter osw5 = new OutputStreamWriter(new FileOutputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—ç¬¦æµ\\å­—ç¬¦æµ_ç¼–ç è§£ç \\å­—ç¬¦æµç±»Method\\æ–‡ä»¶1.txt",true));
+        //void write(String str,int off, int len) å†™ä¸€ä¸ªå­—ç¬¦ä¸²çš„ä¸€éƒ¨åˆ†
         osw5.write(str,8,str.length()-8);
         osw5.write("========================================");
         osw5.close();

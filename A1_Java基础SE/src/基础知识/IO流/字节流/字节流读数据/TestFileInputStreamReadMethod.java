@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.IOÁ÷.×Ö½ÚÁ÷.×Ö½ÚÁ÷¶ÁÊı¾İ;
+package åŸºç¡€çŸ¥è¯†.IOæµ.å­—èŠ‚æµ.å­—èŠ‚æµè¯»æ•°æ®;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,45 +7,45 @@ public class TestFileInputStreamReadMethod {
 
     public static void main(String[] args) {
 
-        //´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
+        //åˆ›å»ºå­—èŠ‚è¾“å…¥æµå¯¹è±¡
         FileInputStream input = null;
         try{
 
-            //½øĞĞ²Ù×÷
+            //è¿›è¡Œæ“ä½œ
 
-            input = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş1.txt");
+            input = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶1.txt");
             //input.read();
             /*
             public int read(byte b[]) throws IOException {
                 return readBytes(b, 0, b.length);
             }
 
-            ×¢Òâ·µ»ØÖµ:
-            µ÷ÓÃreadBytes()
-            1.·µ»ØÕâ¸ö¶ÁÈ¡·ÅÈëºóµÄÊı×é
-            2.·µ»Ø0
-            3.·µ»ØÒ»¸öint£¬Êı×éµÄ³¤¶È
+            æ³¨æ„è¿”å›å€¼:
+            è°ƒç”¨readBytes()
+            1.è¿”å›è¿™ä¸ªè¯»å–æ”¾å…¥åçš„æ•°ç»„
+            2.è¿”å›0
+            3.è¿”å›ä¸€ä¸ªintï¼Œæ•°ç»„çš„é•¿åº¦
 
-            ´Ó´ËÊäÈëÁ÷ÖĞ½«×î¶à b.length ¸ö×Ö½ÚµÄÊı¾İ¶ÁÈëÒ»¸ö byte Êı×éÖĞ¡£
-            ÔÚÄ³Ğ©ÊäÈë¿ÉÓÃÖ®Ç°£¬´Ë·½·¨½«×èÈû
+            ä»æ­¤è¾“å…¥æµä¸­å°†æœ€å¤š b.length ä¸ªå­—èŠ‚çš„æ•°æ®è¯»å…¥ä¸€ä¸ª byte æ•°ç»„ä¸­ã€‚
+            åœ¨æŸäº›è¾“å…¥å¯ç”¨ä¹‹å‰ï¼Œæ­¤æ–¹æ³•å°†é˜»å¡
 
             */
-            //µÚÒ»´Î¶ÁÈ¡
-            byte [] array = new byte[5];//·ÇË÷Òıemm...
-            int read1 = input.read(array); //·µ»ØµÄÊÇÊı×éµÄ³¤¶È£¬Í¬Ê±£¬¸øÊı×éÖØĞÂ¸³Öµ£¡£¡£¡£¡£¡£¡
+            //ç¬¬ä¸€æ¬¡è¯»å–
+            byte [] array = new byte[5];//éç´¢å¼•emm...
+            int read1 = input.read(array); //è¿”å›çš„æ˜¯æ•°ç»„çš„é•¿åº¦ï¼ŒåŒæ—¶ï¼Œç»™æ•°ç»„é‡æ–°èµ‹å€¼ï¼ï¼ï¼ï¼ï¼ï¼
             System.out.println(read1); //5
             System.out.println(new String(array, 0 ,read1)); //abc d
 
-            //µÚ¶ş´Î¶ÁÈ¡
+            //ç¬¬äºŒæ¬¡è¯»å–
             int read2 = input.read(array);
             System.out.println(read2); //5
-            System.out.println(new String(array, 0 ,read2)); // »»ĞĞ  hel
+            System.out.println(new String(array, 0 ,read2)); // æ¢è¡Œ  hel
             /*
-            * µÚ¶ş´Î¶ÁÈ¡µÄÄÚÈİÊÇ
+            * ç¬¬äºŒæ¬¡è¯»å–çš„å†…å®¹æ˜¯
             *
             * hel
             *
-            * ÀïÃæ»»ĞĞÁË£¬\r\n Õ¼ÓÃÁË Á½¸ö byteÊı×é
+            * é‡Œé¢æ¢è¡Œäº†ï¼Œ\r\n å ç”¨äº† ä¸¤ä¸ª byteæ•°ç»„
             * */
 
 
@@ -54,7 +54,7 @@ public class TestFileInputStreamReadMethod {
         }finally{
             if (input != null){
                 try{
-                    input.close();//ÊÍ·Å×ÊÔ´
+                    input.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }
@@ -64,22 +64,22 @@ public class TestFileInputStreamReadMethod {
 
         System.out.println("=============================================");
 
-        //ÓÅ»¯
+        //ä¼˜åŒ–
         try{
-            //½øĞĞ²Ù×÷
-            input = new FileInputStream("A1_Java»ù´¡SE\\src\\»ù´¡ÖªÊ¶\\IOÁ÷\\×Ö½ÚÁ÷\\×Ö½ÚÁ÷¶ÁÊı¾İ\\²âÊÔÎÄ¼ş2.txt");
-            //¶ÁÈ¡
-            byte [] array = new byte[1024];//Ò»°ã¶¼ÊÇÉèÖÃÎª [1024] µÄÕûÊı±¶
+            //è¿›è¡Œæ“ä½œ
+            input = new FileInputStream("A1_JavaåŸºç¡€SE\\src\\åŸºç¡€çŸ¥è¯†\\IOæµ\\å­—èŠ‚æµ\\å­—èŠ‚æµè¯»æ•°æ®\\æµ‹è¯•æ–‡ä»¶2.txt");
+            //è¯»å–
+            byte [] array = new byte[1024];//ä¸€èˆ¬éƒ½æ˜¯è®¾ç½®ä¸º [1024] çš„æ•´æ•°å€
             int read;
             while ((read = input.read(array) ) != -1){
-                System.out.print(new String(array,0,read));//ºóÃæÁ½¸ö²ÎÊıÒ²ÒªĞ´£¡£¡£¡£¡
+                System.out.print(new String(array,0,read));//åé¢ä¸¤ä¸ªå‚æ•°ä¹Ÿè¦å†™ï¼ï¼ï¼ï¼
             }
         }catch(IOException e){
             e.printStackTrace();
         }finally{
             if (input != null){
                 try{
-                    input.close();//ÊÍ·Å×ÊÔ´
+                    input.close();//é‡Šæ”¾èµ„æº
                 }catch (IOException e){
                     e.printStackTrace();
                 }

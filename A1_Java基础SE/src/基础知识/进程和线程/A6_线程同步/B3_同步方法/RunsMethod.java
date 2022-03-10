@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A6_Ïß³ÌÍ¬²½.B3_Í¬²½·½·¨;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A6_çº¿ç¨‹åŒæ­¥.B3_åŒæ­¥æ–¹æ³•;
 
 public class RunsMethod {
 
     public static void main(String[] args) {
         MyRunnable run = new MyRunnable();
 
-        Thread t11 = new Thread(run, "´°¿Ú1");
-        Thread t12 = new Thread(run, "´°¿Ú2");
-        Thread t13 = new Thread(run, "´°¿Ú3");
+        Thread t11 = new Thread(run, "çª—å£1");
+        Thread t12 = new Thread(run, "çª—å£2");
+        Thread t13 = new Thread(run, "çª—å£3");
 
         t11.start();
         t12.start();

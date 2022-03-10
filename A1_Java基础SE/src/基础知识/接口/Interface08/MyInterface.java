@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.½Ó¿Ú.Interface08;
+package åŸºç¡€çŸ¥è¯†.æ¥å£.Interface08;
 
 public interface MyInterface extends MyInterfaceA, MyInterfaceB {
 
@@ -8,9 +8,9 @@ public interface MyInterface extends MyInterfaceA, MyInterfaceB {
 
     public abstract void methodCommonB();
 
-    @Override//×¢Òâ£ºÒª´øÓĞdefault¹Ø¼ü×Ö¡£
+    @Override//æ³¨æ„ï¼šè¦å¸¦æœ‰defaultå…³é”®å­—ã€‚
     public default void methodDefault() {
-        System.out.println("¶à¸ö¸¸½Ó¿ÚÖØ¸´Òª½øĞĞ¸²¸ÇÖØĞ´¡£");
+        System.out.println("å¤šä¸ªçˆ¶æ¥å£é‡å¤è¦è¿›è¡Œè¦†ç›–é‡å†™ã€‚");
     }
 
 

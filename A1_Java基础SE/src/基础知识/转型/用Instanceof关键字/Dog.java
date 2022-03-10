@@ -1,13 +1,13 @@
-package »ù´¡ÖªÊ¶.×ªĞÍ.ÓÃInstanceof¹Ø¼ü×Ö;
+package åŸºç¡€çŸ¥è¯†.è½¬å‹.ç”¨Instanceofå…³é”®å­—;
 
 public class Dog extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("¹·³ÔSHIT");
+        System.out.println("ç‹—åƒSHIT");
     }
 
     public void watchMouse(){
-        System.out.println("¹·¹·¿´¼Ò");
+        System.out.println("ç‹—ç‹—çœ‹å®¶");
     }
 }

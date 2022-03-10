@@ -1,24 +1,24 @@
-package C3_×¢½â.D3_×Ô¶¨Òå×¢½â;
+package C3_æ³¨è§£.D3_è‡ªå®šä¹‰æ³¨è§£;
 
 import org.junit.jupiter.api.Test;
 
-//@MyAnnotation02(name = "²»ÄÜ×¢ÊÍÔÚ·½·¨ÌåÉÏ")
+//@MyAnnotation02(name = "ä¸èƒ½æ³¨é‡Šåœ¨æ–¹æ³•ä½“ä¸Š")
 public class MyAnnotationTest {
 
     @Test
-    @MyAnnotation01(age = 19, is18 = false, name = "GanGa", MES = Mes.GanGa, SW = @SuppressWarnings("all"), nums = {1, 1, 2}, str = "Ä¬ÈÏ¿ÉÒÔ²»½øĞĞ¸³Öµ")
+    @MyAnnotation01(age = 19, is18 = false, name = "GanGa", MES = Mes.GanGa, SW = @SuppressWarnings("all"), nums = {1, 1, 2}, str = "é»˜è®¤å¯ä»¥ä¸è¿›è¡Œèµ‹å€¼")
     public void myAnnotationTest(){
-        //ÓĞÊôĞÔ¾Í±ØĞë¸³Öµ, ³ı·ÇÊÇÄ¬ÈÏÊôĞÔ, ¿ÉÒÔ²»ÓÃ¸³Öµ¡£
+        //æœ‰å±æ€§å°±å¿…é¡»èµ‹å€¼, é™¤éæ˜¯é»˜è®¤å±æ€§, å¯ä»¥ä¸ç”¨èµ‹å€¼ã€‚
     }
 
 
     @Test
-    @MyAnnotation02(name = "×¢ÊÍÔÚ·½·¨ÉÏ")
+    @MyAnnotation02(name = "æ³¨é‡Šåœ¨æ–¹æ³•ä¸Š")
     public void annTest() {
 
     }
 
-    @MyAnnotation02(name = "¿ÉÒÔ×¢ÊÍÔÚ³ÉÔ±±äÁ¿ÉÏ")
+    @MyAnnotation02(name = "å¯ä»¥æ³¨é‡Šåœ¨æˆå‘˜å˜é‡ä¸Š")
     private static int num = 123;
 
 }

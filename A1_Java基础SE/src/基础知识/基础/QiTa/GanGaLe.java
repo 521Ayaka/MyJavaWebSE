@@ -1,10 +1,10 @@
-package »ù´¡ÖªÊ¶.»ù´¡.QiTa;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.QiTa;
 
 public class GanGaLe {
 	public static void main(String[] args){
 		int i= 3;
 		if (i > 2){
-			System.out.println("ÞÏÞÎ");
+			System.out.println("å°´å°¬");
 		}else{
 			System.out.println("123");
 		}

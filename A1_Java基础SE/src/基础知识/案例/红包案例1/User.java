@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.°¸Àı.ºì°ü°¸Àı1;
+package åŸºç¡€çŸ¥è¯†.æ¡ˆä¾‹.çº¢åŒ…æ¡ˆä¾‹1;
 
-//ËùÓĞ³ÉÔ±    //¸¸Àà
+//æ‰€æœ‰æˆå‘˜    //çˆ¶ç±»
 public class User {
 
-    //Ê¹ÓÃprivateĞŞÊÎ³ÉÔ±±äÁ¿£¬ÓÃÏÂÃæµÄGetSet·½·¨µ÷ÓÃµÈ£¬Ìá¸ß°²È«ĞÔ¡£
+    //ä½¿ç”¨privateä¿®é¥°æˆå‘˜å˜é‡ï¼Œç”¨ä¸‹é¢çš„GetSetæ–¹æ³•è°ƒç”¨ç­‰ï¼Œæé«˜å®‰å…¨æ€§ã€‚
     private String name;
     private double money;
     private double max;
 
-    //¹¹Ôì·½·¨
+    //æ„é€ æ–¹æ³•
     public User() {
     }
 
@@ -17,12 +17,12 @@ public class User {
         this.money = money;
     }
 
-    //³ÉÔ±·½·¨£¬´òÓ¡ÓÃ»§ĞÅÏ¢¡£
+    //æˆå‘˜æ–¹æ³•ï¼Œæ‰“å°ç”¨æˆ·ä¿¡æ¯ã€‚
     public void show() {
-        System.out.println("ÎÒ½Ğ£º" + this.name + "¡£ÎÒµÄÓà¶îÎª£º" + this.money);
+        System.out.println("æˆ‘å«ï¼š" + this.name + "ã€‚æˆ‘çš„ä½™é¢ä¸ºï¼š" + this.money);
     }
 
-    //Ê¹ÓÃÈı¶ÔGetSet·½·¨Ìá¸ß°²È«ĞÔ
+    //ä½¿ç”¨ä¸‰å¯¹GetSetæ–¹æ³•æé«˜å®‰å…¨æ€§
     public String getName() {
         return this.name;
     }

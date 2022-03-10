@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.È¨ÏŞ;
+package åŸºç¡€çŸ¥è¯†.æƒé™;
 
 public class MyClass {
 
@@ -8,19 +8,19 @@ public class MyClass {
     private int num4 = 4;
 
     private void method1(){
-        System.out.println("Ë½ÓĞ·½·¨");
+        System.out.println("ç§æœ‰æ–¹æ³•");
     }
 
     void method2(){
-        System.out.println("(default)·½·¨");
+        System.out.println("(default)æ–¹æ³•");
     }
 
 
-    //ÎŞ²Î¹¹Ôì
+    //æ— å‚æ„é€ 
     public MyClass() {
     }
 
-    //È«²Î¹¹Ôì
+    //å…¨å‚æ„é€ 
     public MyClass(int num1, int num2, int num3, int num4) {
         this.num1 = num1;
         this.num2 = num2;
@@ -28,7 +28,7 @@ public class MyClass {
         this.num4 = num4;
     }
 
-    //GetSet·½·¨
+    //GetSetæ–¹æ³•
     public int getNum1() {
         return num1;
     }

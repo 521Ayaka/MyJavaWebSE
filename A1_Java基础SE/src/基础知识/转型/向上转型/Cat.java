@@ -1,9 +1,9 @@
-package 基础知识.转型.向上转型;
+package 鍩虹鐭ヨ瘑.杞瀷.鍚戜笂杞瀷;
 
 public class Cat extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("次鱼");
+        System.out.println("娆￠奔");
     }
 }

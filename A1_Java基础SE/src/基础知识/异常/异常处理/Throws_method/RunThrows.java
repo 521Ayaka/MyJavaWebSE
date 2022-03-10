@@ -1,17 +1,17 @@
-package »ù´¡ÖªÊ¶.Òì³£.Òì³£´¦Àí.Throws_method;  //throws ¶Á ¡° Ë¿ÈâË¿ ¡±
+package åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.å¼‚å¸¸å¤„ç†.Throws_method;  //throws è¯» â€œ ä¸è‚‰ä¸ â€
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 /*
-×¢ÒâÊÂÏî:
-1. throws´¦ÀíÊ± Ğ´ÔÚ·½·¨µÄ[ () ]ºóÃæ¡£
-   [¸ñÊ½]:  ĞŞÊÎ·û ·½·¨Ãû() throws Òì³£Àà { //·½·¨Ìå }
+æ³¨æ„äº‹é¡¹:
+1. throwså¤„ç†æ—¶ å†™åœ¨æ–¹æ³•çš„[ () ]åé¢ã€‚
+   [æ ¼å¼]:  ä¿®é¥°ç¬¦ æ–¹æ³•å() throws å¼‚å¸¸ç±» { //æ–¹æ³•ä½“ }
 
-2. throws´¦ÀíÒì³£µÄÊ±ºò£¬ÓĞĞ©Òì³££¬ÔÚËùµ÷ÓÃµÄ·½·¨Ò²ÒªÖøÃû throws ´¦Àí¡£           ¡¾maim() method5() method2() µÄµ÷ÓÃ¡¿
-                              »òÕßÊ¹ÓÃtry...catch...´¦Àí¡£                ¡¾method3()µÄµ÷ÓÃ¡¿
+2. throwså¤„ç†å¼‚å¸¸çš„æ—¶å€™ï¼Œæœ‰äº›å¼‚å¸¸ï¼Œåœ¨æ‰€è°ƒç”¨çš„æ–¹æ³•ä¹Ÿè¦è‘—å throws å¤„ç†ã€‚           ã€maim() method5() method2() çš„è°ƒç”¨ã€‘
+                              æˆ–è€…ä½¿ç”¨try...catch...å¤„ç†ã€‚                ã€method3()çš„è°ƒç”¨ã€‘
 
-3. ÓĞĞ©Òì³££¬ÔÚthrows´¦Àíºó£¬²»»áÔÙÏòÏÂÔËĞĞ£¬ÒªÊÇÍùÏÂÔËĞĞ»¹ÊÇÒªtry...catch...´¦Àí  ¡¾method1()µÄµ÷ÓÃ¡¿
+3. æœ‰äº›å¼‚å¸¸ï¼Œåœ¨throwså¤„ç†åï¼Œä¸ä¼šå†å‘ä¸‹è¿è¡Œï¼Œè¦æ˜¯å¾€ä¸‹è¿è¡Œè¿˜æ˜¯è¦try...catch...å¤„ç†  ã€method1()çš„è°ƒç”¨ã€‘
 
 */
 
@@ -20,14 +20,14 @@ public class RunThrows {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws ParseException{
-        System.out.println("³ÌĞò¿ªÊ¼Ö´ĞĞ¡£");
+        System.out.println("ç¨‹åºå¼€å§‹æ‰§è¡Œã€‚");
 
-        //method1();//²»»áÏòÏÂÔËĞĞ
-        method2();//Èç¹ûmainÒ²ÒªÊ¹ÓÃthrowsÒì³£Ç©Ãû¡£
-        method3();//Ò²¿ÉÒÔÊ¹ÓÃtry...catch...´¦Àí ¡£ ËùÒÔmethod3Ã»ÓĞÊ¹ÓÃthrows´¦Àí¡£
-        Method.method5();//ÈÔÈ»ĞèÒªthrowsÅ×³öÒì³£¡£
+        //method1();//ä¸ä¼šå‘ä¸‹è¿è¡Œ
+        method2();//å¦‚æœmainä¹Ÿè¦ä½¿ç”¨throwså¼‚å¸¸ç­¾åã€‚
+        method3();//ä¹Ÿå¯ä»¥ä½¿ç”¨try...catch...å¤„ç† ã€‚ æ‰€ä»¥method3æ²¡æœ‰ä½¿ç”¨throwså¤„ç†ã€‚
+        Method.method5();//ä»ç„¶éœ€è¦throwsæŠ›å‡ºå¼‚å¸¸ã€‚
 
-        System.out.println("³ÌĞò½áÊøÔËĞĞ¡£");
+        System.out.println("ç¨‹åºç»“æŸè¿è¡Œã€‚");
     }
 
 
@@ -36,25 +36,25 @@ public class RunThrows {
         String[] array = {str};
         System.out.println(array[1]);/**
         Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-        at MyJava.»ù´¡ÖªÊ¶.Òì³£.Òì³£´¦Àí.Throws_method.RunThrows.method(RunThrows.java:16)
-        at MyJava.»ù´¡ÖªÊ¶.Òì³£.Òì³£´¦Àí.Throws_method.RunThrows.main(RunThrows.java:10)
+        at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.å¼‚å¸¸å¤„ç†.Throws_method.RunThrows.method(RunThrows.java:16)
+        at MyJava.åŸºç¡€çŸ¥è¯†.å¼‚å¸¸.å¼‚å¸¸å¤„ç†.Throws_method.RunThrows.main(RunThrows.java:10)
         */
     }
 
-    //Ê¹ÓÃSimpleDateFormatµÄparse·½·¨¡£
+    //ä½¿ç”¨SimpleDateFormatçš„parseæ–¹æ³•ã€‚
     private static void method2() throws ParseException {
 
-        System.out.println("ÈÕÆÚ¸ñÊ½: Äê/ÔÂ/ÈÕ ");
+        System.out.println("æ—¥æœŸæ ¼å¼: å¹´/æœˆ/æ—¥ ");
         String string = scanner.next();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
-        Date date = sdf.parse(string); //SimpleDateFormatÀàµÄparse·½·¨ÒªÊ¹ÓÃthrowsÒì³£Ç©Ãû¡£
+        Date date = sdf.parse(string); //SimpleDateFormatç±»çš„parseæ–¹æ³•è¦ä½¿ç”¨throwså¼‚å¸¸ç­¾åã€‚
         System.out.println(sdf.format(date));
     }
 
     public static void method3() {
-        System.out.println("ÔÙ´ÎÔËĞĞ");
+        System.out.println("å†æ¬¡è¿è¡Œ");
         try {
-            method2();//ÈÔÈ»ĞèÒªthrowsÅ×³öÒì³£¡£
+            method2();//ä»ç„¶éœ€è¦throwsæŠ›å‡ºå¼‚å¸¸ã€‚
         }catch(ParseException e){
             e.printStackTrace();
         }

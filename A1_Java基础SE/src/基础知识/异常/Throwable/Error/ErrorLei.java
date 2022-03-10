@@ -1,10 +1,10 @@
-package 基础知识.异常.Throwable.Error;
+package 鍩虹鐭ヨ瘑.寮傚父.Throwable.Error;
 
 public class ErrorLei {
 
     public static void main(String[] args) {
 
-        System.out.println("严重错误！！！！！！！！！！！！！！！！！！！！！！");
+        System.out.println("涓ラ噸閿欒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒锛侊紒");
 
     }
 

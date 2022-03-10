@@ -1,11 +1,11 @@
-package 基础知识.类库.LeiShuoming;
+package 鍩虹鐭ヨ瘑.绫诲簱.LeiShuoming;
 /*
 
 */
 
 public class Lei02 {
     
-    String ganga = "原谅我吧，我错了";
+    String ganga = "鍘熻皡鎴戝惂锛屾垜閿欎簡";
 
     public int method (int k) {
 

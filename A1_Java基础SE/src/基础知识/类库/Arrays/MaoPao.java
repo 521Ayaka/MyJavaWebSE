@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.Arrays;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.Arrays;
 import java.util.Arrays;
 public class MaoPao {
 
@@ -6,7 +6,7 @@ public class MaoPao {
 
         int [] arr = {177,180,42,66,165};
 
-//        //µÚÒ»´ÎÅÅĞò
+//        //ç¬¬ä¸€æ¬¡æ’åº
 //        for (int i = 0; i < arr.length - 1; i++) {
 //            if (arr[i] > arr[i+1]){
 //                int b = arr[i];
@@ -16,7 +16,7 @@ public class MaoPao {
 //        }
 //        System.out.println(Arrays.toString(arr));
 //
-//        //µÚ¶ş´ÎÅÅĞò
+//        //ç¬¬äºŒæ¬¡æ’åº
 //        for (int i = 0; i < arr.length - 1; i++) {
 //            if (arr[i] > arr[i+1]){
 //                int b = arr[i];
@@ -26,7 +26,7 @@ public class MaoPao {
 //        }
 //        System.out.println(Arrays.toString(arr));
 
-        //Ê¹ÓÃÃ°ÅİÅÅĞò
+        //ä½¿ç”¨å†’æ³¡æ’åº
         for (int k = 0; k < arr.length-1; k++) {
             for (int i = 0; i < arr.length - 1 - k; i++) {
                 if (arr[i] > arr[i+1]){

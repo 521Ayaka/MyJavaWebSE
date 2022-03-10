@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.»ù´¡.final¹Ø¼ü×Ö.final03;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.finalå…³é”®å­—.final03;
 
 public class Gan{
 

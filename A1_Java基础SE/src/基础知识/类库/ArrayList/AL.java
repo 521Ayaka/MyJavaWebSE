@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 
 import java.util.ArrayList;
 
@@ -11,20 +11,20 @@ public class AL {
         arraylist.add(2);
         arraylist.add(2);
         boolean v = arraylist.add(1);
-        System.out.println("Ìí¼Ó×îºóÒ»ºÅÔªËØÊÇ·ñ³É¹¦£º" + v);
+        System.out.println("æ·»åŠ æœ€åä¸€å·å…ƒç´ æ˜¯å¦æˆåŠŸï¼š" + v);
         System.out.println(arraylist);
 
         //Method 2
-        System.out.println("µÚ0ºÅÔªËØÎª£º" + arraylist.get(0));
-        System.out.println("µÚ3ºÅÔªËØÎª£º" + arraylist.get(3));
+        System.out.println("ç¬¬0å·å…ƒç´ ä¸ºï¼š" + arraylist.get(0));
+        System.out.println("ç¬¬3å·å…ƒç´ ä¸ºï¼š" + arraylist.get(3));
 
         //Method 3
         int i = arraylist.size();
-        System.out.println("Êı×éµÄ³¤¶ÈÎªA" + i);
+        System.out.println("æ•°ç»„çš„é•¿åº¦ä¸ºA" + i);
 
         //Method 4
         int n = arraylist.remove(2);
-        System.out.println("É¾³ıµÄÔªËØÊÇ" + n);
+        System.out.println("åˆ é™¤çš„å…ƒç´ æ˜¯" + n);
         System.out.println(arraylist);
 
 

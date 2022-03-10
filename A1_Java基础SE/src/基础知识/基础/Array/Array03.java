@@ -1,12 +1,12 @@
-package »ù´¡ÖªÊ¶.»ù´¡.Array;
+package åŸºç¡€çŸ¥è¯†.åŸºç¡€.Array;
 
 public class Array03 {
     public static void main(String[] args) {
         int [] chengji={100, 0, 20, 1, 55, 6, 77, 99, 0, 1, 20, 45};
         double[] array1 = ganga(chengji);
-        System.out.println("================ÞÏÞÎ================");
+        System.out.println("================å°´å°¬================");
         System.out.println(array1[0]);
-        System.out.println("===============ÞÏÞÎ===============");
+        System.out.println("===============å°´å°¬===============");
         System.out.println(array1[1]);
     }
     public static double[] ganga(int[] chengji) {

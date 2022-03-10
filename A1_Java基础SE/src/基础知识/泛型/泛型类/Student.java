@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.·ºĞÍ.·ºĞÍÀà;
+package åŸºç¡€çŸ¥è¯†.æ³›å‹.æ³›å‹ç±»;
 
 public class Student {
 

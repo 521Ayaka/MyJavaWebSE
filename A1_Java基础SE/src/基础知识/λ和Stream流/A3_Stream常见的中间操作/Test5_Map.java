@@ -1,14 +1,14 @@
-package »ù´¡ÖªÊ¶.¦ËºÍStreamÁ÷.A3_Stream³£¼ûµÄÖĞ¼ä²Ù×÷;
+package åŸºç¡€çŸ¥è¯†.Î»å’ŒStreamæµ.A3_Streamå¸¸è§çš„ä¸­é—´æ“ä½œ;
 /*
-StreamÁ÷ÖĞ³£¼ûµÄÖĞ¼ä²Ù×÷:
+Streamæµä¸­å¸¸è§çš„ä¸­é—´æ“ä½œ:
 
     map<R> Stream<R> map(Function<? super T,? extends R> mapper)
-        ·µ»ØÓÉ¸ø¶¨º¯ÊıÓ¦ÓÃÓÚ´ËÁ÷µÄÔªËØµÄ½á¹û×é³ÉµÄÁ÷¡£
-        ÕâÊÇÒ»¸öintermediate operation ¡£
+        è¿”å›ç”±ç»™å®šå‡½æ•°åº”ç”¨äºæ­¤æµçš„å…ƒç´ çš„ç»“æœç»„æˆçš„æµã€‚
+        è¿™æ˜¯ä¸€ä¸ªintermediate operation ã€‚
 
     IntStream mapToInt(ToIntFunction<? super T> mapper)
-        ·µ»ØÒ»¸öIntStream £¬ÆäÖĞ°üº¬½«¸ø¶¨º¯ÊıÓ¦ÓÃÓÚ´ËÁ÷µÄÔªËØµÄ½á¹û¡£
-        ÕâÊÇÒ»¸öintermediate operation ¡£
+        è¿”å›ä¸€ä¸ªIntStream ï¼Œå…¶ä¸­åŒ…å«å°†ç»™å®šå‡½æ•°åº”ç”¨äºæ­¤æµçš„å…ƒç´ çš„ç»“æœã€‚
+        è¿™æ˜¯ä¸€ä¸ªintermediate operation ã€‚
 
 */
 
@@ -19,7 +19,7 @@ public class Test5_Map {
 
     public static void main(String[] args) {
 
-        //ÏÈ´´½¨Ò»¸öÊı×é
+        //å…ˆåˆ›å»ºä¸€ä¸ªæ•°ç»„
         ArrayList<String> list = new ArrayList<>();
         list.add("10");
         list.add("20");
@@ -27,20 +27,20 @@ public class Test5_Map {
         list.add("40");
         list.add("50");
 
-        //½«×Ö·û×ªÎªint  map
+        //å°†å­—ç¬¦è½¬ä¸ºint  map
         //list.stream().map(s -> Integer.parseInt(s)).forEach(System.out::println);
-        //¸Ä½ø
+        //æ”¹è¿›
         list.stream().map(Integer::parseInt).forEach(System.out::println);
 
         System.out.println("=========");
 
-        //½«×Ö·û×ªÎªint,²¢ÇóºÍ  mapToInt
+        //å°†å­—ç¬¦è½¬ä¸ºint,å¹¶æ±‚å’Œ  mapToInt
         IntStream intStream = list.stream().mapToInt(Integer::parseInt);
-        //µ÷ÓÃÁËmapToInt()·½·¨ºó,·µ»ØµÄIntStreamÀàĞÍ¡£
-        int sum = intStream.sum();//IntStreamÀàÖĞÓĞ×Ô¼ºµÄ·½·¨¡£
+        //è°ƒç”¨äº†mapToInt()æ–¹æ³•å,è¿”å›çš„IntStreamç±»å‹ã€‚
+        int sum = intStream.sum();//IntStreamç±»ä¸­æœ‰è‡ªå·±çš„æ–¹æ³•ã€‚
         System.out.println(sum);
 
-        //¸Ä½ø
+        //æ”¹è¿›
         int sum1 = list.stream().mapToInt(Integer::parseInt).sum();
         System.out.println(sum1);
 

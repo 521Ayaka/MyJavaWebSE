@@ -1,15 +1,15 @@
-package 基础知识.类库.面向对象;
+package 鍩虹鐭ヨ瘑.绫诲簱.闈㈠悜瀵硅薄;
 
 public class Hi {
 
     public static void main(String[] args) {
-        System.out.println("你好Java");
+        System.out.println("浣犲ソJava");
 
-        //循环几遍
+        //寰幆鍑犻亶
 
         for (int i = 0; i <= 25; i++) {
 
-            System.out.println("你好Java");
+            System.out.println("浣犲ソJava");
 
         }
 

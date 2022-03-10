@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.ÄÚ²¿Àà.InnerClass02;
+package åŸºç¡€çŸ¥è¯†.å†…éƒ¨ç±».InnerClass02;
 /*
 
 
@@ -8,9 +8,9 @@ public class Wai {
     public void methodOuterOne(){
 
         class InnerOne {
-            String str = "¾Ö²¿ÄÚ²¿Àà³ÉÔ±±äÁ¿";
+            String str = "å±€éƒ¨å†…éƒ¨ç±»æˆå‘˜å˜é‡";
             void method(){
-                System.out.println("¾Ö²¿ÄÚ²¿ÀàµÄ³ÉÔ±·½·¨");
+                System.out.println("å±€éƒ¨å†…éƒ¨ç±»çš„æˆå‘˜æ–¹æ³•");
             }
         }
 
@@ -19,8 +19,8 @@ public class Wai {
         innerOne.method();
     }
     public void methodOutTwo(){
-        int num = 666; //final¿ÉÒÔ²»Ğ´£¬µ«ÊÇ±ØĞë±£Ö¤±äÁ¿Öµ²»ÔÙ¸Ä±ä
-        //num = 555; //Èç¹ûÖØĞÂ¸³Öµ£¬¾Í²»ÊÇfinal
+        int num = 666; //finalå¯ä»¥ä¸å†™ï¼Œä½†æ˜¯å¿…é¡»ä¿è¯å˜é‡å€¼ä¸å†æ”¹å˜
+        //num = 555; //å¦‚æœé‡æ–°èµ‹å€¼ï¼Œå°±ä¸æ˜¯final
         final int age = 18;
         class InnerTwo{
             public void method(){

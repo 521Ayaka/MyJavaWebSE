@@ -1,30 +1,30 @@
-package »ù´¡ÖªÊ¶.¼¯ºÏ.Collection;
+package åŸºç¡€çŸ¥è¯†.é›†åˆ.Collection;
 
 import java.util.*;
 
 /*
-[ÒªÇó]:
-±àĞ´Ò»¸ö³ÌĞò,»ñÈ¡10¸ö1~20Ö®¼äµÄËæ»úÕûÊı£¬ÒªÇóËæ»úÊı²»ÄÜÖØ¸´£¬²¢ÔÚ¿ØÖÆÌ¨Êä³ö¡£
+[è¦æ±‚]:
+ç¼–å†™ä¸€ä¸ªç¨‹åº,è·å–10ä¸ª1~20ä¹‹é—´çš„éšæœºæ•´æ•°ï¼Œè¦æ±‚éšæœºæ•°ä¸èƒ½é‡å¤ï¼Œå¹¶åœ¨æ§åˆ¶å°è¾“å‡ºã€‚
 
-[ÑÓÉê]:
-ÉıĞòÅÅÁĞ£¬½µĞòÅÅÁĞ
+[å»¶ç”³]:
+å‡åºæ’åˆ—ï¼Œé™åºæ’åˆ—
 */
-public class °¸Àı {
+public class æ¡ˆä¾‹ {
 
     public static void main(String[] args) {
 
         Random ran = new Random();
 
-        //[ÒªÇó]:±àĞ´Ò»¸ö³ÌĞò,»ñÈ¡10¸ö1~20Ö®¼äµÄËæ»úÕûÊı£¬ÒªÇóËæ»úÊı²»ÄÜÖØ¸´£¬²¢ÔÚ¿ØÖÆÌ¨Êä³ö¡£
-        //´´½¨¼¯ºÏ¶ÔÏó
+        //[è¦æ±‚]:ç¼–å†™ä¸€ä¸ªç¨‹åº,è·å–10ä¸ª1~20ä¹‹é—´çš„éšæœºæ•´æ•°ï¼Œè¦æ±‚éšæœºæ•°ä¸èƒ½é‡å¤ï¼Œå¹¶åœ¨æ§åˆ¶å°è¾“å‡ºã€‚
+        //åˆ›å»ºé›†åˆå¯¹è±¡
         Collection<Integer> set1 = new HashSet<>();
 
-        //Ìí¼ÓÔªËØ
+        //æ·»åŠ å…ƒç´ 
         while (set1.size()<10){
             set1.add(ran.nextInt(20)+1);
         }
 
-        //±éÀú¼¯ºÏ
+        //éå†é›†åˆ
         for (int num :
                 set1) {
             System.out.println(num);
@@ -33,15 +33,15 @@ public class °¸Àı {
         System.out.println("=================");
 
 
-        //[ÑÓÉê]:ÉıĞòÅÅÁĞ£¬½µĞòÅÅÁĞ
+        //[å»¶ç”³]:å‡åºæ’åˆ—ï¼Œé™åºæ’åˆ—
 
-        //ÉıĞò£ºÊ¹ÓÃTreeSet¼¯ºÏ,×ÔÈ»ÅÅĞò
+        //å‡åºï¼šä½¿ç”¨TreeSeté›†åˆ,è‡ªç„¶æ’åº
         TreeSet<Integer> set2 = new TreeSet<>();
-        //Ìí¼ÓÔªËØ
+        //æ·»åŠ å…ƒç´ 
         while (set2.size()<10){
             set2.add(ran.nextInt(20)+1);
         }
-        //±éÀú¼¯ºÏ
+        //éå†é›†åˆ
         for (int num :
                 set2) {
             System.out.println(num);
@@ -49,18 +49,18 @@ public class °¸Àı {
 
         System.out.println("=================");
 
-        //½µĞòÅÅÁĞ TreeSet¼¯ºÏ,±È½ÏÅÅĞò
+        //é™åºæ’åˆ— TreeSeté›†åˆ,æ¯”è¾ƒæ’åº
         TreeSet<Integer> set3 = new TreeSet<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o2 - o1;
             }
         });
-        //Ìí¼ÓÔªËØ
+        //æ·»åŠ å…ƒç´ 
         while (set3.size()<10){
             set3.add(ran.nextInt(20)+1);
         }
-        //±éÀú¼¯ºÏ
+        //éå†é›†åˆ
         Iterator<Integer> itr = set3.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());

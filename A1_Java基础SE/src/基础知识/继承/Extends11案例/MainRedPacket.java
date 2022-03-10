@@ -1,31 +1,31 @@
-package »ù´¡ÖªÊ¶.¼Ì³Ğ.Extends11°¸Àı;
+package åŸºç¡€çŸ¥è¯†.ç»§æ‰¿.Extends11æ¡ˆä¾‹;
 
-//µ¼°ü
+//å¯¼åŒ…
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//ÔËĞĞÀà
+//è¿è¡Œç±»
 public class MainRedPacket {
 
-    //main·½·¨
+    //mainæ–¹æ³•
     public static void main(String[] args) {
 
-        //´´½¨ÈºÖ÷
-        Manager gan = new Manager("ŞÏŞÎ½´", 521666.66);
+        //åˆ›å»ºç¾¤ä¸»
+        Manager gan = new Manager("å°´å°¬é…±", 521666.66);
 
-        //´´½¨ŞÏŞÎµÄ×ÓÃñ
-        Member one = new Member("ÖÓË¶µÜµÜ", 3.12);
-        Member two = new Member("ÑÇË÷¸ç¸ç", 666.66);
-        Member three = new Member("ÓÀ¶÷µÜµÜ", 5.32);
-        Member four = new Member("¾ö¶·´óÊ¦", 888.5);
-        Member five = new Member("×î¸öĞÔµÄÍøÃû", 165.88);
+        //åˆ›å»ºå°´å°¬çš„å­æ°‘
+        Member one = new Member("é’Ÿç¡•å¼Ÿå¼Ÿ", 3.12);
+        Member two = new Member("äºšç´¢å“¥å“¥", 666.66);
+        Member three = new Member("æ°¸æ©å¼Ÿå¼Ÿ", 5.32);
+        Member four = new Member("å†³æ–—å¤§å¸ˆ", 888.5);
+        Member five = new Member("æœ€ä¸ªæ€§çš„ç½‘å", 165.88);
 
         //===========================================================
 
-        //MyÓà¶î
+        //Myä½™é¢
         gan.show();
 
-        //×ÓÃñµÄ²Æ²úÓà¶î
+        //å­æ°‘çš„è´¢äº§ä½™é¢
         one.show();
         two.show();
         three.show();
@@ -34,31 +34,31 @@ public class MainRedPacket {
 
         System.out.println("=========================================");
 
-        //´´½¨ScannerÀàµÄ¶ÔÏó£¬É¨Ãè¼üÅÌÊäÈëÄÚÈİ
+        //åˆ›å»ºScannerç±»çš„å¯¹è±¡ï¼Œæ‰«æé”®ç›˜è¾“å…¥å†…å®¹
         Scanner sc = new Scanner(System.in);
 
-        //¿ªÊ¼·¢Ç®
+        //å¼€å§‹å‘é’±
 
-        //ÉèÖÃ×Ü½ğ¶î
-        System.out.println("ºì°ü×Ü½ğ¶îÎª£º");
+        //è®¾ç½®æ€»é‡‘é¢
+        System.out.println("çº¢åŒ…æ€»é‡‘é¢ä¸ºï¼š");
         double totalMoney = sc.nextDouble();
 
-        //ÉèÖÃºì°ü¸öÊı
-        System.out.println("ºì°ü¸öÊı£º");
+        //è®¾ç½®çº¢åŒ…ä¸ªæ•°
+        System.out.println("çº¢åŒ…ä¸ªæ•°ï¼š");
         int count = sc.nextInt();
 
-        //ÉèÖÃºì°ü·âÃæ
-        System.out.println("ºì°ü·âÃæ£º");
+        //è®¾ç½®çº¢åŒ…å°é¢
+        System.out.println("çº¢åŒ…å°é¢ï¼š");
         String str = sc.next();
 
-        //ÏòManagerÀà´«Èëºì°ü²ÎÊı£¬·µ»Ø°ü×°ºÃµÄºì°ü
+        //å‘Managerç±»ä¼ å…¥çº¢åŒ…å‚æ•°ï¼Œè¿”å›åŒ…è£…å¥½çš„çº¢åŒ…
         ArrayList<Double> redList = gan.send(totalMoney, count);
 
-        //ºì°üÒÑ·¢³ö
+        //çº¢åŒ…å·²å‘å‡º
         System.out.println("=========================================");
         System.out.println("=======" + str + "======\n");
 
-        //×ÓÃñÃÇÕıÔÚ¿ªÊ¼·è¿ñÊÕºì°ü
+        //å­æ°‘ä»¬æ­£åœ¨å¼€å§‹ç–¯ç‹‚æ”¶çº¢åŒ…
         one.receive(redList, gan.getMax());
         two.receive(redList, gan.getMax());
         three.receive(redList, gan.getMax());
@@ -67,10 +67,10 @@ public class MainRedPacket {
 
         System.out.println("=========================================");
 
-        //MyµÄÓà¶î
+        //Myçš„ä½™é¢
         gan.show();
 
-        //×ÓÃñµÄÓà¶î
+        //å­æ°‘çš„ä½™é¢
         one.show();
         two.show();
         three.show();
@@ -79,8 +79,8 @@ public class MainRedPacket {
 
         System.out.println("=========================================");
 
-        //×ÓÃñÃÇÔÚ¸ĞĞ»ÎÒÄØ£¡
-        System.out.println(one.getName()+":");    WanSui();//µ÷ÓÃ¸ĞĞ»ÎÒµÄ·½·¨¡£
+        //å­æ°‘ä»¬åœ¨æ„Ÿè°¢æˆ‘å‘¢ï¼
+        System.out.println(one.getName()+":");    WanSui();//è°ƒç”¨æ„Ÿè°¢æˆ‘çš„æ–¹æ³•ã€‚
 
         System.out.println(two.getName()+":");    WanSui();
 
@@ -91,9 +91,9 @@ public class MainRedPacket {
         System.out.println(five.getName()+":");   WanSui();
     }
 
-    //¸ĞĞ»ÎÒµÄ·½·¨  //ÇĞ¼ÇÒªÓÃstatic¹Ø¼ü×Ö½øĞĞĞŞÊÎ¡£¡£¡£
+    //æ„Ÿè°¢æˆ‘çš„æ–¹æ³•  //åˆ‡è®°è¦ç”¨staticå…³é”®å­—è¿›è¡Œä¿®é¥°ã€‚ã€‚ã€‚
     public static void WanSui(){
-        System.out.println("ŞÏŞÎ½´ÍòËê©d(^¨Œ^*)))\n");
+        System.out.println("å°´å°¬é…±ä¸‡å²ãƒ¾(^â–½^*)))\n");
     }
 
 }

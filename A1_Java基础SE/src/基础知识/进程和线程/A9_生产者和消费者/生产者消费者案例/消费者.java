@@ -1,16 +1,16 @@
-package »ù´¡ÖªÊ¶.½ø³ÌºÍÏß³Ì.A9_Éú²úÕßºÍÏû·ÑÕß.Éú²úÕßÏû·ÑÕß°¸Àı;
+package åŸºç¡€çŸ¥è¯†.è¿›ç¨‹å’Œçº¿ç¨‹.A9_ç”Ÿäº§è€…å’Œæ¶ˆè´¹è€….ç”Ÿäº§è€…æ¶ˆè´¹è€…æ¡ˆä¾‹;
 
-public class Ïû·ÑÕß implements Runnable{
-    //Éú³ÉÄÌÏä
+public class æ¶ˆè´¹è€… implements Runnable{
+    //ç”Ÿæˆå¥¶ç®±
     private Box box;
 
-    public Ïû·ÑÕß(Box box) {
+    public æ¶ˆè´¹è€…(Box box) {
         this.box = box;
     }
 
     @Override
     public void run() {
-        //»ñÈ¡Å£ÄÌ
+        //è·å–ç‰›å¥¶
         while (true){
             box.get();
         }

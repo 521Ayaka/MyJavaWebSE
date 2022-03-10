@@ -1,4 +1,4 @@
-package »ù´¡ÖªÊ¶.Àà¿â.ArrayList;
+package åŸºç¡€çŸ¥è¯†.ç±»åº“.ArrayList;
 
 public class Student {
 
@@ -6,11 +6,11 @@ public class Student {
     int age ;
 
     public void AiHao(){
-        System.out.println("´òÔÆ¶¥Ö®ŞÄ");
+        System.out.println("æ‰“äº‘é¡¶ä¹‹å¼ˆ");
     }
 
     public String ID(){
-        return "ÓÀÔ¶i°®Äã";
+        return "æ°¸è¿œiçˆ±ä½ ";
     }
 
     public Student() {

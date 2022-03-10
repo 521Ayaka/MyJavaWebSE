@@ -9,54 +9,54 @@ import java.io.File;
 public class IMG {
     public static void main(String[] args) throws Exception{
         BufferedImage image = ImageIO.read(new File("C:\\Users\\Saber\\Desktop\\img\\A6.jpg"));
-        // ¸ß¶ÈºÍ¿í¶È
+        // é«˜åº¦å’Œå®½åº¦
         int height = image.getHeight();
         int width = image.getWidth();
 
-        // Éú²ú±³¾°Í¸Ã÷ºÍÄÚÈİÍ¸Ã÷µÄÍ¼Æ¬
+        // ç”Ÿäº§èƒŒæ™¯é€æ˜å’Œå†…å®¹é€æ˜çš„å›¾ç‰‡
         ImageIcon imageIcon = new ImageIcon(image);
         BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_4BYTE_ABGR);
-        Graphics2D g2D = (Graphics2D) bufferedImage.getGraphics(); // »ñÈ¡»­±Ê
-        g2D.drawImage(imageIcon.getImage(), 0, 0, null); // »æÖÆImageµÄÍ¼Æ¬£¬Ê¹ÓÃÁËimageIcon.getImage()£¬Ä¿µÄ¾ÍÊÇµÃµ½image,Ö±½ÓÊ¹ÓÃimage¾Í¿ÉÒÔµÄ
+        Graphics2D g2D = (Graphics2D) bufferedImage.getGraphics(); // è·å–ç”»ç¬”
+        g2D.drawImage(imageIcon.getImage(), 0, 0, null); // ç»˜åˆ¶Imageçš„å›¾ç‰‡ï¼Œä½¿ç”¨äº†imageIcon.getImage()ï¼Œç›®çš„å°±æ˜¯å¾—åˆ°image,ç›´æ¥ä½¿ç”¨imageå°±å¯ä»¥çš„
 
-        int alpha = 0; // Í¼Æ¬Í¸Ã÷¶È
-        // Íâ²ã±éÀúÊÇYÖáµÄÏñËØ
+        int alpha = 0; // å›¾ç‰‡é€æ˜åº¦
+        // å¤–å±‚éå†æ˜¯Yè½´çš„åƒç´ 
         for (int y = bufferedImage.getMinY(); y < bufferedImage.getHeight(); y++) {
-            // ÄÚ²ã±éÀúÊÇXÖáµÄÏñËØ
+            // å†…å±‚éå†æ˜¯Xè½´çš„åƒç´ 
             for (int x = bufferedImage.getMinX(); x < bufferedImage.getWidth(); x++) {
                 int rgb = bufferedImage.getRGB(x, y);
-                // ¶Ôµ±Ç°ÑÕÉ«ÅĞ¶ÏÊÇ·ñÔÚÖ¸¶¨Çø¼äÄÚ
+                // å¯¹å½“å‰é¢œè‰²åˆ¤æ–­æ˜¯å¦åœ¨æŒ‡å®šåŒºé—´å†…
                 if (colorInRange(rgb)){
                     alpha = 0;
                 }else{
-                    // ÉèÖÃÎª²»Í¸Ã÷
+                    // è®¾ç½®ä¸ºä¸é€æ˜
                     alpha = 255;
                 }
-                // #AARRGGBB ×îÇ°Á½Î»ÎªÍ¸Ã÷¶È
+                // #AARRGGBB æœ€å‰ä¸¤ä½ä¸ºé€æ˜åº¦
                 rgb = (alpha << 24) | (rgb & 0x00ffffff);
                 bufferedImage.setRGB(x, y, rgb);
             }
         }
-        // »æÖÆÉèÖÃÁËRGBµÄĞÂÍ¼Æ¬,ÕâÒ»²½¸Ğ¾õ²»ÓÃÒ²¿ÉÒÔÖ»ÊÇÍ¸Ã÷µØ·½µÄÉîÇ³ÓĞ±ä»¯¶øÒÑ£¬¾ÍÏñÃÉÁËÁ½²ãµÄ¸Ğ¾õ
+        // ç»˜åˆ¶è®¾ç½®äº†RGBçš„æ–°å›¾ç‰‡,è¿™ä¸€æ­¥æ„Ÿè§‰ä¸ç”¨ä¹Ÿå¯ä»¥åªæ˜¯é€æ˜åœ°æ–¹çš„æ·±æµ…æœ‰å˜åŒ–è€Œå·²ï¼Œå°±åƒè’™äº†ä¸¤å±‚çš„æ„Ÿè§‰
         g2D.drawImage(bufferedImage, 0, 0, null);
 
-        // Éú³ÉÍ¼Æ¬ÎªPNG
+        // ç”Ÿæˆå›¾ç‰‡ä¸ºPNG
         ImageIO.write(bufferedImage, "png", new File("C:\\Users\\Saber\\Desktop\\img\\A6.png"));
-       // MyLogger.logger.info("Íê³É»­Í¼");
+       // MyLogger.logger.info("å®Œæˆç”»å›¾");
     }
 
-    // ÅĞ¶ÏÊÇ±³¾°»¹ÊÇÄÚÈİ
+    // åˆ¤æ–­æ˜¯èƒŒæ™¯è¿˜æ˜¯å†…å®¹
     public static boolean colorInRange(int color) {
-        int red = (color & 0xff0000) >> 16;// »ñÈ¡color(RGB)ÖĞRÎ»
-        int green = (color & 0x00ff00) >> 8;// »ñÈ¡color(RGB)ÖĞGÎ»
-        int blue = (color & 0x0000ff);// »ñÈ¡color(RGB)ÖĞBÎ»
-        // Í¨¹ıRGBÈı·ÖÁ¿À´ÅĞ¶Ïµ±Ç°ÑÕÉ«ÊÇ·ñÔÚÖ¸¶¨µÄÑÕÉ«Çø¼äÄÚ
+        int red = (color & 0xff0000) >> 16;// è·å–color(RGB)ä¸­Rä½
+        int green = (color & 0x00ff00) >> 8;// è·å–color(RGB)ä¸­Gä½
+        int blue = (color & 0x0000ff);// è·å–color(RGB)ä¸­Bä½
+        // é€šè¿‡RGBä¸‰åˆ†é‡æ¥åˆ¤æ–­å½“å‰é¢œè‰²æ˜¯å¦åœ¨æŒ‡å®šçš„é¢œè‰²åŒºé—´å†…
         if (red >= color_range && green >= color_range && blue >= color_range){
             return true;
         };
         return false;
     }
 
-    //É«²î·¶Î§0~255    210
+    //è‰²å·®èŒƒå›´0~255    210
     public static int color_range = 210;
 }
