@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="B7_ServletMyBatisCase:war">
+    <output-path>$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>B7_ServletMyBatisCase</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="B7_ServletMyBatisCase-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="B7_ServletMyBatisCase:war exploded" />
+    </root>
+  </artifact>
+</component>
