@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven" />
+    <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B6_Tomcat_Maven" />
+    <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习js/B4_Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习js/B5_MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习/B5_MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习/B6_Tomcat_Maven/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习/B7_Servlet_MyBatis案例/pom.xml" />
+        <option value="$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase/pom.xml" />
       </list>
     </option>
   </component>

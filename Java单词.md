@@ -1,4 +1,4 @@
-# 单词总复习
+#  单词总复习
 
 
 
@@ -513,8 +513,95 @@
 
 
 
+---
+
+<div STYLE="page-break-after: always;">
 
 
+## Maven
+
+|     单词     | 解释 |
+| :----------: | :--: |
+|              |      |
+|   **命令**   |      |
+|  mvn + ...   |      |
+|   1??compile   | 编译 |
+|    clean     | 清除 |
+|    2??test     | 测试 |
+|   3??package   | 打包 |
+|   4??install   | 安装 |
+|              |      |
+|   **坐标**   |      |
+| dependencies | 依赖关系 |
+| dependency | 依赖 |
+| groupId | 组/公司 |
+| artifactId | 制品/产品 |
+| version | 版本号 |
+|  |  |
+| **scope** | **范围** |
+| compile | 编译 |
+| test | 测试 |
+| provided | 提供 |
+| runtime | 运行阶段 |
+| system | 非运行阶段 |
+|  |  |
+|  |  |
+
+
+
+
+
+<div STYLE="page-break-after: always;"></div>
+
+
+
+
+
+## MyBatis
+
+|             单词              |               解释                |
+| :---------------------------: | :-------------------------------: |
+|      ===================      |        ===================        |
+|          environment          |               环境                |
+|           resource            |               资源                |
+|                               |                                   |
+|            mapper             |               映射                |
+|             pojo              |              实体类               |
+|             utils             |               工具                |
+|                               |                                   |
+| **@SqlSessionFactoryBuilder** |         SQL会话工厂创建者         |
+|                               |                                   |
+|    **@SqlSessionFactory**     |            SQL会话工厂            |
+|      @. openSession(t/f)      |        获取SqlSession对象         |
+|                               |                                   |
+|        **@SqlSession**        |              SQL会话              |
+|     @ .getMapper(#.class)     |        获取Mapper代理对象         |
+|                               |                                   |
+|          **Mapper**           |                                   |
+|           namespace           |             名称空间              |
+|                               |                                   |
+|           resultMap           |    结果Map / 数据库与类的映射     |
+|             id=""             |        resultMap的唯一标识        |
+|            type=""            |      要映射的实体类 全限定名      |
+|          <result <id          |  前者完成普通列的映射 后者时主键  |
+|           column=""           |            数据库列名             |
+|          property=""          |          映射类的属性名           |
+|                               |                                   |
+|          **@@Param**          | (@Param("status") int 映射参数名) |
+|                               |                                   |
+|          **dynamic**          |               动态                |
+|                               |                                   |
+|            <choose            |          选择 -> switch           |
+|            <<when             |           何时 -> case            |
+|          <<otherwise          |          否则 -> default          |
+|                               |                                   |
+|           <foreach            |               循环                |
+|         collection=""         |       集合 -> 要遍历的集合        |
+|            item=""            |         项目 -> 每个结果          |
+|         separator=""          |   分离 -> 每个后面要用什么分离    |
+|            open=""            |   打开 -> 开始时,前面要加的东西   |
+|           close=""            |   关闭 -> 结束时,后面要加的东西   |
+|                               |                                   |
 
 
 
@@ -553,11 +640,12 @@
 |                           Response                           |                             响应                             |
 |                                                              |                                                              |
 
-
+---
 
 <div STYLE="page-break-after: always;">
-## Tomcat_Maven_Servlet_Request
 
+
+## Tomcat_Maven_Servlet_Request
 
 |                             单词                             |                             解释                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -610,6 +698,10 @@
 |                    res.sendRedirect(url)                     |                           发送转发                           |
 |                                                              |                                                              |
 |                                                              |           
+
+
+
+<div STYLE="page-break-after: always;">
 
 
 

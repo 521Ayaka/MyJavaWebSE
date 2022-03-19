@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/A2_JavaWeb学习js/B6_Tomcat_Maver/target/B6_Tomcat_Maver-1.0-SNAPSHOT" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>

@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="B5_MyBatis" />
         <module name="B6_Tomcat_Maven" />
+        <module name="B7_ServletMyBatisCase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="A2_JavaWeb学习" target="16" />
+      <module name="B4_Maven" target="16" />
+      <module name="B5_MyBates" target="16" />
+      <module name="B5_MyBatis" target="16" />
       <module name="B6_Tomcat_Maven" target="16" />
+      <module name="B7_Servlet_MyBatisCase" target="16" />
+      <module name="B7_Servlet_MyBatis案例" target="16" />
+      <module name="B7_ServletMyBatisCase" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
