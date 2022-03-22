@@ -17,9 +17,6 @@
     </facet>
     <facet type="web" name="Web2">
       <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/target/B6_Tomcat_Maver-1.0-SNAPSHOT/WEB-INF/web.xml" />
-        </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/target/B6_Tomcat_Maver-1.0-SNAPSHOT" relative="/" />
         </webroots>

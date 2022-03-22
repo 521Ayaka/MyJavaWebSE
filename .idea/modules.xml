@@ -5,10 +5,14 @@
       <module fileurl="file://$PROJECT_DIR$/A1_Java基础SE/A1_Java基础SE.iml" filepath="$PROJECT_DIR$/A1_Java基础SE/A1_Java基础SE.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/A2_JavaWeb学习.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/A2_JavaWeb学习.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B0_JavaWeb初步基础/B0_JavaWeb初步基础.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B0_JavaWeb初步基础/B0_JavaWeb初步基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B10_MVC_Servlet_JSP/B10_MVC_Servlet_JSP.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B10_MVC_Servlet_JSP/B10_MVC_Servlet_JSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B2_JDBC接口学习/B2_JDBC接口学习.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B2_JDBC接口学习/B2_JDBC接口学习.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B5_MyBatis/B5_MyBatis.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B5_MyBatis/B5_MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B6_Tomcat_Maven/B6_Tomcat_Maven.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B6_Tomcat_Maven/B6_Tomcat_Maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase/B7_ServletMyBatisCase.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase/B7_ServletMyBatisCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B8_JSP_Study/B8_JSP_Study.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B8_JSP_Study/B8_JSP_Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/B11_会话跟踪技术/Cookie/Cookie.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/B11_会话跟踪技术/Cookie/Cookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A2_JavaWeb学习/Session/Session.iml" filepath="$PROJECT_DIR$/A2_JavaWeb学习/Session/Session.iml" />
       <module fileurl="file://$PROJECT_DIR$/源代码.iml" filepath="$PROJECT_DIR$/源代码.iml" />
     </modules>
   </component>

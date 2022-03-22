@@ -23,9 +23,11 @@
 
     -->
 
+
     <resultMap id="brandResultMap" type="com.ganga.pojo.Brand">
         <result column="brand_name" property="brandName"/>
         <result column="company_name" property="companyName"/>
+
         <!--column:数据库的列名  property映射类变量名-->
     </resultMap>
 
@@ -37,6 +39,7 @@
     <select id="selectAll" resultMap="brandResultMap">
         select *
         from tb_brand;
+
     </select>
 
 
@@ -78,7 +81,6 @@
         from tb_brand
         where ordered &gt;= 50;
     </select>
-
 
     <!--
     参数接收方式:

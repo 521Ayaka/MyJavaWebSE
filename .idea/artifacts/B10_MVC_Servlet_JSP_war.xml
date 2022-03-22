@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="B10_MVC_Servlet_JSP:war">
+    <output-path>$PROJECT_DIR$/A2_JavaWeb学习/B10_MVC_Servlet_JSP/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>B10_MVC_Servlet_JSP</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="B10_MVC_Servlet_JSP-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="B10_MVC_Servlet_JSP:war exploded" />
+    </root>
+  </artifact>
+</component>

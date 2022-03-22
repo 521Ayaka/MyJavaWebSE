@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="B8_JSP_Study:war">
+    <output-path>$PROJECT_DIR$/A2_JavaWeb学习/B8_JSP_Study/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>B8_JSP_Study</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="B8_JSP_Study-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="B8_JSP_Study:war exploded" />
+    </root>
+  </artifact>
+</component>
