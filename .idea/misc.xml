@@ -2,10 +2,12 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B10_MVC_Servlet_JSP" />
+    <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B11_会话跟踪技术/Cookie" />
     <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B6_Tomcat_Maven" />
     <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B7_ServletMyBatisCase" />
     <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B8_JSP" />
     <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/B8_JSP_Study" />
+    <file type="web" url="file://$PROJECT_DIR$/A2_JavaWeb学习/Session" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

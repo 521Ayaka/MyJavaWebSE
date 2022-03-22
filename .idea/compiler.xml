@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Cookie" />
-        <module name="B7_ServletMyBatisCase" />
         <module name="B10_MVC_Servlet_JSP" />
         <module name="B5_MyBatis" />
+        <module name="B7_ServletMyBatisCase" />
         <module name="B8_JSP_Study" />
         <module name="B6_Tomcat_Maven" />
+        <module name="Session" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="B8_JSP" target="16" />
       <module name="B8_JSP_Study" target="16" />
       <module name="Cookie" target="16" />
+      <module name="Session" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
